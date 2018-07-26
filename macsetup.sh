@@ -316,11 +316,11 @@ brew install asciinema
 mas install 1206020918
 open -a "Battery Indicator"
 
-#Battle.net (Diablo II, Worl of Warcraft)
+#Battle.net (Diablo II, World of Warcraft)
 brew cask install battle-net
 open -a /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
 
-#BeterTouchTool
+#BetterTouchTool
 brew cask install bettertouchtool
 open -a BetterTouchTool
 
