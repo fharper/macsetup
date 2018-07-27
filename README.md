@@ -77,6 +77,7 @@ This script will make configuration changes to:
 * Antibody (shell plugin manager)
 * git-open (CLI utility)
 * open-pr (CLI utility)
+* hub  (CLI utility)
 * Node 7.X
 * npm & yarn
 * Caffeine

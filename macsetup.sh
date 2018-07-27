@@ -197,6 +197,9 @@ npm install --global git-open
 #Git PR open
 antibody bundle caarlos0/open-pr kind:path
 
+#Hub (for Github)
+brew install hub
+
 #####################
 # Install dev stuff #
 #####################
