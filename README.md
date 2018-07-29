@@ -73,6 +73,7 @@ This script will make configuration changes to:
 * Homebrew Cask
 * Mac App Store CLI
 * Pip (python package manager)
+* Bundler (ruby gems manager)
 * Xcode
 * Antibody (shell plugin manager)
 * git-open (CLI utility)

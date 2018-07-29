@@ -185,6 +185,9 @@ curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
 sudo python get-pip.py
 rm get-pip.py
 
+#Install Bundle (Gem/Ruby)
+gem install bundler
+
 #Xcode (before Antibody)
 mas install 497799835
 
