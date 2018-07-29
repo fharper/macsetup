@@ -519,6 +519,11 @@ open -a VLC
 brew cask install whatsapp
 open -a WhatsApp
 
+#WP-CLI - Cannot use it with my actual host (no SSH)
+#curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+#chmod +x wp-cli.phar
+#sudo mv wp-cli.phar /usr/local/bin/wp
+
 #Zoom It
 mas install 476272252
 open -a "Zoom It"
