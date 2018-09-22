@@ -68,7 +68,6 @@ This script will make configuration changes to:
 ### First-time dev environment setup
 #### Install
 * iTerm (terminal replacement)
-* Oh My ZSH! (shell replacement)
 * Homebrew
 * Homebrew Cask
 * Mac App Store CLI
@@ -113,7 +112,7 @@ This script will make configuration changes to:
 * Whatsapp
 * Messenger
 * Discord
-* HipChat
+* Signal
 
 #### Music
 * Spotify
@@ -134,6 +133,7 @@ This script will make configuration changes to:
 * LZip
 * PDFSam Basic
 * Calibre
+* The Unarchiver
 
 #### Media creation & editing
 * Camtasia
@@ -173,3 +173,5 @@ This script will make configuration changes to:
 * Time Sink
 * Rightzoom
 * Zoom it
+* YubiKey Personalization Tool
+* Larch

@@ -108,7 +108,7 @@ defaults write NSGlobalDomain com.apple.sound.beep.feedback -int 0
 
 #Git configurations
 git config --global user.name "Frédéric Harper"
-git config --global user.email fharper@fitbit.com
+git config --global user.email fharper@oocz.net
 git config --global push.default current
 
 #Deactivate the Chrome Printing Dialog
@@ -163,10 +163,6 @@ killall SystemUIServer
 brew cask install iterm2
 open -a iTerm
 
-#Oh My ZSH!
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s /bin/zsh
-
 #Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off
@@ -211,7 +207,6 @@ brew install hub
 ssh-keygen -t rsa -b 4096 -C "fharper@oocz.net"
 ssh-add -K ~/.ssh/id_rsa
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-ssh-keyscan -t rsa source.fitbit.com >> ~/.ssh/known_hosts
 ssh-keyscan -t rsa bitbucket.org >> ~/.ssh/known_hosts
 pbcopy < ~/.ssh/id_rsa.pub
 echo -e "\n"
@@ -296,10 +291,6 @@ open -a Evernote
 #Todoist
 mas install 585829637
 open -a Todoist
-
-#HipChat
-brew cask install hipchat
-open -a HipChat
 
 
 ############################
@@ -402,6 +393,9 @@ open -a Kaleidoscope
 #Kaleidoscope KSDiff
 brew cask install ksdiff
 
+#Larch
+gem install larch
+
 #Lightshot
 mas install 526298438
 open -a "Lightshot Screenshot"
@@ -473,6 +467,9 @@ open -a Revisions
 #brew cask install rightzoom
 #open -a RightZoom
 
+#Signal
+brew cask install Signal
+
 #Slack
 brew cask install slack
 open -a Slack
@@ -497,6 +494,9 @@ mas install 488764545
 open -a "The Clock"
 todo+="- Remove the System Clock from the menubar"
 todo+="\n"
+
+#The Unarchiver
+mas install 425424353
 
 #Time Sink
 mas install 404363161
@@ -526,6 +526,10 @@ open -a WhatsApp
 #curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 #chmod +x wp-cli.phar
 #sudo mv wp-cli.phar /usr/local/bin/wp
+
+#YubiKey Personalization Tool
+mas install 638161122
+open -a "YubiKey Personalization Tool"
 
 #Zoom It
 mas install 476272252
@@ -561,19 +565,16 @@ duti -s com.microsoft.VSCode public.data all #yml
 # Add login items ###
 #####################
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Antidote", path:"/Applications/Antidote.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "BIG-IP Edge Client", path:"/Applications/BIG-IP Edge Client.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "CapSee", path:"/Applications/CapSee.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Discord", path:"/Applications/Discord.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Evernote", path:"/Applications/Evernote.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Google Chrome", path:"/Applications/Google Chrome.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "HipChat", path:"/Applications/HipChat.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Mate Translator ", path:"/Applications/Mate Translator.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Menubar Countdown", path:"/Applications/Menubar Countdown.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Messages", path:"/Applications/Messages.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Messenger", path:"/Applications/Messenger.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "RightZoom", path:"/Applications/RightZoom.app", hidden:true}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Slack", path:"/Applications/Slack.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Sublime Text", path:"/Applications/Sublime Text.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Todoist", path:"/Applications/Todoist.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "TweetDeck", path:"/Applications/TweetDeck.app", hidden:false}'
 
