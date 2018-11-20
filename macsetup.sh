@@ -275,6 +275,9 @@ npm install -g imagemin-cli
 npm install -g imagemin-pngquant
 npm install -g imagemin-jpegtran
 
+#Accessibility
+npm install -g pa11y
+
 
 #Python stuff
 brew install pyenv
