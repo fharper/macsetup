@@ -504,7 +504,6 @@ open -a Pocket
 
 #Postman
 brew cask install postman
-open -a Postman
 
 #Revisions for Dropbox
 mas install 819348619
