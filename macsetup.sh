@@ -443,8 +443,6 @@ brew cask install gimp
 #ICS split
 #icssplit file.ics outfilename --maxsize=900000
 pip3 install icssplit
-#iMovie
-mas install 408981434
 
 #Inkscape
 brew install caskformula/caskformula/inkscape
