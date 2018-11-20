@@ -229,9 +229,6 @@ mas install 497799835
 #Antibody
 brew install getantibody/tap/antibody
 
-#Git open
-npm install --global git-open
-
 #Git PR open
 antibody bundle caarlos0/open-pr kind:path
 
@@ -291,6 +288,8 @@ npm install -g imagemin-jpegtran
 #Accessibility
 npm install -g pa11y
 
+#Git open
+npm install -g git-open
 
 #Python stuff
 brew install pyenv
