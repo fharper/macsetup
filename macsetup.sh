@@ -667,7 +667,7 @@ dockutil --add /Applications/Slack.app/ --allhomes
 #Mackup
 brew install mackup
 mackup restore
-#mackup backup -fbl
+#mackup -f backup
 
 
 #################
