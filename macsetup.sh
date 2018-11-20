@@ -176,6 +176,7 @@ dockutil --remove 'Launchpad' --allhomes
 dockutil --remove 'Safari' --allhomes
 dockutil --remove 'App Store' --allhomes
 dockutil --remove 'iTunes' --allhomes
+
 #Kill apps
 killall Finder
 killall Dock
