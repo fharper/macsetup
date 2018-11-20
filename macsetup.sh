@@ -110,6 +110,9 @@ defaults write NSGlobalDomain com.apple.sound.beep.feedback -int 0
 git config --global user.name "Frédéric Harper"
 git config --global user.email fharper@oocz.net
 git config --global push.default current
+git config --global difftool.prompt false
+git config --global diff.tool Kaleidoscope
+git config --global difftool.Kaleidoscope.cmd 'ksdiff --partial-changeset --relative-path "$MERGED" -- "$LOCAL" "$REMOTE"'
 
 #Deactivate the Chrome Printing Dialog
 defaults write com.google.Chrome DisablePrintPreview -bool true
