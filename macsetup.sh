@@ -443,6 +443,9 @@ open -a FileZilla
 
 #Firefox
 brew cask install firefox
+
+#Fliqlo screensaver
+brew cask install fliqlo
 open -a Firefox
 
 #Gimp
