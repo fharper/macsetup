@@ -270,6 +270,9 @@ npm install -g nodemon
 npm install -g snyk
 snyk auth
 
+#CSS
+npm install -g cssnano-cli
+
 #Images
 npm install -g imagemin-cli
 npm install -g imagemin-pngquant
