@@ -397,7 +397,6 @@ brew tap buo/cask-upgrade
 
 #Calibre
 brew cask install calibre
-open -a Calibre
 
 #Camtasia
 brew cask install camtasia
