@@ -569,10 +569,6 @@ todo+="\n"
 #The Unarchiver
 mas install 425424353
 
-#Time Sink
-mas install 404363161
-open -a "Time Sink"
-
 #TripMode
 brew cask install tripmode
 open -a TripMode
