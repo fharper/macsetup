@@ -590,6 +590,8 @@ brew cask install whatsapp
 open -a WhatsApp
 
 
+#Zoom
+brew cask install zoomus
 
 #Zoom It
 mas install 476272252
