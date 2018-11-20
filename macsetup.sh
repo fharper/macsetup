@@ -397,7 +397,7 @@ brew cask install boxer
 open -a Boxer
 
 #Brave browser
-brew cask install brave
+brew cask install brave-browser
 open -a Brave
 
 #Brew Cask Upgrade
