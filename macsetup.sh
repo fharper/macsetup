@@ -261,8 +261,9 @@ echo -e "\n"
 
 #Node stuff
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
-nvm install 7
-nvm use 7
+nvm install v10.13.0
+nvm alias default v10.13.0
+
 npm install -g express-generator
 npm install -g nodemon
 
