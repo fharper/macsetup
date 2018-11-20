@@ -673,8 +673,6 @@ mackup restore
 #################
 # Manual TODO ###
 #################
-todo+="- Add picture to your account"
-todo+="\n"
 
 #Other apps
 todo+="- Install Apps from the local folder"
