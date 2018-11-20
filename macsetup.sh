@@ -297,14 +297,6 @@ brew cask install mysql-shell
 #MongoDB
 brew install mongodb
 
-#Android Studio, SDK and tools
-#brew cask install android-studio
-#open -a "Android Studio"
-#/Users/fharper/Library/Android/sdk/tools/bin/sdkmanager "platforms;android-27"
-#/Users/fharper/Library/Android/sdk/tools/bin/sdkmanager "build-tools;26.0.2"
-#android update sdk -u -a -t 5 #Android SDK Tools, revision 25
-#/Users/fharper/Library/Android/sdk/tools/bin/sdkmanager "ndk-bundle"
-
 
 #########################
 # Install the main apps #
