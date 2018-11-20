@@ -266,6 +266,10 @@ nvm alias default v10.13.0
 
 npm install -g express-generator
 npm install -g nodemon
+#Security
+npm install -g snyk
+snyk auth
+
 
 #Python stuff
 brew install pyenv
