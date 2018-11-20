@@ -211,7 +211,6 @@ open -a "Visual Studio Code"
 
 #Mac App Store command line interface
 brew install mas
-mas signin fharper@oocz.net
 
 #Install pip
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
