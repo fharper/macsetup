@@ -549,10 +549,6 @@ open -a Slack
 brew cask install spotify
 open -a Spotify
 
-#Stars by Karelia
-mas install 926319434
-open -a Stars
-
 #Steam
 brew cask install steam
 open -a Steam
