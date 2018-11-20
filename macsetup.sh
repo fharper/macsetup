@@ -539,7 +539,7 @@ open -a Revisions
 #open -a RightZoom
 
 #Signal
-brew cask install Signal
+brew cask install signal
 
 #Slack
 brew cask install slack
