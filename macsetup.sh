@@ -264,8 +264,12 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | b
 nvm install v10.13.0
 nvm alias default v10.13.0
 
+#Node packages
+npm install -g npm@latest
 npm install -g express-generator
 npm install -g nodemon
+npm install -g npx
+
 #Security
 npm install -g snyk
 snyk auth
