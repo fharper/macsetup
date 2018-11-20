@@ -125,9 +125,6 @@ git config --global difftool.Kaleidoscope.cmd 'ksdiff --partial-changeset --rela
 #Deactivate the Chrome Printing Dialog
 defaults write com.google.Chrome DisablePrintPreview -bool true
 
-#Setup clock format
-defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d  h.mm a"
-
 #Add extra system menuitems
 defaults write com.apple.systemuiserver menuExtras -array \
 "/System/Library/CoreServices/Menu Extras/Volume.menu" \
