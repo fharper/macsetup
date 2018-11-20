@@ -449,6 +449,9 @@ open -a Firefox
 brew cask install gimp
 open -a Gimp
 
+#ICS split
+#icssplit file.ics outfilename --maxsize=900000
+pip3 install icssplit
 #iMovie
 mas install 408981434
 open -a iMovie
