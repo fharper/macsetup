@@ -299,6 +299,9 @@ pyenv global 3.7.0
 #Mysql Shell
 brew cask install mysql-shell
 
+#MongoDB
+brew install mongodb
+
 #Android Studio, SDK and tools
 #brew cask install android-studio
 #open -a "Android Studio"
