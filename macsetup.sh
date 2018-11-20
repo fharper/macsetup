@@ -227,6 +227,7 @@ gem install bundler
 
 #Xcode (before Antibody)
 mas install 497799835
+open -a Xcode
 
 #Antibody
 brew install getantibody/tap/antibody
