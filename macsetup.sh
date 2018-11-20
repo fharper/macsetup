@@ -200,6 +200,8 @@ brew install bash-completion
 #Brew Cask
 brew tap caskroom/cask
 
+#Fix XCode
+xcode-select --install
 
 #Visual Studio Code
 brew cask install visual-studio-code
