@@ -270,6 +270,11 @@ npm install -g nodemon
 npm install -g snyk
 snyk auth
 
+#Images
+npm install -g imagemin-cli
+npm install -g imagemin-pngquant
+npm install -g imagemin-jpegtran
+
 
 #Python stuff
 brew install pyenv
