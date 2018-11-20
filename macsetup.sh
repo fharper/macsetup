@@ -310,9 +310,6 @@ brew install mongodb
 #android update sdk -u -a -t 5 #Android SDK Tools, revision 25
 #/Users/fharper/Library/Android/sdk/tools/bin/sdkmanager "ndk-bundle"
 
-#UnCSS
-npm install -g uncss
-
 
 #########################
 # Install the main apps #
