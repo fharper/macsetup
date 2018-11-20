@@ -399,8 +399,6 @@ brew cask install brave-browser
 
 #Brew Cask Upgrade
 brew tap buo/cask-upgrade
-#brew update
-#brew cu -y
 
 #Calibre
 brew cask install calibre
