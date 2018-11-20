@@ -587,7 +587,6 @@ duti -s org.videolan.vlc com.apple.quicktime-movie all #mov
 duti -s com.microsoft.VSCode public.plain-text all #txt
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge8027pb all #lua
 duti -s org.videolan.vlc public.avi all #avi
-duti -s com.seriflabs.affinitydesigner public.svg-image all #svg
 duti -s org.videolan.vlc public.3gpp all #3gp
 duti -s com.apple.Preview com.nikon.raw-image all #NEF
 duti -s com.uranusjr.macdown net.daringfireball.markdown all #Markdown
