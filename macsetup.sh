@@ -74,6 +74,14 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.fiveFingerPinchSwi
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture -bool false
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFingerPinchGesture -bool false
 
+echo -e "\n"
+read -p "${txtflash}Deactivate the Force click and haptic feedback from Trackpad manually" -n1 -s
+echo -e "\n"
+
+echo -e "\n"
+read -p "${txtflash}Deactivate Show recent applications in Dock from the Dock manually" -n1 -s
+echo -e "\n"
+
 #Activate Silent clicking
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 
