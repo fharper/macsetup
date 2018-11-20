@@ -676,9 +676,6 @@ mackup restore
 todo+="- Add picture to your account"
 todo+="\n"
 
-todo+="- Sign-in in iCloud"
-todo+="\n"
-
 #Other apps
 todo+="- Install Apps from the local folder"
 todo+="\n"
