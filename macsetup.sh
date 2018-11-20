@@ -197,6 +197,11 @@ brew install bash-completion
 #Brew Cask
 brew tap caskroom/cask
 
+
+#Visual Studio Code
+brew cask install visual-studio-code
+open -a "Visual Studio Code"
+
 #Mac App Store command line interface
 brew install mas
 mas signin fharper@oocz.net
@@ -534,10 +539,6 @@ open -a TripMode
 #TweetDeck
 mas install 485812721
 open -a TweetDeck
-
-#Visual Studio Code
-brew cask install visual-studio-code
-open -a "Visual Studio Code"
 
 #VLC
 brew cask install vlc
