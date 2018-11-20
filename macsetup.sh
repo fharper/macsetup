@@ -327,8 +327,7 @@ echo -e "\n"
 brew cask install google-chrome
 open -a "Google Chrome"
 
-#NPM/YARN
-brew install npm
+#YARN
 brew install yarn
 
 #Caffeine
