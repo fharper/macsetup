@@ -660,6 +660,23 @@ dockutil --add /Applications/Antidote\ 9.app/ --allhomes
 dockutil --add /Applications/TweetDeck.app/ --allhomes
 dockutil --add /Applications/Slack.app/ --allhomes
 
+#Order apps in Dock (list them in inversed order)
+dockutil --move 'Antidote' --position beginning --allhomes
+dockutil --move '1Password' --position beginning --allhomes
+dockutil --move 'Messages' --position beginning --allhomes
+dockutil --move 'Messenger' --position beginning --allhomes
+dockutil --move 'TweetDeck' --position beginning --allhomes
+dockutil --move 'Photos' --position beginning --allhomes
+dockutil --move 'Pocket' --position beginning --allhomes
+dockutil --move 'Visual Studio Code' --position beginning --allhomes
+dockutil --move 'iTerm' --position beginning --allhomes
+dockutil --move 'Spotify' --position beginning --allhomes
+dockutil --move 'Slack' --position beginning --allhomes
+dockutil --move 'Todoist' --position beginning --allhomes
+dockutil --move 'Evernote' --position beginning --allhomes
+dockutil --move 'Google Chrome' --position beginning --allhomes
+
+
 ###################
 # TODO at the end #
 ###################
