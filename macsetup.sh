@@ -589,6 +589,8 @@ open -a VLC
 brew cask install whatsapp
 open -a WhatsApp
 
+#Witch
+brew cask install witch
 
 #Zoom
 brew cask install zoomus
