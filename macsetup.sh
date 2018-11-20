@@ -125,7 +125,7 @@ defaults write com.apple.systemuiserver menuExtras -array \
 "/System/Library/CoreServices/Menu Extras/Volume.menu" \
 "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
 
-# Set computer name (as done via System Preferences → Sharing)
+# Set computer name
 sudo scutil --set ComputerName "lapta"
 sudo scutil --set HostName "lapta"
 sudo scutil --set LocalHostName "lapta"
