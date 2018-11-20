@@ -474,7 +474,7 @@ brew cask install macdown
 
 #Mate Translator (previously Instant Translate)
 mas install 1005088137
-open -a "Mate Translator"
+open -a "Mate Translate"
 
 #Menubar Countdown
 brew cask install menubar-countdown
