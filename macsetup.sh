@@ -270,6 +270,9 @@ npm install -g nodemon
 npm install -g snyk
 snyk auth
 
+#JavaScript
+npm install -g uglify-js
+
 #CSS
 npm install -g cssnano-cli
 
