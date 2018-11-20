@@ -505,10 +505,6 @@ open -a Pocket
 #Postman
 brew cask install postman
 
-#Revisions for Dropbox
-mas install 819348619
-open -a Revisions
-
 #ShellCheck
 brew install shellcheck
 
