@@ -372,9 +372,6 @@ todo+="- Download & install Antidote (see the link in 1Password) "
 todo+="\n"
 open -a "Antidote 9"
 
-#Appcleaner
-brew cask install appcleaner
-
 #Asciinema
 brew install asciinema
 
