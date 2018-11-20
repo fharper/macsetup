@@ -139,9 +139,7 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 #Search the current folder by default in Finder
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
-#Deactivate Play user interface sound effects (not working)
-#defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -boolean false
-#defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -boolean false
+#Deactivate Play user interface sound effects
 todo+="- Deactivate Play user interface sound effects"
 todo+="\n"
 
