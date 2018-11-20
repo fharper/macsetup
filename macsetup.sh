@@ -238,6 +238,12 @@ antibody bundle caarlos0/open-pr kind:path
 #Hub (for Github)
 brew install hub
 
+#Prevent code to show in Alfred
+brew install tag
+tag -a alfred:ignore -R ~/Code
+tag -a alfred:ignore -R ~/Dropbox
+tag -a alfred:ignore -R ~/Music
+
 #####################
 # Install dev stuff #
 #####################
