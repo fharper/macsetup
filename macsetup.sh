@@ -337,7 +337,7 @@ open -a Caffeine
 
 #1Password
 brew cask install 1password
-open ${HOME}/Dropbox/Documents/Programmes/OS\ X/1Password/1Password.onepassword-license
+open -a "1Password 7"
 
 #Alfred
 brew cask install alfred
