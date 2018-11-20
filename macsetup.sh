@@ -149,6 +149,15 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 todo+="- Deactivate Play user interface sound effects"
 todo+="\n"
 
+#delete defaults apps
+brew install dockutil
+sudo rm -rf /Applications/Numbers.app
+dockutil --remove 'Numbers' --allhomes
+sudo rm -rf /Applications/Keynote.app
+dockutil --remove 'Keynote' --allhomes
+sudo rm -rf /Applications/Pages.app
+dockutil --remove 'Pages' --allhomes
+sudo rm -rf /Applications/GarageBand.app
 #Kill apps
 killall Finder
 killall Dock
