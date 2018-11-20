@@ -415,10 +415,6 @@ open -a "Camtasia 2018"
 todo+="- Add your license to Camtasia"
 todo+="\n"
 
-#CopyClip
-mas install 595191960
-open -a CopyClip
-
 #Cryptomator
 brew cask install cryptomator
 open -a Cryptomator
