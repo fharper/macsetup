@@ -125,9 +125,6 @@ git config --global difftool.Kaleidoscope.cmd 'ksdiff --partial-changeset --rela
 #Deactivate the Chrome Printing Dialog
 defaults write com.google.Chrome DisablePrintPreview -bool true
 
-#Battery percentage
-defaults write com.apple.menuextra.battery ShowPercent -bool true
-
 #Setup clock format
 defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d  h.mm a"
 
