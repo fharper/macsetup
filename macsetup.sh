@@ -549,6 +549,8 @@ open -a Slack
 brew cask install spotify
 open -a Spotify
 
+#Teams
+brew cask install microsoft-teams
 #Steam
 brew cask install steam
 open -a Steam
