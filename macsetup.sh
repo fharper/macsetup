@@ -231,8 +231,12 @@ brew install hub
 #Prevent code to show in Alfred
 brew install tag
 tag -a alfred:ignore -R ~/Code
+open ~/Documents/Personal/Configurations/Alfred\ -\ Code.workflow/
 tag -a alfred:ignore -R ~/Dropbox
+open ~/Documents/Personal/Configurations/Alfred\ -\ Dropbox.workflow/
 tag -a alfred:ignore -R ~/Music
+open ~/Documents/Personal/Configurations/Alfred\ -\ Music.workflow/
+
 
 #####################
 # Install dev stuff #
