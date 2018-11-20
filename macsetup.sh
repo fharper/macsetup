@@ -594,9 +594,6 @@ open -a WhatsApp
 #chmod +x wp-cli.phar
 #sudo mv wp-cli.phar /usr/local/bin/wp
 
-#YubiKey Personalization Tool
-mas install 638161122
-open -a "YubiKey Personalization Tool"
 
 #Zoom It
 mas install 476272252
