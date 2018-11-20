@@ -385,9 +385,6 @@ mas install 1405763798
 brew cask install battle-net
 open -a /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
 
-#Battery Stats for AirPods
-mas install 1405763798
-
 #Boxer
 brew cask install boxer
 open -a Boxer
