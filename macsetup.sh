@@ -98,9 +98,6 @@ defaults write com.apple.finder ShowStatusBar -boolean true
 defaults write com.apple.finder FXEnableExtensionChangeWarning -boolean false
 defaults write com.apple.finder ShowPathbar -bool true
 
-#Show all hidden files in Finder
-defaults write com.apple.finder AppleShowAllFiles -bool true
-
 #New Finder windows in my Downloads folder
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Downloads"
