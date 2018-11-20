@@ -390,10 +390,6 @@ mas install 1405763798
 brew cask install battle-net
 open -a /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
 
-#BetterTouchTool
-brew cask install bettertouchtool
-open -a BetterTouchTool
-
 #Boxer
 brew cask install boxer
 open -a Boxer
