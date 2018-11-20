@@ -453,9 +453,6 @@ gem install larch
 mas install 526298438
 open -a "Lightshot Screenshot"
 
-#Luminar
-mas install 1161679618
-
 #LZip
 brew install lzip
 
