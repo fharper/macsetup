@@ -196,7 +196,6 @@ open -a iTerm
 #Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off
-brew tap homebrew/completions
 brew install bash-completion
 
 #Brew Cask
