@@ -560,6 +560,7 @@ brew cask install zoomus
 #Zoom It
 mas install 476272252
 
+
 ##########################################
 # Change file type default association ###
 ##########################################
