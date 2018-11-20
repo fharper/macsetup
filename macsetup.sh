@@ -81,7 +81,7 @@ defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
 
-#Finder display settingsa
+#Finder display settings
 defaults write com.apple.finder FXArrangeGroupViewBy -string "Name"
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -boolean false
 defaults write com.apple.finder ShowRecentTags -boolean false
