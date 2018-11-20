@@ -543,6 +543,9 @@ brew cask install Signal
 
 #Slack
 brew cask install slack
+
+#Smallpdf
+brew cask install smallpdf
 open -a Slack
 
 #Spotify
