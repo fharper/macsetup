@@ -214,6 +214,12 @@ curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
 sudo python get-pip.py
 rm get-pip.py
 
+#Ruby stuff
+brew install rbenv
+rbenv init
+rbenv install 2.5.3
+rbenv global 2.5.3
+
 #Install Bundle (Gem/Ruby)
 gem install bundler
 
