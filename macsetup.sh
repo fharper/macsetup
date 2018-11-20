@@ -277,6 +277,9 @@ snyk auth
 #JavaScript
 npm install -g uglify-js
 
+#HTML
+npm install -g html-minifier
+
 #CSS
 npm install -g cssnano-cli
 
