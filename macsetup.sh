@@ -136,12 +136,6 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 #Expand save panel
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
-#Disable the Notification Center but doesn't remove the menubar icon anymore!
-#echo -e "\n"
-#read -p "${txtflash}Deactivate the System Integrity Protection first... " -n1 -s
-#echo -e "\n"
-#launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
-
 #Search the current folder by default in Finder
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
