@@ -158,6 +158,22 @@ dockutil --remove 'Keynote' --allhomes
 sudo rm -rf /Applications/Pages.app
 dockutil --remove 'Pages' --allhomes
 sudo rm -rf /Applications/GarageBand.app
+
+#remove apps from dock
+dockutil --remove 'Books' --allhomes
+dockutil --remove 'Maps' --allhomes
+dockutil --remove 'Reminders' --allhomes
+dockutil --remove 'FaceTime' --allhomes
+dockutil --remove 'Notes' --allhomes
+dockutil --remove 'System Preferences' --allhomes
+dockutil --remove 'Calendar' --allhomes
+dockutil --remove 'Mail' --allhomes
+dockutil --remove 'Contacts' --allhomes
+dockutil --remove 'Siri' --allhomes
+dockutil --remove 'Launchpad' --allhomes
+dockutil --remove 'Safari' --allhomes
+dockutil --remove 'App Store' --allhomes
+dockutil --remove 'iTunes' --allhomes
 #Kill apps
 killall Finder
 killall Dock
