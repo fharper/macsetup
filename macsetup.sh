@@ -534,6 +534,8 @@ open -a Postman
 mas install 819348619
 open -a Revisions
 
+#ShellCheck
+brew install shellcheck
 #Rightzoom (not the latest version, doesn't work on my OS)
 #brew cask install rightzoom
 #open -a RightZoom
