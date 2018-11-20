@@ -376,7 +376,6 @@ open -a "Antidote 9"
 
 #Appcleaner
 brew cask install appcleaner
-open -a AppCleaner
 
 #Asciinema
 brew install asciinema
@@ -397,7 +396,6 @@ open -a Boxer
 
 #Brave browser
 brew cask install brave-browser
-open -a Brave
 
 #Brew Cask Upgrade
 brew tap buo/cask-upgrade
@@ -416,7 +414,6 @@ todo+="\n"
 
 #Cryptomator
 brew cask install cryptomator
-open -a Cryptomator
 
 #DaisyDisk (better to install the non App Store version)
 brew cask install daisydisk
@@ -430,29 +427,24 @@ open -a Discord
 
 #Duplicate Photo Fixer Pro
 mas install 963642514
-open -a "Duplicate Photo Fixer Pro"
 
 #FileZilla
 brew cask install filezilla
-open -a FileZilla
 
 #Firefox
 brew cask install firefox
 
 #Fliqlo screensaver
 brew cask install fliqlo
-open -a Firefox
 
 #Gimp
 brew cask install gimp
-open -a Gimp
 
 #ICS split
 #icssplit file.ics outfilename --maxsize=900000
 pip3 install icssplit
 #iMovie
 mas install 408981434
-open -a iMovie
 
 #Inkscape
 brew install caskformula/caskformula/inkscape
@@ -460,7 +452,6 @@ brew install caskformula/caskformula/inkscape
 
 #Kaleidoscope
 mas install 587512244
-open -a Kaleidoscope
 
 #Kaleidoscope KSDiff
 brew cask install ksdiff
@@ -474,14 +465,12 @@ open -a "Lightshot Screenshot"
 
 #Luminar
 mas install 1161679618
-open -a Luminar
 
 #LZip
 brew install lzip
 
 #MacDown
 brew cask install macdown
-open -a MacDown
 
 #Mate Translator (previously Instant Translate)
 mas install 1005088137
@@ -493,7 +482,6 @@ open -a "Menubar Countdown"
 
 #Messenger
 brew cask install messenger
-open -a Messenger
 
 #Moom
 mas install 419330170
@@ -501,7 +489,6 @@ open -a Moom
 
 #MindNode
 mas install 992076693
-open -a MindNode
 
 #Noizio
 mas install 928871589
@@ -513,7 +500,6 @@ open -a OpenEmu
 
 #Opera
 brew cask install opera
-open -a Opera
 
 #Parcel
 mas install 639968404
@@ -521,7 +507,6 @@ open -a Parcel
 
 #PDFSam Basic
 brew cask install pdfsam-basic
-open -a PDFSam
 
 #Pocket
 mas install 568494494
@@ -546,17 +531,14 @@ brew cask install slack
 
 #Smallpdf
 brew cask install smallpdf
-open -a Slack
 
 #Spotify
 brew cask install spotify
-open -a Spotify
 
 #Teams
 brew cask install microsoft-teams
 #Steam
 brew cask install steam
-open -a Steam
 
 #TeamViewer
 brew cask install teamviewer
@@ -576,15 +558,12 @@ open -a TripMode
 
 #TweetDeck
 mas install 485812721
-open -a TweetDeck
 
 #VLC
 brew cask install vlc
-open -a VLC
 
 #WhatsApp
 brew cask install whatsapp
-open -a WhatsApp
 
 #Witch
 brew cask install witch
@@ -594,7 +573,6 @@ brew cask install zoomus
 
 #Zoom It
 mas install 476272252
-open -a "Zoom It"
 
 ##########################################
 # Change file type default association ###
