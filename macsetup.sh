@@ -243,9 +243,6 @@ brew install bash-completion
 #Brew Cask
 brew tap caskroom/cask
 
-#Fix XCode
-xcode-select --install
-
 
 #Install pip
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
