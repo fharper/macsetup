@@ -297,11 +297,6 @@ open ~/Documents/Personal/Configurations/Alfred\ -\ Dropbox.workflow/
 tag -a alfred:ignore -R ~/Music
 open ~/Documents/Personal/Configurations/Alfred\ -\ Music.workflow/
 
-
-#####################
-# Install dev stuff #
-#####################
-
 #Generate a new public SSH key
 ssh-keygen -t rsa -b 4096 -C "fharper@oocz.net"
 ssh-add -K ~/.ssh/id_rsa
