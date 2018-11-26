@@ -250,10 +250,6 @@ brew tap caskroom/cask
 #Fix XCode
 xcode-select --install
 
-#Visual Studio Code
-brew cask install visual-studio-code
-open -a "Visual Studio Code"
-
 
 #Install pip
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
