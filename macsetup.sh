@@ -19,6 +19,9 @@ brew install bash-completion
 brew tap caskroom/cask
 brew tap buo/cask-upgrade
 
+#Mac App Store command line interface
+brew install mas
+
 #Visual Studio Code
 brew cask install visual-studio-code
 code --install-extension Shan.code-settings-sync
