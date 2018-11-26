@@ -1,14 +1,7 @@
 #! /bin/bash
 
-#########
-# Notes #
-#########
 
-# Search for App Store apps
-# mas search "App Name"
 
-# Reload bash
-# source ~/.bash_profile
 
 
 txtflash=$(tput setaf 3) #yellow
@@ -257,8 +250,6 @@ echo -e "\n"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
 nvm install v10.13.0
 nvm alias default v10.13.0
-
-#Node packages
 npm install -g npm@latest
 npm install -g express-generator
 npm install -g nodemon
@@ -396,7 +387,7 @@ todo+="\n"
 #Cryptomator
 brew cask install cryptomator
 
-#DaisyDisk (better to install the non App Store version)
+#DaisyDisk
 brew cask install daisydisk
 open -a DaisyDisk
 todo+="- Add your license to DaisyDisk"
