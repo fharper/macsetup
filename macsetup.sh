@@ -112,11 +112,10 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 chflags nohidden ~/Library/
 
 #Create the symlinks between system folders and Dropbox before the sync start
-ln -s ${HOME}/Pictures/ ${HOME}"/Dropbox"
-ln -s ${HOME}/Music/ ${HOME}"/Dropbox"
-ln -s ${HOME}/Movies/ ${HOME}"/Dropbox"
-ln -s ${HOME}/Downloads/ ${HOME}"/Dropbox"
-ln -s ${HOME}/Documents/ ${HOME}"/Dropbox"
+ln -s ~/Music/ ~/Dropbox
+ln -s ~/Movies/ ~/Dropbox
+ln -s ~/Downloads/ ~/Dropbox
+ln -s ~/Documents/ ~/Dropbox
 
 #Allow Apps from anywhere to be installed without warnings
 sudo spctl --master-disable
