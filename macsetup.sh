@@ -75,6 +75,9 @@ open -a Todoist
 brew cask install slack
 open -a Slack
 
+#Spotify
+brew cask install spotify
+
 
 #####################
 # OS Configurations #
@@ -495,9 +498,6 @@ brew cask install signal
 
 #Smallpdf
 brew cask install smallpdf
-
-#Spotify
-brew cask install spotify
 
 #Teams
 brew cask install microsoft-teams
