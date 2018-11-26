@@ -78,6 +78,25 @@ open -a Slack
 #Spotify
 brew cask install spotify
 
+######################
+# bash profile stuff #
+######################
+echo '###################' >>~/.bash_profile
+echo '# Git branch name #' >>~/.bash_profile
+echo '###################' >>~/.bash_profile
+echo 'function parse_git_branch () {' >>~/.bash_profile
+echo "  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'" >>~/.bash_profile
+echo '}' >>~/.bash_profile
+echo '' >>~/.bash_profile
+echo 'RED="\[\033[0;31m\]"' >>~/.bash_profile
+echo 'YELLOW="\[\033[0;33m\]"' >>~/.bash_profile
+echo 'GREEN="\[\033[0;32m\]"' >>~/.bash_profile
+echo 'NO_COLOR="\[\033[0m\]"' >>~/.bash_profile
+echo '' >>~/.bash_profile
+echo 'PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "' >>~/.bash_profile
+
+source ~/.bash_profile
+
 
 #####################
 # OS Configurations #
