@@ -466,7 +466,6 @@ mas install 1005088137
 
 #Menubar Countdown
 brew cask install menubar-countdown
-open -a "Menubar Countdown"
 
 #Messenger
 brew cask install messenger
@@ -480,11 +479,9 @@ mas install 992076693
 
 #Noizio
 mas install 928871589
-open -a Noizio
 
 #OpenEmu
 brew cask install openemu
-open -a OpenEmu
 
 #Opera
 brew cask install opera
