@@ -1,12 +1,65 @@
 #! /bin/bash
 
-
-
-
-
 txtflash=$(tput setaf 3) #yellow
 txtblack=$(tput setaf 7)
 todo="\n########\n# TODO #\n########\n"
+
+############
+# Top apps #
+############
+
+#iTerm
+brew cask install iterm2
+open -a iTerm
+
+#Visual Studio Code
+brew cask install visual-studio-code
+code --install-extension Shan.code-settings-sync
+code
+
+#Chrome
+brew cask install google-chrome
+open -a "Google Chrome"
+
+#1Password
+brew cask install 1password
+open -a "1Password 7"
+
+#Dropbox
+brew cask install dropbox
+open -a Dropbox
+
+#Evernote
+mas install 406056744
+open -a Evernote
+
+#Todoist
+mas install 585829637
+open -a Todoist
+
+#Alfred
+brew cask install alfred
+open -a "Alfred 3"
+todo+="- Remove the spotlight keyboard shortcut and set the Alfred one"
+todo+="\n"
+
+#Bartender
+brew cask install bartender
+open -a "Bartender 3"
+
+#Hammerspoon
+brew cask install hammerspoon
+rm -rf ${HOME}/.hammerspoon
+ln -s ~/Documents/Personal/Configurations/.hammerspoon ~/.hammerspoon
+open -a Hammerspoon
+
+#Evernote
+mas install 406056744
+open -a Evernote
+
+#Todoist
+mas install 585829637
+open -a Todoist
 
 
 #####################
@@ -290,56 +343,9 @@ brew cask install mysql-shell
 #MongoDB
 brew install mongodb
 
-
-#########################
-# Install the main apps #
-#########################
-
-#Dropbox
-brew cask install dropbox
-open -a Dropbox
-echo -e "\n"
-read -p "${txtflash}Setup Dropbox and press any key to continue after... " -n1 -s
-echo -e "\n"
-
-#Chrome
-brew cask install google-chrome
-open -a "Google Chrome"
-
 #YARN
 brew install yarn
 
-#Caffeine
-brew cask install caffeine
-open -a Caffeine
-
-#1Password
-brew cask install 1password
-open -a "1Password 7"
-
-#Alfred
-brew cask install alfred
-open -a "Alfred 3"
-todo+="- Remove the spotlight keyboard shortcut and set the Alfred one"
-todo+="\n"
-
-#Bartender
-brew cask install bartender
-open -a "Bartender 3"
-
-#Hammerspoon
-brew cask install hammerspoon
-rm -rf ${HOME}/.hammerspoon
-ln -s ${HOME}/Documents/Personal/Configurations/.hammerspoon ${HOME}/.hammerspoon
-open -a Hammerspoon
-
-#Evernote
-mas install 406056744
-open -a Evernote
-
-#Todoist
-mas install 585829637
-open -a Todoist
 
 
 ############################
