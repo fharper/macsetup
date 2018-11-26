@@ -394,9 +394,6 @@ brew cask install boxer
 #Brave browser
 brew cask install brave-browser
 
-#Brew Cask Upgrade
-brew tap buo/cask-upgrade
-
 #Calibre
 brew cask install calibre
 
