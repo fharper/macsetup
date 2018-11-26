@@ -507,7 +507,7 @@ open -a Pocket
 brew cask install postman
 
 #Prey
-echo "Enter your Prey API key (found in the left corner of the Prey web dashboard)"
+echo "Enter your Prey API key (found in the left corner of the Prey web dashboard settings page)"
 read preyapi
 HOMEBREW_NO_ENV_FILTERING=1 API_KEY="$preyapi" brew cask install prey
 
