@@ -71,6 +71,10 @@ open -a Evernote
 mas install 585829637
 open -a Todoist
 
+#Slack
+brew cask install slack
+open -a Slack
+
 
 #####################
 # OS Configurations #
@@ -488,9 +492,6 @@ brew install shellcheck
 
 #Signal
 brew cask install signal
-
-#Slack
-brew cask install slack
 
 #Smallpdf
 brew cask install smallpdf
