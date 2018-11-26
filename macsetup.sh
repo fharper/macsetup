@@ -618,7 +618,11 @@ dockutil --add /Applications/Antidote\ 9.app/ --allhomes
 dockutil --add /Applications/TweetDeck.app/ --allhomes
 dockutil --add /Applications/Slack.app/ --allhomes
 
-#Order apps in Dock (list them in inversed order)
+######################
+# Order apps in Dock #
+######################
+
+#list them in inversed order)
 dockutil --move 'Antidote' --position beginning --allhomes
 dockutil --move '1Password' --position beginning --allhomes
 dockutil --move 'Messages' --position beginning --allhomes
