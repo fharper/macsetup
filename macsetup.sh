@@ -231,9 +231,9 @@ killall Dock
 killall SystemUIServer
 
 
-#######################################
-# Install brew, brew cask, mas & more #
-#######################################
+#####################
+# Install dev stuff #
+#####################
 
 #Install pip
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
