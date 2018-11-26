@@ -461,7 +461,7 @@ brew install lzip
 #MacDown
 brew cask install macdown
 
-#Mate Translate (previously Instant Translate)
+#Mate Translate
 mas install 1005088137
 
 #Menubar Countdown
