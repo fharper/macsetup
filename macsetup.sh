@@ -254,8 +254,6 @@ xcode-select --install
 brew cask install visual-studio-code
 open -a "Visual Studio Code"
 
-#Mac App Store command line interface
-brew install mas
 
 #Install pip
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
