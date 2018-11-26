@@ -639,9 +639,9 @@ dockutil --move 'Evernote' --position beginning --allhomes
 dockutil --move 'Google Chrome' --position beginning --allhomes
 
 
-###################
-# TODO at the end #
-###################
+#######
+# END #
+#######
 
 #Mackup
 brew install mackup
