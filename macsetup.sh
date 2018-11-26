@@ -482,9 +482,6 @@ mas install 992076693
 mas install 928871589
 open -a Noizio
 
-#Office
-brew cask install microsoft-office
-
 #OpenEmu
 brew cask install openemu
 open -a OpenEmu
