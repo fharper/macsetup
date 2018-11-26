@@ -235,15 +235,6 @@ killall SystemUIServer
 # Install brew, brew cask, mas & more #
 #######################################
 
-#Brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew analytics off
-brew install bash-completion
-
-#Brew Cask
-brew tap caskroom/cask
-
-
 #Install pip
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
 sudo python get-pip.py
