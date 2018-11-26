@@ -147,7 +147,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeS
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -bool false
 
 #Disable Launchpad and Show Desktop Gestures on Trackpad
-defaults write com.apple.dock showDesktopGestureEnabled   -bool true
+defaults write com.apple.dock showDesktopGestureEnabled -bool true
 defaults write com.apple.dock showLaunchpadGestureEnabled -bool true
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.fourFingerPinchSwipeGesture -bool false
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture -bool false
