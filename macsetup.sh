@@ -308,9 +308,10 @@ ssh-add -K ~/.ssh/id_rsa
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 ssh-keyscan -t rsa bitbucket.org >> ~/.ssh/known_hosts
 pbcopy < ~/.ssh/id_rsa.pub
-echo -e "\n"
-read -p "${txtflash}Add SSH key to Github at https://github.com/settings/keys (copied in the clipboard)" -n1 -s
-read -p "${txtflash}Add SSH key to Bitbucket at https://bitbucket.org/account/user/fharper/ssh-keys/ (copied in the clipboard)" -n1 -s
+open https://github.com/settings/keys
+echo -e "${txtflash}Add SSH key to Github (copied in the clipboard)"
+open https://bitbucket.org/account/user/fharper/ssh-keys/
+read -p "${txtflash}Add SSH key to Bitbucket (copied in the clipboard)" -n1 -s
 echo -e "\n"
 
 #Node stuff
