@@ -380,7 +380,6 @@ brew install asciinema
 
 #Battery Indicator
 mas install 1206020918
-open -a "Battery Indicator"
 
 #Battery Stats for AirPods
 mas install 1405763798
@@ -391,7 +390,6 @@ open -a /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
 
 #Boxer
 brew cask install boxer
-open -a Boxer
 
 #Brave browser
 brew cask install brave-browser
@@ -404,7 +402,6 @@ brew cask install calibre
 
 #Camtasia
 brew cask install camtasia
-open -a "Camtasia 2018"
 todo+="- Add your license to Camtasia"
 todo+="\n"
 
@@ -413,13 +410,11 @@ brew cask install cryptomator
 
 #DaisyDisk
 brew cask install daisydisk
-open -a DaisyDisk
 todo+="- Add your license to DaisyDisk"
 todo+="\n"
 
 #Discord
 brew cask install discord
-open -a Discord
 
 #Duplicate Photo Fixer Pro
 mas install 963642514
