@@ -578,7 +578,7 @@ duti -s com.microsoft.VSCode dyn.ah62d4rv4ge8027pb all #lua
 duti -s org.videolan.vlc public.avi all #avi
 duti -s org.videolan.vlc public.3gpp all #3gp
 duti -s com.apple.Preview com.nikon.raw-image all #NEF
-duti -s com.uranusjr.macdown net.daringfireball.markdown all #Markdown
+duti -s com.microsoft.VSCode net.daringfireball.markdown all #Markdown
 duti -s com.google.Chrome public.svg-image all #SVG
 duti -s net.kovidgoyal.calibre org.idpf.epub-container all # ePub
 duti -s com.microsoft.VSCode public.shell-script all #Shell script
