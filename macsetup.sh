@@ -499,9 +499,6 @@ brew cask install smallpdf
 #Spotify
 brew cask install spotify
 
-#Steam
-brew cask install steam
-
 #Teams
 brew cask install microsoft-teams
 
