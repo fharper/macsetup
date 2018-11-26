@@ -291,11 +291,14 @@ brew install hub
 #Prevent code to show in Alfred
 brew install tag
 tag -a alfred:ignore -R ~/Code
-open ~/Documents/Personal/Configurations/Alfred\ -\ Code.workflow/
+cp -R ~/Documents/Personal/Configurations/Alfred\ -\ Code.workflow/ ~/Desktop/Alfred\ -\ Code.workflow/
+open ~/Desktop/Alfred\ -\ Code.workflow/
 tag -a alfred:ignore -R ~/Dropbox
-open ~/Documents/Personal/Configurations/Alfred\ -\ Dropbox.workflow/
+cp -R ~/Documents/Personal/Configurations/Alfred\ -\ Dropbox.workflow/ ~/Desktop/Alfred\ -\ Dropbox.workflow/
+open ~/Desktop/Alfred\ -\ Dropbox.workflow/
 tag -a alfred:ignore -R ~/Music
-open ~/Documents/Personal/Configurations/Alfred\ -\ Music.workflow/
+cp -R ~/Documents/Personal/Configurations/Alfred\ -\ Music.workflow/ ~/Desktop/Alfred\ -\ Music.workflow/
+open ~/Desktop/Alfred\ -\ Music.workflow/
 
 #Generate a new public SSH key
 ssh-keygen -t rsa -b 4096 -C "fharper@oocz.net"
