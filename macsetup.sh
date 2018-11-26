@@ -453,9 +453,6 @@ open -a "Lightshot Screenshot"
 #LZip
 brew install lzip
 
-#MacDown
-brew cask install macdown
-
 #Mate Translate
 mas install 1005088137
 
