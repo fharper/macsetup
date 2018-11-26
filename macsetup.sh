@@ -235,10 +235,6 @@ killall SystemUIServer
 # Install brew, brew cask, mas & more #
 #######################################
 
-#iTerm
-brew cask install iterm2
-open -a iTerm
-
 #Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off
