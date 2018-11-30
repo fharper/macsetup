@@ -97,6 +97,8 @@ echo 'GREEN="\[\033[0;32m\]"' >>~/.bash_profile
 echo 'NO_COLOR="\[\033[0m\]"' >>~/.bash_profile
 echo '' >>~/.bash_profile
 echo 'PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "' >>~/.bash_profile
+echo '' >>~/.bash_profile
+echo 'eval "$(rbenv init -)"' >>~/.bash_profile
 
 source ~/.bash_profile
 
