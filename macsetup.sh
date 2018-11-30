@@ -366,6 +366,9 @@ brew install yarn
 #ShellCheck
 brew install shellcheck
 
+#Projects contributions
+npm install -g weallcontribute
+
 
 ############################
 # Install the applications #
