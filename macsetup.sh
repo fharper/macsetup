@@ -85,25 +85,28 @@ brew cask install spotify
 ######################
 # bash profile stuff #
 ######################
+echo 'if [ -f ~/.bashrc ]; then' >>~/.bash_profile
+echo '    source ~/.bashrc' >>~/.bash_profile
+echo 'fi' >>~/.bash_profile
 
-echo '###################' >>~/.bash_profile
-echo '# Git branch name #' >>~/.bash_profile
-echo '###################' >>~/.bash_profile
-echo 'function parse_git_branch () {' >>~/.bash_profile
-echo "  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'" >>~/.bash_profile
-echo '}' >>~/.bash_profile
-echo '' >>~/.bash_profile
-echo 'RED="\[\033[0;31m\]"' >>~/.bash_profile
-echo 'YELLOW="\[\033[0;33m\]"' >>~/.bash_profile
-echo 'GREEN="\[\033[0;32m\]"' >>~/.bash_profile
-echo 'NO_COLOR="\[\033[0m\]"' >>~/.bash_profile
-echo '' >>~/.bash_profile
-echo 'PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "' >>~/.bash_profile
-echo '' >>~/.bash_profile
-echo 'eval "$(rbenv init -)"' >>~/.bash_profile
-echo '' >>~/.bash_profile
-npm completion >> ~/.bash_profile
-source ~/.bash_profile
+echo '###################' >>~/.bashrc
+echo '# Git branch name #' >>~/.bashrc
+echo '###################' >>~/.bashrc
+echo 'function parse_git_branch () {' >>~/.bashrc
+echo "  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'" >>~/.bashrc
+echo '}' >>~/.bashrc
+echo '' >>~/.bashrc
+echo 'RED="\[\033[0;31m\]"' >>~/.bashrc
+echo 'YELLOW="\[\033[0;33m\]"' >>~/.bashrc
+echo 'GREEN="\[\033[0;32m\]"' >>~/.bashrc
+echo 'NO_COLOR="\[\033[0m\]"' >>~/.bashrc
+echo '' >>~/.bashrc
+echo 'PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "' >>~/.bashrc
+echo '' >>~/.bashrc
+echo 'eval "$(rbenv init -)"' >>~/.bashrc
+echo '' >>~/.bashrc
+npm completion >> ~/.bashrc
+source ~/.bashrc
 
 
 #####################
