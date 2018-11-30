@@ -432,7 +432,7 @@ brew cask install gimp
 pip3 install icssplit
 
 #Inkscape
-brew install caskformula/caskformula/inkscape
+brew install inkscape
 /usr/local/Cellar/inkscape/0.92.2_1/bin/inkscape
 
 #Kaleidoscope
