@@ -324,6 +324,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 nvm install v10.13.0
 npm install -g npm@latest
+npm adduser
 npm install -g express-generator
 npm install -g nodemon
 npm install -g npx
