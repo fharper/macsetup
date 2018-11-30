@@ -85,6 +85,7 @@ brew cask install spotify
 ######################
 # bash profile stuff #
 ######################
+
 echo '###################' >>~/.bash_profile
 echo '# Git branch name #' >>~/.bash_profile
 echo '###################' >>~/.bash_profile
@@ -100,7 +101,8 @@ echo '' >>~/.bash_profile
 echo 'PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "' >>~/.bash_profile
 echo '' >>~/.bash_profile
 echo 'eval "$(rbenv init -)"' >>~/.bash_profile
-
+echo '' >>~/.bash_profile
+npm completion >> ~/.bash_profile
 source ~/.bash_profile
 
 
