@@ -102,6 +102,15 @@ echo 'NO_COLOR="\[\033[0m\]"' >>~/.bashrc
 echo '' >>~/.bashrc
 echo 'PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "' >>~/.bashrc
 echo '' >>~/.bashrc
+
+echo '' >>~/.bashrc
+echo '#Git completion' >>~/.bashrc
+echo '#' >>~/.bashrc
+echo 'if [ -f ~/.git-completion.bash ]; then' >>~/.bashrc
+echo '    . ~/.git-completion.bash' >>~/.bashrc
+echo 'fi' >>~/.bashrc
+echo '' >>~/.bashrc
+
 echo 'eval "$(rbenv init -)"' >>~/.bashrc
 echo '' >>~/.bashrc
 npm completion >> ~/.bashrc
@@ -211,6 +220,7 @@ git config --global push.default current
 git config --global difftool.prompt false
 git config --global diff.tool Kaleidoscope
 git config --global difftool.Kaleidoscope.cmd 'ksdiff --partial-changeset --relative-path "$MERGED" -- "$LOCAL" "$REMOTE"'
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
 #Deactivate the Chrome Printing Dialog
 defaults write com.google.Chrome DisablePrintPreview -bool true
