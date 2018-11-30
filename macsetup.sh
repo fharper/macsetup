@@ -81,6 +81,7 @@ open -a Slack
 #Spotify
 brew cask install spotify
 
+
 ######################
 # bash profile stuff #
 ######################
