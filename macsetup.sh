@@ -444,6 +444,9 @@ mas install 587512244
 #Kaleidoscope KSDiff
 brew cask install ksdiff
 
+#Keybase
+brew cask install keybase
+
 #Larch
 gem install larch
 
