@@ -89,9 +89,8 @@ echo 'if [ -f ~/.bashrc ]; then' >>~/.bash_profile
 echo '    source ~/.bashrc' >>~/.bash_profile
 echo 'fi' >>~/.bash_profile
 
-echo '###################' >>~/.bashrc
 echo '# Git branch name #' >>~/.bashrc
-echo '###################' >>~/.bashrc
+echo '#' >>~/.bashrc
 echo 'function parse_git_branch () {' >>~/.bashrc
 echo "  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'" >>~/.bashrc
 echo '}' >>~/.bashrc
@@ -107,6 +106,7 @@ echo 'eval "$(rbenv init -)"' >>~/.bashrc
 echo '' >>~/.bashrc
 npm completion >> ~/.bashrc
 source ~/.bashrc
+echo '' >>~/.bashrc
 
 
 #####################
