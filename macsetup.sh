@@ -53,6 +53,9 @@ open -a "Alfred 3"
 todo+="- Remove the spotlight keyboard shortcut and set the Alfred one"
 todo+="\n"
 
+#Amphetamine
+mas install 937984704
+
 #Bartender
 brew cask install bartender
 open -a "Bartender 3"
@@ -375,9 +378,6 @@ open -a "Antidote 9"
 
 #Asciinema
 brew install asciinema
-
-#Battery Indicator
-mas install 1206020918
 
 #Battery Stats for AirPods
 mas install 1405763798
