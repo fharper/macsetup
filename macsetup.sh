@@ -377,7 +377,6 @@ npm install -g weallcontribute
 #Antidote
 todo+="- Download & install Antidote (see the link in 1Password) "
 todo+="\n"
-open -a "Antidote 9"
 
 #Asciinema
 brew install asciinema
