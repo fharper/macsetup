@@ -370,6 +370,9 @@ npm install -g pa11y
 #Git open
 npm install -g git-open
 
+#Git recent
+npm install -g git-recent
+
 #Python stuff
 brew install pyenv
 pyenv install 3.7.0
