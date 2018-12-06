@@ -347,6 +347,9 @@ npm install -g express-generator
 npm install -g nodemon
 npm install -g npx
 
+#Nodeschool workshops (all)
+npm install -g learnyou
+
 #Security
 npm install -g snyk
 snyk auth
