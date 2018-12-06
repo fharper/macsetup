@@ -346,6 +346,7 @@ npm adduser
 npm install -g express-generator
 npm install -g nodemon
 npm install -g npx
+npm install -g npm-remote-ls
 
 #Nodeschool workshops (all)
 npm install -g learnyou
