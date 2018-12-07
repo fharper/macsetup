@@ -342,6 +342,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install v10.13.0
 npm install -g npm@latest
 npm config set prefix /usr/local
+npm config set editor code
 npm adduser
 npm install -g express-generator
 npm install -g nodemon
