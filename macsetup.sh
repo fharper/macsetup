@@ -88,8 +88,8 @@ git config --global user.name "Frédéric Harper"
 git config --global user.email fharper@oocz.net
 git config --global push.default current
 git config --global difftool.prompt false
-git config --global diff.tool Kaleidoscope
-git config --global difftool.Kaleidoscope.cmd 'ksdiff --partial-changeset --relative-path "$MERGED" -- "$LOCAL" "$REMOTE"'
+git config --global diff.tool vscode
+git config --global difftool.vscode.cmd 'code --diff --wait $LOCAL $REMOTE'
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
 
@@ -465,12 +465,6 @@ pip3 install icssplit
 #Inkscape
 brew install inkscape
 /usr/local/Cellar/inkscape/0.92.2_1/bin/inkscape
-
-#Kaleidoscope
-mas install 587512244
-
-#Kaleidoscope KSDiff
-brew cask install ksdiff
 
 #Keybase
 brew cask install keybase
