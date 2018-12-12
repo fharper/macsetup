@@ -79,6 +79,9 @@ open -a Todoist
 brew cask install slack
 open -a Slack
 
+#Signal
+brew cask install signal
+
 #Spotify
 brew cask install spotify
 
