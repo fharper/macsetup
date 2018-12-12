@@ -347,6 +347,7 @@ nvm install v10.13.0
 npm install -g npm@latest
 npm config set prefix /usr/local
 npm config set editor code
+npm config set sign-git-tag true
 npm adduser
 npm install -g express-generator
 npm install -g nodemon
