@@ -314,7 +314,7 @@ brew install hub
 
 #Prevent code to show in Alfred
 brew install tag
-tag -a alfred:ignore -R ~/Code
+tag -a alfred:ignore -R ~/Documents/Code
 cp -R ~/Documents/Personal/Configurations/Alfred\ -\ Code.workflow/ ~/Desktop/Alfred\ -\ Code.workflow/
 open ~/Desktop/Alfred\ -\ Code.workflow/
 tag -a alfred:ignore -R ~/Dropbox
