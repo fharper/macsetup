@@ -356,10 +356,6 @@ npm install -g npm-remote-ls
 #Nodeschool workshops (all)
 npm install -g learnyou
 
-#Security
-npm install -g snyk
-snyk auth
-
 #JavaScript
 npm install -g uglify-js
 
