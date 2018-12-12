@@ -11,6 +11,7 @@ todo="\n########\n# TODO #\n########\n"
 #iTerm
 brew cask install iterm2
 open -a iTerm
+curl -L https://iterm2.com/misc/install_shell_integration.sh | bash
 
 #Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
