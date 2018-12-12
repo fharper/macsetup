@@ -490,9 +490,6 @@ mas install 1005088137
 #Menubar Countdown
 brew cask install menubar-countdown
 
-#Messenger
-brew cask install messenger
-
 #Moom
 mas install 419330170
 open -a Moom
@@ -613,7 +610,6 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Menubar Countdown", path:"/Applications/Menubar Countdown.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Messages", path:"/Applications/Messages.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Signal", path:"/Applications/Signal.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Messenger", path:"/Applications/Messenger.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "RightZoom", path:"/Applications/RightZoom.app", hidden:true}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Todoist", path:"/Applications/Todoist.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "TweetDeck", path:"/Applications/TweetDeck.app", hidden:false}'
@@ -627,7 +623,6 @@ dockutil --add /Applications/iTerm.app/ --allhomes
 dockutil --add /Applications/Evernote.app/ --allhomes
 dockutil --add /Applications/Todoist.app/ --allhomes
 dockutil --add /Applications/Signal.app/ --allhomes
-dockutil --add /Applications/Messenger.app/ --allhomes
 dockutil --add /Applications/1Password\ 7.app/ --allhomes
 dockutil --add /Applications/Pocket.app/ --allhomes
 dockutil --add /Applications/Spotify.app/ --allhomes
@@ -644,7 +639,6 @@ dockutil --move 'Antidote' --position beginning --allhomes
 dockutil --move '1Password' --position beginning --allhomes
 dockutil --move 'Messages' --position beginning --allhomes
 dockutil --move 'Signal' --position beginning --allhomes
-dockutil --move 'Messenger' --position beginning --allhomes
 dockutil --move 'TweetDeck' --position beginning --allhomes
 dockutil --move 'Photos' --position beginning --allhomes
 dockutil --move 'Pocket' --position beginning --allhomes
