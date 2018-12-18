@@ -109,6 +109,9 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 
 npm install -g trash-cli
 brew install wifi-password
+git clone https://github.com/rupa/z.git ~/z
+
+
 ######################
 # bash profile stuff #
 ######################
