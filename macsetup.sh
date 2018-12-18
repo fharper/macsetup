@@ -122,7 +122,6 @@ git clone https://github.com/rupa/z.git ~/z
 cp .bash_profile ~/
 cp .bashrc ~/
 source ~/.bashrc
-echo '' >>~/.bashrc
 
 
 #####################
