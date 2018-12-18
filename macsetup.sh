@@ -108,6 +108,7 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 
 
 npm install -g trash-cli
+brew install wifi-password
 ######################
 # bash profile stuff #
 ######################
