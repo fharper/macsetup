@@ -107,6 +107,9 @@ git config --global user.signingkey $gpgUUID
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
 
+######################
+# Command line tools #
+######################
 npm install -g trash-cli
 brew install wifi-password
 git clone https://github.com/rupa/z.git ~/z
