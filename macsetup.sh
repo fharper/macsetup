@@ -422,6 +422,9 @@ npm install -g weallcontribute
 #Ripgrep
 brew install ripgrep
 
+#Bundle Phobia
+npm install -g bundle-phobia-cli
+
 #Yeoman
 npm install --global yo
 
