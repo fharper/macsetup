@@ -19,6 +19,7 @@ brew analytics off
 brew install bash-completion
 brew tap caskroom/cask
 brew tap buo/cask-upgrade
+brew tap homebrew/cask-fonts
 
 #Mac App Store command line interface
 brew install mas
@@ -590,6 +591,8 @@ mas install 476272252
 #####################
 # Install the Fonts #
 #####################
+brew cask install font-fira-sans
+
 for filename in ~/Documents/Programmes/Mac/Fonts/*.*; do
         echo $filename
     done
