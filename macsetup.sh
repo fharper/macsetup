@@ -79,8 +79,8 @@ open -a Todoist
 brew cask install slack
 open -a Slack
 
-#Signal
-brew cask install signal
+#Messenger
+brew cask install Messenger
 
 #Spotify
 brew cask install spotify
@@ -536,6 +536,9 @@ read preyapi
 HOMEBREW_NO_ENV_FILTERING=1 API_KEY="$preyapi" brew cask install prey
 open /usr/local/lib/prey/current/lib/agent/utils/Prey.app --args -picture
 
+#Signal
+brew cask install signal
+
 #Smallpdf
 brew cask install smallpdf
 
@@ -619,7 +622,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Mate Translator ", path:"/Applications/Mate Translator.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Menubar Countdown", path:"/Applications/Menubar Countdown.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Messages", path:"/Applications/Messages.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Signal", path:"/Applications/Signal.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Messenger", path:"/Applications/Signal.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "RightZoom", path:"/Applications/RightZoom.app", hidden:true}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Todoist", path:"/Applications/Todoist.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "TweetDeck", path:"/Applications/TweetDeck.app", hidden:false}'
@@ -632,7 +635,7 @@ dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 dockutil --add /Applications/iTerm.app/ --allhomes
 dockutil --add /Applications/Evernote.app/ --allhomes
 dockutil --add /Applications/Todoist.app/ --allhomes
-dockutil --add /Applications/Signal.app/ --allhomes
+dockutil --add /Applications/Messenger.app/ --allhomes
 dockutil --add /Applications/1Password\ 7.app/ --allhomes
 dockutil --add /Applications/Pocket.app/ --allhomes
 dockutil --add /Applications/Spotify.app/ --allhomes
@@ -648,7 +651,7 @@ dockutil --add /Applications/Slack.app/ --allhomes
 dockutil --move 'Antidote' --position beginning --allhomes
 dockutil --move '1Password' --position beginning --allhomes
 dockutil --move 'Messages' --position beginning --allhomes
-dockutil --move 'Signal' --position beginning --allhomes
+dockutil --move 'Messenger' --position beginning --allhomes
 dockutil --move 'TweetDeck' --position beginning --allhomes
 dockutil --move 'Photos' --position beginning --allhomes
 dockutil --move 'Pocket' --position beginning --allhomes
