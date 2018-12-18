@@ -422,6 +422,9 @@ npm install -g weallcontribute
 #Ripgrep
 brew install ripgrep
 
+#Yeoman
+npm install --global yo
+
 
 ############################
 # Install the applications #
