@@ -363,11 +363,10 @@ npm install -g imagemin-jpegtran
 #Accessibility
 npm install -g pa11y
 
-#Git open
+#Git scripts
 npm install -g git-open
-
-#Git recent
 npm install -g git-recent
+npm install -g git-branch-status
 
 #Python stuff
 brew install pyenv
