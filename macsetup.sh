@@ -8,11 +8,6 @@ todo="\n########\n# TODO #\n########\n"
 # Top apps #
 ############
 
-#iTerm
-brew cask install iterm2
-open -a iTerm
-curl -L https://iterm2.com/misc/install_shell_integration.sh | bash
-
 #Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off
@@ -20,6 +15,11 @@ brew install bash-completion
 brew tap caskroom/cask
 brew tap buo/cask-upgrade
 brew tap homebrew/cask-fonts
+
+#Hyper
+brew cask install hyper
+open -a Hyper
+ln -sf ~/Documents/code/macsetup/.hyper.js ~/.hyper.js
 
 #Mac App Store command line interface
 brew install mas
