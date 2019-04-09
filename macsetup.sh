@@ -28,6 +28,9 @@ brew install mas
 brew cask install visual-studio-code
 code --install-extension Shan.code-settings-sync
 code
+brew cask install open-in-code
+todo+="- move open-in-code in Finder's toolbar"
+todo+="\n"
 
 #Chrome
 brew cask install google-chrome
