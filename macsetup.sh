@@ -21,6 +21,10 @@ brew cask install hyper
 open -a Hyper
 ln -sf ~/Documents/code/macsetup/.hyper.js ~/.hyper.js
 
+#NordVPN
+brew cask install nordvpn
+open -a NordVpn
+
 #Mac App Store command line interface
 brew install mas
 
