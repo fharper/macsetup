@@ -75,6 +75,10 @@ rm -rf ${HOME}/.hammerspoon
 ln -s ~/Documents/Personal/Configurations/.hammerspoon ~/.hammerspoon
 open -a Hammerspoon
 
+#Karabiner-Elements
+brew cask install karabiner-elements
+ln -s ~/Documents/code/macsetup/karabiner/ ~/.config
+
 #Evernote
 mas install 406056744
 open -a Evernote
