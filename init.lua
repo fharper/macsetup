@@ -31,6 +31,7 @@ local keywords = {
     ["fredslideshare"] = "https://www.slideshare.net/fredericharper",
     ["fredgoodread"] = "https://www.goodreads.com/fharper",
     ["fredgithub"] = "https://github.com/fharper",
+    ["fredblog"] = "https://fred.dev",
 
     -- Biographies
     ["fredbios"] = "Developer Advocate @ npmjs, former Mozilla & Microsoft one, Apress author, public speaker, #crazycatman & more",
