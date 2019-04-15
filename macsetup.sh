@@ -604,6 +604,9 @@ open -a TripMode
 #TweetDeck
 mas install 485812721
 
+#Vivaldi
+brew cask install vivaldi
+
 #VLC
 brew cask install vlc
 
