@@ -41,6 +41,9 @@ local keywords = {
     [":shrug"] = "¯\\_(ツ)_/¯",
     [":disapprove"] = "ಠ_ಠ",
 
+    -- Youtube reactions
+    [":bouurns"] = "https://www.youtube.com/watch?v=-Y2R01k4SXI",
+
     -- Email templates
 }
 
