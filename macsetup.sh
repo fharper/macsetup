@@ -336,13 +336,13 @@ brew cask install kitematic
 #Prevent code to show in Alfred
 brew install tag
 tag -a alfred:ignore -R ~/Documents/Code
-cp -R ~/Documents/Personal/Configurations/Alfred\ -\ Code.workflow/ ~/Desktop/Alfred\ -\ Code.workflow/
+cp -R ~/Documents/configs/Alfred\ -\ Code.workflow/ ~/Desktop/Alfred\ -\ Code.workflow/
 open ~/Desktop/Alfred\ -\ Code.workflow/
 tag -a alfred:ignore -R ~/Dropbox
-cp -R ~/Documents/Personal/Configurations/Alfred\ -\ Dropbox.workflow/ ~/Desktop/Alfred\ -\ Dropbox.workflow/
+cp -R ~/Documents/configs/Alfred\ -\ Dropbox.workflow/ ~/Desktop/Alfred\ -\ Dropbox.workflow/
 open ~/Desktop/Alfred\ -\ Dropbox.workflow/
 tag -a alfred:ignore -R ~/Music
-cp -R ~/Documents/Personal/Configurations/Alfred\ -\ Music.workflow/ ~/Desktop/Alfred\ -\ Music.workflow/
+cp -R ~/Documents/configs/Alfred\ -\ Music.workflow/ ~/Desktop/Alfred\ -\ Music.workflow/
 open ~/Desktop/Alfred\ -\ Music.workflow/
 
 #Generate a new public SSH key
