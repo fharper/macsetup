@@ -122,6 +122,8 @@ git config --global user.signingkey $gpgUUID
 
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
+brew install git-lfs
+
 
 ######################
 # Command line tools #
