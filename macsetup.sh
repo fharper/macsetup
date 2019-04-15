@@ -72,7 +72,7 @@ open -a "Bartender 3"
 #Hammerspoon
 brew cask install hammerspoon
 rm -rf ${HOME}/.hammerspoon
-ln -s ~/Documents/Personal/Configurations/.hammerspoon ~/.hammerspoon
+ln -s ~/Documents/code/macsetup/init.lua ~/.hammerspoon/init.lua
 open -a Hammerspoon
 
 #Karabiner-Elements
