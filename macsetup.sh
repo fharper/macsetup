@@ -288,6 +288,11 @@ killall Finder
 killall Dock
 killall SystemUIServer
 
+#Gray
+brew cask install gray
+todo+="- Change Chrome to light appareance with Gray"
+todo+="\n"
+
 
 #####################
 # Install dev stuff #
