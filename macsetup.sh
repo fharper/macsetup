@@ -101,8 +101,7 @@ brew cask install spotify
 # Git configurations #
 ######################
 git config --global user.name "Frédéric Harper"
-git config --global user.email fharper@npmjs.com
-
+git config --global user.email fharper@oocz.net
 git config --global push.default current
 git config --global pull.ff only
 git config --global merge.ff only
