@@ -116,6 +116,7 @@ gpg --list-secret-keys --keyid-format LONG
 echo "Copy & paste your public key UUID listed below (line sec - after the /)"
 read gpgUUID
 git config --global user.signingkey $gpgUUID
+git config --global commit.gpgsign true
 
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
