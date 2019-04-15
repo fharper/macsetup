@@ -519,10 +519,6 @@ brew cask install krita
 #Larch
 gem install larch
 
-#Lightshot
-mas install 526298438
-open -a "Lightshot Screenshot"
-
 #LZip
 brew install lzip
 
