@@ -20,6 +20,7 @@ local keywords = {
     ["gits"] = "git status",
     ["gitu"] = "git update-index --assume-unchanged ",
     ["gitt"] = "git tag -a v -m \"\"",
+    ["gito"] = "git open",
 
     -- Social media
     ["thxpost"] = "thanks for sharing my post in your network ",
