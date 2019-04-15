@@ -517,6 +517,9 @@ brew install inkscape
 #Keybase
 brew cask install keybase
 
+#Krita
+brew cask install krita
+
 #Larch
 gem install larch
 
