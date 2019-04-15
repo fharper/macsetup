@@ -108,9 +108,6 @@ brew cask install slowquitapps
 git config --global user.name "Frédéric Harper"
 git config --global user.email fharper@oocz.net
 git config --global push.default current
-git config --global pull.ff only
-git config --global merge.ff only
-
 git config --global difftool.prompt false
 git config --global diff.tool vscode
 git config --global difftool.vscode.cmd 'code --diff --wait $LOCAL $REMOTE'
