@@ -585,6 +585,9 @@ brew cask install microsoft-teams
 #TeamViewer
 brew cask install teamviewer
 
+#Telegram
+brew cask install telegram
+
 #The Clock
 mas install 488764545
 open -a "The Clock"
