@@ -601,6 +601,8 @@ mas install 425424353
 brew cask install tripmode
 open -a TripMode
 
+#Unrar
+brew install unrar
 #TweetDeck
 mas install 485812721
 
