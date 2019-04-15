@@ -31,6 +31,7 @@ local keywords = {
     ["fredslideshare"] = "https://www.slideshare.net/fredericharper",
     ["fredgoodread"] = "https://www.goodreads.com/fharper",
     ["fredgithub"] = "https://github.com/fharper",
+    ["fredpic"] = "https://github.com/fharper/speakerkit/blob/master/pictures/fharper-Original.jpg",
     ["fredspeaking"] = "https://outofcomfortzone.net/speaking/",
     ["fredkit"] = "https://github.com/fharper/speakerkit",
     ["fredcalendly"] = "https://calendly.com/fharper",
