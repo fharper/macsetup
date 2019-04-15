@@ -484,6 +484,9 @@ brew cask install daisydisk
 todo+="- Add your license to DaisyDisk"
 todo+="\n"
 
+#Deckset
+brew cask install deckset
+
 #Discord
 brew cask install discord
 
