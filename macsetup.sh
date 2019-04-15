@@ -570,6 +570,9 @@ open /usr/local/lib/prey/current/lib/agent/utils/Prey.app --args -picture
 #Signal
 brew cask install signal
 
+#Skype
+brew cask install skype
+
 #Sloth
 brew cask install sloth
 
