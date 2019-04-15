@@ -445,6 +445,9 @@ npm install --global yo
 todo+="- Download & install Antidote (see the link in 1Password) "
 todo+="\n"
 
+#AppCleaner
+brew cask install appcleaner
+
 #Asciinema
 brew install asciinema
 
