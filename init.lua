@@ -12,7 +12,7 @@ local keywords = {
 
     -- Dev stuff
     ["gitc"] = "git commit -m \"\"",
-    ["gitd"] = "git difftool",
+    ["gitd"] = "git difftool ",
     ["gitr"] = "git reset --hard HEAD",
     ["gitl"] = "git log",
     ["gitp"] = "git push origin",
