@@ -376,6 +376,10 @@ npm install -g learnyou
 
 #Go
 brew install go
+
+#Rust
+curl https://sh.rustup.rs -sSf | sh
+
 #JavaScript
 npm install -g uglify-js
 
