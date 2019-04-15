@@ -602,8 +602,6 @@ open -a TripMode
 
 #Unrar
 brew install unrar
-#TweetDeck
-mas install 485812721
 
 #Vivaldi
 brew cask install vivaldi
