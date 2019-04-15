@@ -120,3 +120,5 @@ git()
 . ~/z/z.sh
 #JENV
 eval "$(jenv init -)"
+
+export PATH="$HOME/.cargo/bin:$PATH"
