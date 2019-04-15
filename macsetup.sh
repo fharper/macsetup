@@ -652,7 +652,7 @@ duti -s com.google.Chrome public.svg-image all #SVG
 duti -s net.kovidgoyal.calibre org.idpf.epub-container all # ePub
 duti -s com.microsoft.VSCode public.shell-script all #Shell script
 duti -s com.microsoft.VSCode com.apple.log all #log
-duti -s com.microsoft.Excel public.comma-separated-values-text all #CSV
+duti -s com.microsoft.VSCode public.comma-separated-values-text all #CSV
 duti -s com.microsoft.VSCode public.data all #yml
 
 
