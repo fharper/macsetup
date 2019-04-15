@@ -2,6 +2,9 @@
 -- Hammerspoon
 --
 
+-- Some applications have alternate names which can also be checked if you enable Spotlight support 
+hs.application.enableSpotlightForNameSearches(true)
+
 -- List of text shortcut (ala TextExpander)
 local keywords = {
     -- Personal
