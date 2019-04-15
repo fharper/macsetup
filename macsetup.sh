@@ -436,6 +436,9 @@ npm install -g bundle-phobia-cli
 #Yeoman
 npm install --global yo
 
+#Quicklook JSON
+brew cask install quicklook-json
+
 
 ############################
 # Install the applications #
