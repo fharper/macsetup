@@ -1,3 +1,6 @@
+#PATH
+export PATH=$PATH:/Users/fharper/go/bin/
+
 # Git branch name 
 #
 function parse_git_branch () {
