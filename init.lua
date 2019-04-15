@@ -201,4 +201,5 @@ end
 hs.hotkey.bind({"cmd"}, "up", function() hs.window.focusedWindow():maximize() end)
 hs.hotkey.bind({"cmd"}, "down", function() hs.window.focusedWindow():minimize() hs.window.visibleWindows()[1]:focus() end)
 hs.hotkey.bind({"cmd"}, "left", moveScreen)
-hs.hotkey.bind({"cmd"}, "right", moveScreen)
+hs.hotkey.bind({"cmd"}, "right", moveScreen)-- Deactivating those shortcuts
+hs.hotkey.bind({"cmd"}, "m", function() end)
