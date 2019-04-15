@@ -149,7 +149,7 @@ local function keyWatcher(event)
 
                     -- Let's erase the shortcut
                     for j = 1, string.len(word) do
-                        keyStroke({}, 'delete')
+                        keyStroke({}, 'delete', 0)
                     end
 
                     -- Let's write the full replacement
