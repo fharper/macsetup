@@ -510,10 +510,6 @@ brew cask install gimp
 #icssplit file.ics outfilename --maxsize=900000
 pip3 install icssplit
 
-#Inkscape
-brew install inkscape
-/usr/local/Cellar/inkscape/0.92.2_1/bin/inkscape
-
 #Keybase
 brew cask install keybase
 
