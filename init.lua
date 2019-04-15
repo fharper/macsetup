@@ -31,6 +31,7 @@ local keywords = {
     ["fredslideshare"] = "https://www.slideshare.net/fredericharper",
     ["fredgoodread"] = "https://www.goodreads.com/fharper",
     ["fredgithub"] = "https://github.com/fharper",
+    ["fredcalendly"] = "https://calendly.com/fharper",
     ["fredblog"] = "https://fred.dev",
 
     -- Biographies
