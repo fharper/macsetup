@@ -325,6 +325,10 @@ antibody bundle caarlos0/open-pr kind:path
 #Hub (for Github)
 brew install hub
 
+#Docker
+brew cask install docker
+brew cask install kitematic
+
 #Prevent code to show in Alfred
 brew install tag
 tag -a alfred:ignore -R ~/Documents/Code
