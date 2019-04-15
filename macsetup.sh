@@ -133,8 +133,8 @@ git clone https://github.com/rupa/z.git ~/z
 ######################
 # bash profile stuff #
 ######################
-cp .bash_profile ~/
-cp .bashrc ~/
+ln -s ~/Documents/code/macsetup/.bash_profile ~/.bash_profile
+ln -s ~/Documents/code/macsetup/.bashrc ~/.bashrc
 source ~/.bashrc
 
 
