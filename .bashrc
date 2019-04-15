@@ -118,6 +118,7 @@ git()
 # Z #
 #
 . ~/z/z.sh
+
 #JENV
 eval "$(jenv init -)"
 
