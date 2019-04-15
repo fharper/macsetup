@@ -15,6 +15,7 @@ brew install bash-completion
 brew tap caskroom/cask
 brew tap buo/cask-upgrade
 brew tap homebrew/cask-fonts
+brew tap dteoh/sqa
 
 #Hyper
 brew cask install hyper
@@ -128,6 +129,7 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 npm install -g trash-cli
 brew install wifi-password
 git clone https://github.com/rupa/z.git ~/z
+curl -sLo- http://get.bpkg.sh | bash
 
 
 ######################
