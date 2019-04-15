@@ -97,6 +97,10 @@ brew cask install Messenger
 #Spotify
 brew cask install spotify
 
+#Slow Quit Apps
+brew cask install slowquitapps
+
+
 ######################
 # Git configurations #
 ######################
