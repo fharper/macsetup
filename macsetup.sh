@@ -373,6 +373,9 @@ npm install -g npm-remote-ls
 #Nodeschool workshops (all)
 npm install -g learnyou
 
+
+#Go
+brew install go
 #JavaScript
 npm install -g uglify-js
 
