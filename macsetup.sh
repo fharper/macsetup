@@ -460,6 +460,7 @@ mas install 1405763798
 #Battle.net (Diablo II, World of Warcraft)
 brew cask install battle-net
 open -a /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
+ln -sf ~/Documents/misc/Diablo/ /Applications/Diablo\ II/save
 
 #Boxer
 brew cask install boxer
