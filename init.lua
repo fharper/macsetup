@@ -40,6 +40,7 @@ local keywords = {
     [":fliptable"] = "(╯°□°)╯︵ ┻━┻",
     [":shrug"] = "¯\\_(ツ)_/¯",
     [":disapprove"] = "ಠ_ಠ",
+    [":facepalm"] = "ð¤¦",
 
     -- Youtube reactions
     [":bouurns"] = "https://www.youtube.com/watch?v=-Y2R01k4SXI",
