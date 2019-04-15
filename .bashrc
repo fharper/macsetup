@@ -95,7 +95,7 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-export NODE_EXTRA_CA_CERTS="/Users/fharper/Documents/Personal/Configurations/charles-ssl-proxying-certificate.pem"
+export NODE_EXTRA_CA_CERTS="/Users/fharper/Documents/configs/charles-ssl-proxying-certificate.pem"
 
 
 # Aliases #
