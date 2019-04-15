@@ -1,6 +1,9 @@
 #PATH
 export PATH=$PATH:/Users/fharper/go/bin/
 
+#ls Directories in color
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
 # Git branch name 
 #
 function parse_git_branch () {
