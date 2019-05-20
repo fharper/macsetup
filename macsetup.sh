@@ -597,9 +597,6 @@ brew cask install smallpdf
 #Teams
 brew cask install microsoft-teams
 
-#TeamViewer
-brew cask install teamviewer
-
 #Telegram
 brew cask install telegram
 
