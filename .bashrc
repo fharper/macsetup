@@ -146,4 +146,3 @@ git()
 eval "$(jenv init -)"
 
 eval "$(pyenv init -)"
-export PATH="$HOME/.cargo/bin:$PATH"eval "$(pyenv init -)"
