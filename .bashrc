@@ -25,6 +25,9 @@ shopt -s cmdhist
 # Do not autocomplete when accidentally pressing Tab on an empty line. (It takes forever and yields "Display all 15 gazillion possibilites?")
 shopt -s no_empty_cmd_completion
 
+# No install emoji for brew
+export HOMEBREW_NO_EMOJI=1
+
 PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 
