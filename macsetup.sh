@@ -525,6 +525,9 @@ pip3 install icssplit
 #Keybase
 brew cask install keybase
 
+#Keycastr
+brew cask install keycastr
+
 #Krita
 brew cask install krita
 
