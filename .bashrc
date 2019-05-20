@@ -1,5 +1,6 @@
 #PATH
-export PATH=$PATH:/Users/fharper/go/bin/
+export PATH="$HOME/.cargo/bin:$HOME/go/bin/:/usr/local/sbin:$PATH"
+
 
 #ls Directories in color
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
