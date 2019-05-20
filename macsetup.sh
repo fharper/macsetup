@@ -622,8 +622,6 @@ brew cask install vlc
 #WhatsApp
 brew cask install whatsapp
 
-#Witch
-brew cask install witch
 
 #Zoom
 brew cask install zoomus
