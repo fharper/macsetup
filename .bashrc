@@ -19,6 +19,9 @@ YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 NO_COLOR="\[\033[0m\]"
 
+# Save all lines of a multiple-line command in the same history entry (allows easy re-editing of multi-line commands)
+shopt -s cmdhist
+
 PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 
