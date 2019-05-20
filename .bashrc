@@ -8,6 +8,9 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 #
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+
+# Append to the history file, don't overwrite it
+shopt -s histappend
 }
 
 RED="\[\033[0;31m\]"
