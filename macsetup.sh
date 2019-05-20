@@ -104,6 +104,9 @@ brew cask install spotify
 #Slow Quit Apps
 brew cask install slowquitapps
 
+#Contexts
+brew cask install contexts
+
 
 ######################
 # Git configurations #
