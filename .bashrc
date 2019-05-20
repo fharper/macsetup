@@ -34,6 +34,9 @@ export HISTSIZE=10000
 #Ensure syncing (flushing and reloading) of .bash_history with in-memory history:
 export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
 
+#Use leading space to hide commands from history:
+export HISTCONTROL=ignorespace
+
 PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 
