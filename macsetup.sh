@@ -622,6 +622,8 @@ brew cask install vlc
 #WhatsApp
 brew cask install whatsapp
 
+#WiFi Explorer Lite
+mas install 1408727408
 
 #Zoom
 brew cask install zoomus
