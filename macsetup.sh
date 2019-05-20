@@ -560,6 +560,9 @@ open -a Parcel
 #PDFSam Basic
 brew cask install pdfsam-basic
 
+#Pikka - Color Picker
+mas install 1195076754
+
 #Pocket
 mas install 568494494
 open -a Pocket
