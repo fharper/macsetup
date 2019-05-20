@@ -28,6 +28,9 @@ shopt -s no_empty_cmd_completion
 # No install emoji for brew
 export HOMEBREW_NO_EMOJI=1
 
+#Increase the size of history maintained by BASH - variables defined below increase the number of history items and history file size (default value is 500):
+export HISTSIZE=10000
+
 PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 
