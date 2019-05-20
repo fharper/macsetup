@@ -31,6 +31,9 @@ export HOMEBREW_NO_EMOJI=1
 #Increase the size of history maintained by BASH - variables defined below increase the number of history items and history file size (default value is 500):
 export HISTSIZE=10000
 
+#Ensure syncing (flushing and reloading) of .bash_history with in-memory history:
+export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
+
 PS1="$GREEN\u@\h$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
 
