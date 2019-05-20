@@ -594,9 +594,6 @@ brew cask install sloth
 #Smallpdf
 brew cask install smallpdf
 
-#Teams
-brew cask install microsoft-teams
-
 #The Clock
 mas install 488764545
 open -a "The Clock"
