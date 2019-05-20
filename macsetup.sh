@@ -57,6 +57,9 @@ open -a Evernote
 mas install 585829637
 open -a Todoist
 
+#Typora
+brew cask install typora
+
 #Alfred
 brew cask install alfred
 open -a "Alfred 3"
