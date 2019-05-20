@@ -585,9 +585,6 @@ brew cask install rocket
 #Signal
 brew cask install signal
 
-#Skype
-brew cask install skype
-
 #Sloth
 brew cask install sloth
 
