@@ -3,6 +3,7 @@ export PATH="$HOME/.cargo/bin:$HOME/go/bin/:/usr/local/sbin:$PATH"
 
 
 #ls Directories in color
+alias ls='ls -a $@'
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # Git branch name 
