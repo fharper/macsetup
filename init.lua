@@ -37,6 +37,7 @@ local keywords = {
     ["fredcalendly"] = "https://calendly.com/fharper",
     ["fredblog"] = "https://fred.dev",
     ["fredyoutube"] ="https://www.youtube.com/user/fredericharper",
+    ["fredinstagram"] ="https://www.instagram.com/fredericharper/",
 
     -- Biographies
     ["fredbios"] = "Developer Advocate @ npmjs, former Mozilla & Microsoft one, Apress author, public speaker, #crazycatman & more",
