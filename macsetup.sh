@@ -372,6 +372,10 @@ npm install -g nodemon
 npm install -g npx
 npm install -g npm-remote-ls
 
+#DigitalOcean CLI
+brew install doctl
+doctl auth init
+
 #Nodeschool workshops (all)
 npm install -g learnyou
 
