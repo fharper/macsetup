@@ -664,6 +664,7 @@ duti -s com.microsoft.VSCode public.comma-separated-values-text all #CSV
 duti -s com.microsoft.VSCode public.data all #yml
 duti -s com.microsoft.VSCode public.xml all #xml
 duti -s com.microsoft.VSCode public.json all #json
+duti -s com.microsoft.VSCode public.php-script all #php
 
 
 #####################
