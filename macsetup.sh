@@ -567,6 +567,9 @@ open -a Moom
 #MindNode
 mas install 992076693
 
+#Muzzle
+brew cask install muzzle
+
 #Noizio
 mas install 928871589
 
