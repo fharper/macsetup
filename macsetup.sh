@@ -391,6 +391,8 @@ s3cmd --configure
 #Kubernetes CLI
 brew install kubernetes-cli
 
+#PostgreSQL
+brew install postgresql
 #Nodeschool workshops (all)
 npm install -g learnyou
 
