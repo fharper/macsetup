@@ -393,8 +393,6 @@ brew install kubernetes-cli
 
 #PostgreSQL
 brew install postgresql
-#Nodeschool workshops (all)
-npm install -g learnyou
 
 #Java stuff
 brew install jenv
