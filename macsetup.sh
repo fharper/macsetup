@@ -82,6 +82,10 @@ open -a Hammerspoon
 brew cask install karabiner-elements
 ln -s ~/Documents/code/macsetup/karabiner/ ~/.config
 
+#Shush
+mas install 496437906
+open -a Sush
+
 #Evernote
 mas install 406056744
 open -a Evernote
