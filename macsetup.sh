@@ -17,10 +17,9 @@ brew tap buo/cask-upgrade
 brew tap homebrew/cask-fonts
 brew tap dteoh/sqa
 
-#Hyper
-brew cask install hyper
-open -a Hyper
-ln -sf ~/Documents/code/macsetup/.hyper.js ~/.hyper.js
+#iTerm
+brew cask install iterm2
+open -a iTerm
 
 #NordVPN
 brew cask install nordvpn
@@ -685,7 +684,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 ########################
 dockutil --add /Applications/Google\ Chrome.app/ --allhomes
 dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
-dockutil --add /Applications/Hyper.app/ --allhomes
+dockutil --add /Applications/iTerm.app/ --allhomes
 dockutil --add /Applications/Evernote.app/ --allhomes
 dockutil --add /Applications/Todoist.app/ --allhomes
 dockutil --add /Applications/Messenger.app/ --allhomes
@@ -709,7 +708,7 @@ dockutil --move 'TweetDeck' --position beginning --allhomes
 dockutil --move 'Photos' --position beginning --allhomes
 dockutil --move 'Pocket' --position beginning --allhomes
 dockutil --move 'Visual Studio Code' --position beginning --allhomes
-dockutil --move 'Hyper' --position beginning --allhomes
+dockutil --move 'iTerm' --position beginning --allhomes
 dockutil --move 'Spotify' --position beginning --allhomes
 dockutil --move 'Slack' --position beginning --allhomes
 dockutil --move 'Todoist' --position beginning --allhomes
