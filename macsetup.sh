@@ -500,6 +500,9 @@ brew cask install camtasia
 todo+="- Add your license to Camtasia"
 todo+="\n"
 
+#Charles Proxy
+brew cask install Charles
+
 #Cryptomator
 brew cask install cryptomator
 
