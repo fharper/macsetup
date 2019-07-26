@@ -384,6 +384,10 @@ npm install -g npm-remote-ls
 #DigitalOcean Specific
 brew install doctl
 doctl auth init
+#AWS S3/DigitalOcean Spaces CLI
+brew install s3cmd
+s3cmd --configure
+
 #Kubernetes CLI
 brew install kubernetes-cli
 
