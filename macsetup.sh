@@ -381,7 +381,7 @@ npm install -g nodemon
 npm install -g npx
 npm install -g npm-remote-ls
 
-#DigitalOcean CLI
+#DigitalOcean Specific
 brew install doctl
 doctl auth init
 #Kubernetes CLI
