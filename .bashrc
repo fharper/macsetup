@@ -25,7 +25,7 @@ export HOMEBREW_NO_EMOJI=1
 export HISTSIZE=10000
 
 #Ensure syncing (flushing and reloading) of .bash_history with in-memory history:
-export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
+export PROMPT_COMMAND="history -a; history -c; history -r; ${PROMPT_COMMAND}"
 
 #Use leading space to hide commands from history:
 export HISTCONTROL=ignorespace
