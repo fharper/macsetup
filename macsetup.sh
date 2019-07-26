@@ -333,6 +333,9 @@ brew install getantibody/tap/antibody
 #Git PR open
 antibody bundle caarlos0/open-pr kind:path
 
+#Gulp
+npm install -g gulp-cli
+
 #Hub (for Github)
 brew install hub
 
