@@ -617,6 +617,8 @@ brew cask install sloth
 #Speedtest CLI
 brew install speedtest-cli
 
+#Textual
+brew cask install textual
 
 #The Clock
 mas install 488764545
