@@ -614,8 +614,6 @@ brew cask install signal
 #Sloth
 brew cask install sloth
 
-#Smallpdf
-brew cask install smallpdf
 
 #The Clock
 mas install 488764545
