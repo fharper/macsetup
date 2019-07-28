@@ -614,6 +614,9 @@ brew cask install signal
 #Sloth
 brew cask install sloth
 
+#Speedtest CLI
+brew install speedtest-cli
+
 
 #The Clock
 mas install 488764545
