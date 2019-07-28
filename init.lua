@@ -11,13 +11,10 @@ local keywords = {
     ["fredadd"] = "tbd", --will find a way to access the info and not put it in the script directly
 
     -- Dev stuff
-    ["gitc"] = "git commit -m \"\"",
     ["gitd"] = "git difftool ",
     ["gitr"] = "git reset --hard HEAD",
     ["gitl"] = "git log",
     ["gitp"] = "git push origin",
-    --["gita"] = "git add ", CHECK TO ADD IT IF NOT DigitalOcean typed
-    ["gits"] = "git status",
     ["gitu"] = "git update-index --assume-unchanged ",
     ["gitt"] = "git tag -a v -m \"\"",
     ["gito"] = "git open",
@@ -25,27 +22,10 @@ local keywords = {
     -- Social media
     ["thxpost"] = "thanks for sharing my post in your network ",
     ["thxfol"] = "thanks for following me",
-    ["fredlinkedin"] = "https://www.linkedin.com/in/fredericharper",
-    ["fredfacebook"] = "https://www.facebook.com/fharper",
-    ["fredtwitter"] = "https://twitter.com/fharper",
-    ["fredslideshare"] = "https://www.slideshare.net/fredericharper",
-    ["fredgoodread"] = "https://www.goodreads.com/fharper",
-    ["fredgithub"] = "https://github.com/fharper",
-    ["fredpic"] = "https://github.com/fharper/speakerkit/blob/master/pictures/fharper-Original.jpg",
-    ["fredspeaking"] = "https://outofcomfortzone.net/speaking/",
-    ["fredkit"] = "https://github.com/fharper/speakerkit",
-    ["fredcalendly"] = "https://calendly.com/fharper",
-    ["fredblog"] = "https://fred.dev",
-    ["fredyoutube"] ="https://www.youtube.com/user/fredericharper",
-    ["fredinstagram"] ="https://www.instagram.com/fredericharper/",
+ --   ["fredpic"] = "https://github.com/fharper/speakerkit/blob/master/pictures/fharper-Original.jpg",
 
-    -- Biographies
-    ["fredbios"] = "Developer Advocate @ npmjs, former Mozilla & Microsoft one, Apress author, public speaker, #crazycatman & more",
-    ["fredbiom"] = "As a Senior Developer Advocate at npm, Frédéric Harper is helping developers being successful within the JavaScript world. Former Mozilla and Microsoft Technical Evangelist, Frédéric is a prolific international public speaker and the author of a book on personal branding published at Apress. Behind this extrovert who lives by the no bullshit policy is a very passionate individual who believes in the power of communication... and cat videos.",
-    ["fredbiol"] = "As a Senior Developer Advocate at npm, Frédéric Harper is helping developers being successful within the JavaScript world. Former Mozilla and Microsoft Technical Evangelist, he has had the pleasure to share his passion for technology at more than 140 events in about 20 countries. Capitalizing on his attention deficit and hyperactivity disorder (ADHD), Frédéric is always onto the next challenge. He is also the author of the “Success in Programming - How to Gain Recognition, Power, and Influence Through Personal Branding” book published at Apress. Behind this extrovert who lives by the no bullshit policy is a very passionate individual who believes in the power of communication... and cat videos.",
-    
+
     -- Emoticons
-    [":fliptable"] = "(╯°□°)╯︵ ┻━┻",
     [":shrug"] = "¯\\_(ツ)_/¯",
     [":disapprove"] = "ಠ_ಠ",
     [":facepalm"] = "ð¤¦",
