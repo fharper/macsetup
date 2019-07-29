@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>abm-gt</string>
+	<key>connections</key>
+	<dict>
+		<key>1C8E3C55-631D-4A44-AEFA-A2156E31CC93</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5E307011-50F1-4136-8410-7BDA15AE06AD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F21EFBF7-D6E8-4B12-984F-AD454F1D4FAA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>63D76745-56CC-4DB3-89F4-5F961B52E0F4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5E307011-50F1-4136-8410-7BDA15AE06AD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F21EFBF7-D6E8-4B12-984F-AD454F1D4FAA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>7B9BEB55-66C0-40FB-A34C-1E4986DF90D1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>63D76745-56CC-4DB3-89F4-5F961B52E0F4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B5008276-B399-481D-A608-1B1E3BD1E668</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>63D76745-56CC-4DB3-89F4-5F961B52E0F4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>CED1B88B-F208-4B8A-94B9-E913F43C0443</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1C8E3C55-631D-4A44-AEFA-A2156E31CC93</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Anders Bech Mellson</string>
+	<key>description</key>
+	<string>Translate With Google Translate</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Google Translate</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Translated Text</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>5E307011-50F1-4136-8410-7BDA15AE06AD</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string># How to use
+# t &lt;language code&gt; &lt;language code&gt; text
+
+# Extract the languages from the query
+SOURCE_LANGUAGE=`echo "{query}" | awk '{ print $1; }' `
+DESTINATION_LANGUAGE=`echo "{query}"| awk '{ print $2; }' `
+
+# Transform the text to something Google translate understands
+set +o histexpand
+TEXT_TO_TRANSLATE=$(echo "{query}"|sed 's/ /+/g'|sed 's/'$SOURCE_LANGUAGE'//'|sed 's/'$DESTINATION_LANGUAGE'//')
+
+# Call Google and ask for the answer
+TEXT=`curl -s -A "Mozilla/5.0" "http://translate.google.com.br/translate_a/t?client=t&amp;text=$TEXT_TO_TRANSLATE&amp;hl=pt-BR&amp;sl=$SOURCE_LANGUAGE&amp;tl=$DESTINATION_LANGUAGE&amp;multires=1&amp;ssel=0&amp;tsel=0&amp;sc=1" | awk -F'"' '{print $2}'`
+
+# Make the clipboard able to handle international characters
+export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100
+
+# Print the translated text and copy it to the clipboard
+echo $TEXT
+# echo -n $TEXT | pbcopy</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1C8E3C55-631D-4A44-AEFA-A2156E31CC93</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>t</string>
+				<key>subtext</key>
+				<string>Example: en da text to translate</string>
+				<key>text</key>
+				<string>Google Translate</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CED1B88B-F208-4B8A-94B9-E913F43C0443</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string># Set your default language
+SOURCE_LANGUAGE="da"
+DESTINATION_LANGUAGE="en"
+
+# Transform the text to something Google translate understands
+set +o histexpand
+TEXT_TO_TRANSLATE=$(echo "{query}"|sed 's/ /+/g')
+
+# Call Google and ask for the answer
+TEXT=`curl -s -A "Mozilla/5.0" "http://translate.google.com.br/translate_a/t?client=t&amp;text=$TEXT_TO_TRANSLATE&amp;hl=pt-BR&amp;sl=$SOURCE_LANGUAGE&amp;tl=$DESTINATION_LANGUAGE&amp;multires=1&amp;ssel=0&amp;tsel=0&amp;sc=1" | awk -F'"' '{print $2}'`
+
+# Make the clipboard able to handle international characters
+export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100
+
+# Print the translated text and copy it to the clipboard
+echo $TEXT</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>63D76745-56CC-4DB3-89F4-5F961B52E0F4</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>F21EFBF7-D6E8-4B12-984F-AD454F1D4FAA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>tt</string>
+				<key>subtext</key>
+				<string>Standard Language Version. Change the default language in the workflows bottom script</string>
+				<key>text</key>
+				<string>Google Translate</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>7B9BEB55-66C0-40FB-A34C-1E4986DF90D1</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>1179914</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>B5008276-B399-481D-A608-1B1E3BD1E668</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>uidata</key>
+	<dict>
+		<key>1C8E3C55-631D-4A44-AEFA-A2156E31CC93</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>5E307011-50F1-4136-8410-7BDA15AE06AD</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>63D76745-56CC-4DB3-89F4-5F961B52E0F4</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>7B9BEB55-66C0-40FB-A34C-1E4986DF90D1</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>B5008276-B399-481D-A608-1B1E3BD1E668</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>CED1B88B-F208-4B8A-94B9-E913F43C0443</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>F21EFBF7-D6E8-4B12-984F-AD454F1D4FAA</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/mofus/Alfred-Google-Translate</string>
+</dict>
+</plist>
