@@ -565,6 +565,7 @@ brew cask install menubar-countdown
 
 #Moom
 mas install 419330170
+ln -s ~/Documents/code/macsetup/moom/com.manytricks.Moom.plist ~/Library/Preferences/com.manytricks.Moom.plist
 open -a Moom
 
 #MindNode
