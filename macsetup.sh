@@ -628,12 +628,6 @@ brew install speedtest-cli
 #Textual
 brew cask install textual
 
-#The Clock
-mas install 488764545
-open -a "The Clock"
-todo+="- Remove the System Clock from the menubar"
-todo+="\n"
-
 #The Unarchiver
 mas install 425424353
 
