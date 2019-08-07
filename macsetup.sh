@@ -64,8 +64,6 @@ dockutil --add /Applications/Todoist.app/ --allhomes
 open -a Todoist
 dockutil --add /Applications/Slack.app/ --allhomes
 
-#Typora
-brew cask install typora
 dockutil --add /Applications/Spotify.app/ --allhomes
 
 dockutil --add /Applications/TweetDeck.app/ --allhomes
