@@ -644,9 +644,6 @@ open -a TripMode
 #Unrar
 brew install unrar
 
-#Vivaldi
-brew cask install vivaldi
-
 #VLC
 brew cask install vlc
 
