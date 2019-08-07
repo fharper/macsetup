@@ -12,7 +12,6 @@ todo="\n########\n# TODO #\n########\n"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off
 brew install bash-completion
-brew tap caskroom/cask
 brew tap buo/cask-upgrade
 brew tap homebrew/cask-fonts
 brew tap dteoh/sqa
