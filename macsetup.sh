@@ -17,6 +17,9 @@ brew tap buo/cask-upgrade
 brew tap homebrew/cask-fonts
 brew tap dteoh/sqa
 
+#Mac App Store CLI
+brew install mas
+
 #iTerm
 brew cask install iterm2
 open -a iTerm
@@ -25,8 +28,6 @@ open -a iTerm
 brew cask install nordvpn
 open -a NordVpn
 
-#Mac App Store command line interface
-brew install mas
 
 #Visual Studio Code
 brew cask install visual-studio-code
