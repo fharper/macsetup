@@ -4,9 +4,9 @@ txtflash=$(tput setaf 3) #yellow
 txtblack=$(tput setaf 7)
 todo="\n########\n# TODO #\n########\n"
 
-############
-# Top apps #
-############
+####################################
+# Install utils to run this script #
+####################################
 
 #Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
