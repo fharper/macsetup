@@ -656,6 +656,9 @@ brew cask install whatsapp
 #WiFi Explorer Lite
 mas install 1408727408
 
+#Youtube Downloader
+brew install youtube-dl
+
 #Zoom
 brew cask install zoomus
 
