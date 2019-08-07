@@ -736,13 +736,6 @@ dockutil --move 'Evernote' --position beginning --allhomes
 dockutil --move 'Google Chrome' --position beginning --allhomes
 
 
-#################
-# Manual TODO ###
-#################
-
-#Other apps
-todo+="- Install Apps from the local folder"
-todo+="\n"
 
 todo+="\n"
 todo+="(copied to keyboard)"
