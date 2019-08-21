@@ -134,6 +134,9 @@ git config --global difftool.vscode.cmd 'code --diff --wait $LOCAL $REMOTE'
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
 brew install git-lfs
+
+#GPG
+brew cask install gpg-suite
 gpg --list-secret-keys --keyid-format LONG
 echo "Copy & paste your public key UUID listed below (line sec - after the /)"
 read gpgUUID
