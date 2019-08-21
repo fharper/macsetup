@@ -544,6 +544,9 @@ defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName fl
 #Gimp
 brew cask install gimp
 
+#Hemingway
+open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
+
 #ICS split
 #icssplit file.ics outfilename --maxsize=900000
 pip3 install icssplit
