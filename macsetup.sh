@@ -525,9 +525,6 @@ todo+="\n"
 #Deckset
 brew cask install deckset
 
-#Duplicate Photo Fixer Pro
-mas install 963642514
-
 #FileZilla
 brew cask install filezilla
 
