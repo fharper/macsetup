@@ -490,9 +490,6 @@ brew install asciinema
 mas install 1118136179
 
 
-#Brave browser
-brew cask install brave-browser
-
 #Calibre
 brew cask install calibre
 
