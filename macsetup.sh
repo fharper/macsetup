@@ -91,6 +91,9 @@ open -a "Bartender 3"
 brew cask install hammerspoon
 rm -rf ${HOME}/.hammerspoon
 ln -s ~/Documents/code/macsetup/init.lua ~/.hammerspoon/init.lua
+#Contexts
+brew cask install contexts
+
 
 #Karabiner-Elements
 brew cask install karabiner-elements
@@ -116,8 +119,6 @@ brew cask install spotify
 #Slow Quit Apps
 brew cask install slowquitapps
 
-#Contexts
-brew cask install contexts
 #Global Protect VPN
 open '/Users/fharper/Documents/mac/DigitalOcean - Global Protect VPN/GlobalProtect.pkg'
 
