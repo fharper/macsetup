@@ -66,6 +66,9 @@ dockutil --add /Applications/Evernote.app/ --allhomes
 #Todoist
 mas install 585829637
 dockutil --add /Applications/Todoist.app/ --allhomes
+
+#Slack
+brew cask install slack
 dockutil --add /Applications/Slack.app/ --allhomes
 
 dockutil --add /Applications/Spotify.app/ --allhomes
@@ -103,8 +106,6 @@ mas install 406056744
 #Todoist
 mas install 585829637
 
-#Slack
-brew cask install slack
 
 #Messenger
 brew cask install Messenger
