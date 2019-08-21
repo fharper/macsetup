@@ -468,6 +468,8 @@ npm i -g bundle-phobia-cli
 #Yeoman
 npm i --global yo
 
+#Lynis
+brew install lynis
 
 
 ############################
