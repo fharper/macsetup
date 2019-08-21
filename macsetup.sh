@@ -411,6 +411,9 @@ brew cask install java
 jenv add /Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/
 jenv global openjdk64-11.0.1
 
+#Kubernetes
+brew install kubernetes-cli
+brew cask install minikube
 
 #MysSQL
 brew install mysql
