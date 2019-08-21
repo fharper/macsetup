@@ -486,6 +486,10 @@ brew cask install appcleaner
 #AutoMute
 mas install 1118136179
 
+#Diablo II
+open -a '/Users/fharper/Documents/mac/Diablo 2/Installer.app'
+rm '/Users/fharper/Desktop/Diablo II'
+ln -sf /Users/fharper/Documents/misc/Diablo/ /Applications/Diablo\ II/save
 
 #Calibre
 brew cask install calibre
