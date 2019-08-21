@@ -447,9 +447,6 @@ pyenv global 3.7.0
 #Mysql Shell
 brew cask install mysql-shell
 
-#MongoDB
-brew install mongodb
-
 #ShellCheck
 brew install shellcheck
 
