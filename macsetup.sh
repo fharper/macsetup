@@ -399,11 +399,8 @@ brew install hugo
 brew install s3cmd
 s3cmd --configure
 
-#Kubernetes CLI
-brew install kubernetes-cli
-
-#PostgreSQL
-brew install postgresql
+#Go
+brew install go
 
 #Java stuff
 brew install jenv
