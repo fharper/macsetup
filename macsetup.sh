@@ -414,6 +414,9 @@ jenv global openjdk64-11.0.1
 #Go
 brew install go
 
+#Redis
+brew install redis
+
 #Rust
 brew install rust
 
