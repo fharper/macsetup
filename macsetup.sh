@@ -414,6 +414,9 @@ jenv global openjdk64-11.0.1
 #Go
 brew install go
 
+#PostgreSQL
+brew install postgresql
+
 #Redis
 brew install redis
 
