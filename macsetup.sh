@@ -462,6 +462,9 @@ npm install -g weallcontribute
 #Ripgrep
 brew install ripgrep
 
+#Terraform
+brew install terraform
+
 #Bundle Phobia
 npm i -g bundle-phobia-cli
 
