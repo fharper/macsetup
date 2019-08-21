@@ -525,9 +525,6 @@ todo+="\n"
 #Deckset
 brew cask install deckset
 
-#FileZilla
-brew cask install filezilla
-
 #Firefox
 brew cask install firefox
 
