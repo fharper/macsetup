@@ -477,8 +477,8 @@ brew cask install quicklook-json
 ############################
 
 #Antidote
-todo+="- Download & install Antidote (see the link in 1Password) "
-todo+="\n"
+open https://services.druide.com/
+read -p "${txtflash}Download & install Antidote before continuing..." -n1 -s
 
 #AppCleaner
 brew cask install appcleaner
