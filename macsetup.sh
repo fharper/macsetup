@@ -123,6 +123,7 @@ brew cask install contexts
 ######################
 # Git configurations #
 ######################
+brew install git
 git config --global user.name "Frédéric Harper"
 git config --global user.email fharper@oocz.net
 git config --global push.default current
