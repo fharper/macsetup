@@ -121,6 +121,9 @@ brew cask install contexts
 #Global Protect VPN
 open '/Users/fharper/Documents/mac/DigitalOcean - Global Protect VPN/GlobalProtect.pkg'
 
+#NYC printer & scanner drivers
+open '/Users/fharper/Documents/mac/DigitalOcean - NYC Printer drivers/Dell C2665dnf Print Installer.pkg'
+---open '/Users/fharper/Documents/mac/DigitalOcean - NYC Printer drivers/Dell C2665dnf Scan Installer.pkg'
 
 #Workspace ONE
 open '/Users/fharper/Documents/mac/DigitalOcean - WorkspaceONE/VMwareWorkspaceONEIntelligentHub.pkg'
