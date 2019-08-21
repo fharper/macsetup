@@ -21,11 +21,9 @@ brew install mas
 
 #iTerm
 brew cask install iterm2
-open -a iTerm
 
 #NordVPN
 brew cask install nordvpn
-open -a NordVpn
 
 
 #Visual Studio Code
@@ -41,26 +39,21 @@ todo+="\n"
 #Chrome
 brew cask install google-chrome
 dockutil --add /Applications/Google\ Chrome.app/ --allhomes
-open -a "Google Chrome"
 
 #1Password
 brew cask install 1password
 dockutil --add /Applications/1Password\ 7.app/ --allhomes
-open -a "1Password 7"
 
 #Dropbox
 brew cask install dropbox
-open -a Dropbox
 
 #Evernote
 mas install 406056744
 dockutil --add /Applications/Evernote.app/ --allhomes
-open -a Evernote
 
 #Todoist
 mas install 585829637
 dockutil --add /Applications/Todoist.app/ --allhomes
-open -a Todoist
 dockutil --add /Applications/Slack.app/ --allhomes
 
 dockutil --add /Applications/Spotify.app/ --allhomes
@@ -83,7 +76,6 @@ open -a "Bartender 3"
 brew cask install hammerspoon
 rm -rf ${HOME}/.hammerspoon
 ln -s ~/Documents/code/macsetup/init.lua ~/.hammerspoon/init.lua
-open -a Hammerspoon
 
 #Karabiner-Elements
 brew cask install karabiner-elements
@@ -95,15 +87,12 @@ open -a Sush
 
 #Evernote
 mas install 406056744
-open -a Evernote
 
 #Todoist
 mas install 585829637
-open -a Todoist
 
 #Slack
 brew cask install slack
-open -a Slack
 
 #Messenger
 brew cask install Messenger
@@ -592,7 +581,6 @@ brew cask install opera
 
 #Parcel
 mas install 639968404
-open -a Parcel
 
 #PDFSam Basic
 brew cask install pdfsam-basic
@@ -602,7 +590,6 @@ mas install 1195076754
 
 #Pocket
 mas install 568494494
-open -a Pocket
 
 #Postman
 brew cask install postman
@@ -630,7 +617,6 @@ mas install 425424353
 
 #TripMode
 brew cask install tripmode
-open -a TripMode
 
 #Unrar
 brew install unrar
