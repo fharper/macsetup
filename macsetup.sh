@@ -118,6 +118,9 @@ brew cask install slowquitapps
 
 #Contexts
 brew cask install contexts
+#Global Protect VPN
+open '/Users/fharper/Documents/mac/DigitalOcean - Global Protect VPN/GlobalProtect.pkg'
+
 
 
 ######################
