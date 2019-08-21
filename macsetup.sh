@@ -622,7 +622,7 @@ brew cask install sloth
 #Speedtest CLI
 brew install speedtest-cli
 
-#Textual
+#Textual (IRC)
 brew cask install textual
 
 #The Unarchiver
