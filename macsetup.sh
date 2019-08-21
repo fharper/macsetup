@@ -456,9 +456,6 @@ brew install yarn
 #ShellCheck
 brew install shellcheck
 
-#Projects contributions
-npm install -g weallcontribute
-
 #Ripgrep
 brew install ripgrep
 
