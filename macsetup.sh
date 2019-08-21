@@ -80,6 +80,9 @@ open -a "Alfred 3"
 todo+="- Remove the spotlight keyboard shortcut and set the Alfred one"
 todo+="\n"
 
+#aText
+brew cask install atext
+
 #Amphetamine
 mas install 937984704
 
