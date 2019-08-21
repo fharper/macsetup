@@ -554,9 +554,6 @@ brew cask install keybase
 #Keycastr
 brew cask install keycastr
 
-#KnockKnock
-brew cask install KnockKnock
-
 #Krita
 brew cask install krita
 
