@@ -415,7 +415,7 @@ jenv global openjdk64-11.0.1
 brew install go
 
 #Rust
-curl https://sh.rustup.rs -sSf | sh
+brew install rust
 
 #JavaScript
 npm i -g uglify-js
