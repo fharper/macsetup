@@ -497,9 +497,6 @@ brew cask install battle-net
 open -a /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
 ln -sf ~/Documents/misc/Diablo/ /Applications/Diablo\ II/save
 
-#Boxer
-brew cask install boxer
-
 #Brave browser
 brew cask install brave-browser
 
