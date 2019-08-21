@@ -688,6 +688,9 @@ duti -s com.microsoft.VSCode public.data all #yml
 duti -s com.microsoft.VSCode public.xml all #xml
 duti -s com.microsoft.VSCode public.json all #json
 duti -s com.microsoft.VSCode public.php-script all #php
+duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3u all #terraform tf
+duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #terraform tfstate
+duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #terraform tfvars
 
 
 #####################
