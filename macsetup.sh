@@ -468,8 +468,6 @@ npm i -g bundle-phobia-cli
 #Yeoman
 npm i --global yo
 
-#Quicklook JSON
-brew cask install quicklook-json
 
 
 ############################
