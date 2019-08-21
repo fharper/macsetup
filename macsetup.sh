@@ -656,11 +656,7 @@ mas install 476272252
 # Install the Fonts #
 #####################
 brew cask install font-fira-sans
-
-for filename in ~/Documents/Programmes/Mac/Fonts/*.*; do
-        echo $filename
-    done
-done
+cp ~/Documents/mac/Fonts/* /Library/Fonts/
 
 
 ##########################################
