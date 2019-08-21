@@ -525,9 +525,6 @@ todo+="\n"
 #Deckset
 brew cask install deckset
 
-#Discord
-brew cask install discord
-
 #Duplicate Photo Fixer Pro
 mas install 963642514
 
