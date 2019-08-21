@@ -330,7 +330,7 @@ brew install getantibody/tap/antibody
 antibody bundle caarlos0/open-pr kind:path
 
 #Gulp
-npm install -g gulp-cli
+npm i -g gulp-cli
 
 #Hub (for Github)
 brew install hub
@@ -367,15 +367,15 @@ echo -e "\n"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
 nvm install v10.13.0
 nvm alias default v10.13.0
-npm install -g npm@latest
+npm i -g npm@latest
 npm config set prefix /usr/local
 npm config set editor code
 npm config set sign-git-tag true
 npm adduser
-npm install -g express-generator
-npm install -g nodemon
-npm install -g npx
-npm install -g npm-remote-ls
+npm i -g express-generator
+npm i -g nodemon
+npm i -g npx
+npm i -g npm-remote-ls
 
 #DigitalOcean Specific
 brew install doctl
@@ -405,26 +405,26 @@ brew install go
 curl https://sh.rustup.rs -sSf | sh
 
 #JavaScript
-npm install -g uglify-js
+npm i -g uglify-js
 
 #HTML
-npm install -g html-minifier
+npm i -g html-minifier
 
 #CSS
-npm install -g cssnano-cli
+npm i -g cssnano-cli
 
 #Images
-npm install -g imagemin-cli
-npm install -g imagemin-pngquant
-npm install -g imagemin-jpegtran
+npm i -g imagemin-cli
+npm i -g imagemin-pngquant
+npm i -g imagemin-jpegtran
 
 #Accessibility
-npm install -g pa11y
+npm i -g pa11y
 
 #Git scripts
-npm install -g git-open
-npm install -g git-recent
-npm install -g git-branch-status
+npm i -g git-open
+npm i -g git-recent
+npm i -g git-branch-status
 
 #Python stuff
 brew install pyenv
@@ -450,10 +450,10 @@ npm install -g weallcontribute
 brew install ripgrep
 
 #Bundle Phobia
-npm install -g bundle-phobia-cli
+npm i -g bundle-phobia-cli
 
 #Yeoman
-npm install --global yo
+npm i --global yo
 
 #Quicklook JSON
 brew cask install quicklook-json
