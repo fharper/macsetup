@@ -450,9 +450,6 @@ brew cask install mysql-shell
 #MongoDB
 brew install mongodb
 
-#YARN
-brew install yarn
-
 #ShellCheck
 brew install shellcheck
 
