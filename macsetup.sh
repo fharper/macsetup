@@ -616,7 +616,7 @@ open /usr/local/lib/prey/current/lib/agent/utils/Prey.app --args -picture
 #Signal
 brew cask install signal
 
-#Sloth
+#Sloth (displays all open files and sockets in use by all running processes on your system)
 brew cask install sloth
 
 #Speedtest CLI
