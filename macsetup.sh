@@ -122,6 +122,9 @@ brew cask install contexts
 open '/Users/fharper/Documents/mac/DigitalOcean - Global Protect VPN/GlobalProtect.pkg'
 
 
+#Workspace ONE
+open '/Users/fharper/Documents/mac/DigitalOcean - WorkspaceONE/VMwareWorkspaceONEIntelligentHub.pkg'
+
 
 ######################
 # Git configurations #
