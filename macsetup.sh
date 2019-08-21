@@ -144,7 +144,7 @@ brew install git-lfs
 ######################
 # Command line tools #
 ######################
-npm install -g trash-cli
+npm i -g trash-cli
 brew install wifi-password
 git clone https://github.com/rupa/z.git ~/z
 curl -sLo- http://get.bpkg.sh | bash
