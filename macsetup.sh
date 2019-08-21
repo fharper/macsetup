@@ -500,6 +500,9 @@ brew cask install camtasia
 todo+="- Add your license to Camtasia"
 todo+="\n"
 
+#CapSee
+open '/Users/fharper/Documents/mac/CapSee 1.2/CapSee12.dmg'
+
 #Charles Proxy
 brew cask install Charles
 
