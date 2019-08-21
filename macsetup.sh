@@ -584,9 +584,6 @@ mas install 992076693
 brew cask install muzzle
 
 
-#Opera
-brew cask install opera
-
 #Parcel
 mas install 639968404
 
