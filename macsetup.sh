@@ -408,8 +408,8 @@ brew install postgresql
 #Java stuff
 brew install jenv
 brew cask install java
-jenv add /Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/
-jenv global openjdk64-11.0.1
+jenv add /Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home/
+jenv global openjdk64-12.0.1
 
 #Kubernetes
 brew install kubernetes-cli
