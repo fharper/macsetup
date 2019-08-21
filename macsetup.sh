@@ -19,6 +19,14 @@ brew tap dteoh/sqa
 #Mac App Store CLI
 brew install mas
 
+#osXiconUtils
+curl https://sveinbjorn.org/files/software/osxiconutils.zip > osxiconutils.zip
+unzip osxiconutils.zip
+rm osxiconutils.zip
+mv bin/geticon /usr/local/sbin/
+mv bin/seticon /usr/local/sbin/
+rm -rf bin/
+
 
 #NordVPN
 brew cask install nordvpn
