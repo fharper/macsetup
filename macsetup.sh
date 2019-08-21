@@ -584,9 +584,6 @@ mas install 992076693
 brew cask install muzzle
 
 
-#OpenEmu
-brew cask install openemu
-
 #Opera
 brew cask install opera
 
