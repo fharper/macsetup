@@ -19,12 +19,12 @@ brew tap dteoh/sqa
 #Mac App Store CLI
 brew install mas
 
-#iTerm
-brew cask install iterm2
 
 #NordVPN
 brew cask install nordvpn
 
+#iTerm
+brew cask install iterm2
 
 #Visual Studio Code
 brew cask install visual-studio-code
