@@ -411,8 +411,6 @@ brew cask install java
 jenv add /Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home/
 jenv global openjdk64-11.0.1
 
-#Go
-brew install go
 
 #MysSQL
 brew install mysql
