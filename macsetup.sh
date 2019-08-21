@@ -489,9 +489,6 @@ brew install asciinema
 #AutoMute
 mas install 1118136179
 
-#Battery Stats for AirPods
-mas install 1405763798
-
 
 #Brave browser
 brew cask install brave-browser
