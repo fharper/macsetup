@@ -117,8 +117,6 @@ todo+="- Remove the System Clock from the menubar"
 todo+="\n"
 
 
-#Messenger
-brew cask install Messenger
 
 #Spotify
 brew cask install spotify
@@ -581,6 +579,8 @@ brew cask install menubar-countdown
 mas install 419330170
 ln -s ~/Documents/code/macsetup/moom/com.manytricks.Moom.plist ~/Library/Preferences/com.manytricks.Moom.plist
 open -a Moom
+#Messenger
+brew cask install Messenger
 
 #MindNode
 mas install 992076693
