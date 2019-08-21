@@ -450,7 +450,7 @@ brew cask install mysql-shell
 #ShellCheck
 brew install shellcheck
 
-#Ripgrep
+#Ripgrep (recursively searches directories for a regex pattern)
 brew install ripgrep
 
 #Terraform
