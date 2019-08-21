@@ -90,10 +90,6 @@ mas install 937984704
 brew cask install bartender
 open -a "Bartender 3"
 
-#Hammerspoon
-brew cask install hammerspoon
-rm -rf ${HOME}/.hammerspoon
-ln -s ~/Documents/code/macsetup/init.lua ~/.hammerspoon/init.lua
 #Contexts
 brew cask install contexts
 
