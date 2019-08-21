@@ -110,6 +110,11 @@ mas install 406056744
 
 #Todoist
 mas install 585829637
+#The Clock
+mas install 488764545
+open -a "The Clock"
+todo+="- Remove the System Clock from the menubar"
+todo+="\n"
 
 
 #Messenger
