@@ -31,6 +31,10 @@ rm -rf bin/
 #NordVPN
 brew cask install nordvpn
 
+#############################
+# Install main applications #
+#############################
+
 #iTerm
 brew cask install iterm2
 
