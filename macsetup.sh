@@ -492,10 +492,6 @@ mas install 1118136179
 #Battery Stats for AirPods
 mas install 1405763798
 
-#Battle.net (Diablo II, World of Warcraft)
-brew cask install battle-net
-open -a /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app
-ln -sf ~/Documents/misc/Diablo/ /Applications/Diablo\ II/save
 
 #Brave browser
 brew cask install brave-browser
