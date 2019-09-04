@@ -166,7 +166,7 @@ open '/Users/fharper/Documents/mac/DigitalOcean - Global Protect VPN/GlobalProte
 open '/Users/fharper/Documents/mac/DigitalOcean - NYC Printer drivers/Dell C2665dnf Print Installer.pkg'
 ---open '/Users/fharper/Documents/mac/DigitalOcean - NYC Printer drivers/Dell C2665dnf Scan Installer.pkg'
 
-#Workspace ONE
+#Workspace ONE (SentinelOne)
 open '/Users/fharper/Documents/mac/DigitalOcean - WorkspaceONE/VMwareWorkspaceONEIntelligentHub.pkg'
 
 
