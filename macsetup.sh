@@ -37,6 +37,7 @@ brew install dockutil
 
 #iTerm
 brew cask install iterm2
+dockutil --add /Applications/iTerm.app/ --allhomes
 
 #iTerm CD
 brew cask install cd-to-iterm
