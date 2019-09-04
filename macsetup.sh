@@ -134,8 +134,6 @@ open -a Sush
 #Slow Quit Apps
 brew cask install slowquitapps
 
-#Todoist
-mas install 585829637
 #The Clock
 mas install 488764545
 open -a "The Clock"
