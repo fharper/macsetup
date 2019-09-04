@@ -134,6 +134,9 @@ open -a Sush
 #Slow Quit Apps
 brew cask install slowquitapps
 
+#Sound Control
+brew cask install sound-control
+
 #The Clock
 mas install 488764545
 open -a "The Clock"
