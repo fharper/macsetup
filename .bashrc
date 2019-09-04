@@ -235,3 +235,6 @@ git()
 eval "$(jenv init -)"
 
 eval "$(pyenv init -)"
+
+#Terraform
+complete -C /usr/local/bin/terraform terraform
