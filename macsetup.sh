@@ -101,6 +101,10 @@ brew cask install contexts
 brew cask install karabiner-elements
 ln -s ~/Documents/code/macsetup/karabiner/ ~/.config
 
+#Moom
+mas install 419330170
+open -a Moom
+
 #Shush
 mas install 496437906
 open -a Sush
@@ -574,10 +578,6 @@ mas install 1005088137
 #Menubar Countdown
 brew cask install menubar-countdown
 
-#Moom
-mas install 419330170
-ln -s ~/Documents/code/macsetup/moom/com.manytricks.Moom.plist ~/Library/Preferences/com.manytricks.Moom.plist
-open -a Moom
 #Messenger
 brew cask install Messenger
 
