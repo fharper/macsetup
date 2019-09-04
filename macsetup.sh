@@ -117,8 +117,6 @@ open -a Moom
 mas install 496437906
 open -a Sush
 
-#Evernote
-mas install 406056744
 
 #Todoist
 mas install 585829637
