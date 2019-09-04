@@ -38,6 +38,14 @@ brew install dockutil
 #iTerm
 brew cask install iterm2
 
+#iTerm CD
+brew cask install cd-to-iterm
+geticon /Applications/iTerm.app/ iterm.icns
+seticon iterm.icns /Applications/cd\ to\ iterm.app/
+rm iterm.icns
+todo+="- move cd-to-iterm in Finder's toolbar"
+todo+="\n"
+
 #Visual Studio Code
 brew cask install visual-studio-code
 dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
