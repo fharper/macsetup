@@ -691,6 +691,7 @@ duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3u all #terraform tf
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #terraform tfstate
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #terraform tfvars
 duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
+duti -s com.apple.Preview com.adobe.pdf all #pdf
 
 
 #####################
