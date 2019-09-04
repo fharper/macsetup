@@ -57,6 +57,9 @@ dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 code --install-extension Shan.code-settings-sync
 code
 brew cask install open-in-code
+geticon /Applications/Visual\ Studio\ Code.app/ code.icns
+seticon code.icns /Applications/Open\ in\ Code.app/
+rm code.icns
 todo+="- move open-in-code in Finder's toolbar"
 todo+="\n"
 
