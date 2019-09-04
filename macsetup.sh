@@ -579,7 +579,8 @@ brew cask install firefox
 
 #Fliqlo screensaver
 brew cask install fliqlo
-defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName fliqlo path ~/Library/Screen\ Savers/Fliqlo.saver/ type 0
+todo+="- Set the default screensaver to Fliqlo"
+todo+="\n"
 
 #Gimp
 brew cask install gimp
