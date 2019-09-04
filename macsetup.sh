@@ -75,6 +75,8 @@ dockutil --add /Applications/Slack.app/ --allhomes
 brew cask install spotify
 dockutil --add /Applications/Spotify.app/ --allhomes
 
+#TweetDeck
+mas install 485812721
 dockutil --add /Applications/TweetDeck.app/ --allhomes
 
 
