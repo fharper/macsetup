@@ -406,18 +406,6 @@ brew install hub
 brew cask install docker
 brew cask install kitematic
 
-#Prevent code to show in Alfred
-brew install tag
-tag -a alfred:ignore -R ~/Documents/Code
-cp -R ~/Documents/configs/Alfred\ -\ Code.workflow/ ~/Desktop/Alfred\ -\ Code.workflow/
-open ~/Desktop/Alfred\ -\ Code.workflow/
-tag -a alfred:ignore -R ~/Dropbox
-cp -R ~/Documents/configs/Alfred\ -\ Dropbox.workflow/ ~/Desktop/Alfred\ -\ Dropbox.workflow/
-open ~/Desktop/Alfred\ -\ Dropbox.workflow/
-tag -a alfred:ignore -R ~/Music
-cp -R ~/Documents/configs/Alfred\ -\ Music.workflow/ ~/Desktop/Alfred\ -\ Music.workflow/
-open ~/Desktop/Alfred\ -\ Music.workflow/
-
 #Generate a new public SSH key
 ssh-keygen -t rsa -b 4096 -C "fharper@oocz.net"
 ssh-add -K ~/.ssh/id_rsa
