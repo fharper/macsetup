@@ -645,11 +645,11 @@ dockutil --add /Applications/Pocket.app/ --allhomes
 brew cask install postman
 
 #Prey
-open https://panel.preyproject.com/login
-echo "Enter your Prey API key (found in the left corner of the Prey web dashboard settings page)"
-read preyapi
-HOMEBREW_NO_ENV_FILTERING=1 API_KEY="$preyapi" brew cask install prey
-open /usr/local/lib/prey/current/lib/agent/utils/Prey.app --args -picture
+#open https://panel.preyproject.com/login
+#echo "Enter your Prey API key (found in the left corner of the Prey web dashboard settings page)"
+#read preyapi
+#HOMEBREW_NO_ENV_FILTERING=1 API_KEY="$preyapi" brew cask install prey
+#open /usr/local/lib/prey/current/lib/agent/utils/Prey.app --args -picture
 
 #Signal
 brew cask install signal
