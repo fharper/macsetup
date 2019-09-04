@@ -229,7 +229,7 @@ git()
 
 # Z #
 #
-. ~/z/z.sh
+. /usr/local/etc/profile.d/z.sh
 
 #JENV
 eval "$(jenv init -)"
