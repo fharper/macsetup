@@ -118,6 +118,9 @@ open '/Users/fharper/Documents/mac/CleanShot 2.5.3/CleanShot-2.5.3.dmg'
 #Contexts
 brew cask install contexts
 
+#FruitJuice (Battery)
+mas install 671736912
+open -a FruitJuice
 
 #HSTR (bash history)
 brew install hh
