@@ -626,9 +626,6 @@ brew cask install textual
 #The Unarchiver
 mas install 425424353
 
-#TripMode
-brew cask install tripmode
-
 #Unrar
 brew install unrar
 
