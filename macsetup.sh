@@ -119,6 +119,9 @@ open '/Users/fharper/Documents/mac/CleanShot 2.5.3/CleanShot-2.5.3.dmg'
 brew cask install contexts
 
 
+#HSTR (bash history)
+brew install hh
+
 #Karabiner-Elements
 brew cask install karabiner-elements
 ln -s ~/Documents/code/macsetup/karabiner/ ~/.config
