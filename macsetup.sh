@@ -30,6 +30,9 @@ rm -rf bin/
 #Dockutil
 brew install dockutil
 
+#Mackup
+brew cask install mackup
+
 
 #############################
 # Install main applications #
@@ -764,7 +767,11 @@ echo -e $todo | pbcopy
 # Backup of main folders (save some Dropbox transfer time)
 #
 # rsync -rtvlPh /Users/fharper/Documents/ /Volumes/fharper/ --delete
+
+mackup backup --force
+
 #
 # Restore them on new computer
 #
 # rsync -rtvlPh /Volumes/fharper/ /Users/fharper/Documents/ --delete
+mackup restore --force
