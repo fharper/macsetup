@@ -131,6 +131,8 @@ open -a Moom
 mas install 496437906
 open -a Sush
 
+#Slow Quit Apps
+brew cask install slowquitapps
 
 #Todoist
 mas install 585829637
@@ -142,9 +144,6 @@ todo+="\n"
 
 
 
-
-#Slow Quit Apps
-brew cask install slowquitapps
 #########################
 # DigitalOcean specific #
 #########################
