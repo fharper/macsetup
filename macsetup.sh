@@ -30,8 +30,6 @@ rm -rf bin/
 #Dockutil
 brew install dockutil
 
-#NordVPN
-brew cask install nordvpn
 
 #############################
 # Install main applications #
@@ -589,6 +587,8 @@ mas install 992076693
 #Muzzle
 brew cask install muzzle
 
+#NordVPN
+brew cask install nordvpn
 
 #Parcel
 mas install 639968404
