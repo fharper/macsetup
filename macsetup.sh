@@ -74,6 +74,12 @@ dockutil --add /Applications/Slack.app/ --allhomes
 dockutil --add /Applications/Spotify.app/ --allhomes
 
 dockutil --add /Applications/TweetDeck.app/ --allhomes
+
+
+###################
+# Top Helper apps #
+###################
+
 #Alfred
 brew cask install alfred
 open -a "Alfred 3"
