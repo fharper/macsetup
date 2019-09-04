@@ -71,6 +71,8 @@ dockutil --add /Applications/Todoist.app/ --allhomes
 brew cask install slack
 dockutil --add /Applications/Slack.app/ --allhomes
 
+#Spotify
+brew cask install spotify
 dockutil --add /Applications/Spotify.app/ --allhomes
 
 dockutil --add /Applications/TweetDeck.app/ --allhomes
@@ -128,8 +130,6 @@ todo+="\n"
 
 
 
-#Spotify
-brew cask install spotify
 
 #Slow Quit Apps
 brew cask install slowquitapps
