@@ -706,7 +706,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 # Order apps in Dock #
 ######################
 
-#list them in inversed order)
+#list them in inversed order
 dockutil --move 'Antidote' --position beginning --allhomes
 dockutil --move '1Password' --position beginning --allhomes
 dockutil --move 'Pocket' --position beginning --allhomes
