@@ -438,7 +438,12 @@ doctl auth init
 brew install hugo
 
 #AWS S3/DigitalOcean Spaces CLI
+#
+# fred.dev assets
+# sfo2.digitaloceanspaces.com
+# %(bucket)s.sfo2.digitaloceanspaces.com
 brew install s3cmd
+open https://cloud.digitalocean.com/account/api/token
 s3cmd --configure
 
 #Go
