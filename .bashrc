@@ -1,5 +1,5 @@
 #PATH
-export PATH="$HOME/.cargo/bin:$HOME/go/bin/:/usr/local/sbin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/go/bin/:/usr/local/sbin:$HOME/Library/Python/3.7/bin/:$PATH"
 
 
 #ls Directories in color
