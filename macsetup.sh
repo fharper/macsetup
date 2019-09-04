@@ -629,6 +629,7 @@ mas install 1195076754
 
 #Pocket
 mas install 568494494
+dockutil --add /Applications/Pocket.app/ --allhomes
 
 #Postman
 brew cask install postman
