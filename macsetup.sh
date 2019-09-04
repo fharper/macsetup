@@ -590,6 +590,9 @@ brew cask install Messenger
 #MindNode
 mas install 992076693
 
+#MurGaa Recorder
+open ~/Documents/mac/MurGaa\ Recorder/Recorder.zip
+
 #Muzzle
 brew cask install muzzle
 
