@@ -136,6 +136,9 @@ command -v git >/dev/null 2>&1 && PROMPT_COMMAND=prompt_command
 #
 eval "$(rbenv init -)"
 
+# bash completion #
+#
+source $(brew --prefix)/etc/bash_completion
 
 # Git completion #
 #
