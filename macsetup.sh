@@ -54,8 +54,6 @@ todo+="\n"
 brew cask install visual-studio-code
 dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 
-code --install-extension Shan.code-settings-sync
-code
 #Visual Studio Code Open
 brew cask install open-in-code
 geticon /Applications/Visual\ Studio\ Code.app/ code.icns
