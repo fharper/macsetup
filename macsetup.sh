@@ -145,6 +145,9 @@ todo+="\n"
 
 #Slow Quit Apps
 brew cask install slowquitapps
+#########################
+# DigitalOcean specific #
+#########################
 
 #Global Protect VPN
 open '/Users/fharper/Documents/mac/DigitalOcean - Global Protect VPN/GlobalProtect.pkg'
