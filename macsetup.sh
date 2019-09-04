@@ -546,6 +546,9 @@ todo+="\n"
 #Deckset
 brew cask install deckset
 
+#FilleZilla Pro
+open ~/Documents/mac/FileZilla\ Pro/FileZilla_Pro_3.44.2_macosx-x86.app.tar.bz2
+
 #Firefox
 brew cask install firefox
 
