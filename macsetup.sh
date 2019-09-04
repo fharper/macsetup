@@ -521,6 +521,7 @@ open ~/Documents/mac/Adobe\ Illustrator/AdobeIllustrator23_HD.dmg
 #Antidote
 open https://services.druide.com/
 read -p "${txtflash}Download & install Antidote before continuing..." -n1 -s
+dockutil --add /Applications/Antidote/Antidote\ 10.app/
 
 #AppCleaner
 brew cask install appcleaner
