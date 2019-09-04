@@ -27,6 +27,8 @@ mv bin/geticon /usr/local/sbin/
 mv bin/seticon /usr/local/sbin/
 rm -rf bin/
 
+#Dockutil
+brew install dockutil
 
 #NordVPN
 brew cask install nordvpn
@@ -298,7 +300,6 @@ todo+="- Deactivate Play user interface sound effects"
 todo+="\n"
 
 #delete defaults apps
-brew install dockutil
 sudo rm -rf /Applications/Numbers.app
 dockutil --remove 'Numbers' --allhomes
 sudo rm -rf /Applications/Keynote.app
