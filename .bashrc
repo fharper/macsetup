@@ -238,3 +238,6 @@ eval "$(pyenv init -)"
 
 #Terraform automcompletion
 complete -C /usr/local/bin/terraform terraform
+
+#Kubernetes autocompletion
+source <(kubectl completion bash)
