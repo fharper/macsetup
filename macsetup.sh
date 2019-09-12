@@ -457,6 +457,7 @@ jenv global openjdk64-12.0.1
 
 #Kubernetes
 brew install kubernetes-cli
+kubectl completion bash >/usr/local/etc/bash_completion.d/kubectl
 brew cask install minikube
 
 #MysSQL
