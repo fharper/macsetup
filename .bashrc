@@ -236,5 +236,5 @@ eval "$(jenv init -)"
 
 eval "$(pyenv init -)"
 
-#Terraform
+#Terraform automcompletion
 complete -C /usr/local/bin/terraform terraform
