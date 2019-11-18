@@ -65,9 +65,9 @@ rm code.icns
 todo+="- move open-in-code in Finder's toolbar"
 todo+="\n"
 
-#Chrome
-brew cask install google-chrome
-dockutil --add /Applications/Google\ Chrome.app/ --allhomes
+#Brave
+brew cask install brave-browser
+dockutil --add /Applications/Brave.app/ --allhomes
 
 #1Password
 brew cask install 1password
@@ -311,9 +311,6 @@ defaults write -g AppleShowAllExtensions -bool true
 #Volume - Don't play feedback on volume change
 defaults write NSGlobalDomain com.apple.sound.beep.feedback -int 0
 
-#Deactivate the Chrome Printing Dialog
-defaults write com.google.Chrome DisablePrintPreview -bool true
-
 #Add extra system menuitems
 defaults write com.apple.systemuiserver menuExtras -array \
 "/System/Library/CoreServices/Menu Extras/Volume.menu" \
@@ -364,11 +361,6 @@ dockutil --remove 'iTunes' --allhomes
 killall Finder
 killall Dock
 killall SystemUIServer
-
-#Gray
-brew cask install gray
-todo+="- Change Chrome to light appareance with Gray"
-todo+="\n"
 
 
 #####################
@@ -718,7 +710,7 @@ duti -s org.videolan.vlc public.avi all #avi
 duti -s org.videolan.vlc public.3gpp all #3gp
 duti -s com.apple.Preview com.nikon.raw-image all #NEF
 duti -s com.microsoft.VSCode net.daringfireball.markdown all #Markdown
-duti -s com.google.Chrome public.svg-image all #SVG
+duti -s com.google.Brave public.svg-image all #SVG
 duti -s net.kovidgoyal.calibre org.idpf.epub-container all # ePub
 duti -s com.microsoft.VSCode public.shell-script all #Shell script
 duti -s com.microsoft.VSCode com.apple.log all #log
@@ -740,7 +732,7 @@ duti -s org.videolan.vlc public.mp3 all #mp3
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Antidote", path:"/Applications/Antidote.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "CapSee", path:"/Applications/CapSee.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Evernote", path:"/Applications/Evernote.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Google Chrome", path:"/Applications/Google Chrome.app", hidden:false}'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Brave", path:"/Applications/Brave.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Mate Translator ", path:"/Applications/Mate Translator.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Menubar Countdown", path:"/Applications/Menubar Countdown.app", hidden:false}'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "RightZoom", path:"/Applications/RightZoom.app", hidden:true}'
@@ -764,7 +756,7 @@ dockutil --move 'Spotify' --position beginning --allhomes
 dockutil --move 'Slack' --position beginning --allhomes
 dockutil --move 'Todoist' --position beginning --allhomes
 dockutil --move 'Evernote' --position beginning --allhomes
-dockutil --move 'Google Chrome' --position beginning --allhomes
+dockutil --move 'Brave' --position beginning --allhomes
 
 
 #########
