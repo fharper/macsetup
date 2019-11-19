@@ -608,7 +608,7 @@ brew install lzip
 mas install 1005088137
 
 #Menubar Countdown
-brew cask install menubar-countdown
+mas install 1485343244
 
 #Messenger
 brew cask install Messenger
