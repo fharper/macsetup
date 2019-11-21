@@ -526,6 +526,9 @@ npm i --global yo
 #Lynis
 brew install lynis
 
+#Hub
+brew install hub
+
 
 ############################
 # Install the applications #
