@@ -554,9 +554,6 @@ open '/Users/fharper/Documents/mac/CapSee 1.2/CapSee12.dmg'
 #Charles Proxy
 brew cask install Charles
 
-#Crestron AirMedia (WeWork)
-open ~/Documents/mac/Crestron\ AirMedia\ \(WeWork\)/T529_10.5.200.29.dmg
-
 #Cryptomator
 brew cask install cryptomator
 
