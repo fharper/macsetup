@@ -601,6 +601,10 @@ brew cask install krita
 #Larch
 gem install larch
 
+#Logitech Presentation
+brew cask install logitech-presentation
+open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Installer.app'
+
 #LZip
 brew install lzip
 
