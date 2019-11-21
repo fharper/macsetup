@@ -329,6 +329,9 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 #Search the current folder by default in Finder
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
+#Change the log in screen background
+cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
+
 #Deactivate Play user interface sound effects
 todo+="- Deactivate Play user interface sound effects"
 todo+="\n"
