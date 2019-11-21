@@ -509,6 +509,9 @@ brew install ripgrep
 #Terraform
 brew install terraform
 
+#WebHint
+npm i -g hint
+
 #Bundle Phobia
 npm i -g bundle-phobia-cli
 
