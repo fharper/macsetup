@@ -758,7 +758,6 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 dockutil --move 'Antidote' --position beginning --allhomes
 dockutil --move '1Password' --position beginning --allhomes
 dockutil --move 'Pocket' --position beginning --allhomes
-dockutil --move 'TweetDeck' --position beginning --allhomes
 dockutil --move 'Visual Studio Code' --position beginning --allhomes
 dockutil --move 'iTerm' --position beginning --allhomes
 dockutil --move 'Spotify' --position beginning --allhomes
