@@ -537,6 +537,9 @@ dockutil --add /Applications/Antidote/Antidote\ 10.app/
 #AppCleaner
 brew cask install appcleaner
 
+#Asciinema
+brew install asciinema
+
 #AutoMute
 mas install 1118136179
 
