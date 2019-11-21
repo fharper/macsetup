@@ -505,6 +505,9 @@ brew cask install mysql-shell
 #ShellCheck
 brew install shellcheck
 
+#SQLLite DB Browser
+open ~/Documents/mac/SQLite\ DB\ Browser/DB.Browser.for.SQLite.dmg
+
 #Ripgrep (recursively searches directories for a regex pattern)
 brew install ripgrep
 
