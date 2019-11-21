@@ -183,6 +183,8 @@ git config --global difftool.prompt false
 git config --global diff.tool vscode
 git config --global difftool.vscode.cmd 'code --diff --wait $LOCAL $REMOTE'
 
+npx git-the-latest
+
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
 brew install git-lfs
