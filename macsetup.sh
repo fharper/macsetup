@@ -695,6 +695,7 @@ mas install 476272252
 # Install the Fonts #
 #####################
 brew cask install font-fira-sans
+brew cask install font-fira-code
 cp ~/Documents/mac/Fonts/* /Library/Fonts/
 
 
