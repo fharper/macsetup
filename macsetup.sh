@@ -443,6 +443,9 @@ s3cmd --configure
 #Go
 brew install go
 
+#Custerlint
+go get github.com/digitalocean/clusterlint/cmd/clusterlint
+
 #Java stuff
 brew install jenv
 brew cask install java
