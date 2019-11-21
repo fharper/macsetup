@@ -537,6 +537,9 @@ brew install hub
 #Adobe Illustrator (DigitalOcean)
 open ~/Documents/mac/Adobe\ Illustrator/AdobeIllustrator23_HD.dmg
 
+#Affinity Designer
+mas install 824171161
+
 #Antidote
 open https://services.druide.com/
 read -p "${txtflash}Download & install Antidote before continuing..." -n1 -s
