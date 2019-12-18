@@ -45,8 +45,8 @@ brew cask install mackup
 brew cask install iterm2
 dockutil --add /Applications/iTerm.app/ --allhomes
 
-#Starship Prompt
-brew install starship
+#Spaceship Prompt
+npm install -g spaceship-prompt
 
 #iTerm CD
 brew cask install cd-to-iterm
