@@ -71,6 +71,7 @@ todo+="\n"
 #Brave
 brew cask install brave-browser
 dockutil --add /Applications/Brave.app/ --allhomes
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Brave", path:"/Applications/Brave.app", hidden:false}'
 
 #1Password
 brew cask install 1password
@@ -85,10 +86,12 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 #Evernote
 mas install 406056744
 dockutil --add /Applications/Evernote.app/ --allhomes
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Evernote", path:"/Applications/Evernote.app", hidden:false}'
 
 #Todoist
 mas install 585829637
 dockutil --add /Applications/Todoist.app/ --allhomes
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Todoist", path:"/Applications/Todoist.app", hidden:false}'
 
 #Slack
 brew cask install slack
@@ -544,6 +547,7 @@ mas install 824171161
 open https://services.druide.com/
 read -p "${txtflash}Download & install Antidote before continuing..." -n1 -s
 dockutil --add /Applications/Antidote/Antidote\ 10.app/
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Antidote", path:"/Applications/Antidote.app", hidden:false}'
 
 #AppCleaner
 brew cask install appcleaner
@@ -569,6 +573,7 @@ todo+="\n"
 
 #CapSee
 open '/Users/fharper/Documents/mac/CapSee 1.2/CapSee12.dmg'
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "CapSee", path:"/Applications/CapSee.app", hidden:false}'
 
 #Charles Proxy
 brew cask install Charles
@@ -629,9 +634,11 @@ brew install lzip
 
 #Mate Translate
 mas install 1005088137
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Mate Translator ", path:"/Applications/Mate Translator.app", hidden:false}'
 
 #Menubar Countdown
 mas install 1485343244
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Menubar Countdown", path:"/Applications/Menubar Countdown.app", hidden:false}'
 
 #Messenger
 brew cask install Messenger
@@ -656,6 +663,7 @@ brew cask install pdfsam-basic
 
 #Pikka - Color Picker
 mas install 1195076754
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Pikka", path:"/Applications/Pikka.app", hidden:false}'
 
 #Pocket
 mas install 568494494
@@ -748,20 +756,6 @@ duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #terraform tfvars
 duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
 duti -s com.apple.Preview com.adobe.pdf all #pdf
 duti -s org.videolan.vlc public.mp3 all #mp3
-
-
-#####################
-# Add login items ###
-#####################
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Antidote", path:"/Applications/Antidote.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "CapSee", path:"/Applications/CapSee.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Evernote", path:"/Applications/Evernote.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Brave", path:"/Applications/Brave.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Mate Translator ", path:"/Applications/Mate Translator.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Menubar Countdown", path:"/Applications/Menubar Countdown.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "RightZoom", path:"/Applications/RightZoom.app", hidden:true}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Todoist", path:"/Applications/Todoist.app", hidden:false}'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Pikka", path:"/Applications/Pikka.app", hidden:false}'
 
 
 ######################
