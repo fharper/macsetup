@@ -551,6 +551,8 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 
 #AppCleaner
 brew cask install appcleaner
+todo+="- Activate AppCleaner Smart Delete"
+todo+="\n"
 
 #Asciinema
 brew install asciinema
