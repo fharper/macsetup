@@ -611,6 +611,9 @@ brew cask install keybase
 #Keycastr
 brew cask install keycastr
 
+#Kindle
+mas install 405399194
+
 #Krita
 brew cask install krita
 
