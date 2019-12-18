@@ -191,6 +191,8 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 
 brew install git-lfs
 
+brew install bfg
+
 #GPG
 brew cask install gpg-suite
 gpg --list-secret-keys --keyid-format LONG
