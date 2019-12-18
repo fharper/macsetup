@@ -729,7 +729,7 @@ cp ~/Documents/mac/Fonts/* /Library/Fonts/
 ##########################################
 # Change file type default association ###
 ##########################################
-#How to find the app bundle identifier: 
+#How to find the app bundle identifier:
 # mdls /Applications/Photos.app | grep kMDItemCF
 #How to find the Uniform Type Identifiers
 # mdls -name kMDItemContentTypeTree /Users/fharper/Downloads/init.lua
