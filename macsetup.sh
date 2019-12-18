@@ -732,7 +732,7 @@ cp ~/Documents/mac/Fonts/* /Library/Fonts/
 #How to find the app bundle identifier: 
 # mdls /Applications/Photos.app | grep kMDItemCF
 #How to find the Uniform Type Identifiers
-# mdls -name kMDItemContentTypeTree /Users/fharper/Documents/init.lua
+# mdls -name kMDItemContentTypeTree /Users/fharper/Downloads/init.lua
 brew install duti
 duti -s org.videolan.vlc public.mpeg-4 all #mp4
 duti -s org.videolan.vlc com.apple.quicktime-movie all #mov
