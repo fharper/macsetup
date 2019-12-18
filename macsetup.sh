@@ -167,6 +167,9 @@ brew install z
 #Global Protect VPN
 open '/Users/fharper/Documents/mac/DigitalOcean - Global Protect VPN/GlobalProtect.pkg'
 
+#GoTo Webinar
+open '/Users/fharper/Documents/mac/DigitalOcean - GoToWebinar/GoTo Opener.dmg'
+
 #NYC printer & scanner drivers
 open '/Users/fharper/Documents/mac/DigitalOcean - NYC Printer drivers/Dell C2665dnf Print Installer.pkg'
 ---open '/Users/fharper/Documents/mac/DigitalOcean - NYC Printer drivers/Dell C2665dnf Scan Installer.pkg'
