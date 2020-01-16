@@ -467,6 +467,7 @@ brew install kubernetes-cli
 kubectl completion bash >/usr/local/etc/bash_completion.d/kubectl
 brew install kubernetes-helm
 brew install minikube
+brew install kops
 
 #MysSQL
 brew install mysql
