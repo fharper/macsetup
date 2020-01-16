@@ -688,6 +688,9 @@ brew cask install postman
 #HOMEBREW_NO_ENV_FILTERING=1 API_KEY="$preyapi" brew cask install prey
 #open /usr/local/lib/prey/current/lib/agent/utils/Prey.app --args -picture
 
+#Rocket
+brew cask install rocket
+
 #Signal
 brew cask install signal
 
