@@ -144,6 +144,12 @@ ln -s ~/Documents/code/macsetup/karabiner/ ~/.config
 mas install 419330170
 open -a Moom
 
+#Paste (Clipboard Manager)
+mas install 967805235
+open -a Paste
+todo+="- Move the Paste Helper app from the mac apps folder to Applications"
+todo+="\n"
+
 #Shush
 mas install 496437906
 open -a Sush
