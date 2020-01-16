@@ -566,6 +566,9 @@ brew install asciinema
 #AutoMute
 mas install 1118136179
 
+#Bandwhich
+brew install bandwhich
+
 #Diablo II
 open -a '/Users/fharper/Documents/mac/Diablo 2/Installer.app'
 rm '/Users/fharper/Desktop/Diablo II'
