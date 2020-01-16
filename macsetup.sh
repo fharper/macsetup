@@ -70,6 +70,7 @@ todo+="\n"
 
 #Brave
 brew cask install brave-browser
+defaults write com.brave.Browser DisablePrintPreview -bool true
 dockutil --add /Applications/Brave.app/ --allhomes
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Brave", path:"/Applications/Brave.app", hidden:false}'
 
