@@ -680,6 +680,9 @@ open ~/Documents/mac/Stream\ Deck\ 4.3.2.11299/Stream_Deck_4.3.2.11299.pkg
 #Textual (IRC)
 brew cask install textual
 
+#The Fuck
+brew install thefuck
+
 #The Unarchiver
 mas install 425424353
 
