@@ -121,8 +121,8 @@ mas install 937984704
 brew cask install bartender
 open -a "Bartender 3"
 
-#CleanShot
-open '/Users/fharper/Documents/mac/CleanShot 2.5.3/CleanShot-2.5.3.dmg'
+#CleanShot X
+open '/Users/fharper/Documents/mac/CleanShot X 3.1/CleanShot-X-3.1.dmg'
 
 #Contexts
 brew cask install contexts
