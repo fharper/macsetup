@@ -532,9 +532,6 @@ todo+="\n"
 #Asciinema
 brew install asciinema
 
-#AutoMute
-mas install 1118136179
-
 #Bandwhich
 brew install bandwhich
 
