@@ -744,7 +744,7 @@ duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
 duti -s com.apple.Preview com.adobe.pdf all #pdf
 duti -s org.videolan.vlc public.mp3 all #mp3
 duti -s net.kovidgoyal.calibre dyn.ah62d4rv4ge80c8x1gq all #Kindle ebooks
-
+duti -s org.videolan.vlc com.apple.m4a-audio all #M4A
 
 ######################
 # Order apps in Dock #
