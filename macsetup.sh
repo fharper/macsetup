@@ -187,6 +187,8 @@ brew install git-lfs
 
 brew install bfg
 
+brew install github/gh/gh
+
 #GPG
 brew cask install gpg-suite
 gpg --list-secret-keys --keyid-format LONG
