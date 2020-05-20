@@ -566,6 +566,9 @@ todo+="\n"
 #Deckset
 brew cask install deckset
 
+#Edge
+brew cask install microsoft-edge
+
 #FilleZilla Pro
 open ~/Documents/mac/FileZilla\ Pro/FileZilla_Pro_3.44.2_macosx-x86.app.tar.bz2
 
