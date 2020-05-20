@@ -78,6 +78,9 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 brew cask install 1password
 dockutil --add /Applications/1Password\ 7.app/ --allhomes
 
+#Jrnl
+brew install jrnl
+
 #pCloud
 open '/Users/fharper/Documents/mac/pCloud 3.8.4/pCloud Drive 3.8.4.pkg'
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "pCloud Drive", path:"/Applications/pCloud Drive.app", hidden:false}'
