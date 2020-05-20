@@ -689,6 +689,9 @@ brew install unrar
 #VLC
 brew cask install vlc
 
+#WebP Viewer: QuickLook & View
+mas install 1323414118
+
 #WhatsApp
 brew cask install whatsapp
 
