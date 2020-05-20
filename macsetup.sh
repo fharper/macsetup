@@ -168,20 +168,6 @@ todo+="\n"
 brew install z
 
 
-#########################
-# DigitalOcean specific #
-#########################
-
-#Global Protect VPN
-open '/Users/fharper/Documents/mac/DigitalOcean - Global Protect VPN/GlobalProtect.pkg'
-
-#GoTo Webinar
-open '/Users/fharper/Documents/mac/DigitalOcean - GoToWebinar/GoTo Opener.dmg'
-
-#NYC printer & scanner drivers
-open '/Users/fharper/Documents/mac/DigitalOcean - NYC Printer drivers/Dell C2665dnf Print Installer.pkg'
-
-
 ######################
 # Git configurations #
 ######################
@@ -437,25 +423,8 @@ npm i -g npx
 npm i -g npm-remote-ls
 npm i -g npm-check-updates
 
-#DigitalOcean Specific
-brew install doctl
-doctl auth init
-brew install hugo
-
-#AWS S3/DigitalOcean Spaces CLI
-#
-# fred.dev assets
-# sfo2.digitaloceanspaces.com
-# %(bucket)s.sfo2.digitaloceanspaces.com
-brew install s3cmd
-open https://cloud.digitalocean.com/account/api/token
-s3cmd --configure
-
 #Go
 brew install go
-
-#Custerlint
-go get github.com/digitalocean/clusterlint/cmd/clusterlint
 
 #Java stuff
 brew install jenv
@@ -543,9 +512,6 @@ brew install hub
 ############################
 # Install the applications #
 ############################
-
-#Adobe Illustrator (DigitalOcean)
-open ~/Documents/mac/Adobe\ Illustrator/AdobeIllustrator23_HD.dmg
 
 #Affinity Designer
 mas install 824171161
