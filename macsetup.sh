@@ -125,7 +125,7 @@ brew cask install bartender
 open -a "Bartender 3"
 
 #CleanShot X
-open '/Users/fharper/Documents/mac/CleanShot X 3.1/CleanShot-X-3.1.dmg'
+brew cask install cleanshot
 
 #Contexts
 brew cask install contexts
