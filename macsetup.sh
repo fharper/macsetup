@@ -722,7 +722,18 @@ mas install 476272252
 brew cask install font-fira-sans
 brew cask install font-fira-code
 brew cask install font-arial
-cp ~/Documents/mac/Fonts/* /Library/Fonts/
+brew cask install font-open-sans
+brew cask install font-dancing-script
+brew cask install font-dejavu
+brew cask install font-roboto
+brew cask install font-roboto-condensed
+brew cask install font-hack
+brew cask install font-pacifico
+brew cask install font-leckerli-one
+brew cask install font-gidole
+brew cask install font-fira-mono
+brew cask install font-blackout
+brew cask install font-alex-brush
 
 
 ##########################################
