@@ -36,6 +36,9 @@ brew install dockutil
 #Mackup
 brew cask install mackup
 
+#wget
+brew install wget
+
 
 #############################
 # Install main applications #
