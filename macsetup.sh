@@ -141,9 +141,6 @@ open -a FruitJuice
 #HSTR (bash history)
 brew install hh
 
-#Karabiner-Elements
-brew cask install karabiner-elements
-ln -s ~/Documents/code/macsetup/karabiner/ ~/.config
 
 #Moom
 mas install 419330170
