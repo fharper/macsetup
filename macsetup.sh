@@ -177,7 +177,7 @@ brew install z
 ######################
 brew install git
 git config --global user.name "Frédéric Harper"
-git config --global user.email fharper@oocz.net
+git config --global user.email hi@fred.dev
 git config --global push.default current
 git config --global difftool.prompt false
 git config --global diff.tool vscode
