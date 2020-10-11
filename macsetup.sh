@@ -168,9 +168,6 @@ open -a "The Clock"
 todo+="- Remove the System Clock from the menubar"
 todo+="\n"
 
-#Z
-brew install z
-
 
 ######################
 # Git configurations #
