@@ -146,11 +146,6 @@ brew install hh
 mas install 419330170
 open -a Moom
 
-#Paste (Clipboard Manager)
-mas install 967805235
-open -a Paste
-todo+="- Move the Paste Helper app from the mac apps folder to Applications"
-todo+="\n"
 
 #Shush
 mas install 496437906
@@ -611,6 +606,9 @@ open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Install
 
 #LZip
 brew install lzip
+
+#Maccy
+brew cask install maccy
 
 #Mate Translate
 mas install 1005088137
