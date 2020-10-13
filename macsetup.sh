@@ -146,11 +146,6 @@ brew install hh
 mas install 419330170
 open -a Moom
 
-
-#Shush
-mas install 496437906
-open -a Sush
-
 #Slow Quit Apps
 brew cask install slowquitapps
 
