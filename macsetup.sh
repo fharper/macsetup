@@ -361,6 +361,9 @@ curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
 sudo python get-pip.py
 rm get-pip.py
 
+#Composer
+brew install composer
+
 #Ruby stuff
 brew install rbenv
 rbenv init
