@@ -633,6 +633,9 @@ brew cask install muzzle
 #NordVPN
 brew cask install nordvpn
 
+#Pandoc (for my resume)
+brew install pandoc
+
 #Parcel
 mas install 639968404
 
@@ -701,6 +704,9 @@ brew cask install whatsapp
 
 #WiFi Explorer Lite
 mas install 1408727408
+
+#wkhtmltopdf (for my resume)
+brew cask install wkhtmltopdf
 
 #Youtube Downloader
 brew install youtube-dl
