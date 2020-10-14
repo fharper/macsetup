@@ -141,6 +141,8 @@ open -a FruitJuice
 #HSTR (bash history)
 brew install hh
 
+#Logitech Mouse Manager
+open -a "/Users/fharper/Documents/mac/Logitech Mouse Manager 8.10.64/LogiMgr Installer 8.10.64"
 
 #Moom
 mas install 419330170
