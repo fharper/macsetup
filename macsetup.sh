@@ -672,8 +672,8 @@ brew cask install signal
 #Sloth (displays all open files and sockets in use by all running processes on your system)
 brew cask install sloth
 
-#Speedtest CLI
-brew install speedtest-cli
+#Speedtest
+mas install 1153157709
 
 #StreamDeck
 open ~/Documents/mac/Stream\ Deck\ 4.3.2.11299/Stream_Deck_4.3.2.11299.pkg
