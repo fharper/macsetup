@@ -407,8 +407,8 @@ echo -e "\n"
 
 #Node stuff
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
-nvm install v10.16.0
-nvm alias default v10.16.0
+nvm install v12.18.3
+nvm alias default v12.18.3
 npm i -g npm@latest
 npm config set prefix /usr/local
 npm config set editor code
