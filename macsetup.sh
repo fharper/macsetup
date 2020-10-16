@@ -505,6 +505,9 @@ brew install lynis
 #Hub
 brew install hub
 
+#Xcode
+mas install 497799835
+
 
 ############################
 # Install the applications #
