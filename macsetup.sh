@@ -394,7 +394,7 @@ brew install hub
 
 #Docker
 brew cask install docker
-brew cask install kitematic
+brew cask install docker-toolbox
 
 #Generate a new public SSH key
 ssh-keygen -t rsa -b 4096 -C "fharper@oocz.net"
