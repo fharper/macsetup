@@ -576,10 +576,6 @@ open ~/Documents/mac/FileZilla\ Pro/FileZilla_Pro_3.44.2_macosx-x86.app.tar.bz2
 #Firefox
 brew cask install firefox
 
-#Fliqlo screensaver
-brew cask install fliqlo
-todo+="- Set the default screensaver to Fliqlo"
-todo+="\n"
 
 #Gimp
 brew cask install gimp
