@@ -321,6 +321,9 @@ cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
 todo+="- Deactivate Play user interface sound effects"
 todo+="\n"
 
+#Disable screensaver
+defaults -currentHost write com.apple.screensaver idleTime 0
+
 #delete defaults apps
 sudo rm -rf /Applications/Numbers.app
 dockutil --remove 'Numbers' --allhomes
