@@ -543,6 +543,8 @@ ln -sf /Users/fharper/Documents/misc/Diablo/ /Applications/Diablo\ II/save
 
 #Calibre
 brew cask install calibre
+todo+="- Add DeDRM plugin to Calibre"
+todo+="\n"
 
 #Camtasia
 brew cask install camtasia
