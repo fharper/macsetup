@@ -424,6 +424,7 @@ npm i -g nodemon
 npm i -g npx
 npm i -g npm-remote-ls
 npm i -g npm-check-updates
+npm i -g yarn
 
 #Go
 brew install go
