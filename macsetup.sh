@@ -182,6 +182,8 @@ brew install bfg
 
 brew install github/gh/gh
 
+brew install gist
+
 #GPG
 brew cask install gpg-suite
 gpg --list-secret-keys --keyid-format LONG
