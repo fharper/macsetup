@@ -633,6 +633,9 @@ open ~/Documents/mac/MurGaa\ Recorder/Recorder.zip
 #Mountain Duck
 brew cask install mountain-duck
 
+#Mumu
+brew cask install mumu
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Mumu", path:"/Applications/Mumu.app", hidden:false}'
 
 #Muzzle
 brew cask install muzzle
@@ -670,8 +673,6 @@ brew cask install postman
 # public-ip-cli
 npm i -g public-ip-cli
 
-#Rocket
-brew cask install rocket
 
 #Signal
 brew cask install signal
