@@ -697,6 +697,9 @@ brew install thefuck
 #The Unarchiver
 mas install 425424353
 
+#Typora
+brew cask install typora
+
 #Unrar
 brew install unrar
 
