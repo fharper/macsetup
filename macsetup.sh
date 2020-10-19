@@ -706,9 +706,6 @@ brew cask install vlc
 #WebP Viewer: QuickLook & View
 mas install 1323414118
 
-#WhatsApp
-brew cask install whatsapp
-
 #WiFi Explorer Lite
 mas install 1408727408
 
