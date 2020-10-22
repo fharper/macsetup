@@ -610,9 +610,6 @@ brew install lzip
 #Maccy
 brew cask install maccy
 
-#Mate Translate
-mas install 1005088137
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Mate Translator ", path:"/Applications/Mate Translator.app", hidden:false}'
 
 #Menubar Countdown
 mas install 1485343244
