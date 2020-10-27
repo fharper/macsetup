@@ -666,6 +666,8 @@ brew cask install postman
 #Public-ip-cli
 npm i -g public-ip-cli
 
+#Rename
+brew install rename
 
 #Signal
 brew cask install signal
