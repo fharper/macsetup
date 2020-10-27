@@ -791,6 +791,12 @@ dockutil --move 'Evernote' --position beginning --allhomes
 dockutil --move 'Brave' --position beginning --allhomes
 
 
+################
+# Latest steps #
+################
+brew cask install monolingual
+open -a monolingual
+
 #########
 # END ###
 #########
