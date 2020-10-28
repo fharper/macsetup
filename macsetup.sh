@@ -421,6 +421,8 @@ npm i -g npx
 npm i -g npm-remote-ls
 npm i -g npm-check-updates
 npm i -g yarn
+npm i -g eslint
+npm i -g prettier
 
 #Go
 brew install go
