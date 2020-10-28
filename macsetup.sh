@@ -103,6 +103,9 @@ dockutil --add /Applications/Slack.app/ --allhomes
 brew cask install spotify
 dockutil --add /Applications/Spotify.app/ --allhomes
 
+#Rain
+wget https://github.com/fharper/rain/releases/download/v1.0/rain.app.zip && unar rain.app.zip && rm rain.app.zip && mv rain.app /Applications
+osascript -e 'tell application "System Events" to make login item at end with properties {name: "Rain", path:"/Applications/Rain.app", hidden:false}'
 
 ###################
 # Top Helper apps #
