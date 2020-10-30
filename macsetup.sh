@@ -170,6 +170,7 @@ git config --global push.default current
 git config --global difftool.prompt false
 git config --global diff.tool vscode
 git config --global difftool.vscode.cmd 'code --diff --wait $LOCAL $REMOTE'
+git config --global pull.rebase true
 
 npx git-the-latest
 
