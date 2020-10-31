@@ -617,10 +617,6 @@ brew install lzip
 brew cask install maccy
 
 
-#Menubar Countdown
-mas install 1485343244
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Menubar Countdown", path:"/Applications/Menubar Countdown.app", hidden:false}'
-
 #Messenger
 brew cask install Messenger
 
