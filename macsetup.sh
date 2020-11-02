@@ -203,14 +203,6 @@ brew install wifi-password
 curl -sLo- http://get.bpkg.sh | bash
 
 
-######################
-# bash profile stuff #
-######################
-ln -s ~/Documents/code/macsetup/.bash_profile ~/.bash_profile
-ln -s ~/Documents/code/macsetup/.bashrc ~/.bashrc
-source ~/.bashrc
-
-
 #####################
 # OS Configurations #
 #####################
