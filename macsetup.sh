@@ -678,9 +678,6 @@ open ~/Documents/mac/Stream\ Deck\ 4.3.2.11299/Stream_Deck_4.3.2.11299.pkg
 #TeamViewer
 brew cask install teamviewer
 
-#Textual (IRC)
-brew cask install textual
-
 #The Fuck
 brew install thefuck
 
