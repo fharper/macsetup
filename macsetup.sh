@@ -444,7 +444,7 @@ brew install postgresql
 brew install redis
 
 #Rust
-brew install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 #JavaScript
 npm i -g uglify-js
