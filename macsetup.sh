@@ -193,8 +193,6 @@ git config --global user.signingkey $gpgUUID
 git config --global commit.gpgsign true
 
 
-
-
 ######################
 # Command line tools #
 ######################
