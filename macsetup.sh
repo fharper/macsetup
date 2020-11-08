@@ -570,6 +570,11 @@ brew cask install dropbox
 #Edge
 brew cask install microsoft-edge
 
+#ffmpeg
+brew install libvma
+brew tap homebrew-ffmpeg/ffmpeg
+brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libvmaf
+
 #Firefox
 brew cask install firefox
 
