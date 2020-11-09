@@ -750,6 +750,7 @@ duti -s org.videolan.vlc public.avi all #avi
 duti -s org.videolan.vlc public.3gpp all #3gp
 duti -s com.apple.Preview com.nikon.raw-image all #NEF
 duti -s com.microsoft.VSCode net.daringfireball.markdown all #Markdown
+duti -s com.brave.Browser public.svg-image all #svg
 duti -s net.kovidgoyal.calibre org.idpf.epub-container all # ePub
 duti -s com.microsoft.VSCode public.shell-script all #Shell script
 duti -s com.microsoft.VSCode com.apple.log all #log
