@@ -589,6 +589,9 @@ open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0
 #icssplit file.ics outfilename --maxsize=900000
 pip3 install icssplit
 
+#Jiffy
+mas install 1502527999
+
 #Keybase
 brew cask install keybase
 
