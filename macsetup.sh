@@ -255,6 +255,9 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFi
 #Stop the creation of the stupid .DS_Store files
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
+#Mute the boot chime
+sudo nvram StartupMute=%01
+
 echo -e "\n"
 read -p "${txtflash}Deactivate the Force click and haptic feedback from Trackpad manually" -n1 -s
 echo -e "\n"
