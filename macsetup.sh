@@ -537,6 +537,9 @@ brew install asciinema
 #Bandwhich
 brew install bandwhich
 
+#Bat
+brew install bat
+
 #Diablo II
 open -a '/Users/fharper/Documents/mac/Diablo 2/Installer.app'
 rm '/Users/fharper/Desktop/Diablo II'
