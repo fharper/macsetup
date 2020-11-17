@@ -180,7 +180,7 @@ brew install git-lfs
 
 brew install bfg
 
-brew install github/gh/gh
+brew install gh
 
 brew install gist
 
