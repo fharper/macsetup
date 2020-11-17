@@ -587,6 +587,8 @@ brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libvmaf
 #Firefox
 brew cask install firefox
 
+#Gifski
+mas install 1351639930
 
 #Gimp
 brew cask install gimp
