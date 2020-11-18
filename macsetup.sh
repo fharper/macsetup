@@ -600,6 +600,9 @@ open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0
 #icssplit file.ics outfilename --maxsize=900000
 pip3 install icssplit
 
+#Iina
+brew cask install iina
+
 #Jiffy
 mas install 1502527999
 
@@ -705,9 +708,6 @@ brew cask install typora
 #Unrar
 brew install unrar
 
-#VLC
-brew cask install vlc
-
 #WebP Viewer: QuickLook & View
 mas install 1323414118
 
@@ -754,12 +754,12 @@ brew cask install font-alex-brush
 #How to find the Uniform Type Identifiers
 # mdls -name kMDItemContentTypeTree /Users/fharper/Downloads/init.lua
 brew install duti
-duti -s org.videolan.vlc public.mpeg-4 all #mp4
-duti -s org.videolan.vlc com.apple.quicktime-movie all #mov
+duti -s com.colliderli.iina public.mpeg-4 all #mp4
+duti -s com.colliderli.iina com.apple.quicktime-movie all #mov
 duti -s com.microsoft.VSCode public.plain-text all #txt
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge8027pb all #lua
-duti -s org.videolan.vlc public.avi all #avi
-duti -s org.videolan.vlc public.3gpp all #3gp
+duti -s com.colliderli.iina public.avi all #avi
+duti -s com.colliderli.iina public.3gpp all #3gp
 duti -s com.apple.Preview com.nikon.raw-image all #NEF
 duti -s com.microsoft.VSCode net.daringfireball.markdown all #Markdown
 duti -s com.brave.Browser public.svg-image all #svg
@@ -773,11 +773,11 @@ duti -s com.microsoft.VSCode public.php-script all #php
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3u all #terraform tf
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #terraform tfstate
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #terraform tfvars
-duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
+duti -s com.colliderli.iina com.microsoft.waveform-audio all #wav
 duti -s com.apple.Preview com.adobe.pdf all #pdf
-duti -s org.videolan.vlc public.mp3 all #mp3
+duti -s com.colliderli.iina public.mp3 all #mp3
 duti -s net.kovidgoyal.calibre dyn.ah62d4rv4ge80c8x1gq all #Kindle ebooks
-duti -s org.videolan.vlc com.apple.m4a-audio all #M4A
+duti -s com.colliderli.iina com.apple.m4a-audio all #M4A
 duti -s net.langui.WebPViewer public.webp all #WebP
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81g6pq all #SQL
 duti -s com.microsoft.VSCode public.css all #CSS
