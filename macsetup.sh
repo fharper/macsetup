@@ -51,6 +51,9 @@ dockutil --add /Applications/iTerm.app/ --allhomes
 #Spaceship Prompt
 npm install -g spaceship-prompt
 
+#Little Snitch
+brew cask install little-snitch
+
 #iTerm CD
 brew cask install cd-to-iterm
 geticon /Applications/iTerm.app/ iterm.icns
