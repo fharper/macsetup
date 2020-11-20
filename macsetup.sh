@@ -576,6 +576,9 @@ todo+="\n"
 #Deckset
 brew cask install deckset
 
+#Disk Drill
+brew cask install disk-drill
+
 #Dropbox
 brew cask install dropbox
 
