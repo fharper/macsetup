@@ -826,6 +826,7 @@ echo -e $todo | pbcopy
 # Backup of main folders (save some Dropbox transfer time)
 #
 rsync -rtvlPh /Users/fharper/Downloads/ /Volumes/fharper/Downloads/ --delete && rsync -rtvlPh /Users/fharper/Pictures/ /Volumes/fharper/Pictures/ --delete && rsync -rtvlPh /Users/fharper/Documents/ Volumes/fharper/Documents/ --delete
+rsync -rtvlPh /Users/fharper/Downloads/ /Volumes/fharper/Downloads/ --delete && rsync -rtvlPh /Users/fharper/Pictures/ /Volumes/fharper/Pictures/ --delete && rsync -rtvlPh /Users/fharper/Documents/ /Volumes/fharper/Documents/ --delete
 
 mackup backup --force
 
