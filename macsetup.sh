@@ -789,6 +789,7 @@ duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81g6pq all #SQL
 duti -s com.apple.Preview org.openxmlformats.presentationml.presentation all #PPTX
 duti -s com.microsoft.VSCode public.css all #CSS
 duti -s com.microsoft.VSCode com.netscape.javascript-source all #JavaScript
+duti -s com.microsoft.VSCode public.ruby-script all #Ruby
 
 ######################
 # Order apps in Dock #
