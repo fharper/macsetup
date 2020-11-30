@@ -827,17 +827,7 @@ todo+="(copied to keyboard)"
 echo -e ${txtflash}$todo${txtblack}
 echo -e $todo | pbcopy
 
-#
-# Backup of main folders (save some Dropbox transfer time)
-#
-rsync -rtvlPh /Users/fharper/Downloads/ /Volumes/fharper/Downloads/ --delete && rsync -rtvlPh /Users/fharper/Pictures/ /Volumes/fharper/Pictures/ --delete && rsync -rtvlPh /Users/fharper/Documents/ Volumes/fharper/Documents/ --delete
-rsync -rtvlPh /Users/fharper/Downloads/ /Volumes/fharper/Downloads/ --delete && rsync -rtvlPh /Users/fharper/Pictures/ /Volumes/fharper/Pictures/ --delete && rsync -rtvlPh /Users/fharper/Documents/ /Volumes/fharper/Documents/ --delete
 
 mackup backup --force
-
-#
-# Restore them on new computer
-#
-rsync -rtvlPh /Volumes/fharper/Downloads/ /Users/fharper/Downloads/ --delete && rsync -rtvlPh /Volumes/fharper/Pictures/ /Users/fharper/Pictures/ --delete && rsync -rtvlPh /Volumes/fharper/Documents/ /Users/fharper/Documents/ --delete
 
 mackup restore --force
