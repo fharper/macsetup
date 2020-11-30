@@ -638,6 +638,9 @@ brew cask install maccy
 #Messenger
 brew cask install Messenger
 
+#Micro Snitch
+brew cask install micro-snitch
+
 #MindNode
 mas install 992076693
 
