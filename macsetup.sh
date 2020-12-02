@@ -32,6 +32,13 @@ rm -rf bin/
 
 #Dockutil
 brew install dockutil
+#
+# Terminal Notifier
+#
+# https://github.com/julienXX/terminal-notifier
+#
+brew install terminal-notifier
+
 
 #Mackup
 brew cask install mackup
