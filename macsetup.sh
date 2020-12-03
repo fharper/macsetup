@@ -822,6 +822,11 @@ dockutil --move 'Brave' --position beginning --allhomes
 ################
 # Latest steps #
 ################
+#########
+# Games #
+#########
+
+#
 brew cask install monolingual
 open -a monolingual
 
