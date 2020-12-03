@@ -827,6 +827,14 @@ dockutil --move 'Brave' --position beginning --allhomes
 #########
 
 #
+# Among Us
+#
+# http://www.innersloth.com/gameAmongUs.php
+#
+mas install 1351168404
+
+
+#
 brew cask install monolingual
 open -a monolingual
 
