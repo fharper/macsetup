@@ -361,6 +361,10 @@ dockutil --remove 'iTunes' --allhomes
 killall Finder
 killall Dock
 killall SystemUIServer
+#
+# Git Sizer
+#
+brew install git-sizer
 
 
 #####################
