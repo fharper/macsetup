@@ -816,7 +816,7 @@ dockutil --move 'Spotify' --position beginning --allhomes
 dockutil --move 'Slack' --position beginning --allhomes
 dockutil --move 'Todoist' --position beginning --allhomes
 dockutil --move 'Evernote' --position beginning --allhomes
-dockutil --move 'Brave' --position beginning --allhomes
+dockutil --move 'Brave Browser' --position beginning --allhomes
 
 
 ################
