@@ -819,9 +819,6 @@ dockutil --move 'Evernote' --position beginning --allhomes
 dockutil --move 'Brave Browser' --position beginning --allhomes
 
 
-################
-# Latest steps #
-################
 #########
 # Games #
 #########
@@ -833,6 +830,12 @@ dockutil --move 'Brave Browser' --position beginning --allhomes
 #
 mas install 1351168404
 
+
+###############
+#             #
+# Final steps #
+#             #
+###############
 
 #
 brew cask install monolingual
