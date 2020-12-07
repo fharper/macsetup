@@ -811,8 +811,8 @@ duti -s com.brave.Browser com.compuserve.gif all #gif
 ######################
 
 #list them in inversed order
-dockutil --move '1Password' --position beginning --allhomes
 dockutil --move 'Antidote 10' --position beginning --allhomes
+dockutil --move '1Password 7' --position beginning --allhomes
 dockutil --move 'Pocket' --position beginning --allhomes
 dockutil --move 'Visual Studio Code' --position beginning --allhomes
 dockutil --move 'iTerm' --position beginning --allhomes
