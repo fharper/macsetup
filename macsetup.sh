@@ -842,8 +842,12 @@ mas install 1351168404
 ###############
 
 #
+# Monolingual
+#
+# https://github.com/IngmarStein/Monolingual
+#
 brew cask install monolingual
-open -a monolingual
+notification "Use Monolingual to remove unused languages files"
 
 #########
 # END ###
