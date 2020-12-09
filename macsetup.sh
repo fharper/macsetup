@@ -1,8 +1,5 @@
 #! /bin/bash
 
-txtflash=$(tput setaf 3) #yellow
-txtblack=$(tput setaf 7)
-todo="\n########\n# TODO #\n########\n"
 
 ####################################
 # Install utils to run this script #
@@ -66,8 +63,6 @@ brew cask install cd-to-iterm
 geticon /Applications/iTerm.app/ iterm.icns
 seticon iterm.icns /Applications/cd\ to\ iterm.app/
 rm iterm.icns
-todo+="- move cd-to-iterm in Finder's toolbar"
-todo+="\n"
 
 #Visual Studio Code
 brew cask install visual-studio-code
@@ -78,8 +73,6 @@ brew cask install open-in-code
 geticon /Applications/Visual\ Studio\ Code.app/ code.icns
 seticon code.icns /Applications/Open\ in\ Code.app/
 rm code.icns
-todo+="- move open-in-code in Finder's toolbar"
-todo+="\n"
 
 #Brave
 brew cask install brave-browser
@@ -124,8 +117,6 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 #Alfred
 brew cask install alfred
 open -a "Alfred 3"
-todo+="- Remove the spotlight keyboard shortcut and set the Alfred one"
-todo+="\n"
 
 #aText
 brew cask install atext
@@ -166,8 +157,6 @@ brew cask install sound-control
 #The Clock
 mas install 488764545
 open -a "The Clock"
-todo+="- Remove the System Clock from the menubar"
-todo+="\n"
 
 
 ######################
@@ -340,6 +329,8 @@ dockutil --remove 'Keynote' --allhomes
 sudo rm -rf /Applications/Pages.app
 dockutil --remove 'Pages' --allhomes
 sudo rm -rf /Applications/GarageBand.app
+git config --global user.email $email
+git config --global init.defaultBranch main
 
 #remove apps from dock
 dockutil --remove 'Books' --allhomes
