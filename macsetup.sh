@@ -728,7 +728,11 @@ mas install 1408727408
 #wkhtmltopdf (for my resume)
 brew cask install wkhtmltopdf
 
-#Youtube Downloader
+#
+# Youtube Downloader
+#
+# https://github.com/ytdl-org/youtube-dl/
+#
 brew install youtube-dl
 
 #Zoom
