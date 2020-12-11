@@ -12,9 +12,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off
 brew install bash-completion
-brew tap buo/cask-upgrade
-brew tap homebrew/cask-fonts
-brew tap dteoh/sqa
 
 #Mac App Store CLI
 brew install mas
@@ -42,6 +39,7 @@ brew cask install mackup
 
 #wget
 brew install wget
+brew tap dteoh/sqa
 
 
 #############################
@@ -744,6 +742,7 @@ mas install 476272252
 #####################
 # Install the Fonts #
 #####################
+brew tap homebrew/cask-fonts
 brew cask install font-fira-sans
 brew cask install font-fira-code
 brew cask install font-arial
