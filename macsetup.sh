@@ -798,6 +798,7 @@ duti -s com.apple.Preview org.openxmlformats.presentationml.presentation all #PP
 duti -s com.microsoft.VSCode public.css all #CSS
 duti -s com.microsoft.VSCode com.netscape.javascript-source all #JavaScript
 duti -s com.microsoft.VSCode public.ruby-script all #Ruby
+duti -s com.apple.Preview public.standard-tesselated-geometry-format all #3d CAD
 duti -s com.brave.Browser com.compuserve.gif all #gif
 
 ######################
