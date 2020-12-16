@@ -560,9 +560,11 @@ brew cask install camtasia
 todo+="- Add your license to Camtasia"
 todo+="\n"
 
-#CapSee
-open '/Users/fharper/Documents/mac/CapSee 1.2/CapSee12.dmg'
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "CapSee", path:"/Applications/CapSee.app", hidden:false}'
+#
+#Captin
+# https://captin.mystrikingly.com/
+#
+brew cask install captin
 
 #Charles Proxy
 brew cask install Charles
