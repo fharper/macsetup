@@ -364,7 +364,6 @@ dockutil --remove 'Safari' --allhomes
 #
 dockutil --remove 'System Preferences' --allhomes
 
-npm i -g trash-cli
 brew install wifi-password
 curl -sLo- http://get.bpkg.sh | bash
 
@@ -580,6 +579,12 @@ loginitems -a Rain
 npm install -g spaceship-prompt
 
 loginitems -a Todoist
+
+#
+# Trash CLI
+#
+npm i -g trash-cli
+
 #
 # Visual Studio Code
 #
