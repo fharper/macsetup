@@ -24,6 +24,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 #
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
+############################
+#                          #
+# Utils to run this script #
+#     (needed order)       #
+#                          #
+############################
+
 brew analytics off
 brew install bash-completion
 
