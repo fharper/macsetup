@@ -1144,7 +1144,11 @@ open ~/Documents/mac/Stream\ Deck\ 4.3.2.11299/Stream_Deck_4.3.2.11299.pkg
 #TeamViewer
 brew cask install teamviewer
 
-#The Fuck
+#
+# The Fuck
+#
+# https://github.com/nvbn/thefuck
+#
 brew install thefuck
 
 #The Unarchiver
