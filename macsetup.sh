@@ -92,6 +92,20 @@ brew install loginitems
 brew install mas
 mas signin $email
 
+#
+# nvm + node.js + npm cli
+#
+# https://github.com/nvm-sh/nvm
+# https://github.com/nodejs/node
+# https://github.com/npm/cli
+#
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash #don't use brew
+nvm install v14.15.1
+npm i -g npm@latest
+npm config set editor code
+npm adduser
+
+#
 # wget
 #
 # https://www.gnu.org/software/wget
@@ -751,14 +765,6 @@ brew cask install docker-toolbox
 
 
 #Node stuff
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
-nvm install v12.18.3
-nvm alias default v12.18.3
-npm i -g npm@latest
-npm config set prefix /usr/local
-npm config set editor code
-npm config set sign-git-tag true
-npm adduser
 npm i -g express-generator
 npm i -g nodemon
 npm i -g npx
