@@ -233,9 +233,6 @@ dockutil --add /Applications/Slack.app/ --allhomes
 #
 brew cask install sound-control
 
-#Spotify
-brew cask install spotify
-dockutil --add /Applications/Spotify.app/ --allhomes
 #
 # The Clock
 #
@@ -663,6 +660,12 @@ loginitems -a Rain
 # Spaceship Prompt
 #
 npm install -g spaceship-prompt
+
+#
+# Spotify
+#
+brew cask install spotify
+dockutil --add /Applications/Spotify.app --allhomes
 
 loginitems -a Todoist
 
