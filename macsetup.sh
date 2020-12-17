@@ -73,14 +73,18 @@ brew install dockutil
 brew install mas
 mas signin $email
 
-#osXiconUtils
-curl https://sveinbjorn.org/files/software/osxiconutils.zip > osxiconutils.zip
 # wget
 #
 # https://www.gnu.org/software/wget
 #
 brew install wget
 
+#
+# osXiconUtils
+#
+# https://github.com/sveinbjornt/osxiconutils
+#
+wget -O osxiconutils.zip https://sveinbjorn.org/files/software/osxiconutils.zip
 unzip osxiconutils.zip
 rm osxiconutils.zip
 mv bin/geticon /usr/local/sbin/
