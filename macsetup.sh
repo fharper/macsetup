@@ -17,6 +17,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 #Brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#
+# Rosetta2
+#
+# https://developer.apple.com/documentation/apple_silicon/about_the_rosetta_translation_environment
+#
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+
 brew analytics off
 brew install bash-completion
 
