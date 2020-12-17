@@ -600,6 +600,14 @@ defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -b
 defaults write com.brave.Browser DisablePrintPreview -bool true
 
 loginitems -a Evernote
+
+#
+# Notion
+#
+brew cask install notion
+dockutil --add /Applications/Notion.app --allhomes
+loginitems -a Notion
+
 loginitems -a Rain
 #
 # Spaceship Prompt
