@@ -373,6 +373,10 @@ dockutil --remove 'System Preferences' --allhomes
 
 brew install wifi-password
 curl -sLo- http://get.bpkg.sh | bash
+#
+# TV
+#
+dockutil --remove 'TV' --allhomes
 
 
 #####################
