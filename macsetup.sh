@@ -7,6 +7,8 @@
 #                       #
 #########################
 
+email="hi@fred.dev"
+
 function notification {
     /usr/local/Cellar/terminal-notifier/2.0.0/terminal-notifier.app/Contents/MacOS/terminal-notifier -message "$1"
     read -pr 'Press enter to continue'
