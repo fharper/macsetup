@@ -36,6 +36,18 @@ mv iTerm.app /Applications/
 open iTerm
 exit
 
+#
+# Configure SSH
+#
+ssh-keygen -t rsa -b 4096 -C $email
+ssh-add -K ~/.ssh/id_rsa
+ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+ssh-keyscan -t rsa bitbucket.org >> ~/.ssh/known_hosts
+pbcopy < ~/.ssh/id_rsa.pub
+open https://github.com/settings/keys
+notification "Add your SSH key to Github (copied into the clipboard)"
+
+
 ############################
 #                          #
 # Utils to run this script #
@@ -735,17 +747,6 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 brew cask install docker
 brew cask install docker-toolbox
 
-#Generate a new public SSH key
-ssh-keygen -t rsa -b 4096 -C "fharper@oocz.net"
-ssh-add -K ~/.ssh/id_rsa
-ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-ssh-keyscan -t rsa bitbucket.org >> ~/.ssh/known_hosts
-pbcopy < ~/.ssh/id_rsa.pub
-open https://github.com/settings/keys
-echo -e "${txtflash}Add SSH key to Github (copied in the clipboard)"
-open https://bitbucket.org/account/user/fharper/ssh-keys/
-read -p "${txtflash}Add SSH key to Bitbucket (copied in the clipboard)" -n1 -s
-echo -e "\n"
 
 #Node stuff
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
