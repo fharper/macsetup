@@ -135,8 +135,6 @@ brew cask install atext
 #
 mas install 937984704
 
-#Spaceship Prompt
-npm install -g spaceship-prompt
 #
 # Bartender
 #
@@ -581,6 +579,11 @@ dockutil --add /Applications/Antidote/Antidote\ 10.app/
 loginitems -a "Brave Browser"
 loginitems -a Evernote
 loginitems -a Rain
+#
+# Spaceship Prompt
+#
+npm install -g spaceship-prompt
+
 loginitems -a Todoist
 #
 # Git Sizer
