@@ -858,6 +858,11 @@ brew install htop
 pip3 install icssplit
 
 #Iina
+#
+# Iina
+#
+# https://github.com/iina/iina
+#
 brew cask install iina
 
 #Jiffy
