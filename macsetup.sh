@@ -600,7 +600,11 @@ killall SystemUIServer
 brew cask install 1password
 dockutil --add /Applications/1Password\ 7.app/ --allhomes
 
+#Antidote
+open https://services.druide.com/
+notification "Download & install Antidote"
 dockutil --add /Applications/Antidote/Antidote\ 10.app/
+loginitems -a Antidote
 
 #
 # Brave Browser
@@ -899,11 +903,6 @@ mas install 824171161
 #
 brew install bat
 
-#Antidote
-open https://services.druide.com/
-read -p "${txtflash}Download & install Antidote before continuing..." -n1 -s
-dockutil --add /Applications/Antidote/Antidote\ 10.app/
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Antidote", path:"/Applications/Antidote.app", hidden:false}'
 #
 #
 #
