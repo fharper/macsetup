@@ -895,6 +895,7 @@ brew install pyenv
 pyenv install 3.7.0
 pyenv global 3.7.0
 
+
 #Mysql Shell
 brew cask install mysql-shell
 
@@ -1151,7 +1152,6 @@ open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Install
 
 #LZip
 brew install lzip
-
 
 #Messenger
 brew cask install Messenger
