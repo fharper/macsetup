@@ -859,7 +859,6 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 #Node stuff
 npm i -g express-generator
 npm i -g nodemon
-npm i -g npx
 npm i -g npm-remote-ls
 npm i -g npm-check-updates
 
