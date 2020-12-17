@@ -15,8 +15,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 #                     #
 #######################
 
-#Brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 #
 # Rosetta2
 #
@@ -31,6 +29,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 #                          #
 ############################
 
+# Brew
+#
+# https://brew.sh
+#
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
 brew analytics off
 brew install bash-completion
 
