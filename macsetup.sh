@@ -733,6 +733,10 @@ gh auth login
 #####################
 # Install dev stuff #
 #####################
+#
+# GitHub Desktop
+#
+brew cask install github
 
 #Install pip
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
