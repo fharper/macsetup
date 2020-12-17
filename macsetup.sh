@@ -910,10 +910,11 @@ brew install jq
 
 #
 
-#AppCleaner
+#
+# AppCleaner
+#
+# https://freemacsoft.net/appcleaner/
 brew cask install appcleaner
-todo+="- Activate AppCleaner Smart Delete"
-todo+="\n"
 
 #
 # Kap
@@ -936,6 +937,8 @@ brew cask install raspberry-pi-imager
 #
 brew tap zgosalvez/repo
 brew cask install zgosalvez-silicon
+
+
 
 
 
