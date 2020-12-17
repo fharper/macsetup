@@ -749,6 +749,11 @@ git config --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
 brew install git-lfs
 
 #
+# Git Open
+#
+npm i -g git-open
+
+#
 # Git Recent
 #
 # https://github.com/paulirish/git-recent
@@ -898,7 +903,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 
 #Git scripts
-npm i -g git-open
 npm i -g git-branch-status
 
 #Python stuff
