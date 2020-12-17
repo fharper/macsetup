@@ -322,6 +322,9 @@ git config --global difftool.prompt false
 git config --global diff.tool vscode
 git config --global difftool.vscode.cmd 'code --diff --wait $LOCAL $REMOTE'
 git config --global pull.rebase true
+# Messages
+#
+dockutil --remove 'Messages' --allhomes
 
 npx git-the-latest
 #
