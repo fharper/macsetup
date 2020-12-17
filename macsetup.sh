@@ -118,9 +118,6 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dic
 open -a "Alfred 4"
 notification "add shortcut to Alfred"
 
-#############################
-# Install main applications #
-#############################
 #
 # aText
 #
@@ -567,6 +564,13 @@ dockutil --remove 'iTunes' --allhomes
 killall Finder
 killall Dock
 killall SystemUIServer
+
+
+#####################
+#                   #
+# Main applications #
+#                   #
+#####################
 #
 # Git Sizer
 #
