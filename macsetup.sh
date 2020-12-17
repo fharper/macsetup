@@ -820,7 +820,11 @@ brew install postgresql
 #Redis
 brew install redis
 
-#Rust
+# Rust + rustup
+#
+# https://www.rust-lang.org
+# https://rustup.rs
+#
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 
