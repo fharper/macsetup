@@ -190,6 +190,10 @@ rm -rf "LogiMgr Installer 8.34.91.app"
 
 #Jrnl
 brew install jrnl
+#
+# Maccy
+#
+brew cask install maccy
 
 #Evernote
 mas install 406056744
@@ -788,9 +792,6 @@ open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Install
 
 #LZip
 brew install lzip
-
-#Maccy
-brew cask install maccy
 
 
 #Messenger
