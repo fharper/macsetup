@@ -343,7 +343,6 @@ brew install git-lfs
 #
 dockutil --remove 'Notes' --allhomes
 
-brew install bfg
 #
 # Photos
 #
@@ -631,6 +630,16 @@ npm i -g trash-cli
 brew cask install visual-studio-code
 dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 
+
+
+#
+# BFG Repo-Cleaner
+#
+# https://github.com/rtyley/bfg-repo-cleaner
+#
+# git-filter-branch replacement
+#
+brew install bfg
 
 #
 # Git Sizer
