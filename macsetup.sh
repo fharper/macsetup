@@ -824,8 +824,13 @@ brew cask install dropbox
 #Edge
 brew cask install microsoft-edge
 
-#ffmpeg
-brew install libvma
+#
+# ffmpeg + vmaf
+#
+# https://ffmpeg.org
+# https://github.com/Netflix/vmaf
+#
+brew install libvmaf
 brew tap homebrew-ffmpeg/ffmpeg
 brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libvmaf
 
