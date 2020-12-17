@@ -813,6 +813,10 @@ brew cask install Charles
 # https://www.google.com/chrome
 #
 brew install cask google-chrome
+
+#Control Center
+open "/Users/fharper/Documents/mac/Elgato Control Center 1.1.3.10337/Control_Center_1.1.3.10337.zip"
+
 #Cryptomator
 brew cask install cryptomator
 
