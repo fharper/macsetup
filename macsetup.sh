@@ -37,6 +37,14 @@ exit
 #                          #
 ############################
 
+#
+# Xcode Command Line Tools
+#
+# https://developer.apple.com/xcode
+#
+xcode-select --install
+
+#
 # Brew
 #
 # https://brew.sh
