@@ -464,6 +464,11 @@ defaults write -g com.apple.finder FXArrangeGroupViewBy -string "Name"
 lpadmin -E -p "HP_OfficeJet_Pro_7740_series" -E -D "HP OfficeJet 7740" -v ""$(ippfind)"" -o printer-is-shared=false -o Name="HP OfficeJet 7740" -P "/Users/fharper/Documents/mac/HP OfficeJet Pro 7740/HP_OfficeJet_Pro_7740_series.ppd"
 
 #
+# iTerm2 configurations
+#
+dockutil --add /Applications/iTerm.app/ --allhomes
+
+#
 # Locate database generation
 #
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
