@@ -555,8 +555,6 @@ cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
 #Deactivate Play user interface sound effects
 
 
-git config --global user.email $email
-git config --global init.defaultBranch main
 #Disable the accent characters menu
 defaults write -g ApplePressAndHoldEnabled -bool false
 
