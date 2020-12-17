@@ -1018,6 +1018,9 @@ open -a '/Users/fharper/Documents/mac/Diablo 2/Installer.app'
 rm '/Users/fharper/Desktop/Diablo II'
 ln -sf /Users/fharper/Documents/misc/Diablo/ /Applications/Diablo\ II/save
 
+#Discord
+brew cask install discord
+
 #Calibre
 brew cask install calibre
 todo+="- Add DeDRM plugin to Calibre"
