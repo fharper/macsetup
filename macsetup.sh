@@ -517,10 +517,8 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.fiveFingerPinchSwi
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture -bool false
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFingerPinchGesture -bool false
 
-
 #Deactivate the Force click and haptic feedback from Trackpad manually
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -bool false
-
 
 
 #Activate Silent clicking
