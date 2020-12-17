@@ -733,6 +733,8 @@ git config --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
 #
 # Git Sizer
 #
+# https://github.com/github/git-sizer
+#
 brew install git-sizer
 
 #
