@@ -55,6 +55,11 @@ brew install bash-completion
 
 #Mac App Store CLI
 #
+# Dockutil
+#
+brew install dockutil
+
+#
 # Mac App Store cli
 #
 # https://github.com/mas-cli/mas
@@ -70,8 +75,6 @@ mv bin/geticon /usr/local/sbin/
 mv bin/seticon /usr/local/sbin/
 rm -rf bin/
 
-#Dockutil
-brew install dockutil
 #
 # Terminal Notifier
 #
