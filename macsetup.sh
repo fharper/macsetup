@@ -147,11 +147,6 @@ brew cask install bartender
 #
 brew cask install cleanshot
 
-#iTerm CD
-brew cask install cd-to-iterm
-geticon /Applications/iTerm.app/ iterm.icns
-seticon iterm.icns /Applications/cd\ to\ iterm.app/
-rm iterm.icns
 #
 # Contexts
 #
@@ -610,6 +605,14 @@ loginitems -a Notion
 #
 brew cask install openineditor-lite
 notification "drag openineditor-lite in Finder toolbar"
+
+#
+# OpenInTerminal-Lite
+#
+# https://github.com/Ji4n1ng/OpenInTerminal
+#
+brew cask install openinterminal-lite
+notification "drag openinterminal-lite in Finder toolbar"
 
 loginitems -a Rain
 #
