@@ -834,8 +834,6 @@ brew uninstall bzip2
 phpenv install 7.4.9
 brew install composer
 
-#Git PR open
-antibody bundle caarlos0/open-pr kind:path
 
 
 #Hub (for Github)
