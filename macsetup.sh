@@ -972,10 +972,12 @@ open "/Users/fharper/Documents/mac/Elgato Control Center 1.1.3.10337/Control_Cen
 #Cryptomator
 brew cask install cryptomator
 
-#DaisyDisk
+#
+# DaisyDisk
+#
+# https://daisydiskapp.com/
+#
 brew cask install daisydisk
-todo+="- Add your license to DaisyDisk"
-todo+="\n"
 
 #Deckset
 brew cask install deckset
