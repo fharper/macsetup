@@ -372,7 +372,6 @@ dockutil --remove 'TV' --allhomes
 #                   #
 #####################
 
-#Dock: minimize window into application icon
 #
 # Desktop & Screen Saver - Start after
 #
