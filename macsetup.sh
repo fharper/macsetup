@@ -252,6 +252,10 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 #
 sudo rm -rf /Applications/GarageBand.app
 
+#
+# iMovie
+#
+sudo rm -rf /Applications/iMovie.app
 
 #
 # Keynote
