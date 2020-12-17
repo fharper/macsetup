@@ -798,6 +798,12 @@ brew cask install captin
 #Charles Proxy
 brew cask install Charles
 
+#
+# Chrome
+#
+# https://www.google.com/chrome
+#
+brew install cask google-chrome
 #Cryptomator
 brew cask install cryptomator
 
