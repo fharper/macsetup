@@ -48,27 +48,66 @@ brew cask install mackup
 #wget
 brew install wget
 brew tap dteoh/sqa
+###########################
+#                         #
+# Top Helper Applications #
+#                         #
+###########################
 
+#
+# Alfred
+#
+# https://www.alfredapp.com
+#
+brew cask install alfred
+open -a "Alfred 4"
+notification "add shortcut to Alfred"
 
 #############################
 # Install main applications #
 #############################
+#
+# aText
+#
+# https://www.trankynam.com/atext
+#
+brew cask install atext
 
 #iTerm
 brew cask install iterm2
 dockutil --add /Applications/iTerm.app/ --allhomes
+#
+# Amphetamine
+#
+# https://apps.apple.com/app/amphetamine/id937984704
+#
+mas install 937984704
 
 #Spaceship Prompt
 npm install -g spaceship-prompt
+#
+# Bartender
+#
+# https://www.macbartender.com
+#
+brew cask install bartender
 
 #Little Snitch
 brew cask install little-snitch
+#
+# CleanShot X
+#
+brew cask install cleanshot
 
 #iTerm CD
 brew cask install cd-to-iterm
 geticon /Applications/iTerm.app/ iterm.icns
 seticon iterm.icns /Applications/cd\ to\ iterm.app/
 rm iterm.icns
+#
+# Contexts
+#
+brew cask install contexts
 
 #Visual Studio Code
 brew cask install visual-studio-code
@@ -79,6 +118,10 @@ brew cask install open-in-code
 geticon /Applications/Visual\ Studio\ Code.app/ code.icns
 seticon code.icns /Applications/Open\ in\ Code.app/
 rm code.icns
+#
+# FruitJuice
+#
+mas install 671736912
 
 #Brave
 brew cask install brave-browser
@@ -86,10 +129,22 @@ defaults write com.brave.Browser DisablePrintPreview -bool true
 dockutil --add /Applications/Brave.app/ --allhomes
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Brave", path:"/Applications/Brave.app", hidden:false}'
 defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
+#
+# HSTR
+#
+brew install hh
 
 #1Password
 brew cask install 1password
 dockutil --add /Applications/1Password\ 7.app/ --allhomes
+#
+# Logitech Mouse Manager
+#
+wget https://download01.logi.com/web/ftp/pub/techsupport/options/Options_8.34.91.zip
+unzip Options_8.34.91.zip
+rm Options_8.34.91.zip
+open -a "LogiMgr Installer 8.34.91.app"
+rm -rf "LogiMgr Installer 8.34.91.app"
 
 #Jrnl
 brew install jrnl
@@ -98,71 +153,58 @@ brew install jrnl
 mas install 406056744
 dockutil --add /Applications/Evernote.app/ --allhomes
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Evernote", path:"/Applications/Evernote.app", hidden:false}'
+#
+# Moom
+#
+# https://manytricks.com/moom
+#
+mas install 419330170 #install the App Store version since you bought it
 
 #Todoist
 mas install 585829637
 dockutil --add /Applications/Todoist.app/ --allhomes
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Todoist", path:"/Applications/Todoist.app", hidden:false}'
+#
+# Slow Quit Apps
+#
+# https://github.com/dteoh/SlowQuitApps
+#
+brew tap dteoh/sqa
+brew cask install slowquitapps
 
 #Slack
 brew cask install slack
 dockutil --add /Applications/Slack.app/ --allhomes
+#
+# Sound Control
+#
+brew cask install sound-control
 
 #Spotify
 brew cask install spotify
 dockutil --add /Applications/Spotify.app/ --allhomes
+#
+# The Clock
+#
+brew install the-clock
 
 #Rain
 wget https://github.com/fharper/rain/releases/download/v1.0/rain.app.zip && unar rain.app.zip && rm rain.app.zip && mv rain.app /Applications
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Rain", path:"/Applications/Rain.app", hidden:false}'
 
-###################
-# Top Helper apps #
-###################
 
-#Alfred
-brew cask install alfred
-open -a "Alfred 3"
 
-#aText
-brew cask install atext
 
-#Amphetamine
-mas install 937984704
 
-#Bartender
-brew cask install bartender
-open -a "Bartender 3"
 
-#CleanShot X
-brew cask install cleanshot
 
-#Contexts
-brew cask install contexts
 
-#FruitJuice (Battery)
-mas install 671736912
-open -a FruitJuice
 
-#HSTR (bash history)
-brew install hh
 
-#Logitech Mouse Manager
-open -a "/Users/fharper/Documents/mac/Logitech Mouse Manager 8.10.64/LogiMgr Installer 8.10.64"
 
-#Moom
-mas install 419330170
-open -a Moom
 
-#Slow Quit Apps
-brew cask install slowquitapps
 
-#Sound Control
-brew cask install sound-control
 
-#The Clock
-mas install 488764545
-open -a "The Clock"
 
 
 ######################
