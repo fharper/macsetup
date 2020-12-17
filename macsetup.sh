@@ -326,6 +326,10 @@ git config --global pull.rebase true
 npx git-the-latest
 
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+#
+# News
+#
+dockutil --remove 'News' --allhomes
 
 brew install git-lfs
 #
