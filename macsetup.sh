@@ -7,8 +7,6 @@
 #                       #
 #########################
 
-#Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 #######################
 #                     #
 # Pre-Installalations #
@@ -284,6 +282,9 @@ dockutil --remove 'Maps' --allhomes
 ######################
 # Git configurations #
 ######################
+# Oh My Zsh
+#
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 brew install git
 git config --global user.name "Frédéric Harper"
 git config --global user.email hi@fred.dev
