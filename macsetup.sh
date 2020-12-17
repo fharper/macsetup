@@ -333,7 +333,6 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 #
 dockutil --remove 'News' --allhomes
 
-brew install git-lfs
 #
 # Notes
 #
@@ -734,6 +733,13 @@ git config --global pull.rebase true
 git config --global difftool.prompt false
 git config --global diff.tool vscode
 git config --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
+
+#
+# Git Large File Storage
+#
+# https://github.com/git-lfs/git-lfs
+#
+brew install git-lfs
 
 #
 # Git Recent
