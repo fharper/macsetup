@@ -210,10 +210,6 @@ rm -rf "LogiMgr Installer 8.34.91.app"
 #
 brew cask install maccy
 
-#Evernote
-mas install 406056744
-dockutil --add /Applications/Evernote.app/ --allhomes
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Evernote", path:"/Applications/Evernote.app", hidden:false}'
 #
 # Moom
 #
@@ -624,6 +620,12 @@ loginitems -a "Brave Browser"
 defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
 defaults write com.brave.Browser DisablePrintPreview -bool true
 
+#
+# Evernote
+#
+mas install 406056744
+defaults write com.evernote.Evernote NSRequiresAquaSystemAppearance -bool true
+dockutil --add /Applications/Evernote.app --allhomes
 loginitems -a Evernote
 
 #
