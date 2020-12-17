@@ -876,6 +876,12 @@ brew install hub
 #                    #
 ######################
 
+#
+# Asciinema
+#
+# https://github.com/asciinema/asciinema
+#
+brew install asciinema
 
 ############################
 # Install the applications #
@@ -906,8 +912,6 @@ brew cask install appcleaner
 todo+="- Activate AppCleaner Smart Delete"
 todo+="\n"
 
-#Asciinema
-brew install asciinema
 #
 # Kap
 #
