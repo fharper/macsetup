@@ -829,6 +829,10 @@ brew install composer
 
 
 
+#
+# PYenv + Python + Pip
+#
+brew install pyenv
 
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
 sudo python get-pip.py
@@ -885,8 +889,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 #Git scripts
 npm i -g git-branch-status
 
-#Python stuff
-brew install pyenv
 pyenv install 3.7.0
 pyenv global 3.7.0
 
