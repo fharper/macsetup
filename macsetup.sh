@@ -242,9 +242,6 @@ dockutil --add /Applications/Spotify.app/ --allhomes
 brew install the-clock
 defaults write com.apple.menuextra.clock IsAnalog -bool true #macOS Clock in analog format
 
-#Rain
-wget https://github.com/fharper/rain/releases/download/v1.0/rain.app.zip && unar rain.app.zip && rm rain.app.zip && mv rain.app /Applications
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Rain", path:"/Applications/Rain.app", hidden:false}'
 
 ########################
 #                      #
@@ -652,6 +649,15 @@ notification "drag openineditor-lite in Finder toolbar"
 brew cask install openinterminal-lite
 notification "drag openinterminal-lite in Finder toolbar"
 
+#
+# Rain
+#
+# https://github.com/fharper/rain
+#
+wget https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip
+unzip rain.app.zip
+rm rain.app.zip
+mv rain.app /Applications
 loginitems -a Rain
 #
 # Spaceship Prompt
