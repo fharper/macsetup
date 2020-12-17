@@ -164,11 +164,6 @@ brew cask install contexts
 #
 brew cask install controlplane
 
-#Visual Studio Code Open
-brew cask install open-in-code
-geticon /Applications/Visual\ Studio\ Code.app/ code.icns
-seticon code.icns /Applications/Open\ in\ Code.app/
-rm code.icns
 #
 # FruitJuice
 #
@@ -607,6 +602,15 @@ loginitems -a Evernote
 brew cask install notion
 dockutil --add /Applications/Notion.app --allhomes
 loginitems -a Notion
+
+
+#
+# OpenInEditor-Lite
+#
+# https://github.com/Ji4n1ng/OpenInTerminal
+#
+brew cask install openineditor-lite
+notification "drag openineditor-lite in Finder toolbar"
 
 loginitems -a Rain
 #
