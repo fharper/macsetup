@@ -72,7 +72,6 @@ xcode-select --install
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
 brew analytics off
 
-#Mac App Store CLI
 #
 # Dockutil
 #
