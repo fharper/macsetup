@@ -210,10 +210,6 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 #
 mas install 419330170 #install the App Store version since you bought it
 
-#Todoist
-mas install 585829637
-dockutil --add /Applications/Todoist.app/ --allhomes
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Todoist", path:"/Applications/Todoist.app", hidden:false}'
 #
 # Slow Quit Apps
 #
@@ -374,40 +370,124 @@ curl -sLo- http://get.bpkg.sh | bash
 
 
 #####################
+#                   #
 # OS Configurations #
+#                   #
 #####################
 
 #Dock: minimize window into application icon
+#
+# Desktop & Screen Saver - Start after
+#
+defaults -currentHost write com.apple.screensaver idleTime 0
+
+#
+# Dock - Minimize window into application icon
+#
 defaults write com.apple.dock minimize-to-application -bool true
 
-#Generate the locate database
+#
+# Dock - Show recent applications in Dock
+#
+defaults write com.apple.dock show-recents -bool false
+
+#
+# Finder - .DS_Store files creation
+#
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+#
+# Finder - New Finder windows show
+#
+defaults write com.apple.finder NewWindowTarget -string "PfLo"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Downloads"
+
+#
+# Finder - Show all filename extensions
+#
+defaults write -g AppleShowAllExtensions -bool true
+
+#
+# Finder - Show Library Folder
+#
+chflags nohidden ~/Library
+
+#
+# Finder - Show Path Bar
+#
+defaults write com.apple.finder ShowPathbar -bool true
+
+#
+# Finder - Show Status Bar
+#
+defaults write com.apple.finder ShowStatusBar -boolean true
+
+#
+# Finder - Show these items on the desktop - CDs, DVDs, and iPods
+#
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+
+#
+# Finder - Show these items on the desktop - Connected servers
+#
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
+
+#
+# Finder - Show these items on the desktop - External disks
+#
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+
+#
+# Finder - Show these items on the desktop - Hard disks
+#
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+
+#
+# Finder - Sort By - Name
+defaults write -g com.apple.finder FXArrangeGroupViewBy -string "Name"
+
+
+#
+# Locate database generation
+#
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
-#Show Users Library folder
-chflags nohidden ~/Library/
-
-#Allow Apps from anywhere to be installed without warnings
+#
+# Security & Privacy - Allow apps downloaded from Anywhere
+#
 sudo spctl --master-disable
 
-#Disable the accent characters menu
-defaults write -g ApplePressAndHoldEnabled -bool false
+#
+# Sound - Play sound on startup
+#
+sudo nvram StartupMute=%01
 
-#Disable the look up & data detector on Trackpad
+
+#
+# Trackpad - Look up & data detector
+#
 defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerTapGesture -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerTapGesture -bool false
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -bool false
 
-#Disable Mission Control and Exposé Gestures on Trackpad
+#
+# User & Groups - Guest User
+#
+sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
+# Trackpad - App Exposé & Mission Control (need to be done together)
 defaults write com.apple.dock showAppExposeGestureEnabled -bool false
 defaults write com.apple.dock showMissionControlGestureEnabled -bool false
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerVertSwipeGesture -bool false
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.fourFingerVertSwipeGesture -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -bool false
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -bool false
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -bool false
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -bool false
+
+# Trackpad - Smart zoom
+defaults write com.apple.dock showSmartZoomEnabled -bool false
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDoubleTapGesture -bool false
+
+# Trackpad - Swipe between full-screen apps
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerVertSwipeGesture -bool false
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -bool false
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -bool false
 
 #Disable Show Notification Center on Trackpad
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.twoFingerFromRightEdgeSwipeGesture -bool false
@@ -424,53 +504,26 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.fiveFingerPinchSwi
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture -bool false
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFingerPinchGesture -bool false
 
-#Stop the creation of the stupid .DS_Store files
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
-#Mute the boot chime
-sudo nvram StartupMute=%01
+#Deactivate the Force click and haptic feedback from Trackpad manually
+defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -bool false
 
-echo -e "\n"
-read -p "${txtflash}Deactivate the Force click and haptic feedback from Trackpad manually" -n1 -s
-echo -e "\n"
 
-echo -e "\n"
-read -p "${txtflash}Deactivate Show recent applications in Dock from the Dock manually" -n1 -s
-echo -e "\n"
 
 #Activate Silent clicking
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 
-#Disable Guest Account
-sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
+
 
 #Finder display settings
-defaults write com.apple.finder FXArrangeGroupViewBy -string "Name"
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -boolean false
-defaults write com.apple.finder ShowRecentTags -boolean false
-defaults write com.apple.finder ShowHardDrivesOnDesktop -boolean false
-defaults write com.apple.finder ShowStatusBar -boolean true
 defaults write com.apple.finder FXEnableExtensionChangeWarning -boolean false
 defaults write com.apple.finder ShowPathbar -bool true
-
-#New Finder windows in my Downloads folder
-defaults write com.apple.finder NewWindowTarget -string "PfLo"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Downloads"
-
-#Prevent .DS_Store File Creation on Network Volumes
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 #Show all files extensions
 defaults write -g AppleShowAllExtensions -bool true
 
-#Volume - Don't play feedback on volume change
-defaults write NSGlobalDomain com.apple.sound.beep.feedback -int 0
-
-#Add extra system menuitems
-defaults write com.apple.systemuiserver menuExtras -array \
-"/System/Library/CoreServices/Menu Extras/Volume.menu" \
-"/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
+# Prevent the dock from moving monitors
+defaults write com.apple.Dock position-immutable -bool true
 
 # Set computer name
 sudo scutil --set ComputerName "lapta"
@@ -488,14 +541,13 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
 
 #Deactivate Play user interface sound effects
-todo+="- Deactivate Play user interface sound effects"
-todo+="\n"
 
-#Disable screensaver
-defaults -currentHost write com.apple.screensaver idleTime 0
 
 git config --global user.email $email
 git config --global init.defaultBranch main
+#Disable the accent characters menu
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 
 dockutil --remove 'Books' --allhomes
 dockutil --remove 'Siri' --allhomes
