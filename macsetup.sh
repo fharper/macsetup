@@ -1017,8 +1017,6 @@ brew cask install gimp
 #Hemingway
 open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
 
-#ICS split
-#icssplit file.ics outfilename --maxsize=900000
 #
 # htop
 #
@@ -1026,6 +1024,13 @@ open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0
 #
 brew install htop
 
+#
+# ICS split
+#
+# https://github.com/beorn/icssplit
+#
+# icssplit /.ics outfilename --maxsize=300000
+#
 pip3 install icssplit
 
 #
