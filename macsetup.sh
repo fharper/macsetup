@@ -734,6 +734,7 @@ gist --login
 brew install git
 git config --global user.name "Frédéric Harper"
 git config --global user.email $email
+git config --global init.defaultBranch main
 git config --global push.default current
 git config --global pull.rebase true
 git config --global difftool.prompt false
