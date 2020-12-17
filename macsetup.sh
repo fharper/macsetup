@@ -799,10 +799,6 @@ brew install redis
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 
-#Images
-npm i -g imagemin-cli
-npm i -g imagemin-pngquant
-npm i -g imagemin-jpegtran
 
 
 #Git scripts
