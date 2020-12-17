@@ -225,9 +225,6 @@ mas install 419330170 #install the App Store version since you bought it
 brew tap dteoh/sqa
 brew cask install slowquitapps
 
-#Slack
-brew cask install slack
-dockutil --add /Applications/Slack.app/ --allhomes
 #
 # Sound Control
 #
@@ -657,6 +654,13 @@ unzip rain.app.zip
 rm rain.app.zip
 mv rain.app /Applications
 loginitems -a Rain
+
+#
+# Slack
+#
+brew cask install slack
+dockutil --add /Applications/Slack.app/ --allhomes
+
 #
 # Spaceship Prompt
 #
