@@ -1086,7 +1086,11 @@ mas install 992076693
 #Mountain Duck
 brew cask install mountain-duck
 
-#Mumu
+#
+# Mumu
+#
+# https://getmumu.com
+#
 brew cask install mumu
 loginitems -a Mumu
 
