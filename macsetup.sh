@@ -196,9 +196,6 @@ mas install 671736912
 #
 brew install hh
 
-#1Password
-brew cask install 1password
-dockutil --add /Applications/1Password\ 7.app/ --allhomes
 #
 # Logitech Mouse Manager
 #
@@ -609,6 +606,13 @@ killall SystemUIServer
 # Main applications #
 #                   #
 #####################
+
+#
+# 1Password
+#
+brew cask install 1password
+dockutil --add /Applications/1Password\ 7.app/ --allhomes
+
 dockutil --add /Applications/Antidote/Antidote\ 10.app/
 
 #
