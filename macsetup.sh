@@ -807,8 +807,6 @@ npm i -g imagemin-cli
 npm i -g imagemin-pngquant
 npm i -g imagemin-jpegtran
 
-#Accessibility
-npm i -g pa11y
 
 #Git scripts
 npm i -g git-open
