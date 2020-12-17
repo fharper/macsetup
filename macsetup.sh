@@ -911,6 +911,12 @@ brew install bat
 brew install jq
 
 #
+# Noti
+#
+# https://github.com/variadico/noti
+#
+brew install noti
+
 #
 # tl;dr Pages
 #
