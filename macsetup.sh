@@ -687,6 +687,11 @@ rm get-pip.py
 brew install composer
 
 #Ruby stuff
+#
+#
+#
+brew install gulp-cli
+
 brew install rbenv
 rbenv init
 rbenv install 2.6.3
@@ -714,8 +719,6 @@ brew install yarn
 #Git PR open
 antibody bundle caarlos0/open-pr kind:path
 
-#Gulp
-npm i -g gulp-cli
 
 #Hub (for Github)
 brew install hub
