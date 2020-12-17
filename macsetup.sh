@@ -324,6 +324,10 @@ git config --global difftool.vscode.cmd 'code --diff --wait $LOCAL $REMOTE'
 git config --global pull.rebase true
 
 npx git-the-latest
+#
+# Music
+#
+dockutil --remove 'Music' --allhomes
 
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 #
