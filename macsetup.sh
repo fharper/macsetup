@@ -766,11 +766,18 @@ npm i -g eslint
 #Go
 brew install go
 
-#Java stuff
+#
+# Java (OpenJDK with AdoptOpenJDK) + jEnv
+#
+# https://github.com/jenv/jenv
+# https://github.com/AdoptOpenJDK/homebrew-openjdk
+# https://openjdk.java.net
+#
 brew install jenv
-brew cask install java
-jenv add /Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home/
-jenv global openjdk64-12.0.1
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk
+jenv add /usr/local/opt/openjdk@15/
+jenv global openjdk64-15.0.1
 
 #Kubernetes
 brew install kubernetes-cli
