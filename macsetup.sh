@@ -693,6 +693,13 @@ brew install composer
 brew install gulp-cli
 
 #
+# Prettier
+#
+# https://github.com/prettier/prettier
+#
+brew install prettier
+
+#
 # RBenv + Ruby + Bundler
 #
 brew install rbenv
@@ -755,7 +762,6 @@ npm i -g npx
 npm i -g npm-remote-ls
 npm i -g npm-check-updates
 npm i -g eslint
-npm i -g prettier
 
 #Go
 brew install go
