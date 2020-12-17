@@ -836,10 +836,6 @@ brew install composer
 
 
 
-#Hub (for Github)
-brew install hub
-# Increase sound quality for Bluetooth headphones/headsets
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 
 
