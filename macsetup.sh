@@ -691,6 +691,11 @@ dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 #
 brew install bfg
 
+#
+# Docker
+#
+brew cask install docker
+
 
 #
 # Gist
@@ -773,9 +778,6 @@ brew install hub
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
-#Docker
-brew cask install docker
-brew cask install docker-toolbox
 
 
 #Node stuff
