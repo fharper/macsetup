@@ -372,7 +372,6 @@ dockutil --remove 'Safari' --allhomes
 #
 dockutil --remove 'System Preferences' --allhomes
 
-brew install wifi-password
 curl -sLo- http://get.bpkg.sh | bash
 #
 # TV
@@ -920,6 +919,14 @@ brew install noti
 # https://github.com/tldr-pages/tldr
 #
 brew install tldr
+
+#
+# Wifi Password
+#
+# https://github.com/rauchg/wifi-password
+#
+brew install wifi-password
+
 
 ################
 #              #
