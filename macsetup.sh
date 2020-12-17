@@ -340,7 +340,6 @@ dockutil --remove 'Notes' --allhomes
 #
 dockutil --remove 'Photos' --allhomes
 
-brew install gh
 #
 # Podcasts
 #
