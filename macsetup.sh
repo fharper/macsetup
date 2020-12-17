@@ -236,6 +236,7 @@ dockutil --add /Applications/Spotify.app/ --allhomes
 # The Clock
 #
 brew install the-clock
+defaults write com.apple.menuextra.clock IsAnalog -bool true #macOS Clock in analog format
 
 #Rain
 wget https://github.com/fharper/rain/releases/download/v1.0/rain.app.zip && unar rain.app.zip && rm rain.app.zip && mv rain.app /Applications
