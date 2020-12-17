@@ -66,6 +66,12 @@ brew install bash-completion
 brew install dockutil
 
 #
+# loginitems
+#
+brew tap OJFord/formulae
+brew install loginitems
+
+#
 # Mac App Store cli
 #
 # https://github.com/mas-cli/mas
@@ -574,6 +580,11 @@ killall SystemUIServer
 # Main applications #
 #                   #
 #####################
+dockutil --add /Applications/Antidote/Antidote\ 10.app/
+loginitems -a "Brave Browser"
+loginitems -a Evernote
+loginitems -a Rain
+loginitems -a Todoist
 #
 # Git Sizer
 #
@@ -902,7 +913,7 @@ brew cask install mountain-duck
 
 #Mumu
 brew cask install mumu
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Mumu", path:"/Applications/Mumu.app", hidden:false}'
+loginitems -a Mumu
 
 #Muzzle
 brew cask install muzzle
@@ -915,13 +926,14 @@ brew install pandoc
 
 #Parcel
 mas install 639968404
+loginitems -a Parcel
 
 #PDFSam Basic
 brew cask install pdfsam-basic
 
 #Pikka - Color Picker
 mas install 1195076754
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Pikka", path:"/Applications/Pikka.app", hidden:false}'
+loginitems -a Pikka
 
 #Pocket
 mas install 568494494
