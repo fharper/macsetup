@@ -524,8 +524,6 @@ defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -bool fal
 #Activate Silent clicking
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 
-
-
 #Finder display settings
 defaults write com.apple.finder FXEnableExtensionChangeWarning -boolean false
 defaults write com.apple.finder ShowPathbar -bool true
