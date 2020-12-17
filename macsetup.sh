@@ -359,7 +359,6 @@ dockutil --remove 'Safari' --allhomes
 #
 dockutil --remove 'System Preferences' --allhomes
 
-curl -sLo- http://get.bpkg.sh | bash
 #
 # TV
 #
