@@ -16,6 +16,11 @@ brew analytics off
 brew install bash-completion
 
 #Mac App Store CLI
+#
+# Mac App Store cli
+#
+# https://github.com/mas-cli/mas
+#
 brew install mas
 
 #osXiconUtils
