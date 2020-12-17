@@ -193,10 +193,29 @@ wget https://github.com/fharper/rain/releases/download/v1.0/rain.app.zip && unar
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Rain", path:"/Applications/Rain.app", hidden:false}'
 
 
+#
+# Garage Band
+#
+sudo rm -rf /Applications/GarageBand.app
 
 
+#
+# Keynote
+#
+sudo rm -rf /Applications/Keynote.app
+dockutil --remove 'Keynote' --allhomes
 
+#
+# Numbers
+#
+sudo rm -rf /Applications/Numbers.app
+dockutil --remove 'Numbers' --allhomes
 
+#
+# Pages
+#
+sudo rm -rf /Applications/Pages.app
+dockutil --remove 'Pages' --allhomes
 
 
 
@@ -369,14 +388,6 @@ todo+="\n"
 #Disable screensaver
 defaults -currentHost write com.apple.screensaver idleTime 0
 
-#delete defaults apps
-sudo rm -rf /Applications/Numbers.app
-dockutil --remove 'Numbers' --allhomes
-sudo rm -rf /Applications/Keynote.app
-dockutil --remove 'Keynote' --allhomes
-sudo rm -rf /Applications/Pages.app
-dockutil --remove 'Pages' --allhomes
-sudo rm -rf /Applications/GarageBand.app
 git config --global user.email $email
 git config --global init.defaultBranch main
 
