@@ -911,6 +911,13 @@ brew install bat
 brew install jq
 
 #
+#
+# tl;dr Pages
+#
+# https://github.com/tldr-pages/tldr
+#
+brew install tldr
+
 
 #
 # Affinity Designer
