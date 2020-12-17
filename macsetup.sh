@@ -174,12 +174,6 @@ rm code.icns
 #
 mas install 671736912
 
-#Brave
-brew cask install brave-browser
-defaults write com.brave.Browser DisablePrintPreview -bool true
-dockutil --add /Applications/Brave.app/ --allhomes
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Brave", path:"/Applications/Brave.app", hidden:false}'
-defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
 #
 # HSTR
 #
@@ -595,7 +589,16 @@ killall SystemUIServer
 #                   #
 #####################
 dockutil --add /Applications/Antidote/Antidote\ 10.app/
+
+#
+# Brave Browser
+#
+brew cask install brave-browser
+dockutil --add "/Applications/Brave Browser.app" --position 2 --allhomes
 loginitems -a "Brave Browser"
+defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
+defaults write com.brave.Browser DisablePrintPreview -bool true
+
 loginitems -a Evernote
 loginitems -a Rain
 #
