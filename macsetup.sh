@@ -581,9 +581,6 @@ git config --global init.defaultBranch main
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 
-dockutil --remove 'Books' --allhomes
-dockutil --remove 'Siri' --allhomes
-dockutil --remove 'iTunes' --allhomes
 
 #Kill apps
 killall Finder
