@@ -1120,11 +1120,6 @@ notification "Use Monolingual to remove unused languages files"
 # END ###
 #########
 
-todo+="\n"
-todo+="(copied to keyboard)"
-echo -e ${txtflash}$todo${txtblack}
-echo -e $todo | pbcopy
-
 
 mackup backup --force
 
