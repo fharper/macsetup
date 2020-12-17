@@ -142,8 +142,6 @@ mas install 937984704
 #
 brew cask install bartender
 
-#Little Snitch
-brew cask install little-snitch
 #
 # CleanShot X
 #
