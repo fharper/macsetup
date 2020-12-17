@@ -1099,7 +1099,11 @@ brew cask install nordvpn
 #Pandoc (for my resume)
 brew install pandoc
 
-#Parcel
+#
+# Parcel
+#
+# https://parcelapp.net
+#
 mas install 639968404
 loginitems -a Parcel
 
