@@ -368,9 +368,6 @@ dockutil --remove 'Safari' --allhomes
 #
 dockutil --remove 'System Preferences' --allhomes
 
-######################
-# Command line tools #
-######################
 npm i -g trash-cli
 brew install wifi-password
 curl -sLo- http://get.bpkg.sh | bash
@@ -743,6 +740,11 @@ brew install hub
 
 #Xcode
 mas install 497799835
+######################
+#                    #
+# Command line tools #
+#                    #
+######################
 
 
 ############################
