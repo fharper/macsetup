@@ -685,6 +685,11 @@ brew cask install visual-studio-code
 dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 
 
+###################
+#                 #
+# Developer stuff #
+#                 #
+###################
 
 #
 # BFG Repo-Cleaner
@@ -743,9 +748,6 @@ brew install git-sizer
 brew install gh
 gh auth login
 
-#####################
-# Install dev stuff #
-#####################
 #
 # GitHub Desktop
 #
