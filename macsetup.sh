@@ -724,6 +724,11 @@ git config --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
 #
 brew install git-sizer
 
+#
+# GitHub CLI
+#
+brew install gh
+gh auth login
 
 #####################
 # Install dev stuff #
@@ -871,8 +876,6 @@ npm i --global yo
 #Lynis
 brew install lynis
 
-#Hub
-brew install hub
 
 ######################
 #                    #
