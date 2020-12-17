@@ -69,6 +69,12 @@ mas signin $email
 
 #osXiconUtils
 curl https://sveinbjorn.org/files/software/osxiconutils.zip > osxiconutils.zip
+# wget
+#
+# https://www.gnu.org/software/wget
+#
+brew install wget
+
 unzip osxiconutils.zip
 rm osxiconutils.zip
 mv bin/geticon /usr/local/sbin/
@@ -86,9 +92,6 @@ brew install terminal-notifier
 #Mackup
 brew cask install mackup
 
-#wget
-brew install wget
-brew tap dteoh/sqa
 ###########################
 #                         #
 # Top Helper Applications #
