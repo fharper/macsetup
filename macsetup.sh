@@ -334,6 +334,10 @@ brew install git-lfs
 dockutil --remove 'Notes' --allhomes
 
 brew install bfg
+#
+# Photos
+#
+dockutil --remove 'Photos' --allhomes
 
 brew install gh
 #
