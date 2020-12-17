@@ -767,10 +767,6 @@ gh auth login
 #
 brew cask install github
 
-#Install pip
-curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
-sudo python get-pip.py
-rm get-pip.py
 #
 # GoEnv + Go
 #
@@ -834,6 +830,9 @@ brew install composer
 
 
 
+curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
+sudo python get-pip.py
+rm get-pip.py
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
