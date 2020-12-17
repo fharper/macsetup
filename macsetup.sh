@@ -700,6 +700,12 @@ brew install bfg
 #
 brew cask install docker
 
+#
+# ESLint
+#
+# https://eslint.org/
+#
+brew install eslint
 
 #
 # Gist
@@ -814,7 +820,6 @@ npm i -g nodemon
 npm i -g npx
 npm i -g npm-remote-ls
 npm i -g npm-check-updates
-npm i -g eslint
 
 #
 # Java (OpenJDK with AdoptOpenJDK) + jEnv
