@@ -888,9 +888,6 @@ brew install hub
 #
 brew install asciinema
 
-############################
-# Install the applications #
-############################
 #
 # Bandwhich
 #
@@ -924,6 +921,11 @@ brew install noti
 #
 brew install tldr
 
+################
+#              #
+# Applications #
+#              #
+################
 
 #
 # Affinity Designer
