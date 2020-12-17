@@ -314,7 +314,6 @@ dockutil --remove 'Mail' --allhomes
 dockutil --remove 'Maps' --allhomes
 
 #
-git config --global pull.rebase true
 # Messages
 #
 dockutil --remove 'Messages' --allhomes
