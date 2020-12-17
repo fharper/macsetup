@@ -697,8 +697,6 @@ brew install gulp-cli
 #
 brew install rbenv
 rbenv init
-
-#Install Bundle (Gem/Ruby)
 rbenv install 2.7.2
 rbenv global 2.7.2
 gem install bundler
