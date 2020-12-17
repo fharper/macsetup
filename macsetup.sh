@@ -22,6 +22,7 @@ brew install bash-completion
 # https://github.com/mas-cli/mas
 #
 brew install mas
+mas signin $email
 
 #osXiconUtils
 curl https://sveinbjorn.org/files/software/osxiconutils.zip > osxiconutils.zip
