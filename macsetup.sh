@@ -323,7 +323,6 @@ dockutil --remove 'Messages' --allhomes
 #
 dockutil --remove 'Music' --allhomes
 
-curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 #
 # News
 #
