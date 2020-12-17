@@ -218,13 +218,46 @@ sudo rm -rf /Applications/Pages.app
 dockutil --remove 'Pages' --allhomes
 
 
+################
+#              #
+# Dock Cleanup #
+#              #
+################
 
+#
+# App Store
+#
+dockutil --remove 'App Store' --allhomes
 
+#
+# Calendar
+#
+dockutil --remove 'Calendar' --allhomes
 
+#
+# Contacts
+#
+dockutil --remove 'Contacts' --allhomes
 
+#
+# Facetime
+#
+dockutil --remove 'FaceTime' --allhomes
 
+#
+# Launchpad
+#
+dockutil --remove 'Launchpad' --allhomes
 
+#
+# Mail
+#
+dockutil --remove 'Mail' --allhomes
 
+#
+# Maps
+#
+dockutil --remove 'Maps' --allhomes
 
 ######################
 # Git configurations #
@@ -243,12 +276,24 @@ npx git-the-latest
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
 brew install git-lfs
+#
+# Notes
+#
+dockutil --remove 'Notes' --allhomes
 
 brew install bfg
 
 brew install gh
+#
+# Podcasts
+#
+dockutil --remove 'Podcasts' --allhomes
 
 brew install gist
+#
+# Reminders
+#
+dockutil --remove 'Reminders' --allhomes
 
 #GPG
 brew cask install gpg-suite
@@ -257,7 +302,15 @@ echo "Copy & paste your public key UUID listed below (line sec - after the /)"
 read gpgUUID
 git config --global user.signingkey $gpgUUID
 git config --global commit.gpgsign true
+#
+# Safari
+#
+dockutil --remove 'Safari' --allhomes
 
+#
+# System Preferences
+#
+dockutil --remove 'System Preferences' --allhomes
 
 ######################
 # Command line tools #
@@ -391,20 +444,8 @@ defaults -currentHost write com.apple.screensaver idleTime 0
 git config --global user.email $email
 git config --global init.defaultBranch main
 
-#remove apps from dock
 dockutil --remove 'Books' --allhomes
-dockutil --remove 'Maps' --allhomes
-dockutil --remove 'Reminders' --allhomes
-dockutil --remove 'FaceTime' --allhomes
-dockutil --remove 'Notes' --allhomes
-dockutil --remove 'System Preferences' --allhomes
-dockutil --remove 'Calendar' --allhomes
-dockutil --remove 'Mail' --allhomes
-dockutil --remove 'Contacts' --allhomes
 dockutil --remove 'Siri' --allhomes
-dockutil --remove 'Launchpad' --allhomes
-dockutil --remove 'Safari' --allhomes
-dockutil --remove 'App Store' --allhomes
 dockutil --remove 'iTunes' --allhomes
 
 #Kill apps
