@@ -886,6 +886,12 @@ brew install asciinema
 ############################
 # Install the applications #
 ############################
+#
+# Bandwhich
+#
+# https://github.com/imsnif/bandwhich
+#
+brew install bandwhich
 
 #Affinity Designer
 mas install 824171161
@@ -906,6 +912,7 @@ osascript -e 'tell application "System Events" to make login item at end with pr
 #
 brew install jq
 
+#
 
 #AppCleaner
 brew cask install appcleaner
@@ -935,8 +942,6 @@ brew tap zgosalvez/repo
 brew cask install zgosalvez-silicon
 
 
-#Bandwhich
-brew install bandwhich
 
 
 #Diablo II
