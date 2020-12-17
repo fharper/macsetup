@@ -671,6 +671,11 @@ npm install -g spaceship-prompt
 brew cask install spotify
 dockutil --add /Applications/Spotify.app --allhomes
 
+#
+# Todoist
+#
+mas install 585829637
+dockutil --add /Applications/Todoist.app --allhomes
 loginitems -a Todoist
 
 #
