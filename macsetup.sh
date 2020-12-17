@@ -485,6 +485,7 @@ defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
 #
 sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
+
 # Trackpad - App Exposé & Mission Control (need to be done together)
 defaults write com.apple.dock showAppExposeGestureEnabled -bool false
 defaults write com.apple.dock showMissionControlGestureEnabled -bool false
