@@ -157,9 +157,6 @@ rm iterm.icns
 #
 brew cask install contexts
 
-#Visual Studio Code
-brew cask install visual-studio-code
-dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 #
 # Control Plane
 #
@@ -583,6 +580,13 @@ loginitems -a Rain
 npm install -g spaceship-prompt
 
 loginitems -a Todoist
+#
+# Visual Studio Code
+#
+brew cask install visual-studio-code
+dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
+
+
 #
 # Git Sizer
 #
