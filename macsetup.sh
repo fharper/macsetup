@@ -302,19 +302,9 @@ dockutil --remove 'Mail' --allhomes
 #
 dockutil --remove 'Maps' --allhomes
 
-######################
-# Git configurations #
-######################
 # Oh My Zsh
 #
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-brew install git
-git config --global user.name "Frédéric Harper"
-git config --global user.email hi@fred.dev
-git config --global push.default current
-git config --global difftool.prompt false
-git config --global diff.tool vscode
-git config --global difftool.vscode.cmd 'code --diff --wait $LOCAL $REMOTE'
 git config --global pull.rebase true
 # Messages
 #
@@ -665,6 +655,18 @@ brew install bfg
 #
 brew install gist
 gist --login
+
+#
+# Git
+#
+brew install git
+git config --global user.name "Frédéric Harper"
+git config --global user.email $email
+git config --global push.default current
+git config --global pull.rebase true
+git config --global difftool.prompt false
+git config --global diff.tool vscode
+git config --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
 
 #
 # Git Sizer
