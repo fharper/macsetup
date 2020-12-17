@@ -241,6 +241,11 @@ brew install the-clock
 wget https://github.com/fharper/rain/releases/download/v1.0/rain.app.zip && unar rain.app.zip && rm rain.app.zip && mv rain.app /Applications
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Rain", path:"/Applications/Rain.app", hidden:false}'
 
+########################
+#                      #
+# Applications Cleanup #
+#                      #
+########################
 
 #
 # Garage Band
