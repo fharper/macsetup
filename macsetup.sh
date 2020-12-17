@@ -776,6 +776,13 @@ todo+="\n"
 
 #Asciinema
 brew install asciinema
+# Raspberry Pi Imager
+#
+# https://www.raspberrypi.org/software/
+#
+brew cask install raspberry-pi-imager
+
+#
 # Silicon
 #
 # https://github.com/DigiDNA/Silicon
