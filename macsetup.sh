@@ -703,6 +703,13 @@ sudo xcodebuild -license accept
 
 #Antibody
 brew install getantibody/tap/antibody
+#
+# Yarn
+#
+# https://github.com/yarnpkg/yarn
+#
+brew install yarn
+
 
 #Git PR open
 antibody bundle caarlos0/open-pr kind:path
@@ -745,7 +752,6 @@ npm i -g nodemon
 npm i -g npx
 npm i -g npm-remote-ls
 npm i -g npm-check-updates
-npm i -g yarn
 npm i -g eslint
 npm i -g prettier
 
