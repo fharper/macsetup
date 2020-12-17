@@ -1007,7 +1007,11 @@ brew cask install firefox
 #Gifski
 mas install 1351639930
 
-#Gimp
+#
+# Gimp
+#
+# https://gitlab.gnome.org/GNOME/gimp/
+#
 brew cask install gimp
 
 #Hemingway
