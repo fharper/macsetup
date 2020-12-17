@@ -354,13 +354,6 @@ dockutil --remove 'Podcasts' --allhomes
 #
 dockutil --remove 'Reminders' --allhomes
 
-#GPG
-brew cask install gpg-suite
-gpg --list-secret-keys --keyid-format LONG
-echo "Copy & paste your public key UUID listed below (line sec - after the /)"
-read gpgUUID
-git config --global user.signingkey $gpgUUID
-git config --global commit.gpgsign true
 #
 # Safari
 #
@@ -779,6 +772,14 @@ rm get-pip.py
 brew install goenv
 goenv install 1.11.4
 
+#
+# GPG
+#
+brew cask install gpg-suite
+notification "get my private key from 1Password"
+gpg --import private.key
+git config --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
+git config --global commit.gpgsign true
 
 #Ruby stuff
 #
