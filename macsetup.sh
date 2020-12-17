@@ -854,6 +854,12 @@ brew install hub
 
 #Affinity Designer
 mas install 824171161
+#
+# Bat
+#
+# https://github.com/sharkdp/bat
+#
+brew install bat
 
 #Antidote
 open https://services.druide.com/
@@ -899,8 +905,6 @@ brew cask install zgosalvez-silicon
 #Bandwhich
 brew install bandwhich
 
-#Bat
-brew install bat
 
 #Diablo II
 open -a '/Users/fharper/Documents/mac/Diablo 2/Installer.app'
