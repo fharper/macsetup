@@ -154,6 +154,12 @@ brew cask install contexts
 #Visual Studio Code
 brew cask install visual-studio-code
 dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
+#
+# Control Plane
+#
+# https://github.com/dustinrue/ControlPlane
+#
+brew cask install controlplane
 
 #Visual Studio Code Open
 brew cask install open-in-code
