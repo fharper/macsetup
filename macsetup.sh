@@ -1172,7 +1172,11 @@ brew cask install wkhtmltopdf
 #
 brew install youtube-dl
 
-#Zoom
+#
+# Zoom
+#
+# https://zoom.us
+#
 brew cask install zoomus
 
 #Zoom It
