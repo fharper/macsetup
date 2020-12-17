@@ -7,6 +7,12 @@
 #                       #
 #########################
 
+function notification {
+    /usr/local/Cellar/terminal-notifier/2.0.0/terminal-notifier.app/Contents/MacOS/terminal-notifier -message "$1"
+    read -pr 'Press enter to continue'
+}
+
+
 #######################
 #                     #
 # Pre-Installalations #
@@ -905,7 +911,6 @@ npm i -g public-ip-cli
 #Rename
 brew install rename
 
-#Signal
 brew cask install signal
 
 #Sloth (displays all open files and sockets in use by all running processes on your system)
