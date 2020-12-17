@@ -20,6 +20,16 @@
 #
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
+#
+# iTerm2
+#
+# https://iterm2.com
+#
+open https://iterm2.com/downloads/stable/latest
+mv iTerm.app /Applications/
+open iTerm
+exit
+
 ############################
 #                          #
 # Utils to run this script #
@@ -93,9 +103,6 @@ notification "add shortcut to Alfred"
 #
 brew cask install atext
 
-#iTerm
-brew cask install iterm2
-dockutil --add /Applications/iTerm.app/ --allhomes
 #
 # Amphetamine
 #
