@@ -349,7 +349,6 @@ brew install gh
 #
 dockutil --remove 'Podcasts' --allhomes
 
-brew install gist
 #
 # Reminders
 #
@@ -643,6 +642,13 @@ dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 # git-filter-branch replacement
 #
 brew install bfg
+
+
+#
+# Gist
+#
+brew install gist
+gist --login
 
 #
 # Git Sizer
