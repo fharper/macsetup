@@ -742,6 +742,14 @@ brew cask install github
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
 sudo python get-pip.py
 rm get-pip.py
+#
+# GoEnv + Go
+#
+# https://github.com/syndbg/goenv
+# https://golang.org
+#
+brew install goenv
+goenv install 1.11.4
 
 #Composer
 brew install composer
@@ -800,9 +808,6 @@ npm i -g npx
 npm i -g npm-remote-ls
 npm i -g npm-check-updates
 npm i -g eslint
-
-#Go
-brew install go
 
 #
 # Java (OpenJDK with AdoptOpenJDK) + jEnv
