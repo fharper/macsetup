@@ -776,6 +776,14 @@ todo+="\n"
 
 #Asciinema
 brew install asciinema
+#
+# Kap
+#
+# https://github.com/wulkano/Kap
+#
+brew cask install kap
+
+#
 # Raspberry Pi Imager
 #
 # https://www.raspberrypi.org/software/
@@ -807,10 +815,6 @@ brew cask install calibre
 todo+="- Add DeDRM plugin to Calibre"
 todo+="\n"
 
-#Camtasia
-brew cask install camtasia
-todo+="- Add your license to Camtasia"
-todo+="\n"
 
 #
 #Captin
