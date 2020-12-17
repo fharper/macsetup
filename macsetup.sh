@@ -866,7 +866,6 @@ brew install htop
 
 pip3 install icssplit
 
-#Iina
 #
 # Iina
 #
