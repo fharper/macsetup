@@ -736,6 +736,13 @@ git config --global diff.tool vscode
 git config --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
 
 #
+# Git Recent
+#
+# https://github.com/paulirish/git-recent
+#
+brew install git-recent
+
+#
 # Git Sizer
 #
 # https://github.com/github/git-sizer
@@ -871,7 +878,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 #Git scripts
 npm i -g git-open
-npm i -g git-recent
 npm i -g git-branch-status
 
 #Python stuff
