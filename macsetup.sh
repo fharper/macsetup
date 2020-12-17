@@ -453,6 +453,12 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 # Finder - Sort By - Name
 defaults write -g com.apple.finder FXArrangeGroupViewBy -string "Name"
 
+#
+# HP OfficeJet 7740 series installation
+#
+# shellcheck disable=SC2027,SC2046
+#
+lpadmin -E -p "HP_OfficeJet_Pro_7740_series" -E -D "HP OfficeJet 7740" -v ""$(ippfind)"" -o printer-is-shared=false -o Name="HP OfficeJet 7740" -P "/Users/fharper/Documents/mac/HP OfficeJet Pro 7740/HP_OfficeJet_Pro_7740_series.ppd"
 
 #
 # Locate database generation
