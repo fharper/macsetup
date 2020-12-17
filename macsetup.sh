@@ -404,7 +404,7 @@ defaults write -g AppleShowAllExtensions -bool true
 #
 # Finder - Show Library Folder
 #
-chflags nohidden ~/Library
+sudo chflags nohidden ~/Library
 
 #
 # Finder - Show Path Bar
