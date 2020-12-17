@@ -608,6 +608,13 @@ open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0
 
 #ICS split
 #icssplit file.ics outfilename --maxsize=900000
+#
+# htop
+#
+# https://github.com/htop-dev/htop
+#
+brew install htop
+
 pip3 install icssplit
 
 #Iina
