@@ -610,6 +610,11 @@ dockutil --add /Applications/Evernote.app --allhomes
 loginitems -a Evernote
 
 #
+# Home Assistant
+#
+brew cask install home-assistant
+
+#
 # Notion
 #
 brew cask install notion
