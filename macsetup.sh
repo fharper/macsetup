@@ -776,6 +776,13 @@ todo+="\n"
 
 #Asciinema
 brew install asciinema
+# Silicon
+#
+# https://github.com/DigiDNA/Silicon
+#
+brew tap zgosalvez/repo
+brew cask install zgosalvez-silicon
+
 
 #Bandwhich
 brew install bandwhich
