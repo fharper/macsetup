@@ -695,9 +695,11 @@ rbenv global 2.6.3
 #Install Bundle (Gem/Ruby)
 gem install bundler
 
-#Xcode (before Antibody)
+#
+# Xcode
+#
 mas install 497799835
-open -a Xcode
+sudo xcodebuild -license accept
 
 #Antibody
 brew install getantibody/tap/antibody
@@ -832,8 +834,6 @@ brew install lynis
 #Hub
 brew install hub
 
-#Xcode
-mas install 497799835
 ######################
 #                    #
 # Command line tools #
