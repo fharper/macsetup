@@ -898,8 +898,6 @@ brew install asciinema
 #
 brew install bandwhich
 
-#Affinity Designer
-mas install 824171161
 #
 # Bat
 #
@@ -913,6 +911,13 @@ brew install bat
 brew install jq
 
 #
+
+#
+# Affinity Designer
+#
+# https://affinity.serif.com/en-us/designer
+#
+mas install 824171161
 
 #
 # AppCleaner
