@@ -692,12 +692,15 @@ brew install composer
 #
 brew install gulp-cli
 
+#
+# RBenv + Ruby + Bundler
+#
 brew install rbenv
 rbenv init
-rbenv install 2.6.3
-rbenv global 2.6.3
 
 #Install Bundle (Gem/Ruby)
+rbenv install 2.7.2
+rbenv global 2.7.2
 gem install bundler
 
 #
