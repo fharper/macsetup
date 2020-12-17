@@ -1034,9 +1034,8 @@ brew cask install discord
 
 #Calibre
 brew cask install calibre
-todo+="- Add DeDRM plugin to Calibre"
-todo+="\n"
-
+open https://github.com/apprenticeharper/DeDRM_tools/releases
+notification "Install the DeDRM plugin into Calibre"
 
 #
 #Captin
