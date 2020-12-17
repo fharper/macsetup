@@ -1093,6 +1093,7 @@ dockutil --move 'Brave Browser' --position beginning --allhomes
 #
 mas install 1351168404
 
+#
 # OpenEmu
 #
 # https://github.com/OpenEmu/OpenEmu
