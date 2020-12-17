@@ -105,8 +105,6 @@ rm -rf bin/
 brew install terminal-notifier
 
 
-#Mackup
-brew cask install mackup
 
 ###########################
 #                         #
@@ -1002,6 +1000,15 @@ brew cask install zoomus
 
 #Zoom It
 mas install 476272252
+
+
+##########################
+# Restore configurations #
+##########################
+
+
+brew install mackup
+mackup restore --force
 
 #####################
 # Install the Fonts #
