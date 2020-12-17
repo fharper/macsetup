@@ -194,8 +194,6 @@ rm Options_8.34.91.zip
 open -a "LogiMgr Installer 8.34.91.app"
 rm -rf "LogiMgr Installer 8.34.91.app"
 
-#Jrnl
-brew install jrnl
 #
 # Maccy
 #
