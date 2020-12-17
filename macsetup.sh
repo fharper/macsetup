@@ -318,7 +318,6 @@ dockutil --remove 'Maps' --allhomes
 #
 dockutil --remove 'Messages' --allhomes
 
-npx git-the-latest
 #
 # Music
 #
