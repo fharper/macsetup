@@ -801,8 +801,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 #JavaScript
 npm i -g uglify-js
 
-#CSS
-npm i -g cssnano-cli
 
 #Images
 npm i -g imagemin-cli
