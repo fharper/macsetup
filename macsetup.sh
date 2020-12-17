@@ -874,6 +874,9 @@ pip3 install icssplit
 #
 brew cask install iina
 
+#ImageMagick
+brew install imagemagick
+
 #Jiffy
 mas install 1502527999
 
