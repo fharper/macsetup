@@ -751,8 +751,6 @@ rm get-pip.py
 brew install goenv
 goenv install 1.11.4
 
-#Composer
-brew install composer
 
 #Ruby stuff
 #
@@ -789,6 +787,12 @@ sudo xcodebuild -license accept
 #
 brew install yarn
 
+# PHPenv + PHP + Composer
+curl -L https://raw.githubusercontent.com/phpenv/phpenv-installer/master/bin/phpenv-installer | bash
+brew uninstall pkg-config
+brew uninstall bzip2
+phpenv install 7.4.9
+brew install composer
 
 #Git PR open
 antibody bundle caarlos0/open-pr kind:path
