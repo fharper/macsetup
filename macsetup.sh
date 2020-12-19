@@ -187,6 +187,13 @@ brew cask install contexts
 brew cask install controlplane
 
 #
+# Dropbox
+#
+# https://www.dropbox.com
+#
+brew cask install dropbox
+
+#
 # FruitJuice
 #
 mas install 671736912
@@ -1071,9 +1078,6 @@ brew cask install deckset
 
 #Disk Drill
 brew cask install disk-drill
-
-#Dropbox
-brew cask install dropbox
 
 #Edge
 brew cask install microsoft-edge
