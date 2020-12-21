@@ -1199,7 +1199,12 @@ open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0
 #
 #
 #
+# Parcel
 #
+# https://parcelapp.net
+#
+mas install 639968404
+loginitems -a -s false Parcel
 
 #
 # Iina
@@ -1253,14 +1258,6 @@ brew cask install nordvpn
 
 #Pandoc (for my resume)
 brew install pandoc
-
-#
-# Parcel
-#
-# https://parcelapp.net
-#
-mas install 639968404
-loginitems -a Parcel
 
 #PDFSam Basic
 brew cask install pdfsam-basic
