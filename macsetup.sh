@@ -1039,6 +1039,13 @@ brew install jq
 brew install noti
 
 #
+# The Fuck
+#
+# https://github.com/nvbn/thefuck
+#
+brew install thefuck
+
+#
 # tl;dr Pages
 #
 # https://github.com/tldr-pages/tldr
@@ -1286,13 +1293,6 @@ open ~/Documents/mac/Stream\ Deck\ 4.3.2.11299/Stream_Deck_4.3.2.11299.pkg
 
 #TeamViewer
 brew cask install teamviewer
-
-#
-# The Fuck
-#
-# https://github.com/nvbn/thefuck
-#
-brew install thefuck
 
 #The Unarchiver
 mas install 425424353
