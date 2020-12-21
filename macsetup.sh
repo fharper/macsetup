@@ -1003,6 +1003,15 @@ brew install bandwhich
 brew install bat
 
 #
+# ffmpeg + vmaf
+#
+# https://ffmpeg.org
+# https://github.com/Netflix/vmaf
+#
+brew install libvmaf
+brew tap homebrew-ffmpeg/ffmpeg
+brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libvmaf
+
 #
 # htop
 #
@@ -1136,9 +1145,6 @@ brew cask install microsoft-edge
 # https://ffmpeg.org
 # https://github.com/Netflix/vmaf
 #
-brew install libvmaf
-brew tap homebrew-ffmpeg/ffmpeg
-brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libvmaf
 
 #Firefox
 brew cask install firefox
