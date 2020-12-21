@@ -1032,6 +1032,10 @@ brew install htop
 pip3 install icssplit
 
 #
+# jq
+#
+# https://github.com/stedolan/jq
+#
 brew install jq
 
 #
