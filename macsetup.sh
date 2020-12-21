@@ -1323,14 +1323,6 @@ mas install 1323414118
 #WiFi Explorer Lite
 mas install 1408727408
 
-
-#
-# Zoom
-#
-# https://zoom.us
-#
-brew cask install zoomus
-
 #Zoom It
 mas install 476272252
 
