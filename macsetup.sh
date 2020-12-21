@@ -1174,10 +1174,7 @@ brew cask install disk-drill
 brew cask install microsoft-edge
 
 #
-# ffmpeg + vmaf
 #
-# https://ffmpeg.org
-# https://github.com/Netflix/vmaf
 #
 
 #Firefox
