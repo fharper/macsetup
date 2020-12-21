@@ -759,6 +759,13 @@ git config --global diff.tool vscode
 git config --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
 
 #
+# Git Branch Status
+#
+# https://github.com/bill-auger/git-branch-status
+#
+npm i -g git-branch-status
+
+#
 # Git Large File Storage
 #
 # https://github.com/git-lfs/git-lfs
@@ -913,9 +920,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 
 
-
-#Git scripts
-npm i -g git-branch-status
 
 pyenv install 3.7.0
 pyenv global 3.7.0
