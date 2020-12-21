@@ -1450,9 +1450,11 @@ mas install 1351168404
 brew cask install openemu
 
 
-######################
-# Order apps in Dock #
-######################
+###################
+#                 #
+# Dock apps order #
+#                 #
+###################
 
 dockutil --move 'Brave Browser' --position end --allhomes
 dockutil --move 'Evernote' --position end --allhomes
