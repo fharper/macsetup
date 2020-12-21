@@ -1094,11 +1094,9 @@ mas install 824171161
 brew cask install appcleaner
 
 #
-# Kap
 #
-# https://github.com/wulkano/Kap
 #
-brew cask install kap
+brew cask install beardedspice
 
 #
 # Raspberry Pi Imager
@@ -1198,8 +1196,11 @@ open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0
 brew cask install iina
 
 #
+# Kap
 #
+# https://github.com/wulkano/Kap
 #
+brew cask install kap
 
 #
 #
