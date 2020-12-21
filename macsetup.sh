@@ -1190,6 +1190,12 @@ brew cask install gimp
 
 #Hemingway
 open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
+#
+# Iina
+#
+# https://github.com/iina/iina
+#
+brew cask install iina
 
 #
 #
@@ -1207,11 +1213,10 @@ mas install 639968404
 loginitems -a -s false Parcel
 
 #
-# Iina
+# Raspberry Pi Imager
 #
 # https://github.com/iina/iina
 #
-brew cask install iina
 
 #ImageMagick
 brew install imagemagick
