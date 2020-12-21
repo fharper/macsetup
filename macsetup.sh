@@ -1160,7 +1160,11 @@ brew cask install cryptomator
 #
 brew cask install daisydisk
 
-#Deckset
+#
+# Deckset
+#
+# https://www.deckset.com
+#
 brew cask install deckset
 
 #Disk Drill
