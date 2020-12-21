@@ -630,6 +630,8 @@ loginitems -a Evernote
 #
 # Home Assistant
 #
+# https://github.com/home-assistant/iOS
+#
 brew cask install home-assistant
 
 #
