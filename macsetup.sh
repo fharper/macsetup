@@ -1156,7 +1156,7 @@ brew cask install cryptomator
 #
 # DaisyDisk
 #
-# https://daisydiskapp.com/
+# https://daisydiskapp.com
 #
 brew cask install daisydisk
 
