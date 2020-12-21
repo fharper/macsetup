@@ -1066,6 +1066,13 @@ brew install wifi-password
 #
 brew cask install wkhtmltopdf
 
+#
+# Youtube Downloader
+#
+# https://github.com/ytdl-org/youtube-dl/
+#
+brew install youtube-dl
+
 
 ################
 #              #
@@ -1316,13 +1323,6 @@ mas install 1323414118
 #WiFi Explorer Lite
 mas install 1408727408
 
-
-#
-# Youtube Downloader
-#
-# https://github.com/ytdl-org/youtube-dl/
-#
-brew install youtube-dl
 
 #
 # Zoom
