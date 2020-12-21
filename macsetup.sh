@@ -604,6 +604,8 @@ loginitems -a Antidote
 #
 # Brave Browser
 #
+# https://github.com/brave
+#
 brew cask install brave-browser
 dockutil --add "/Applications/Brave Browser.app" --position 2 --allhomes
 loginitems -a "Brave Browser"
