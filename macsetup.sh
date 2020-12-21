@@ -580,6 +580,8 @@ killall SystemUIServer
 #
 # 1Password
 #
+# https://1password.com
+#
 brew cask install 1password
 dockutil --add /Applications/1Password\ 7.app/ --allhomes
 
