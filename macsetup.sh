@@ -568,8 +568,6 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 #Change the log in screen background
 cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
 
-#Deactivate Play user interface sound effects
-
 #
 # Disable the accent characters menu
 #
