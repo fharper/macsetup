@@ -723,6 +723,13 @@ dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 brew install bfg
 
 #
+# Charles Proxy
+#
+# https://www.charlesproxy.com
+#
+brew cask install charles
+
+#
 # Docker
 #
 brew cask install docker
@@ -1071,9 +1078,6 @@ notification "Install the DeDRM plugin into Calibre"
 # https://captin.mystrikingly.com/
 #
 brew cask install captin
-
-#Charles Proxy
-brew cask install Charles
 
 #
 # Chrome
