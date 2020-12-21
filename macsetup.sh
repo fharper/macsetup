@@ -1431,23 +1431,6 @@ duti -s com.microsoft.VSCode public.ruby-script all #Ruby
 duti -s com.apple.Preview public.standard-tesselated-geometry-format all #3d CAD
 duti -s com.brave.Browser com.compuserve.gif all #gif
 
-######################
-# Order apps in Dock #
-######################
-
-#list them in inversed order
-dockutil --move 'Antidote 10' --position beginning --allhomes
-dockutil --move '1Password 7' --position beginning --allhomes
-dockutil --move 'Pocket' --position beginning --allhomes
-dockutil --move 'Visual Studio Code' --position beginning --allhomes
-dockutil --move 'iTerm' --position beginning --allhomes
-dockutil --move 'Spotify' --position beginning --allhomes
-dockutil --move 'Slack' --position beginning --allhomes
-dockutil --move 'Todoist' --position beginning --allhomes
-dockutil --move 'Evernote' --position beginning --allhomes
-dockutil --move 'Brave Browser' --position beginning --allhomes
-
-
 #########
 # Games #
 #########
@@ -1465,6 +1448,22 @@ mas install 1351168404
 # https://github.com/OpenEmu/OpenEmu
 #
 brew cask install openemu
+
+
+######################
+# Order apps in Dock #
+######################
+
+dockutil --move 'Brave Browser' --position beginning --allhomes
+dockutil --move 'Evernote' --position beginning --allhomes
+dockutil --move 'Todoist' --position beginning --allhomes
+dockutil --move 'Slack' --position beginning --allhomes
+dockutil --move 'Spotify' --position beginning --allhomes
+dockutil --move 'iTerm' --position beginning --allhomes
+dockutil --move 'Visual Studio Code' --position beginning --allhomes
+dockutil --move 'Pocket' --position beginning --allhomes
+dockutil --move '1Password 7' --position beginning --allhomes
+dockutil --move 'Antidote 10' --position beginning --allhomes
 
 
 ###############
