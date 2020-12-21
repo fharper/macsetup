@@ -672,6 +672,8 @@ loginitems -a Rain
 #
 # Slack
 #
+# https://slack.com
+#
 brew cask install slack
 dockutil --add /Applications/Slack.app/ --allhomes
 
