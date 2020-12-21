@@ -1020,6 +1020,14 @@ brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libvmaf
 brew install htop
 
 #
+# ICS split
+#
+# https://github.com/beorn/icssplit
+#
+# icssplit /.ics outfilename --maxsize=300000
+#
+pip3 install icssplit
+
 #
 brew install jq
 
@@ -1168,13 +1176,9 @@ open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0
 #
 
 #
-# ICS split
 #
-# https://github.com/beorn/icssplit
 #
-# icssplit /.ics outfilename --maxsize=300000
 #
-pip3 install icssplit
 
 #
 # Iina
