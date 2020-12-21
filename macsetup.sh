@@ -1167,7 +1167,6 @@ brew cask install daisydisk
 #
 brew cask install deckset
 
-#Disk Drill
 brew cask install disk-drill
 
 #Edge
@@ -1223,7 +1222,12 @@ brew cask install iina
 brew cask install kap
 
 #
+# Microsoft Edge
 #
+# https://www.microsoft.com/en-us/edge
+#
+brew cask install microsoft-edge
+
 #
 # Parcel
 #
