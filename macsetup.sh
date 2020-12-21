@@ -1199,7 +1199,6 @@ brew cask install iina
 
 #
 #
-# https://github.com/htop-dev/htop
 #
 
 #
