@@ -1114,17 +1114,6 @@ brew cask install beardedspice
 # https://github.com/kovidgoyal/calibre
 # https://github.com/apprenticeharper/DeDRM_tools
 #
-
-
-
-
-
-
-#Diablo II
-open -a '/Users/fharper/Documents/mac/Diablo 2/Installer.app'
-rm '/Users/fharper/Desktop/Diablo II'
-ln -sf /Users/fharper/Documents/misc/Diablo/ /Applications/Diablo\ II/save
-
 brew cask install calibre
 open https://github.com/apprenticeharper/DeDRM_tools/releases
 notification "Install the DeDRM plugin into Calibre"
