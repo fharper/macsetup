@@ -482,6 +482,11 @@ sudo spctl --master-disable
 sudo nvram StartupMute=%01
 
 #
+# Sound - Play user interface sound effects
+#
+defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
+
+#
 # Sound - Show volume in menu bar
 #
 # need to find a way to do this with the command line since Apple removed the Sound.menu from Menu Extras
