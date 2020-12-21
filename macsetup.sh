@@ -1095,7 +1095,9 @@ mas install 824171161
 brew cask install appcleaner
 
 #
+# Bearded Spice
 #
+# https://github.com/beardedspice/beardedspice
 #
 brew cask install beardedspice
 
