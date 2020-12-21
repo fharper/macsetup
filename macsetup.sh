@@ -601,6 +601,7 @@ dockutil --add /Applications/1Password\ 7.app/ --allhomes
 # Antidote
 #
 # https://www.antidote.info
+#
 open https://services.druide.com/
 notification "Download & install Antidote"
 dockutil --add /Applications/Antidote/Antidote\ 10.app/
