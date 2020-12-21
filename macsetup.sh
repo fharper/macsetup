@@ -1146,7 +1146,11 @@ brew cask install captin
 #
 brew install cask google-chrome
 
-#Cryptomator
+#
+# Cryptomator
+#
+# https://github.com/cryptomator/cryptomator
+#
 brew cask install cryptomator
 
 #
