@@ -989,6 +989,13 @@ brew install bat
 
 #
 #
+# htop
+#
+# https://github.com/htop-dev/htop
+#
+brew install htop
+
+#
 #
 brew install jq
 
@@ -1135,11 +1142,9 @@ brew cask install gimp
 open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
 
 #
-# htop
 #
 # https://github.com/htop-dev/htop
 #
-brew install htop
 
 #
 # ICS split
