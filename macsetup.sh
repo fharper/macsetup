@@ -1482,9 +1482,11 @@ dockutil --move 'Antidote 10' --position end --allhomes
 brew cask install monolingual
 notification "Use Monolingual to remove unused languages files"
 
-#########
-# END ###
-#########
+#######
+#     #
+# END #
+#     #
+#######
 
 
 mackup backup --force
