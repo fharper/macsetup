@@ -1241,6 +1241,13 @@ loginitems -a -s false Parcel
 #
 # https://github.com/iina/iina
 #
+#
+# Signal
+#
+# https://github.com/signalapp/Signal-Desktop
+#
+brew cask install signal
+
 
 #ImageMagick
 brew install imagemagick
@@ -1314,13 +1321,6 @@ npm i -g public-ip-cli
 
 #Rename
 brew install rename
-
-#
-# Signal
-#
-# https://github.com/signalapp/Signal-Desktop
-#
-brew cask install signal
 
 #Sloth (displays all open files and sockets in use by all running processes on your system)
 brew cask install sloth
