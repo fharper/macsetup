@@ -1236,9 +1236,6 @@ open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Install
 #LZip
 brew install lzip
 
-#Messenger
-brew cask install Messenger
-
 #Micro Snitch
 brew cask install micro-snitch
 
@@ -1352,7 +1349,6 @@ mas install 476272252
 ##########################
 # Restore configurations #
 ##########################
-
 
 brew install mackup
 mackup restore --force
