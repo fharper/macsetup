@@ -1100,19 +1100,8 @@ brew cask install appcleaner
 brew cask install beardedspice
 
 #
-# Raspberry Pi Imager
 #
-# https://www.raspberrypi.org/software/
 #
-brew cask install raspberry-pi-imager
-
-#
-# Silicon
-#
-# https://github.com/DigiDNA/Silicon
-#
-brew tap zgosalvez/repo
-brew cask install zgosalvez-silicon
 
 
 
@@ -1167,17 +1156,14 @@ brew cask install daisydisk
 #
 brew cask install deckset
 
+
+#
+# Disk Drill
+#
+# https://www.cleverfiles.com/
+#
 brew cask install disk-drill
 
-#Edge
-brew cask install microsoft-edge
-
-#
-#
-#
-
-#Firefox
-brew cask install firefox
 #
 # Elgato Lights Control Center
 #
@@ -1188,8 +1174,6 @@ unzip Control_Center_1.1.3.10337.zip
 rm Control_Center_1.1.3.10337.zip
 mv "Elgato Control Center.app" /Applications
 
-#Gifski
-mas install 1351639930
 #
 # Elgato Stream Deck
 # https://www.elgato.com/en/gaming/stream-deck
@@ -1198,6 +1182,11 @@ wget https://edge.elgato.com/egc/macos/sd/Stream_Deck_4.9.2.13193.pkg
 open Stream_Deck_4.9.2.13193.pkg
 rm Stream_Deck_4.9.2.13193.pkg
 
+#Firefox
+brew cask install firefox
+
+#Gifski
+mas install 1351639930
 #
 # Gimp
 #
@@ -1207,6 +1196,7 @@ brew cask install gimp
 
 #Hemingway
 open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
+
 #
 # Iina
 #
@@ -1214,46 +1204,18 @@ open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0
 #
 brew cask install iina
 
+#ImageMagick
+brew install imagemagick
+
+#Jiffy
+mas install 1502527999
+
 #
 # Kap
 #
 # https://github.com/wulkano/Kap
 #
 brew cask install kap
-
-#
-# Microsoft Edge
-#
-# https://www.microsoft.com/en-us/edge
-#
-brew cask install microsoft-edge
-
-#
-# Parcel
-#
-# https://parcelapp.net
-#
-mas install 639968404
-loginitems -a -s false Parcel
-
-#
-# Raspberry Pi Imager
-#
-# https://github.com/iina/iina
-#
-#
-# Signal
-#
-# https://github.com/signalapp/Signal-Desktop
-#
-brew cask install signal
-
-
-#ImageMagick
-brew install imagemagick
-
-#Jiffy
-mas install 1502527999
 
 #Keybase
 brew cask install keybase
@@ -1280,6 +1242,13 @@ brew cask install Messenger
 #Micro Snitch
 brew cask install micro-snitch
 
+#
+# Microsoft Edge
+#
+# https://www.microsoft.com/en-us/edge
+#
+brew cask install microsoft-edge
+
 #MindNode
 mas install 992076693
 
@@ -1294,6 +1263,14 @@ brew cask install nordvpn
 
 #Pandoc (for my resume)
 brew install pandoc
+
+#
+# Parcel
+#
+# https://parcelapp.net
+#
+mas install 639968404
+loginitems -a -s false Parcel
 
 #PDFSam Basic
 brew cask install pdfsam-basic
@@ -1319,8 +1296,30 @@ brew cask install postman
 #Public-ip-cli
 npm i -g public-ip-cli
 
+#
+# Raspberry Pi Imager
+#
+# https://www.raspberrypi.org/software/
+#
+brew cask install raspberry-pi-imager
+
 #Rename
 brew install rename
+
+#
+# Signal
+#
+# https://github.com/signalapp/Signal-Desktop
+#
+brew cask install signal
+
+#
+# Silicon
+#
+# https://github.com/DigiDNA/Silicon
+#
+brew tap zgosalvez/repo
+brew cask install zgosalvez-silicon
 
 #Sloth (displays all open files and sockets in use by all running processes on your system)
 brew cask install sloth
