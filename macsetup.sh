@@ -243,6 +243,13 @@ brew cask install sound-control
 brew install the-clock
 defaults write com.apple.menuextra.clock IsAnalog -bool true #macOS Clock in analog format
 
+#
+# Zoom
+#
+# https://zoom.us
+#
+brew cask install zoomus
+
 
 ########################
 #                      #
