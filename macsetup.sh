@@ -1185,6 +1185,13 @@ mv "Elgato Control Center.app" /Applications
 
 #Gifski
 mas install 1351639930
+#
+# Elgato Stream Deck
+# https://www.elgato.com/en/gaming/stream-deck
+#
+wget https://edge.elgato.com/egc/macos/sd/Stream_Deck_4.9.2.13193.pkg
+open Stream_Deck_4.9.2.13193.pkg
+rm Stream_Deck_4.9.2.13193.pkg
 
 #
 # Gimp
@@ -1310,9 +1317,6 @@ brew cask install sloth
 
 #Speedtest
 mas install 1153157709
-
-#StreamDeck
-open ~/Documents/mac/Stream\ Deck\ 4.3.2.11299/Stream_Deck_4.3.2.11299.pkg
 
 #TeamViewer
 brew cask install teamviewer
