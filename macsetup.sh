@@ -1187,6 +1187,7 @@ brew cask install firefox
 
 #Gifski
 mas install 1351639930
+
 #
 # Gimp
 #
