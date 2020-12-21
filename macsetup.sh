@@ -1133,7 +1133,8 @@ open https://github.com/apprenticeharper/DeDRM_tools/releases
 notification "Install the DeDRM plugin into Calibre"
 
 #
-#Captin
+# Captin
+#
 # https://captin.mystrikingly.com/
 #
 brew cask install captin
