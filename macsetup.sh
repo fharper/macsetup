@@ -630,6 +630,8 @@ brew cask install home-assistant
 #
 # Notion
 #
+# https://www.notion.so
+#
 brew cask install notion
 dockutil --add /Applications/Notion.app --allhomes
 loginitems -a Notion
