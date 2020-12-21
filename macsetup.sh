@@ -1145,9 +1145,6 @@ brew cask install captin
 #
 brew install cask google-chrome
 
-#Control Center
-open "/Users/fharper/Documents/mac/Elgato Control Center 1.1.3.10337/Control_Center_1.1.3.10337.zip"
-
 #Cryptomator
 brew cask install cryptomator
 
@@ -1176,6 +1173,15 @@ brew cask install microsoft-edge
 
 #Firefox
 brew cask install firefox
+#
+# Elgato Lights Control Center
+#
+# https://www.elgato.com/en/gaming/key-light
+#
+wget https://edge.elgato.com/egc/macos/eccm/1.1.3/Control_Center_1.1.3.10337.zip
+unzip Control_Center_1.1.3.10337.zip
+rm Control_Center_1.1.3.10337.zip
+mv "Elgato Control Center.app" /Applications
 
 #Gifski
 mas install 1351639930
