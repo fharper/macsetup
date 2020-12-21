@@ -1059,6 +1059,13 @@ brew install tldr
 #
 brew install wifi-password
 
+#
+# wkhtmltopdf
+#
+# https://github.com/wkhtmltopdf/wkhtmltopdf
+#
+brew cask install wkhtmltopdf
+
 
 ################
 #              #
@@ -1309,8 +1316,6 @@ mas install 1323414118
 #WiFi Explorer Lite
 mas install 1408727408
 
-#wkhtmltopdf (for my resume)
-brew cask install wkhtmltopdf
 
 #
 # Youtube Downloader
