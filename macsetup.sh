@@ -1090,7 +1090,8 @@ mas install 824171161
 #
 # AppCleaner
 #
-# https://freemacsoft.net/appcleaner/
+# https://freemacsoft.net/appcleaner
+#
 brew cask install appcleaner
 
 #
