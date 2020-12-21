@@ -635,6 +635,14 @@ loginitems -a Evernote
 brew cask install home-assistant
 
 #
+# Mumu
+#
+# https://getmumu.com
+#
+brew cask install mumu
+loginitems -a Mumu
+
+#
 # Notion
 #
 # https://www.notion.so
@@ -1205,14 +1213,6 @@ mas install 992076693
 
 #Mountain Duck
 brew cask install mountain-duck
-
-#
-# Mumu
-#
-# https://getmumu.com
-#
-brew cask install mumu
-loginitems -a Mumu
 
 #Muzzle
 brew cask install muzzle
