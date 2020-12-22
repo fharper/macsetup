@@ -891,6 +891,7 @@ brew install composer
 # PYenv + Python + Pip
 #
 brew install pyenv
+pyenv global 3.8.0
 
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
 sudo python get-pip.py
@@ -940,13 +941,6 @@ brew install redis
 # https://rustup.rs
 #
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-
-
-
-pyenv install 3.7.0
-pyenv global 3.7.0
-
 
 #Mysql Shell
 brew cask install mysql-shell
