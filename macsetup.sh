@@ -1177,7 +1177,11 @@ wget https://edge.elgato.com/egc/macos/sd/Stream_Deck_4.9.2.13193.pkg
 open Stream_Deck_4.9.2.13193.pkg
 rm Stream_Deck_4.9.2.13193.pkg
 
-#Firefox
+#
+# Firefox
+#
+# https://www.mozilla.org/en-CA/firefox
+#
 brew cask install firefox
 
 #Gifski
