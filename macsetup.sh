@@ -1184,7 +1184,12 @@ rm Stream_Deck_4.9.2.13193.pkg
 #
 brew cask install firefox
 
-#Gifski
+#
+# Gifski
+#
+# https://github.com/ImageOptim/gifski
+#
+# (the one on homebrew is the CLI)
 mas install 1351639930
 
 #
