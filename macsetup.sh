@@ -240,7 +240,11 @@ brew cask install sound-control
 #
 # The Clock
 #
-brew install the-clock
+# https://www.seense.com/the_clock/
+#
+# install from the App Store for the license
+#
+mas install 488764545
 defaults write com.apple.menuextra.clock IsAnalog -bool true #macOS Clock in analog format
 
 #
