@@ -204,6 +204,13 @@ mas install 671736912
 brew install hh
 
 #
+# Karabiner-Elements
+#
+# https://github.com/pqrs-org/Karabiner-Elements
+#
+brew cask install karabiner-elements
+
+#
 # Logitech Mouse Manager
 #
 wget https://download01.logi.com/web/ftp/pub/techsupport/options/Options_8.34.91.zip
