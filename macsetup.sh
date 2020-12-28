@@ -1028,6 +1028,13 @@ brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libvmaf
 brew install htop
 
 #
+# HTTPie
+#
+# https://github.com/httpie/httpie
+#
+brew install httpie
+
+#
 # ICS split
 #
 # https://github.com/beorn/icssplit
