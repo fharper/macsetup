@@ -222,6 +222,8 @@ rm -rf "LogiMgr Installer 8.34.91.app"
 #
 # Maccy
 #
+# https://github.com/p0deje/Maccy
+#
 brew cask install maccy
 
 #
