@@ -1453,6 +1453,13 @@ duti -s com.brave.Browser com.compuserve.gif all #gif
 mas install 1351168404
 
 #
+# Epic Games
+#
+# https://www.epicgames.com
+#
+brew install --cask epic-games
+
+#
 # OpenEmu
 #
 # https://github.com/OpenEmu/OpenEmu
