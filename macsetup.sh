@@ -793,6 +793,7 @@ git config --global pull.rebase true
 git config --global difftool.prompt false
 git config --global diff.tool vscode
 git config --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
+git config --global core.hooksPath ~/.git/hooks
 
 #
 # Git Branch Status
