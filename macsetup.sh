@@ -1399,6 +1399,7 @@ brew cask install font-fira-mono
 brew cask install font-blackout
 brew cask install font-alex-brush
 brew cask install font-fira-code-nerd-font #use with Starfish
+brew cask install font-hack-nerd-font
 
 
 ##########################################
