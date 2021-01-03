@@ -1250,7 +1250,11 @@ brew cask install kap
 #
 brew cask install keybase
 
-#Keycastr
+#
+# Keycastr
+#
+# https://github.com/keycastr/keycastr
+#
 brew cask install keycastr
 
 #Kindle
