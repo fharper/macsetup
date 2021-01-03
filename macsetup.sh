@@ -1243,7 +1243,11 @@ mas install 1502527999
 #
 brew cask install kap
 
-#Keybase
+#
+# Keybase
+#
+# https://github.com/keybase/client
+#
 brew cask install keybase
 
 #Keycastr
