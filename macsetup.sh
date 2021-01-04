@@ -863,6 +863,13 @@ git config --global commit.gpgsign true
 brew install gulp-cli
 
 #
+# Postman
+#
+# https://www.postman.com
+#
+brew cask install postman
+
+#
 # Prettier
 #
 # https://github.com/prettier/prettier
@@ -1313,9 +1320,6 @@ loginitems -a Pikka
 #Pocket
 mas install 568494494
 dockutil --add /Applications/Pocket.app/ --allhomes
-
-#Postman
-brew cask install postman
 
 #Prey
 #open https://panel.preyproject.com/login
