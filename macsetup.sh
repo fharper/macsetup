@@ -1303,7 +1303,11 @@ brew cask install mountain-duck
 #Muzzle
 brew cask install muzzle
 
-#NordVPN
+#
+# NordVPN
+#
+# https://nordvpn.com
+#
 brew cask install nordvpn
 
 #Pandoc (for my resume)
