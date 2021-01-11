@@ -1364,8 +1364,7 @@ brew cask install signal
 #
 # https://github.com/DigiDNA/Silicon
 #
-brew tap zgosalvez/repo
-brew cask install zgosalvez-silicon
+brew cask install silicon
 
 #Sloth (displays all open files and sockets in use by all running processes on your system)
 brew cask install sloth
