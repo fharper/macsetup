@@ -1227,7 +1227,11 @@ mas install 1351639930
 #
 brew install --cask gimp
 
-#Hemingway
+#
+# Hemingway
+#
+# http://www.hemingwayapp.com
+#
 open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
 
 #
