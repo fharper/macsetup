@@ -859,6 +859,13 @@ git config --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
 git config --global commit.gpgsign true
 
 #
+# npm Check Updates
+#
+# https://github.com/raineorshine/npm-check-updates
+#
+npm i -g npm-check-updates
+
+#
 #
 #
 brew install gulp-cli
@@ -926,7 +933,6 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 npm i -g express-generator
 npm i -g nodemon
 npm i -g npm-remote-ls
-npm i -g npm-check-updates
 
 #
 # Java (OpenJDK with AdoptOpenJDK) + jEnv
