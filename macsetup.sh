@@ -794,6 +794,7 @@ git config --global difftool.prompt false
 git config --global diff.tool vscode
 git config --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
 git config --global core.hooksPath ~/.git/hooks
+git config --global advice.addIgnoredFile false
 
 #
 # Git Branch Status
