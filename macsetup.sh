@@ -1386,8 +1386,12 @@ mas install 1153157709
 #TeamViewer
 brew install --cask teamviewer
 
-#The Unarchiver
-mas install 425424353
+#
+# The Unarchiver
+#
+# https://theunarchiver.com
+#
+brew install --cask the-unarchiver
 
 #Typora
 brew install --cask typora
