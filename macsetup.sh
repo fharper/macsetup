@@ -1066,6 +1066,13 @@ pip3 install icssplit
 brew install jq
 
 #
+# lsusb
+#
+# https://github.com/jlhonora/lsusb
+#
+brew install lsusb
+
+#
 # Noti
 #
 # https://github.com/variadico/noti
