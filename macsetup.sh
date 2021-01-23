@@ -1258,7 +1258,11 @@ brew install --cask iina
 #ImageMagick
 brew install imagemagick
 
-#Jiffy
+#
+# Jiffy
+#
+# https://sindresorhus.com/jiffy
+#
 mas install 1502527999
 
 #
