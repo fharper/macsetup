@@ -1400,7 +1400,11 @@ brew install --cask teamviewer
 #
 brew install --cask the-unarchiver
 
-#Typora
+#
+# Typora
+#
+# https://typora.io
+#
 brew install --cask typora
 
 #Unrar
