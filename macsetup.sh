@@ -552,7 +552,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFi
 #Deactivate the Force click and haptic feedback from Trackpad manually
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -bool false
 
-
 #Activate Silent clicking
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 
