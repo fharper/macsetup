@@ -1299,7 +1299,11 @@ brew install --cask krita
 #
 brew install --cask libreoffice
 
-#Logitech Presentation
+#
+# Logitech Presentation
+#
+# https://www.logitech.com/en-ca/product/spotlight-presentation-remote
+#
 brew install --cask logitech-presentation
 open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Installer.app'
 
