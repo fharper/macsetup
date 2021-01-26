@@ -997,6 +997,20 @@ npm i --global yo
 brew install lynis
 
 
+####################
+#                  #
+# MeiliSeach tools #
+#                  #
+####################
+
+#
+# MeiliSearch
+#
+# https://github.com/meilisearch/MeiliSearch
+#
+brew install meilisearch
+
+
 ######################
 #                    #
 # Command line tools #
