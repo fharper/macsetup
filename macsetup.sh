@@ -742,6 +742,13 @@ dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 ###################
 
 #
+# Act
+#
+# https://github.com/nektos/act
+#
+brew install act
+
+#
 # BFG Repo-Cleaner
 #
 # https://github.com/rtyley/bfg-repo-cleaner
@@ -835,11 +842,6 @@ brew install gh
 gh auth login
 
 #
-# GitHub Desktop
-#
-brew install --cask github
-
-#
 # GoEnv + Go
 #
 # https://github.com/syndbg/goenv
@@ -912,13 +914,23 @@ brew uninstall bzip2
 phpenv install 7.4.9
 brew install composer
 
+brew install autoconf bison bzip2 curl icu4c libedit libjpeg libiconv libpng libxml2 libzip openssl re2c tidy-html5 zlib
 
+PATH="$(brew --prefix icu4c)/bin:$(brew --prefix icu4c)/sbin:$(brew --prefix libiconv)/bin:$(brew --prefix curl)/bin:$(brew --prefix libxml2)/bin:$(brew --prefix bzip2)/bin:$(brew --prefix bison)/bin:$PATH"
+PHP_BUILD_CONFIGURE_OPTS="--with-zlib-dir=$(brew --prefix zlib) --with-bz2=$(brew --prefix bzip2) --with-curl=$(brew --prefix curl) --with-iconv=$(brew --prefix libiconv) --with-libedit=$(brew --prefix libedit)"
+phpenv install 7.3.9
 
+brew uninstall python
 
 #
 # PYenv + Python + Pip
 #
 brew install pyenv
+#pyenv install 3.8.0
+#pyenv global 3.8.0
+# Temporary for Big Sur - https://github.com/pyenv/pyenv/issues/1737
+brew install -f zlib
+CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include" LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib" pyenv install --patch 3.8.0 < <(curl -sSL https://github.com/python/cpython/commit/8ea6353.patch\?full_index=1)
 pyenv global 3.8.0
 
 curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
@@ -1037,6 +1049,13 @@ brew install bandwhich
 # https://github.com/sharkdp/bat
 #
 brew install bat
+
+#
+# Clipdown
+#
+# https://github.com/jhuckaby/clipdown
+#
+npm install -g clipdown
 
 #
 # ffmpeg + vmaf
