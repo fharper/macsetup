@@ -1358,7 +1358,11 @@ mas install 992076693
 #Mountain Duck
 brew install --cask mountain-duck
 
-#Muzzle
+#
+# Muzzle
+#
+# https://muzzleapp.com
+#
 brew install --cask muzzle
 
 #
@@ -1367,6 +1371,13 @@ brew install --cask muzzle
 # https://nordvpn.com
 #
 brew install --cask nordvpn
+
+#
+# OBS Studio
+#
+# https://github.com/obsproject/obs-studio
+#
+brew install --cask obs
 
 #Pandoc (for my resume)
 brew install pandoc
