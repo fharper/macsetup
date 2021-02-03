@@ -1105,6 +1105,13 @@ brew install jq
 brew install lsusb
 
 #
+# LZip
+#
+# https://www.nongnu.org/lzip
+#
+brew install lzip
+
+#
 # Noti
 #
 # https://github.com/variadico/noti
@@ -1338,9 +1345,6 @@ brew install --cask libreoffice
 #
 brew install --cask logitech-presentation
 open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Installer.app'
-
-#LZip
-brew install lzip
 
 #Micro Snitch
 brew install --cask micro-snitch
