@@ -765,6 +765,13 @@ brew install bfg
 brew install --cask charles
 
 #
+# Deno
+#
+# https://github.com/denoland/deno
+#
+brew install deno
+
+#
 # Docker
 #
 brew install --cask docker
