@@ -1065,6 +1065,13 @@ brew install bat
 npm install -g clipdown
 
 #
+# Color LS
+#
+# https://github.com/athityakumar/colorls
+#
+gem install colorls
+
+#
 # ffmpeg + vmaf
 #
 # https://ffmpeg.org
