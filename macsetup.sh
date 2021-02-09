@@ -1042,6 +1042,7 @@ brew install meilisearch
 # https://github.com/asciinema/asciinema
 #
 brew install asciinema
+asciinema auth
 
 #
 # Bandwhich
