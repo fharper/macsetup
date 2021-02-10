@@ -858,7 +858,9 @@ brew install goenv
 goenv install 1.11.4
 
 #
-# GPG
+# GPG Suite
+#
+# https://gpgtools.org
 #
 brew install --cask gpg-suite
 notification "get my private key from 1Password"
