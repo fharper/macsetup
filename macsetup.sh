@@ -765,6 +765,12 @@ brew install bfg
 brew install --cask charles
 
 #
+# CocoaPods
+#
+# https://github.com/CocoaPods/CocoaPods
+#
+brew install cocoapods
+#
 # Deno
 #
 # https://github.com/denoland/deno
