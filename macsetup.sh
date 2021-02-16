@@ -173,6 +173,7 @@ brew install --cask bartender
 # CleanShot X
 #
 brew install --cask cleanshot
+notification "install the audio component in Preferences >> Recording >> Audio Recording"
 
 #
 # Contexts
