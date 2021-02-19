@@ -771,6 +771,14 @@ brew install --cask charles
 # https://github.com/CocoaPods/CocoaPods
 #
 brew install cocoapods
+
+#
+# Cordova
+#
+# https://github.com/apache/cordova-cli
+#
+npm install -g cordova
+
 #
 # Deno
 #
