@@ -884,6 +884,13 @@ git config --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
 git config --global commit.gpgsign true
 
 #
+# Grip
+#
+# https://github.com/joeyespo/grip
+#
+brew install grip
+
+#
 # npm Check Updates
 #
 # https://github.com/raineorshine/npm-check-updates
