@@ -898,6 +898,13 @@ git config --global commit.gpgsign true
 brew install grip
 
 #
+# iOS Deploy
+#
+# https://github.com/ios-control/ios-deploy
+#
+brew install ios-deploy
+
+#
 # npm Check Updates
 #
 # https://github.com/raineorshine/npm-check-updates
