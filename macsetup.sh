@@ -39,6 +39,13 @@ open iTerm
 exit
 
 #
+# tmux
+#
+# https://github.com/tmux/tmux
+#
+brew install tmux
+
+#
 # Configure SSH
 #
 ssh-keygen -t rsa -b 4096 -C $email
