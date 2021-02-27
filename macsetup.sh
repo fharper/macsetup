@@ -1623,15 +1623,20 @@ brew install --cask font-blackout
 brew install --cask font-alex-brush
 brew install --cask font-fira-code-nerd-font #use with Starfish
 brew install --cask font-hack-nerd-font
+##################################################
+#                                                #
+# File Type Default App                          #
+#                                                #
+# Find the app bundle identifier                 #
+# mdls /Applications/Photos.app | grep kMDItemCF #
+#                                                #
+# Find the Uniform Type Identifiers              #
+# mdls -name kMDItemContentTypeTree ~/init.lua   #
+#                                                #
+##################################################
 
 
-##########################################
-# Change file type default association ###
-##########################################
-#How to find the app bundle identifier:
-# mdls /Applications/Photos.app | grep kMDItemCF
-#How to find the Uniform Type Identifiers
-# mdls -name kMDItemContentTypeTree /Users/fharper/Downloads/init.lua
+
 duti -s com.colliderli.iina public.mpeg-4 all #mp4
 duti -s com.colliderli.iina com.apple.quicktime-movie all #mov
 duti -s com.microsoft.VSCode public.plain-text all #txt
