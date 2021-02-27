@@ -85,6 +85,13 @@ brew analytics off
 brew install dockutil
 
 #
+# Duti
+#
+# https://github.com/moretension/duti
+#
+brew install duti
+
+#
 # loginitems
 #
 brew tap OJFord/formulae
@@ -1579,7 +1586,6 @@ brew install --cask font-hack-nerd-font
 # mdls /Applications/Photos.app | grep kMDItemCF
 #How to find the Uniform Type Identifiers
 # mdls -name kMDItemContentTypeTree /Users/fharper/Downloads/init.lua
-brew install duti
 duti -s com.colliderli.iina public.mpeg-4 all #mp4
 duti -s com.colliderli.iina com.apple.quicktime-movie all #mov
 duti -s com.microsoft.VSCode public.plain-text all #txt
