@@ -1202,6 +1202,14 @@ brew install pandoc
 # https://github.com/sindresorhus/public-ip-cli
 #
 npm i -g public-ip-cli
+
+#
+# Rename
+#
+# https://github.com/ap/rename
+#
+brew install rename
+
 #
 # The Fuck
 #
@@ -1504,9 +1512,6 @@ dockutil --add /Applications/Pocket.app/ --allhomes
 # https://www.raspberrypi.org/software/
 #
 brew install --cask raspberry-pi-imager
-
-#Rename
-brew install rename
 
 #
 # Signal
