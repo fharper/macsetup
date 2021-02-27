@@ -1491,6 +1491,12 @@ brew install --cask nordvpn
 #
 brew install --cask obs
 
+#
+# Paprika Recipe Manager
+#
+# https://www.paprikaapp.com
+#
+mas install 1303222628
 
 #
 # Parcel
