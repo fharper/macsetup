@@ -1516,7 +1516,11 @@ brew install --cask pdfsam-basic
 #
 brew install --cask pika
 
-#Pocket
+#
+# Pocket
+#
+# https://getpocket.com
+#
 mas install 568494494
 dockutil --add /Applications/Pocket.app/ --allhomes
 
