@@ -1600,9 +1600,11 @@ mas install 1408727408
 brew install mackup
 mackup restore --force
 
-#####################
-# Install the Fonts #
-#####################
+#########
+#       #
+# Fonts #
+#       #
+#########
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-sans
 brew install --cask font-fira-code
