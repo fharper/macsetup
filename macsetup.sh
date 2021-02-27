@@ -1211,6 +1211,13 @@ npm i -g public-ip-cli
 brew install rename
 
 #
+# Stress
+#
+# https://web.archive.org/web/20190702093856/https://people.seas.harvard.edu/~apw/stress/
+#
+brew install stress
+
+#
 # The Fuck
 #
 # https://github.com/nvbn/thefuck
