@@ -978,22 +978,13 @@ PATH="$(brew --prefix icu4c)/bin:$(brew --prefix icu4c)/sbin:$(brew --prefix lib
 PHP_BUILD_CONFIGURE_OPTS="--with-zlib-dir=$(brew --prefix zlib) --with-bz2=$(brew --prefix bzip2) --with-curl=$(brew --prefix curl) --with-iconv=$(brew --prefix libiconv) --with-libedit=$(brew --prefix libedit)"
 phpenv install 7.3.9
 
-brew uninstall python
 
 #
 # PYenv + Python + Pip
 #
 brew install pyenv
-#pyenv install 3.8.0
-#pyenv global 3.8.0
-# Temporary for Big Sur - https://github.com/pyenv/pyenv/issues/1737
-brew install -f zlib
-CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix bzip2)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include" LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib -L$(brew --prefix zlib)/lib -L$(brew --prefix bzip2)/lib" pyenv install --patch 3.8.0 < <(curl -sSL https://github.com/python/cpython/commit/8ea6353.patch\?full_index=1)
-pyenv global 3.8.0
-
-curl https://bootstrap.pypa.io/get-pip.py > get-pip.py
-sudo python get-pip.py
-rm get-pip.py
+read -pr "Remove Homebrew folders in $PATH (pyenv bug)"
+pyenv install 3.10-dev
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
