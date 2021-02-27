@@ -1578,7 +1578,11 @@ brew install --cask the-unarchiver
 #
 brew install --cask typora
 
-#WebP Viewer: QuickLook & View
+#
+# WebP Viewer: QuickLook & View
+#
+# https://langui.net/webp-viewer
+#
 mas install 1323414118
 
 #WiFi Explorer Lite
