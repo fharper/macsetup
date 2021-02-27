@@ -145,7 +145,6 @@ rm -rf bin/
 brew install terminal-notifier
 
 
-
 ###########################
 #                         #
 # Top Helper Applications #
