@@ -1461,9 +1461,12 @@ loginitems -a -s false Parcel
 #PDFSam Basic
 brew install --cask pdfsam-basic
 
-#Pikka - Color Picker
-mas install 1195076754
-loginitems -a Pikka
+#
+# Pika
+#
+# https://github.com/superhighfives/pika
+#
+brew install --cask pika
 
 #Pocket
 mas install 568494494
