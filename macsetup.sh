@@ -1548,7 +1548,13 @@ brew install --cask silicon
 #Sloth (displays all open files and sockets in use by all running processes on your system)
 brew install --cask sloth
 
-#Speedtest
+#
+# Speedtest
+#
+# https://www.speedtest.net
+#
+# More accurate than the CLI
+#
 mas install 1153157709
 
 #TeamViewer
