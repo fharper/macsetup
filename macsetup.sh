@@ -1197,6 +1197,12 @@ brew install noti
 brew install pandoc
 
 #
+# Public-ip-cli
+#
+# https://github.com/sindresorhus/public-ip-cli
+#
+npm i -g public-ip-cli
+#
 # The Fuck
 #
 # https://github.com/nvbn/thefuck
@@ -1491,9 +1497,6 @@ dockutil --add /Applications/Pocket.app/ --allhomes
 #read preyapi
 #HOMEBREW_NO_ENV_FILTERING=1 API_KEY="$preyapi" brew install --cask prey
 #open /usr/local/lib/prey/current/lib/agent/utils/Prey.app --args -picture
-
-#Public-ip-cli
-npm i -g public-ip-cli
 
 #
 # Raspberry Pi Imager
