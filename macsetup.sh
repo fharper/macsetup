@@ -1524,13 +1524,6 @@ brew install --cask pika
 mas install 568494494
 dockutil --add /Applications/Pocket.app/ --allhomes
 
-#Prey
-#open https://panel.preyproject.com/login
-#echo "Enter your Prey API key (found in the left corner of the Prey web dashboard settings page)"
-#read preyapi
-#HOMEBREW_NO_ENV_FILTERING=1 API_KEY="$preyapi" brew install --cask prey
-#open /usr/local/lib/prey/current/lib/agent/utils/Prey.app --args -picture
-
 #
 # Raspberry Pi Imager
 #
