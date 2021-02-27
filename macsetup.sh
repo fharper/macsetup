@@ -1101,6 +1101,13 @@ brew install bandwhich
 brew install bat
 
 #
+# brew-cask-upgrade
+#
+# https://github.com/buo/homebrew-cask-upgrade
+#
+brew tap buo/cask-upgrade
+
+#
 # Clipdown
 #
 # https://github.com/jhuckaby/clipdown
