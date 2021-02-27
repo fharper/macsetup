@@ -1592,9 +1592,6 @@ mas install 1323414118
 #
 mas install 1408727408
 
-#Zoom It
-mas install 476272252
-
 
 ##########################
 # Restore configurations #
