@@ -1155,6 +1155,13 @@ brew install httpie
 pip3 install icssplit
 
 #
+# ImageMagick
+#
+# https://github.com/ImageMagick/ImageMagick
+#
+brew install imagemagick
+
+#
 # jq
 #
 # https://github.com/stedolan/jq
@@ -1357,9 +1364,6 @@ open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0
 # https://github.com/iina/iina
 #
 brew install --cask iina
-
-#ImageMagick
-brew install imagemagick
 
 #
 # Jiffy
