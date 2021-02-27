@@ -1463,7 +1463,11 @@ brew install --cask microsoft-edge
 #
 mas install 992076693
 
-#Mountain Duck
+#
+# Mountain Duck
+#
+# https://mountainduck.io
+#
 brew install --cask mountain-duck
 
 #
