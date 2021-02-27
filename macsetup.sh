@@ -599,9 +599,9 @@ cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
 #
 defaults write -g ApplePressAndHoldEnabled -bool true
 
-
-
-#Kill apps
+#
+# Kill Finder, Dock & SystemUIServer for settings to be applied
+#
 killall Finder
 killall Dock
 killall SystemUIServer
