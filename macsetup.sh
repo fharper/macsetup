@@ -1578,9 +1578,6 @@ brew install --cask the-unarchiver
 #
 brew install --cask typora
 
-#Unrar
-brew install unrar
-
 #WebP Viewer: QuickLook & View
 mas install 1323414118
 
