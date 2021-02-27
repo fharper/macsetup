@@ -1585,7 +1585,11 @@ brew install --cask typora
 #
 mas install 1323414118
 
-#WiFi Explorer Lite
+#
+# WiFi Explorer Lite
+#
+# https://www.intuitibits.com/products/wifi-explorer
+#
 mas install 1408727408
 
 #Zoom It
