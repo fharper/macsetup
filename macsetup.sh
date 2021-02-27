@@ -1190,6 +1190,13 @@ brew install lzip
 brew install noti
 
 #
+# Pandoc (for my resume)
+#
+# https://github.com/jgm/pandoc
+#
+brew install pandoc
+
+#
 # The Fuck
 #
 # https://github.com/nvbn/thefuck
@@ -1455,8 +1462,6 @@ brew install --cask nordvpn
 #
 brew install --cask obs
 
-#Pandoc (for my resume)
-brew install pandoc
 
 #
 # Parcel
