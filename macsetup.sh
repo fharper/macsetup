@@ -1456,7 +1456,11 @@ brew install --cask micro-snitch
 #
 brew install --cask microsoft-edge
 
-#MindNode
+#
+# MindNode
+#
+# https://mindnode.com
+#
 mas install 992076693
 
 #Mountain Duck
