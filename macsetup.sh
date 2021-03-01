@@ -908,6 +908,8 @@ git config --global commit.gpgsign true
 #
 # https://github.com/joeyespo/grip
 #
+# GitHub Readme Instant Preview
+#
 brew install grip
 
 #
