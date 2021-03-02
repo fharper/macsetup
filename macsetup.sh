@@ -1624,7 +1624,9 @@ brew install --cask font-fira-mono
 brew install --cask font-blackout
 brew install --cask font-alex-brush
 brew install --cask font-fira-code-nerd-font #use with Starfish
-brew install --cask font-hack-nerd-font
+brew install --cask font-hack-nerd-font #use with lscolor
+
+
 ##################################################
 #                                                #
 # File Type Default App                          #
