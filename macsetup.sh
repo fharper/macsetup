@@ -683,7 +683,6 @@ brew install --cask notion
 dockutil --add /Applications/Notion.app --allhomes
 loginitems -a Notion
 
-
 #
 # Oh My Zsh
 #
