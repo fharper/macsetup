@@ -1021,9 +1021,6 @@ brew install mysql
 #PostgreSQL
 brew install postgresql
 
-#Redis
-brew install redis
-
 # Rust + rustup
 #
 # https://www.rust-lang.org
