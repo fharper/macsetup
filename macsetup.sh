@@ -1018,9 +1018,6 @@ brew install kops
 #MysSQL
 brew install mysql
 
-#PostgreSQL
-brew install postgresql
-
 # Rust + rustup
 #
 # https://www.rust-lang.org
