@@ -1015,9 +1015,6 @@ brew install kubernetes-helm
 brew install minikube
 brew install kops
 
-#MysSQL
-brew install mysql
-
 # Rust + rustup
 #
 # https://www.rust-lang.org
