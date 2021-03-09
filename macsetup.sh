@@ -1025,7 +1025,11 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 #Mysql Shell
 brew install --cask mysql-shell
 
-#ShellCheck
+#
+# ShellCheck
+#
+# https://github.com/koalaman/shellcheck
+#
 brew install shellcheck
 
 #SQLite DB Browser
