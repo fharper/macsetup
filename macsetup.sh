@@ -1035,7 +1035,13 @@ brew install shellcheck
 #SQLite DB Browser
 brew install --cask db-browser-for-sqlite
 
-#Ripgrep (recursively searches directories for a regex pattern)
+#
+# Ripgrep
+#
+# https://github.com/BurntSushi/ripgrep
+#
+# Recursively searches directories for a regex pattern
+#
 brew install ripgrep
 
 #Terraform
