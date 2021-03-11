@@ -1234,6 +1234,15 @@ brew install thefuck
 brew install tldr
 
 #
+# Vundle
+#
+# Vim plugin manager
+#
+# https://github.com/VundleVim/Vundle.vim
+#
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+#
 # Wifi Password
 #
 # https://github.com/rauchg/wifi-password
