@@ -1022,8 +1022,6 @@ brew install kops
 #
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-#Mysql Shell
-brew install --cask mysql-shell
 
 #
 # ShellCheck
