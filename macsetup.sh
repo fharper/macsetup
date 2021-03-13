@@ -1030,9 +1030,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 #
 brew install shellcheck
 
-#SQLite DB Browser
-brew install --cask db-browser-for-sqlite
-
 #
 # Ripgrep
 #
