@@ -735,11 +735,15 @@ npm install -g spaceship-prompt
 #
 # Spotify
 #
+# https://www.spotify.com
+#
 brew install --cask spotify
 dockutil --add /Applications/Spotify.app --allhomes
 
 #
 # Todoist
+#
+# https://todoist.com
 #
 mas install 585829637
 dockutil --add /Applications/Todoist.app --allhomes
@@ -748,10 +752,14 @@ loginitems -a Todoist
 #
 # Trash CLI
 #
+# https://github.com/sindresorhus/trash-cli
+#
 npm i -g trash-cli
 
 #
 # Visual Studio Code
+#
+# https://github.com/microsoft/vscode
 #
 brew install --cask visual-studio-code
 dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
@@ -810,28 +818,36 @@ brew install deno
 #
 # Docker
 #
+# https://www.docker.com
+#
 brew install --cask docker
 
 #
 # Docker Toolbox
+#
+# https://github.com/docker/toolbox
 #
 brew install --cask docker-toolbox
 
 #
 # ESLint
 #
-# https://eslint.org/
+# https://github.com/eslint/eslint
 #
 brew install eslint
 
 #
 # Gist
 #
+# https://github.com/defunkt/gist
+#
 brew install gist
 gist --login
 
 #
 # Git
+#
+# https://github.com/git/git
 #
 brew install git
 git config --global user.name "Frédéric Harper"
@@ -862,6 +878,8 @@ brew install git-lfs
 #
 # Git Open
 #
+# https://github.com/paulirish/git-open
+#
 npm i -g git-open
 
 #
@@ -880,6 +898,8 @@ brew install git-sizer
 
 #
 # GitHub CLI
+#
+# https://github.com/cli/cli
 #
 brew install gh
 gh auth login
@@ -928,11 +948,6 @@ brew install ios-deploy
 npm i -g npm-check-updates
 
 #
-#
-#
-brew install gulp-cli
-
-#
 # Postman
 #
 # https://www.postman.com
@@ -947,16 +962,20 @@ brew install --cask postman
 brew install prettier
 
 #
-# RBenv + Ruby + Bundler
+# RBenv + Ruby
+#
+# https://github.com/rbenv/rbenv
+# https://github.com/ruby/ruby
 #
 brew install rbenv
 rbenv init
 rbenv install 2.7.2
 rbenv global 2.7.2
-gem install bundler
 
 #
 # Xcode
+#
+# https://developer.apple.com/xcode
 #
 mas install 497799835
 sudo xcodebuild -license accept
@@ -968,34 +987,30 @@ sudo xcodebuild -license accept
 #
 brew install yarn
 
-# PHPenv + PHP + Composer
-curl -L https://raw.githubusercontent.com/phpenv/phpenv-installer/master/bin/phpenv-installer | bash
-brew uninstall pkg-config
-brew uninstall bzip2
-phpenv install 7.4.9
+#
+# PHPBrew + PHP + Composer
+#
+# https://github.com/phpbrew/phpbrew
+# https://github.com/php/php-src
+# https://github.com/composer/composer
+#
+curl -L -O https://github.com/phpbrew/phpbrew/releases/latest/download/phpbrew.phar
+chmod +x phpbrew.phar
+sudo mv phpbrew.phar /usr/local/bin/phpbrew
+phpbrew init
+phpbrew lookup-prefix homebrew
+phpbrew install 8.0.2 +default
 brew install composer
 
-brew install autoconf bison bzip2 curl icu4c libedit libjpeg libiconv libpng libxml2 libzip openssl re2c tidy-html5 zlib
-
-PATH="$(brew --prefix icu4c)/bin:$(brew --prefix icu4c)/sbin:$(brew --prefix libiconv)/bin:$(brew --prefix curl)/bin:$(brew --prefix libxml2)/bin:$(brew --prefix bzip2)/bin:$(brew --prefix bison)/bin:$PATH"
-PHP_BUILD_CONFIGURE_OPTS="--with-zlib-dir=$(brew --prefix zlib) --with-bz2=$(brew --prefix bzip2) --with-curl=$(brew --prefix curl) --with-iconv=$(brew --prefix libiconv) --with-libedit=$(brew --prefix libedit)"
-phpenv install 7.3.9
-
-
 #
-# PYenv + Python + Pip
+# PYenv + Python
+#
+# https://github.com/pyenv/pyenv
+# https://github.com/python/cpython
 #
 brew install pyenv
 read -pr "Remove Homebrew folders in $PATH (pyenv bug)"
 pyenv install 3.10-dev
-
-# Increase sound quality for Bluetooth headphones/headsets
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
-
-#Node stuff
-npm i -g express-generator
-npm i -g nodemon
-npm i -g npm-remote-ls
 
 #
 # Java (OpenJDK with AdoptOpenJDK) + jEnv
@@ -1010,12 +1025,12 @@ brew install --cask adoptopenjdk
 jenv add /usr/local/opt/openjdk@15/
 jenv global openjdk64-15.0.1
 
-#Kubernetes
-brew install kubernetes-cli
-kubectl completion bash >/usr/local/etc/bash_completion.d/kubectl
-brew install kubernetes-helm
-brew install minikube
-brew install kops
+#
+# Lynis
+#
+# https://github.com/CISOfy/lynis
+#
+brew install lynis
 
 # Rust + rustup
 #
@@ -1024,6 +1039,12 @@ brew install kops
 #
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+#
+# Nix
+#
+# https://github.com/NixOS/nix
+#
+sh <(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume
 
 #
 # ShellCheck
@@ -1031,6 +1052,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # https://github.com/koalaman/shellcheck
 #
 brew install shellcheck
+https://github.com/koalaman/shellcheck/issues/2162
 
 #
 # Ripgrep
@@ -1041,34 +1063,19 @@ brew install shellcheck
 #
 brew install ripgrep
 
-#Terraform
-brew install terraform
-
-#WebHint
+#
+# Webnint
+#
+# https://github.com/webhintio/hint
+#
 npm i -g hint
 
-#Bundle Phobia
-npm i -g bundle-phobia-cli
-
-#Yeoman
+#
+# Yeoman
+#
+# https://github.com/yeoman/yeoman
+#
 npm i --global yo
-
-#Lynis
-brew install lynis
-
-
-####################
-#                  #
-# MeiliSeach tools #
-#                  #
-####################
-
-#
-# MeiliSearch
-#
-# https://github.com/meilisearch/MeiliSearch
-#
-brew install meilisearch
 
 
 ######################
@@ -1378,6 +1385,7 @@ brew install --cask firefox
 # https://github.com/ImageOptim/gifski
 #
 # (the one on homebrew is the CLI)
+#
 mas install 1351639930
 
 #
@@ -1435,9 +1443,6 @@ brew install --cask keycastr
 # https://www.amazon.ca/b?ie=UTF8&node=2972705011
 #
 mas install 405399194
-
-#Krita
-brew install --cask krita
 
 #
 # LibreOffice
@@ -1514,7 +1519,11 @@ mas install 1303222628
 mas install 639968404
 loginitems -a -s false Parcel
 
-#PDFSam Basic
+#
+# PDFSam Basic
+#
+# https://pdfsam.org
+#
 brew install --cask pdfsam-basic
 
 #
@@ -1553,7 +1562,13 @@ brew install --cask signal
 #
 brew install --cask silicon
 
-#Sloth (displays all open files and sockets in use by all running processes on your system)
+#
+# Sloth
+#
+# https://sveinbjorn.org/sloth
+#
+# Displays all open files and sockets in use by all running processes on your system
+#
 brew install --cask sloth
 
 #
