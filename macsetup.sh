@@ -258,6 +258,8 @@ brew install --cask slowquitapps
 #
 # Sound Control
 #
+# https://staticz.com/soundcontrol/
+#
 brew install --cask sound-control
 
 #
