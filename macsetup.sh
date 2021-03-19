@@ -1662,8 +1662,6 @@ brew install --cask font-hack-nerd-font #use with lscolor
 #                                                #
 ##################################################
 
-
-
 duti -s com.colliderli.iina public.mpeg-4 all #mp4
 duti -s com.colliderli.iina com.apple.quicktime-movie all #mov
 duti -s com.microsoft.VSCode public.plain-text all #txt
@@ -1696,6 +1694,7 @@ duti -s com.microsoft.VSCode com.netscape.javascript-source all #JavaScript
 duti -s com.microsoft.VSCode public.ruby-script all #Ruby
 duti -s com.apple.Preview public.standard-tesselated-geometry-format all #3d CAD
 duti -s com.brave.Browser com.compuserve.gif all #gif
+
 
 #########
 # Games #
@@ -1760,7 +1759,6 @@ notification "Use Monolingual to remove unused languages files"
 # END #
 #     #
 #######
-
 
 mackup backup --force
 
