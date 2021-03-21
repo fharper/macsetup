@@ -72,7 +72,7 @@ notification "Add your SSH key to Github (copied into the clipboard)"
 xcode-select --install
 
 #
-# Brew
+# Homebrew
 #
 # https://brew.sh
 #
