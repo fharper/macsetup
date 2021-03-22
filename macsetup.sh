@@ -82,6 +82,8 @@ brew analytics off
 #
 # Dockutil
 #
+# https://github.com/kcrawford/dockutil
+#
 brew install dockutil
 
 #
