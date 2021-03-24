@@ -96,6 +96,8 @@ brew install duti
 #
 # loginitems
 #
+# https://github.com/ojford/loginitems
+#
 brew tap OJFord/formulae
 brew install loginitems
 
