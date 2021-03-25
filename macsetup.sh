@@ -123,18 +123,11 @@ npm config set editor code
 npm adduser
 
 #
-# wget
-#
-# https://www.gnu.org/software/wget
-#
-brew install wget
-
-#
 # osXiconUtils
 #
 # https://github.com/sveinbjornt/osxiconutils
 #
-wget -O osxiconutils.zip https://sveinbjorn.org/files/software/osxiconutils.zip
+curl https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
 unzip osxiconutils.zip
 rm osxiconutils.zip
 mv bin/geticon /usr/local/sbin/
@@ -231,9 +224,11 @@ brew install --cask karabiner-elements
 #
 # Logitech Mouse Manager
 #
-wget https://download01.logi.com/web/ftp/pub/techsupport/options/Options_8.34.91.zip
-unzip Options_8.34.91.zip
-rm Options_8.34.91.zip
+# https://www.logitech.com/en-ca/product/options
+#
+curl https://download01.logi.com/web/ftp/pub/techsupport/options/Options_8.34.91.zip --output logitech.zip
+unzip logitech.zip
+rm logitech.zip
 open -a "LogiMgr Installer 8.34.91.app"
 rm -rf "LogiMgr Installer 8.34.91.app"
 
@@ -717,9 +712,9 @@ notification "drag openinterminal-lite in Finder toolbar"
 #
 # https://github.com/fharper/rain
 #
-wget https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip
-unzip rain.app.zip
-rm rain.app.zip
+curl https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
+unzip rain.zip
+rm rain.zip
 mv rain.app /Applications
 loginitems -a Rain
 
@@ -1365,18 +1360,18 @@ brew install --cask disk-drill
 #
 # https://www.elgato.com/en/gaming/key-light
 #
-wget https://edge.elgato.com/egc/macos/eccm/1.1.3/Control_Center_1.1.3.10337.zip
-unzip Control_Center_1.1.3.10337.zip
-rm Control_Center_1.1.3.10337.zip
+curl https://edge.elgato.com/egc/macos/eccm/1.1.3/Control_Center_1.1.3.10337.zip --output elgato-control-center.zip
+unzip elgato-control-center.zip
+rm elgato-control-center.zip
 mv "Elgato Control Center.app" /Applications
 
 #
 # Elgato Stream Deck
 # https://www.elgato.com/en/gaming/stream-deck
 #
-wget https://edge.elgato.com/egc/macos/sd/Stream_Deck_4.9.2.13193.pkg
-open Stream_Deck_4.9.2.13193.pkg
-rm Stream_Deck_4.9.2.13193.pkg
+curl https://edge.elgato.com/egc/macos/sd/Stream_Deck_4.9.2.13193.pkg --output elgato-streamdeck.pkg
+open elgato-streamdeck.pkg
+rm elgato-streamdeck.pkg
 
 #
 # Firefox
