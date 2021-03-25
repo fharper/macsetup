@@ -31,7 +31,7 @@ function notification {
 #
 # iTerm2
 #
-# https://iterm2.com
+# https://github.com/gnachman/iTerm2
 #
 open https://iterm2.com/downloads/stable/latest
 mv iTerm.app /Applications/
