@@ -74,7 +74,7 @@ xcode-select --install
 #
 # Homebrew
 #
-# https://brew.sh
+# https://github.com/Homebrew/brew
 #
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
 brew analytics off
