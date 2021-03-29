@@ -159,13 +159,6 @@ open -a "Alfred 4"
 notification "add shortcut to Alfred"
 
 #
-# aText
-#
-# https://www.trankynam.com/atext
-#
-brew install --cask atext
-
-#
 # Amphetamine
 #
 # https://apps.apple.com/app/amphetamine/id937984704
@@ -203,6 +196,16 @@ brew install --cask controlplane
 # https://www.dropbox.com
 #
 brew install --cask dropbox
+
+#
+# Espanso
+#
+# https://github.com/federico-terzi/espanso
+#
+brew tap federico-terzi/espanso
+brew install espanso
+espanso register
+espanso start
 
 #
 # FruitJuice
