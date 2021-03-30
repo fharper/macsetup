@@ -181,6 +181,13 @@ brew install --cask cleanshot
 notification "install the audio component in Preferences >> Recording >> Audio Recording"
 
 #
+# CommandQ
+#
+# https://commandqapp.com
+#
+brew install --cask commandq
+
+#
 # Contexts
 #
 brew install --cask contexts
@@ -250,14 +257,6 @@ brew install --cask maccy
 # https://manytricks.com/moom
 #
 mas install 419330170 #install the App Store version since you bought it
-
-#
-# Slow Quit Apps
-#
-# https://github.com/dteoh/SlowQuitApps
-#
-brew tap dteoh/sqa
-brew install --cask slowquitapps
 
 #
 # Sound Control
