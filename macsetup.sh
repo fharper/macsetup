@@ -190,6 +190,8 @@ brew install --cask commandq
 #
 # Contexts
 #
+# https://contexts.co
+#
 brew install --cask contexts
 
 #
