@@ -221,6 +221,8 @@ espanso start
 #
 # FruitJuice
 #
+# https://fruitjuiceapp.com
+#
 mas install 671736912
 
 #
