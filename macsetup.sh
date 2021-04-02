@@ -228,6 +228,8 @@ mas install 671736912
 #
 # HSTR
 #
+# https://github.com/dvorka/hstr
+#
 brew install hh
 
 #
