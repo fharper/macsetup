@@ -240,6 +240,13 @@ brew install hh
 brew install --cask karabiner-elements
 
 #
+# Little Snitch
+#
+# https://www.obdev.at/products/littlesnitch/index.html
+#
+brew install --cask little-snitch
+
+#
 # Logitech Mouse Manager
 #
 # https://www.logitech.com/en-ca/product/options
