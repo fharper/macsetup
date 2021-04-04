@@ -497,6 +497,7 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 
 #
 # Finder - Sort By - Name
+#
 defaults write -g com.apple.finder FXArrangeGroupViewBy -string "Name"
 
 #
