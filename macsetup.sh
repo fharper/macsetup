@@ -523,6 +523,14 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 sudo spctl --master-disable
 
 #
+# Sharing - Computer name
+#
+sudo scutil --set ComputerName "lapta"
+sudo scutil --set HostName "lapta"
+sudo scutil --set LocalHostName "lapta"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "lapta"
+
+#
 # Sound - Play sound on startup
 #
 sudo nvram StartupMute=%01
@@ -598,11 +606,6 @@ defaults write -g AppleShowAllExtensions -bool true
 # Prevent the dock from moving monitors
 defaults write com.apple.Dock position-immutable -bool true
 
-# Set computer name
-sudo scutil --set ComputerName "lapta"
-sudo scutil --set HostName "lapta"
-sudo scutil --set LocalHostName "lapta"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "lapta"
 
 #Expand save panel
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
