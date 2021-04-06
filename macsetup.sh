@@ -559,6 +559,7 @@ defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
 sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
 
+
 # Trackpad - App Exposé & Mission Control (need to be done together)
 defaults write com.apple.dock showAppExposeGestureEnabled -bool false
 defaults write com.apple.dock showMissionControlGestureEnabled -bool false
@@ -622,7 +623,9 @@ cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
 defaults write -g ApplePressAndHoldEnabled -bool true
 
 #
-# Kill Finder, Dock & SystemUIServer for settings to be applied
+# Kill Finder, Dock & SystemUIServer
+#
+# (for applying modified settings)
 #
 killall Finder
 killall Dock
@@ -1717,7 +1720,9 @@ duti -s com.brave.Browser com.compuserve.gif all #gif
 
 
 #########
+#       #
 # Games #
+#       #
 #########
 
 #
@@ -1773,13 +1778,3 @@ dockutil --move 'Antidote 10' --position end --allhomes
 #
 brew install --cask monolingual
 notification "Use Monolingual to remove unused languages files"
-
-#######
-#     #
-# END #
-#     #
-#######
-
-mackup backup --force
-
-mackup restore --force
