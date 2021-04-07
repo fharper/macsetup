@@ -675,7 +675,6 @@ defaults write com.brave.Browser DisablePrintPreview -bool true
 mas install 406056744
 defaults write com.evernote.Evernote NSRequiresAquaSystemAppearance -bool true
 dockutil --add /Applications/Evernote.app --allhomes
-loginitems -a Evernote
 
 #
 # Home Assistant
