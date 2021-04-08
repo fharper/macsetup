@@ -958,6 +958,13 @@ git config --global commit.gpgsign true
 brew install grip
 
 #
+# Insomnia
+#
+# https://github.com/Kong/insomnia
+#
+brew install --cask insomnia
+
+#
 # iOS Deploy
 #
 # https://github.com/ios-control/ios-deploy
@@ -970,13 +977,6 @@ brew install ios-deploy
 # https://github.com/raineorshine/npm-check-updates
 #
 npm i -g npm-check-updates
-
-#
-# Postman
-#
-# https://www.postman.com
-#
-brew install --cask postman
 
 #
 # Prettier
