@@ -607,6 +607,8 @@ defaults write -g AppleShowAllExtensions -bool true
 # Prevent the dock from moving monitors
 defaults write com.apple.Dock position-immutable -bool true
 
+# Increase sound quality for Bluetooth headphones/headsets
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 #Expand save panel
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
