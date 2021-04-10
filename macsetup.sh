@@ -802,6 +802,8 @@ dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 #
 # https://github.com/nektos/act
 #
+# Run your GitHub Actions locally
+#
 brew install act
 
 #
