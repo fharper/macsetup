@@ -1062,8 +1062,8 @@ brew install lynis
 
 # Rust + rustup
 #
-# https://www.rust-lang.org
-# https://rustup.rs
+# https://github.com/rust-lang/rust
+# https://github.com/rust-lang/rustups
 #
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
