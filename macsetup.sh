@@ -1058,6 +1058,8 @@ jenv global openjdk64-15.0.1
 #
 # https://github.com/CISOfy/lynis
 #
+# Security auditing tool
+#
 brew install lynis
 
 # Rust + rustup
