@@ -1550,13 +1550,6 @@ mas install 639968404
 loginitems -a -s false Parcel
 
 #
-# PDFSam Basic
-#
-# https://pdfsam.org
-#
-brew install --cask pdfsam-basic
-
-#
 # Pika
 #
 # https://github.com/superhighfives/pika
