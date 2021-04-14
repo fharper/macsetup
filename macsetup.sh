@@ -1547,7 +1547,7 @@ mas install 1303222628
 # https://parcelapp.net
 #
 mas install 639968404
-loginitems -a -s false Parcel
+loginitems -a Parcel -s false
 
 #
 # Pika
