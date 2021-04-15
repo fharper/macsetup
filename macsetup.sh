@@ -1489,9 +1489,6 @@ brew install --cask libreoffice
 brew install --cask logitech-presentation
 open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Installer.app'
 
-#Micro Snitch
-brew install --cask micro-snitch
-
 #
 # Microsoft Edge
 #
