@@ -160,13 +160,6 @@ open -a "Alfred 4"
 notification "add shortcut to Alfred"
 
 #
-# Amphetamine
-#
-# https://apps.apple.com/app/amphetamine/id937984704
-#
-mas install 937984704
-
-#
 # Bartender
 #
 # https://www.macbartender.com
@@ -239,6 +232,13 @@ brew install hh
 # https://github.com/pqrs-org/Karabiner-Elements
 #
 brew install --cask karabiner-elements
+
+#
+# KeepingYouAwake
+#
+# https://github.com/newmarcel/KeepingYouAwake
+#
+brew install --cask KeepingYouAwake
 
 #
 # Little Snitch
