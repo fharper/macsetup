@@ -1032,14 +1032,11 @@ phpbrew install 8.0.2 +default
 brew install composer
 
 #
-# PYenv + Python
+# Python
 #
-# https://github.com/pyenv/pyenv
 # https://github.com/python/cpython
 #
-brew install pyenv
-read -pr "Remove Homebrew folders in $PATH (pyenv bug)"
-pyenv install 3.10-dev
+brew install python@3.9
 
 #
 # Java (OpenJDK with AdoptOpenJDK) + jEnv
