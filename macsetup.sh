@@ -1488,6 +1488,13 @@ brew install --cask logitech-presentation
 open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Installer.app'
 
 #
+# Loopback
+#
+# https://rogueamoeba.com/loopback
+#
+brew install --cask loopback
+
+#
 # Microsoft Edge
 #
 # https://www.microsoft.com/en-us/edge
