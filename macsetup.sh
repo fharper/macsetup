@@ -31,6 +31,8 @@ function notification {
 #
 # iTerm2
 #
+# Terminal replacement
+#
 # https://github.com/gnachman/iTerm2
 #
 open https://iterm2.com/downloads/stable/latest
