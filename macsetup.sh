@@ -87,6 +87,8 @@ brew tap homebrew/cask-versions
 #
 # Dockutil
 #
+# Utility to manage macOS Dock items
+#
 # https://github.com/kcrawford/dockutil
 #
 brew install dockutil
