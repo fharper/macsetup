@@ -96,6 +96,8 @@ brew install dockutil
 #
 # Duti
 #
+# Utility to set default applications for document types (file extensions)
+#
 # https://github.com/moretension/duti
 #
 brew install duti
