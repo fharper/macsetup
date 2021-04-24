@@ -105,6 +105,8 @@ brew install duti
 #
 # loginitems
 #
+# Utility to manage startup applications
+#
 # https://github.com/ojford/loginitems
 #
 brew tap OJFord/formulae
