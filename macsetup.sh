@@ -113,7 +113,9 @@ brew tap OJFord/formulae
 brew install loginitems
 
 #
-# Mac App Store cli
+# mas-cli
+#
+# Unofficial macOS App Store CLI
 #
 # https://github.com/mas-cli/mas
 #
