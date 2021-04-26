@@ -123,14 +123,12 @@ brew install mas
 mas signin $email
 
 #
-# nvm + node.js + npm cli
+# Node.js + npm cli
 #
-# https://github.com/nvm-sh/nvm
 # https://github.com/nodejs/node
 # https://github.com/npm/cli
 #
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash #don't use brew
-nvm install v14.15.1
+brew install node
 npm i -g npm@latest
 npm config set editor code
 npm adduser
