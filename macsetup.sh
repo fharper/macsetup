@@ -146,7 +146,9 @@ mv bin/seticon /usr/local/sbin/
 rm -rf bin/
 
 #
-# Terminal Notifier
+# terminal-notifier
+#
+# Utility to send macOS notifications
 #
 # https://github.com/julienXX/terminal-notifier
 #
