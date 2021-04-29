@@ -164,6 +164,8 @@ brew install terminal-notifier
 #
 # Alfred
 #
+# Spotlight replacement
+#
 # https://www.alfredapp.com
 #
 brew install --cask alfred
