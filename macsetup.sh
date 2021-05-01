@@ -176,6 +176,8 @@ notification "add shortcut to Alfred"
 #
 # Bartender
 #
+# macOS menubar manager
+#
 # https://www.macbartender.com
 #
 brew install --cask bartender
