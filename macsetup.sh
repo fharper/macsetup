@@ -185,6 +185,8 @@ brew install --cask bartender
 #
 # CleanShot X
 #
+# Screenshot utility
+#
 # https://cleanshot.com
 #
 brew install --cask cleanshot
