@@ -195,6 +195,8 @@ notification "install the audio component in Preferences >> Recording >> Audio R
 #
 # CommandQ
 #
+# Utility to prevent accidentally quiting an application
+#
 # https://commandqapp.com
 #
 brew install --cask commandq
