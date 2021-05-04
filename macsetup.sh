@@ -204,6 +204,8 @@ brew install --cask commandq
 #
 # Contexts
 #
+# Application windows switcher
+#
 # https://contexts.co
 #
 brew install --cask contexts
