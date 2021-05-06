@@ -222,6 +222,8 @@ brew install --cask controlplane
 #
 # Dropbox
 #
+# File sharing & computer backup
+#
 # https://www.dropbox.com
 #
 brew install --cask dropbox
