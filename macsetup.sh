@@ -231,6 +231,8 @@ brew install --cask dropbox
 #
 # Espanso
 #
+# Text expander / snipet
+#
 # https://github.com/federico-terzi/espanso
 #
 brew tap federico-terzi/espanso
