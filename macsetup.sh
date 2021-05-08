@@ -241,13 +241,6 @@ espanso register
 espanso start
 
 #
-# FruitJuice
-#
-# https://fruitjuiceapp.com
-#
-mas install 671736912
-
-#
 # HSTR
 #
 # https://github.com/dvorka/hstr
