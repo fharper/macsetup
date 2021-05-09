@@ -243,6 +243,8 @@ espanso start
 #
 # HSTR
 #
+# Shell command history management
+#
 # https://github.com/dvorka/hstr
 #
 brew install hh
