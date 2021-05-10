@@ -252,6 +252,8 @@ brew install hh
 #
 # Karabiner-Elements
 #
+# Keyboard customization utility
+#
 # https://github.com/pqrs-org/Karabiner-Elements
 #
 brew install --cask karabiner-elements
