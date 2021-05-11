@@ -261,6 +261,8 @@ brew install --cask karabiner-elements
 #
 # KeepingYouAwake
 #
+# Menubar utility for caffeinate
+#
 # https://github.com/newmarcel/KeepingYouAwake
 #
 brew install --cask KeepingYouAwake
