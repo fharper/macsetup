@@ -270,6 +270,8 @@ brew install --cask KeepingYouAwake
 #
 # Little Snitch
 #
+# Kinda dynamic firewall
+#
 # https://www.obdev.at/products/littlesnitch/index.html
 #
 brew install --cask little-snitch
