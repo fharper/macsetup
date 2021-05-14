@@ -290,6 +290,8 @@ rm -rf "LogiMgr Installer 8.34.91.app"
 #
 # Maccy
 #
+# Clipboard manager
+#
 # https://github.com/p0deje/Maccy
 #
 brew install --cask maccy
