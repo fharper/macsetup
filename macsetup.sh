@@ -890,11 +890,15 @@ brew install --cask docker
 brew install --cask docker-toolbox
 
 #
-# ESLint
+# ESLint, ESLint Markdown Plugin & ESLint React Plugin
 #
 # https://github.com/eslint/eslint
+# https://github.com/eslint/eslint-plugin-markdown
+# https://github.com/yannickcr/eslint-plugin-react
 #
 brew install eslint
+npm i -g eslint-plugin-markdown
+npm i -g eslint-plugin-react
 
 #
 # Gist
