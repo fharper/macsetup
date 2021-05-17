@@ -174,6 +174,18 @@ open -a "Alfred 4"
 notification "add shortcut to Alfred"
 
 #
+# Amphetamine & Amphetamine Enhancer
+#
+# Menubar utility for caffeinate
+#
+# https://apps.apple.com/app/amphetamine/id937984704
+# https://github.com/x74353/Amphetamine-Enhancer
+#
+mas install 937984704
+curl https://raw.githubusercontent.com/x74353/Amphetamine-Enhancer/master/Releases/Current/Amphetamine%20Enhancer.dmg --output "Amphetamine Enhancer.dmg"
+open "Amphetamine Enhancer.dmg"
+
+#
 # Bartender
 #
 # macOS menubar manager
@@ -257,15 +269,6 @@ brew install hh
 # https://github.com/pqrs-org/Karabiner-Elements
 #
 brew install --cask karabiner-elements
-
-#
-# KeepingYouAwake
-#
-# Menubar utility for caffeinate
-#
-# https://github.com/newmarcel/KeepingYouAwake
-#
-brew install --cask KeepingYouAwake
 
 #
 # Little Snitch
