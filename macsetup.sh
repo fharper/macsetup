@@ -992,6 +992,15 @@ git config --global commit.gpgsign true
 brew install grip
 
 #
+# Hadolint
+#
+# Docker file linter
+#
+# https://github.com/hadolint/hadolint
+#
+brew install hadolint
+
+#
 # Insomnia
 #
 # https://github.com/Kong/insomnia
