@@ -1022,6 +1022,16 @@ brew install ios-deploy
 npm i -g npm-check-updates
 
 #
+# PHP_CodeSniffer
+#
+# PHP linter
+#
+# https://github.com/squizlabs/PHP_CodeSniffer
+#
+brew install php-code-sniffer
+phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
+
+#
 # Prettier
 #
 # https://github.com/prettier/prettier
