@@ -1050,6 +1050,16 @@ rbenv install 2.7.2
 rbenv global 2.7.2
 
 #
+# Stylelint
+#
+# CSS, SCSS, Sass, Less & SugarSS linter
+#
+# https://github.com/stylelint/stylelint
+#
+npm i -g stylelint
+npm i -g stylelint-config-recommended
+
+#
 # Xcode
 #
 # https://developer.apple.com/xcode
