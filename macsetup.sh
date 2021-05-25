@@ -1075,18 +1075,12 @@ sudo xcodebuild -license accept
 brew install yarn
 
 #
-# PHPBrew + PHP + Composer
+# PHP + Composer
 #
-# https://github.com/phpbrew/phpbrew
 # https://github.com/php/php-src
 # https://github.com/composer/composer
 #
-curl -L -O https://github.com/phpbrew/phpbrew/releases/latest/download/phpbrew.phar
-chmod +x phpbrew.phar
-sudo mv phpbrew.phar /usr/local/bin/phpbrew
-phpbrew init
-phpbrew lookup-prefix homebrew
-phpbrew install 8.0.2 +default
+brew install php
 brew install composer
 
 #
