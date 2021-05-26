@@ -14,6 +14,15 @@ function notification {
     read -pr 'Press enter to continue'
 }
 
+#
+# DisplayLink Manager Graphics Connectivity
+#
+# Add the possibility to have more than one external monitor on MacBook M1 with a DisplayLink compatible hub
+#
+# https://www.displaylink.com
+#
+open https://www.displaylink.com/downloads/file?id=1713
+
 
 #######################
 #                     #
