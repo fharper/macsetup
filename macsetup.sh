@@ -1160,6 +1160,15 @@ brew install ripgrep
 npm i -g hint
 
 #
+# Webpack
+#
+# JavaScript bundler
+#
+# https://github.com/webpack/webpack
+#
+brew install webpack
+
+#
 # Yeoman
 #
 # https://github.com/yeoman/yeoman
