@@ -15,7 +15,7 @@ function notification {
 }
 
 #
-# DisplayLink Manager Graphics Connectivity
+# DisplayLink Manager
 #
 # Add the possibility to have more than one external monitor on MacBook M1 with a DisplayLink compatible hub
 #
