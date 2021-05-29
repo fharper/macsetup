@@ -1169,6 +1169,13 @@ npm i -g hint
 brew install webpack
 
 #
+# Wordpress CLI
+#
+# https://github.com/wp-cli/wp-cli
+#
+brew install wp-cli
+
+#
 # Yeoman
 #
 # https://github.com/yeoman/yeoman
