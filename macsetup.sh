@@ -893,15 +893,32 @@ brew install --cask docker
 brew install --cask docker-toolbox
 
 #
-# ESLint, ESLint Markdown Plugin & ESLint React Plugin
+# ESLint
+# ESLint Formatter Pretty
+# ESLint plugins: Markdown, React, Wordpress, Puppeteer, Jest Plugins, Node.js security, JSX a11y, i18n & JSDoc
 #
 # https://github.com/eslint/eslint
+# https://github.com/sindresorhus/eslint-formatter-pretty
 # https://github.com/eslint/eslint-plugin-markdown
 # https://github.com/yannickcr/eslint-plugin-react
+# https://github.com/WordPress/gutenberg/blob/7b0736c5a97f770cc931616bd0d5c0e446584590/packages/eslint-plugin/README.md
+# https://github.com/kwoding/eslint-plugin-ui-testing
+# https://github.com/jest-community/eslint-plugin-jest
+# https://github.com/gkouziik/eslint-plugin-security-node
+# https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
+# https://github.com/chejen/eslint-plugin-i18n
 #
 brew install eslint
+npm i -g eslint-formatter-pretty
 npm i -g eslint-plugin-markdown
 npm i -g eslint-plugin-react
+npm i -g @wordpress/eslint-plugin
+npm i -g eslint-plugin-ui-testing
+npm i -g eslint-plugin-jest
+npm i -g eslint-plugin-security-node
+npm i -g eslint-plugin-jsx-a11y
+npm i -g eslint-plugin-i18n
+npm i -g eslint-plugin-jsdoc
 
 #
 # Gist
