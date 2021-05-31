@@ -195,6 +195,15 @@ curl https://raw.githubusercontent.com/x74353/Amphetamine-Enhancer/master/Releas
 open "Amphetamine Enhancer.dmg"
 
 #
+# Apple Juice
+#
+# Advanced battery gauge
+#
+# https://github.com/raphaelhanneken/apple-juice
+#
+brew install --cask apple-juice
+
+#
 # Bartender
 #
 # macOS menubar manager
