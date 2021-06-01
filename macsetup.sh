@@ -311,9 +311,13 @@ rm -rf "LogiMgr Installer 8.34.91.app"
 #
 # Moom
 #
+# Applications' windows management
+#
 # https://manytricks.com/moom
 #
-mas install 419330170 #install the App Store version since you bought it
+# install the App Store version since you bought it there
+#
+mas install 419330170
 
 #
 # Sound Control
