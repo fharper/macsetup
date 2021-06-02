@@ -300,6 +300,8 @@ brew install --cask little-snitch
 #
 # Logitech Mouse Manager
 #
+# Mouse Configuration
+#
 # https://www.logitech.com/en-ca/product/options
 #
 curl https://download01.logi.com/web/ftp/pub/techsupport/options/Options_8.34.91.zip --output logitech.zip
