@@ -324,6 +324,8 @@ mas install 419330170
 #
 # Sound Control
 #
+# Advanced audio controls
+#
 # https://staticz.com/soundcontrol/
 #
 brew install --cask sound-control
