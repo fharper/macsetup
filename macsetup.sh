@@ -1783,6 +1783,7 @@ brew install --cask font-alex-brush
 brew install --cask font-fira-code-nerd-font #use with Starfish
 brew install --cask font-hack-nerd-font #use with lscolor
 brew install --cask font-caveat-brush
+brew install --cask font-archivo-narrow
 
 
 ##################################################
