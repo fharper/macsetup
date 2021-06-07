@@ -33,6 +33,8 @@ open https://www.displaylink.com/downloads/file?id=1713
 #
 # Rosetta2
 #
+# Run x86_64 app on arm64 chip
+#
 # https://developer.apple.com/documentation/apple_silicon/about_the_rosetta_translation_environment
 #
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
