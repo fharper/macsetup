@@ -54,6 +54,8 @@ exit
 #
 # tmux
 #
+# Running multiple terminal sessions in the same window
+#
 # https://github.com/tmux/tmux
 #
 brew install tmux
