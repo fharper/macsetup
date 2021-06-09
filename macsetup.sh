@@ -1178,7 +1178,7 @@ sh <(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-v
 #
 # https://github.com/koalaman/shellcheck
 #
-brew install shellcheck
+ibrew install shellcheck
 https://github.com/koalaman/shellcheck/issues/2162
 
 #
