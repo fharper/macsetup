@@ -1516,6 +1516,18 @@ open elgato-streamdeck.pkg
 rm elgato-streamdeck.pkg
 
 #
+# FileZilla
+#
+# FTP Client
+#
+# https://filezilla-project.org
+#
+curl 'https://dl4.cdn.filezilla-project.org/client/FileZilla_3.54.1_macosx-x86.app.tar.bz2?h=AM6jY8aq58otmwIdYeRl-A&x=1623347040' --output FileZilla.tar.bz2
+tar FileZilla.tar.bz2
+rm FileZilla.tar.bz2
+mv FileZilla.app /Applications/
+
+#
 # Firefox
 #
 # https://www.mozilla.org/en-CA/firefox
@@ -1622,13 +1634,6 @@ brew install --cask microsoft-edge
 # https://mindnode.com
 #
 mas install 992076693
-
-#
-# Mountain Duck
-#
-# https://mountainduck.io
-#
-brew install --cask mountain-duck
 
 #
 # Muzzle
