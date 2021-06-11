@@ -1631,9 +1631,14 @@ brew install --cask microsoft-edge
 #
 # MindNode
 #
+# Mindmap app
+#
+# Installing the version I paid for before they moved to subscriptions
+#
 # https://mindnode.com
 #
-mas install 992076693
+unzip ~/Documents/mac/MindNode/MindNode.zip
+mv MindNode.app /Applications/
 
 #
 # Muzzle
