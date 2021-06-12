@@ -82,6 +82,8 @@ notification "Add your SSH key to Github (copied into the clipboard)"
 #
 # Xcode Command Line Tools
 #
+# Command line XCode tools & the macOS SDK frameworks and headers
+#
 # https://developer.apple.com/xcode
 #
 xcode-select --install
