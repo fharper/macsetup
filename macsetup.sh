@@ -151,6 +151,8 @@ npm adduser
 #
 # osXiconUtils
 #
+# Utilities for working with macOS icons
+#
 # https://github.com/sveinbjornt/osxiconutils
 #
 curl https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
