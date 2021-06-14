@@ -251,9 +251,9 @@ brew install --cask contexts
 #
 # Control Plane
 #
-# https://github.com/dustinrue/ControlPlane
-#
 # Utility to automate things based on context & location
+#
+# https://github.com/dustinrue/ControlPlane
 #
 brew install --cask controlplane
 
