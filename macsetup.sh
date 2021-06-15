@@ -341,6 +341,8 @@ brew install --cask sound-control
 #
 # The Clock
 #
+# macOS Clock replacement with more advance features like work clocks & time zones
+#
 # https://www.seense.com/the_clock/
 #
 # install from the App Store for the license
