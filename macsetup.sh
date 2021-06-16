@@ -353,6 +353,8 @@ defaults write com.apple.menuextra.clock IsAnalog -bool true #macOS Clock in ana
 #
 # Zoom
 #
+# Video conference
+#
 # https://zoom.us
 #
 brew install --cask zoomus
