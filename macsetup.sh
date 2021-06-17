@@ -707,6 +707,8 @@ killall SystemUIServer
 #
 # 1Password
 #
+# Password manager
+#
 # https://1password.com
 #
 brew install --cask 1password
