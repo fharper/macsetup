@@ -138,12 +138,16 @@ brew install mas
 mas signin $email
 
 #
-# Node.js + npm cli
+# nvm + Node.js + npm cli
 #
+# https://github.com/nvm-sh/nvm
 # https://github.com/nodejs/node
 # https://github.com/npm/cli
 #
-brew install node
+brew install nvm
+mkdir ~/.nvm
+nvm install v14.18.1
+nvm use v14.18.1
 npm i -g npm@latest
 npm config set editor code
 npm adduser
