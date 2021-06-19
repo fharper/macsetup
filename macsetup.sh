@@ -159,7 +159,7 @@ npm adduser
 #
 # https://github.com/sveinbjornt/osxiconutils
 #
-curl https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
+curl -L https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
 unzip osxiconutils.zip
 rm osxiconutils.zip
 mv bin/geticon /usr/local/sbin/
@@ -203,7 +203,7 @@ notification "add shortcut to Alfred"
 # https://github.com/x74353/Amphetamine-Enhancer
 #
 mas install 937984704
-curl https://raw.githubusercontent.com/x74353/Amphetamine-Enhancer/master/Releases/Current/Amphetamine%20Enhancer.dmg --output "Amphetamine Enhancer.dmg"
+curl -L https://raw.githubusercontent.com/x74353/Amphetamine-Enhancer/master/Releases/Current/Amphetamine%20Enhancer.dmg --output "Amphetamine Enhancer.dmg"
 open "Amphetamine Enhancer.dmg"
 
 #
@@ -316,7 +316,7 @@ brew install --cask little-snitch
 #
 # https://www.logitech.com/en-ca/product/options
 #
-curl https://download01.logi.com/web/ftp/pub/techsupport/options/Options_8.34.91.zip --output logitech.zip
+curl -L https://download01.logi.com/web/ftp/pub/techsupport/options/Options_8.34.91.zip --output logitech.zip
 unzip logitech.zip
 rm logitech.zip
 open -a "LogiMgr Installer 8.34.91.app"
@@ -807,7 +807,7 @@ notification "drag openinterminal-lite in Finder toolbar"
 #
 # https://github.com/fharper/rain
 #
-curl https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
+curl -L https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
 unzip rain.zip
 rm rain.zip
 mv rain.app /Applications
@@ -1516,7 +1516,7 @@ brew install --cask disk-drill
 #
 # https://www.elgato.com/en/gaming/key-light
 #
-curl https://edge.elgato.com/egc/macos/eccm/1.1.3/Control_Center_1.1.3.10337.zip --output elgato-control-center.zip
+curl -L https://edge.elgato.com/egc/macos/eccm/1.1.3/Control_Center_1.1.3.10337.zip --output elgato-control-center.zip
 unzip elgato-control-center.zip
 rm elgato-control-center.zip
 mv "Elgato Control Center.app" /Applications
@@ -1525,7 +1525,7 @@ mv "Elgato Control Center.app" /Applications
 # Elgato Stream Deck
 # https://www.elgato.com/en/gaming/stream-deck
 #
-curl https://edge.elgato.com/egc/macos/sd/Stream_Deck_4.9.2.13193.pkg --output elgato-streamdeck.pkg
+curl -L https://edge.elgato.com/egc/macos/sd/Stream_Deck_4.9.2.13193.pkg --output elgato-streamdeck.pkg
 open elgato-streamdeck.pkg
 rm elgato-streamdeck.pkg
 
