@@ -1155,14 +1155,14 @@ brew install python@3.9
 # Java (OpenJDK with AdoptOpenJDK) + jEnv
 #
 # https://github.com/jenv/jenv
-# https://github.com/AdoptOpenJDK/homebrew-openjdk
-# https://openjdk.java.net
+# https://github.com/adoptium/temurin-build
+# https://github.com/openjdk/jdk
 #
 brew install jenv
 brew tap AdoptOpenJDK/openjdk
-brew install --cask adoptopenjdk
-jenv add /usr/local/opt/openjdk@15/
-jenv global openjdk64-15.0.1
+brew install --cask temurin
+jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+jenv global openjdk64-17
 
 #
 # Lynis
