@@ -1100,6 +1100,31 @@ phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
 brew install prettier
 
 #
+# pyenv + Python + Wheel + Pylint + pytest
+#
+# Python version manager
+# Python SDK
+# Python wheel packaging tool
+# Python linter
+# Python tests framework
+#
+# https://github.com/pyenv/pyenv
+# https://www.python.org
+# https://github.com/pypa/wheel
+# https://github.com/PyCQA/pylint/
+# https://github.com/pytest-dev/pytest
+#
+brew install pyenv
+pyenv install 3.9.7
+pyenv global 3.9.7
+python -m pip install --upgrade pip
+python -m pip install --upgrade build
+pip install wheel
+pip install pylint
+pip install -U pytest
+
+
+#
 # RBenv + Ruby
 #
 # https://github.com/rbenv/rbenv
@@ -1143,13 +1168,6 @@ brew install yarn
 #
 brew install php
 brew install composer
-
-#
-# Python
-#
-# https://github.com/python/cpython
-#
-brew install python@3.9
 
 #
 # Java (OpenJDK with AdoptOpenJDK) + jEnv
