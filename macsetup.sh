@@ -1464,6 +1464,15 @@ mas install 824171161
 brew install --cask appcleaner
 
 #
+# AutoMute
+#
+# Mute your laptop when your headphones disconnect
+#
+# https://yoni.ninja/automute/
+#
+mas install 1118136179
+
+#
 # Bearded Spice
 #
 # https://github.com/beardedspice/beardedspice
