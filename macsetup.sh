@@ -1511,6 +1511,15 @@ brew install cask google-chrome
 brew install --cask cryptomator
 
 #
+# CyberDuck
+#
+# FTP Client
+#
+# https://github.com/iterate-ch/cyberduck
+#
+brew install --cask cyberduck
+
+#
 # DaisyDisk
 #
 # https://daisydiskapp.com
@@ -1555,18 +1564,6 @@ mv "Elgato Control Center.app" /Applications
 curl -L https://edge.elgato.com/egc/macos/sd/Stream_Deck_4.9.2.13193.pkg --output elgato-streamdeck.pkg
 open elgato-streamdeck.pkg
 rm elgato-streamdeck.pkg
-
-#
-# FileZilla
-#
-# FTP Client
-#
-# https://filezilla-project.org
-#
-curl 'https://dl4.cdn.filezilla-project.org/client/FileZilla_3.54.1_macosx-x86.app.tar.bz2?h=AM6jY8aq58otmwIdYeRl-A&x=1623347040' --output FileZilla.tar.bz2
-tar FileZilla.tar.bz2
-rm FileZilla.tar.bz2
-mv FileZilla.app /Applications/
 
 #
 # Firefox
