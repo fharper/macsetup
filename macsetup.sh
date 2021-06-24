@@ -1589,6 +1589,15 @@ mas install 1351639930
 brew install --cask gimp
 
 #
+# HA Menu
+#
+# Home Assistant menubar app
+#
+# https://github.com/codechimp-org/ha-menu/
+#
+brew install --cask ha-menu
+
+#
 # Hemingway
 #
 # http://www.hemingwayapp.com
