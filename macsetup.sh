@@ -1669,6 +1669,15 @@ open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Install
 brew install --cask loopback
 
 #
+# Messenger
+#
+# Facebook Messenger Client
+#
+# https://www.messenger.com/desktop
+#
+brew install --cask messenger
+
+#
 # Microsoft Edge
 #
 # https://www.microsoft.com/en-us/edge
