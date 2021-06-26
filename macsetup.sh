@@ -1787,6 +1787,15 @@ brew install --cask sloth
 mas install 1153157709
 
 #
+# Spotica Menu
+#
+# A Spotify menubar control
+#
+# https://spoti.ca
+#
+mas install 570549457
+
+#
 # TeamViewer
 #
 # https://www.teamviewer.com
