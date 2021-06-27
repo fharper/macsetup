@@ -1810,6 +1810,15 @@ brew install --cask teamviewer
 brew install --cask the-unarchiver
 
 #
+# TweetDeck
+#
+# Twitter client (I'm using it for managing my employer's account)
+#
+# https://tweetdeck.twitter.com
+#
+mas install 485812721
+
+#
 # Typora
 #
 # https://typora.io
