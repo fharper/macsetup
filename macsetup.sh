@@ -1919,6 +1919,7 @@ duti -s com.microsoft.VSCode public.ruby-script all #Ruby
 duti -s com.apple.Preview public.standard-tesselated-geometry-format all #3d CAD
 duti -s com.brave.Browser com.compuserve.gif all #gif
 duti -s com.microsoft.VSCode public.yaml all #YAML
+duti -s com.microsoft.VSCode public.rtf all #RTF
 
 
 #########
