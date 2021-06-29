@@ -334,6 +334,15 @@ rm -rf "LogiMgr Installer 8.34.91.app"
 mas install 419330170
 
 #
+# Shush
+#
+# Easily mute or unmute your microphone
+#
+# https://mizage.com/shush/
+#
+mas install 496437906
+
+#
 # Sound Control
 #
 # Advanced audio controls
