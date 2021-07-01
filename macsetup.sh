@@ -730,6 +730,8 @@ dockutil --add /Applications/1Password\ 7.app/ --allhomes
 #
 # Antidote
 #
+# English & French corrector & dictionary
+#
 # https://www.antidote.info
 #
 open https://services.druide.com/
