@@ -742,6 +742,8 @@ loginitems -a Antidote
 #
 # Brave Browser
 #
+# Chromium based browser
+#
 # https://github.com/brave
 #
 brew install --cask brave-browser
