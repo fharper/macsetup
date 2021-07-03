@@ -755,6 +755,8 @@ defaults write com.brave.Browser DisablePrintPreview -bool true
 #
 # Evernote
 #
+# Note taking app
+#
 # https://evernote.com
 #
 mas install 406056744
