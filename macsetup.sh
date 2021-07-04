@@ -766,6 +766,8 @@ dockutil --add /Applications/Evernote.app --allhomes
 #
 # Home Assistant
 #
+# Home automation
+#
 # https://github.com/home-assistant/iOS
 #
 brew install --cask home-assistant
