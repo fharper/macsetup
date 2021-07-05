@@ -773,13 +773,6 @@ dockutil --add /Applications/Evernote.app --allhomes
 brew install --cask home-assistant
 
 #
-# jrnl
-#
-# https://github.com/jrnl-org/jrnl
-#
-brew install jrnl
-
-#
 # Mumu
 #
 # https://getmumu.com
