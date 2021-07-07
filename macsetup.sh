@@ -775,6 +775,8 @@ brew install --cask home-assistant
 #
 # Mumu
 #
+# Emoji picker
+#
 # https://getmumu.com
 #
 brew install --cask mumu
