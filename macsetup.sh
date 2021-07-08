@@ -785,6 +785,8 @@ loginitems -a Mumu
 #
 # Notion
 #
+# Notes app
+#
 # https://www.notion.so
 #
 brew install --cask notion
