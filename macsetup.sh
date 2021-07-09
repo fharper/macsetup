@@ -21,7 +21,8 @@ function notification {
 #
 # https://www.displaylink.com
 #
-open https://www.displaylink.com/downloads/file?id=1713
+open "https://www.displaylink.com/downloads/file?id=1713"
+open "DisplayLink Manager Graphics Connectivity1.3.1-EXE"
 
 
 #######################
