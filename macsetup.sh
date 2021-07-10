@@ -96,7 +96,7 @@ xcode-select --install
 #
 # https://github.com/Homebrew/brew
 #
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew analytics off
 brew tap homebrew/cask-versions
 
