@@ -53,6 +53,13 @@ open iTerm
 exit
 
 #
+# Oh My Zsh
+#
+# https://github.com/ohmyzsh/ohmyzsh
+#
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#
 # tmux
 #
 # Running multiple terminal sessions in the same window
@@ -793,13 +800,6 @@ loginitems -a Mumu
 brew install --cask notion
 dockutil --add /Applications/Notion.app --allhomes
 loginitems -a Notion
-
-#
-# Oh My Zsh
-#
-# https://github.com/ohmyzsh/ohmyzsh
-#
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 #
 # OpenInEditor-Lite
