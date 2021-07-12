@@ -60,6 +60,13 @@ exit
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 #
+# Create /usr/local/bin folder
+#
+sudo mkdir /usr/local/bin
+sudo chown fharper:admin /usr/local/bin
+
+
+#
 # tmux
 #
 # Running multiple terminal sessions in the same window
