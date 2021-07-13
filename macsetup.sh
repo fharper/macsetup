@@ -164,7 +164,6 @@ mkdir ~/.nvm
 nvm install v14.18.1
 nvm use v14.18.1
 npm i -g npm@latest
-npm config set editor code
 npm adduser
 
 #
@@ -881,6 +880,7 @@ npm i -g trash-cli
 #
 brew install --cask visual-studio-code
 dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
+npm config set editor code
 
 
 ###################
