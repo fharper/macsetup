@@ -181,6 +181,15 @@ mv bin/seticon /usr/local/sbin/
 rm -rf bin/
 
 #
+# tccutil
+#
+# Command line tool to modify the accessibility database
+#
+# https://github.com/jacobsalmela/tccutil
+#
+brew install tccutil
+
+#
 # terminal-notifier
 #
 # Utility to send macOS notifications
