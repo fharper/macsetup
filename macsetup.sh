@@ -176,8 +176,8 @@ npm adduser
 curl -L https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
 unzip osxiconutils.zip
 rm osxiconutils.zip
-mv bin/geticon /usr/local/sbin/
-mv bin/seticon /usr/local/sbin/
+mv bin/geticon /usr/local/bin/
+mv bin/seticon /usr/local/bin/
 rm -rf bin/
 
 #
