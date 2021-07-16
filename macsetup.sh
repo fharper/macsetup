@@ -205,6 +205,9 @@ brew install terminal-notifier
 #                         #
 ###########################
 
+
+notification "Deactivate the System Integrity Protection with 'csrutil disable' in Recovery Mode"
+
 #
 # Alfred
 #
