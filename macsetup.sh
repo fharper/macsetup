@@ -249,6 +249,7 @@ brew install --cask apple-juice
 # https://www.macbartender.com
 #
 brew install --cask bartender
+sudo -E tccutil -e com.surteesstudios.Bartender
 
 #
 # CleanShot X
