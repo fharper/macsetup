@@ -306,6 +306,7 @@ brew install --cask dropbox
 #
 brew tap federico-terzi/espanso
 brew install espanso
+sudo tccutil -e "$(print -r =espanso(:A))"
 espanso register
 espanso start
 
