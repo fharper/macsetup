@@ -14,6 +14,18 @@ function notification {
     read -pr 'Press enter to continue'
 }
 
+function pausethescript {
+    echo "Press any key to continue the installation script"
+    read
+}
+
+function openfilewithregex {
+    file=$(find . -maxdepth 1 -execdir echo {} ';'  | grep "$1")
+    open "${file}"
+    pausethescript
+    rm "${file}"
+}
+
 #
 # DisplayLink Manager
 #
