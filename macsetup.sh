@@ -27,14 +27,18 @@ function openfilewithregex {
 }
 
 #
-# DisplayLink Manager
+# DisplayLink Manager & DisplayLink Manager MacOS Extension
 #
 # Add the possibility to have more than one external monitor on MacBook M1 with a DisplayLink compatible hub
+# Extension for DisplayLink Manager to work at the login screen
 #
 # https://www.displaylink.com
 #
 open "https://www.displaylink.com/downloads/file?id=1713"
-open "DisplayLink Manager Graphics Connectivity1.3.1-EXE"
+openfilewithregex "DisplayLink Manager Graphics Connectivity.*\.pkg"
+open "https://displaylink.com/downloads/macos_extension"
+open "macOS App LoginExtension-EXE.dmg"
+
 
 
 #######################
