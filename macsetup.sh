@@ -149,6 +149,15 @@ brew install dockutil
 brew install duti
 
 #
+# Git
+#
+# File versioning
+#
+# https://github.com/git/git
+#
+brew install git
+
+#
 # loginitems
 #
 # Utility to manage startup applications
