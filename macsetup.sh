@@ -1659,13 +1659,6 @@ brew install --cask ha-menu
 open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
 
 #
-# Iina
-#
-# https://github.com/iina/iina
-#
-brew install --cask iina
-
-#
 # Jiffy
 #
 # https://sindresorhus.com/jiffy
@@ -1889,6 +1882,16 @@ mas install 485812721
 brew install --cask typora
 
 #
+# VLC
+#
+# Vide Player
+#
+# https://www.videolan.org
+#
+brew install --cask vlc
+
+
+#
 # WebP Viewer: QuickLook & View
 #
 # https://langui.net/webp-viewer
@@ -1949,12 +1952,12 @@ brew install --cask font-archivo-narrow
 #                                                #
 ##################################################
 
-duti -s com.colliderli.iina public.mpeg-4 all #mp4
-duti -s com.colliderli.iina com.apple.quicktime-movie all #mov
+duti -s org.videolan.vlc public.mpeg-4 all #mp4
+duti -s org.videolan.vlc com.apple.quicktime-movie all #mov
 duti -s com.microsoft.VSCode public.plain-text all #txt
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge8027pb all #lua
-duti -s com.colliderli.iina public.avi all #avi
-duti -s com.colliderli.iina public.3gpp all #3gp
+duti -s org.videolan.vlc public.avi all #avi
+duti -s org.videolan.vlc public.3gpp all #3gp
 duti -s com.apple.Preview com.nikon.raw-image all #NEF
 duti -s com.microsoft.VSCode net.daringfireball.markdown all #Markdown
 duti -s com.brave.Browser public.svg-image all #svg
@@ -1968,11 +1971,11 @@ duti -s com.microsoft.VSCode public.php-script all #php
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3u all #terraform tf
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #terraform tfstate
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #terraform tfvars
-duti -s com.colliderli.iina com.microsoft.waveform-audio all #wav
+duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
 duti -s com.apple.Preview com.adobe.pdf all #pdf
-duti -s com.colliderli.iina public.mp3 all #mp3
+duti -s org.videolan.vlc public.mp3 all #mp3
 duti -s net.kovidgoyal.calibre dyn.ah62d4rv4ge80c8x1gq all #Kindle ebooks
-duti -s com.colliderli.iina com.apple.m4a-audio all #M4A
+duti -s org.videolan.vlc com.apple.m4a-audio all #M4A
 duti -s net.langui.WebPViewer public.webp all #WebP
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81g6pq all #SQL
 duti -s com.apple.Preview org.openxmlformats.presentationml.presentation all #PPTX
