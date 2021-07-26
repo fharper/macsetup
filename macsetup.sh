@@ -120,15 +120,23 @@ notification "Add your SSH key to Github (copied into the clipboard)"
 xcode-select --install
 
 #
-# Homebrew
+# Homebrew + homebrew-cask-versions + brew-cask-upgrade + Casks for Fonts
 #
 # macOS package manager
+# Alternate versions of Homebrew Casks
+# CLI for upgrading outdated Homebrew Casks
+# Casks for Fonts
 #
 # https://github.com/Homebrew/brew
+# https://github.com/Homebrew/homebrew-cask-versions
+# https://github.com/buo/homebrew-cask-upgrade
+# https://github.com/Homebrew/homebrew-cask-fonts
 #
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew analytics off
 brew tap homebrew/cask-versions
+brew tap buo/cask-upgrade
+brew tap homebrew/cask-fonts
 
 #
 # Dockutil
@@ -1343,12 +1351,6 @@ brew install bandwhich
 brew install bat
 
 #
-# brew-cask-upgrade
-#
-# https://github.com/buo/homebrew-cask-upgrade
-#
-brew tap buo/cask-upgrade
-
 #
 # Clipdown
 #
@@ -1918,7 +1920,7 @@ mackup restore --force
 # Fonts #
 #       #
 #########
-brew tap homebrew/cask-fonts
+
 brew install --cask font-fira-sans
 brew install --cask font-fira-code
 brew install --cask font-arial
