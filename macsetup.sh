@@ -186,6 +186,15 @@ brew install mas
 mas signin $email
 
 #
+# mysides
+#
+# Finder sidebar tool
+#
+# https://github.com/mosen/mysides
+#
+brew install --cask mysides
+
+#
 # nvm + Node.js + npm cli
 #
 # https://github.com/nvm-sh/nvm
