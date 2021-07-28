@@ -251,16 +251,24 @@ brew install terminal-notifier
 notification "Deactivate the System Integrity Protection with 'csrutil disable' in Recovery Mode"
 
 #
-# Alfred
+# Alfred & alfred-google-translate & alfred-language-configuration
 #
 # Spotlight replacement
+# Google Translate Workflow
+# Google Translate Language Configuration Workflow (needed by alfred-google-translate)
 #
 # https://www.alfredapp.com
+# https://github.com/xfslove/alfred-google-translate
+# https://github.com/xfslove/alfred-language-configuration
 #
 brew install --cask alfred
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>1048576</integer></array><key>type</key><string>standard</string></dict></dict>" # Deactivate Spotlight Global Shortcut to use it with Alfred instead (will work after logging off)
 open -a "Alfred 4"
 notification "Add Alfred's licenses & set sync folder"
+sudo -E tccutil -e com.runningwithcrayons.Alfred
+npm install -g alfred-google-translate
+npm install -g alfred-language-configuration
+notification "Configure alfred-google-translate with `trc en&fr`"
 
 #
 # Amphetamine & Amphetamine Enhancer
