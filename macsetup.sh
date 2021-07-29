@@ -166,6 +166,15 @@ brew install duti
 brew install git
 
 #
+# lastversion
+#
+# CLI to get latest GitHub Repo Release assets URL
+#
+# https://github.com/dvershinin/lastversion
+#
+pip install lastversion
+
+#
 # loginitems
 #
 # Utility to manage startup applications
