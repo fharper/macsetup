@@ -288,8 +288,9 @@ notification "Configure alfred-google-translate with `trc en&fr`"
 # https://github.com/x74353/Amphetamine-Enhancer
 #
 mas install 937984704
-curl -L https://raw.githubusercontent.com/x74353/Amphetamine-Enhancer/master/Releases/Current/Amphetamine%20Enhancer.dmg --output "Amphetamine Enhancer.dmg"
-open "Amphetamine Enhancer.dmg"
+curl -L https://raw.githubusercontent.com/x74353/Amphetamine-Enhancer/master/Releases/Current/Amphetamine%20Enhancer.dmg --output "Amphetamine-Enhancer.dmg"
+open Amphetamine-Enhancer.dmg
+rm Amphetamine-Enhancer.dmg
 
 #
 # Apple Juice
