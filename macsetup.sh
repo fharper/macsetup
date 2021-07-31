@@ -404,11 +404,9 @@ brew install --cask little-snitch
 #
 # https://www.logitech.com/en-ca/product/options
 #
-curl -L https://download01.logi.com/web/ftp/pub/techsupport/options/Options_8.34.91.zip --output logitech.zip
+curl -L https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.zip --output logitech.zip
 unzip logitech.zip
 rm logitech.zip
-open -a "LogiMgr Installer 8.34.91.app"
-rm -rf "LogiMgr Installer 8.34.91.app"
 
 #
 # Moom
