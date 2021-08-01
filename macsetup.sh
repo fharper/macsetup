@@ -407,6 +407,9 @@ brew install --cask little-snitch
 curl -L https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.zip --output logitech.zip
 unzip logitech.zip
 rm logitech.zip
+openfilewithregex "LogiMgr Installer.*"
+rm -rf "${file}"
+
 
 #
 # Moom
