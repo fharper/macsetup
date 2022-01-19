@@ -241,6 +241,11 @@ rm -rf bin/
 brew install tccutil
 
 #
+# Script Editor
+#
+sudo -E tccutil -e com.apple.ScriptEditor2
+
+#
 # terminal-notifier
 #
 # Utility to send macOS notifications
