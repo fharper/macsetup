@@ -343,6 +343,7 @@ brew install --cask commandq
 # https://contexts.co
 #
 brew install --cask contexts
+sudo -E tccutil -e com.contextsformac.Contexts
 
 #
 # Control Plane
