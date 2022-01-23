@@ -4,10 +4,7 @@ A shell script I use to setup my mac.
 
 Feel free to suggest other great tools!
 
-## Table of contents
-* [Getting started](#getting-started)
-
-## Getting started
+# Getting started
 
 Clone this repo to your mac.
 ```git clone git@github.com:fharper/macsetup.git```
@@ -20,3 +17,4 @@ Now, you can run the script.
 
 If you are already in the repository directory, you can run simplify the command like this:
 ```./macsetup.sh```
+
