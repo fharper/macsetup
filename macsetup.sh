@@ -16,7 +16,7 @@ function notification {
 
 function pausethescript {
     echo "Press any key to continue the installation script"
-    read
+    read -r
 }
 
 function openfilewithregex {
