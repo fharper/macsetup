@@ -284,15 +284,6 @@ npm install -g alfred-google-translate
 npm install -g alfred-language-configuration
 
 #
-# Apple Juice
-#
-# Advanced battery gauge
-#
-# https://github.com/raphaelhanneken/apple-juice
-#
-brew install --cask apple-juice
-
-#
 # Bartender
 #
 # macOS menubar manager
