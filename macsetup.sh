@@ -282,20 +282,6 @@ notification "Add Alfred's licenses & set sync folder"
 sudo -E tccutil -e com.runningwithcrayons.Alfred
 npm install -g alfred-google-translate
 npm install -g alfred-language-configuration
-notification "Configure alfred-google-translate with `trc en&fr`"
-
-#
-# Amphetamine & Amphetamine Enhancer
-#
-# Menubar utility for caffeinate
-#
-# https://apps.apple.com/app/amphetamine/id937984704
-# https://github.com/x74353/Amphetamine-Enhancer
-#
-mas install 937984704
-curl -L https://raw.githubusercontent.com/x74353/Amphetamine-Enhancer/master/Releases/Current/Amphetamine%20Enhancer.dmg --output "Amphetamine-Enhancer.dmg"
-open Amphetamine-Enhancer.dmg
-rm Amphetamine-Enhancer.dmg
 
 #
 # Apple Juice
@@ -393,6 +379,15 @@ brew install hh
 # https://github.com/pqrs-org/Karabiner-Elements
 #
 brew install --cask karabiner-elements
+
+#
+# KeepingYouAwake
+#
+# Menubar app to manage caffeinate
+#
+# https://github.com/newmarcel/KeepingYouAwake
+#
+brew install --cask keepingyouawake
 
 #
 # Little Snitch
