@@ -282,6 +282,7 @@ notification "Add Alfred's licenses & set sync folder"
 sudo -E tccutil -e com.runningwithcrayons.Alfred
 npm install -g alfred-google-translate
 npm install -g alfred-language-configuration
+notification "Configure alfred-google-translate with 'trc en&fr'"
 
 #
 # Bartender
