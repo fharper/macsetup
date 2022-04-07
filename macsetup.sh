@@ -322,6 +322,7 @@ brew install --cask commandq
 #
 brew install --cask contexts
 sudo -E tccutil -e com.contextsformac.Contexts
+notification "Open the license file from 1Password"
 
 #
 # Control Plane
