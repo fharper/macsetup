@@ -447,6 +447,15 @@ mas install 488764545
 defaults write com.apple.menuextra.clock IsAnalog -bool true #macOS Clock in analog format
 
 #
+# TripMode
+#
+# Manage applications internet access
+#
+# https://tripmode.ch
+#
+brew install --cask TripMode
+
+#
 # Zoom
 #
 # Video conference
