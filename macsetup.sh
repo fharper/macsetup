@@ -464,6 +464,15 @@ brew install --cask TripMode
 #
 brew install --cask zoomus
 
+#
+# Zsh-z
+#
+# fastest cd alternative
+#
+# https://github.com/agkozak/zsh-z
+#
+git clone git@github.com:agkozak/zsh-z.git "$ZSH_CUSTOM"/plugins/zsh-z
+
 
 ########################
 #                      #
