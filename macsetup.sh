@@ -600,12 +600,11 @@ dockutil --remove 'System Preferences' --allhomes
 #
 dockutil --remove 'TV' --allhomes
 
-
-#####################
-#                   #
-# OS Configurations #
-#                   #
-#####################
+###############################
+#                             #
+# Dock & Menu Bar Preferences #
+#                             #
+###############################
 
 #
 # Desktop & Screen Saver - Start after
