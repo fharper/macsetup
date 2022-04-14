@@ -404,7 +404,6 @@ rm logitech.zip
 openfilewithregex "LogiMgr Installer.*"
 rm -rf "${file}"
 
-
 #
 # Moom
 #
@@ -607,105 +606,158 @@ dockutil --remove 'TV' --allhomes
 ###############################
 
 #
-# Desktop & Screen Saver - Start after
-#
-defaults -currentHost write com.apple.screensaver idleTime 0
-
-#
-# Dock - Minimize window into application icon
+# Minimize window into application icon
 #
 defaults write com.apple.dock minimize-to-application -bool true
 
 #
-# Dock - Show recent applications in Dock
+# Position on screen
+#
+defaults write com.apple.dock "orientation" -string "right"
+
+#
+# Show recent applications in Dock
 #
 defaults write com.apple.dock show-recents -bool false
 
 #
-# Finder - .DS_Store files creation
+# Tile Size
+#
+defaults write com.apple.dock tilesize -int 35
+
+
+######################
+#                    #
+# Finder Preferences #
+#                    #
+######################
+
+#
+# .DS_Store files creation on Network Disk
 #
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 
 #
-# Finder - New Finder windows show
+# New Finder windows show
 #
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Downloads"
 
 #
-# Finder - Show all filename extensions
+# Show all filename extensions
 #
 defaults write -g AppleShowAllExtensions -bool true
 
 #
-# Finder - Show Library Folder
+# Show Library Folder
 #
+xattr -d com.apple.FinderInfo ~/Library
 sudo chflags nohidden ~/Library
 
 #
-# Finder - Show Path Bar
+# Show Path Bar
 #
 defaults write com.apple.finder ShowPathbar -bool true
 
 #
-# Finder - Show Status Bar
+# Show Status Bar
 #
 defaults write com.apple.finder ShowStatusBar -boolean true
 
 #
-# Finder - Show these items on the desktop - CDs, DVDs, and iPods
+# Show these items on the desktop - CDs, DVDs, and iPods
 #
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 #
-# Finder - Show these items on the desktop - Connected servers
-#
-defaults write com.apple.finder ShowMountedServersOnDesktop -bool false
-
-#
-# Finder - Show these items on the desktop - External disks
+# Show these items on the desktop - External disks
 #
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 
 #
-# Finder - Show these items on the desktop - Hard disks
+# Sidebar Favorites
 #
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+mysides remove Desktop
+mysides remove Recents
+
+##################################
+#                                #
+# Security & Privacy Preferences #
+#                                #
+##################################
 
 #
-# Finder - Sort By - Name
+# FileVault - Turn On Filevault...
 #
-defaults write -g com.apple.finder FXArrangeGroupViewBy -string "Name"
+sudo fdesetup enable
 
 #
-# HP OfficeJet 7740 series installation
-#
-# shellcheck disable=SC2027,SC2046
-#
-lpadmin -E -p "HP_OfficeJet_Pro_7740_series" -E -D "HP OfficeJet 7740" -v ""$(ippfind)"" -o printer-is-shared=false -o Name="HP OfficeJet 7740" -P "/Users/fharper/Documents/mac/HP OfficeJet Pro 7740/HP_OfficeJet_Pro_7740_series.ppd"
-
-#
-# iTerm2 configurations
-#
-dockutil --add /Applications/iTerm.app/ --allhomes
-
-#
-# Locate database generation
-#
-sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
-
-#
-# Security & Privacy - Allow apps downloaded from Anywhere
+# General - Allow apps downloaded from Anywhere
 #
 sudo spctl --master-disable
 
+##########################
+#                        #
+# Sharing Configurations #
+#                        #
+##########################
+
 #
-# Sharing - Computer name
+# Computer name
 #
 sudo scutil --set ComputerName "lapta"
 sudo scutil --set HostName "lapta"
 sudo scutil --set LocalHostName "lapta"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "lapta"
+
+
+########################
+#                      #
+# Sound Configurations #
+#                      #
+########################
+
+#
+# Sound Effects - Play sound on startup
+#
+sudo nvram StartupMute=%01
+
+#
+# Sound Effects - Play user interface sound effects
+#
+defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
+
+
+###########################
+#                         #
+# Trackpad Configurations #
+#                         #
+###########################
+
+#
+# Point & Click - Look up & data detector
+#
+defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
+
+
+################################
+#                              #
+# User & Groups Configurations #
+#                              #
+################################
+
+#
+# Guest User
+#
+sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
+
+
+########################
+#                      #
+# Other Configurations #
+#                      #
+########################
 
 #
 # Sound - Play sound on startup
@@ -724,17 +776,6 @@ defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
 #
 open /System/Library/PreferencePanes/Sound.prefPane
 notification 'Uncheck "Show volume in menu bar"'
-
-#
-# Trackpad - Look up & data detector
-#
-defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
-
-#
-# User & Groups - Guest User
-#
-sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
 
 
 # Trackpad - App Exposé & Mission Control (need to be done together)
@@ -795,6 +836,12 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 #Change the log in screen background
 cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
+
+# Keyboard - Press Fn to
+# Change to do nothing
+defaults write com.apple.HIToolbox AppleFnUsageType -int 0
+
+
 
 #
 # Disable the accent characters menu
