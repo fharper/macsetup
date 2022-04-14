@@ -760,9 +760,9 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 ########################
 
 #
-# Sound - Play sound on startup
+# iTerm2 configurations
 #
-sudo nvram StartupMute=%01
+dockutil --add /Applications/iTerm.app/ --allhomes
 
 #
 # Sound - Play user interface sound effects
