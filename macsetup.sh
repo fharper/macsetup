@@ -212,8 +212,8 @@ brew install --cask mysides
 #
 brew install nvm
 mkdir ~/.nvm
-nvm install v14.18.1
-nvm use v14.18.1
+nvm install v18.0.0
+nvm use v18.0.0
 npm i -g npm@latest
 npm adduser
 
