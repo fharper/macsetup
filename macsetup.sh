@@ -883,6 +883,8 @@ dockutil --add /Applications/1Password\ 7.app/ --allhomes
 #
 open https://services.druide.com/
 notification "Download & install Antidote"
+pausethescript
+filename=openfilewithregex "Antidote.*.dmg"
 dockutil --add /Applications/Antidote/Antidote\ 10.app/
 loginitems -a Antidote
 
