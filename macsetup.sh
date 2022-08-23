@@ -937,7 +937,7 @@ dockutil --add "/Applications/Notion Enhanced.app" --allhomes
 # https://github.com/Ji4n1ng/OpenInTerminal
 #
 brew install --cask openineditor-lite
-notification "drag openineditor-lite in Finder toolbar"
+notification "drag openineditor-lite in Finder toolbar while pressing Command"
 
 #
 # OpenInTerminal-Lite
@@ -945,7 +945,7 @@ notification "drag openineditor-lite in Finder toolbar"
 # https://github.com/Ji4n1ng/OpenInTerminal
 #
 brew install --cask openinterminal-lite
-notification "drag openinterminal-lite in Finder toolbar"
+notification "drag openinterminal-lite in Finder toolbar while pressing Command"
 
 #
 # Rain
