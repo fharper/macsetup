@@ -902,17 +902,6 @@ defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -b
 defaults write com.brave.Browser DisablePrintPreview -bool true
 
 #
-# Evernote
-#
-# Note taking app
-#
-# https://evernote.com
-#
-mas install 406056744
-defaults write com.evernote.Evernote NSRequiresAquaSystemAppearance -bool true
-dockutil --add /Applications/Evernote.app --allhomes
-
-#
 # Home Assistant
 #
 # Home automation
@@ -932,15 +921,15 @@ brew install --cask mumu
 loginitems -a Mumu
 
 #
-# Notion
+# Notion Enhanced
 #
-# Notes app
+# Notion is a notes app & the Notion Enhanced give a lot of customizations possibilities
 #
 # https://www.notion.so
+# https://github.com/notion-enhancer/desktop
 #
-brew install --cask notion
-dockutil --add /Applications/Notion.app --allhomes
-loginitems -a Notion
+brew install --cask notion-enhanced
+dockutil --add "/Applications/Notion Enhanced.app" --allhomes
 
 #
 # OpenInEditor-Lite
