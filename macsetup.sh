@@ -2342,6 +2342,7 @@ duti -s com.interversehq.qView public.png all # PNG by using my own build
 duti -s com.microsoft.VSCode public.python-script all # Python
 duti -s com.microsoft.VSCode com.apple.property-list all # Plist
 duti -s com.apple.Preview com.adobe.photoshop-image all # Photoshop
+duti -s com.googlecode.iTerm2 com.apple.terminal.shell-script all #SH
 
 
 #########
