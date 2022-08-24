@@ -1304,7 +1304,6 @@ npm install -g jest
 brew install --cask jupyterlab
 
 #
-# npm Check Updates
 # Mocha
 #
 # Node.js testing framework
@@ -1321,6 +1320,8 @@ npm i -g mocha
 #
 brew install --cask multipass
 
+#
+# npm Check Updates (ncu)
 #
 # https://github.com/raineorshine/npm-check-updates
 #
