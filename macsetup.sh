@@ -2176,6 +2176,8 @@ brew install --cask signal
 #
 # Silicon
 #
+# Identify Applications Architecture
+#
 # https://github.com/DigiDNA/Silicon
 #
 brew install --cask silicon
