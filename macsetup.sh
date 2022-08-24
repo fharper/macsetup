@@ -1972,8 +1972,12 @@ rm wavelink.pkg
 brew install --cask firefox
 
 #
+# Gimp
 #
+# https://gitlab.gnome.org/GNOME/gimp/
 #
+brew install --cask gimp
+
 #
 # Gray
 #
@@ -2033,15 +2037,6 @@ brew install --cask keycastr
 # https://www.amazon.ca/b?ie=UTF8&node=2972705011
 #
 mas install 405399194
-
-#
-# Krita
-#
-# Photoshop alternative
-#
-# https://github.com/KDE/krita
-#
-brew install --cask krita
 
 #
 # LibreOffice
