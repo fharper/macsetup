@@ -1465,6 +1465,7 @@ brew install --cask xcodes
 # https://github.com/yarnpkg/yarn
 #
 brew install yarn
+yarn config set --home enableTelemetry 0
 
 #
 # PHP + Composer
