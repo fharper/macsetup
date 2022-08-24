@@ -1505,12 +1505,6 @@ brew install lynis
 #
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-#
-# Nix
-#
-# https://github.com/NixOS/nix
-#
-sh <(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume
 
 #
 # ShellCheck
