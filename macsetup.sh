@@ -1149,6 +1149,7 @@ git config --replace-all --global diff.tool vscode
 git config --replace-all --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
 git config --replace-all --global core.hooksPath ~/.git/hooks
 git config --replace-all --global advice.addIgnoredFile false
+git config --replace-all --global rebase.autoStash true
 
 #
 # Git Branch Status
