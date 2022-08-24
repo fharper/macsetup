@@ -2132,6 +2132,8 @@ brew install --cask obs
 #
 # Paprika Recipe Manager
 #
+# A recipes manager
+#
 # https://www.paprikaapp.com
 #
 mas install 1303222628
