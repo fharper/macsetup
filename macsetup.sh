@@ -1405,8 +1405,9 @@ pip install twine
 #
 brew install rbenv
 rbenv init
-rbenv install 2.7.2
-rbenv global 2.7.2
+rbenv install 3.1.2
+rbenv global 3.1.2
+
 
 #
 # Stylelint
