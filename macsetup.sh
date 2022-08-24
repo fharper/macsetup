@@ -1658,6 +1658,8 @@ brew install httpie
 #
 # ICS split
 #
+# Utility to split big .ics files into smaller ones for importing into Google Calendar
+#
 # https://github.com/beorn/icssplit
 #
 # icssplit  hi@fred.dev.ics fredcal --maxsize=300000
