@@ -1130,16 +1130,16 @@ gist --login
 # https://github.com/git/git
 #
 brew install git
-git config --global user.name "Frédéric Harper"
-git config --global user.email $email
-git config --global init.defaultBranch main
-git config --global push.default current
-git config --global pull.rebase true
-git config --global difftool.prompt false
-git config --global diff.tool vscode
-git config --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
-git config --global core.hooksPath ~/.git/hooks
-git config --global advice.addIgnoredFile false
+git config --replace-all --global user.name "Frédéric Harper"
+git config --replace-all --global user.email $email
+git config --replace-all --global init.defaultBranch main
+git config --replace-all --global push.default current
+git config --replace-all --global pull.rebase true
+git config --replace-all --global difftool.prompt false
+git config --replace-all --global diff.tool vscode
+git config --replace-all --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
+git config --replace-all --global core.hooksPath ~/.git/hooks
+git config --replace-all --global advice.addIgnoredFile false
 
 #
 # Git Branch Status
