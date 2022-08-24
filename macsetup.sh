@@ -737,6 +737,13 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 ########################
 
 #
+# Show volume in menu bar
+#
+open /System/Library/PreferencePanes/Sound.prefPane
+notification 'Uncheck "Show Sound in menu bar"'
+pausethescript
+
+#
 # Sound Effects - Play sound on startup
 #
 sudo nvram StartupMute=%01
@@ -792,13 +799,7 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
 
 
-#
-# Sound - Show volume in menu bar
-#
-# need to find a way to do this with the command line since Apple removed the Sound.menu from Menu Extras
-#
-open /System/Library/PreferencePanes/Sound.prefPane
-notification 'Uncheck "Show volume in menu bar"'
+
 
 
 # Trackpad - App Exposé & Mission Control (need to be done together)
