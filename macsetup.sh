@@ -1362,7 +1362,6 @@ brew install pre-commit
 brew install prettier
 
 #
-# pyenv + Python + Wheel + Pylint + pytest
 # Puppeteer
 #
 # Headless Chrome Node.js API for automation
@@ -1372,21 +1371,23 @@ brew install prettier
 npm install -g puppeteer
 
 #
-# Python version manager
+# Miniforge + Python + Wheel + Pylint + pytest + IPython
+#
+# Python virtual environment manager
 # Python SDK
 # Python wheel packaging tool
 # Python linter
 # Python tests framework
 #
-# https://github.com/pyenv/pyenv
+# https://github.com/conda-forge/miniforge
 # https://www.python.org
 # https://github.com/pypa/wheel
 # https://github.com/PyCQA/pylint/
 # https://github.com/pytest-dev/pytest
 #
-brew install pyenv
-pyenv install 3.9.7
-pyenv global 3.9.7
+brew install --cask miniforge
+conda activate base
+conda install python=3.10.6
 python -m pip install --upgrade pip
 python -m pip install --upgrade build
 pip install wheel
