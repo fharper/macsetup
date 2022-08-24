@@ -1523,6 +1523,15 @@ brew install shellcheck
 brew install ripgrep
 
 #
+# OpenAPI Validator
+#
+# OpenAPI linter & validator
+#
+# https://github.com/IBM/openapi-validator
+#
+npm install -g ibm-openapi-validator
+
+#
 # Webnint
 #
 # https://github.com/webhintio/hint
