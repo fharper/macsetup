@@ -766,6 +766,12 @@ defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
 defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
 
 #
+# Scroll & Zoom - Smart zoom (NOT WORKING ANYMORE)
+#
+defaults write com.apple.dock showSmartZoomEnabled -bool false
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDoubleTapGesture -bool false
+
+#
 # More Gestures - App Exposé
 #
 defaults write com.apple.dock showAppExposeGestureEnabled -bool false
@@ -818,8 +824,8 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFi
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -bool false
 
 # Trackpad - Smart zoom
-defaults write com.apple.dock showSmartZoomEnabled -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDoubleTapGesture -bool false
+
+
 
 # Trackpad - Swipe between full-screen apps
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerVertSwipeGesture -bool false
