@@ -1866,7 +1866,8 @@ brew install --cask captin
 #
 # https://www.google.com/chrome
 #
-brew install cask google-chrome
+brew install --cask google-chrome
+
 
 #
 # Cryptomator
