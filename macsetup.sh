@@ -765,6 +765,11 @@ defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
 #
 defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
 
+#
+# More Gestures - App Exposé
+#
+defaults write com.apple.dock showAppExposeGestureEnabled -bool false
+
 
 ################################
 #                              #
@@ -803,7 +808,6 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
 
 # Trackpad - App Exposé & Mission Control (need to be done together)
-defaults write com.apple.dock showAppExposeGestureEnabled -bool false
 defaults write com.apple.dock showMissionControlGestureEnabled -bool false
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.fourFingerVertSwipeGesture -bool false
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -bool false
