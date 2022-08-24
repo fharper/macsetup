@@ -2070,6 +2070,15 @@ open '/usr/local/Caskroom/logitech-presentation/1.52.95/LogiPresentation Install
 brew install --cask loopback
 
 #
+# LyricsX
+#
+# Lyrics & Karaoke Application
+#
+# https://github.com/ddddxxx/LyricsX
+#
+brew install --cask LyricsX
+
+#
 # Messenger
 #
 # Facebook Messenger Client
