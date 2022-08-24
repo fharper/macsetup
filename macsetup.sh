@@ -1363,6 +1363,14 @@ brew install prettier
 
 #
 # pyenv + Python + Wheel + Pylint + pytest
+# Puppeteer
+#
+# Headless Chrome Node.js API for automation
+#
+# https://github.com/puppeteer/puppeteer
+#
+npm install -g puppeteer
+
 #
 # Python version manager
 # Python SDK
