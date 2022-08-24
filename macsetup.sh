@@ -1313,6 +1313,15 @@ brew install --cask jupyterlab
 npm i -g mocha
 
 #
+# Multipass
+#
+# Ubuntu VM Manager
+#
+# https://github.com/canonical/multipass
+#
+brew install --cask multipass
+
+#
 # https://github.com/raineorshine/npm-check-updates
 #
 npm i -g npm-check-updates
