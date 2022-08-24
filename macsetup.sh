@@ -1591,9 +1591,16 @@ brew install bandwhich
 brew install bat
 
 #
+# Color LS + Nerd Fonts
 #
+# Beautifies the terminal's ls command
+# Fonts collections aggregator
 #
+# https://github.com/athityakumar/colorls
+# https://github.com/ryanoasis/nerd-fonts
 #
+gem install colorls
+brew install --cask font-hack-nerd-font
 
 #
 # Coreutils
