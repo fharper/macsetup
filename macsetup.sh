@@ -770,10 +770,8 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 dockutil --add /Applications/iTerm.app/ --allhomes
 
 #
-# Sound - Play user interface sound effects
 # Locate database generation
 #
-defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
 
