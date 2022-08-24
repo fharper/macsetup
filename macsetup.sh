@@ -1868,6 +1868,14 @@ brew install --cask captin
 #
 brew install --cask google-chrome
 
+#
+# Chromium Ungoogled
+#
+# Chromium without Google stuff
+#
+# https://github.com/Eloston/ungoogled-chromium#downloads
+#
+brew install --cask eloston-chromium
 
 #
 # Cryptomator
