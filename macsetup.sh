@@ -2212,12 +2212,8 @@ mas install 1153157709
 brew install --cask teamviewer
 
 #
-# The Unarchiver
 #
-# https://theunarchiver.com
 #
-brew install --cask the-unarchiver
-
 #
 # TweetDeck
 #
