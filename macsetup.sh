@@ -1187,12 +1187,19 @@ brew install git-recent
 brew install git-sizer
 
 #
+# GitHub CLI & gh-pr-draft
+#
 # GitHub CLI
+# GitHub CLI Extension for converting PR to Draft
 #
 # https://github.com/cli/cli
+# https://github.com/kyanny/gh-pr-draft
 #
 brew install gh
 gh auth login
+gh config set editor "code --wait"
+gh config set git_protocol ssh --host github.com
+gh extension install kyanny/gh-pr-draft
 
 #
 # GoEnv + Go
