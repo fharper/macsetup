@@ -1151,6 +1151,7 @@ git config --replace-all --global core.hooksPath ~/.git/hooks
 git config --replace-all --global advice.addIgnoredFile false
 git config --replace-all --global rebase.autoStash true
 git config --replace-all --global core.ignorecase false
+git config --replace-all --global clean.requireForce false
 
 #
 # Git Branch Status
