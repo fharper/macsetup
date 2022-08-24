@@ -771,8 +771,14 @@ dockutil --add /Applications/iTerm.app/ --allhomes
 
 #
 # Sound - Play user interface sound effects
+# Locate database generation
 #
 defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
+sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
+
+
+
 
 #
 # Sound - Show volume in menu bar
