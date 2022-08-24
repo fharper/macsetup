@@ -1217,6 +1217,16 @@ goenv install 1.18.0
 goenv global 1.18.0
 
 #
+# go-jira
+#
+# CLI for Jira
+#
+# https://github.com/go-jira/jira
+#
+go get github.com/go-jira/jira/cmd/jira
+jira session
+
+#
 # GPG Suite
 #
 # https://gpgtools.org
