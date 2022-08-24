@@ -2212,9 +2212,14 @@ mas install 1153157709
 brew install --cask teamviewer
 
 #
+# TextSniper
 #
+# Extract text from your screen
 #
+# https://textsniper.app
 #
+brew install --cask textsniper
+
 #
 #
 #
