@@ -1343,6 +1343,17 @@ phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
 # https://postman.com
 #
 brew install --cask postman
+
+#
+#
+# pre-commit
+#
+# Multi-language pre-commit hooks framework
+#
+# https://github.com/pre-commit/pre-commit
+#
+brew install pre-commit
+
 #
 # Prettier
 #
