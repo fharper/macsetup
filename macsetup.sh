@@ -2221,8 +2221,11 @@ brew install --cask teamviewer
 brew install --cask textsniper
 
 #
+# The Unarchiver
 #
+# https://theunarchiver.com
 #
+brew install --cask the-unarchiver
 
 #
 # Typora
