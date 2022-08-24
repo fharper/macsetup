@@ -443,10 +443,12 @@ brew install --cask sound-control
 #
 # https://www.seense.com/the_clock/
 #
-# install from the App Store for the license
+# Notes
+# - Install from the App Store for the license
+# - You cannot remove the clock from the menubar anymore: minimizing used space as analog
 #
 mas install 488764545
-defaults write com.apple.menuextra.clock IsAnalog -bool true #macOS Clock in analog format
+defaults write com.apple.menuextra.clock IsAnalog -bool true
 
 #
 # TripMode
