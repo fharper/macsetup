@@ -1468,12 +1468,23 @@ brew install yarn
 yarn config set --home enableTelemetry 0
 
 #
-# PHP + Composer
+# PHP + PHPBrew + Composer
 #
 # https://github.com/php/php-src
+# https://github.com/phpbrew/phpbrew
 # https://github.com/composer/composer
 #
-brew install php
+# Command:
+# phpbrew known --more
+#
+#
+# Notes:
+# - Need to install olrder version of PHP as PHPBrew isn't comptabile with newer ones
+# - https://github.com/phpbrew/phpbrew/issues/1245
+#
+brew install phpbrew php@7.4
+brew link --overwrite php@7.4
+phpbrew install 8.1.9
 brew install composer
 
 #
