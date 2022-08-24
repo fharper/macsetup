@@ -1712,6 +1712,16 @@ brew install lzip
 # https://github.com/johnkerl/miller
 #
 brew install miller
+
+#
+# ncdu-zig
+#
+# Command line disk usage analyzer
+#
+# https://code.blicky.net/yorhel/ncdu
+#
+brew install ncdu
+
 #
 # Noti
 #
