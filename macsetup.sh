@@ -2149,6 +2149,8 @@ loginitems -a Parcel -s false
 #
 # Pika
 #
+# Color Picker
+#
 # https://github.com/superhighfives/pika
 #
 brew install --cask pika
