@@ -948,6 +948,11 @@ dockutil --add "/Applications/Notion Enhanced.app" --allhomes
 #
 brew install --cask openineditor-lite
 notification "drag openineditor-lite in Finder toolbar while pressing Command"
+curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
+unzip icons.zip
+rm icons.zip
+seticon icons/icon_vscode_dark.icns /Applications/OpenInEditor-Lite.app
+rm -rf icons
 
 #
 # OpenInTerminal-Lite
