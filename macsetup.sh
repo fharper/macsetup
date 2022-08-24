@@ -1418,6 +1418,15 @@ rbenv global 3.1.2
 #
 brew install -cask react-native-cli
 
+#
+# S3cmd
+#
+# CLI for AWS S3
+#
+# https://github.com/s3tools/s3cmd
+#
+brew install s3cmd
+s3cmd --configure
 
 #
 # Stylelint
