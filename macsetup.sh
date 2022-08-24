@@ -1281,6 +1281,14 @@ brew install ios-deploy
 #
 npm install -g jest
 
+#
+# JupyterLab
+#
+# Jupyter notebooks IDE
+#
+# https://jupyter.org/
+
+brew install --cask jupyterlab
 
 #
 # npm Check Updates
