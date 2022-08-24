@@ -1487,7 +1487,7 @@ brew install jenv
 brew tap AdoptOpenJDK/openjdk
 brew install --cask temurin
 jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
-jenv global openjdk64-17
+jenv global openjdk64-17.0.1
 
 #
 # Lynis
