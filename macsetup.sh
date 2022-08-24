@@ -2215,13 +2215,9 @@ brew install --cask teamviewer
 #
 #
 #
-# TweetDeck
 #
-# Twitter client (I'm using it for managing my employer's account)
 #
-# https://tweetdeck.twitter.com
 #
-mas install 485812721
 
 #
 # Typora
