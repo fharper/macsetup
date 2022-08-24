@@ -978,6 +978,8 @@ dockutil --add /Applications/Slack.app/ --allhomes
 #
 # Spaceship Prompt
 #
+# A Zsh prompt
+#
 # https://github.com/denysdovhan/spaceship-prompt
 #
 npm install -g spaceship-prompt
