@@ -1026,6 +1026,15 @@ npm config set editor code
 brew install act
 
 #
+# actionlint
+#
+# Static checker for GitHub Actions workflow files
+#
+# https://github.com/rhysd/actionlint
+#
+go install github.com/rhysd/actionlint/cmd/actionlint@latest
+
+#
 # BFG Repo-Cleaner
 #
 # https://github.com/rtyley/bfg-repo-cleaner
