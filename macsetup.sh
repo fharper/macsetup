@@ -1909,6 +1909,15 @@ brew install --cask daisydisk
 brew install --cask deckset
 
 #
+# Descript
+#
+# Video transcription & edition
+#
+# https://www.descript.com
+#
+brew install --cask descript
+
+#
 # Discord
 #
 # https://discord.com/
