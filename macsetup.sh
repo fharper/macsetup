@@ -1679,6 +1679,15 @@ brew install imagemagick
 brew install jq
 
 #
+# LinkChecker
+#
+# cli tool to check all links from a website or specific page
+#
+# https://github.com/wummel/linkchecker
+#
+pip install linkchecker
+
+#
 # lsusb
 #
 # https://github.com/jlhonora/lsusb
