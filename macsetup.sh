@@ -2109,6 +2109,8 @@ mv MindNode.app /Applications/
 #
 # Muzzle
 #
+# Set Do Not Disturb mode when screen sharing
+#
 # https://muzzleapp.com
 #
 brew install --cask muzzle
