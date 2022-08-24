@@ -1847,8 +1847,12 @@ brew install --cask beardedspice
 # https://github.com/apprenticeharper/DeDRM_tools
 #
 brew install --cask calibre
-open https://github.com/apprenticeharper/DeDRM_tools/releases
+curl -L "$(lastversion apprenticeharper/DeDRM_tools --assets)" --output Calibre-DeDRM.zip
+unzip Calibre-DeDRM.zip "DeDRM_plugin.zip"
+rm Calibre-DeDRM.zip
 notification "Install the DeDRM plugin into Calibre"
+pausethescript
+rm DeDRM_plugin.zip
 
 #
 # Captin
