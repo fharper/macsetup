@@ -2340,6 +2340,7 @@ duti -s com.microsoft.VSCode public.rtf all #RTF
 duti -s com.qview.qView public.png all # PNG
 duti -s com.interversehq.qView public.png all # PNG by using my own build
 duti -s com.microsoft.VSCode public.python-script all # Python
+duti -s com.microsoft.VSCode com.apple.property-list all # Plist
 
 
 #########
