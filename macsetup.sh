@@ -928,6 +928,7 @@ brew install --cask home-assistant
 #
 brew install --cask mumu
 loginitems -a Mumu
+sudo -E tccutil -e com.wilbertliu.mumu
 
 #
 # Notion Enhanced
