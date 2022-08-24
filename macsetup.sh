@@ -1243,8 +1243,13 @@ brew install grip
 brew install hadolint
 
 #
+# iOS Deploy
 #
+# Install and debug iPhone apps from the command line, without using Xcode
 #
+# https://github.com/ios-control/ios-deploy
+#
+brew install ios-deploy
 
 #
 # iOS Deploy
