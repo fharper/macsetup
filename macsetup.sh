@@ -1162,6 +1162,7 @@ git config --replace-all --global core.ignorecase false
 git config --replace-all --global clean.requireForce false
 git config --replace-all --global fetch.prune true
 git config --replace-all --global advice.addEmptyPathspec false
+git config --replace-all --global push.followTags true
 
 #
 # Git Branch Status
