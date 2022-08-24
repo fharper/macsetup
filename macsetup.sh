@@ -1294,6 +1294,13 @@ brew install --cask jupyterlab
 
 #
 # npm Check Updates
+# Mocha
+#
+# Node.js testing framework
+#
+# https://github.com/mochajs/mocha
+npm i -g mocha
+
 #
 # https://github.com/raineorshine/npm-check-updates
 #
