@@ -1405,6 +1405,7 @@ pip install twine
 #
 brew install rbenv
 rbenv init
+omz reload
 rbenv install 3.1.2
 rbenv global 3.1.2
 
