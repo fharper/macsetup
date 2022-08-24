@@ -58,13 +58,16 @@ open "macOS App LoginExtension-EXE.dmg"
 
 #
 # iTerm2
+# iTerm2 Shell Integration
 #
 # Terminal replacement
 #
 # https://github.com/gnachman/iTerm2
+# https://iterm2.com/documentation-shell-integration.html
 #
 open https://iterm2.com/downloads/stable/latest
 mv iTerm.app /Applications/
+curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
 open iTerm
 exit
 
