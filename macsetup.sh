@@ -1449,6 +1449,15 @@ mas install 497799835
 sudo xcodebuild -license accept
 
 #
+# Xcodes
+#
+# Xcode versions management
+#
+# https://github.com/RobotsAndPencils/XcodesApp
+#
+brew install --cask xcodes
+
+#
 # Yarn
 #
 # https://github.com/yarnpkg/yarn
