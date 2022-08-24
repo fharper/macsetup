@@ -1371,7 +1371,7 @@ brew install prettier
 npm install -g puppeteer
 
 #
-# Miniforge + Python + Wheel + Pylint + pytest + Twine + IPython
+# Miniforge + Python + Wheel + Pylint + pytest + Twine
 #
 # Python virtual environment manager
 # Python SDK
