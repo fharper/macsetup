@@ -1945,7 +1945,7 @@ mv "Elgato Control Center.app" /Applications
 # Elgato Stream Deck
 # https://www.elgato.com/en/gaming/stream-deck
 #
-curl -L https://edge.elgato.com/egc/macos/sd/Stream_Deck_4.9.2.13193.pkg --output elgato-streamdeck.pkg
+curl -L https://edge.elgato.com/egc/macos/sd/Stream_Deck_5.1.3.14750.pkg --output elgato-streamdeck.pkg
 open elgato-streamdeck.pkg
 rm elgato-streamdeck.pkg
 
