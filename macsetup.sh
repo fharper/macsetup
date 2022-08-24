@@ -1592,14 +1592,10 @@ brew install bat
 
 #
 #
-# Clipdown
 #
-# https://github.com/jhuckaby/clipdown
 #
-npm install -g clipdown
 
 #
-# Color LS
 # Coreutils
 #
 # Basic file, shell and text manipulation utilities
