@@ -1242,11 +1242,8 @@ brew install grip
 brew install hadolint
 
 #
-# Insomnia
 #
-# https://github.com/Kong/insomnia
 #
-brew install --cask insomnia
 
 #
 # iOS Deploy
@@ -1272,6 +1269,12 @@ npm i -g npm-check-updates
 brew install php-code-sniffer
 phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
 
+#
+# Postman
+#
+# https://postman.com
+#
+brew install --cask postman
 #
 # Prettier
 #
