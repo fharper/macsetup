@@ -2004,6 +2004,15 @@ brew install --cask ha-menu
 open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
 
 #
+# IGdm Messenger
+#
+# Instagram Messenger
+#
+# https://github.com/igdmapps/igdm
+#
+brew install --cask igdm
+
+#
 # Jiffy
 #
 # https://sindresorhus.com/jiffy
