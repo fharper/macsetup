@@ -26,6 +26,13 @@ function openfilewithregex {
     rm "${file}"
 }
 
+function installkeg {
+    alreadyInstalled=$(brew list "$1" 2>&1 | grep "Error: No such keg")
+    if [[ -n "$alreadyInstalled" ]]; then
+        installkeg "$1"
+    fi
+}
+
 function installcask {
     alreadyInstalled=$(brew list "$1" 2>&1 | grep "Error: No such keg")
     if [[ -n "$alreadyInstalled" ]]; then
@@ -99,7 +106,7 @@ sudo chown fharper:admin /usr/local/bin
 #
 # https://github.com/tmux/tmux
 #
-brew install tmux
+installkeg tmux
 
 #
 # Configure SSH
@@ -155,7 +162,7 @@ brew tap homebrew/cask-fonts
 #
 # https://github.com/kcrawford/dockutil
 #
-brew install dockutil
+installkeg dockutil
 
 #
 # Duti
@@ -164,7 +171,7 @@ brew install dockutil
 #
 # https://github.com/moretension/duti
 #
-brew install duti
+installkeg duti
 
 #
 # Git
@@ -173,7 +180,7 @@ brew install duti
 #
 # https://github.com/git/git
 #
-brew install git
+installkeg git
 
 #
 # lastversion
@@ -192,7 +199,7 @@ pip install lastversion
 # https://github.com/ojford/loginitems
 #
 brew tap OJFord/formulae
-brew install loginitems
+installkeg loginitems
 
 #
 # mas-cli
@@ -201,7 +208,7 @@ brew install loginitems
 #
 # https://github.com/mas-cli/mas
 #
-brew install mas
+installkeg mas
 mas signin $email
 
 #
@@ -220,7 +227,7 @@ installcask mysides
 # https://github.com/nodejs/node
 # https://github.com/npm/cli
 #
-brew install nvm
+installkeg nvm
 mkdir ~/.nvm
 nvm install v18.0.0
 nvm use v18.0.0
@@ -248,7 +255,7 @@ rm -rf bin/
 #
 # https://github.com/jacobsalmela/tccutil
 #
-brew install tccutil
+installkeg tccutil
 
 #
 # Script Editor
@@ -262,7 +269,7 @@ sudo -E tccutil -e com.apple.ScriptEditor2
 #
 # https://github.com/julienXX/terminal-notifier
 #
-brew install terminal-notifier
+installkeg terminal-notifier
 
 
 ###########################
@@ -360,7 +367,7 @@ installcask dropbox
 # https://github.com/federico-terzi/espanso
 #
 brew tap federico-terzi/espanso
-brew install espanso
+installkeg espanso
 sudo tccutil -e "$(print -r =espanso\(:A\))"
 espanso register
 espanso start
@@ -372,7 +379,7 @@ espanso start
 #
 # https://github.com/dvorka/hstr
 #
-brew install hh
+installkeg hh
 
 #
 # Karabiner-Elements
@@ -1049,7 +1056,7 @@ npm config set editor code
 #
 # Run your GitHub Actions locally
 #
-brew install act
+installkeg act
 
 #
 # actionlint
@@ -1067,7 +1074,7 @@ go install github.com/rhysd/actionlint/cmd/actionlint@latest
 #
 # git-filter-branch replacement
 #
-brew install bfg
+installkeg bfg
 
 #
 # Charles Proxy
@@ -1082,7 +1089,7 @@ notification "Install Charles Proxy certificate in system & change to always tru
 #
 # https://github.com/CocoaPods/CocoaPods
 #
-brew install cocoapods
+installkeg cocoapods
 
 #
 # Cordova
@@ -1096,7 +1103,7 @@ npm install -g cordova
 #
 # https://github.com/denoland/deno
 #
-brew install deno
+installkeg deno
 
 #
 # Docker
@@ -1129,7 +1136,7 @@ installcask docker-toolbox
 # https://github.com/chejen/eslint-plugin-i18n
 # https://github.com/azeemba/eslint-plugin-json
 #
-brew install eslint
+installkeg eslint
 npm i -g eslint-formatter-pretty
 npm i -g eslint-plugin-markdown
 npm i -g eslint-plugin-react
@@ -1156,7 +1163,7 @@ npm install -g expo-cli
 #
 # https://github.com/defunkt/gist
 #
-brew install gist
+installkeg gist
 gist --login
 
 #
@@ -1164,7 +1171,7 @@ gist --login
 #
 # https://github.com/git/git
 #
-brew install git
+installkeg git
 git config --replace-all --global user.name "Frédéric Harper"
 git config --replace-all --global user.email $email
 git config --replace-all --global init.defaultBranch main
@@ -1196,7 +1203,7 @@ npm i -g git-branch-status
 #
 # https://github.com/git-lfs/git-lfs
 #
-brew install git-lfs
+installkeg git-lfs
 
 #
 # Git Open
@@ -1210,14 +1217,14 @@ npm i -g git-open
 #
 # https://github.com/paulirish/git-recent
 #
-brew install git-recent
+installkeg git-recent
 
 #
 # Git Sizer
 #
 # https://github.com/github/git-sizer
 #
-brew install git-sizer
+installkeg git-sizer
 
 #
 # GitHub CLI & gh-pr-draft
@@ -1228,7 +1235,7 @@ brew install git-sizer
 # https://github.com/cli/cli
 # https://github.com/kyanny/gh-pr-draft
 #
-brew install gh
+installkeg gh
 gh auth login
 gh config set editor "code --wait"
 gh config set git_protocol ssh --host github.com
@@ -1240,7 +1247,7 @@ gh extension install kyanny/gh-pr-draft
 # https://github.com/syndbg/goenv
 # https://golang.org
 #
-brew install goenv
+installkeg goenv
 goenv install 1.18.0
 goenv global 1.18.0
 
@@ -1272,7 +1279,7 @@ git config --global commit.gpgsign true
 #
 # https://github.com/joeyespo/grip
 #
-brew install grip
+installkeg grip
 
 #
 # Hadolint
@@ -1281,7 +1288,7 @@ brew install grip
 #
 # https://github.com/hadolint/hadolint
 #
-brew install hadolint
+installkeg hadolint
 
 #
 # iOS Deploy
@@ -1290,7 +1297,7 @@ brew install hadolint
 #
 # https://github.com/ios-control/ios-deploy
 #
-brew install ios-deploy
+installkeg ios-deploy
 
 #
 # Jest
@@ -1341,7 +1348,7 @@ npm i -g npm-check-updates
 #
 # https://github.com/squizlabs/PHP_CodeSniffer
 #
-brew install php-code-sniffer
+installkeg php-code-sniffer
 phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
 
 #
@@ -1359,14 +1366,14 @@ installcask postman
 #
 # https://github.com/pre-commit/pre-commit
 #
-brew install pre-commit
+installkeg pre-commit
 
 #
 # Prettier
 #
 # https://github.com/prettier/prettier
 #
-brew install prettier
+installkeg prettier
 
 #
 # Puppeteer
@@ -1410,7 +1417,7 @@ pip install twine
 # https://github.com/rbenv/rbenv
 # https://github.com/ruby/ruby
 #
-brew install rbenv
+installkeg rbenv
 rbenv init
 omz reload
 rbenv install 3.1.2
@@ -1423,7 +1430,7 @@ rbenv global 3.1.2
 #
 # https://github.com/facebook/react-native
 #
-brew install -cask react-native-cli
+installkeg -cask react-native-cli
 
 #
 # S3cmd
@@ -1432,7 +1439,7 @@ brew install -cask react-native-cli
 #
 # https://github.com/s3tools/s3cmd
 #
-brew install s3cmd
+installkeg s3cmd
 s3cmd --configure
 
 #
@@ -1471,7 +1478,7 @@ installcask xcodes
 #
 # https://github.com/yarnpkg/yarn
 #
-brew install yarn
+installkeg yarn
 yarn config set --home enableTelemetry 0
 
 #
@@ -1489,10 +1496,11 @@ yarn config set --home enableTelemetry 0
 # - Need to install olrder version of PHP as PHPBrew isn't comptabile with newer ones
 # - https://github.com/phpbrew/phpbrew/issues/1245
 #
-brew install phpbrew php@7.4
+installkeg php@7.4
+installkeg phpbrew
 brew link --overwrite php@7.4
-phpbrew install 8.1.9
-brew install composer
+phpinstallkeg 8.1.9
+installkeg composer
 
 #
 # Java (OpenJDK with AdoptOpenJDK) + jEnv
@@ -1501,7 +1509,7 @@ brew install composer
 # https://github.com/adoptium/temurin-build
 # https://github.com/openjdk/jdk
 #
-brew install jenv
+installkeg jenv
 brew tap AdoptOpenJDK/openjdk
 installcask temurin
 jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
@@ -1514,7 +1522,7 @@ jenv global openjdk64-17.0.1
 #
 # Security auditing tool
 #
-brew install lynis
+installkeg lynis
 
 # Rust + rustup
 #
@@ -1529,7 +1537,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 #
 # https://github.com/koalaman/shellcheck
 #
-brew install shellcheck
+installkeg shellcheck
 
 #
 # Ripgrep
@@ -1538,7 +1546,7 @@ brew install shellcheck
 #
 # Recursively searches directories for a regex pattern
 #
-brew install ripgrep
+installkeg ripgrep
 
 #
 # OpenAPI Validator
@@ -1563,14 +1571,14 @@ npm i -g hint
 #
 # https://github.com/webpack/webpack
 #
-brew install webpack
+installkeg webpack
 
 #
 # Wordpress CLI
 #
 # https://github.com/wp-cli/wp-cli
 #
-brew install wp-cli
+installkeg wp-cli
 
 #
 # Yeoman
@@ -1591,7 +1599,7 @@ npm i --global yo
 #
 # https://github.com/asciinema/asciinema
 #
-brew install asciinema
+installkeg asciinema
 asciinema auth
 
 #
@@ -1599,14 +1607,14 @@ asciinema auth
 #
 # https://github.com/imsnif/bandwhich
 #
-brew install bandwhich
+installkeg bandwhich
 
 #
 # Bat
 #
 # https://github.com/sharkdp/bat
 #
-brew install bat
+installkeg bat
 
 #
 # Color LS + Nerd Fonts
@@ -1630,7 +1638,7 @@ installcask font-hack-nerd-font
 # Notes
 # - Needed for shuf, which is used in the espanso trigger "":randomtime"
 #
-brew install coreutils
+installkeg coreutils
 
 #
 # Coursera Downloader
@@ -1655,7 +1663,7 @@ npm i -g empty-trash-cli
 # https://ffmpeg.org
 # https://github.com/Netflix/vmaf
 #
-brew install libvmaf
+installkeg libvmaf
 brew tap homebrew-ffmpeg/ffmpeg
 brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libvmaf
 
@@ -1664,14 +1672,14 @@ brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libvmaf
 #
 # https://github.com/htop-dev/htop
 #
-brew install htop
+installkeg htop
 
 #
 # HTTPie
 #
 # https://github.com/httpie/httpie
 #
-brew install httpie
+installkeg httpie
 
 #
 # ICS split
@@ -1690,14 +1698,14 @@ pip3 install icssplit
 #
 # https://github.com/ImageMagick/ImageMagick
 #
-brew install imagemagick
+installkeg imagemagick
 
 #
 # jq
 #
 # https://github.com/stedolan/jq
 #
-brew install jq
+installkeg jq
 
 #
 # LinkChecker
@@ -1713,14 +1721,14 @@ pip install linkchecker
 #
 # https://github.com/jlhonora/lsusb
 #
-brew install lsusb
+installkeg lsusb
 
 #
 # LZip
 #
 # https://www.nongnu.org/lzip
 #
-brew install lzip
+installkeg lzip
 
 #
 # Miller
@@ -1729,7 +1737,7 @@ brew install lzip
 #
 # https://github.com/johnkerl/miller
 #
-brew install miller
+installkeg miller
 
 #
 # ncdu-zig
@@ -1738,21 +1746,21 @@ brew install miller
 #
 # https://code.blicky.net/yorhel/ncdu
 #
-brew install ncdu
+installkeg ncdu
 
 #
 # Noti
 #
 # https://github.com/variadico/noti
 #
-brew install noti
+installkeg noti
 
 #
 # Pandoc (for my resume)
 #
 # https://github.com/jgm/pandoc
 #
-brew install pandoc
+installkeg pandoc
 
 #
 # Public-ip-cli
@@ -1766,28 +1774,28 @@ npm i -g public-ip-cli
 #
 # https://github.com/ap/rename
 #
-brew install rename
+installkeg rename
 
 #
 # Stress
 #
 # https://web.archive.org/web/20190702093856/https://people.seas.harvard.edu/~apw/stress/
 #
-brew install stress
+installkeg stress
 
 #
 # The Fuck
 #
 # https://github.com/nvbn/thefuck
 #
-brew install thefuck
+installkeg thefuck
 
 #
 # tl;dr Pages
 #
 # https://github.com/tldr-pages/tldr
 #
-brew install tldr
+installkeg tldr
 
 #
 # Vundle
@@ -1803,7 +1811,7 @@ git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 #
 # https://github.com/rauchg/wifi-password
 #
-brew install wifi-password
+installkeg wifi-password
 
 #
 # wkhtmltopdf
@@ -1817,7 +1825,7 @@ installcask wkhtmltopdf
 #
 # https://github.com/ytdl-org/youtube-dl/
 #
-brew install youtube-dl
+installkeg youtube-dl
 
 
 ################
@@ -2287,7 +2295,7 @@ mas install 1408727408
 # Restore configurations #
 ##########################
 
-brew install mackup
+installkeg mackup
 mackup restore --force
 
 
