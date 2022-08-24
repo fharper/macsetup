@@ -26,6 +26,13 @@ function openfilewithregex {
     rm "${file}"
 }
 
+function installcask {
+    alreadyInstalled=$(brew list "$1" 2>&1 | grep "Error: No such keg")
+    if [[ -n "$alreadyInstalled" ]]; then
+        installcask "$1"
+    fi
+}
+
 #
 # DisplayLink Manager & DisplayLink Manager MacOS Extension
 #
@@ -204,7 +211,7 @@ mas signin $email
 #
 # https://github.com/mosen/mysides
 #
-brew install --cask mysides
+installcask mysides
 
 #
 # nvm + Node.js + npm cli
@@ -278,7 +285,7 @@ notification "Deactivate the System Integrity Protection with 'csrutil disable' 
 # https://github.com/xfslove/alfred-google-translate
 # https://github.com/xfslove/alfred-language-configuration
 #
-brew install --cask alfred
+installcask alfred
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>1048576</integer></array><key>type</key><string>standard</string></dict></dict>" # Deactivate Spotlight Global Shortcut to use it with Alfred instead (will work after logging off)
 open -a "Alfred 4"
 notification "Add Alfred's licenses & set sync folder"
@@ -294,7 +301,7 @@ notification "Configure alfred-google-translate with 'trc en&fr'"
 #
 # https://www.macbartender.com
 #
-brew install --cask bartender
+installcask bartender
 sudo -E tccutil -e com.surteesstudios.Bartender
 
 #
@@ -304,7 +311,7 @@ sudo -E tccutil -e com.surteesstudios.Bartender
 #
 # https://cleanshot.com
 #
-brew install --cask cleanshot
+installcask cleanshot
 notification "install the audio component in Preferences >> Recording >> Audio Recording"
 
 #
@@ -314,7 +321,7 @@ notification "install the audio component in Preferences >> Recording >> Audio R
 #
 # https://commandqapp.com
 #
-brew install --cask commandq
+installcask commandq
 
 #
 # Contexts
@@ -323,7 +330,7 @@ brew install --cask commandq
 #
 # https://contexts.co
 #
-brew install --cask contexts
+installcask contexts
 sudo -E tccutil -e com.contextsformac.Contexts
 notification "Open the license file from 1Password"
 
@@ -334,7 +341,7 @@ notification "Open the license file from 1Password"
 #
 # https://github.com/dustinrue/ControlPlane
 #
-brew install --cask controlplane
+installcask controlplane
 
 #
 # Dropbox
@@ -343,7 +350,7 @@ brew install --cask controlplane
 #
 # https://www.dropbox.com
 #
-brew install --cask dropbox
+installcask dropbox
 
 #
 # Espanso
@@ -374,7 +381,7 @@ brew install hh
 #
 # https://github.com/pqrs-org/Karabiner-Elements
 #
-brew install --cask karabiner-elements
+installcask karabiner-elements
 
 #
 # KeepingYouAwake
@@ -383,7 +390,7 @@ brew install --cask karabiner-elements
 #
 # https://github.com/newmarcel/KeepingYouAwake
 #
-brew install --cask keepingyouawake
+installcask keepingyouawake
 
 #
 # Little Snitch
@@ -392,7 +399,7 @@ brew install --cask keepingyouawake
 #
 # https://www.obdev.at/products/littlesnitch/index.html
 #
-brew install --cask little-snitch
+installcask little-snitch
 
 #
 # Logitech Mouse Manager
@@ -434,7 +441,7 @@ mas install 496437906
 #
 # https://staticz.com/soundcontrol/
 #
-brew install --cask sound-control
+installcask sound-control
 
 #
 # The Clock
@@ -457,7 +464,7 @@ defaults write com.apple.menuextra.clock IsAnalog -bool true
 #
 # https://tripmode.ch
 #
-brew install --cask TripMode
+installcask TripMode
 
 #
 # Zoom
@@ -466,7 +473,7 @@ brew install --cask TripMode
 #
 # https://zoom.us
 #
-brew install --cask zoomus
+installcask zoomus
 
 #
 # Zsh-z
@@ -880,7 +887,7 @@ killall SystemUIServer
 #
 # https://1password.com
 #
-brew install --cask 1password
+installcask 1password
 dockutil --add /Applications/1Password\ 7.app/ --allhomes
 
 #
@@ -904,7 +911,7 @@ loginitems -a Antidote
 #
 # https://github.com/brave
 #
-brew install --cask brave-browser
+installcask brave-browser
 dockutil --add "/Applications/Brave Browser.app" --position 2 --allhomes
 loginitems -a "Brave Browser"
 defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
@@ -917,7 +924,7 @@ defaults write com.brave.Browser DisablePrintPreview -bool true
 #
 # https://github.com/home-assistant/iOS
 #
-brew install --cask home-assistant
+installcask home-assistant
 
 #
 # Mumu
@@ -926,7 +933,7 @@ brew install --cask home-assistant
 #
 # https://getmumu.com
 #
-brew install --cask mumu
+installcask mumu
 loginitems -a Mumu
 sudo -E tccutil -e com.wilbertliu.mumu
 
@@ -938,7 +945,7 @@ sudo -E tccutil -e com.wilbertliu.mumu
 # https://www.notion.so
 # https://github.com/notion-enhancer/desktop
 #
-brew install --cask notion-enhanced
+installcask notion-enhanced
 dockutil --add "/Applications/Notion Enhanced.app" --allhomes
 
 #
@@ -946,7 +953,7 @@ dockutil --add "/Applications/Notion Enhanced.app" --allhomes
 #
 # https://github.com/Ji4n1ng/OpenInTerminal
 #
-brew install --cask openineditor-lite
+installcask openineditor-lite
 notification "drag openineditor-lite in Finder toolbar while pressing Command"
 curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
 unzip icons.zip
@@ -959,7 +966,7 @@ rm -rf icons
 #
 # https://github.com/Ji4n1ng/OpenInTerminal
 #
-brew install --cask openinterminal-lite
+installcask openinterminal-lite
 notification "drag openinterminal-lite in Finder toolbar while pressing Command"
 curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
 unzip icons.zip
@@ -983,7 +990,7 @@ loginitems -a Rain
 #
 # https://slack.com
 #
-brew install --cask slack
+installcask slack
 dockutil --add /Applications/Slack.app/ --allhomes
 
 #
@@ -1000,7 +1007,7 @@ npm install -g spaceship-prompt
 #
 # https://www.spotify.com
 #
-brew install --cask spotify
+installcask spotify
 dockutil --add /Applications/Spotify.app --allhomes
 
 #
@@ -1024,7 +1031,7 @@ npm i -g trash-cli
 #
 # https://github.com/microsoft/vscode
 #
-brew install --cask visual-studio-code
+installcask visual-studio-code
 dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
 npm config set editor code
 
@@ -1067,7 +1074,7 @@ brew install bfg
 #
 # https://www.charlesproxy.com
 #
-brew install --cask charles
+installcask charles
 notification "Install Charles Proxy certificate in system & change to always trust"
 
 #
@@ -1096,14 +1103,14 @@ brew install deno
 #
 # https://www.docker.com
 #
-brew install --cask docker
+installcask docker
 
 #
 # Docker Toolbox
 #
 # https://github.com/docker/toolbox
 #
-brew install --cask docker-toolbox
+installcask docker-toolbox
 
 #
 # ESLint
@@ -1252,7 +1259,7 @@ jira session
 #
 # https://gpgtools.org
 #
-brew install --cask gpg-suite
+installcask gpg-suite
 notification "get my private key from 1Password"
 gpg --import private.key
 git config --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
@@ -1301,7 +1308,7 @@ npm install -g jest
 #
 # https://jupyter.org/
 
-brew install --cask jupyterlab
+installcask jupyterlab
 
 #
 # Mocha
@@ -1318,7 +1325,7 @@ npm i -g mocha
 #
 # https://github.com/canonical/multipass
 #
-brew install --cask multipass
+installcask multipass
 
 #
 # npm Check Updates (ncu)
@@ -1342,7 +1349,7 @@ phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
 #
 # https://postman.com
 #
-brew install --cask postman
+installcask postman
 
 #
 #
@@ -1387,7 +1394,7 @@ npm install -g puppeteer
 # https://github.com/pytest-dev/pytest
 # https://github.com/pypa/twine/
 #
-brew install --cask miniforge
+installcask miniforge
 conda activate base
 conda install python=3.10.6
 python -m pip install --upgrade pip
@@ -1455,7 +1462,7 @@ sudo xcodebuild -license accept
 #
 # https://github.com/RobotsAndPencils/XcodesApp
 #
-brew install --cask xcodes
+installcask xcodes
 
 #
 # Yarn
@@ -1496,7 +1503,7 @@ brew install composer
 #
 brew install jenv
 brew tap AdoptOpenJDK/openjdk
-brew install --cask temurin
+installcask temurin
 jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
 jenv global openjdk64-17.0.1
 
@@ -1611,7 +1618,7 @@ brew install bat
 # https://github.com/ryanoasis/nerd-fonts
 #
 gem install colorls
-brew install --cask font-hack-nerd-font
+installcask font-hack-nerd-font
 
 #
 # Coreutils
@@ -1803,7 +1810,7 @@ brew install wifi-password
 #
 # https://github.com/wkhtmltopdf/wkhtmltopdf
 #
-brew install --cask wkhtmltopdf
+installcask wkhtmltopdf
 
 #
 # Youtube Downloader
@@ -1831,7 +1838,7 @@ mas install 824171161
 #
 # https://freemacsoft.net/appcleaner
 #
-brew install --cask appcleaner
+installcask appcleaner
 
 #
 # AutoMute
@@ -1849,7 +1856,7 @@ mas install 1118136179
 #
 # https://github.com/beardedspice/beardedspice
 #
-brew install --cask beardedspice
+installcask beardedspice
 
 #
 # Calibre + DeDRM Tools
@@ -1857,7 +1864,7 @@ brew install --cask beardedspice
 # https://github.com/kovidgoyal/calibre
 # https://github.com/apprenticeharper/DeDRM_tools
 #
-brew install --cask calibre
+installcask calibre
 curl -L "$(lastversion apprenticeharper/DeDRM_tools --assets)" --output Calibre-DeDRM.zip
 unzip Calibre-DeDRM.zip "DeDRM_plugin.zip"
 rm Calibre-DeDRM.zip
@@ -1870,14 +1877,14 @@ rm DeDRM_plugin.zip
 #
 # https://captin.mystrikingly.com/
 #
-brew install --cask captin
+installcask captin
 
 #
 # Chrome
 #
 # https://www.google.com/chrome
 #
-brew install --cask google-chrome
+installcask google-chrome
 
 #
 # Chromium Ungoogled
@@ -1886,14 +1893,14 @@ brew install --cask google-chrome
 #
 # https://github.com/Eloston/ungoogled-chromium#downloads
 #
-brew install --cask eloston-chromium
+installcask eloston-chromium
 
 #
 # Cryptomator
 #
 # https://github.com/cryptomator/cryptomator
 #
-brew install --cask cryptomator
+installcask cryptomator
 notification "Add the license key from 1Password to Cryptomator"
 
 #
@@ -1903,21 +1910,21 @@ notification "Add the license key from 1Password to Cryptomator"
 #
 # https://github.com/iterate-ch/cyberduck
 #
-brew install --cask cyberduck
+installcask cyberduck
 
 #
 # DaisyDisk
 #
 # https://daisydiskapp.com
 #
-brew install --cask daisydisk
+installcask daisydisk
 
 #
 # Deckset
 #
 # https://www.deckset.com
 #
-brew install --cask deckset
+installcask deckset
 
 #
 # Descript
@@ -1926,21 +1933,21 @@ brew install --cask deckset
 #
 # https://www.descript.com
 #
-brew install --cask descript
+installcask descript
 
 #
 # Discord
 #
 # https://discord.com/
 #
-brew install --cask discord
+installcask discord
 
 #
 # Disk Drill
 #
 # https://www.cleverfiles.com/
 #
-brew install --cask disk-drill
+installcask disk-drill
 
 #
 # Elgato Lights Control Center
@@ -1980,14 +1987,14 @@ rm wavelink.pkg
 #
 # https://www.mozilla.org/en-CA/firefox
 #
-brew install --cask firefox
+installcask firefox
 
 #
 # Gimp
 #
 # https://gitlab.gnome.org/GNOME/gimp/
 #
-brew install --cask gimp
+installcask gimp
 
 #
 # Gray
@@ -1996,7 +2003,7 @@ brew install --cask gimp
 #
 # https://github.com/zenangst/Gray
 #
-brew install --cask gray
+installcask gray
 
 #
 # HA Menu
@@ -2005,7 +2012,7 @@ brew install --cask gray
 #
 # https://github.com/codechimp-org/ha-menu/
 #
-brew install --cask ha-menu
+installcask ha-menu
 
 #
 # Hemingway
@@ -2021,7 +2028,7 @@ open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0
 #
 # https://github.com/igdmapps/igdm
 #
-brew install --cask igdm
+installcask igdm
 
 #
 # Jiffy
@@ -2035,21 +2042,21 @@ mas install 1502527999
 #
 # https://github.com/wulkano/Kap
 #
-brew install --cask kap
+installcask kap
 
 #
 # Keybase
 #
 # https://github.com/keybase/client
 #
-brew install --cask keybase
+installcask keybase
 
 #
 # Keycastr
 #
 # https://github.com/keycastr/keycastr
 #
-brew install --cask keycastr
+installcask keycastr
 
 #
 # Kindle
@@ -2063,7 +2070,7 @@ mas install 405399194
 #
 # https://www.libreoffice.org
 #
-brew install --cask libreoffice
+installcask libreoffice
 
 #
 # Logitech Presentation
@@ -2084,7 +2091,7 @@ rm logi-presentation.dmg
 #
 # https://rogueamoeba.com/loopback
 #
-brew install --cask loopback
+installcask loopback
 
 #
 # LyricsX
@@ -2093,7 +2100,7 @@ brew install --cask loopback
 #
 # https://github.com/ddddxxx/LyricsX
 #
-brew install --cask LyricsX
+installcask LyricsX
 
 #
 # Messenger
@@ -2102,14 +2109,14 @@ brew install --cask LyricsX
 #
 # https://www.messenger.com/desktop
 #
-brew install --cask messenger
+installcask messenger
 
 #
 # Microsoft Edge
 #
 # https://www.microsoft.com/en-us/edge
 #
-brew install --cask microsoft-edge
+installcask microsoft-edge
 
 #
 # MindNode
@@ -2130,21 +2137,21 @@ mv MindNode.app /Applications/
 #
 # https://muzzleapp.com
 #
-brew install --cask muzzle
+installcask muzzle
 
 #
 # NordVPN
 #
 # https://nordvpn.com
 #
-brew install --cask nordvpn
+installcask nordvpn
 
 #
 # OBS Studio
 #
 # https://github.com/obsproject/obs-studio
 #
-brew install --cask obs
+installcask obs
 
 #
 # Paprika Recipe Manager
@@ -2170,7 +2177,7 @@ loginitems -a Parcel -s false
 #
 # https://github.com/superhighfives/pika
 #
-brew install --cask pika
+installcask pika
 
 #
 # Pocket
@@ -2185,14 +2192,14 @@ dockutil --add /Applications/Pocket.app/ --allhomes
 #
 # https://www.raspberrypi.org/software/
 #
-brew install --cask raspberry-pi-imager
+installcask raspberry-pi-imager
 
 #
 # Signal
 #
 # https://github.com/signalapp/Signal-Desktop
 #
-brew install --cask signal
+installcask signal
 
 #
 # Silicon
@@ -2201,7 +2208,7 @@ brew install --cask signal
 #
 # https://github.com/DigiDNA/Silicon
 #
-brew install --cask silicon
+installcask silicon
 
 #
 # Sloth
@@ -2210,7 +2217,7 @@ brew install --cask silicon
 #
 # Displays all open files and sockets in use by all running processes on your system
 #
-brew install --cask sloth
+installcask sloth
 
 #
 # Speedtest
@@ -2226,7 +2233,7 @@ mas install 1153157709
 #
 # https://www.teamviewer.com
 #
-brew install --cask teamviewer
+installcask teamviewer
 
 #
 # TextSniper
@@ -2235,21 +2242,21 @@ brew install --cask teamviewer
 #
 # https://textsniper.app
 #
-brew install --cask textsniper
+installcask textsniper
 
 #
 # The Unarchiver
 #
 # https://theunarchiver.com
 #
-brew install --cask the-unarchiver
+installcask the-unarchiver
 
 #
 # Typora
 #
 # https://typora.io
 #
-brew install --cask typora
+installcask typora
 
 #
 # VLC
@@ -2258,7 +2265,7 @@ brew install --cask typora
 #
 # https://www.videolan.org
 #
-brew install --cask vlc
+installcask vlc
 
 
 #
@@ -2290,23 +2297,23 @@ mackup restore --force
 #       #
 #########
 
-brew install --cask font-fira-sans
-brew install --cask font-fira-code
-brew install --cask font-arial
-brew install --cask font-open-sans
-brew install --cask font-dancing-script
-brew install --cask font-dejavu
-brew install --cask font-roboto
-brew install --cask font-roboto-condensed
-brew install --cask font-hack
-brew install --cask font-pacifico
-brew install --cask font-leckerli-one
-brew install --cask font-gidole
-brew install --cask font-fira-mono
-brew install --cask font-blackout
-brew install --cask font-alex-brush
-brew install --cask font-caveat-brush
-brew install --cask font-archivo-narrow
+installcask font-fira-sans
+installcask font-fira-code
+installcask font-arial
+installcask font-open-sans
+installcask font-dancing-script
+installcask font-dejavu
+installcask font-roboto
+installcask font-roboto-condensed
+installcask font-hack
+installcask font-pacifico
+installcask font-leckerli-one
+installcask font-gidole
+installcask font-fira-mono
+installcask font-blackout
+installcask font-alex-brush
+installcask font-caveat-brush
+installcask font-archivo-narrow
 
 
 ####################################################################
@@ -2383,14 +2390,14 @@ mas install 1351168404
 #
 # https://www.epicgames.com
 #
-brew install --cask epic-games
+installcask epic-games
 
 #
 # OpenEmu
 #
 # https://github.com/OpenEmu/OpenEmu
 #
-brew install --cask openemu
+installcask openemu
 
 
 ###################
@@ -2422,5 +2429,5 @@ dockutil --move 'Antidote 10' --position end --allhomes
 #
 # https://github.com/IngmarStein/Monolingual
 #
-brew install --cask monolingual
+installcask monolingual
 notification "Use Monolingual to remove unused languages files"
