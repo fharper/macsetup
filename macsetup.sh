@@ -1606,6 +1606,14 @@ npm install -g clipdown
 gem install colorls
 
 #
+# empty-trash-cli
+#
+# Empty the Trash in the command line
+#
+# https://github.com/sindresorhus/empty-trash-cli
+npm i -g empty-trash-cli
+
+#
 # ffmpeg + vmaf
 #
 # https://ffmpeg.org
