@@ -2291,17 +2291,17 @@ brew install --cask font-caveat-brush
 brew install --cask font-archivo-narrow
 
 
-##################################################
-#                                                #
-# File Type Default App                          #
-#                                                #
-# Find the app bundle identifier                 #
-# mdls /Applications/Photos.app | grep kMDItemCF #
-#                                                #
-# Find the Uniform Type Identifiers              #
-# mdls -name kMDItemContentTypeTree ~/init.lua   #
-#                                                #
-##################################################
+####################################################################
+#                                                                  #
+# File Type Default App                                            #
+#                                                                  #
+# Find the app bundle identifier                                   #
+# mdls -name kMDItemCFBundleIdentifier -r /Applications/Photos.app #
+#                                                                  #
+# Find the file UTI (Uniform Type Identifiers)                     #
+# mdls -name kMDItemContentTypeTree ~/init.lua                     #
+#                                                                  #
+####################################################################
 
 duti -s org.videolan.vlc public.mpeg-4 all #mp4
 duti -s org.videolan.vlc com.apple.quicktime-movie all #mov
