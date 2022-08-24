@@ -1161,6 +1161,8 @@ git config --replace-all --global clean.requireForce false
 git config --replace-all --global fetch.prune true
 git config --replace-all --global advice.addEmptyPathspec false
 git config --replace-all --global push.followTags true
+git config --replace-all --global push.autoSetupRemote true
+
 
 #
 # Git Branch Status
