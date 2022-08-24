@@ -1611,6 +1611,14 @@ npm install -g clipdown
 #
 brew install coreutils
 
+#
+# Coursera Downloader
+#
+# CLI to download Coursera courses
+#
+# https://github.com/coursera-dl/coursera-dl
+#
+pip install coursera-dl
 
 #
 # empty-trash-cli
