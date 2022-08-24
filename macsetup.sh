@@ -1600,10 +1600,17 @@ npm install -g clipdown
 
 #
 # Color LS
+# Coreutils
 #
-# https://github.com/athityakumar/colorls
+# Basic file, shell and text manipulation utilities
 #
-gem install colorls
+# https://www.gnu.org/software/coreutils/
+#
+# Notes
+# - Needed for shuf, which is used in the espanso trigger "":randomtime"
+#
+brew install coreutils
+
 
 #
 # empty-trash-cli
