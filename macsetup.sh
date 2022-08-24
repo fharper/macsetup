@@ -1049,6 +1049,7 @@ brew install bfg
 # https://www.charlesproxy.com
 #
 brew install --cask charles
+notification "Install Charles Proxy certificate in system & change to always trust"
 
 #
 # CocoaPods
