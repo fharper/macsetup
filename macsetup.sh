@@ -1409,6 +1409,15 @@ omz reload
 rbenv install 3.1.2
 rbenv global 3.1.2
 
+#
+# React Native CLI
+#
+# CLI for React Native development
+#
+# https://github.com/facebook/react-native
+#
+brew install -cask react-native-cli
+
 
 #
 # Stylelint
