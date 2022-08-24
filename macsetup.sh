@@ -2338,6 +2338,7 @@ duti -s com.brave.Browser com.compuserve.gif all #gif
 duti -s com.microsoft.VSCode public.yaml all #YAML
 duti -s com.microsoft.VSCode public.rtf all #RTF
 duti -s com.qview.qView public.png all # PNG
+duti -s com.interversehq.qView public.png all # PNG by using my own build
 
 
 #########
