@@ -2057,6 +2057,8 @@ brew install --cask libreoffice
 #
 # Logitech Presentation
 #
+# Application to be able to use the Logitech Spotlight Remote Clicker
+#
 # https://www.logitech.com/en-ca/product/spotlight-presentation-remote
 #
 curl -L https://download01.logi.com/web/ftp/pub/techsupport/presentation/LogiPresentation_1.62.2.dmg --output logi-presentation.dmg
