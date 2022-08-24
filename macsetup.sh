@@ -1117,6 +1117,15 @@ npm i -g eslint-plugin-jsdoc
 npm i -g eslint-plugin-json
 
 #
+# Expo CLI
+#
+# Tools for creating, running, and deploying Universal Expo & React Native apps
+#
+# https://github.com/expo/expo-cli
+#
+npm install -g expo-cli
+
+#
 # Gist
 #
 # https://github.com/defunkt/gist
