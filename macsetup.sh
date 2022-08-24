@@ -1252,11 +1252,14 @@ brew install hadolint
 brew install ios-deploy
 
 #
-# iOS Deploy
+# Jest
 #
-# https://github.com/ios-control/ios-deploy
+# JavaScript Testing Framework
 #
-brew install ios-deploy
+# https://github.com/facebook/jest
+#
+npm install -g jest
+
 
 #
 # npm Check Updates
