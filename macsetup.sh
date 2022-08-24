@@ -1883,6 +1883,7 @@ brew install --cask eloston-chromium
 # https://github.com/cryptomator/cryptomator
 #
 brew install --cask cryptomator
+notification "Add the license key from 1Password to Cryptomator"
 
 #
 # CyberDuck
