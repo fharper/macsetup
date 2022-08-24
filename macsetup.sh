@@ -1662,7 +1662,8 @@ brew install httpie
 #
 # https://github.com/beorn/icssplit
 #
-# icssplit  hi@fred.dev.ics fredcal --maxsize=300000
+# Command:
+# icssplit  hi@fred.dev.ics fredcal --maxsize=900000
 #
 pip3 install icssplit
 
