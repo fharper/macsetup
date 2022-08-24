@@ -1704,6 +1704,14 @@ brew install lsusb
 brew install lzip
 
 #
+# Miller
+#
+# CSV processor
+#
+# https://github.com/johnkerl/miller
+#
+brew install miller
+#
 # Noti
 #
 # https://github.com/variadico/noti
