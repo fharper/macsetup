@@ -1460,6 +1460,8 @@ brew install --cask xcodes
 #
 # Yarn
 #
+# npm alternative
+#
 # https://github.com/yarnpkg/yarn
 #
 brew install yarn
