@@ -1511,8 +1511,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 #
 # https://github.com/koalaman/shellcheck
 #
-ibrew install shellcheck
-https://github.com/koalaman/shellcheck/issues/2162
+brew install shellcheck
 
 #
 # Ripgrep
