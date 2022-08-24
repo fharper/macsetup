@@ -1371,19 +1371,21 @@ brew install prettier
 npm install -g puppeteer
 
 #
-# Miniforge + Python + Wheel + Pylint + pytest + IPython
+# Miniforge + Python + Wheel + Pylint + pytest + Twine + IPython
 #
 # Python virtual environment manager
 # Python SDK
 # Python wheel packaging tool
 # Python linter
 # Python tests framework
+# Utilities for interacting with PyPI
 #
 # https://github.com/conda-forge/miniforge
 # https://www.python.org
 # https://github.com/pypa/wheel
 # https://github.com/PyCQA/pylint/
 # https://github.com/pytest-dev/pytest
+# https://github.com/pypa/twine/
 #
 brew install --cask miniforge
 conda activate base
@@ -1393,7 +1395,7 @@ python -m pip install --upgrade build
 pip install wheel
 pip install pylint
 pip install -U pytest
-
+pip install twine
 
 #
 # RBenv + Ruby
