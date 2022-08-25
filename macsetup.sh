@@ -919,7 +919,7 @@ killall SystemUIServer
 # https://1password.com
 #
 installcask 1password
-dockutil --add /Applications/1Password\ 7.app/ --allhomes
+dockutil --add /Applications/1Password.app --allhomes
 
 #
 # Antidote
@@ -2446,7 +2446,7 @@ dockutil --move 'Spotify' --position end --allhomes
 dockutil --move 'iTerm' --position end --allhomes
 dockutil --move 'Visual Studio Code' --position end --allhomes
 dockutil --move 'Pocket' --position end --allhomes
-dockutil --move '1Password 7' --position end --allhomes
+dockutil --move '1Password' --position end --allhomes
 dockutil --move 'Antidote 10' --position end --allhomes
 
 
