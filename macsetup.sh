@@ -765,6 +765,9 @@ defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
 #
 defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
 
+# Point & Click - Silent clicking (not in the settings page anymore)
+defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
+
 #
 # Scroll & Zoom - Smart zoom (NOT WORKING ANYMORE)
 #
@@ -850,8 +853,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFi
 #Deactivate the Force click and haptic feedback from Trackpad manually
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -bool false
 
-#Activate Silent clicking
-defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
+
 
 #Finder display settings
 defaults write com.apple.finder FXEnableExtensionChangeWarning -boolean false
