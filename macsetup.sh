@@ -912,14 +912,24 @@ killall SystemUIServer
 #####################
 
 #
-# 1Password
+# 1Password + 1Password CLI + git-credential-1password
 #
 # Password manager
+# CLI for 1Password
+# A git credential helper for 1Password
 #
 # https://1password.com
+# https://1password.com/downloads/command-line/
+# https://github.com/develerik/git-credential-1password
 #
 installcask 1password
 dockutil --add /Applications/1Password.app --allhomes
+installkeg 1password-cli
+op vault ls
+pausethescript
+brew tap develerik/tools
+brew install git-credential-1password
+git config --global credential.helper '!git-credential-1password'
 
 #
 # Antidote
