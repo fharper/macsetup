@@ -826,10 +826,6 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.fourFingerVertSwip
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -bool false
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -bool false
 
-# Trackpad - Smart zoom
-
-
-
 # Trackpad - Swipe between full-screen apps
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerVertSwipeGesture -bool false
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -bool false
@@ -880,8 +876,6 @@ cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
 # Keyboard - Press Fn to
 # Change to do nothing
 defaults write com.apple.HIToolbox AppleFnUsageType -int 0
-
-
 
 #
 # Disable the accent characters menu
