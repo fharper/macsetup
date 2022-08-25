@@ -1207,6 +1207,7 @@ gist --login
 #
 installkeg git
 git config --replace-all --global user.name "Frédéric Harper"
+git config --replace-all --global credential.username $email
 git config --replace-all --global user.email $email
 git config --replace-all --global init.defaultBranch main
 git config --replace-all --global push.default current
