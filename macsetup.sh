@@ -699,6 +699,19 @@ defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 mysides remove Desktop
 mysides remove Recents
 
+
+###################
+#                 #
+# Mission Control #
+#                 #
+###################
+
+#
+# Hot Corners - Bottom Right (disable Note app)
+#
+defaults write com.apple.dock wvous-br-corner -int 0
+
+
 ##################################
 #                                #
 # Security & Privacy Preferences #
