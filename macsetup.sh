@@ -95,7 +95,9 @@ function reload {
 #
 # https://developer.apple.com/documentation/apple_silicon/about_the_rosetta_translation_environment
 #
-/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+if [[ -z $(pgrep oahd) ]]; then
+    /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+fi
 
 #
 # iTerm2
