@@ -57,6 +57,12 @@ function isCLAppInstalled {
     fi
 }
 
+function restoreAppSettings {
+    echo "[applications_to_sync]\n$1" > /Users/fharper/.mackup.cfg
+    mackup restore
+    echo "" > /Users/fharper/.mackup.cfg
+}
+
 #
 # DisplayLink Manager & DisplayLink Manager MacOS Extension
 #
