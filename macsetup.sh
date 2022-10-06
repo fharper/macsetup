@@ -64,20 +64,11 @@ function restoreAppSettings {
 }
 
 #
-# DisplayLink Manager & DisplayLink Manager MacOS Extension
-#
-# Add the possibility to have more than one external monitor on MacBook M1 with a DisplayLink compatible hub
-# Extension for DisplayLink Manager to work at the login screen
 # Install the application from a DMG image when you just need to move the
 # application into the macOS Applications folder
 #
-# https://www.displaylink.com
 # @param DMG filename
 #
-open "https://www.displaylink.com/downloads/file?id=1713"
-openfilewithregex "DisplayLink Manager Graphics Connectivity.*\.pkg"
-open "https://displaylink.com/downloads/macos_extension"
-open "macOS App LoginExtension-EXE.dmg"
 function installDMG {
     hdiutil attach "$1"
     local volume="/Volumes/$(hdiutil info | grep /Volumes/ | sed 's@.*\/Volumes/@@')"
@@ -145,11 +136,15 @@ sudo chown fharper:admin /usr/local/bin
 # Running multiple terminal sessions in the same window
 #
 # https://github.com/tmux/tmux
+# DisplayLink Manager & DisplayLink Manager MacOS Extension
 #
 installkeg tmux
 
+# Add the possibility to have more than one external monitor on MacBook M1 with a DisplayLink compatible hub
+# Extension for DisplayLink Manager to work at the login screen
 #
 # Configure SSH
+# https://www.displaylink.com
 #
 ssh-keygen -t rsa -b 4096 -C $email
 ssh-add -K ~/.ssh/id_rsa
@@ -158,6 +153,8 @@ ssh-keyscan -t rsa bitbucket.org >> ~/.ssh/known_hosts
 pbcopy < ~/.ssh/id_rsa.pub
 open https://github.com/settings/keys
 notification "Add your SSH key to Github (copied into the clipboard)"
+installcask displaylink
+installcask displaylink-login-extension
 
 
 ############################
