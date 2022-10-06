@@ -28,7 +28,7 @@ function openfilewithregex {
 function installkeg {
     local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
     if [[ -n "$alreadyInstalled" ]]; then
-        installkeg "$1"
+        brew install "$1"
     fi
 }
 
