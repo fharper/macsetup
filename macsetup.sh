@@ -163,7 +163,9 @@ notification "Add your SSH key to Github (copied into the clipboard)"
 #
 # https://developer.apple.com/xcode
 #
-xcode-select --install
+if [[ $(xcode-select -p 1> /dev/null; echo $?) -eq 2 ]]; then
+    xcode-select --install
+fi
 
 #
 # Homebrew + homebrew-cask-versions + brew-cask-upgrade + Casks for Fonts
