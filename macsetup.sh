@@ -68,13 +68,24 @@ function restoreAppSettings {
 #
 # Add the possibility to have more than one external monitor on MacBook M1 with a DisplayLink compatible hub
 # Extension for DisplayLink Manager to work at the login screen
+# Install the application from a DMG image when you just need to move the
+# application into the macOS Applications folder
 #
 # https://www.displaylink.com
+# @param DMG filename
 #
 open "https://www.displaylink.com/downloads/file?id=1713"
 openfilewithregex "DisplayLink Manager Graphics Connectivity.*\.pkg"
 open "https://displaylink.com/downloads/macos_extension"
 open "macOS App LoginExtension-EXE.dmg"
+function installDMG {
+    hdiutil attach "$1"
+    local volume="/Volumes/$(hdiutil info | grep /Volumes/ | sed 's@.*\/Volumes/@@')"
+    local app=$(/bin/ls "$volume" | grep .app)
+    mv "$volume/$app" /Applications
+    hdiutil detach "/Volumes/Mumu X"
+    rm "$1"
+}
 
 function reload {
     source ~/.zshrc
