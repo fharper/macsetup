@@ -48,6 +48,15 @@ function isAppInstalled {
     fi
 }
 
+function isCLAppInstalled {
+    local cli=$(which "$1" | grep "not found")
+    if [[ -z "$cli" ]]; then
+        echo true
+    else
+        echo false
+    fi
+}
+
 #
 # DisplayLink Manager & DisplayLink Manager MacOS Extension
 #
