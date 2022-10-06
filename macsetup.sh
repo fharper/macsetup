@@ -19,21 +19,21 @@ function pausethescript {
 }
 
 function openfilewithregex {
-    file=$(find . -maxdepth 1 -execdir echo {} ';'  | grep "$1")
+    local file=$(find . -maxdepth 1 -execdir echo {} ';'  | grep "$1")
     open "${file}"
     pausethescript
     rm "${file}"
 }
 
 function installkeg {
-    alreadyInstalled=$(brew list "$1" 2>&1 | grep "Error: No such keg")
+    local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
     if [[ -n "$alreadyInstalled" ]]; then
         installkeg "$1"
     fi
 }
 
 function installcask {
-    alreadyInstalled=$(brew list "$1" 2>&1 | grep "Error: No such keg")
+    local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
     if [[ -n "$alreadyInstalled" ]]; then
         installcask "$1"
     fi
