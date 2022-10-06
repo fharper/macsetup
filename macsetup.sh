@@ -39,6 +39,15 @@ function installcask {
     fi
 }
 
+function isAppInstalled {
+    local app=$(mdfind -name 'kMDItemFSName=="'"$1"'.app"' -onlyin /Applications -onlyin /System/Applications)
+    if [[ -n "$app" ]]; then
+	echo true
+    else
+        echo false
+    fi
+}
+
 #
 # DisplayLink Manager & DisplayLink Manager MacOS Extension
 #
