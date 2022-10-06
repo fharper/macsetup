@@ -76,6 +76,10 @@ openfilewithregex "DisplayLink Manager Graphics Connectivity.*\.pkg"
 open "https://displaylink.com/downloads/macos_extension"
 open "macOS App LoginExtension-EXE.dmg"
 
+function reload {
+    source ~/.zshrc
+}
+
 
 
 #######################
