@@ -125,8 +125,9 @@ fi
 #
 # https://github.com/ohmyzsh/ohmyzsh
 #
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+if [[ ! $(isCLAppInstalled omz) ]]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+fi
 
 #
 # tmux
