@@ -35,7 +35,7 @@ function installkeg {
 function installcask {
     local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
     if [[ -n "$alreadyInstalled" ]]; then
-        installcask "$1"
+        brew install --cask $1
     fi
 }
 
