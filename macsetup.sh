@@ -180,11 +180,15 @@ fi
 # https://github.com/buo/homebrew-cask-upgrade
 # https://github.com/Homebrew/homebrew-cask-fonts
 #
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew analytics off
-brew tap homebrew/cask-versions
-brew tap buo/cask-upgrade
-brew tap homebrew/cask-fonts
+
+#
+# defbro
+#
+# CLI to change the default browser
+#
+# https://github.com/jwbargsten/defbro
+#
+installkeg jwbargsten/misc/defbro
 
 #
 # Dockutil
