@@ -452,6 +452,15 @@ installcask keepingyouawake
 installcask little-snitch
 
 #
+# MailTrackerBlocker
+#
+# Email tracker, read receipt and spy pixel blocker plugin for Apple Mail
+#
+# https://github.com/apparition47/MailTrackerBlocker
+#
+installkeg mailtrackerblocker
+
+#
 # Logitech Mouse Manager
 #
 # Mouse Configuration
