@@ -217,6 +217,15 @@ installkeg duti
 installkeg git
 
 #
+# jq
+#
+# https://github.com/stedolan/jq
+#
+# Needed for my "git clone" function
+#
+installkeg jq
+
+#
 # lastversion
 #
 # CLI to get latest GitHub Repo Release assets URL
@@ -1768,13 +1777,6 @@ pip3 install icssplit
 # https://github.com/ImageMagick/ImageMagick
 #
 installkeg imagemagick
-
-#
-# jq
-#
-# https://github.com/stedolan/jq
-#
-installkeg jq
 
 #
 # LinkChecker
