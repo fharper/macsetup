@@ -39,8 +39,12 @@ function installcask {
     fi
 }
 
+function getAppFullPath {
+    mdfind -name 'kMDItemFSName=="'"$1"'.app"' -onlyin /Applications -onlyin /System/Applications
+}
+
 function isAppInstalled {
-    local app=$(mdfind -name 'kMDItemFSName=="'"$1"'.app"' -onlyin /Applications -onlyin /System/Applications)
+    local app=$(getAppFullPath "$1")
     if [[ -n "$app" ]]; then
 	echo true
     else
