@@ -281,6 +281,33 @@ fi
 installkeg mackup
 
 #
+# Miniforge + Python + Wheel + Pylint + pytest + Twine
+#
+# Python virtual environment manager
+# Python SDK
+# Python wheel packaging tool
+# Python linter
+# Python tests framework
+# Utilities for interacting with PyPI
+#
+# https://github.com/conda-forge/miniforge
+# https://www.python.org
+# https://github.com/pypa/wheel
+# https://github.com/PyCQA/pylint/
+# https://github.com/pytest-dev/pytest
+# https://github.com/pypa/twine/
+#
+if [[ ! $(isCLAppInstalled conda) ]]; then
+    installcask miniforge
+    conda activate base
+    conda install python=3.10.6
+    installPythonPackage wheel
+    installPythonPackage pylint
+    installPythonPackage pytest
+    installPythonPackage twine
+fi
+
+#
 # mas-cli
 #
 # Unofficial macOS App Store CLI
@@ -1591,33 +1618,6 @@ installkeg prettier
 # https://github.com/puppeteer/puppeteer
 #
 npm install -g puppeteer
-
-#
-# Miniforge + Python + Wheel + Pylint + pytest + Twine
-#
-# Python virtual environment manager
-# Python SDK
-# Python wheel packaging tool
-# Python linter
-# Python tests framework
-# Utilities for interacting with PyPI
-#
-# https://github.com/conda-forge/miniforge
-# https://www.python.org
-# https://github.com/pypa/wheel
-# https://github.com/PyCQA/pylint/
-# https://github.com/pytest-dev/pytest
-# https://github.com/pypa/twine/
-#
-installcask miniforge
-conda activate base
-conda install python=3.10.6
-python -m pip install --upgrade pip
-python -m pip install --upgrade build
-pip install wheel
-pip install pylint
-pip install -U pytest
-pip install twine
 
 #
 # RBenv + Ruby
