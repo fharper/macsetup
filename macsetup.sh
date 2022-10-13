@@ -106,6 +106,18 @@ function getCsreqBlob {
     echo "$hex_blob"
 }
 
+#
+# Get the application bundle identifier
+#
+# @param app name
+#
+# @return the application bundle identifier
+#
+function getAppBundleIdentifier {
+    local app=$(getAppFullPath "$1")
+    mdls -name kMDItemCFBundleIdentifier -r "$app"
+}
+
 
 
 #######################
