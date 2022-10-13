@@ -1732,6 +1732,7 @@ installkeg composer
 # https://github.com/openjdk/jdk
 #
 installkeg jenv
+reload
 brew tap AdoptOpenJDK/openjdk
 installcask temurin
 jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
