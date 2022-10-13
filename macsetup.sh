@@ -2178,10 +2178,7 @@ installcask disk-drill
 #
 # https://www.elgato.com/en/gaming/key-light
 #
-curl -L https://edge.elgato.com/egc/macos/eccm/1.1.4/Control_Center_1.1.4.10368.zip --output elgato-control-center.zip
-unzip elgato-control-center.zip
-rm elgato-control-center.zip
-mv "Elgato Control Center.app" /Applications
+installcask elgato-control-center
 
 #
 # Elgato Stream Deck
