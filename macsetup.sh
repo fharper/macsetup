@@ -1268,6 +1268,15 @@ npm install -g cordova
 installkeg deno
 
 #
+# direnv
+#
+# Load and unload environment variables depending on the current directory
+#
+# https://github.com/direnv/direnv
+#
+installkeg direnv
+
+#
 # Docker
 #
 # https://www.docker.com
