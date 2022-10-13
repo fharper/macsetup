@@ -1481,6 +1481,15 @@ installkeg ios-deploy
 npm install -g jest
 
 #
+# json2csv
+#
+# JSON to CSV converting tool
+#
+# https://github.com/zemirco/json2csv
+#
+npm install -g json2csv
+
+#
 # JupyterLab
 #
 # Jupyter notebooks IDE
