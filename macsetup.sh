@@ -269,6 +269,17 @@ if [[ ! $(isCLAppInstalled brew) ]]; then
     brew tap homebrew/cask-drivers
 fi
 
+#
+# Mackup
+#
+# Sync applications settings with Dropbox
+#
+# https://github.com/lra/mackup
+#
+# Notes: needed right after Homebrew so configurations files can be restored
+#
+installkeg mackup
+
 
 #
 # defbro
@@ -2476,13 +2487,6 @@ mas install 1323414118
 #
 mas install 1408727408
 
-
-##########################
-# Restore configurations #
-##########################
-
-installkeg mackup
-mackup restore --force
 
 
 #########
