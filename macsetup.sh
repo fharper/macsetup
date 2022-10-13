@@ -1498,7 +1498,6 @@ installkeg git-sizer
 installkeg gh
 gh auth login
 gh config set editor "code --wait"
-gh config set git_protocol ssh --host github.com
 gh extension install kyanny/gh-pr-draft
 
 #
