@@ -427,6 +427,14 @@ if [[ -n $(brew list "$1" 2>&1 | grep "No such keg") ]]; then
     npm adduser
 fi
 
+#
+# OpenSSL
+#
+# TLS/SSL and crypto library
+#
+# https://github.com/openssl/openssl
+#
+installkeg openssl
 
 #
 # osXiconUtils
