@@ -2298,12 +2298,8 @@ installcask libreoffice
 #
 # https://www.logitech.com/en-ca/product/spotlight-presentation-remote
 #
-curl -L https://download01.logi.com/web/ftp/pub/techsupport/presentation/LogiPresentation_1.62.2.dmg --output logi-presentation.dmg
-hdiutil attach logi-presentation.dmg
-open -a "/Volumes/LogiPresentation Installer/LogiPresentation Installer.app"
-pausethescript
-hdiutil eject "/Volumes/LogiPresentation Installer"
-rm logi-presentation.dmg
+installkeg logitech-presentation
+openfilewithregex "/opt/homebrew/Caskroom/logitech-presentation/1.62.2/LogiPresentation Installer.app"
 
 #
 # Loopback
