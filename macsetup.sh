@@ -2084,7 +2084,7 @@ installcask eloston-chromium
 # https://github.com/cryptomator/cryptomator
 #
 installcask cryptomator
-notification "Add the license key from 1Password to Cryptomator"
+getLicense Cryptomator
 
 #
 # CyberDuck
