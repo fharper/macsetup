@@ -2455,6 +2455,15 @@ installcask sloth
 mas install 1153157709
 
 #
+# Synology Drive
+#
+# Backup & synchronizing app for Synology
+#
+# https://www.synology.com/en-ca/dsm/feature/drive
+#
+installcask synology-drive
+
+#
 # TeamViewer
 #
 # https://www.teamviewer.com
