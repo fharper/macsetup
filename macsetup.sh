@@ -371,12 +371,15 @@ npm adduser
 #
 # https://github.com/sveinbjornt/osxiconutils
 #
-curl -L https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
-unzip osxiconutils.zip
-rm osxiconutils.zip
-mv bin/geticon /usr/local/bin/
-mv bin/seticon /usr/local/bin/
-rm -rf bin/
+if [[ ! $(isCLAppInstalled geticon) ]]; then
+    curl -L https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
+    unzip osxiconutils.zip
+    rm osxiconutils.zip
+    sudo chown fharper:admin /usr/local/bin
+    mv bin/geticon /usr/local/bin/
+    mv bin/seticon /usr/local/bin/
+    rm -rf bin/
+fi
 
 #
 # tccutil
