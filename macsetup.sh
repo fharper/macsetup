@@ -1184,14 +1184,17 @@ defaults write com.brave.Browser DisablePrintPreview -bool true
 installcask home-assistant
 
 #
-# Mumu
+# Mumu X
 #
 # Emoji picker
 #
 # https://getmumu.com
 #
-installcask mumu
-loginitems -a Mumu
+# Note: don't install the Homebrew version, it's Mumu, not Mumu X
+#
+curl -L $(op item get "Mumu X" --fields label="download link") --output mumux.dmg
+installDMG mumux.dmg
+loginitems -a "Mumu X"
 sudo -E tccutil -e com.wilbertliu.mumu
 
 #
