@@ -1662,7 +1662,7 @@ npm install -g puppeteer
 #
 installkeg rbenv
 rbenv init
-omz reload
+reload
 rbenv install 3.1.2
 rbenv global 3.1.2
 
