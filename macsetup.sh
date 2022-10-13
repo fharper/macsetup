@@ -661,7 +661,6 @@ sudo rm -rf /Applications/Keynote.app
 # Numbers
 #
 sudo rm -rf /Applications/Numbers.app
-dockutil --remove 'Numbers' --allhomes
 
 #
 # Pages
