@@ -1037,15 +1037,17 @@ killall SystemUIServer
 #####################
 
 #
-# 1Password + 1Password CLI + git-credential-1password
+# 1Password + 1Password CLI + git-credential-1password + Safari Extension
 #
 # Password manager
 # CLI for 1Password
 # A git credential helper for 1Password
+# Safari integration
 #
 # https://1password.com
 # https://1password.com/downloads/command-line/
 # https://github.com/develerik/git-credential-1password
+# https://apps.apple.com/us/app/1password-for-safari/id1569813296
 #
 installcask 1password
 dockutil --add /Applications/1Password.app --allhomes
@@ -1055,6 +1057,7 @@ pausethescript
 brew tap develerik/tools
 brew install git-credential-1password
 git config --global credential.helper '!git-credential-1password'
+mas install 1569813296
 
 #
 # Antidote
