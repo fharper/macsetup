@@ -324,6 +324,21 @@ if [[ ! $(isCLAppInstalled mas) ]]; then
 fi
 
 #
+# Xcode
+#
+# macOS/iOS Swift/Ojective-C IDE
+#
+# https://developer.apple.com/xcode
+#
+# Notes: need to install before defbro
+#
+if [[ ! $(isAppInstalled Xcode) ]]; then
+    mas install 497799835
+    sudo xcodebuild -license accept
+    restoreAppSettings Xcode
+fi
+
+#
 # defbro
 #
 # CLI to change the default browser
@@ -1659,16 +1674,6 @@ s3cmd --configure
 #
 npm i -g stylelint
 npm i -g stylelint-config-recommended
-
-#
-# Xcode
-#
-# macOS/iOS Swift/Ojective-C IDE
-#
-# https://developer.apple.com/xcode
-#
-mas install 497799835
-sudo xcodebuild -license accept
 
 #
 # Xcodes
