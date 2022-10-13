@@ -118,6 +118,35 @@ function getAppBundleIdentifier {
     mdls -name kMDItemCFBundleIdentifier -r "$app"
 }
 
+#
+# Update the access table in the TCC database with the new permission
+#
+# @param service for permission
+# @param application identifier
+# @param application csreq blob
+#
+# Notes:
+# - More information on TCC at https://www.rainforestqa.com/blog/macos-tcc-db-deep-dive
+#
+function updateTCC {
+
+    # Columns:
+    # - service: the service for the permission (ex.: kTCCServiceSystemPolicyAllFiles for Full Disk Access permission)
+    # - client: app bundle identifier
+    # - client_type: 0 since it's the bundle identifier
+    # - auth_value: 2 for allowed
+    # - auth_reason: 3 user set
+    # - auth_version: always 1 for now
+    # - csreq: binary code signing requirement blob that the client must satisfy in order for access to be granted
+    # - policy_id: null, related to MDM
+    # - indirect_object_identifier_type: 0 since it's the bundle identifier
+    # - indirect_object_identifier: UNUSED since it's not needed for this permission
+    # - indirect_object_code_identity: same as csreq policy_id, so NULL
+    # - flags: not sure, always 0
+    # - last_modifified: last time entry was modified
+    sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "insert into access values('$1', '$2', 0, 2, 3, 1, '$3', NULL, 0, 'UNUSED', NULL, 0, CAST(strftime('%s','now') AS INTEGER));"
+}
+
 
 
 #######################
