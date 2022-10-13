@@ -159,6 +159,17 @@ function updateTCC {
     sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "insert into access values('$1', '$2', 0, 2, 3, 1, '$3', NULL, 0, 'UNUSED', NULL, 0, CAST(strftime('%s','now') AS INTEGER));"
 }
 
+#
+# Get the license key from 1Password & copy it to the clipboard
+#
+# @param the application we want the license key
+#
+function getLicense {
+    op item get "$1" --fields label="license key" | pbcopy
+    notification "Add the license key from the clipboard to $1"
+    pausethescript
+}
+
 
 
 #######################
