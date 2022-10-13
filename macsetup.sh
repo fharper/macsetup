@@ -508,8 +508,7 @@ notification "Deactivate the System Integrity Protection with 'csrutil disable' 
 #
 installcask alfred
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>1048576</integer></array><key>type</key><string>standard</string></dict></dict>" # Deactivate Spotlight Global Shortcut to use it with Alfred instead (will work after logging off)
-open -a "Alfred 5"
-notification "Add Alfred's licenses & set sync folder"
+getLicense Alfred
 sudo -E tccutil -e com.runningwithcrayons.Alfred
 npm install -g alfred-google-translate
 npm install -g alfred-language-configuration
