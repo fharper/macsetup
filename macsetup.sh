@@ -531,12 +531,8 @@ notification "Deactivate the System Integrity Protection with 'csrutil disable' 
 # Alfred & alfred-google-translate & alfred-language-configuration
 #
 # Spotlight replacement
-# Google Translate Workflow
-# Google Translate Language Configuration Workflow (needed by alfred-google-translate)
 #
 # https://www.alfredapp.com
-# https://github.com/xfslove/alfred-google-translate
-# https://github.com/xfslove/alfred-language-configuration
 #
 installcask alfred
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>1048576</integer></array><key>type</key><string>standard</string></dict></dict>" # Deactivate Spotlight Global Shortcut to use it with Alfred instead (will work after logging off)
@@ -1194,7 +1190,7 @@ dockutil --add /Applications/Antidote/Antidote\ 11.app/
 loginitems -a Antidote
 
 #
-# Brave Browser
+# Brave Browser + Antidote Extension
 #
 # Chromium based browser
 #
@@ -1205,6 +1201,7 @@ dockutil --add "/Applications/Brave Browser.app" --position 2 --allhomes
 loginitems -a "Brave Browser"
 defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
 defaults write com.brave.Browser DisablePrintPreview -bool true
+open https://chrome.google.com/webstore/detail/antidote/lmbopdiikkamfphhgcckcjhojnokgfeo
 
 #
 # Home Assistant
