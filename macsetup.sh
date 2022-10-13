@@ -1420,8 +1420,8 @@ gh extension install kyanny/gh-pr-draft
 # https://golang.org
 #
 installkeg goenv
-goenv install 1.18.0
-goenv global 1.18.0
+goenv install 1.11.4
+goenv global 1.11.4
 
 #
 # go-jira
