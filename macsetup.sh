@@ -61,6 +61,17 @@ function isCLAppInstalled {
     fi
 }
 
+function installPythonPackage {
+    chalk blue "Installing the Python package $1"
+
+    local package=$(pip list | grep "$1")
+    if [[ -n "$package" ]]; then
+	chalk red "$1 is already installed"
+    else
+        pip install "$1"
+    fi
+}
+
 function restoreAppSettings {
     echo "[applications_to_sync]\n$1" > /Users/fharper/.mackup.cfg
     mackup restore
