@@ -399,7 +399,6 @@ pip install lastversion
 #
 # https://github.com/ojford/loginitems
 #
-brew tap OJFord/formulae
 installkeg loginitems
 
 #
