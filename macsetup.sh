@@ -401,7 +401,7 @@ installkeg jq
 #
 # https://github.com/dvershinin/lastversion
 #
-pip install lastversion
+installPythonPackage lastversion
 
 #
 # loginitems
@@ -1898,7 +1898,7 @@ installkeg coreutils
 #
 # https://github.com/coursera-dl/coursera-dl
 #
-pip install coursera-dl
+installPythonPackage coursera-dl
 
 #
 # empty-trash-cli
@@ -1957,7 +1957,7 @@ installkeg imagemagick
 #
 # https://github.com/wummel/linkchecker
 #
-pip install linkchecker
+installPythonPackage linkchecker
 
 #
 # lsusb
