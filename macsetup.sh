@@ -699,11 +699,6 @@ dockutil --remove 'FaceTime' --allhomes
 dockutil --remove 'Launchpad' --allhomes
 
 #
-# Mail
-#
-dockutil --remove 'Mail' --allhomes
-
-#
 # Maps
 #
 dockutil --remove 'Maps' --allhomes
