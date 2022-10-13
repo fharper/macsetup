@@ -266,6 +266,16 @@ fi
 # https://github.com/buo/homebrew-cask-upgrade
 # https://github.com/Homebrew/homebrew-cask-fonts
 #
+if [[ ! $(isCLAppInstalled brew) ]]; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew analytics off
+    brew tap homebrew/cask-versions
+    brew tap buo/cask-upgrade
+    brew tap homebrew/cask-fonts
+    brew tap OJFord/formulae
+    brew tap homebrew/cask-drivers
+fi
+
 
 #
 # defbro
