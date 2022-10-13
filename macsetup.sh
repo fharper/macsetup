@@ -719,11 +719,6 @@ dockutil --remove 'News' --allhomes
 dockutil --remove 'Notes' --allhomes
 
 #
-# Photos
-#
-dockutil --remove 'Photos' --allhomes
-
-#
 # Podcasts
 #
 dockutil --remove 'Podcasts' --allhomes
