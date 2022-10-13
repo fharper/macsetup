@@ -1718,7 +1718,10 @@ yarn config set --home enableTelemetry 0
 installkeg php@7.4
 installkeg phpbrew
 brew link --overwrite php@7.4
-phpinstallkeg 8.1.9
+phpbrew init
+reload
+phpbrew install 8.1.9 -- --without-pcre-jit
+phpbrew use php-8.1.9
 installkeg composer
 
 #
