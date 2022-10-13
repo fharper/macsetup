@@ -1050,7 +1050,7 @@ killall SystemUIServer
 installcask 1password
 dockutil --add /Applications/1Password.app --allhomes
 installkeg 1password-cli
-op vault ls
+eval $(op signin)
 pausethescript
 brew tap develerik/tools
 brew install git-credential-1password
