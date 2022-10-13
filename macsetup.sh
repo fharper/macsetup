@@ -200,6 +200,7 @@ fi
 #
 if [[ ! $(isAppInstalled iTerm) ]]; then
     installcask iterm2
+    giveFullDiskAccessPermission iTerm
 
     curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
     open -a iTerm
