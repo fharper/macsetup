@@ -2318,6 +2318,17 @@ installcask loopback
 installcask LyricsX
 
 #
+# MailReceipt
+#
+# Delivery notification & read receipt requests for Apple Mail
+#
+# https://github.com/scr34m/MailReceipt
+#
+curl -L "$(lastversion scr34m/MailReceipt --assets)" --output MailReceipt.pkg
+sudo installer -pkg MailReceipt.pkg  -target /
+rm MailReceipt.pkg
+
+#
 # Messenger
 #
 # Facebook Messenger Client
