@@ -119,6 +119,18 @@ function getAppBundleIdentifier {
 }
 
 #
+# Give Full Disk Access Permission for a specific application
+#
+# @param app name
+#
+function giveFullDiskAccessPermission {
+    local app_identifier=$(getAppBundleIdentifier "$1")
+    local app_csreq_blob=$(getCsreqBlob "$1")
+
+    updateTCC "kTCCServiceSystemPolicyAllFiles" "$app_identifier" "$app_csreq_blob"
+}
+
+#
 # Update the access table in the TCC database with the new permission
 #
 # @param service for permission
