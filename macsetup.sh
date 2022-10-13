@@ -26,16 +26,24 @@ function openfilewithregex {
 }
 
 function installkeg {
+    chalk blue "Starting the installation of $1"
+
     local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
     if [[ -n "$alreadyInstalled" ]]; then
         brew install "$1"
+    else
+	chalk red "Nothing to do, $1 is already installed"
     fi
 }
 
 function installcask {
+    chalk blue "Starting the installation of $1"
+
     local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
     if [[ -n "$alreadyInstalled" ]]; then
         brew install --cask $1
+    else
+	chalk red "Nothing to do, $1 is already installed"
     fi
 }
 
