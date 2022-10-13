@@ -196,9 +196,7 @@ function updateTCC {
 function getLicense {
     op item get "$1" --fields label="license key" | pbcopy
     notification "Add the license key from the clipboard to $1"
-    pausethescript
 }
-
 
 
 #######################
@@ -206,6 +204,11 @@ function getLicense {
 # Pre-Installalations #
 #                     #
 #######################
+
+#
+# Restore different files with Mackup (not app specifics)
+#
+restoreAppSettings files
 
 #
 # Rosetta2
