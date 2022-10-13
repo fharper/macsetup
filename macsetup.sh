@@ -502,6 +502,7 @@ installcask dropbox
 brew tap federico-terzi/espanso
 installkeg espanso
 sudo tccutil -e "$(print -r =espanso\(:A\))"
+restoreAppSettings espanso
 espanso register
 espanso start
 
