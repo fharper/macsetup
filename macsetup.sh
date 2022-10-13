@@ -666,8 +666,6 @@ sudo rm -rf /Applications/Numbers.app
 # Pages
 #
 sudo rm -rf /Applications/Pages.app
-dockutil --remove 'Pages' --allhomes
-
 
 ################
 #              #
