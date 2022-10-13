@@ -1881,14 +1881,13 @@ pip install coursera-dl
 npm i -g empty-trash-cli
 
 #
-# ffmpeg + vmaf
+# ffmpeg
 #
-# https://ffmpeg.org
-# https://github.com/Netflix/vmaf
+# https://github.com/FFmpeg/FFmpeg
 #
-installkeg libvmaf
-brew tap homebrew-ffmpeg/ffmpeg
-brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-libvmaf
+# libraries and tools to process multimedia content like video, audio & more
+#
+installkeg ffmpeg
 
 #
 # htop
