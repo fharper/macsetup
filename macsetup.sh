@@ -280,6 +280,21 @@ fi
 #
 installkeg mackup
 
+#
+# mas-cli
+#
+# Unofficial macOS App Store CLI
+#
+# https://github.com/mas-cli/mas
+#
+# Notes: Need to install before Xcode
+#
+if [[ ! $(isCLAppInstalled mas) ]]; then
+    installkeg mas
+    open -a "App Store"
+    notification "Sign in into the App Store"
+    pausethescript
+fi
 
 #
 # defbro
@@ -344,16 +359,6 @@ pip install lastversion
 #
 brew tap OJFord/formulae
 installkeg loginitems
-
-#
-# mas-cli
-#
-# Unofficial macOS App Store CLI
-#
-# https://github.com/mas-cli/mas
-#
-installkeg mas
-mas signin $email
 
 #
 # mysides
