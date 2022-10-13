@@ -1644,6 +1644,8 @@ npm install -g puppeteer
 # https://github.com/rbenv/rbenv
 # https://github.com/ruby/ruby
 #
+# rbenv install --list-all
+#
 installkeg rbenv
 rbenv init
 omz reload
