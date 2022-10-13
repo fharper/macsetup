@@ -199,10 +199,8 @@ fi
 # https://iterm2.com/documentation-shell-integration.html
 #
 if [[ ! $(isAppInstalled iTerm) ]]; then
-    open https://iterm2.com/downloads/stable/latest
-    pausethescript
+    installcask iterm2
 
-    mv iTerm.app /Applications/
     curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
     open -a iTerm
     exit
