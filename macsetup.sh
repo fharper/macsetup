@@ -656,7 +656,6 @@ sudo rm -rf /Applications/iMovie.app
 # Keynote
 #
 sudo rm -rf /Applications/Keynote.app
-dockutil --remove 'Keynote' --allhomes
 
 #
 # Numbers
