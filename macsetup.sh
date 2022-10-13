@@ -2556,16 +2556,31 @@ installcask font-archivo-narrow
 #                                                                  #
 ####################################################################
 
-duti -s org.videolan.vlc public.mpeg-4 all #mp4
-duti -s org.videolan.vlc com.apple.quicktime-movie all #mov
+# Brave Browser
+duti -s com.brave.Browser com.compuserve.gif all #gif
+
+# Calibre
+duti -s net.kovidgoyal.calibre org.idpf.epub-container all # ePub
+duti -s net.kovidgoyal.calibre dyn.ah62d4rv4ge80c8x1gq all #Kindle ebooks
+
+# Figma
+duti -s com.figma.Desktop com.figma.document all #Figma
+
+# iTerm2
+duti -s com.googlecode.iTerm2 com.apple.terminal.shell-script all #SH
+duti -s com.googlecode.iTerm2 public.zsh-script all #ZSH
+
+# Preview
+duti -s com.apple.Preview com.nikon.raw-image all #NEF
+duti -s com.apple.Preview com.adobe.pdf all #PDF
+duti -s com.apple.Preview org.openxmlformats.presentationml.presentation all #PPTX
+duti -s com.apple.Preview public.standard-tesselated-geometry-format all #3d CAD
+duti -s com.apple.Preview com.adobe.photoshop-image all # Photoshop
+
+# Visual Studio Code
 duti -s com.microsoft.VSCode public.plain-text all #txt
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge8027pb all #lua
-duti -s org.videolan.vlc public.avi all #avi
-duti -s org.videolan.vlc public.3gpp all #3gp
-duti -s com.apple.Preview com.nikon.raw-image all #NEF
 duti -s com.microsoft.VSCode net.daringfireball.markdown all #Markdown
-duti -s com.interversehq.qView public.svg-image all #svg
-duti -s net.kovidgoyal.calibre org.idpf.epub-container all # ePub
 duti -s com.microsoft.VSCode public.shell-script all #Shell script
 duti -s com.microsoft.VSCode com.apple.log all #log
 duti -s com.microsoft.VSCode public.comma-separated-values-text all #CSV
@@ -2575,29 +2590,31 @@ duti -s com.microsoft.VSCode public.php-script all #php
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3u all #terraform tf
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #terraform tfstate
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #terraform tfvars
-duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
-duti -s com.apple.Preview com.adobe.pdf all #pdf
-duti -s org.videolan.vlc public.mp3 all #mp3
-duti -s net.kovidgoyal.calibre dyn.ah62d4rv4ge80c8x1gq all #Kindle ebooks
-duti -s org.videolan.vlc com.apple.m4a-audio all #M4A
-duti -s net.langui.WebPViewer public.webp all #WebP
 duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81g6pq all #SQL
-duti -s com.apple.Preview org.openxmlformats.presentationml.presentation all #PPTX
 duti -s com.microsoft.VSCode public.css all #CSS
 duti -s com.microsoft.VSCode com.netscape.javascript-source all #JavaScript
 duti -s com.microsoft.VSCode public.ruby-script all #Ruby
-duti -s com.apple.Preview public.standard-tesselated-geometry-format all #3d CAD
-duti -s com.brave.Browser com.compuserve.gif all #gif
 duti -s com.microsoft.VSCode public.yaml all #YAML
 duti -s com.microsoft.VSCode public.rtf all #RTF
-duti -s com.qview.qView public.png all # PNG
-duti -s com.interversehq.qView public.png all # PNG by using my own build
 duti -s com.microsoft.VSCode public.python-script all # Python
 duti -s com.microsoft.VSCode com.apple.property-list all # Plist
-duti -s com.apple.Preview com.adobe.photoshop-image all # Photoshop
-duti -s com.googlecode.iTerm2 com.apple.terminal.shell-script all #SH
-duti -s com.googlecode.iTerm2 public.zsh-script all #ZSH
-duti -s com.figma.Desktop com.figma.document all #Figma
+
+# VLC
+duti -s org.videolan.vlc public.mpeg-4 all #mp4
+duti -s org.videolan.vlc com.apple.quicktime-movie all #mov
+duti -s org.videolan.vlc public.avi all #avi
+duti -s org.videolan.vlc public.3gpp all #3gp
+duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
+duti -s org.videolan.vlc public.mp3 all #mp3
+duti -s org.videolan.vlc com.apple.m4a-audio all #M4A
+
+# qView
+duti -s com.interversehq.qView public.png all # PNG by using my own build
+duti -s com.interversehq.qView public.svg-image all #svg
+duti -s com.qview.qView public.png all # PNG
+
+# WebPViewer
+duti -s net.langui.WebPViewer public.webp all #WebP
 
 
 #########
