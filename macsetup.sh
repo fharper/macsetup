@@ -217,15 +217,8 @@ if [[ ! $(isCLAppInstalled omz) ]]; then
 fi
 
 #
-# tmux
-#
-# Running multiple terminal sessions in the same window
-#
-# https://github.com/tmux/tmux
 # DisplayLink Manager & DisplayLink Manager MacOS Extension
 #
-installkeg tmux
-
 # Add the possibility to have more than one external monitor on MacBook M1 with a DisplayLink compatible hub
 # Extension for DisplayLink Manager to work at the login screen
 #
@@ -617,6 +610,14 @@ defaults write com.apple.menuextra.clock IsAnalog -bool true
 installcask the-clock
 getLicense "The Clock"
 
+#
+# tmux
+#
+# Running multiple terminal sessions in the same window
+#
+# https://github.com/tmux/tmux
+#
+installkeg tmux
 
 #
 # TripMode
