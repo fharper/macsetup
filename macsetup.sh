@@ -437,6 +437,15 @@ fi
 installkeg openssl
 
 #
+# BZip2
+#
+# Data compressor
+#
+# https://sourceware.org/bzip2/
+#
+installkeg BZip2
+
+#
 # osXiconUtils
 #
 # Utilities for working with macOS icons
