@@ -601,11 +601,12 @@ installcask sound-control
 # https://www.seense.com/the_clock/
 #
 # Notes
-# - Install from the App Store for the license
 # - You cannot remove the clock from the menubar anymore: minimizing used space as analog
 #
-mas install 488764545
 defaults write com.apple.menuextra.clock IsAnalog -bool true
+installcask the-clock
+getLicense "The Clock"
+
 
 #
 # TripMode
