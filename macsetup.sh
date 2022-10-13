@@ -86,6 +86,26 @@ function reload {
     source ~/.zshrc
 }
 
+#
+# Create a csreq blob for a specific application
+#
+# @param app name
+#
+# @return csreq blob in hexadecimal
+#
+# Notes:
+# - Process taken from https://stackoverflow.com/a/57259004/895232
+#
+function getCsreqBlob {
+    local app=$(getAppFullPath "$1")
+    # Get the requirement string from codesign
+    local req_str=$(codesign -d -r- "$app" 2>&1 | awk -F ' => ' '/designated/{print $2}')
+    echo "$req_str" | csreq -r- -b /tmp/csreq.bin
+    local hex_blob=$(xxd -p /tmp/csreq.bin  | tr -d '\n')
+    rm /tmp/csreq.bin
+    echo "$hex_blob"
+}
+
 
 
 #######################
