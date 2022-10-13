@@ -1735,8 +1735,8 @@ installkeg jenv
 reload
 brew tap AdoptOpenJDK/openjdk
 installcask temurin
-jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
-jenv global openjdk64-17.0.1
+jenv add /Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home
+jenv global temurin64-18.0.2.1
 
 #
 # Lynis
