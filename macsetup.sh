@@ -704,11 +704,6 @@ dockutil --remove 'Launchpad' --allhomes
 dockutil --remove 'Maps' --allhomes
 
 #
-# Messages
-#
-dockutil --remove 'Messages' --allhomes
-
-#
 # Music
 #
 dockutil --remove 'Music' --allhomes
