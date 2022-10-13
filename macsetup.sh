@@ -2184,9 +2184,7 @@ installcask elgato-control-center
 # Elgato Stream Deck
 # https://www.elgato.com/en/gaming/stream-deck
 #
-curl -L https://edge.elgato.com/egc/macos/sd/Stream_Deck_5.1.3.14750.pkg --output elgato-streamdeck.pkg
-open elgato-streamdeck.pkg
-rm elgato-streamdeck.pkg
+installcask elgato-stream-deck
 
 #
 # Elgato Wavelink
