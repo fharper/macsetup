@@ -153,10 +153,9 @@ function getAppBundleIdentifier {
 # @param app name
 #
 function giveFullDiskAccessPermission {
-    local app_identifier=$(getAppBundleIdentifier "$1")
-    local app_csreq_blob=$(getCsreqBlob "$1")
+    updateTCC "kTCCServiceSystemPolicyAllFiles" "$1"
+}
 
-    updateTCC "kTCCServiceSystemPolicyAllFiles" "$app_identifier" "$app_csreq_blob"
 }
 
 #
@@ -170,6 +169,8 @@ function giveFullDiskAccessPermission {
 # - More information on TCC at https://www.rainforestqa.com/blog/macos-tcc-db-deep-dive
 #
 function updateTCC {
+    local app_identifier=$(getAppBundleIdentifier "$2")
+    local app_csreq_blob=$(getCsreqBlob "$2")
 
     # Columns:
     # - service: the service for the permission (ex.: kTCCServiceSystemPolicyAllFiles for Full Disk Access permission)
@@ -185,7 +186,7 @@ function updateTCC {
     # - indirect_object_code_identity: same as csreq policy_id, so NULL
     # - flags: not sure, always 0
     # - last_modifified: last time entry was modified
-    sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "insert into access values('$1', '$2', 0, 2, 3, 1, '$3', NULL, 0, 'UNUSED', NULL, 0, CAST(strftime('%s','now') AS INTEGER));"
+    sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "insert into access values('$1', '$app_identifier', 0, 2, 3, 1, '$app_csreq_blob', NULL, 0, 'UNUSED', NULL, 0, CAST(strftime('%s','now') AS INTEGER));"
 }
 
 #
