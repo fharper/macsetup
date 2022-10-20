@@ -1127,6 +1127,7 @@ defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -bool fal
 #Finder display settings
 defaults write com.apple.finder FXEnableExtensionChangeWarning -boolean false
 defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.Finder ShowRecentTags -bool false
 
 #Show all files extensions
 defaults write -g AppleShowAllExtensions -bool true
