@@ -2162,6 +2162,7 @@ installcask captin
 # https://www.google.com/chrome
 #
 installcask google-chrome
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
 
 #
 # Chromium Ungoogled
