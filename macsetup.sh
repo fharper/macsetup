@@ -935,11 +935,13 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 
 #
-# Sidebar Favorites
+# Sidebar Favorites Reordering
 #
-mysides remove Desktop
-mysides remove Recents
-
+mysides remove all
+mysides add Downloads file:///Users/fharper/Downloads
+mysides add Documents file:///Users/fharper/Documents
+mysides add Dropbox file:///Users/fharper/Dropbox
+mysides add Applications file:///Applications/
 
 ###################
 #                 #
