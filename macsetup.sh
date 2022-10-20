@@ -1267,7 +1267,7 @@ notification "drag openinterminal-lite in Finder toolbar while pressing Command"
 curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
 unzip icons.zip
 rm icons.zip
-seticon icons/icon_terminal_dark.icnss /Applications/OpenInTerminal-Lite.app
+seticon icons/icon_terminal_dark.icns /Applications/OpenInTerminal-Lite.app
 rm -rf icons
 
 #
