@@ -1261,6 +1261,8 @@ rm -rf icons
 # https://github.com/Ji4n1ng/OpenInTerminal
 #
 installcask openinterminal-lite
+defaults write wang.jianing.app.OpenInTerminal-Lite LiteDefaultTerminal iTerm
+open /Applications
 notification "drag openinterminal-lite in Finder toolbar while pressing Command"
 curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
 unzip icons.zip
