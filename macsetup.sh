@@ -1246,6 +1246,8 @@ dockutil --add "/Applications/Notion Enhanced.app" --allhomes
 # https://github.com/Ji4n1ng/OpenInTerminal
 #
 installcask openineditor-lite
+defaults write wang.jianing.app.OpenInEditor-Lite LiteDefaultEditor "Visual Studio Code"
+open /Applications
 notification "drag openineditor-lite in Finder toolbar while pressing Command"
 curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
 unzip icons.zip
