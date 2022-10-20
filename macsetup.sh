@@ -1643,6 +1643,15 @@ npm install -g json2csv
 installcask jupyterlab
 
 #
+# local
+#
+# Local WordPress developement tool
+#
+# https://localwp.com
+#
+installcask local
+
+#
 # Mocha
 #
 # Node.js testing framework
