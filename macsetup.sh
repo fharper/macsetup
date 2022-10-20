@@ -164,6 +164,14 @@ function giveFullDiskAccessPermission {
 function giveScreenRecordingPermission {
     updateTCC "kTCCServiceScreenCapture" "$1"
 }
+
+#
+# Give Accessibility Permission for a specific application
+#
+# @param app name
+#
+function giveAccessibilityPermission {
+    updateTCC "kTCCServiceAccessibility" "$1"
 }
 
 #
