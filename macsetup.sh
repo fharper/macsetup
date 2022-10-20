@@ -156,6 +156,14 @@ function giveFullDiskAccessPermission {
     updateTCC "kTCCServiceSystemPolicyAllFiles" "$1"
 }
 
+#
+# Give Screen Recording Permission for a specific application
+#
+# @param app name
+#
+function giveScreenRecordingPermission {
+    updateTCC "kTCCServiceScreenCapture" "$1"
+}
 }
 
 #
