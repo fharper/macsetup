@@ -2144,6 +2144,18 @@ installcask wkhtmltopdf
 #
 installkeg youtube-dl
 
+#
+# zsh-bench
+#
+# Benchmark for interactive Zsh
+#
+# https://github.com/romkatv/zsh-bench
+#
+# Note:
+# - run a benchmark, use: ~/zsh-bench/zsh-bench
+#
+git clone https://github.com/romkatv/zsh-bench ~/zsh-bench
+
 
 ################
 #              #
