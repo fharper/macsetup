@@ -2093,6 +2093,15 @@ npm i -g public-ip-cli
 installkeg rename
 
 #
+# Scout
+#
+# Reading, writing & converting JSON, Plist, YAML and XML files
+#
+# https://github.com/ABridoux/scout
+#
+installkeg ABridoux/formulae/scout
+
+#
 # Stress
 #
 # https://web.archive.org/web/20190702093856/https://people.seas.harvard.edu/~apw/stress/
