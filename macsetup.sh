@@ -1982,6 +1982,15 @@ npm i -g empty-trash-cli
 installkeg ffmpeg
 
 #
+# Homebrew Command Not Found
+#
+# Suggest a package to install when the command is not found
+#
+# https://github.com/Homebrew/homebrew-command-not-found
+#
+brew tap homebrew/command-not-found
+
+#
 # htop
 #
 # https://github.com/htop-dev/htop
