@@ -1413,6 +1413,15 @@ npm install -g cordova
 installkeg deno
 
 #
+# diff-so-fancy
+#
+# better looking git diff
+#
+# https://github.com/so-fancy/diff-so-fancy
+#
+installkeg diff-so-fancy
+
+#
 # direnv
 #
 # Load and unload environment variables depending on the current directory
@@ -1506,6 +1515,9 @@ git config --replace-all --global fetch.prune true
 git config --replace-all --global advice.addEmptyPathspec false
 git config --replace-all --global push.followTags true
 git config --replace-all --global push.autoSetupRemote true
+git config --replace-all --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+git config --replace-all --global interactive.diffFilter "diff-so-fancy --patch"
+git config --replace-all --global add.interactive.useBuiltin false
 
 
 #
