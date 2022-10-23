@@ -2513,13 +2513,6 @@ installcask keycastr
 mas install 405399194
 
 #
-# LibreOffice
-#
-# https://www.libreoffice.org
-#
-installcask libreoffice
-
-#
 # Logitech Presentation
 #
 # Application to be able to use the Logitech Spotlight Remote Clicker
