@@ -2611,6 +2611,8 @@ mas install 1303222628
 #
 # Parcel
 #
+# Deliveries tracking
+#
 # https://parcelapp.net
 #
 mas install 639968404
