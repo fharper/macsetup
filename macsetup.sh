@@ -1651,6 +1651,8 @@ jira session
 #
 # GPG Suite
 #
+# GPG keychain management & tools
+#
 # https://gpgtools.org
 #
 installcask gpg-suite
