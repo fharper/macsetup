@@ -2427,6 +2427,8 @@ rm wavelink.pkg
 #
 # Firefox
 #
+# Browser
+#
 # https://www.mozilla.org/en-CA/firefox
 #
 installcask firefox
