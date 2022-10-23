@@ -1587,6 +1587,8 @@ installkeg git-lfs
 #
 # Git Open
 #
+# Open the GitHub page for a repository
+#
 # https://github.com/paulirish/git-open
 #
 npm i -g git-open
