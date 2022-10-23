@@ -1925,9 +1925,10 @@ installkeg lynis
 #
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-
 #
 # ShellCheck
+#
+# Shell scripts tatic analysis tool
 #
 # https://github.com/koalaman/shellcheck
 #
