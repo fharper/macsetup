@@ -1348,6 +1348,8 @@ loginitems -a Todoist
 #
 # Trash CLI
 #
+# rm replacement that moves files to the Trash folder
+#
 # https://github.com/sindresorhus/trash-cli
 #
 npm i -g trash-cli
