@@ -2721,6 +2721,8 @@ installcask the-unarchiver
 #
 # Typora
 #
+# Markdown distraction-free writing tool
+#
 # https://typora.io
 #
 installcask typora
