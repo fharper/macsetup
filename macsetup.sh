@@ -1261,6 +1261,8 @@ dockutil --add "/Applications/Notion Enhanced.app" --allhomes
 #
 # OpenInEditor-Lite
 #
+# Finder Toolbar app to open the current directory in your preferred Editor
+#
 # https://github.com/Ji4n1ng/OpenInTerminal
 #
 installcask openineditor-lite
