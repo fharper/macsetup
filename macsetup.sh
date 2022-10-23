@@ -1626,10 +1626,13 @@ gh config set editor "code --wait"
 gh extension install kyanny/gh-pr-draft
 
 #
-# GoEnv + Go
+# Go + GoEnv
 #
-# https://github.com/syndbg/goenv
+# Go programming language
+# Go version manager
+#
 # https://golang.org
+# https://github.com/syndbg/goenv
 #
 installkeg goenv
 goenv install 1.11.4
