@@ -2360,6 +2360,8 @@ installcask daisydisk
 #
 # Deckset
 #
+# Presentation slides designing tool using Markdown
+#
 # https://www.deckset.com
 #
 installcask deckset
