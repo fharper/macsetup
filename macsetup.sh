@@ -2676,9 +2676,9 @@ installcask sloth
 #
 # Speedtest
 #
-# https://www.speedtest.net
-#
 # More accurate than the CLI
+#
+# https://www.speedtest.net
 #
 mas install 1153157709
 
