@@ -1971,7 +1971,7 @@ npm i -g hint
 installkeg webpack
 
 #
-# Wordpress CLI
+# WordPress CLI
 #
 # https://github.com/wp-cli/wp-cli
 #
