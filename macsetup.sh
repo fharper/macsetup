@@ -1393,9 +1393,9 @@ go install github.com/rhysd/actionlint/cmd/actionlint@latest
 #
 # BFG Repo-Cleaner
 #
-# https://github.com/rtyley/bfg-repo-cleaner
-#
 # git-filter-branch replacement
+#
+# https://github.com/rtyley/bfg-repo-cleaner
 #
 installkeg bfg
 
