@@ -2486,13 +2486,6 @@ installcask igdm
 mas install 1502527999
 
 #
-# Kap
-#
-# https://github.com/wulkano/Kap
-#
-installcask kap
-
-#
 # Keybase
 #
 # https://github.com/keybase/client
