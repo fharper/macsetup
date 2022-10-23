@@ -1327,6 +1327,8 @@ npm install -g spaceship-prompt
 #
 # Spotify
 #
+# Music service player
+#
 # https://www.spotify.com
 #
 installcask spotify
