@@ -1295,6 +1295,8 @@ rm -rf icons
 #
 # Rain
 #
+# Simple macOS menubar app that play rainforest sound
+#
 # https://github.com/fharper/rain
 #
 curl -L https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
