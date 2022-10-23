@@ -1596,6 +1596,8 @@ npm i -g git-open
 #
 # Git Recent
 #
+# See your latest local git branches, formatted real fancy
+#
 # https://github.com/paulirish/git-recent
 #
 installkeg git-recent
