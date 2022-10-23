@@ -2584,6 +2584,8 @@ installcask muzzle
 #
 # NordVPN
 #
+# VPN
+#
 # https://nordvpn.com
 #
 installcask nordvpn
