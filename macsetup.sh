@@ -2730,7 +2730,7 @@ installcask typora
 #
 # VLC
 #
-# Vide Player
+# Video Player
 #
 # https://www.videolan.org
 #
