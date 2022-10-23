@@ -2749,7 +2749,9 @@ mas install 1323414118
 #
 # WiFi Explorer Lite
 #
-# https://www.intuitibits.com/products/wifi-explorer
+# Wifi discovery and analysis tool
+#
+# https://www.intuitibits.com/products/wifiexplorer/
 #
 mas install 1408727408
 
