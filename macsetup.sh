@@ -2153,6 +2153,8 @@ installkeg ncdu
 #
 # Noti
 #
+# Monitor a process and trigger a notification when the process is done
+#
 # https://github.com/variadico/noti
 #
 installkeg noti
