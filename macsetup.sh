@@ -2630,6 +2630,8 @@ installcask pika
 #
 # Pocket
 #
+# Save & read articles later
+#
 # https://getpocket.com
 #
 mas install 568494494
