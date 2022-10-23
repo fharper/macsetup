@@ -1797,12 +1797,16 @@ installkeg prettier
 npm install -g puppeteer
 
 #
-# RBenv + Ruby
+# Ruby + RBenv
 #
-# https://github.com/rbenv/rbenv
+# Ruby programming language
+# Ruby version manager
+#
 # https://github.com/ruby/ruby
+# https://github.com/rbenv/rbenv
 #
-# rbenv install --list-all
+# Notes:
+# - Use "rbenv install --list-all" to list installable Ruby versions
 #
 installkeg rbenv
 rbenv init
