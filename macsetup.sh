@@ -1357,6 +1357,8 @@ npm i -g trash-cli
 #
 # Visual Studio Code
 #
+# Code editor
+#
 # https://github.com/microsoft/vscode
 #
 installcask visual-studio-code
