@@ -1419,7 +1419,9 @@ notification "Install Charles Proxy certificate in system & change to always tru
 installkeg cocoapods
 
 #
-# Cordova
+# Cordova CLI
+#
+# CLI for Cordova
 #
 # https://github.com/apache/cordova-cli
 #
