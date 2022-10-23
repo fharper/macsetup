@@ -2523,13 +2523,6 @@ installkeg logitech-presentation
 openfilewithregex "/opt/homebrew/Caskroom/logitech-presentation/1.62.2/LogiPresentation Installer.app"
 
 #
-# Loopback
-#
-# https://rogueamoeba.com/loopback
-#
-installcask loopback
-
-#
 # LyricsX
 #
 # Lyrics & Karaoke Application
