@@ -2394,6 +2394,8 @@ installcask disk-drill
 #
 # Elgato Lights Control Center
 #
+# Elgato Lights Control App
+#
 # https://www.elgato.com/en/gaming/key-light
 #
 installcask elgato-control-center
