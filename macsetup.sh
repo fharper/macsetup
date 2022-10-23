@@ -1402,6 +1402,8 @@ installkeg bfg
 #
 # Charles Proxy
 #
+# HTTP proxy, monitor & reverse proxy
+#
 # https://www.charlesproxy.com
 #
 installcask charles
