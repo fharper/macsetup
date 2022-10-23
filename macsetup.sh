@@ -1921,7 +1921,7 @@ installkeg lynis
 # Rust toolchain installer
 #
 # https://github.com/rust-lang/rust
-# https://github.com/rust-lang/rustups
+# https://github.com/rust-lang/rustup
 #
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
