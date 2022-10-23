@@ -1412,6 +1412,8 @@ notification "Install Charles Proxy certificate in system & change to always tru
 #
 # CocoaPods
 #
+# XCode dependency manager
+#
 # https://github.com/CocoaPods/CocoaPods
 #
 installkeg cocoapods
