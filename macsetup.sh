@@ -2497,6 +2497,8 @@ installcask keybase
 #
 # Keycastr
 #
+# Keystroke visualizer
+#
 # https://github.com/keycastr/keycastr
 #
 installcask keycastr
