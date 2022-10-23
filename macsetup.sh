@@ -2412,7 +2412,7 @@ installcask elgato-stream-deck
 #
 # Elgato Wavelink
 #
-# Audio Mixing
+# Elgato Wave:3 Audio Mixing App
 #
 # https://www.elgato.com/en/wave-3
 #
