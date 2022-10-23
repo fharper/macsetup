@@ -1744,6 +1744,8 @@ installcask multipass
 #
 # npm Check Updates (ncu)
 #
+# Find newer versions of Node package dependencies
+#
 # https://github.com/raineorshine/npm-check-updates
 #
 npm i -g npm-check-updates
