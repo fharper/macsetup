@@ -1892,9 +1892,11 @@ installkeg composer
 #
 # Java (OpenJDK with AdoptOpenJDK) + jEnv
 #
+# Java programming language
+# Java version manager
+#
 # https://github.com/jenv/jenv
 # https://github.com/adoptium/temurin-build
-# https://github.com/openjdk/jdk
 #
 installkeg jenv
 reload
