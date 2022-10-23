@@ -1278,6 +1278,8 @@ rm -rf icons
 #
 # OpenInTerminal-Lite
 #
+# Finder Toolbar app to open the current directory in your preferred Terminal
+#
 # https://github.com/Ji4n1ng/OpenInTerminal
 #
 installcask openinterminal-lite
