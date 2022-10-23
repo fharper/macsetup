@@ -1914,6 +1914,7 @@ jenv global temurin64-18.0.2.1
 #
 installkeg lynis
 
+#
 # Rust + rustup
 #
 # https://github.com/rust-lang/rust
