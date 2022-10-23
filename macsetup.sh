@@ -2351,6 +2351,8 @@ installcask cyberduck
 #
 # DaisyDisk
 #
+# Disk data & space analyzer
+#
 # https://daisydiskapp.com
 #
 installcask daisydisk
