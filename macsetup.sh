@@ -1955,6 +1955,8 @@ npm install -g ibm-openapi-validator
 #
 # Webhint
 #
+# Accessibility, speed, cross-browser compatibility analysis tool
+#
 # https://github.com/webhintio/hint
 #
 npm i -g hint
