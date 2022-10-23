@@ -1973,6 +1973,8 @@ installkeg webpack
 #
 # WordPress CLI
 #
+# CLI for WordPress
+#
 # https://github.com/wp-cli/wp-cli
 #
 installkeg wp-cli
