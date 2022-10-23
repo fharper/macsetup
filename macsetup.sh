@@ -1430,6 +1430,8 @@ npm install -g cordova
 #
 # Deno
 #
+# deno programming language (runtime)
+#
 # https://github.com/denoland/deno
 #
 installkeg deno
