@@ -1781,6 +1781,8 @@ installkeg pre-commit
 #
 # Prettier
 #
+# Code formatter
+#
 # https://github.com/prettier/prettier
 #
 installkeg prettier
