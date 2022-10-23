@@ -1501,6 +1501,7 @@ installcask docker
 # https://github.com/gkouziik/eslint-plugin-security-node
 # https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
 # https://github.com/chejen/eslint-plugin-i18n
+# https://github.com/gajus/eslint-plugin-jsdoc
 # https://github.com/azeemba/eslint-plugin-json
 #
 installkeg eslint
