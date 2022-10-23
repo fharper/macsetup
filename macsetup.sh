@@ -2402,6 +2402,9 @@ installcask elgato-control-center
 
 #
 # Elgato Stream Deck
+#
+# Elagto Stream Deck Configuration App
+#
 # https://www.elgato.com/en/gaming/stream-deck
 #
 installcask elgato-stream-deck
