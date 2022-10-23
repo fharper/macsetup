@@ -2385,6 +2385,8 @@ installcask discord
 #
 # Disk Drill
 #
+# Data Recovery Tool
+#
 # https://www.cleverfiles.com/
 #
 installcask disk-drill
