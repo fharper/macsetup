@@ -1908,9 +1908,9 @@ jenv global temurin64-18.0.2.1
 #
 # Lynis
 #
-# https://github.com/CISOfy/lynis
-#
 # Security auditing tool
+#
+# https://github.com/CISOfy/lynis
 #
 installkeg lynis
 
