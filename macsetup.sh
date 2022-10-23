@@ -1529,6 +1529,8 @@ npm install -g expo-cli
 #
 # Gist
 #
+# CLI to manage gist
+#
 # https://github.com/defunkt/gist
 #
 installkeg gist
