@@ -2554,6 +2554,8 @@ installcask messenger
 #
 # Microsoft Edge
 #
+# Browser
+#
 # https://www.microsoft.com/en-us/edge
 #
 installcask microsoft-edge
