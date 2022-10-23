@@ -1917,6 +1917,9 @@ installkeg lynis
 #
 # Rust + rustup
 #
+# Rust programming language
+# Rust toolchain installer
+#
 # https://github.com/rust-lang/rust
 # https://github.com/rust-lang/rustups
 #
