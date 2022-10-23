@@ -2602,7 +2602,7 @@ installcask obs
 #
 # Paprika Recipe Manager
 #
-# A recipes manager
+# Recipes manager
 #
 # https://www.paprikaapp.com
 #
