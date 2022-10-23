@@ -2649,6 +2649,8 @@ installcask raspberry-pi-imager
 #
 # Signal
 #
+# Encrypted messaging app
+#
 # https://github.com/signalapp/Signal-Desktop
 #
 installcask signal
