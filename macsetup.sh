@@ -2488,6 +2488,8 @@ mas install 1502527999
 #
 # Keybase
 #
+# Secure messaging and file-sharing app
+#
 # https://github.com/keybase/client
 #
 installcask keybase
