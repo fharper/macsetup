@@ -2712,6 +2712,8 @@ installcask textsniper
 #
 # The Unarchiver
 #
+# Compress & extract GUI app supporting RAR, ZIP & more
+#
 # https://theunarchiver.com
 #
 installcask the-unarchiver
