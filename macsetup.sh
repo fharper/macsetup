@@ -2694,6 +2694,8 @@ installcask synology-drive
 #
 # TeamViewer
 #
+# Remote viewer & control
+#
 # https://www.teamviewer.com
 #
 installcask teamviewer
