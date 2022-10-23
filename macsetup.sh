@@ -1876,7 +1876,6 @@ yarn config set --home enableTelemetry 0
 # Command:
 # phpbrew known --more
 #
-#
 # Notes:
 # - Need to install olrder version of PHP as PHPBrew isn't comptabile with newer ones
 # - https://github.com/phpbrew/phpbrew/issues/1245
