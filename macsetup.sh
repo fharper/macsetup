@@ -2167,6 +2167,18 @@ installkeg noti
 installkeg pandoc
 
 #
+# Poppler
+#
+# PDF rendering library
+#
+# https://poppler.freedesktop.org/
+#
+# Notes:
+# - I use Poppler for the pdfimages executable to extract images from PDFs
+#
+installkeg poppler
+
+#
 # Public-ip-cli
 #
 # https://github.com/sindresorhus/public-ip-cli
