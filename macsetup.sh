@@ -1982,6 +1982,8 @@ installkeg wp-cli
 #
 # Yeoman
 #
+# Scaffolding tool
+#
 # https://github.com/yeoman/yeoman
 #
 npm i --global yo
