@@ -1865,6 +1865,10 @@ yarn config set --home enableTelemetry 0
 #
 # PHP + PHPBrew + Composer
 #
+# PHP programming language
+# PHP version manager
+# PHP dependencies manager
+#
 # https://github.com/php/php-src
 # https://github.com/phpbrew/phpbrew
 # https://github.com/composer/composer
