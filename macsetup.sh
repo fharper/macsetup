@@ -1457,21 +1457,39 @@ installkeg direnv
 #
 # Docker
 #
+# Virtualization tool
+#
 # https://www.docker.com
 #
 installcask docker
 
 #
-# Docker Toolbox
-#
-# https://github.com/docker/toolbox
-#
-installcask docker-toolbox
-
-#
 # ESLint
 # ESLint Formatter Pretty
-# ESLint plugins: Markdown, React, Wordpress, Puppeteer, Jest Plugins, Node.js security, JSX a11y, i18n, JSDoc, JSON
+# ESLint plugins:
+# - eslint-plugin-markdown
+# - eslint-plugin-react
+# - WordPress Gutenberg ESLint Plugin
+# - eslint-plugin-ui-testing (using for Puppeteer)
+# - eslint-plugin-jest
+# - eslint-plugin-security-node
+# - eslint-plugin-jsx-a11y
+# - eslint-plugin-i18n
+# - eslint-plugin-jsdoc
+# - eslint-plugin-json
+#
+# JavaScript linter
+# Pretty ESLint formatter
+# Lint JavaScript code blocks in Markdown documents
+# React-specific linting rules for ESLint
+# WordPress development configurations and custom rules for ESLint
+# ESLint plugin that helps following best practices when writing UI tests like with Puppeteer
+# ESLint plugin for Jest
+# ESLint security plugin for Node.js
+# a11y rules on JSX elements
+# ESLint rules to find out the texts and messages not internationalized in the project
+# JSDoc specific linting rules for ESLint
+# JSON files rules
 #
 # https://github.com/eslint/eslint
 # https://github.com/sindresorhus/eslint-formatter-pretty
