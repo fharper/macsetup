@@ -1937,9 +1937,9 @@ installkeg shellcheck
 #
 # Ripgrep
 #
-# https://github.com/BurntSushi/ripgrep
-#
 # Recursively searches directories for a regex pattern
+#
+# https://github.com/BurntSushi/ripgrep
 #
 installkeg ripgrep
 
