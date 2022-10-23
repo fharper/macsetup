@@ -2506,6 +2506,8 @@ installcask keycastr
 #
 # Kindle
 #
+# Kindle app
+#
 # https://www.amazon.ca/b?ie=UTF8&node=2972705011
 #
 mas install 405399194
