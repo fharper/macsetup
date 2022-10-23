@@ -2667,9 +2667,9 @@ installcask silicon
 #
 # Sloth
 #
-# https://sveinbjorn.org/sloth
-#
 # Displays all open files and sockets in use by all running processes on your system
+#
+# https://sveinbjorn.org/sloth
 #
 installcask sloth
 
