@@ -1605,6 +1605,8 @@ installkeg git-recent
 #
 # Git Sizer
 #
+# Compute various size metrics for a Git repository
+#
 # https://github.com/github/git-sizer
 #
 installkeg git-sizer
