@@ -1577,6 +1577,8 @@ npm i -g git-branch-status
 #
 # Git Large File Storage
 #
+# Git extension for versioning large files
+#
 # https://github.com/git-lfs/git-lfs
 #
 installkeg git-lfs
