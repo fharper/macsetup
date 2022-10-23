@@ -1566,9 +1566,10 @@ git config --replace-all --global core.pager "diff-so-fancy | less --tabs=4 -RFX
 git config --replace-all --global interactive.diffFilter "diff-so-fancy --patch"
 git config --replace-all --global add.interactive.useBuiltin false
 
-
 #
 # Git Branch Status
+#
+# Prints git branch sync status reports
 #
 # https://github.com/bill-auger/git-branch-status
 #
