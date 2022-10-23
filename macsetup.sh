@@ -1763,11 +1763,12 @@ phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
 #
 # Postman
 #
+# GUI for managing, calling, and testing APIs
+#
 # https://postman.com
 #
 installcask postman
 
-#
 #
 # pre-commit
 #
