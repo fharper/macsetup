@@ -1953,7 +1953,7 @@ installkeg ripgrep
 npm install -g ibm-openapi-validator
 
 #
-# Webnint
+# Webhint
 #
 # https://github.com/webhintio/hint
 #
