@@ -2640,7 +2640,9 @@ dockutil --add /Applications/Pocket.app/ --allhomes
 #
 # Raspberry Pi Imager
 #
-# https://www.raspberrypi.org/software/
+# Raspberry Pi imaging utility
+#
+# https://github.com/raspberrypi/rpi-imager
 #
 installcask raspberry-pi-imager
 
