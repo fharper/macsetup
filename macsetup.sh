@@ -1337,6 +1337,8 @@ dockutil --add /Applications/Spotify.app --allhomes
 #
 # Todoist
 #
+# Todo app
+#
 # https://todoist.com
 #
 mas install 585829637
