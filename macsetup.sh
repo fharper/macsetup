@@ -1375,9 +1375,9 @@ npm config set editor code
 #
 # Act
 #
-# https://github.com/nektos/act
-#
 # Run your GitHub Actions locally
+#
+# https://github.com/nektos/act
 #
 installkeg act
 
