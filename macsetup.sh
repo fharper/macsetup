@@ -2436,7 +2436,9 @@ installcask firefox
 #
 # Gimp
 #
-# https://gitlab.gnome.org/GNOME/gimp/
+# Image Editor
+#
+# https://www.gimp.org/
 #
 installcask gimp
 
