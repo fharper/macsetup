@@ -2463,6 +2463,8 @@ installcask ha-menu
 #
 # Hemingway
 #
+# Writing Readability Tool
+#
 # http://www.hemingwayapp.com
 #
 open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
