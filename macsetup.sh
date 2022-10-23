@@ -2740,6 +2740,8 @@ installcask vlc
 #
 # WebP Viewer: QuickLook & View
 #
+# WebP image viewer
+#
 # https://langui.net/webp-viewer
 #
 mas install 1323414118
