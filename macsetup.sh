@@ -1306,6 +1306,8 @@ loginitems -a Rain
 #
 # Slack
 #
+# Text-based communication app
+#
 # https://slack.com
 #
 installcask slack
