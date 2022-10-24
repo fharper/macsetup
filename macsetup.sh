@@ -2695,6 +2695,15 @@ installcask sloth
 mas install 1153157709
 
 #
+# stats
+#
+# menubar system monitor stats
+#
+# https://github.com/exelban/stats
+#
+installcask stats
+
+#
 # Synology Drive
 #
 # Backup & synchronizing app for Synology
