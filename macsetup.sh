@@ -2793,23 +2793,23 @@ mas install 1408727408
 #       #
 #########
 
-installcask font-fira-sans
-installcask font-fira-code
+installcask font-alex-brush
+installcask font-archivo-narrow
 installcask font-arial
-installcask font-open-sans
+installcask font-blackout
+installcask font-caveat-brush
 installcask font-dancing-script
 installcask font-dejavu
+installcask font-fira-code
+installcask font-fira-mono
+installcask font-fira-sans
+installcask font-gidole
+installcask font-hack
+installcask font-leckerli-one
+installcask font-open-sans
+installcask font-pacifico
 installcask font-roboto
 installcask font-roboto-condensed
-installcask font-hack
-installcask font-pacifico
-installcask font-leckerli-one
-installcask font-gidole
-installcask font-fira-mono
-installcask font-blackout
-installcask font-alex-brush
-installcask font-caveat-brush
-installcask font-archivo-narrow
 
 
 ####################################################################
