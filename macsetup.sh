@@ -266,6 +266,15 @@ if [[ ! $(isCLAppInstalled omz) ]]; then
 fi
 
 #
+# Antigen
+#
+# ZSH plugin manager
+#
+# https://github.com/zsh-users/antigen
+#
+installkeg antigen
+
+#
 # DisplayLink Manager & DisplayLink Manager MacOS Extension
 #
 # Add the possibility to have more than one external monitor on MacBook M1 with a DisplayLink compatible hub
