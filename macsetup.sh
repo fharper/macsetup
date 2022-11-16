@@ -2797,7 +2797,6 @@ installcask whatsapp
 mas install 1408727408
 
 
-
 #########
 #       #
 # Fonts #
