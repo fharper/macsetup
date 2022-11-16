@@ -2234,6 +2234,15 @@ installkeg thefuck
 installkeg tldr
 
 #
+# topgrade
+#
+# upgrade everything with one tool
+#
+# https://github.com/topgrade-rs/topgrade
+#
+installkeg topgrade
+
+#
 # Vundle
 #
 # Vim plugin manager
