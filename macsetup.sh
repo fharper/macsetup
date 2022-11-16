@@ -1232,6 +1232,8 @@ defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -b
 defaults write com.brave.Browser DisablePrintPreview -bool true
 open https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
 open https://chrome.google.com/webstore/detail/antidote/lmbopdiikkamfphhgcckcjhojnokgfeo
+/Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
+notification "Authorize Dropbox for Violentmonkey sync"
 
 #
 # Home Assistant
