@@ -2442,21 +2442,6 @@ installcask elgato-control-center
 installcask elgato-stream-deck
 
 #
-# Elgato Wavelink
-#
-# Elgato Wave:3 Audio Mixing App
-#
-# https://www.elgato.com/en/wave-3
-#
-# Note:
-# - Needed to update the firmware for my Elgato Wave:3 microphone
-#
-curl -L https://edge.elgato.com/egc/macos/wavelink/1.5.0/WaveLink_1.5.0.3042_2.pkg --output wavelink.pkg
-open wavelink.pkg
-pausethescript
-rm wavelink.pkg
-
-#
 # Firefox
 #
 # Browser
