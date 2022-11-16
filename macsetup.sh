@@ -2779,6 +2779,15 @@ installcask vlc
 mas install 1323414118
 
 #
+# WhatsApp
+#
+# Messaging app
+#
+# https://www.whatsapp.com
+#
+installcask whatsapp
+
+#
 # WiFi Explorer Lite
 #
 # Wifi discovery and analysis tool
