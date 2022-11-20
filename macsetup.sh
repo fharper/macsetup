@@ -2162,6 +2162,15 @@ installkeg miller
 installkeg ncdu
 
 #
+# nmap
+#
+# Network discovery and security auditing tool
+#
+# https://github.com/nmap/nmap
+#
+brew install nmap
+
+#
 # Noti
 #
 # Monitor a process and trigger a notification when the process is done
