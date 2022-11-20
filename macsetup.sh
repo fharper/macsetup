@@ -880,10 +880,6 @@ dockutil --remove 'Safari' --allhomes
 #
 dockutil --remove 'System Preferences' --allhomes
 
-#
-# TV
-#
-dockutil --remove 'TV' --allhomes
 
 ###############################
 #                             #
@@ -2743,6 +2739,17 @@ installcask textsniper
 # https://theunarchiver.com
 #
 installcask the-unarchiver
+
+#
+# TV
+#
+# Apple TV app
+#
+# https://www.apple.com/ca/apple-tv-app/
+#
+dockutil --remove 'TV' --allhomes
+open -a TV
+notification "Sign into the TV app & download The Office US"
 
 #
 # Typora
