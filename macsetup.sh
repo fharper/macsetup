@@ -609,15 +609,6 @@ sudo -E tccutil -e com.contextsformac.Contexts
 notification "Open the license file from 1Password"
 
 #
-# Control Plane
-#
-# Utility to automate things based on context & location
-#
-# https://github.com/dustinrue/ControlPlane
-#
-installcask controlplane
-
-#
 # Dropbox
 #
 # File sharing & computer backup
