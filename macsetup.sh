@@ -641,6 +641,15 @@ espanso register
 espanso start
 
 #
+# Hammerspoon
+#
+# macOS desktop automation tool
+#
+# https://github.com/Hammerspoon/hammerspoon
+#
+installcask hammerspoon
+
+#
 # HSTR
 #
 # Shell command history management
