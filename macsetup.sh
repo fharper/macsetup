@@ -2219,7 +2219,10 @@ installkeg pandoc
 # https://poppler.freedesktop.org/
 #
 # Notes:
-# - I use Poppler for the pdfimages executable to extract images from PDFs
+# - I use Poppler for the executables:
+#     - pdfimages to extract images from PDFs
+#     - pdffonts to list embedded fonts from PDFs
+# .   - pdfinfo to get information from PDFs
 #
 installkeg poppler
 
