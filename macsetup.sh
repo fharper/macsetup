@@ -2860,6 +2860,8 @@ installcask font-fira-sans
 installcask font-gidole
 installcask font-hack
 installcask font-leckerli-one
+installcask font-nunito
+installcask font-nunito-sans
 installcask font-open-sans
 installcask font-pacifico
 installcask font-roboto
