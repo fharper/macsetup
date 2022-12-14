@@ -2575,7 +2575,7 @@ installcask keycastr
 #
 # https://www.amazon.ca/b?ie=UTF8&node=2972705011
 #
-mas install 405399194
+installcask kindle
 
 #
 # Logitech Presentation
