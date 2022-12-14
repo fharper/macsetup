@@ -2095,6 +2095,15 @@ npm i -g empty-trash-cli
 installkeg ffmpeg
 
 #
+# Ghostscript
+#
+# PostScript & PDF intepreter
+#
+# https://www.ghostscript.com
+#
+installkeg ghostscript
+
+#
 # Homebrew Command Not Found
 #
 # Suggest a package to install when the command is not found
