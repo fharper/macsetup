@@ -2376,10 +2376,10 @@ installcask beardedspice
 # Calibre + DeDRM Tools
 #
 # https://github.com/kovidgoyal/calibre
-# https://github.com/apprenticeharper/DeDRM_tools
+# https://github.com/noDRM/DeDRM_tools
 #
 installcask calibre
-curl -L "$(lastversion apprenticeharper/DeDRM_tools --assets)" --output Calibre-DeDRM.zip
+curl -L "$(lastversion noDRM/DeDRM_tools --assets)" --output Calibre-DeDRM.zip
 unzip Calibre-DeDRM.zip "DeDRM_plugin.zip"
 rm Calibre-DeDRM.zip
 notification "Install the DeDRM plugin into Calibre"
