@@ -1417,6 +1417,15 @@ aws configure
 installkeg bfg
 
 #
+# Caddy
+#
+# HTTP server
+#
+# https://github.com/caddyserver/caddy
+#
+brew install caddy
+
+#
 # Charles Proxy
 #
 # HTTP proxy, monitor & reverse proxy
