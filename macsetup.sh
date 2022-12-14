@@ -2234,6 +2234,15 @@ installkeg poppler
 npm i -g public-ip-cli
 
 #
+# QPDF
+#
+# Tools for and transforming and inspecting PDF files
+#
+# https://github.com/qpdf/qpdf
+#
+installkeg qpdf
+
+#
 # Rename
 #
 # https://github.com/ap/rename
