@@ -1743,6 +1743,15 @@ npm install -g json2csv
 installcask jupyterlab
 
 #
+# Kubefirst
+#
+# Delivery & infrastructure Kubernetes management gitops platforms
+#
+# https://github.com/kubefirst/kubefirst#installing-the-cli
+#
+installkeg kubefirst/tools/kubefirst
+
+#
 # local
 #
 # Local WordPress developement tool
