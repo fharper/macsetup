@@ -2313,11 +2313,13 @@ installkeg wifi-password
 installcask wkhtmltopdf
 
 #
-# Youtube Downloader
+# yt-dlp
 #
-# https://github.com/ytdl-org/youtube-dl/
+# Video downloader
 #
-installkeg youtube-dl
+# https://github.com/yt-dlp/yt-dlp
+#
+installkeg yt-dlp
 
 #
 # zsh-bench
