@@ -1398,6 +1398,16 @@ installkeg act
 go install github.com/rhysd/actionlint/cmd/actionlint@latest
 
 #
+# aws-cli
+#
+# Amazon Web Services CLI
+#
+# https://github.com/aws/aws-cli
+#
+installkeg awscli
+aws configure
+
+#
 # BFG Repo-Cleaner
 #
 # git-filter-branch replacement
