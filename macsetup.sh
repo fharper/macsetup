@@ -1743,6 +1743,15 @@ npm install -g json2csv
 installcask jupyterlab
 
 #
+# k3d
+#
+# k3s multi-nodes tools for Docker
+#
+# https://github.com/k3d-io/k3d
+#
+installkeg k3d
+
+#
 # Kubefirst
 #
 # Delivery & infrastructure Kubernetes management gitops platforms
