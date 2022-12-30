@@ -696,7 +696,6 @@ curl -L https://download01.logi.com/web/ftp/pub/techsupport/options/options_inst
 unzip logitech.zip
 rm logitech.zip
 openfilewithregex "LogiMgr Installer.*"
-rm -rf "${file}"
 
 #
 # Moom
