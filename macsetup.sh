@@ -2282,6 +2282,8 @@ installkeg qpdf
 #
 # Rename
 #
+# CLI for renaming multiple files based on regex
+#
 # https://github.com/ap/rename
 #
 installkeg rename
