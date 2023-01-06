@@ -2097,9 +2097,10 @@ installPythonPackage coursera-dl
 #
 # empty-trash-cli
 #
-# Empty the Trash in the command line
+# CLI to empty the trash
 #
 # https://github.com/sindresorhus/empty-trash-cli
+#
 npm i -g empty-trash-cli
 
 #
