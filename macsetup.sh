@@ -2123,6 +2123,15 @@ npm i -g empty-trash-cli
 installkeg ffmpeg
 
 #
+# FFmpeg Quality Metrics
+#
+# CLI video quality metrics tool using FFmpeg
+#
+# https://github.com/slhck/ffmpeg-quality-metrics
+#
+pip3 install ffmpeg-quality-metrics
+
+#
 # Ghostscript
 #
 # PostScript & PDF intepreter
