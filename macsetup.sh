@@ -2987,6 +2987,7 @@ duti -s org.videolan.vlc public.3gpp all #3gp
 duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
 duti -s org.videolan.vlc public.mp3 all #mp3
 duti -s org.videolan.vlc com.apple.m4a-audio all #M4A
+duti -s org.videolan.vlc com.apple.m4v-video all #m4v
 
 # qView
 duti -s com.interversehq.qView public.png all # PNG by using my own build
