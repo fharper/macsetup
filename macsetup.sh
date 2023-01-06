@@ -2463,12 +2463,17 @@ installcask google-chrome
 installcask eloston-chromium
 
 #
-# Cryptomator
+# Cryptomator & macFUSE
 #
 # https://github.com/cryptomator/cryptomator
+# https://osxfuse.github.io
+#
+# Data encryption tool
+# Third-party file systems.
 #
 installcask cryptomator
 getLicense Cryptomator
+installcask macfuse
 
 #
 # CyberDuck
