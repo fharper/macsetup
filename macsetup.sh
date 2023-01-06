@@ -2387,6 +2387,18 @@ git clone https://github.com/romkatv/zsh-bench ~/zsh-bench
 mas install 824171161
 
 #
+# Akai Pro MPC Beats
+#
+# Software for my AKAI Professional MPD218
+#
+# https://www.akaipro.com/mpc-beats
+#
+curl -L https://cdn.inmusicbrands.com/akai/M2P11C6VI/Install-MPC-Beats-v2.11-2.11.6.8-release-Mac.zip --output mpc-beats.zip
+unzip -j mpc-beats.zip -d .
+rm mpc-beats.zip
+openfilewithregex Install-MPC-Beats*.pkg
+
+#
 # AppCleaner
 #
 # https://freemacsoft.net/appcleaner
