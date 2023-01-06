@@ -1997,6 +1997,15 @@ installkeg ripgrep
 npm install -g ibm-openapi-validator
 
 #
+# Vercel CLI
+#
+# CLI for Vercel
+#
+# https://github.com/vercel/vercel
+#
+installkeg vercel-cli
+
+#
 # Webhint
 #
 # Accessibility, speed, cross-browser compatibility analysis tool
