@@ -2113,11 +2113,12 @@ installPythonPackage coursera-dl
 npm i -g empty-trash-cli
 
 #
-# ffmpeg
+# FFmpeg
+#
+# Libraries and tools to process multimedia content like video, audio & more
 #
 # https://github.com/FFmpeg/FFmpeg
 #
-# libraries and tools to process multimedia content like video, audio & more
 #
 installkeg ffmpeg
 
