@@ -550,13 +550,15 @@ notification "Deactivate the System Integrity Protection with 'csrutil disable' 
 #
 # https://www.alfredapp.com
 #
-installcask alfred
-defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>1048576</integer></array><key>type</key><string>standard</string></dict></dict>" # Deactivate Spotlight Global Shortcut to use it with Alfred instead (will work after logging off)
-getLicense Alfred
-giveAccessibilityPermission "Alfred 5"
-npm install -g alfred-google-translate
-npm install -g alfred-language-configuration
-notification "Configure alfred-google-translate with 'trc en&fr'"
+if [[ ! $(isAppInstalled "Alfred 5") ]]; then
+    installcask alfred
+    defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>1048576</integer></array><key>type</key><string>standard</string></dict></dict>" # Deactivate Spotlight Global Shortcut to use it with Alfred instead (will work after logging off)
+    getLicense Alfred
+    giveAccessibilityPermission "Alfred 5"
+    npm install -g alfred-google-translate
+    npm install -g alfred-language-configuration
+    notification "Configure alfred-google-translate with 'trc en&fr'"
+fi
 
 #
 # Bartender
