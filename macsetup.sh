@@ -742,9 +742,11 @@ installcask sound-control
 # Notes
 # - You cannot remove the clock from the menubar anymore: minimizing used space as analog
 #
-defaults write com.apple.menuextra.clock IsAnalog -bool true
-installcask the-clock
-getLicense "The Clock"
+if [[ ! $(isAppInstalled "The Clock") ]]; then
+    defaults write com.apple.menuextra.clock IsAnalog -bool true
+    installcask the-clock
+    getLicense "The Clock"
+fi
 
 #
 # tmux
