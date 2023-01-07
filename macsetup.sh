@@ -1277,8 +1277,10 @@ fi
 # https://www.notion.so
 # https://github.com/notion-enhancer/desktop
 #
-installcask notion-enhanced
-dockutil --add "/Applications/Notion Enhanced.app" --allhomes
+if [[ ! $(isAppInstalled "Notion Enhanced") ]]; then
+    installcask notion-enhanced
+    dockutil --add "/Applications/Notion Enhanced.app" --allhomes
+fi
 
 #
 # OpenInEditor-Lite
