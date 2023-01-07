@@ -1217,11 +1217,13 @@ fi
 #
 # https://www.antidote.info
 #
-open https://services.druide.com/
-notification "Download & install Antidote"
-filename=openfilewithregex "Antidote.*.dmg"
-dockutil --add /Applications/Antidote/Antidote\ 11.app/
-loginitems -a Antidote
+if [[ ! $(isAppInstalled "Antidote 11") ]]; then
+    open https://services.druide.com/
+    notification "Download & install Antidote"
+    filename=openfilewithregex "Antidote.*.dmg"
+    dockutil --add /Applications/Antidote/Antidote\ 11.app/
+    loginitems -a Antidote
+fi
 
 #
 # Brave Browser + Antidote Extension
