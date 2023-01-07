@@ -782,7 +782,9 @@ installcask zoomus
 #
 # https://github.com/agkozak/zsh-z
 #
-git clone git@github.com:agkozak/zsh-z.git "$ZSH_CUSTOM"/plugins/zsh-z
+if [[ ! $(isCLAppInstalled z) ]]; then
+    git clone git@github.com:agkozak/zsh-z.git "$ZSH_CUSTOM"/plugins/zsh-z
+fi
 
 
 ########################
