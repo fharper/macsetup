@@ -1699,10 +1699,12 @@ fi
 # https://golang.org
 # https://github.com/syndbg/goenv
 #
-installkeg goenv
-reload
-goenv install 1.18.8
-goenv global 1.18.8
+if [[ ! $(isCLAppInstalled goenv) ]]; then
+    installkeg goenv
+    reload
+    goenv install 1.18.8
+    goenv global 1.18.8
+fi
 
 #
 # go-jira
