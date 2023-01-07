@@ -521,18 +521,9 @@ if [[ ! $(isCLAppInstalled geticon) ]]; then
 fi
 
 #
-# tccutil
-#
-# Command line tool to modify the accessibility database
-#
-# https://github.com/jacobsalmela/tccutil
-#
-installkeg tccutil
-
-#
 # Script Editor
 #
-sudo -E tccutil -e com.apple.ScriptEditor2
+giveAccessibilityPermission "Script Editor"
 
 #
 # terminal-notifier
@@ -563,7 +554,7 @@ notification "Deactivate the System Integrity Protection with 'csrutil disable' 
 installcask alfred
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>1048576</integer></array><key>type</key><string>standard</string></dict></dict>" # Deactivate Spotlight Global Shortcut to use it with Alfred instead (will work after logging off)
 getLicense Alfred
-sudo -E tccutil -e com.runningwithcrayons.Alfred
+giveAccessibilityPermission "Alfred 5"
 npm install -g alfred-google-translate
 npm install -g alfred-language-configuration
 notification "Configure alfred-google-translate with 'trc en&fr'"
@@ -576,7 +567,7 @@ notification "Configure alfred-google-translate with 'trc en&fr'"
 # https://www.macbartender.com
 #
 installcask bartender
-sudo -E tccutil -e com.surteesstudios.Bartender
+giveAccessibilityPermission "Bartender 4"
 
 #
 # CleanShot X
@@ -605,7 +596,7 @@ installcask commandq
 # https://contexts.co
 #
 installcask contexts
-sudo -E tccutil -e com.contextsformac.Contexts
+giveAccessibilityPermission Contexts
 notification "Open the license file from 1Password"
 
 #
@@ -626,7 +617,7 @@ installcask dropbox
 #
 brew tap federico-terzi/espanso
 installkeg espanso
-sudo tccutil -e "$(print -r =espanso\(:A\))"
+giveAccessibilityPermission Espanso
 restoreAppSettings espanso
 espanso register
 espanso start
@@ -1251,7 +1242,7 @@ installcask home-assistant
 curl -L $(op item get "Mumu X" --fields label="download link") --output mumux.dmg
 installDMG mumux.dmg
 loginitems -a "Mumu X"
-sudo -E tccutil -e com.wilbertliu.mumu
+giveAccessibilityPermission "Mumu X"
 
 #
 # Notion Enhanced
