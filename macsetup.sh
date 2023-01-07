@@ -596,12 +596,14 @@ installcask commandq
 #
 # https://contexts.co
 #
-installcask contexts
-giveAccessibilityPermission Contexts
-op document get Contexts --output=contexts.contexts-license
-open contexts.contexts-license
-pausethescript
-rm contexts.contexts-license
+if [[ ! $(isAppInstalled Contexts) ]]; then
+    installcask contexts
+    giveAccessibilityPermission Contexts
+    op document get Contexts --output=contexts.contexts-license
+    open contexts.contexts-license
+    pausethescript
+    rm contexts.contexts-license
+fi
 
 #
 # Dropbox
