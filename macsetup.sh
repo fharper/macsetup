@@ -1435,8 +1435,10 @@ fi
 #
 # https://github.com/aws/aws-cli
 #
-installkeg awscli
-aws configure
+if [[ ! $(isCLAppInstalled aws) ]]; then
+    installkeg awscli
+    aws configure
+fi
 
 #
 # BFG Repo-Cleaner
