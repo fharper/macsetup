@@ -1361,8 +1361,10 @@ npm install -g spaceship-prompt
 #
 # https://www.spotify.com
 #
-installcask spotify
-dockutil --add /Applications/Spotify.app --allhomes
+if [[ ! $(isAppInstalled Spotify) ]]; then
+    installcask spotify
+    dockutil --add /Applications/Spotify.app --allhomes
+fi
 
 #
 # Todoist
