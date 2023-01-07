@@ -1330,11 +1330,14 @@ fi
 #
 # https://github.com/fharper/rain
 #
-curl -L https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
-unzip rain.zip
-rm rain.zip
-mv rain.app /Applications
-loginitems -a Rain
+if [[ ! $(isAppInstalled "Rain") ]]; then
+    curl -L https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
+    unzip rain.zip
+    rm rain.zip
+    mv rain.app /Applications
+    loginitems -a Rain
+fi
+
 
 #
 # Slack
