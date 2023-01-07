@@ -1594,8 +1594,10 @@ npm install -g expo-cli
 #
 # https://github.com/defunkt/gist
 #
-installkeg gist
-gist --login
+if [[ ! $(isCLAppInstalled gist) ]]; then
+    installkeg gist
+    gist --login
+fi
 
 #
 # Git
