@@ -1,14 +1,9 @@
 #!/usr/bin/env zsh
 
-
-###################################################################################################
-#                                                                                                 #
-# Notes                                                                                           #
-#                                                                                                 #
-# - to erase correctly previous laptop disk, use the command: "diskutil secureErase 4 /dev/disk0" #
-#                                                                                                 #
-###################################################################################################
-
+#
+# - run this script with "zsh macsetup.sh"
+# - to erase correctly previous laptop disk, use the command: "diskutil secureErase 4 /dev/disk0"
+#
 
 #########################
 #                       #
