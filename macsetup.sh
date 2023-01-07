@@ -20,7 +20,7 @@ email="hi@fred.dev"
 
 function notification {
     terminal-notifier -message "$1"
-    read -pr 'Press enter to continue'
+    pausethescript
 }
 
 function pausethescript {
