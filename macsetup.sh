@@ -1340,8 +1340,10 @@ fi
 #
 # https://slack.com
 #
-installcask slack
-dockutil --add /Applications/Slack.app/ --allhomes
+if [[ ! $(isAppInstalled Slack) ]]; then
+    installcask slack
+    dockutil --add /Applications/Slack.app/ --allhomes
+fi
 
 #
 # Spaceship Prompt
