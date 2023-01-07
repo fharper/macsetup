@@ -1713,8 +1713,10 @@ fi
 #
 # https://github.com/go-jira/jira
 #
-go get github.com/go-jira/jira/cmd/jira
-jira session
+if [[ ! $(isCLAppInstalled jira) ]]; then
+    go get github.com/go-jira/jira/cmd/jira
+    jira session
+fi
 
 #
 # GPG Suite
