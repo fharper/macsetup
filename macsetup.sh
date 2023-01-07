@@ -540,8 +540,9 @@ installkeg terminal-notifier
 #                         #
 ###########################
 
-
-notification "Deactivate the System Integrity Protection with 'csrutil disable' in Recovery Mode"
+if [[ ! $(csrutil status | grep "disabled") ]]; then
+    notification "Deactivate the System Integrity Protection with 'csrutil disable' in Recovery Mode"
+fi
 
 #
 # Alfred & alfred-google-translate & alfred-language-configuration
