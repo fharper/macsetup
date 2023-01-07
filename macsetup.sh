@@ -578,8 +578,10 @@ giveAccessibilityPermission "Bartender 4"
 #
 # https://cleanshot.com
 #
-installcask cleanshot
-notification "install the audio component in Preferences >> Recording >> Audio Recording"
+if [[ ! $(isAppInstalled "CleanShot X") ]]; then
+    installcask cleanshot
+    notification "install the audio component in Preferences >> Recording >> Audio Recording"
+fi
 
 #
 # CommandQ
