@@ -683,16 +683,23 @@ installcask little-snitch
 installkeg mailtrackerblocker
 
 #
-# Logitech Mouse Manager
+# Logi Options+
 #
-# Mouse Configuration
+# Logitech Mouse Configurations App
 #
-# https://www.logitech.com/en-ca/product/options
+# https://www.logitech.com/en-ca/software/logi-options-plus.html
 #
-curl -L https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.zip --output logitech.zip
-unzip logitech.zip
-rm logitech.zip
-openfilewithregex "LogiMgr Installer.*"
+# Notes
+#   - Not using Homebrew as you need to run the installer, and do not know the full path because of the version number
+#
+if [[ ! $(isAppInstalled "Logi Options+") ]]; then
+    curl -L https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip --output logitech.zip
+    unzip logitech.zip
+    rm logitech.zip
+    open -a logioptionsplus_installer.app
+    pausethescript
+    rm logioptionsplus_installer.app
+fi
 
 #
 # Moom
