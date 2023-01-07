@@ -598,7 +598,10 @@ installcask commandq
 #
 installcask contexts
 giveAccessibilityPermission Contexts
-notification "Open the license file from 1Password"
+op document get Contexts --output=contexts.contexts-license
+open contexts.contexts-license
+pausethescript
+rm contexts.contexts-license
 
 #
 # Dropbox
