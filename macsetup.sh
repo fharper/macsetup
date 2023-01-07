@@ -1456,7 +1456,7 @@ installkeg bfg
 #
 # https://github.com/caddyserver/caddy
 #
-brew install caddy
+installkeg caddy
 
 #
 # Charles Proxy
