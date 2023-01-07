@@ -1333,7 +1333,6 @@ if [[ ! $(isAppInstalled "Rain") ]]; then
     loginitems -a Rain
 fi
 
-
 #
 # Slack
 #
