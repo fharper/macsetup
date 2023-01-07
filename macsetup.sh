@@ -1725,11 +1725,13 @@ fi
 #
 # https://gpgtools.org
 #
-installcask gpg-suite
-notification "get my private key from 1Password"
-gpg --import private.key
-git config --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
-git config --global commit.gpgsign true
+if [[ ! $(isAppInstalled "GPG Keychain") ]]; then
+    installcask gpg-suite
+    notification "get my private key from 1Password"
+    gpg --import private.key
+    git config --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
+    git config --global commit.gpgsign true
+fi
 
 #
 # Grip
