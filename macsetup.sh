@@ -619,12 +619,14 @@ installcask dropbox
 #
 # https://github.com/federico-terzi/espanso
 #
-brew tap federico-terzi/espanso
-installkeg espanso
-giveAccessibilityPermission Espanso
-restoreAppSettings espanso
-espanso register
-espanso start
+if [[ ! $(isAppInstalled Espanso) ]]; then
+    brew tap federico-terzi/espanso
+    installkeg espanso
+    giveAccessibilityPermission Espanso
+    restoreAppSettings espanso
+    espanso register
+    espanso start
+fi
 
 #
 # Hammerspoon
