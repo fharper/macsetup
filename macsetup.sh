@@ -1395,9 +1395,11 @@ npm i -g trash-cli
 #
 # https://github.com/microsoft/vscode
 #
-installcask visual-studio-code
-dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
-npm config set editor code
+if [[ ! $(isAppInstalled "Visual Studio Code") ]]; then
+    installcask visual-studio-code
+    dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
+    npm config set editor code
+fi
 
 
 ###################
