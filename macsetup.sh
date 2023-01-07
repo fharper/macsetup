@@ -1373,9 +1373,11 @@ fi
 #
 # https://todoist.com
 #
-mas install 585829637
-dockutil --add /Applications/Todoist.app --allhomes
-loginitems -a Todoist
+if [[ ! $(isAppInstalled Todoist) ]]; then
+    mas install 585829637
+    dockutil --add /Applications/Todoist.app --allhomes
+    loginitems -a Todoist
+fi
 
 #
 # Trash CLI
