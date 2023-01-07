@@ -1198,15 +1198,17 @@ killall SystemUIServer
 # https://github.com/develerik/git-credential-1password
 # https://apps.apple.com/us/app/1password-for-safari/id1569813296
 #
-installcask 1password
-dockutil --add /Applications/1Password.app --allhomes
-installkeg 1password-cli
-eval $(op signin)
-pausethescript
-brew tap develerik/tools
-brew install git-credential-1password
-git config --global credential.helper '!git-credential-1password'
-mas install 1569813296
+if [[ ! $(isAppInstalled 1Password) ]]; then
+    installcask 1password
+    dockutil --add /Applications/1Password.app --allhomes
+    installkeg 1password-cli
+    eval $(op signin)
+    pausethescript
+    brew tap develerik/tools
+    brew install git-credential-1password
+    git config --global credential.helper '!git-credential-1password'
+    mas install 1569813296
+fi
 
 #
 # Antidote
