@@ -1262,10 +1262,12 @@ installcask home-assistant
 #
 # Note: don't install the Homebrew version, it's Mumu, not Mumu X
 #
-curl -L $(op item get "Mumu X" --fields label="download link") --output mumux.dmg
-installDMG mumux.dmg
-loginitems -a "Mumu X"
-giveAccessibilityPermission "Mumu X"
+if [[ ! $(isAppInstalled "Mumu X") ]]; then
+    curl -L $(op item get "Mumu X" --fields label="download link") --output mumux.dmg
+    installDMG mumux.dmg
+    loginitems -a "Mumu X"
+    giveAccessibilityPermission "Mumu X"
+fi
 
 #
 # Notion Enhanced
