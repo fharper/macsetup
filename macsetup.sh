@@ -1232,15 +1232,17 @@ fi
 #
 # https://github.com/brave
 #
-installcask brave-browser
-dockutil --add "/Applications/Brave Browser.app" --position 2 --allhomes
-loginitems -a "Brave Browser"
-defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
-defaults write com.brave.Browser DisablePrintPreview -bool true
-open https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
-open https://chrome.google.com/webstore/detail/antidote/lmbopdiikkamfphhgcckcjhojnokgfeo
-/Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
-notification "Authorize Dropbox for Violentmonkey sync"
+if [[ ! $(isAppInstalled "Brave Browser") ]]; then
+    installcask brave-browser
+    dockutil --add "/Applications/Brave Browser.app" --position 2 --allhomes
+    loginitems -a "Brave Browser"
+    defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
+    defaults write com.brave.Browser DisablePrintPreview -bool true
+    open https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
+    open https://chrome.google.com/webstore/detail/antidote/lmbopdiikkamfphhgcckcjhojnokgfeo
+    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
+    notification "Authorize Dropbox for Violentmonkey sync"
+fi
 
 #
 # Home Assistant
