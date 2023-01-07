@@ -1424,7 +1424,9 @@ installkeg act
 #
 # https://github.com/rhysd/actionlint
 #
-go install github.com/rhysd/actionlint/cmd/actionlint@latest
+if [[ ! $(isCLAppInstalled actionlint) ]]; then
+    go install github.com/rhysd/actionlint/cmd/actionlint@latest
+fi
 
 #
 # aws-cli
