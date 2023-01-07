@@ -378,7 +378,6 @@ if [[ ! $(isCLAppInstalled mas) ]]; then
     installkeg mas
     open -a "App Store"
     notification "Sign in into the App Store"
-    pausethescript
 fi
 
 #
@@ -1009,7 +1008,6 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 #
 open /System/Library/PreferencePanes/Sound.prefPane
 notification 'Uncheck "Show Sound in menu bar"'
-pausethescript
 
 #
 # Sound Effects - Play sound on startup
@@ -1199,7 +1197,6 @@ mas install 1569813296
 #
 open https://services.druide.com/
 notification "Download & install Antidote"
-pausethescript
 filename=openfilewithregex "Antidote.*.dmg"
 dockutil --add /Applications/Antidote/Antidote\ 11.app/
 loginitems -a Antidote
@@ -2425,7 +2422,6 @@ curl -L "$(lastversion noDRM/DeDRM_tools --assets)" --output Calibre-DeDRM.zip
 unzip Calibre-DeDRM.zip "DeDRM_plugin.zip"
 rm Calibre-DeDRM.zip
 notification "Install the DeDRM plugin into Calibre"
-pausethescript
 rm DeDRM_plugin.zip
 
 #
