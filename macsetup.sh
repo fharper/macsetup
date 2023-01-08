@@ -1375,7 +1375,7 @@ fi
 #
 # https://github.com/fharper/rain
 #
-if [[ ! $(isAppInstalled "Rain") ]]; then
+if [[ ! $(isAppInstalled rain) ]]; then
     curl -L https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
     unzip rain.zip
     rm rain.zip
