@@ -1955,8 +1955,10 @@ installcask xcodes
 #
 # https://github.com/yarnpkg/yarn
 #
-installkeg yarn
-yarn config set --home enableTelemetry 0
+if [[ ! $(isCLAppInstalled yarn) ]]; then
+    installkeg yarn
+    yarn config set --home enableTelemetry 0
+fi
 
 #
 # PHP + PHPBrew + Composer
