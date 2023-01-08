@@ -2300,7 +2300,7 @@ installkeg ncdu
 #
 # https://github.com/nmap/nmap
 #
-brew install nmap
+installkeg nmap
 
 #
 # Noti
