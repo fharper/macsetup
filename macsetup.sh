@@ -3162,5 +3162,7 @@ dockutil --move 'Antidote 11' --position end --allhomes
 #
 # https://github.com/IngmarStein/Monolingual
 #
-installcask monolingual
-notification "Use Monolingual to remove unused languages files"
+if [[ ! $(isAppInstalled Monolingual) ]]; then
+    installcask monolingual
+    notification "Use Monolingual to remove unused languages files"
+fi
