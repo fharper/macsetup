@@ -1847,8 +1847,10 @@ npm i -g npm-check-updates
 #
 # https://github.com/squizlabs/PHP_CodeSniffer
 #
-installkeg php-code-sniffer
-phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
+if [[ ! $(isCLAppInstalled phpcs) ]]; then
+    installkeg php-code-sniffer
+    phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
+fi
 
 #
 # Postman
