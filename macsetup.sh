@@ -2412,8 +2412,10 @@ installkeg topgrade
 #
 # https://github.com/VundleVim/Vundle.vim
 #
-git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall
+if [ ! -d "~/.vim/bundle/Vundle.vim" ]; then
+    git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall
+fi
 
 #
 # Wifi Password
