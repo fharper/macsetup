@@ -2475,10 +2475,12 @@ mas install 824171161
 #
 # https://www.akaipro.com/mpc-beats
 #
-curl -L https://cdn.inmusicbrands.com/akai/M2P11C6VI/Install-MPC-Beats-v2.11-2.11.6.8-release-Mac.zip --output mpc-beats.zip
-unzip -j mpc-beats.zip -d .
-rm mpc-beats.zip
-openfilewithregex Install-MPC-Beats*.pkg
+if [[ ! $(isAppInstalled "MPC Beats") ]]; then
+    curl -L https://cdn.inmusicbrands.com/akai/M2P11C6VI/Install-MPC-Beats-v2.11-2.11.6.8-release-Mac.zip --output mpc-beats.zip
+    unzip -j mpc-beats.zip -d .
+    rm mpc-beats.zip
+    openfilewithregex Install-MPC-Beats*.pkg
+fi
 
 #
 # AppCleaner
