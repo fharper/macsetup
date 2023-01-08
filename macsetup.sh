@@ -2560,9 +2560,11 @@ installcask eloston-chromium
 # Data encryption tool
 # Third-party file systems.
 #
-installcask cryptomator
-getLicense Cryptomator
-installcask macfuse
+if [[ ! $(isAppInstalled Cryptomator) ]]; then
+    installcask cryptomator
+    getLicense Cryptomator
+    installcask macfuse
+fi
 
 #
 # CyberDuck
