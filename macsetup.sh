@@ -2041,7 +2041,11 @@ installkeg lynis
 # https://github.com/rust-lang/rust
 # https://github.com/rust-lang/rustup
 #
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+if [[ ! $(isCLAppInstalled rustup-init) ]]; then
+    installkeg rustup-init
+    rustup-init
+    reload
+fi
 
 #
 # ShellCheck
