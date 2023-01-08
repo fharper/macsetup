@@ -2754,9 +2754,11 @@ installcask LyricsX
 #
 # https://github.com/scr34m/MailReceipt
 #
-curl -L "$(lastversion scr34m/MailReceipt --assets)" --output MailReceipt.pkg
-sudo installer -pkg MailReceipt.pkg  -target /
-rm MailReceipt.pkg
+if [ ! -d "/Library/Mail/Bundles/MailReceipt.mailbundle" ]; then
+    curl -L "$(lastversion scr34m/MailReceipt --assets)" --output MailReceipt.pkg
+    sudo installer -pkg MailReceipt.pkg  -target /
+    rm MailReceipt.pkg
+fi
 
 #
 # Messenger
