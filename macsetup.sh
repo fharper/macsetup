@@ -2835,8 +2835,10 @@ mas install 1303222628
 #
 # https://parcelapp.net
 #
-mas install 639968404
-loginitems -a Parcel -s false
+if [[ ! $(isAppInstalled Parcel) ]]; then
+    mas install 639968404
+    loginitems -a Parcel -s false
+fi
 
 #
 # Pika
