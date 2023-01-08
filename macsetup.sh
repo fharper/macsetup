@@ -422,7 +422,15 @@ installkeg jwbargsten/misc/defbro
 #
 # https://github.com/kcrawford/dockutil
 #
-installkeg dockutil
+# Notes
+#   - Homebrew version not updated
+#
+if [[ ! $(isCLAppInstalled dockutil) ]]; then
+    curl -L "$(lastversion kcrawford/dockutil --assets)" --output dockutil.pkg
+    sudo installer -pkg dockutil.pkg -target /
+    pausethescript
+    rm dockutil.pkg
+fi
 
 #
 # Duti
