@@ -3144,11 +3144,11 @@ dockutil --move 'Notion Enhanced' --position end --allhomes
 dockutil --move 'Todoist' --position end --allhomes
 dockutil --move 'Slack' --position end --allhomes
 dockutil --move 'Visual Studio Code' --position end --allhomes
-dockutil --move 'Pocket' --position end --allhomes
 dockutil --move 'iTerm' --position end --allhomes
 dockutil --move 'Spotify' --position end --allhomes
 dockutil --move '1Password' --position end --allhomes
 dockutil --move 'Photos' --position end --allhomes
+dockutil --move 'Pocket' --position end --allhomes
 dockutil --move 'Messages' --position end --allhomes
 dockutil --move 'Antidote 11' --position end --allhomes
 
