@@ -2159,8 +2159,10 @@ installkeg bat
 # https://github.com/athityakumar/colorls
 # https://github.com/ryanoasis/nerd-fonts
 #
-gem install colorls
-installcask font-hack-nerd-font
+if [[ ! $(isCLAppInstalled colorls) ]]; then
+    gem install colorls
+    installcask font-hack-nerd-font
+fi
 
 #
 # Coreutils
