@@ -2856,7 +2856,7 @@ installcask obs
 #
 # https://www.paprikaapp.com
 #
-installFromAppStore "Paprika Recipe Manager" 1303222628
+installFromAppStore "Paprika Recipe Manager 3" 1303222628
 
 #
 # Parcel
