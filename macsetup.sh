@@ -2246,18 +2246,6 @@ installkeg htop
 installkeg httpie
 
 #
-# ICS split
-#
-# Utility to split big .ics files into smaller ones for importing into Google Calendar
-#
-# https://github.com/beorn/icssplit
-#
-# Command:
-# icssplit  hi@fred.dev.ics fredcal --maxsize=900000
-#
-pip3 install icssplit
-
-#
 # ImageMagick
 #
 # https://github.com/ImageMagick/ImageMagick
