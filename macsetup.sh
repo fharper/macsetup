@@ -88,7 +88,8 @@ function isAppInstalled {
     if [[ -n "$app" ]]; then
 	    echo true
     else
-        echo false
+        #Empty instead of false so I can ! on if instead of checking if string is false
+        echo ""
     fi
 }
 
