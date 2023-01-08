@@ -2211,7 +2211,7 @@ installkeg ffmpeg
 #
 # https://github.com/slhck/ffmpeg-quality-metrics
 #
-pip3 install ffmpeg-quality-metrics
+installPythonPackage ffmpeg-quality-metrics
 
 #
 # Ghostscript
