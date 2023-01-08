@@ -107,7 +107,7 @@ function installPythonPackage {
 
     local package=$(pip list | grep "$1")
     if [[ -n "$package" ]]; then
-	chalk red "$1 is already installed"
+	chalk red "Nothing to do, $1 is already installed"
     else
         pip install "$1"
     fi
