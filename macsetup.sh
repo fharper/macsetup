@@ -2733,8 +2733,10 @@ installcask kindle
 #
 # https://www.logitech.com/en-ca/product/spotlight-presentation-remote
 #
-installkeg logitech-presentation
-openfilewithregex "/opt/homebrew/Caskroom/logitech-presentation/1.62.2/LogiPresentation Installer.app"
+if [ ! -d "/Library/Application Support/Logitech.localized/Logitech Presentation.localized/Logitech Presentation.app" ]; then
+    installkeg logitech-presentation
+    openfilewithregex "/opt/homebrew/Caskroom/logitech-presentation/1.62.2/LogiPresentation Installer.app"
+fi
 
 #
 # LyricsX
