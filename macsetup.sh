@@ -414,7 +414,7 @@ fi
 # Notes: need to install before defbro
 #
 if [[ ! $(isAppInstalled Xcode) ]]; then
-    mas install 497799835
+    installFromAppStore XCode 497799835
     chalk blue "Need to use root (sudo) to accept XCode license"
     sudo xcodebuild -license accept
     restoreAppSettings Xcode
@@ -751,7 +751,7 @@ fi
 #
 # install the App Store version since you bought it there
 #
-mas install 419330170
+installFromAppStore Moom 419330170
 
 #
 # Shush
@@ -760,7 +760,7 @@ mas install 419330170
 #
 # https://mizage.com/shush/
 #
-mas install 496437906
+installFromAppStore Shush 496437906
 
 #
 # Sound Control
@@ -1255,7 +1255,7 @@ if [[ ! $(isAppInstalled 1Password) ]]; then
     brew tap develerik/tools
     brew install git-credential-1password
     git config --global credential.helper '!git-credential-1password'
-    mas install 1569813296
+    installFromAppStore "1Password Safari Extension" 1569813296
 fi
 
 #
@@ -1424,7 +1424,7 @@ fi
 # https://todoist.com
 #
 if [[ ! $(isAppInstalled Todoist) ]]; then
-    mas install 585829637
+    installFromAppStore Todoist 585829637
     dockutil --add /Applications/Todoist.app --allhomes
     loginitems -a Todoist
 fi
@@ -2492,7 +2492,7 @@ fi
 #
 # https://affinity.serif.com/en-us/designer
 #
-mas install 824171161
+installFromAppStore "Affinity Designer" 824171161
 
 #
 # Akai Pro MPC Beats
@@ -2522,7 +2522,7 @@ installcask appcleaner
 #
 # https://yoni.ninja/automute/
 #
-mas install 1118136179
+installFromAppStore "AutoMute" 1118136179
 
 #
 # Bearded Spice
@@ -2725,7 +2725,7 @@ installcask igdm
 #
 # https://sindresorhus.com/jiffy
 #
-mas install 1502527999
+installFromAppStore Jiffy 1502527999
 
 #
 # Keybase
@@ -2855,7 +2855,7 @@ installcask obs
 #
 # https://www.paprikaapp.com
 #
-mas install 1303222628
+installFromAppStore "Paprika Recipe Manager" 1303222628
 
 #
 # Parcel
@@ -2865,7 +2865,7 @@ mas install 1303222628
 # https://parcelapp.net
 #
 if [[ ! $(isAppInstalled Parcel) ]]; then
-    mas install 639968404
+    installFromAppStore "Parcel" 639968404
     loginitems -a Parcel -s false
 fi
 
@@ -2886,7 +2886,7 @@ installcask pika
 # https://getpocket.com
 #
 if [[ ! $(isAppInstalled Pocket) ]]; then
-    mas install 568494494
+    installFromAppStore Pocket 568494494
     dockutil --add /Applications/Pocket.app/ --allhomes
 fi
 
@@ -2933,7 +2933,7 @@ installcask sloth
 #
 # https://www.speedtest.net
 #
-mas install 1153157709
+installFromAppStore Speedtest 1153157709
 
 #
 # stats
@@ -3010,7 +3010,7 @@ installcask vlc
 #
 # https://langui.net/webp-viewer
 #
-mas install 1323414118
+installFromAppStore "WebP Viewer: QuickLook & View" 1323414118
 
 #
 # WhatsApp
@@ -3028,7 +3028,7 @@ installcask whatsapp
 #
 # https://www.intuitibits.com/products/wifiexplorer/
 #
-mas install 1408727408
+installFromAppStore "WiFi Explorer Lite" 1408727408
 
 
 #########
@@ -3143,7 +3143,7 @@ duti -s net.langui.WebPViewer org.webmproject.webp all #WebP
 #
 # http://www.innersloth.com/gameAmongUs.php
 #
-mas install 1351168404
+installFromAppStore "Among Us" 1351168404
 
 #
 # Epic Games
