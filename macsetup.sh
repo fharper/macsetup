@@ -2679,7 +2679,9 @@ installcask ha-menu
 #
 # http://www.hemingwayapp.com
 #
-open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
+if [[ ! $(isAppInstalled "Hemingway Editor") ]]; then
+    open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
+fi
 
 #
 # IGdm Messenger
