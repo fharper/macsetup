@@ -739,7 +739,7 @@ if [[ ! $(isAppInstalled logioptionsplus) ]]; then
     rm logitech.zip
     open -a logioptionsplus_installer.app
     pausethescript
-    rm logioptionsplus_installer.app
+    rm -rf logioptionsplus_installer.app
 fi
 
 #
