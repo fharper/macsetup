@@ -1900,11 +1900,13 @@ npm install -g puppeteer
 # Notes:
 # - Use "rbenv install --list-all" to list installable Ruby versions
 #
-installkeg rbenv
-rbenv init
-reload
-rbenv install 3.1.2
-rbenv global 3.1.2
+if [[ ! $(isCLAppInstalled rbenv) ]]; then
+    installkeg rbenv
+    rbenv init
+    reload
+    rbenv install 3.1.2
+    rbenv global 3.1.2
+fi
 
 #
 # React Native CLI
