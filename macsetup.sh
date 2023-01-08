@@ -3011,7 +3011,7 @@ installcask vlc
 #
 # https://langui.net/webp-viewer
 #
-installFromAppStore "WebP Viewer: QuickLook & View" 1323414118
+installFromAppStore "WebPViewer" 1323414118
 
 #
 # WhatsApp
