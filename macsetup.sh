@@ -1924,8 +1924,10 @@ installkeg -cask react-native-cli
 #
 # https://github.com/s3tools/s3cmd
 #
-installkeg s3cmd
-s3cmd --configure
+if [[ ! $(isCLAppInstalled s3cmd) ]]; then
+    installkeg s3cmd
+    s3cmd --configure
+fi
 
 #
 # Stylelint
