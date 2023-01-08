@@ -2450,7 +2450,9 @@ installkeg yt-dlp
 # Note:
 # - run a benchmark, use: ~/zsh-bench/zsh-bench
 #
-git clone https://github.com/romkatv/zsh-bench ~/zsh-bench
+if [ ! -d ~/zsh-bench ]; then
+    git clone https://github.com/romkatv/zsh-bench ~/zsh-bench
+fi
 
 
 ################
