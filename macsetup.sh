@@ -3161,6 +3161,8 @@ dockutil --move 'Antidote 11' --position end --allhomes
 #
 # Monolingual
 #
+# Remove unnecessary language resources from macOS
+#
 # https://github.com/IngmarStein/Monolingual
 #
 if [[ ! $(isAppInstalled Monolingual) ]]; then
