@@ -37,7 +37,7 @@ function installkeg {
     if [[ -n "$alreadyInstalled" ]]; then
         brew install "$1"
     else
-	chalk red "Nothing to do, $1 is already installed"
+	    chalk red "Nothing to do, $1 is already installed"
     fi
 }
 
@@ -53,7 +53,7 @@ function installNodePackages {
     if [[ -z "$alreadyInstalled" ]]; then
         npm install -g "$1"
     else
-	chalk red "Nothing to do, $1 is already installed"
+	    chalk red "Nothing to do, $1 is already installed"
     fi
 }
 
@@ -64,7 +64,18 @@ function installcask {
     if [[ -n "$alreadyInstalled" ]]; then
         brew install --cask $1
     else
-	chalk red "Nothing to do, $1 is already installed"
+	    chalk red "Nothing to do, $1 is already installed"
+    fi
+}
+
+function installFromAppStore {
+    chalk blue "Starting the installation of $1"
+
+    local alreadyInstalled=$(isAppInstalled "$1")
+    if [[ ! $alreadyInstalled ]]; then
+        mas install "$2"
+    else
+	    chalk red "Nothing to do, $1 is already installed"
     fi
 }
 
@@ -75,7 +86,7 @@ function getAppFullPath {
 function isAppInstalled {
     local app=$(getAppFullPath "$1")
     if [[ -n "$app" ]]; then
-	echo true
+	    echo true
     else
         echo false
     fi
