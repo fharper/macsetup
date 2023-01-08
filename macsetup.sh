@@ -1978,14 +1978,16 @@ fi
 # - Need to install olrder version of PHP as PHPBrew isn't comptabile with newer ones
 # - https://github.com/phpbrew/phpbrew/issues/1245
 #
-installkeg php@7.4
-installkeg phpbrew
-brew link --overwrite php@7.4
-phpbrew init
-reload
-phpbrew install 8.1.9 -- --without-pcre-jit
-phpbrew use php-8.1.9
-installkeg composer
+if [[ ! $(isCLAppInstalled phpbrew) ]]; then
+    installkeg php@7.4
+    installkeg phpbrew
+    brew link --overwrite php@7.4
+    phpbrew init
+    reload
+    phpbrew install 8.1.9 -- --without-pcre-jit
+    phpbrew use php-8.1.9
+    installkeg composer
+fi
 
 #
 # Java (OpenJDK with AdoptOpenJDK) + jEnv
