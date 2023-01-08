@@ -2787,8 +2787,10 @@ installcask microsoft-edge
 #
 # https://mindnode.com
 #
-unzip ~/Documents/mac/MindNode/MindNode.zip
-mv MindNode.app /Applications/
+if [[ ! $(isAppInstalled MindNode) ]]; then
+    unzip ~/Documents/mac/MindNode/MindNode.zip
+    mv MindNode.app /Applications/
+fi
 
 #
 # Muzzle
