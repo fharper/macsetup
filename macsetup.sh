@@ -1998,12 +1998,14 @@ fi
 # https://github.com/jenv/jenv
 # https://github.com/adoptium/temurin-build
 #
-installkeg jenv
-reload
-brew tap AdoptOpenJDK/openjdk
-installcask temurin
-jenv add /Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home
-jenv global temurin64-18.0.2.1
+if [[ ! $(isCLAppInstalled jenv) ]]; then
+    installkeg jenv
+    reload
+    brew tap AdoptOpenJDK/openjdk
+    installcask temurin
+    jenv add /Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home
+    jenv global temurin64-18.0.2.1
+fi
 
 #
 # Lynis
