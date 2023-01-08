@@ -3137,6 +3137,7 @@ installcask openemu
 #                 #
 ###################
 
+chalk blue "The Dock will restart a couple of time, giving a flashing impression: it's normal"
 dockutil --move 'Brave Browser' --position end --allhomes
 dockutil --move 'Evernote' --position end --allhomes
 dockutil --move 'Todoist' --position end --allhomes
