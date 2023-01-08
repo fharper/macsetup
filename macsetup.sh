@@ -41,6 +41,22 @@ function installkeg {
     fi
 }
 
+#
+# Install the Node.js package globally, if not already installed
+#
+# @param Node.js package name
+#
+function installNodePackages {
+    chalk blue "Starting the installation of $1"
+
+    local alreadyInstalled=$(npm list -g "$1" | grep "$1")
+    if [[ -z "$alreadyInstalled" ]]; then
+        npm install -g "$1"
+    else
+	chalk red "Nothing to do, $1 is already installed"
+    fi
+}
+
 function installcask {
     chalk blue "Starting the installation of $1"
 
