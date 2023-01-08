@@ -731,8 +731,9 @@ installkeg mailtrackerblocker
 #
 # Notes
 #   - Not using Homebrew as you need to run the installer, and do not know the full path because of the version number
+#   - File name for the app is logioptionsplus, not "Logi Options+" in the "Applications" folder
 #
-if [[ ! $(isAppInstalled "Logi Options+") ]]; then
+if [[ ! $(isAppInstalled logioptionsplus) ]]; then
     curl -L https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip --output logitech.zip
     unzip logitech.zip
     rm logitech.zip
