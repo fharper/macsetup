@@ -3139,6 +3139,7 @@ installcask openemu
 
 chalk blue "The Dock will restart a couple of time, giving a flashing impression: it's normal"
 dockutil --move 'Brave Browser' --position end --allhomes
+dockutil --move 'Mail' --position end --allhomes
 dockutil --move 'Notion Enhanced' --position end --allhomes
 dockutil --move 'Todoist' --position end --allhomes
 dockutil --move 'Slack' --position end --allhomes
