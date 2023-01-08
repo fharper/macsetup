@@ -2978,7 +2978,7 @@ installcask the-unarchiver
 #
 # https://www.apple.com/ca/apple-tv-app/
 #
-if [ ! -d "~/Movies/TV/Media.localized/TV Shows/The Office/" ]; then
+if [ ! -d ~/Movies/TV/Media.localized/TV\ Shows/The\ Office ]; then
     dockutil --remove 'TV' --allhomes
     open -a TV
     notification "Sign into the TV app & download The Office US"
