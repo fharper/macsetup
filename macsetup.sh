@@ -3148,7 +3148,7 @@ dockutil --move 'iTerm' --position end --allhomes
 dockutil --move 'Visual Studio Code' --position end --allhomes
 dockutil --move 'Pocket' --position end --allhomes
 dockutil --move '1Password' --position end --allhomes
-dockutil --move 'Antidote 10' --position end --allhomes
+dockutil --move 'Antidote 11' --position end --allhomes
 
 
 ###############
