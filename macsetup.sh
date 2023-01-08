@@ -567,8 +567,8 @@ if [[ ! $(isAppInstalled "Alfred 5") ]]; then
     defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>1048576</integer></array><key>type</key><string>standard</string></dict></dict>" # Deactivate Spotlight Global Shortcut to use it with Alfred instead (will work after logging off)
     getLicense Alfred
     giveAccessibilityPermission "Alfred 5"
-    npm install -g alfred-google-translate
-    npm install -g alfred-language-configuration
+    installNodePackages alfred-google-translate
+    installNodePackages alfred-language-configuration
     notification "Configure alfred-google-translate with 'trc en&fr'"
 fi
 
@@ -1368,7 +1368,7 @@ fi
 #
 # https://github.com/denysdovhan/spaceship-prompt
 #
-npm install -g spaceship-prompt
+installNodePackages spaceship-prompt
 
 #
 # Spotify
@@ -1402,7 +1402,7 @@ fi
 #
 # https://github.com/sindresorhus/trash-cli
 #
-npm i -g trash-cli
+installNodePackages trash-cli
 
 #
 # Visual Studio Code
@@ -1502,7 +1502,7 @@ installkeg cocoapods
 #
 # https://github.com/apache/cordova-cli
 #
-npm install -g cordova
+installNodePackages cordova
 
 #
 # Deno
@@ -1582,17 +1582,17 @@ installcask docker
 # https://github.com/azeemba/eslint-plugin-json
 #
 installkeg eslint
-npm i -g eslint-formatter-pretty
-npm i -g eslint-plugin-markdown
-npm i -g eslint-plugin-react
-npm i -g @wordpress/eslint-plugin
-npm i -g eslint-plugin-ui-testing
-npm i -g eslint-plugin-jest
-npm i -g eslint-plugin-security-node
-npm i -g eslint-plugin-jsx-a11y
-npm i -g eslint-plugin-i18n
-npm i -g eslint-plugin-jsdoc
-npm i -g eslint-plugin-json
+installNodePackages eslint-formatter-pretty
+installNodePackages eslint-plugin-markdown
+installNodePackages eslint-plugin-react
+installNodePackages @wordpress/eslint-plugin
+installNodePackages eslint-plugin-ui-testing
+installNodePackages eslint-plugin-jest
+installNodePackages eslint-plugin-security-node
+installNodePackages eslint-plugin-jsx-a11y
+installNodePackages eslint-plugin-i18n
+installNodePackages eslint-plugin-jsdoc
+installNodePackages eslint-plugin-json
 
 #
 # Expo CLI
@@ -1601,7 +1601,7 @@ npm i -g eslint-plugin-json
 #
 # https://github.com/expo/expo-cli
 #
-npm install -g expo-cli
+installNodePackages expo-cli
 
 #
 # Gist
@@ -1652,7 +1652,7 @@ git config --replace-all --global add.interactive.useBuiltin false
 #
 # https://github.com/bill-auger/git-branch-status
 #
-npm i -g git-branch-status
+installNodePackages git-branch-status
 
 #
 # Git Large File Storage
@@ -1670,7 +1670,7 @@ installkeg git-lfs
 #
 # https://github.com/paulirish/git-open
 #
-npm i -g git-open
+installNodePackages git-open
 
 #
 # Git Recent
@@ -1783,7 +1783,7 @@ installkeg ios-deploy
 #
 # https://github.com/facebook/jest
 #
-npm install -g jest
+installNodePackages jest
 
 #
 # json2csv
@@ -1792,7 +1792,7 @@ npm install -g jest
 #
 # https://github.com/zemirco/json2csv
 #
-npm install -g json2csv
+installNodePackages json2csv
 
 #
 # JupyterLab
@@ -1836,7 +1836,7 @@ installcask local
 # Node.js testing framework
 #
 # https://github.com/mochajs/mocha
-npm i -g mocha
+installNodePackages mocha
 
 #
 # Multipass
@@ -1854,7 +1854,7 @@ installcask multipass
 #
 # https://github.com/raineorshine/npm-check-updates
 #
-npm i -g npm-check-updates
+installNodePackages npm-check-updates
 
 #
 # PHP_CodeSniffer
@@ -1902,7 +1902,7 @@ installkeg prettier
 #
 # https://github.com/puppeteer/puppeteer
 #
-npm install -g puppeteer
+installNodePackages puppeteer
 
 #
 # Ruby + RBenv
@@ -1952,8 +1952,8 @@ fi
 #
 # https://github.com/stylelint/stylelint
 #
-npm i -g stylelint
-npm i -g stylelint-config-recommended
+installNodePackages stylelint
+installNodePackages stylelint-config-recommended
 
 #
 # Xcodes
@@ -2068,7 +2068,7 @@ installkeg ripgrep
 #
 # https://github.com/IBM/openapi-validator
 #
-npm install -g ibm-openapi-validator
+installNodePackages ibm-openapi-validator
 
 #
 # Vercel CLI
@@ -2086,7 +2086,7 @@ installkeg vercel-cli
 #
 # https://github.com/webhintio/hint
 #
-npm i -g hint
+installNodePackages hint
 
 #
 # Webpack
@@ -2113,7 +2113,7 @@ installkeg wp-cli
 #
 # https://github.com/yeoman/yeoman
 #
-npm i --global yo
+installNodePackages yo
 
 
 ######################
@@ -2184,7 +2184,7 @@ installPythonPackage coursera-dl
 #
 # https://github.com/sindresorhus/empty-trash-cli
 #
-npm i -g empty-trash-cli
+installNodePackages empty-trash-cli
 
 #
 # FFmpeg
@@ -2342,7 +2342,7 @@ installkeg poppler
 #
 # https://github.com/sindresorhus/public-ip-cli
 #
-npm i -g public-ip-cli
+installNodePackages public-ip-cli
 
 #
 # QPDF
