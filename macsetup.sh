@@ -1777,8 +1777,9 @@ fi
 #
 if [[ ! $(isAppInstalled "GPG Keychain") ]]; then
     installcask gpg-suite
-    notification "get my private key from 1Password"
+    op document get "PGP/GPG Key" --output=private.key
     gpg --import private.key
+    rm private.key
     git config --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
     git config --global commit.gpgsign true
 fi
