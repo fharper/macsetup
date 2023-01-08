@@ -2131,8 +2131,10 @@ installNodePackages yo
 #
 # https://github.com/asciinema/asciinema
 #
-installkeg asciinema
-asciinema auth
+if [[ ! $(isCLAppInstalled asciinema) ]]; then
+    installkeg asciinema
+    asciinema auth
+fi
 
 #
 # Bandwhich
