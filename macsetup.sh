@@ -225,6 +225,7 @@ function updateTCC {
     # - indirect_object_code_identity: same as csreq policy_id, so NULL
     # - flags: not sure, always 0
     # - last_modifified: last time entry was modified
+    chalk blue "Need to use root (sudo) to update the TCC database"
     sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "insert into access values('$1', '$app_identifier', 0, 2, 3, 1, '$app_csreq_blob', NULL, 0, 'UNUSED', NULL, 0, CAST(strftime('%s','now') AS INTEGER));"
 }
 
@@ -414,6 +415,7 @@ fi
 #
 if [[ ! $(isAppInstalled Xcode) ]]; then
     mas install 497799835
+    chalk blue "Need to use root (sudo) to accept XCode license"
     sudo xcodebuild -license accept
     restoreAppSettings Xcode
 fi
@@ -439,6 +441,7 @@ installkeg jwbargsten/misc/defbro
 #
 if [[ ! $(isCLAppInstalled dockutil) ]]; then
     curl -L "$(lastversion kcrawford/dockutil --assets)" --output dockutil.pkg
+    chalk blue "Need to use root (sudo) to install the application with the package install"
     sudo installer -pkg dockutil.pkg -target /
     pausethescript
     rm dockutil.pkg
@@ -544,6 +547,7 @@ if [[ ! $(isCLAppInstalled geticon) ]]; then
     curl -L https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
     unzip osxiconutils.zip
     rm osxiconutils.zip
+    chalk blue "Need to use root (sudo) to update /usr/local/bin to correct user & group"
     sudo chown fharper:admin /usr/local/bin
     mv bin/geticon /usr/local/bin/
     mv bin/seticon /usr/local/bin/
@@ -827,6 +831,8 @@ fi
 #                      #
 ########################
 
+chalk blue "Need to use root (sudo) to remove some applications from the Dock"
+
 #
 # Garage Band
 #
@@ -977,6 +983,7 @@ defaults write -g AppleShowAllExtensions -bool true
 # Show Library Folder
 #
 xattr -d com.apple.FinderInfo ~/Library
+chalk blue "Need to use root (sudo) to make ~/Library visibile"
 sudo chflags nohidden ~/Library
 
 #
@@ -1029,11 +1036,13 @@ defaults write com.apple.dock wvous-br-corner -int 0
 #
 # FileVault - Turn On Filevault...
 #
+chalk blue "Need to use root (sudo) to turn on FileVault"
 sudo fdesetup enable
 
 #
 # General - Allow apps downloaded from Anywhere
 #
+chalk blue "Need to use root (sudo) to allow applications to be downloaded from anywhere"
 sudo spctl --master-disable
 
 ##########################
@@ -1045,6 +1054,7 @@ sudo spctl --master-disable
 #
 # Computer name
 #
+chalk blue "Need to use root (sudo) to change the computer name"
 sudo scutil --set ComputerName "lapta"
 sudo scutil --set HostName "lapta"
 sudo scutil --set LocalHostName "lapta"
@@ -1066,6 +1076,7 @@ notification 'Uncheck "Show Sound in menu bar"'
 #
 # Sound Effects - Play sound on startup
 #
+chalk blue "Need to use root (sudo) to disable the startup sound"
 sudo nvram StartupMute=%01
 
 #
@@ -1114,6 +1125,7 @@ defaults write com.apple.dock showMissionControlGestureEnabled -bool false
 #
 # Guest User
 #
+chalk blue "Need to use root (sudo) to deactivate the guest user"
 sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -bool false
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
 
@@ -1132,6 +1144,7 @@ dockutil --add /Applications/iTerm.app/ --allhomes
 #
 # Locate database generation
 #
+chalk blue "Need to use root (sudo) to generate the locate database"
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
 
@@ -2770,6 +2783,7 @@ installcask LyricsX
 #
 if [ ! -d "/Library/Mail/Bundles/MailReceipt.mailbundle" ]; then
     curl -L "$(lastversion scr34m/MailReceipt --assets)" --output MailReceipt.pkg
+    chalk blue "Need to use root (sudo) to install MailReceipt with the application package installer"
     sudo installer -pkg MailReceipt.pkg  -target /
     rm MailReceipt.pkg
 fi
