@@ -2525,6 +2525,8 @@ fi
 #
 # Captin
 #
+# App that show the caps lock status
+#
 # https://captin.mystrikingly.com/
 #
 installcask captin
