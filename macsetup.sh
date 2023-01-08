@@ -3098,7 +3098,7 @@ duti -s com.interversehq.qView public.svg-image all #svg
 duti -s com.qview.qView public.png all # PNG
 
 # WebPViewer
-duti -s net.langui.WebPViewer public.webp all #WebP
+duti -s net.langui.WebPViewer org.webmproject.webp all #WebP
 
 
 #########
