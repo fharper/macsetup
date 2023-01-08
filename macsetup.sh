@@ -2856,8 +2856,10 @@ installcask pika
 #
 # https://getpocket.com
 #
-mas install 568494494
-dockutil --add /Applications/Pocket.app/ --allhomes
+if [[ ! $(isAppInstalled Pocket) ]]; then
+    mas install 568494494
+    dockutil --add /Applications/Pocket.app/ --allhomes
+fi
 
 #
 # Raspberry Pi Imager
