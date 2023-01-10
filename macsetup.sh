@@ -3091,6 +3091,7 @@ duti -s com.apple.Preview com.adobe.pdf all #PDF
 duti -s com.apple.Preview org.openxmlformats.presentationml.presentation all #PPTX
 duti -s com.apple.Preview public.standard-tesselated-geometry-format all #3d CAD
 duti -s com.apple.Preview com.adobe.photoshop-image all # Photoshop
+duti -s com.apple.Preview public.heic all #HEIC
 
 # Visual Studio Code
 duti -s com.microsoft.VSCode public.plain-text all #txt
