@@ -113,6 +113,20 @@ function installPythonPackage {
     fi
 }
 
+function sudo {
+    local needpass=$(/usr/bin/sudo -nv 2>&1 | grep "Input required")
+    #For whatever reason, chalk doesn't play well with $@,
+    # but is fine if the value is stored in another variable
+    local command=$@
+
+    if [[ "$needpass" ]]; then
+        chalk -s blue "The script need to use root (sudo) to run the $command command"
+    else
+        chalk blue "Using previously root (sudo) access to run the $command command"
+    fi
+    /usr/bin/sudo $@
+}
+
 function restoreAppSettings {
     echo "[applications_to_sync]\n$1" > /Users/fharper/.mackup.cfg
     mackup restore
