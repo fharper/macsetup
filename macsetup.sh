@@ -975,18 +975,12 @@ defaults write com.apple.dock tilesize -int 35
 #
 # .DS_Store files creation on Network Disk
 #
-defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 #
-# New Finder windows show
+# Extension Change Warning
 #
-defaults write com.apple.finder NewWindowTarget -string "PfLo"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Downloads"
-
-#
-# Show all filename extensions
-#
-defaults write -g AppleShowAllExtensions -bool true
+defaults write com.apple.finder FXEnableExtensionChangeWarning -boolean false
 
 #
 # Show Library Folder
@@ -995,24 +989,50 @@ xattr -d com.apple.FinderInfo ~/Library
 sudo chflags nohidden ~/Library
 
 #
-# Show Path Bar
+# Settings - General - New Finder windows show
+#
+defaults write com.apple.finder NewWindowTarget -string "PfLo"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Downloads"
+
+#
+# Settings - Advanced - Show all filename extensions
+#
+defaults write -g AppleShowAllExtensions -bool true
+
+#
+# View - Show Path Bar
 #
 defaults write com.apple.finder ShowPathbar -bool true
 
 #
-# Show Status Bar
+# View - Show Status Bar
 #
-defaults write com.apple.finder ShowStatusBar -boolean true
+defaults write com.apple.finder ShowStatusBar -bool true
 
 #
-# Show these items on the desktop - CDs, DVDs, and iPods
+# Settings - General - Show these items on the desktop - CDs, DVDs, and iPods
 #
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 #
-# Show these items on the desktop - External disks
+# Settings - General - Show these items on the desktop - External disks
 #
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+
+#
+# Settings - Sidebad - Show these items in the sidebar
+#
+defaults write com.apple.Finder ShowRecentTags -bool false
+
+#
+# Default Search Scope: search the current folder by default
+#
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+#
+# Expand Save Panel by default
+#
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 #
 # Sidebar Favorites Reordering
@@ -1022,6 +1042,22 @@ mysides add Downloads file:///Users/fharper/Downloads
 mysides add Documents file:///Users/fharper/Documents
 mysides add Dropbox file:///Users/fharper/Dropbox
 mysides add Applications file:///Applications/
+
+
+############
+#          #
+# Keyboard #
+#          #
+############
+
+#
+# Accent characters menu on press & hold a letter with possible accents
+#
+defaults write -g ApplePressAndHoldEnabled -bool true
+
+# Press Fn to
+defaults write com.apple.HIToolbox AppleFnUsageType -bool false
+
 
 ###################
 #                 #
@@ -1096,28 +1132,37 @@ defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
 ###########################
 
 #
+# More Gestures - App Exposé
+#
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -bool false
+
+#
+# More Gestures - Launchpad
+#
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture -bool false
+
+#
+# More Gestures - Mission Control
+#
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -bool false
+
+#
+# More Gestures - Notification Center
+#
+defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -bool false
+
+#
+# More Gestures - Show Desktop
+#
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture -bool false
+
+#
 # Point & Click - Look up & data detector
 #
 defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
 
 # Point & Click - Silent clicking (not in the settings page anymore)
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
-
-#
-# Scroll & Zoom - Smart zoom (NOT WORKING ANYMORE)
-#
-defaults write com.apple.dock showSmartZoomEnabled -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDoubleTapGesture -bool false
-
-#
-# More Gestures - App Exposé
-#
-defaults write com.apple.dock showAppExposeGestureEnabled -bool false
-
-#
-# More Gestures - Mission Control
-#
-defaults write com.apple.dock showMissionControlGestureEnabled -bool false
 
 
 ################################
@@ -1149,80 +1194,17 @@ dockutil --add /Applications/iTerm.app/ --allhomes
 #
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 
-
-
-
-
-
-
-
-# Trackpad - App Exposé & Mission Control (need to be done together)
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.fourFingerVertSwipeGesture -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -bool false
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -bool false
-
-# Trackpad - Swipe between full-screen apps
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerVertSwipeGesture -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -bool false
-defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -bool false
-
-#Disable Show Notification Center on Trackpad
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.twoFingerFromRightEdgeSwipeGesture -bool false
-defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -bool false
-
-#Disable Launchpad and Show Desktop Gestures on Trackpad
-defaults write com.apple.dock showDesktopGestureEnabled -bool true
-defaults write com.apple.dock showLaunchpadGestureEnabled -bool true
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.fourFingerPinchSwipeGesture -bool false
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerPinchGesture -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerPinchGesture -bool false
-defaults -currentHost write NSGlobalDomain com.apple.trackpad.fiveFingerPinchSwipeGesture -bool false
-defaults write com.apple.AppleMultitouchTrackpad TrackpadFiveFingerPinchGesture -bool false
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFingerPinchGesture -bool false
-
-#Deactivate the Force click and haptic feedback from Trackpad manually
-defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -bool false
-
-
-
-#Finder display settings
-defaults write com.apple.finder FXEnableExtensionChangeWarning -boolean false
-defaults write com.apple.finder ShowPathbar -bool true
-defaults write com.apple.Finder ShowRecentTags -bool false
-
-#Show all files extensions
-defaults write -g AppleShowAllExtensions -bool true
-
-# Prevent the dock from moving monitors
-defaults write com.apple.Dock position-immutable -bool true
-
-# Increase sound quality for Bluetooth headphones/headsets
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
-
-#Expand save panel
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
-
-#Search the current folder by default in Finder
-defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
-
-#Change the log in screen background
+#
+# Log-in Screen Background
+#
 cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
 
-# Keyboard - Press Fn to
-# Change to do nothing
-defaults write com.apple.HIToolbox AppleFnUsageType -int 0
+########################
+#                      #
+# Apply Configurations #
+#                      #
+########################
 
-#
-# Disable the accent characters menu
-#
-defaults write -g ApplePressAndHoldEnabled -bool true
-
-#
-# Kill Finder, Dock & SystemUIServer
-#
-# (for applying modified settings)
-#
 killall Finder
 killall Dock
 killall SystemUIServer
