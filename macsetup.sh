@@ -1991,6 +1991,15 @@ installNodePackages stylelint
 installNodePackages stylelint-config-recommended
 
 #
+# Task
+#
+# Task runner (Kubefirst use this for E2E testing)
+#
+# https://github.com/go-task/task
+#
+installkeg go-task
+
+#
 # Xcodes
 #
 # Xcode versions management
