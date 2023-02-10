@@ -307,17 +307,6 @@ if [[ ! $(isCLAppInstalled omz) ]]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-#
-# DisplayLink Manager & DisplayLink Manager MacOS Extension
-#
-# Add the possibility to have more than one external monitor on MacBook M1 with a DisplayLink compatible hub
-# Extension for DisplayLink Manager to work at the login screen
-#
-# https://www.displaylink.com
-#
-installcask displaylink
-installcask displaylink-login-extension
-
 
 ############################
 #                          #
