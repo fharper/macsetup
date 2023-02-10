@@ -21,6 +21,7 @@ function notification {
 autoload colors; colors
 
 function pausethescript {
+    echo $fg[yellow]"$1"$reset_color
     echo "Press ENTER to continue the installation script"
     read -r
 }
