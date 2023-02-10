@@ -1230,7 +1230,7 @@ if [[ ! $(isAppInstalled 1Password) ]]; then
     eval $(op signin)
     pausethescript
     brew tap develerik/tools
-    brew install git-credential-1password
+    installkeg git-credential-1password
     git config --global credential.helper '!git-credential-1password'
     installFromAppStore "1Password Safari Extension" 1569813296
     echo $fg[blue]"Open Safari Settings, and in the Extensions tab, check the box for '1Password for Safari'"$reset_color
