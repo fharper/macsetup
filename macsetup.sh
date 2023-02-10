@@ -280,23 +280,6 @@ if [[ -z $(pgrep oahd) ]]; then
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 fi
 
-#
-# iTerm2
-# iTerm2 Shell Integration
-#
-# Terminal replacement
-#
-# https://github.com/gnachman/iTerm2
-# https://iterm2.com/documentation-shell-integration.html
-#
-if [[ ! $(isAppInstalled iTerm) ]]; then
-    installcask iterm2
-    giveFullDiskAccessPermission iTerm
-
-    curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
-    open -a iTerm
-    exit
-fi
 
 #
 # Oh My Zsh
@@ -306,8 +289,6 @@ fi
 if [[ ! $(isCLAppInstalled omz) ]]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
-
-
 ############################
 #                          #
 # Utils to run this script #
@@ -380,6 +361,25 @@ if [[ "$(isAppInstalled Dropbox)" = "false" ]]; then
     giveAccessibilityPermission Dropbox
     open -a Dropbox
     pausethescript "Wait for Dropbox to finish Mackup folder synchronization (it's needed for restoring applications configurations) before continuing"
+fi
+
+#
+# iTerm2
+# iTerm2 Shell Integration
+#
+# Terminal replacement
+#
+# https://github.com/gnachman/iTerm2
+# https://iterm2.com/documentation-shell-integration.html
+#
+if [[ "$(isAppInstalled iTerm)" = "false" ]]; then
+    installcask iterm2
+    #giveFullDiskAccessPermission iTerm
+
+    curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
+    open -a iTerm
+    echo $fg[yellow]"You can now close the Terminal app, and continue on iTerm"$reset_color
+    exit
 fi
 
 #
