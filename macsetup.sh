@@ -89,7 +89,7 @@ function getAppFullPath {
 function isAppInstalled {
     local app=$(getAppFullPath "$1")
     if [[ -n "$app" ]]; then
-	    echo true
+	echo true
     else
         #Empty instead of false so I can ! on if instead of checking if string is false
         echo ""
