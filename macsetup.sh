@@ -1261,7 +1261,7 @@ if [[ ! $(isAppInstalled 1Password) ]]; then
     pausethescript
     brew tap develerik/tools
     installkeg git-credential-1password
-    git config --global credential.helper '!git-credential-1password'
+    git config --replace-all --global credential.helper '!git-credential-1password'
     installFromAppStore "1Password Safari Extension" 1569813296
     echo $fg[blue]"Open Safari Settings, and in the Extensions tab, check the box for '1Password for Safari'"$reset_color
 fi
@@ -1759,8 +1759,8 @@ if [[ ! $(isAppInstalled "GPG Keychain") ]]; then
     gpg --import private.key
     pausethescript
     rm private.key
-    git config --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
-    git config --global commit.gpgsign true
+    git config --replace-all --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
+    git config --replace-all --global commit.gpgsign true
 fi
 
 #
