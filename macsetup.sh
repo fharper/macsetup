@@ -262,9 +262,12 @@ function getLicense {
 #######################
 
 #
-# Restore different files with Mackup (not app specifics)
+# Disable System Integrity Protection (SIP)
 #
-restoreAppSettings files
+if [[ ! $(csrutil status | grep "disabled") ]]; then
+    echo $fg[red]"Before being able to run this script, deactivate the System Integrity Protection (SIP) with the command 'csrutil disable' in Recovery Mode (press & hold the power button until the option appear)"$reset_color
+    exit
+fi
 
 #
 # Rosetta2
@@ -586,10 +589,6 @@ installkeg terminal-notifier
 # Top Helper Applications #
 #                         #
 ###########################
-
-if [[ ! $(csrutil status | grep "disabled") ]]; then
-    notification "Deactivate the System Integrity Protection with 'csrutil disable' in Recovery Mode"
-fi
 
 #
 # Alfred & alfred-google-translate & alfred-language-configuration
