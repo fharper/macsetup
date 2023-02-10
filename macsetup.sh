@@ -1,4 +1,5 @@
-#!/usr/bin/env zsh
+#!/bin/zsh
+source ~/.zshrc
 
 #
 # - run this script with "zsh macsetup.sh"
