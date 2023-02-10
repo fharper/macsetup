@@ -307,7 +307,7 @@ fi
 # https://github.com/buo/homebrew-cask-upgrade
 # https://github.com/Homebrew/homebrew-cask-fonts
 #
-if [[ ! $(isCLAppInstalled brew) ]]; then
+if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     
     # Needed once here since we didn't restore & source ~/.zshrc yet, but we need Homebrew
@@ -437,7 +437,7 @@ restoreAppSettings files
 # https://github.com/pytest-dev/pytest
 # https://github.com/pypa/twine/
 #
-if [[ ! $(isCLAppInstalled conda) ]]; then
+if [[ "$(isCLAppInstalled conda)" = "false" ]]; then
     installcask miniforge
     conda activate base
     conda install python=3.10.8
@@ -456,7 +456,7 @@ fi
 #
 # Notes: Need to install before Xcode
 #
-if [[ ! $(isCLAppInstalled mas) ]]; then
+if [[ "$(isCLAppInstalled mas)" = "false" ]]; then
     installkeg mas
     open -a "App Store"
     notification "Sign in into the App Store"
@@ -471,7 +471,7 @@ fi
 #
 # Notes: need to install before defbro
 #
-if [[ ! $(isAppInstalled Xcode) ]]; then
+if [[ "$(isAppInstalled Xcode)" = "false" ]]; then
     installFromAppStore XCode 497799835
     sudo xcodebuild -license accept
     restoreAppSettings Xcode
@@ -496,7 +496,7 @@ installkeg jwbargsten/misc/defbro
 # Notes
 #   - Homebrew version not updated
 #
-if [[ ! $(isCLAppInstalled dockutil) ]]; then
+if [[ "$(isCLAppInstalled dockutil)" = "false" ]]; then
     curl -L "$(lastversion kcrawford/dockutil --assets)" --output dockutil.pkg
     sudo installer -pkg dockutil.pkg -target /
     pausethescript
@@ -590,7 +590,7 @@ installkeg BZip2
 #
 # https://github.com/sveinbjornt/osxiconutils
 #
-if [[ ! $(isCLAppInstalled geticon) ]]; then
+if [[ "$(isCLAppInstalled geticon)" = "false" ]]; then
     curl -L https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
     unzip osxiconutils.zip
     rm osxiconutils.zip
@@ -628,7 +628,7 @@ installkeg terminal-notifier
 #
 # https://www.alfredapp.com
 #
-if [[ ! $(isAppInstalled "Alfred 5") ]]; then
+if [[ "$(isAppInstalled "Alfred 5")" = "false" ]]; then
     installcask alfred
     defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>1048576</integer></array><key>type</key><string>standard</string></dict></dict>" # Deactivate Spotlight Global Shortcut to use it with Alfred instead (will work after logging off)
     getLicense Alfred
@@ -655,7 +655,7 @@ giveAccessibilityPermission "Bartender 4"
 #
 # https://cleanshot.com
 #
-if [[ ! $(isAppInstalled "CleanShot X") ]]; then
+if [[ "$(isAppInstalled "CleanShot X")" = "false" ]]; then
     installcask cleanshot
     notification "install the audio component in Preferences >> Recording >> Audio Recording"
 fi
@@ -676,7 +676,7 @@ installcask commandq
 #
 # https://contexts.co
 #
-if [[ ! $(isAppInstalled Contexts) ]]; then
+if [[ "$(isAppInstalled Contexts)" = "false" ]]; then
     installcask contexts
     giveAccessibilityPermission Contexts
     op document get Contexts --output=contexts.contexts-license
@@ -692,7 +692,7 @@ fi
 #
 # https://github.com/federico-terzi/espanso
 #
-if [[ ! $(isAppInstalled Espanso) ]]; then
+if [[ "$(isAppInstalled Espanso)" = "false" ]]; then
     brew tap federico-terzi/espanso
     installkeg espanso
     giveAccessibilityPermission Espanso
@@ -744,7 +744,7 @@ installcask keepingyouawake
 #
 # https://www.obdev.at/products/littlesnitch/index.html
 #
-if [[ ! $(isAppInstalled "Little Snitch") ]]; then
+if [[ "$(isAppInstalled "Little Snitch")" = "false" ]]; then
     installcask little-snitch
     restoreAppSettings littlesnitch
     notification "The rules aren't backup with Mackup, so on the previous computer, open Little Snitch Rules, go to File > Create Backup. On this laptop, open Little Snitch Rules, go to File > Restore from Backup"
@@ -771,7 +771,7 @@ installkeg mailtrackerblocker
 #   - Not using Homebrew as you need to run the installer, and do not know the full path because of the version number
 #   - File name for the app is logioptionsplus, not "Logi Options+" in the "Applications" folder
 #
-if [[ ! $(isAppInstalled logioptionsplus) ]]; then
+if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
     curl -L https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip --output logitech.zip
     unzip logitech.zip
     rm logitech.zip
@@ -819,7 +819,7 @@ installcask sound-control
 # Notes
 # - You cannot remove the clock from the menubar anymore: minimizing used space as analog
 #
-if [[ ! $(isAppInstalled "The Clock") ]]; then
+if [[ "$(isAppInstalled "The Clock")" = "false" ]]; then
     defaults write com.apple.menuextra.clock IsAnalog -bool true
     installcask the-clock
     getLicense "The Clock"
@@ -859,7 +859,7 @@ installcask zoomus
 #
 # https://github.com/agkozak/zsh-z
 #
-if [[ ! $(isCLAppInstalled z) ]]; then
+if [[ "$(isCLAppInstalled z)" = "false" ]]; then
     git clone git@github.com:agkozak/zsh-z.git "$ZSH_CUSTOM"/plugins/zsh-z
 fi
 
@@ -1257,7 +1257,7 @@ killall SystemUIServer
 # https://github.com/develerik/git-credential-1password
 # https://apps.apple.com/us/app/1password-for-safari/id1569813296
 #
-if [[ ! $(isAppInstalled 1Password) ]]; then
+if [[ "$(isAppInstalled 1Password)" = "false" ]]; then
     installcask 1password
     dockutil --add /Applications/1Password.app --allhomes
     installkeg 1password-cli
@@ -1280,7 +1280,7 @@ fi
 #
 # https://www.antidote.info
 #
-if [[ ! $(isAppInstalled "Antidote 11") ]]; then
+if [[ "$(isAppInstalled "Antidote 11")" = "false" ]]; then
     open https://services.druide.com/
     notification "Download & install Antidote"
     filename=openfilewithregex "Antidote.*.dmg"
@@ -1295,7 +1295,7 @@ fi
 #
 # https://github.com/brave
 #
-if [[ ! $(isAppInstalled "Brave Browser") ]]; then
+if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
     installcask brave-browser
     dockutil --add "/Applications/Brave Browser.app" --position 2 --allhomes
     loginitems -a "Brave Browser"
@@ -1325,7 +1325,7 @@ installcask home-assistant
 #
 # Note: don't install the Homebrew version, it's Mumu, not Mumu X
 #
-if [[ ! $(isAppInstalled "Mumu X") ]]; then
+if [[ "$(isAppInstalled "Mumu X")" = "false" ]]; then
     curl -L $(op item get "Mumu X" --fields label="download link") --output mumux.dmg
     installDMG mumux.dmg
     loginitems -a "Mumu X"
@@ -1340,7 +1340,7 @@ fi
 # https://www.notion.so
 # https://github.com/notion-enhancer/desktop
 #
-if [[ ! $(isAppInstalled "Notion Enhanced") ]]; then
+if [[ "$(isAppInstalled "Notion Enhanced")" = "false" ]]; then
     installcask notion-enhanced
     dockutil --add "/Applications/Notion Enhanced.app" --allhomes
 fi
@@ -1352,7 +1352,7 @@ fi
 #
 # https://github.com/Ji4n1ng/OpenInTerminal
 #
-if [[ ! $(isAppInstalled OpenInEditor-Lite) ]]; then
+if [[ "$(isAppInstalled OpenInEditor-Lite)" = "false" ]]; then
     installcask openineditor-lite
     defaults write wang.jianing.app.OpenInEditor-Lite LiteDefaultEditor "Visual Studio Code"
     open /Applications
@@ -1371,7 +1371,7 @@ fi
 #
 # https://github.com/Ji4n1ng/OpenInTerminal
 #
-if [[ ! $(isAppInstalled OpenInTerminal-Lite) ]]; then
+if [[ "$(isAppInstalled OpenInTerminal-Lite)" = "false" ]]; then
     installcask openinterminal-lite
     defaults write wang.jianing.app.OpenInTerminal-Lite LiteDefaultTerminal iTerm
     open /Applications
@@ -1390,7 +1390,7 @@ fi
 #
 # https://github.com/fharper/rain
 #
-if [[ ! $(isAppInstalled rain) ]]; then
+if [[ "$(isAppInstalled rain)" = "false" ]]; then
     curl -L https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
     unzip rain.zip
     rm rain.zip
@@ -1405,7 +1405,7 @@ fi
 #
 # https://slack.com
 #
-if [[ ! $(isAppInstalled Slack) ]]; then
+if [[ "$(isAppInstalled Slack)" = "false" ]]; then
     installcask slack
     dockutil --add /Applications/Slack.app/ --allhomes
 fi
@@ -1426,7 +1426,7 @@ installNodePackages spaceship-prompt
 #
 # https://www.spotify.com
 #
-if [[ ! $(isAppInstalled Spotify) ]]; then
+if [[ "$(isAppInstalled Spotify)" = "false" ]]; then
     installcask spotify
     dockutil --add /Applications/Spotify.app --allhomes
 fi
@@ -1438,7 +1438,7 @@ fi
 #
 # https://todoist.com
 #
-if [[ ! $(isAppInstalled Todoist) ]]; then
+if [[ "$(isAppInstalled Todoist)" = "false" ]]; then
     installFromAppStore Todoist 585829637
     dockutil --add /Applications/Todoist.app --allhomes
     loginitems -a Todoist
@@ -1460,7 +1460,7 @@ installNodePackages trash-cli
 #
 # https://github.com/microsoft/vscode
 #
-if [[ ! $(isAppInstalled "Visual Studio Code") ]]; then
+if [[ "$(isAppInstalled "Visual Studio Code")" = "false" ]]; then
     installcask visual-studio-code
     dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
     npm config set editor code
@@ -1489,7 +1489,7 @@ installkeg act
 #
 # https://github.com/rhysd/actionlint
 #
-if [[ ! $(isCLAppInstalled actionlint) ]]; then
+if [[ "$(isCLAppInstalled actionlint)" = "false" ]]; then
     go install github.com/rhysd/actionlint/cmd/actionlint@latest
 fi
 
@@ -1500,7 +1500,7 @@ fi
 #
 # https://github.com/aws/aws-cli
 #
-if [[ ! $(isCLAppInstalled aws) ]]; then
+if [[ "$(isCLAppInstalled aws)" = "false" ]]; then
     installkeg awscli
     aws configure
 fi
@@ -1530,7 +1530,7 @@ installkeg caddy
 #
 # https://www.charlesproxy.com
 #
-if [[ ! $(isAppInstalled Charles) ]]; then
+if [[ "$(isAppInstalled Charles)" = "false" ]]; then
     installcask charles
     notification "Install Charles Proxy certificate in system & change to always trust"
 fi
@@ -1659,7 +1659,7 @@ installNodePackages expo-cli
 #
 # https://github.com/defunkt/gist
 #
-if [[ ! $(isCLAppInstalled gist) ]]; then
+if [[ "$(isCLAppInstalled gist)" = "false" ]]; then
     installkeg gist
     gist --login
 fi
@@ -1718,7 +1718,7 @@ installkeg git-sizer
 # https://github.com/cli/cli
 # https://github.com/kyanny/gh-pr-draft
 #
-if [[ ! $(isCLAppInstalled gh) ]]; then
+if [[ "$(isCLAppInstalled gh)" = "false" ]]; then
     installkeg gh
     gh auth login
     gh config set editor "code --wait"
@@ -1734,7 +1734,7 @@ fi
 # https://golang.org
 # https://github.com/syndbg/goenv
 #
-if [[ ! $(isCLAppInstalled goenv) ]]; then
+if [[ "$(isCLAppInstalled goenv)" = "false" ]]; then
     installkeg goenv
     reload
     goenv install 1.18.8
@@ -1748,7 +1748,7 @@ fi
 #
 # https://github.com/go-jira/jira
 #
-if [[ ! $(isCLAppInstalled jira) ]]; then
+if [[ "$(isCLAppInstalled jira)" = "false" ]]; then
     go get github.com/go-jira/jira/cmd/jira
     jira session
 fi
@@ -1760,7 +1760,7 @@ fi
 #
 # https://gpgtools.org
 #
-if [[ ! $(isAppInstalled "GPG Keychain") ]]; then
+if [[ "$(isAppInstalled "GPG Keychain")" = "false" ]]; then
     installcask gpg-suite
     op document get "PGP/GPG Key" --output=private.key
     gpg --import private.key
@@ -1884,7 +1884,7 @@ installNodePackages npm-check-updates
 #
 # https://github.com/squizlabs/PHP_CodeSniffer
 #
-if [[ ! $(isCLAppInstalled phpcs) ]]; then
+if [[ "$(isCLAppInstalled phpcs)" = "false" ]]; then
     installkeg php-code-sniffer
     phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
 fi
@@ -1937,7 +1937,7 @@ installNodePackages puppeteer
 # Notes:
 # - Use "rbenv install --list-all" to list installable Ruby versions
 #
-if [[ ! $(isCLAppInstalled rbenv) ]]; then
+if [[ "$(isCLAppInstalled rbenv)" = "false" ]]; then
     installkeg rbenv
     rbenv init
     reload
@@ -1961,7 +1961,7 @@ installkeg -cask react-native-cli
 #
 # https://github.com/s3tools/s3cmd
 #
-if [[ ! $(isCLAppInstalled s3cmd) ]]; then
+if [[ "$(isCLAppInstalled s3cmd)" = "false" ]]; then
     installkeg s3cmd
     s3cmd --configure
 fi
@@ -2001,7 +2001,7 @@ installcask xcodes
 #
 # https://github.com/yarnpkg/yarn
 #
-if [[ ! $(isCLAppInstalled yarn) ]]; then
+if [[ "$(isCLAppInstalled yarn)" = "false" ]]; then
     installkeg yarn
     yarn config set --home enableTelemetry 0
 fi
@@ -2024,7 +2024,7 @@ fi
 # - Need to install olrder version of PHP as PHPBrew isn't comptabile with newer ones
 # - https://github.com/phpbrew/phpbrew/issues/1245
 #
-if [[ ! $(isCLAppInstalled phpbrew) ]]; then
+if [[ "$(isCLAppInstalled phpbrew)" = "false" ]]; then
     installkeg php@7.4
     installkeg phpbrew
     brew link --overwrite php@7.4
@@ -2044,7 +2044,7 @@ fi
 # https://github.com/jenv/jenv
 # https://github.com/adoptium/temurin-build
 #
-if [[ ! $(isCLAppInstalled jenv) ]]; then
+if [[ "$(isCLAppInstalled jenv)" = "false" ]]; then
     installkeg jenv
     reload
     brew tap AdoptOpenJDK/openjdk
@@ -2071,7 +2071,7 @@ installkeg lynis
 # https://github.com/rust-lang/rust
 # https://github.com/rust-lang/rustup
 #
-if [[ ! $(isCLAppInstalled rustup-init) ]]; then
+if [[ "$(isCLAppInstalled rustup-init)" = "false" ]]; then
     installkeg rustup-init
     rustup-init
     reload
@@ -2161,7 +2161,7 @@ installNodePackages yo
 #
 # https://github.com/asciinema/asciinema
 #
-if [[ ! $(isCLAppInstalled asciinema) ]]; then
+if [[ "$(isCLAppInstalled asciinema)" = "false" ]]; then
     installkeg asciinema
     asciinema auth
 fi
@@ -2189,7 +2189,7 @@ installkeg bat
 # https://github.com/athityakumar/colorls
 # https://github.com/ryanoasis/nerd-fonts
 #
-if [[ ! $(isCLAppInstalled colorls) ]]; then
+if [[ "$(isCLAppInstalled colorls)" = "false" ]]; then
     gem install colorls
     installcask font-hack-nerd-font
 fi
@@ -2497,7 +2497,7 @@ installFromAppStore "Affinity Designer" 824171161
 #
 # https://www.akaipro.com/mpc-beats
 #
-if [[ ! $(isAppInstalled "MPC Beats") ]]; then
+if [[ "$(isAppInstalled "MPC Beats")" = "false" ]]; then
     curl -L https://cdn.inmusicbrands.com/akai/M2P11C6VI/Install-MPC-Beats-v2.11-2.11.6.8-release-Mac.zip --output mpc-beats.zip
     unzip -j mpc-beats.zip -d .
     rm mpc-beats.zip
@@ -2535,7 +2535,7 @@ installcask beardedspice
 # https://github.com/kovidgoyal/calibre
 # https://github.com/noDRM/DeDRM_tools
 #
-if [[ ! $(isAppInstalled calibre) ]]; then
+if [[ "$(isAppInstalled calibre)" = "false" ]]; then
     installcask calibre
     curl -L "$(lastversion noDRM/DeDRM_tools --assets)" --output Calibre-DeDRM.zip
     unzip Calibre-DeDRM.zip "DeDRM_plugin.zip"
@@ -2560,7 +2560,7 @@ installcask captin
 #
 # https://www.google.com/chrome
 #
-if [[ ! $(isAppInstalled "Google Chrome") ]]; then
+if [[ "$(isAppInstalled "Google Chrome")" = "false" ]]; then
     installcask google-chrome
     /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
     /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://chrome.google.com/webstore/detail/antidote/lmbopdiikkamfphhgcckcjhojnokgfeo
@@ -2584,7 +2584,7 @@ installcask eloston-chromium
 # Data encryption tool
 # Third-party file systems.
 #
-if [[ ! $(isAppInstalled Cryptomator) ]]; then
+if [[ "$(isAppInstalled Cryptomator)" = "false" ]]; then
     installcask cryptomator
     getLicense Cryptomator
     installcask macfuse
@@ -2703,7 +2703,7 @@ installcask ha-menu
 #
 # http://www.hemingwayapp.com
 #
-if [[ ! $(isAppInstalled "Hemingway Editor") ]]; then
+if [[ "$(isAppInstalled "Hemingway Editor")" = "false" ]]; then
     open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
 fi
 
@@ -2811,7 +2811,7 @@ installcask microsoft-edge
 #
 # https://mindnode.com
 #
-if [[ ! $(isAppInstalled MindNode) ]]; then
+if [[ "$(isAppInstalled MindNode)" = "false" ]]; then
     unzip ~/Documents/mac/MindNode/MindNode.zip
     mv MindNode.app /Applications/
 fi
@@ -2859,7 +2859,7 @@ installFromAppStore "Paprika Recipe Manager 3" 1303222628
 #
 # https://parcelapp.net
 #
-if [[ ! $(isAppInstalled Parcel) ]]; then
+if [[ "$(isAppInstalled Parcel)" = "false" ]]; then
     installFromAppStore "Parcel" 639968404
     loginitems -a Parcel -s false
 fi
@@ -2880,7 +2880,7 @@ installcask pika
 #
 # https://getpocket.com
 #
-if [[ ! $(isAppInstalled Pocket) ]]; then
+if [[ "$(isAppInstalled Pocket)" = "false" ]]; then
     installFromAppStore Pocket 568494494
     dockutil --add /Applications/Pocket.app/ --allhomes
 fi
@@ -3192,7 +3192,7 @@ dockutil --move 'Antidote 11' --position end --allhomes
 #
 # https://github.com/IngmarStein/Monolingual
 #
-if [[ ! $(isAppInstalled Monolingual) ]]; then
+if [[ "$(isAppInstalled Monolingual)" = "false" ]]; then
     installcask monolingual
     notification "Use Monolingual to remove unused languages files"
 fi
