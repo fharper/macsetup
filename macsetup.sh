@@ -3170,5 +3170,6 @@ dockutil --move 'Antidote 11' --position end --allhomes
 #
 if [[ "$(isAppInstalled Monolingual)" = "false" ]]; then
     installcask monolingual
+    open -a Monolingual
     pausethescript "Use Monolingual to remove unused languages files before continuing"
 fi
