@@ -507,15 +507,6 @@ fi
 installkeg duti
 
 #
-# Git
-#
-# File versioning
-#
-# https://github.com/git/git
-#
-installkeg git
-
-#
 # jq
 #
 # https://github.com/stedolan/jq
