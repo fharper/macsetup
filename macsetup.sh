@@ -255,11 +255,13 @@ function getLicense {
 }
 
 
-#######################
-#                     #
-# Pre-Installalations #
-#                     #
-#######################
+############################
+#                          #
+# Utils to run this script #
+#                          #
+# (the order is important) #
+#                          #
+############################
 
 #
 # Disable System Integrity Protection (SIP)
@@ -279,13 +281,6 @@ fi
 if [[ -z $(pgrep oahd) ]]; then
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 fi
-
-############################
-#                          #
-# Utils to run this script #
-#     (needed order)       #
-#                          #
-############################
 
 #
 # Xcode Command Line Tools
