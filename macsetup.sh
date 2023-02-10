@@ -386,7 +386,7 @@ installkeg mackup
 if [[ ! $(isCLAppInstalled conda) ]]; then
     installcask miniforge
     conda activate base
-    conda install python=3.10.6
+    conda install python=3.10.8
     installPythonPackage wheel
     installPythonPackage pylint
     installPythonPackage pytest
