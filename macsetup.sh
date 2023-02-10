@@ -97,8 +97,7 @@ function isAppInstalled {
 }
 
 function isCLAppInstalled {
-    local cli=$(which "$1" | grep "not found")
-    if [[ -z "$cli" ]]; then
+    if which "$1" > /dev/null; then
         echo true
     else
         echo false
