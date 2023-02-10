@@ -708,7 +708,12 @@ installcask keepingyouawake
 #
 # https://www.obdev.at/products/littlesnitch/index.html
 #
-installcask little-snitch
+if [[ ! $(isAppInstalled "Little Snitch") ]]; then
+    installcask little-snitch
+    restoreAppSettings littlesnitch
+    notification "The rules aren't backup with Mackup, so on the previous computer, open Little Snitch Rules, go to File > Create Backup. On this laptop, open Little Snitch Rules, go to File > Restore from Backup"
+fi
+
 
 #
 # MailTrackerBlocker
