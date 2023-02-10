@@ -280,15 +280,6 @@ if [[ -z $(pgrep oahd) ]]; then
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 fi
 
-
-#
-# Oh My Zsh
-#
-# https://github.com/ohmyzsh/ohmyzsh
-#
-if [[ ! $(isCLAppInstalled omz) ]]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
 ############################
 #                          #
 # Utils to run this script #
@@ -413,6 +404,22 @@ git config --replace-all --global push.autoSetupRemote true
 git config --replace-all --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 git config --replace-all --global interactive.diffFilter "diff-so-fancy --patch"
 git config --replace-all --global add.interactive.useBuiltin false
+
+
+#
+# Oh My Zsh
+#
+# https://github.com/ohmyzsh/ohmyzsh
+#
+
+if [[ "$(isCLAppInstalled omz)" = "false" ]]; then 
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+    # Restoring here since OMZ backup ~/.zshrc to ~/.zshrc.pre-oh-my-zsh
+    restoreAppSettings zsh
+    rm ~/.zshrc.pre-oh-my-zsh
+fi
+
 
 #
 # Miniforge + Python + Wheel + Pylint + pytest + Twine
