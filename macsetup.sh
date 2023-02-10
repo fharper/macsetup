@@ -367,6 +367,22 @@ fi
 installkeg mackup
 
 #
+# Dropbox
+#
+# File sharing & computer backup
+#
+# https://www.dropbox.com
+#
+# Notes: needed right after mackup so configurations files can be restored
+#
+if [[ "$(isAppInstalled Dropbox)" = "false" ]]; then
+    installcask dropbox
+    giveAccessibilityPermission Dropbox
+    open -a Dropbox
+    pausethescript "Wait for Dropbox to finish Mackup folder synchronization (it's needed for restoring applications configurations) before continuing"
+fi
+
+#
 # Miniforge + Python + Wheel + Pylint + pytest + Twine
 #
 # Python virtual environment manager
@@ -639,15 +655,6 @@ if [[ ! $(isAppInstalled Contexts) ]]; then
     pausethescript
     rm contexts.contexts-license
 fi
-
-#
-# Dropbox
-#
-# File sharing & computer backup
-#
-# https://www.dropbox.com
-#
-installcask dropbox
 
 #
 # Espanso
