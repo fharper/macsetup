@@ -421,6 +421,12 @@ if [[ "$(isCLAppInstalled omz)" = "false" ]]; then
 fi
 
 
+
+#
+# Restore different files with Mackup (not app specifics)
+#
+restoreAppSettings files
+
 #
 # Miniforge + Python + Wheel + Pylint + pytest + Twine
 #
