@@ -1251,6 +1251,7 @@ if [[ "$(isAppInstalled 1Password)" = "false" ]]; then
     installcask 1password
     dockutil --add /Applications/1Password.app --allhomes
     installkeg 1password-cli
+    open -a 1Password
     pausethescript "Open 1Password settings, and check 'Connect with 1Password CLI' & click the 'Set up SSH Agent' button in the 'Developer' tab before continuing"
     restoreAppSettings ssh
     eval $(op signin)
