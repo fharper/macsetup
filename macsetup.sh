@@ -324,6 +324,7 @@ fi
 #
 if [[ $(xcode-select -p 1> /dev/null; echo $?) -eq 2 ]]; then
     xcode-select --install
+    pausethescript "Wait for the XCode Tools installation to finish before continuing."
 fi
 
 #
