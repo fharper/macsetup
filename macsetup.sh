@@ -745,16 +745,6 @@ if [[ "$(isAppInstalled "Little Snitch")" = "false" ]]; then
     pausethescript "The rules aren't backup with Mackup, so on the previous computer, open Little Snitch Rules, go to File > Create Backup. On this laptop, open Little Snitch Rules, go to File > Restore from Backup before continuing"
 fi
 
-
-#
-# MailTrackerBlocker
-#
-# Email tracker, read receipt and spy pixel blocker plugin for Apple Mail
-#
-# https://github.com/apparition47/MailTrackerBlocker
-#
-installkeg mailtrackerblocker
-
 #
 # Logi Options+
 #
@@ -920,6 +910,11 @@ dockutil --remove 'FaceTime' --allhomes
 # Launchpad
 #
 dockutil --remove 'Launchpad' --allhomes
+
+#
+# Mail
+#
+dockutil --remove 'Mail' --allhomes
 
 #
 # Maps
@@ -2766,19 +2761,6 @@ fi
 installcask LyricsX
 
 #
-# MailReceipt
-#
-# Delivery notification & read receipt requests for Apple Mail
-#
-# https://github.com/scr34m/MailReceipt
-#
-if [ ! -d "/Library/Mail/Bundles/MailReceipt.mailbundle" ]; then
-    curl -L "$(lastversion scr34m/MailReceipt --assets)" --output MailReceipt.pkg
-    sudo installer -pkg MailReceipt.pkg  -target /
-    rm MailReceipt.pkg
-fi
-
-#
 # Messenger
 #
 # Facebook Messenger Client
@@ -3159,7 +3141,6 @@ installcask openemu
 
 echo $fg[blue]"The Dock will restart a couple of time, giving a flashing impression: it's normal"$reset_color
 dockutil --move 'Brave Browser' --position end --allhomes
-dockutil --move 'Mail' --position end --allhomes
 dockutil --move 'Notion Enhanced' --position end --allhomes
 dockutil --move 'Todoist' --position end --allhomes
 dockutil --move 'Slack' --position end --allhomes
