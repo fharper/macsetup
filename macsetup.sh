@@ -29,7 +29,7 @@ function pausethescript {
 function openfilewithregex {
     local file=$(find . -maxdepth 1 -execdir echo {} ';'  | grep "$1")
     open "${file}"
-    pausethescript
+    pausethescript "Wait for the $file installtion to end before continuing."
     rm "${file}"
 }
 
@@ -498,7 +498,7 @@ installkeg jwbargsten/misc/defbro
 if [[ "$(isCLAppInstalled dockutil)" = "false" ]]; then
     curl -L "$(lastversion kcrawford/dockutil --assets)" --output dockutil.pkg
     sudo installer -pkg dockutil.pkg -target /
-    pausethescript
+    pausethescript "Wait for Dockutil installation to finish before continuing"
     rm dockutil.pkg
 fi
 
@@ -680,7 +680,7 @@ if [[ "$(isAppInstalled Contexts)" = "false" ]]; then
     giveAccessibilityPermission Contexts
     op document get Contexts --output=contexts.contexts-license
     open contexts.contexts-license
-    pausethescript
+    pausethescript "Wait for Contexts installation to finish before continuing"
     rm contexts.contexts-license
 fi
 
@@ -775,7 +775,7 @@ if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
     unzip logitech.zip
     rm logitech.zip
     open -a logioptionsplus_installer.app
-    pausethescript
+    pausethescript "Wait for Logi Options+ installation to finish before continuing"
     rm -rf logioptionsplus_installer.app
 fi
 
@@ -1260,11 +1260,10 @@ if [[ "$(isAppInstalled 1Password)" = "false" ]]; then
     installcask 1password
     dockutil --add /Applications/1Password.app --allhomes
     installkeg 1password-cli
-    echo $fg[blue]"Open 1Password settings, and check 'Connect with 1Password CLI' & click the 'Set up SSH Agent' button in the 'Developer' tab."$reset_color
-    pausethescript
+    pausethescript "Open 1Password settings, and check 'Connect with 1Password CLI' & click the 'Set up SSH Agent' button in the 'Developer' tab before continuing"
     restoreAppSettings ssh
     eval $(op signin)
-    pausethescript
+    pausethescript "Sign in to 1Password before continuing"
     brew tap develerik/tools
     installkeg git-credential-1password
     git config --replace-all --global credential.helper '!git-credential-1password'
@@ -1763,7 +1762,7 @@ if [[ "$(isAppInstalled "GPG Keychain")" = "false" ]]; then
     installcask gpg-suite
     op document get "PGP/GPG Key" --output=private.key
     gpg --import private.key
-    pausethescript
+    pausethescript "Enter your passphrase to finish the import of your private PGP key before continuing"
     rm private.key
     git config --replace-all --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
     git config --replace-all --global commit.gpgsign true
