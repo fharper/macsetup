@@ -14,10 +14,6 @@ source ~/.zshrc
 
 email="hi@fred.dev"
 
-function notification {
-    terminal-notifier -message "$1"
-    pausethescript
-}
 autoload colors; colors
 
 function pausethescript {
@@ -250,7 +246,7 @@ function updateTCC {
 #
 function getLicense {
     op item get "$1" --fields label="license key" | pbcopy
-    notification "Add the license key from the clipboard to $1"
+    pausethescript "Add the license key from the clipboard to $1 before continuing"
 }
 
 
@@ -458,7 +454,7 @@ fi
 if [[ "$(isCLAppInstalled mas)" = "false" ]]; then
     installkeg mas
     open -a "App Store"
-    notification "Sign in into the App Store"
+    pausethescript "Sign in into the App Store before continuing"
 fi
 
 #
@@ -634,7 +630,7 @@ if [[ "$(isAppInstalled "Alfred 5")" = "false" ]]; then
     giveAccessibilityPermission "Alfred 5"
     installNodePackages alfred-google-translate
     installNodePackages alfred-language-configuration
-    notification "Configure alfred-google-translate with 'trc en&fr'"
+    pausethescript "Configure alfred-google-translate with 'trc en&fr' before continuing"
 fi
 
 #
@@ -656,7 +652,7 @@ giveAccessibilityPermission "Bartender 4"
 #
 if [[ "$(isAppInstalled "CleanShot X")" = "false" ]]; then
     installcask cleanshot
-    notification "install the audio component in Preferences >> Recording >> Audio Recording"
+    pausethescript "Install the audio component in Preferences >> Recording >> Audio Recording before continuing"
 fi
 
 #
@@ -746,7 +742,7 @@ installcask keepingyouawake
 if [[ "$(isAppInstalled "Little Snitch")" = "false" ]]; then
     installcask little-snitch
     restoreAppSettings littlesnitch
-    notification "The rules aren't backup with Mackup, so on the previous computer, open Little Snitch Rules, go to File > Create Backup. On this laptop, open Little Snitch Rules, go to File > Restore from Backup"
+    pausethescript "The rules aren't backup with Mackup, so on the previous computer, open Little Snitch Rules, go to File > Create Backup. On this laptop, open Little Snitch Rules, go to File > Restore from Backup before continuing"
 fi
 
 
@@ -1139,7 +1135,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 # Show volume in menu bar
 #
 open /System/Library/PreferencePanes/Sound.prefPane
-notification 'Uncheck "Show Sound in menu bar"'
+pausethescript "Uncheck 'Show Sound in menu bar' before continuing"
 
 #
 # Sound Effects - Play sound on startup
@@ -1268,7 +1264,7 @@ if [[ "$(isAppInstalled 1Password)" = "false" ]]; then
     installkeg git-credential-1password
     git config --replace-all --global credential.helper '!git-credential-1password'
     installFromAppStore "1Password Safari Extension" 1569813296
-    echo $fg[blue]"Open Safari Settings, and in the Extensions tab, check the box for '1Password for Safari'"$reset_color
+    pausethescript "Open Safari Settings, and in the Extensions tab, check the box for '1Password for Safari' before continuing"
 fi
 
 #
@@ -1280,7 +1276,7 @@ fi
 #
 if [[ "$(isAppInstalled "Antidote 11")" = "false" ]]; then
     open https://services.druide.com/
-    notification "Download & install Antidote"
+    pausethescript "Download Antidote in the macsetup folder before continuing"
     filename=openfilewithregex "Antidote.*.dmg"
     dockutil --add /Applications/Antidote/Antidote\ 11.app/
     loginitems -a Antidote
@@ -1302,7 +1298,7 @@ if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
     open https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
     open https://chrome.google.com/webstore/detail/antidote/lmbopdiikkamfphhgcckcjhojnokgfeo
     /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
-    notification "Authorize Dropbox for Violentmonkey sync"
+    pausethescript "Authorize Dropbox for Violentmonkey sync before continuing"
 fi
 
 #
@@ -1354,7 +1350,7 @@ if [[ "$(isAppInstalled OpenInEditor-Lite)" = "false" ]]; then
     installcask openineditor-lite
     defaults write wang.jianing.app.OpenInEditor-Lite LiteDefaultEditor "Visual Studio Code"
     open /Applications
-    notification "drag openineditor-lite in Finder toolbar while pressing Command"
+    pausethescript "drag openineditor-lite in Finder toolbar while pressing Command before continuing"
     curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
     unzip icons.zip
     rm icons.zip
@@ -1373,7 +1369,7 @@ if [[ "$(isAppInstalled OpenInTerminal-Lite)" = "false" ]]; then
     installcask openinterminal-lite
     defaults write wang.jianing.app.OpenInTerminal-Lite LiteDefaultTerminal iTerm
     open /Applications
-    notification "drag openinterminal-lite in Finder toolbar while pressing Command"
+    pausethescript "drag openinterminal-lite in Finder toolbar while pressing Command before continuing"
     curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
     unzip icons.zip
     rm icons.zip
@@ -1530,7 +1526,7 @@ installkeg caddy
 #
 if [[ "$(isAppInstalled Charles)" = "false" ]]; then
     installcask charles
-    notification "Install Charles Proxy certificate in system & change to always trust"
+    pausethescript "Install Charles Proxy certificate in system & change to always trust before continuing"
 fi
 
 #
@@ -2538,7 +2534,7 @@ if [[ "$(isAppInstalled calibre)" = "false" ]]; then
     curl -L "$(lastversion noDRM/DeDRM_tools --assets)" --output Calibre-DeDRM.zip
     unzip Calibre-DeDRM.zip "DeDRM_plugin.zip"
     rm Calibre-DeDRM.zip
-    notification "Install the DeDRM plugin into Calibre"
+    pausethescript "Install the DeDRM plugin into Calibre before continuing"
     rm DeDRM_plugin.zip
 fi
 
@@ -2974,7 +2970,7 @@ installcask the-unarchiver
 if [ ! -d ~/Movies/TV/Media.localized/TV\ Shows/The\ Office ]; then
     dockutil --remove 'TV' --allhomes
     open -a TV
-    notification "Sign into the TV app & download The Office US"
+    pausethescript "Sign into the TV app & download all The Office US episodes before continuing"
 fi
 
 #
@@ -3192,5 +3188,5 @@ dockutil --move 'Antidote 11' --position end --allhomes
 #
 if [[ "$(isAppInstalled Monolingual)" = "false" ]]; then
     installcask monolingual
-    notification "Use Monolingual to remove unused languages files"
+    pausethescript "Use Monolingual to remove unused languages files before continuing"
 fi
