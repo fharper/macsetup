@@ -18,6 +18,7 @@ function notification {
     terminal-notifier -message "$1"
     pausethescript
 }
+autoload colors; colors
 
 function pausethescript {
     echo "Press ENTER to continue the installation script"
@@ -32,13 +33,13 @@ function openfilewithregex {
 }
 
 function installkeg {
-    chalk blue "Starting the installation of $1"
+    echo $fg[blue]"Starting the installation of $1"$reset_color
 
     local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
     if [[ -n "$alreadyInstalled" ]]; then
         brew install "$1"
     else
-	    chalk red "Nothing to do, $1 is already installed"
+	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
     fi
 }
 
@@ -48,35 +49,35 @@ function installkeg {
 # @param Node.js package name
 #
 function installNodePackages {
-    chalk blue "Starting the installation of $1"
+    echo $fg[blue]"Starting the installation of $1"$reset_color
 
     local alreadyInstalled=$(npm list -g "$1" | grep "$1")
     if [[ -z "$alreadyInstalled" ]]; then
         npm install -g "$1"
     else
-	    chalk red "Nothing to do, $1 is already installed"
+	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
     fi
 }
 
 function installcask {
-    chalk blue "Starting the installation of $1"
+    echo $fg[blue]"Starting the installation of $1"$reset_color
 
     local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
     if [[ -n "$alreadyInstalled" ]]; then
         brew install --cask $1
     else
-	    chalk red "Nothing to do, $1 is already installed"
+	echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
     fi
 }
 
 function installFromAppStore {
-    chalk blue "Starting the installation of $1"
+    echo $fg[blue]"Starting the installation of $1"$reset_color
 
     local alreadyInstalled=$(isAppInstalled "$1")
     if [[ ! $alreadyInstalled ]]; then
         mas install "$2"
     else
-	    chalk red "Nothing to do, $1 is already installed"
+	echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
     fi
 }
 
@@ -104,11 +105,11 @@ function isCLAppInstalled {
 }
 
 function installPythonPackage {
-    chalk blue "Installing the Python package $1"
+    echo $fg[blue]"Installing the Python package $1"$reset_color
 
     local package=$(pip list | grep "$1")
     if [[ -n "$package" ]]; then
-	chalk red "Nothing to do, $1 is already installed"
+	echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
     else
         pip install "$1"
     fi
@@ -121,9 +122,9 @@ function sudo {
     local command=$@
 
     if [[ "$needpass" ]]; then
-        chalk -s blue "The script need to use root (sudo) to run the $command command"
+        echo $fg[blue]"The script need to use root (sudo) to run the $command command"$reset_color
     else
-        chalk blue "Using previously root (sudo) access to run the $command command"
+        echo $fg[blue]"Using previously root (sudo) access to run the $command command"$reset_color
     fi
     /usr/bin/sudo $@
 }
@@ -1234,12 +1235,15 @@ if [[ ! $(isAppInstalled 1Password) ]]; then
     installcask 1password
     dockutil --add /Applications/1Password.app --allhomes
     installkeg 1password-cli
+    echo $fg[blue]"Open 1Password settings, and check 'Connect with 1Password CLI' in the 'Developer' tab."$reset_color
+    pausethescript
     eval $(op signin)
     pausethescript
     brew tap develerik/tools
     brew install git-credential-1password
     git config --global credential.helper '!git-credential-1password'
     installFromAppStore "1Password Safari Extension" 1569813296
+    echo $fg[blue]"Open Safari Settings, and in the Extensions tab, check the box for '1Password for Safari'"$reset_color
 fi
 
 #
@@ -3161,7 +3165,7 @@ installcask openemu
 #                 #
 ###################
 
-chalk blue "The Dock will restart a couple of time, giving a flashing impression: it's normal"
+echo $fg[blue]"The Dock will restart a couple of time, giving a flashing impression: it's normal"$reset_color
 dockutil --move 'Brave Browser' --position end --allhomes
 dockutil --move 'Mail' --position end --allhomes
 dockutil --move 'Notion Enhanced' --position end --allhomes
