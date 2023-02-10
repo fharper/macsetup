@@ -415,8 +415,6 @@ if [[ "$(isCLAppInstalled omz)" = "false" ]]; then
     rm ~/.zshrc.pre-oh-my-zsh
 fi
 
-
-
 #
 # Restore different files with Mackup (not app specifics)
 #
