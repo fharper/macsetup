@@ -1366,8 +1366,6 @@ if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
     loginitems -a "Brave Browser"
     defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
     defaults write com.brave.Browser DisablePrintPreview -bool true
-    open https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
-    open https://chrome.google.com/webstore/detail/antidote/lmbopdiikkamfphhgcckcjhojnokgfeo
     defbro com.brave.Browser
     /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
     pausethescript "Authorize Dropbox for Violentmonkey sync before continuing"
