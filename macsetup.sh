@@ -462,7 +462,9 @@ fi
 #
 # Restore different files with Mackup (not app specifics)
 #
-restoreAppSettings files
+if [[ ! -L "/Users/fharper/.zshrc" ]]; then
+    restoreAppSettings files
+fi
 
 #
 # Miniforge + Python + Wheel + Pylint + pytest + Twine
