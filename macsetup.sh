@@ -102,6 +102,11 @@ function installcask {
     fi
 }
 
+#
+# Install a App Store application, if not already installed
+#
+# @param the application ID
+#
 function installFromAppStore {
     echo $fg[blue]"Starting the installation of $1"$reset_color
 
