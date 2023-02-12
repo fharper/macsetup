@@ -63,7 +63,7 @@ function installcask {
     if [[ -n "$alreadyInstalled" ]]; then
         brew install --cask $1
     else
-	echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
     fi
 }
 
