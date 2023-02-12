@@ -32,7 +32,6 @@ function pausethescript {
 
 #
 # Open file without knowing their exact file name.
-# Useful when opening a DMG or PKG file I downloaded which contains a version number I'm not aware about yet. 
 #
 # @param part of the file name
 #
