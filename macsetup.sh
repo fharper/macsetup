@@ -72,8 +72,7 @@ function installNodePackages {
 function installcask {
     echo $fg[blue]"Starting the installation of $1"$reset_color
 
-    local alreadyInstalled=$(brew list "$1" 2>&1)
-    if [[ -n "$alreadyInstalled" ]]; then
+    if [[ "$(isAppInstalled $1)" = "false" ]]; then
         brew install --cask $1
     else
 	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
