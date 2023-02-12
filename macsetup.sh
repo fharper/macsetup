@@ -768,7 +768,7 @@ fi
 #
 if [[ "$(isAppInstalled Espanso)" = "false" ]]; then
     brew tap federico-terzi/espanso
-    installkeg espanso
+    installcask espanso
     giveAccessibilityPermission Espanso
     restoreAppSettings espanso
     espanso service register
