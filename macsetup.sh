@@ -56,7 +56,7 @@ function isAppInstalled {
 }
 
 #
-# Install a Homebrew Keg
+# Install a Homebrew Keg, if not already installed
 #
 # @param the application name
 #
