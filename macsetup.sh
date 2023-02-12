@@ -1022,9 +1022,9 @@ dockutil --remove 'Reminders' --allhomes
 dockutil --remove 'Safari' --allhomes
 
 #
-# System Preferences
+# System Settings
 #
-dockutil --remove 'System Preferences' --allhomes
+dockutil --remove 'System Settings' --allhomes
 
 
 ###############################
