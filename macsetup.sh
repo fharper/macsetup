@@ -201,6 +201,22 @@ function restoreAppSettings {
 }
 
 #
+# Install the application from PKG inside of a DMG
+#
+# @param DMG filename
+#
+function installPKGfromDMG {
+    hdiutil attach "$1"
+    local volume="/Volumes/$(hdiutil info | grep /Volumes/ | sed 's@.*\/Volumes/@@')"
+    local pkg=$(/bin/ls "$volume" | grep .pkg)
+    sudo installer -pkg "$volume/$pkg" -target /
+    pausethescript "Wait for the app installation to finish before continuing"
+    rm "$pkg"
+    hdiutil detach "$volume"
+    rm "$1"
+}
+
+#
 # Install the application from a DMG image when you just need to move the
 # application into the macOS Applications folder
 #
