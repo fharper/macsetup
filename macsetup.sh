@@ -117,6 +117,13 @@ function installFromAppStore {
     fi
 }
 
+#
+# Obtain the full path of a GUI application
+#
+# @param the application name
+#
+# @return the full path of the application, empty if it does not exist
+#
 function getAppFullPath {
     mdfind -name 'kMDItemFSName=="'"$1"'.app"' -onlyin /Applications -onlyin /System/Applications
 }
