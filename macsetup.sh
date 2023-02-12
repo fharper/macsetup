@@ -27,6 +27,12 @@ function pausethescript {
     read -r
 }
 
+#
+# Open file without knowing their exact file name.
+# Useful when opening a DMG or PKG file I downloaded which contains a version number I'm not aware about yet. 
+#
+# @param part of the file name
+#
 function openfilewithregex {
     local file=$(find . -maxdepth 1 -execdir echo {} ';'  | grep "$1")
     open "${file}"
