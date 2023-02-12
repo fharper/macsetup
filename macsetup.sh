@@ -559,6 +559,9 @@ installcask mysides
 # https://github.com/nodejs/node
 # https://github.com/npm/cli
 #
+# Notes:
+#  - Use "nvm ls-remote" to list all Node.js installable versions
+#
 if [[ -n $(brew list "$1" 2>&1 | grep "No such keg") ]]; then
     installkeg nvm
     reload
