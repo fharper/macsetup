@@ -942,7 +942,9 @@ installcask TripMode
 #
 # https://zoom.us
 #
-installcask zoom
+if [[ "$(isAppInstalled "zoom.us")" = "false" ]]; then
+    installcask zoom
+fi
 
 
 ########################
