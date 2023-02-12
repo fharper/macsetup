@@ -840,7 +840,7 @@ if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
     curl -L https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip --output logitech.zip
     unzip logitech.zip
     rm logitech.zip
-    open -a logioptionsplus_installer.app
+    open logioptionsplus_installer.app
     pausethescript "Wait for Logi Options+ installation to finish before continuing"
     rm -rf logioptionsplus_installer.app
 fi
