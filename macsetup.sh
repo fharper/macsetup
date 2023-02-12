@@ -14,6 +14,9 @@ source ~/.zshrc
 
 email="hi@fred.dev"
 
+#
+# Load the colors function from ZSH
+#
 autoload colors; colors
 
 #
