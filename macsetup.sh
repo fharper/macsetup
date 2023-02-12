@@ -143,6 +143,11 @@ function isCLAppInstalled {
     fi
 }
 
+#
+# Install a Python package, if not already installed
+#
+# @param the package name
+#
 function installPythonPackage {
     echo $fg[blue]"Installing the Python package $1"$reset_color
 
