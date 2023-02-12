@@ -717,8 +717,10 @@ fi
 #
 # https://www.macbartender.com
 #
-installcask bartender
-giveAccessibilityPermission "Bartender 4"
+if [[ "$(isAppInstalled "Bartender 4")" = "false" ]]; then
+    installcask bartender
+    giveAccessibilityPermission "Bartender 4"
+fi
 
 #
 # CleanShot X
