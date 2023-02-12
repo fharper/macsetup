@@ -716,6 +716,8 @@ giveAccessibilityPermission "Bartender 4"
 #
 if [[ "$(isAppInstalled "CleanShot X")" = "false" ]]; then
     installcask cleanshot
+    getLicense "CleanShot X"
+    open -a "CleanShot X"
     pausethescript "Install the audio component for video audio recording before continuing. Go in Settings >> Recording >> Video >> Computer Audio, and click on the 'Configure' button. In the new window, check the 'Record Computer Audio' checkbox, and click 'Install' in the popup."
 fi
 
