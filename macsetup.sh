@@ -916,7 +916,7 @@ installcask TripMode
 #
 # https://zoom.us
 #
-installcask zoomus
+installcask zoom
 
 
 ########################
