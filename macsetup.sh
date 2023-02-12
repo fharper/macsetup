@@ -572,9 +572,8 @@ installcask mysides
 if [[ -n $(brew list "$1" 2>&1 | grep "No such keg") ]]; then
     installkeg nvm
     reload
-    #mkdir ~/.nvm
-    nvm install v18.0.0
-    nvm use v18.0.0
+    nvm install v19.6.0
+    nvm use v19.6.0
     npm i -g npm@latest
     npm adduser
 fi
