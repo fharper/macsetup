@@ -1723,6 +1723,9 @@ fi
 # https://golang.org
 # https://github.com/syndbg/goenv
 #
+# Notes:
+#  - List installable Go versions with "goenv install --list"
+#
 if [[ "$(isCLAppInstalled goenv)" = "false" ]]; then
     installkeg goenv
     reload
