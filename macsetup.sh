@@ -55,6 +55,13 @@ function isAppInstalled {
     fi
 }
 
+#
+# Detect if Homebrew Keg has been installed
+#
+# @param the application name
+#
+# @return true if installed, false if not
+#
 function installkeg {
     echo $fg[blue]"Starting the installation of $1"$reset_color
 
