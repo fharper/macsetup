@@ -887,6 +887,7 @@ installcask sound-control
 if [[ "$(isAppInstalled "The Clock")" = "false" ]]; then
     defaults write com.apple.menuextra.clock IsAnalog -bool true
     installcask the-clock
+    open -a "The Clock"
     getLicense "The Clock"
 fi
 
