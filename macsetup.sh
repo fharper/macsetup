@@ -87,6 +87,11 @@ function installNodePackages {
     fi
 }
 
+#
+# Install a Homebrew Cask, if not already installed
+#
+# @param the application name
+#
 function installcask {
     echo $fg[blue]"Starting the installation of $1"$reset_color
 
