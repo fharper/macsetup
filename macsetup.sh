@@ -471,6 +471,7 @@ fi
 if [[ "$(isAppInstalled Xcode)" = "false" ]]; then
     installFromAppStore XCode 497799835
     sudo xcodebuild -license accept
+    xcodebuild -runFirstLaunch
     restoreAppSettings Xcode
 fi
 
