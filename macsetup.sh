@@ -16,6 +16,11 @@ email="hi@fred.dev"
 
 autoload colors; colors
 
+#
+# Pause the script until the user hit ENTER & display information to the user
+#
+# @param message for the user
+#
 function pausethescript {
     echo $fg[yellow]"$1"$reset_color
     echo "Press ENTER to continue the installation script"
