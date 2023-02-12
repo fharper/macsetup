@@ -194,6 +194,9 @@ function installDMG {
     rm "$1"
 }
 
+#
+# Reload .zshrc in the current shell
+#
 function reload {
     source ~/.zshrc
 }
