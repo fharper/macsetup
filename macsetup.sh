@@ -128,6 +128,13 @@ function getAppFullPath {
     mdfind -name 'kMDItemFSName=="'"$1"'.app"' -onlyin /Applications -onlyin /System/Applications
 }
 
+#
+# Detect if a CLI application has been installed
+#
+# @param the application name
+#
+# @return true if installed, false if not
+#
 function isCLAppInstalled {
     if which "$1" > /dev/null; then
         echo true
