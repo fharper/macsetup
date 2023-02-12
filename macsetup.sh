@@ -552,7 +552,7 @@ fi
 #
 # https://github.com/jwbargsten/defbro
 #
-installkeg jwbargsten/misc/defbro
+installkeg defbro
 
 #
 # Dockutil
