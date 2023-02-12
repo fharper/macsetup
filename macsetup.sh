@@ -918,17 +918,6 @@ installcask TripMode
 #
 installcask zoomus
 
-#
-# Zsh-z
-#
-# fastest cd alternative
-#
-# https://github.com/agkozak/zsh-z
-#
-if [[ "$(isCLAppInstalled z)" = "false" ]]; then
-    git clone git@github.com:agkozak/zsh-z.git "$ZSH_CUSTOM"/plugins/zsh-z
-fi
-
 
 ########################
 #                      #
