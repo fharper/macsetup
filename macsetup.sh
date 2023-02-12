@@ -1026,6 +1026,11 @@ dockutil --remove 'Safari' --allhomes
 #
 dockutil --remove 'System Settings' --allhomes
 
+#
+# TV
+#
+dockutil --remove 'TV' --allhomes
+
 
 ###############################
 #                             #
