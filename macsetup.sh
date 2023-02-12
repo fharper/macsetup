@@ -896,7 +896,9 @@ installFromAppStore Shush 496437906
 #
 # https://staticz.com/soundcontrol/
 #
-installcask sound-control
+if [[ "$(isAppInstalled "Sound Control")" = "false" ]]; then
+    installcask sound-control
+fi
 
 #
 # The Clock
