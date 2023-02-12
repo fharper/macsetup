@@ -110,7 +110,7 @@ function installcask {
 function installFromAppStore {
     echo $fg[blue]"Starting the installation of $1"$reset_color
 
-    if [[ "$(isAppInstalled \"$1\")" = "false" ]]; then
+    if [[ "$(isAppInstalled $1)" = "false" ]]; then
         mas install "$2"
     else
 	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
