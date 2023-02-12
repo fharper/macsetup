@@ -40,6 +40,13 @@ function openfilewithregex {
     rm "${file}"
 }
 
+#
+# Detect if a GUI application has been installed
+#
+# @param the application name
+#
+# @return true if installed, false if not
+#
 function isAppInstalled {
     if [[ $(osascript -e "id of application \"$1\"" 2>/dev/null) ]]; then
 	    echo true
