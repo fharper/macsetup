@@ -83,9 +83,8 @@ function getAppFullPath {
 }
 
 function isAppInstalled {
-    local app=$(getAppFullPath "$1")
-    if [[ -n "$app" ]]; then
-	echo true
+    if [[ $(osascript -e "id of application \"$1\"" 2>/dev/null) ]]; then
+	    echo true
     else
         echo false
     fi
