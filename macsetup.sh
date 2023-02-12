@@ -763,8 +763,7 @@ if [[ "$(isAppInstalled Espanso)" = "false" ]]; then
     installkeg espanso
     giveAccessibilityPermission Espanso
     restoreAppSettings espanso
-    espanso register
-    espanso start
+    espanso service register
 fi
 
 #
