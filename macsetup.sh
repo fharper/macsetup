@@ -173,6 +173,11 @@ function sudo {
     /usr/bin/sudo $@
 }
 
+#
+# Use Mackup to restore a specific application settings
+#
+# @param the application name from Mackup
+#
 function restoreAppSettings {
     echo "[applications_to_sync]\n$1" > /Users/fharper/.mackup.cfg
     mackup restore
