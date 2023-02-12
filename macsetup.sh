@@ -37,10 +37,19 @@ function pausethescript {
 # @param part of the file name
 #
 function openfilewithregex {
-    local file=$(find . -maxdepth 1 -execdir echo {} ';'  | grep "$1")
+    local file=$(findfilewithregex)
     open "${file}"
     pausethescript "Wait for the $file installtion to end before continuing."
     rm "${file}"
+}
+
+#
+# Find a filename without knowing the exact file name
+#
+# @param part of the file name
+#
+function findfilewithregex {
+    return $(find . -maxdepth 1 -execdir echo {} ';'  | grep "$1")
 }
 
 #
