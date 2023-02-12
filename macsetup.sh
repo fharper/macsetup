@@ -29,6 +29,14 @@ function openfilewithregex {
     rm "${file}"
 }
 
+function isAppInstalled {
+    if [[ $(osascript -e "id of application \"$1\"" 2>/dev/null) ]]; then
+	    echo true
+    else
+        echo false
+    fi
+}
+
 function installkeg {
     echo $fg[blue]"Starting the installation of $1"$reset_color
 
@@ -79,14 +87,6 @@ function installFromAppStore {
 
 function getAppFullPath {
     mdfind -name 'kMDItemFSName=="'"$1"'.app"' -onlyin /Applications -onlyin /System/Applications
-}
-
-function isAppInstalled {
-    if [[ $(osascript -e "id of application \"$1\"" 2>/dev/null) ]]; then
-	    echo true
-    else
-        echo false
-    fi
 }
 
 function isCLAppInstalled {
