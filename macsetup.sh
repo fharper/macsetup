@@ -1726,8 +1726,8 @@ fi
 if [[ "$(isCLAppInstalled goenv)" = "false" ]]; then
     installkeg goenv
     reload
-    goenv install 1.18.8
-    goenv global 1.18.8
+    goenv install 1.20
+    goenv global 1.20
 fi
 
 #
