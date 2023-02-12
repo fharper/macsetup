@@ -567,7 +567,7 @@ installkeg loginitems
 #
 # https://github.com/mosen/mysides
 #
-installcask mysides
+installkeg mysides
 
 #
 # nvm + Node.js + npm cli
