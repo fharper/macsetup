@@ -162,6 +162,11 @@ function installPythonPackage {
     fi
 }
 
+#
+# Overwrite of the sudo command to give more context on why it's needed within the script
+#
+# @param the command to be executed with sudo
+#
 function sudo {
     local needpass=$(/usr/bin/sudo -nv 2>&1 | grep "Input required")
     #For whatever reason, chalk doesn't play well with $@,
