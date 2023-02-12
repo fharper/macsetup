@@ -1370,6 +1370,8 @@ if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
     open https://chrome.google.com/webstore/detail/antidote/lmbopdiikkamfphhgcckcjhojnokgfeo
     /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
     pausethescript "Authorize Dropbox for Violentmonkey sync before continuing"
+    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/manage.html#stylus-options"
+    pausethescript "Authorize Dropbox for Stylus sync before continuing"
 fi
 
 #
