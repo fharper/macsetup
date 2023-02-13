@@ -343,6 +343,18 @@ function getLicense {
     pausethescript "Add the license key from the clipboard to $1 before continuing"
 }
 
+#
+# Remove an application from the Dock, if it's there
+#
+# @param the application we want to remove
+#
+function removeAppFromDock {
+    if [[ $(dockutil --list | grep "$1") ]]; then
+        echo $fg[blue]"Removing $1 from the Dock"$reset_color
+        dockutil --remove "$1" --allhomes
+    fi
+}
+
 
 ############################
 #                          #
@@ -984,81 +996,21 @@ sudo rm -rf /Applications/Pages.app
 #              #
 ################
 
-#
-# App Store
-#
-dockutil --remove 'App Store' --allhomes
-
-#
-# Calendar
-#
-dockutil --remove 'Calendar' --allhomes
-
-#
-# Contacts
-#
-dockutil --remove 'Contacts' --allhomes
-
-#
-# Facetime
-#
-dockutil --remove 'FaceTime' --allhomes
-
-#
-# Launchpad
-#
-dockutil --remove 'Launchpad' --allhomes
-
-#
-# Mail
-#
-dockutil --remove 'Mail' --allhomes
-
-#
-# Maps
-#
-dockutil --remove 'Maps' --allhomes
-
-#
-# Music
-#
-dockutil --remove 'Music' --allhomes
-
-#
-# News
-#
-dockutil --remove 'News' --allhomes
-
-#
-# Notes
-#
-dockutil --remove 'Notes' --allhomes
-
-#
-# Podcasts
-#
-dockutil --remove 'Podcasts' --allhomes
-
-#
-# Reminders
-#
-dockutil --remove 'Reminders' --allhomes
-
-#
-# Safari
-#
-dockutil --remove 'Safari' --allhomes
-
-#
-# System Settings
-#
-dockutil --remove 'System Settings' --allhomes
-
-#
-# TV
-#
-dockutil --remove 'TV' --allhomes
-
+removeAppFromDock "App Store"
+removeAppFromDock "Calendar"
+removeAppFromDock "Contacts"
+removeAppFromDock "FaceTime"
+removeAppFromDock "Launchpad"
+removeAppFromDock "Mail"
+removeAppFromDock "Maps"
+removeAppFromDock "Music"
+removeAppFromDock "News"
+removeAppFromDock "Notes"
+removeAppFromDock "Podcasts"
+removeAppFromDock "Reminders"
+removeAppFromDock "Safari"
+removeAppFromDock "System Settings"
+removeAppFromDock "TV"
 
 ###############################
 #                             #
