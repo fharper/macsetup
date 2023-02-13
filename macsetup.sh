@@ -227,7 +227,7 @@ function installDMG {
     local volume="/Volumes/$(hdiutil info | grep /Volumes/ | sed 's@.*\/Volumes/@@')"
     local app=$(/bin/ls "$volume" | grep .app)
     mv "$volume/$app" /Applications
-    hdiutil detach "/Volumes/$volume"
+    hdiutil detach "$volume"
     rm "$1"
 }
 
