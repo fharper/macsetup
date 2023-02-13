@@ -701,6 +701,7 @@ if [[ "$(isCLAppInstalled geticon)" = "false" ]]; then
     curl -L https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
     unzip osxiconutils.zip
     rm osxiconutils.zip
+    rm __MACOSX #created by the unzip call
     sudo chown fharper:admin /usr/local/bin
     mv bin/geticon /usr/local/bin/
     mv bin/seticon /usr/local/bin/
@@ -876,6 +877,7 @@ if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
     curl -L https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip --output logitech.zip
     unzip logitech.zip
     rm logitech.zip
+    rm __MACOSX #created by the unzip call
     open logioptionsplus_installer.app
     pausethescript "Wait for Logi Options+ installation to finish before continuing"
     rm -rf logioptionsplus_installer.app
@@ -1409,6 +1411,7 @@ if [[ "$(isAppInstalled OpenInEditor-Lite)" = "false" ]]; then
     curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
     unzip icons.zip
     rm icons.zip
+    rm __MACOSX #created by the unzip call
     seticon icons/icon_vscode_dark.icns /Applications/OpenInEditor-Lite.app
     rm -rf icons
 fi
@@ -1428,6 +1431,7 @@ if [[ "$(isAppInstalled OpenInTerminal-Lite)" = "false" ]]; then
     curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
     unzip icons.zip
     rm icons.zip
+    rm __MACOSX #created by the unzip call
     seticon icons/icon_terminal_dark.icns /Applications/OpenInTerminal-Lite.app
     rm -rf icons
 fi
@@ -1443,6 +1447,7 @@ if [[ "$(isAppInstalled rain)" = "false" ]]; then
     curl -L https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
     unzip rain.zip
     rm rain.zip
+    rm __MACOSX #created by the unzip call
     mv rain.app /Applications
     loginitems -a Rain
 fi
@@ -2553,6 +2558,7 @@ if [[ "$(isAppInstalled "MPC Beats")" = "false" ]]; then
     curl -L https://cdn.inmusicbrands.com/akai/M2P11C6VI/Install-MPC-Beats-v2.11-2.11.6.8-release-Mac.zip --output mpc-beats.zip
     unzip -j mpc-beats.zip -d .
     rm mpc-beats.zip
+    rm __MACOSX #created by the unzip call
     openfilewithregex Install-MPC-Beats*.pkg
 fi
 
@@ -2592,6 +2598,7 @@ if [[ "$(isAppInstalled calibre)" = "false" ]]; then
     curl -L "$(lastversion noDRM/DeDRM_tools --assets)" --output Calibre-DeDRM.zip
     unzip Calibre-DeDRM.zip "DeDRM_plugin.zip"
     rm Calibre-DeDRM.zip
+    rm __MACOSX #created by the unzip call
     pausethescript "Install the DeDRM plugin into Calibre before continuing"
     rm DeDRM_plugin.zip
 fi
