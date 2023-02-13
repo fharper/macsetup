@@ -1468,15 +1468,6 @@ if [[ "$(isAppInstalled Slack)" = "false" ]]; then
 fi
 
 #
-# Spaceship Prompt
-#
-# A Zsh prompt
-#
-# https://github.com/denysdovhan/spaceship-prompt
-#
-installNodePackages spaceship-prompt
-
-#
 # Spotify
 #
 # Music service player
