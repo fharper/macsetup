@@ -929,6 +929,7 @@ if [[ "$(isAppInstalled "The Clock")" = "false" ]]; then
     installcask the-clock
     open -a "The Clock"
     getLicense "The Clock"
+    pausethescript "Before continuing, restore the settings of The Clock by going in 'Preferences' and select the tab 'Backup/Restore'. Click on the 'iCloud' checkbox, and click the 'Restore' button."
 fi
 
 #
