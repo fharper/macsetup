@@ -1366,7 +1366,9 @@ fi
 #
 # https://github.com/home-assistant/iOS
 #
-installcask home-assistant
+if [[ "$(isAppInstalled "Home Assistant")" = "false" ]]; then
+    installcask home-assistant
+fi
 
 #
 # Mumu X
