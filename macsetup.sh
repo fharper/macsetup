@@ -524,26 +524,24 @@ if [[ ! -L "/Users/fharper/.zshrc" ]]; then
 fi
 
 #
-# Miniforge + Python + Wheel + Pylint + pytest + Twine
+# Python + Wheel + Pylint + pytest + Twine
 #
-# Python virtual environment manager
 # Python SDK
 # Python wheel packaging tool
 # Python linter
 # Python tests framework
 # Utilities for interacting with PyPI
 #
-# https://github.com/conda-forge/miniforge
 # https://www.python.org
 # https://github.com/pypa/wheel
 # https://github.com/PyCQA/pylint/
 # https://github.com/pytest-dev/pytest
 # https://github.com/pypa/twine/
 #
-if [[ "$(isCLAppInstalled conda)" = "false" ]]; then
-    installcask miniforge
-    conda activate base
-    conda install python=3.10.8
+if [[ ! $(asdf current python) ]]; then
+    asdf plugin-add python
+    asdf install python 3.11.2
+    asdf global python 3.11.2
     installPythonPackage wheel
     installPythonPackage pylint
     installPythonPackage pytest
@@ -653,20 +651,25 @@ installkeg loginitems
 installkeg mysides
 
 #
-# nvm + Node.js + npm cli
+# asdf
 #
-# https://github.com/nvm-sh/nvm
+# Version manager with support for everything
+#
+# https://github.com/asdf-vm/asdf
+#
+installkeg asdf
+reload
+
+#
+# Node.js + npm CLI
+#
 # https://github.com/nodejs/node
 # https://github.com/npm/cli
 #
-# Notes:
-#  - Use "nvm ls-remote" to list all Node.js installable versions
-#
-if [[ -n $(brew list "$1" 2>&1 | grep "No such keg") ]]; then
-    installkeg nvm
-    reload
-    nvm install v19.6.0
-    nvm use v19.6.0
+if [[ ! $(asdf current nodejs) ]]; then
+    asdf plugin-add nodejs
+    asdf install nodejs 19.6.0
+    asdf global nodejs 19.6.0
     ln -s $(nvm which node) /usr/local/bin #Needed by some Alfred workflows (no need to be latest version when I'll update Node & I cannot ln to node directly, too many symbolic links)
     npm i -g npm@latest
     npm adduser
@@ -1774,22 +1777,16 @@ if [[ "$(isCLAppInstalled gh)" = "false" ]]; then
 fi
 
 #
-# Go + GoEnv
+# Go
 #
 # Go programming language
-# Go version manager
 #
 # https://golang.org
-# https://github.com/syndbg/goenv
 #
-# Notes:
-#  - List installable Go versions with "goenv install --list"
-#
-if [[ "$(isCLAppInstalled goenv)" = "false" ]]; then
-    installkeg goenv
-    reload
-    goenv install 1.19.5
-    goenv global 1.19.5
+if [[ ! $(asdf current golang) ]]; then
+    asdf plugin-add golang
+    asdf install golang 1.20.1
+    asdf global golang 1.20.1
 fi
 
 #
@@ -1977,23 +1974,16 @@ installkeg prettier
 installNodePackages puppeteer
 
 #
-# Ruby + RBenv
+# Ruby
 #
 # Ruby programming language
-# Ruby version manager
 #
 # https://github.com/ruby/ruby
-# https://github.com/rbenv/rbenv
 #
-# Notes:
-# - Use "rbenv install --list-all" to list installable Ruby versions
-#
-if [[ "$(isCLAppInstalled rbenv)" = "false" ]]; then
-    installkeg rbenv
-    rbenv init
-    reload
-    rbenv install 3.1.2
-    rbenv global 3.1.2
+if [[ ! $(asdf current ruby) ]]; then
+    asdf plugin-add ruby
+    asdf install ruby 3.2.1
+    asdf global ruby 3.2.1
 fi
 
 #
@@ -2058,50 +2048,30 @@ if [[ "$(isCLAppInstalled yarn)" = "false" ]]; then
 fi
 
 #
-# PHP + PHPBrew + Composer
+# PHP
 #
 # PHP programming language
-# PHP version manager
-# PHP dependencies manager
 #
 # https://github.com/php/php-src
-# https://github.com/phpbrew/phpbrew
-# https://github.com/composer/composer
 #
-# Command:
-# phpbrew known --more
-#
-# Notes:
-# - Need to install olrder version of PHP as PHPBrew isn't comptabile with newer ones
-# - https://github.com/phpbrew/phpbrew/issues/1245
-#
-if [[ "$(isCLAppInstalled phpbrew)" = "false" ]]; then
-    installkeg php@7.4
-    installkeg phpbrew
-    brew link --overwrite php@7.4
-    phpbrew init
-    reload
-    phpbrew install 8.1.9 -- --without-pcre-jit
-    phpbrew use php-8.1.9
-    installkeg composer
+if [[ ! $(asdf current php) ]]; then
+    brew install gmp libsodium imagemagick bison re2c libgd libiconv icu4c libzip
+    asdf plugin-add php
+    asdf install php 8.2.3
+    asdf global php 8.2.3
 fi
 
 #
-# Java (OpenJDK with AdoptOpenJDK) + jEnv
+# Java (OpenJDK)
 #
 # Java programming language
-# Java version manager
 #
-# https://github.com/jenv/jenv
-# https://github.com/adoptium/temurin-build
+# https://openjdk.org
 #
-if [[ "$(isCLAppInstalled jenv)" = "false" ]]; then
-    installkeg jenv
-    reload
-    brew tap AdoptOpenJDK/openjdk
-    installcask temurin
-    jenv add /Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home
-    jenv global temurin64-18.0.2.1
+if [[ ! $(asdf current java) ]]; then
+    asdf plugin-add java
+    asdf install java openjdk-19.0.2
+    asdf global java openjdk-19.0.2
 fi
 
 #
@@ -2122,6 +2092,12 @@ installkeg lynis
 # https://github.com/rust-lang/rust
 # https://github.com/rust-lang/rustup
 #
+if [[ ! $(asdf current rust) ]]; then
+    asdf plugin-add rust
+    asdf install rust 1.67.1
+    asdf global rust 1.67.1
+fi
+
 if [[ "$(isCLAppInstalled rustup-init)" = "false" ]]; then
     installkeg rustup-init
     rustup-init
