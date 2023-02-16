@@ -1892,7 +1892,7 @@ installkeg k3d
 #
 # https://github.com/kubefirst/kubefirst#installing-the-cli
 #
-installkeg kubefirst/tools/kubefirst
+installkeg kubefirst
 
 #
 # local
