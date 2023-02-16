@@ -2697,6 +2697,15 @@ if [[ "$(isAppInstalled "Elgato Stream Deck")" = "false" ]]; then
 fi
 
 #
+# Figma
+#
+# Vector Design Tool
+#
+# https://www.figma.com
+#
+install cask figma
+
+#
 # Firefox
 #
 # Browser
