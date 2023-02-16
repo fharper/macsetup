@@ -3203,6 +3203,7 @@ installcask openemu
 
 echo $fg[blue]"The Dock will restart a couple of time, giving a flashing impression: it's normal"$reset_color
 dockutil --move 'Brave Browser' --position end --allhomes
+dockutil --move 'Microsoft Outlook' --position end --allhomes
 dockutil --move 'Notion Enhanced' --position end --allhomes
 dockutil --move 'Todoist' --position end --allhomes
 dockutil --move 'Slack' --position end --allhomes
