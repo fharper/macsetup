@@ -853,7 +853,10 @@ installkeg hh
 #
 # https://github.com/pqrs-org/Karabiner-Elements
 #
-installcask karabiner-elements
+if [[ "$(isAppInstalled "Karabiner-Elements")" = "false" ]]; then
+    installcask karabiner-elements
+    restoreAppSettings karabiner-elements
+fi
 
 #
 # KeepingYouAwake
