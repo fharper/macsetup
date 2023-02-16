@@ -462,6 +462,7 @@ fi
 if [[ "$(isAppInstalled iTerm)" = "false" ]]; then
     installcask iterm2
     #giveFullDiskAccessPermission iTerm
+    dockutil --add /Applications/iTerm.app/ --allhomes
 
     curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
     open -a iTerm
@@ -1264,9 +1265,7 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 ########################
 
 #
-# iTerm2 configurations
 #
-dockutil --add /Applications/iTerm.app/ --allhomes
 
 #
 # Locate database generation
