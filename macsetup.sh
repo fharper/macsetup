@@ -761,6 +761,7 @@ fi
 if [[ "$(isAppInstalled "Bartender 4")" = "false" ]]; then
     installcask bartender
     giveAccessibilityPermission "Bartender 4"
+    giveScreenRecordingPermission "Bartender 4"
 fi
 
 #
