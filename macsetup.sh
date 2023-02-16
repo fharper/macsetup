@@ -1275,6 +1275,12 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 #
 cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
 
+#
+# Printer
+#
+open /System/Library/PreferencePanes/PrintAndScan.prefPane
+pausethescript "Add your HP OfficeJet 7740"
+
 ########################
 #                      #
 # Apply Configurations #
