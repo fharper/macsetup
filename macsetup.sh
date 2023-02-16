@@ -2851,7 +2851,7 @@ fi
 #
 # Muzzle
 #
-# Set Do Not Disturb mode when screen sharing
+# Set Do Not Disturb mode when screen sharing in video calls
 #
 # https://muzzleapp.com
 #
