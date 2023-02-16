@@ -1253,11 +1253,11 @@ sudo defaults write /Library/Preferences/com.apple.AppleFileServer guestAccess -
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server AllowGuestAccess -bool false
 
 
-########################
-#                      #
-# Other Configurations #
-#                      #
-########################
+#######################
+#                     #
+# Misc Configurations #
+#                     #
+#######################
 
 #
 #
