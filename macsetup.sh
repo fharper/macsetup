@@ -2915,6 +2915,15 @@ if [[ "$(isAppInstalled Pocket)" = "false" ]]; then
 fi
 
 #
+# Pure Paste
+#
+# Paste as plain text by default
+#
+# https://sindresorhus.com/pure-paste
+#
+mas install 1611378436
+
+#
 # Raspberry Pi Imager
 #
 # Raspberry Pi imaging utility
