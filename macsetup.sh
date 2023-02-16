@@ -804,6 +804,16 @@ if [[ "$(isAppInstalled Contexts)" = "false" ]]; then
 fi
 
 #
+# Cron
+#
+# Calendar app
+#
+# https://cron.com
+#
+installcask cron
+
+
+#
 # Espanso
 #
 # Text expander / snipet
