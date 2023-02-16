@@ -1472,6 +1472,12 @@ fi
 if [[ "$(isAppInstalled Slack)" = "false" ]]; then
     installcask slack
     dockutil --add /Applications/Slack.app/ --allhomes
+    open -a Slack
+    local slack_workspaces=($(op item list --categories Login --format json | jq '.[] | select(.title|test("Slack")) | .urls[0].href' | tr -d '"'))
+    for slack in "${slack_workspaces[@]}"; do
+      open "$slack"
+      pausethescript "Sign in this Slack community: $slack"
+    done
 fi
 
 #
