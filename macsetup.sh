@@ -1313,6 +1313,7 @@ killall SystemUIServer
 #
 if [[ "$(isAppInstalled 1Password)" = "false" ]]; then
     installcask 1password
+    giveScreenRecordingPermission 1Password
     dockutil --add /Applications/1Password.app --allhomes
     installkeg 1password-cli
     open -a 1Password
