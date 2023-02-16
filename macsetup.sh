@@ -1260,7 +1260,10 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 #######################
 
 #
+# Internet Accounts
 #
+open /System/Library/PreferencePanes/InternetAccounts.prefPane
+pausethescript "Add your Email accounts to the macOS Internet Accounts"
 
 #
 # Locate database generation
