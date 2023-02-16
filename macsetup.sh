@@ -2691,7 +2691,10 @@ installcask elgato-control-center
 #
 # https://www.elgato.com/en/gaming/stream-deck
 #
-installcask elgato-stream-deck
+if [[ "$(isAppInstalled "Elgato Stream Deck")" = "false" ]]; then
+    installcask elgato-stream-deck
+    restoreAppSettings streamdeck
+fi
 
 #
 # Firefox
