@@ -1616,7 +1616,11 @@ installNodePackages cordova
 #
 # https://github.com/denoland/deno
 #
-installkeg deno
+if [[ ! $(asdf current deno) ]]; then
+    asdf plugin-add deno
+    asdf install golang 1.20.1
+    asdf global golang 1.20.1
+fi
 
 #
 # diff-so-fancy
