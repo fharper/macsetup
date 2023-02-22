@@ -2703,6 +2703,15 @@ if [[ "$(isAppInstalled "Elgato Stream Deck")" = "false" ]]; then
 fi
 
 #
+# Elgato Wave Link
+#
+# Elgato Wave:3 microphone configurations software
+#
+# https://www.elgato.com/en/wave-3
+#
+installcask elgato-wave-link
+
+#
 # Figma
 #
 # Vector Design Tool
