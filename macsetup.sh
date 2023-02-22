@@ -1589,10 +1589,7 @@ installkeg caddy
 #
 # https://www.charlesproxy.com
 #
-if [[ "$(isAppInstalled Charles)" = "false" ]]; then
-    installcask charles
-    pausethescript "Install Charles Proxy certificate in system & change to always trust before continuing"
-fi
+installcask charles
 
 #
 # CocoaPods
