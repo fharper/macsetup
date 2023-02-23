@@ -2482,7 +2482,7 @@ installkeg ABridoux/formulae/scout
 #
 # Stress
 #
-# https://web.archive.org/web/20190702093856/https://people.seas.harvard.edu/~apw/stress/
+# https://github.com/resurrecting-open-source-projects/stress
 #
 installkeg stress
 
