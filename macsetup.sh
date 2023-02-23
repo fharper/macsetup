@@ -2539,7 +2539,10 @@ installkeg wifi-password
 #
 # https://github.com/wkhtmltopdf/wkhtmltopdf
 #
-installcask wkhtmltopdf
+# Notes:
+#  - listed as a Cask, but it's a Keg
+#
+installkeg wkhtmltopdf
 
 #
 # yt-dlp
