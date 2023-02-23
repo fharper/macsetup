@@ -2315,6 +2315,18 @@ installPythonApp ffmpeg-quality-metrics
 installkeg ghostscript
 
 #
+# GHunt
+#
+# Google OSINT tool
+#
+# https://github.com/mxrch/GHunt
+#
+if [[ "$(isCLAppInstalled ghunt)" = "false" ]]; then
+    installPythonApp ghunt
+    ghunt login
+fi
+
+#
 # Homebrew Command Not Found
 #
 # Suggest a package to install when the command is not found
