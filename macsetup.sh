@@ -2535,6 +2535,8 @@ installkeg wifi-password
 #
 # wkhtmltopdf
 #
+# Convert HTML to PDF
+#
 # https://github.com/wkhtmltopdf/wkhtmltopdf
 #
 installcask wkhtmltopdf
