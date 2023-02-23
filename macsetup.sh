@@ -801,7 +801,11 @@ fi
 #
 # https://commandqapp.com
 #
-installcask commandq
+if [[ "$(isAppInstalled CommandQ)" = "false" ]]; then
+    installcask commandq
+    getLicense CommandQ
+    open -a CommandQ
+fi
 
 #
 # Contexts
