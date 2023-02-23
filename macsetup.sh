@@ -1997,15 +1997,6 @@ installkeg php-code-sniffer
 installcask postman
 
 #
-# pre-commit
-#
-# Multi-language pre-commit hooks framework
-#
-# https://github.com/pre-commit/pre-commit
-#
-installkeg pre-commit
-
-#
 # Prettier
 #
 # Code formatter
