@@ -2139,12 +2139,6 @@ if [[ ! $(asdf current rust) ]]; then
     asdf global rust 1.67.1
 fi
 
-if [[ "$(isCLAppInstalled rustup-init)" = "false" ]]; then
-    installkeg rustup-init
-    rustup-init
-    reload
-fi
-
 #
 # ShellCheck
 #
