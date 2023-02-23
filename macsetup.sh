@@ -2379,6 +2379,14 @@ installkeg lsusb
 installkeg lzip
 
 #
+# markmap
+#
+# Markdown as mindmaps visualization tool
+#
+# https://github.com/markmap/markmap
+#
+installNodePackages markmap-cli
+#
 # Miller
 #
 # CSV processor
