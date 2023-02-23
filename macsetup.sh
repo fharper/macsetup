@@ -2482,6 +2482,8 @@ installkeg ABridoux/formulae/scout
 #
 # Stress
 #
+# Stress test your hardware
+#
 # https://github.com/resurrecting-open-source-projects/stress
 #
 installkeg stress
