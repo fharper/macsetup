@@ -1967,7 +1967,10 @@ installNodePackages mocha
 #
 # https://github.com/canonical/multipass
 #
-installcask multipass
+# Notes:
+#  - listed as a Cask, but also install a Keg so easier for detection as it returned no ID
+#
+installkeg multipass
 
 #
 # npm Check Updates (ncu)
