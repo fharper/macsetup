@@ -1638,8 +1638,8 @@ installNodePackages cordova
 #
 if [[ ! $(asdf current deno) ]]; then
     asdf plugin-add deno
-    asdf install golang 1.20.1
-    asdf global golang 1.20.1
+    asdf install deno 1.30.3
+    asdf global deno 1.30.3
 fi
 
 #
