@@ -83,6 +83,21 @@ function installkeg {
 }
 
 #
+# Detect if a Node.js package has been installed globally
+#
+# @param the package name
+#
+# @return true if installed, false if not
+#
+function isNodePackageInstalled {
+    if npm list -g $1 --depth=0 > /dev/null; then
+        echo true
+    else
+        echo false
+    fi
+}
+
+#
 # Install the Node.js package globally, if not already installed
 #
 # @param Node.js package name
@@ -90,11 +105,10 @@ function installkeg {
 function installNodePackages {
     echo $fg[blue]"Starting the installation of $1"$reset_color
 
-    local alreadyInstalled=$(npm list -g "$1" | grep "$1")
-    if [[ -z "$alreadyInstalled" ]]; then
+    if [[ "$(isNodePackageInstalled $1)" = "false" ]]; then
         npm install -g "$1"
     else
-	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+        echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
     fi
 }
 
