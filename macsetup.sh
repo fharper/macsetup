@@ -424,10 +424,10 @@ fi
 #
 if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    
+
     # Needed once here since we didn't restore & source ~/.zshrc yet, but we need Homebrew
     eval "$(/opt/homebrew/bin/brew shellenv)"
-    
+
     brew analytics off
     brew tap homebrew/cask
     brew tap homebrew/cask-versions
