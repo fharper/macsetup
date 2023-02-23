@@ -185,6 +185,22 @@ function installPythonPackage {
 }
 
 #
+# Install a Python application, if not already installed
+#
+# @param the application name
+#
+function installPythonApp {
+    echo $fg[blue]"Installing the Python application $1"$reset_color
+
+    local package=$(pipx list | grep "$1")
+    if [[ -n "$package" ]]; then
+	echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+    else
+        pipx install "$1"
+    fi
+}
+
+#
 # Overwrite of the sudo command to give more context on why it's needed within the script
 #
 # @param the command to be executed with sudo
@@ -562,9 +578,9 @@ if [[ ! $(asdf current python) ]]; then
     brew install pipx
     pipx ensurepath
     installPythonPackage wheel
-    installPythonPackage pylint
-    installPythonPackage pytest
-    installPythonPackage twine
+    installPythonApp pylint
+    installPythonApp pytest
+    installPythonApp twine
 fi
 
 #
@@ -649,7 +665,7 @@ installkeg jq
 #
 # https://github.com/dvershinin/lastversion
 #
-installPythonPackage lastversion
+installPythonApp lastversion
 
 #
 # loginitems
@@ -2277,7 +2293,7 @@ installkeg coreutils
 #
 # https://github.com/coursera-dl/coursera-dl
 #
-installPythonPackage coursera-dl
+installPythonApp coursera-dl
 
 #
 # empty-trash-cli
@@ -2305,7 +2321,7 @@ installkeg ffmpeg
 #
 # https://github.com/slhck/ffmpeg-quality-metrics
 #
-installPythonPackage ffmpeg-quality-metrics
+installPythonApp ffmpeg-quality-metrics
 
 #
 # Ghostscript
@@ -2353,7 +2369,7 @@ installkeg imagemagick
 #
 # https://github.com/wummel/linkchecker
 #
-installPythonPackage linkchecker
+installPythonApp linkchecker
 
 #
 # lsusb
