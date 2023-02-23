@@ -196,9 +196,9 @@ function sudo {
     local command=$@
 
     if [[ "$needpass" ]]; then
-        echo $fg[blue]"The script need to use root (sudo) to run the $command command"$reset_color
+        echo $fg[blue]"The script need to use root (sudo) to run the $fg[green]$command$fg[blue] command"$reset_color
     else
-        echo $fg[blue]"Using previously root (sudo) access to run the $command command"$reset_color
+        echo $fg[blue]"Using previously root (sudo) access to run the $fg[green]$command$fg[blue] command"$reset_color
     fi
     /usr/bin/sudo $@
 }
