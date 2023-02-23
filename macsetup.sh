@@ -2489,6 +2489,8 @@ installkeg stress
 #
 # The Fuck
 #
+# Corrects your previous console command
+#
 # https://github.com/nvbn/thefuck
 #
 installkeg thefuck
