@@ -2224,6 +2224,7 @@ installNodePackages yo
 if [[ "$(isCLAppInstalled asciinema)" = "false" ]]; then
     installkeg asciinema
     asciinema auth
+    pausethescript
 fi
 
 #
