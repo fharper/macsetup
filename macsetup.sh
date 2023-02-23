@@ -1850,7 +1850,7 @@ fi
 # https://github.com/go-jira/jira
 #
 if [[ "$(isCLAppInstalled jira)" = "false" ]]; then
-    go get github.com/go-jira/jira/cmd/jira
+    installkeg go-jira
     jira session
 fi
 
