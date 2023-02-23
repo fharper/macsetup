@@ -2889,7 +2889,10 @@ fi
 #
 # https://muzzleapp.com
 #
-installcask muzzle
+if [[ "$(isAppInstalled Muzzle)" = "false" ]]; then
+    installcask muzzle
+    giveAccessibilityPermissionMuzzle
+fi
 
 #
 # NordVPN
