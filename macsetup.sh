@@ -926,7 +926,10 @@ fi
 #
 # install the App Store version since you bought it there
 #
-installFromAppStore Moom 419330170
+if [[ "$(isAppInstalled Moom)" = "false" ]]; then
+    installFromAppStore Moom 419330170
+    giveAccessibilityPermission Moom
+fi
 
 #
 # Shush
