@@ -1985,10 +1985,7 @@ installNodePackages npm-check-updates
 #
 # https://github.com/squizlabs/PHP_CodeSniffer
 #
-if [[ "$(isCLAppInstalled phpcs)" = "false" ]]; then
-    installkeg php-code-sniffer
-    phpcs --config-set installed_paths ~/Documents/code/wordpress/coding-standards
-fi
+installkeg php-code-sniffer
 
 #
 # Postman
