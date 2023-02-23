@@ -760,6 +760,7 @@ if [[ "$(isAppInstalled "Alfred 5")" = "false" ]]; then
     open -a Alfred
     getLicense Alfred
     giveAccessibilityPermission "Alfred 5"
+    giveFullDiskAccessPermission "Alfred 5"
     installNodePackages alfred-google-translate
     installNodePackages alfred-language-configuration
     pausethescript "Configure alfred-google-translate with 'trc en&fr' before continuing"
