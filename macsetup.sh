@@ -2077,6 +2077,15 @@ if [[ "$(isCLAppInstalled s3cmd)" = "false" ]]; then
 fi
 
 #
+# Staticcheck
+#
+# Go Linter
+#
+# https://github.com/dominikh/go-tools
+#
+installkeg staticcheck
+
+#
 # Stylelint
 #
 # CSS, SCSS, Sass, Less & SugarSS linter
