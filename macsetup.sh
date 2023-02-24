@@ -82,6 +82,17 @@ function installkeg {
     fi
 }
 
+function installfont {
+    echo $fg[blue]"Starting the installation of $1"$reset_color
+
+    local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
+    if [[ -n "$alreadyInstalled" ]]; then
+        brew install --cask "$1"
+    else
+	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+    fi
+}
+
 #
 # Detect if a Node.js package has been installed globally
 #
@@ -3229,26 +3240,25 @@ installFromAppStore "WiFi Explorer Lite" 1408727408
 #       #
 #########
 
-installcask font-alex-brush
-installcask font-archivo-narrow
-installcask font-arial
-installcask font-blackout
-installcask font-caveat-brush
-installcask font-dancing-script
-installcask font-dejavu
-installcask font-fira-code
-installcask font-fira-mono
-installcask font-fira-sans
-installcask font-gidole
-installcask font-hack
-installcask font-leckerli-one
-installcask font-montserrat
-installcask font-nunito
-installcask font-nunito-sans
-installcask font-open-sans
-installcask font-pacifico
-installcask font-roboto
-installcask font-roboto-condensed
+installfont font-alex-brush
+installfont font-archivo-narrow
+installfont font-arial
+installfont font-blackout
+installfont font-caveat-brush
+installfont font-dancing-script
+installfont font-dejavu
+installfont font-fira-code
+installfont font-fira-mono
+installfont font-fira-sans
+installfont font-gidole
+installfont font-hack
+installfont font-leckerli-one
+installfont font-montserrat
+installfont font-nunito
+installfont font-nunito-sans
+installfont font-open-sans
+installfont font-pacifico
+installfont font-roboto
 
 
 ####################################################################
