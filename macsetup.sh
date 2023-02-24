@@ -1661,6 +1661,15 @@ installkeg cocoapods
 installNodePackages cordova
 
 #
+# Delve
+#
+# Go Debugger
+#
+# https://github.com/go-delve/delve
+#
+installkeg delve
+
+#
 # Deno
 #
 # deno programming language (runtime)
