@@ -2938,7 +2938,11 @@ installcask kindle
 #
 if [ ! -d "/Library/Application Support/Logitech.localized/Logitech Presentation.localized/Logitech Presentation.app" ]; then
     installkeg logitech-presentation
-    openfilewithregex "/opt/homebrew/Caskroom/logitech-presentation/1.62.2/LogiPresentation Installer.app"
+    cd "/opt/homebrew/Caskroom/logitech-presentation/*/"
+    open "LogiPresentation Installer.app"
+    pausethescript "Wait for the Logitech Presentation application to finish before continuing."
+    rm "LogiPresentation Installer.app"
+    cd -
 fi
 
 #
