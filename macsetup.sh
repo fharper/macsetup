@@ -2685,6 +2685,7 @@ installcask captin
 #
 if [[ "$(isAppInstalled "Google Chrome")" = "false" ]]; then
     installcask google-chrome
+    open -a "Google Chrome"
     /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
     /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://chrome.google.com/webstore/detail/antidote/lmbopdiikkamfphhgcckcjhojnokgfeo
 fi
