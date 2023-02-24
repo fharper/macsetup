@@ -2798,6 +2798,9 @@ installcask elgato-control-center
 #
 # https://www.elgato.com/en/gaming/stream-deck
 #
+# Notes:
+#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
+#
 if [[ "$(isAppInstalled "Elgato Stream Deck")" = "false" ]]; then
     installcask elgato-stream-deck
     restoreAppSettings streamdeck
