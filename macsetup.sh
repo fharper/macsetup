@@ -1906,6 +1906,15 @@ installkeg grip
 installkeg hadolint
 
 #
+# Helm
+#
+# Kubernetes Package Manager
+#
+# https://github.com/helm/helm
+#
+installkeg helm
+
+#
 # iOS Deploy
 #
 # Install and debug iPhone apps from the command line, without using Xcode
