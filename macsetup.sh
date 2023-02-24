@@ -2794,7 +2794,12 @@ fi
 #
 # https://www.elgato.com/en/gaming/key-light
 #
-installcask elgato-control-center
+# Notes:
+#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
+#
+if [[ "$(isAppInstalled "Elgato Control Center")" = "false" ]]; then
+    installcask elgato-control-center
+fi
 
 #
 # Elgato Stream Deck
