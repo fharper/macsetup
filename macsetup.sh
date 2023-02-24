@@ -2960,7 +2960,7 @@ installcask microsoft-edge
 # https://mindnode.com
 #
 if [[ "$(isAppInstalled MindNode)" = "false" ]]; then
-    unzip ~/Documents/mac/MindNode/MindNode.zip
+    unzip /Users/fharper/Documents/mac/MindNode/MindNode.zip
     mv MindNode.app /Applications/
 fi
 
