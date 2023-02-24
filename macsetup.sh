@@ -2706,7 +2706,12 @@ fi
 #
 # https://github.com/Eloston/ungoogled-chromium#downloads
 #
-installcask eloston-chromium
+# Notes:
+#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
+#
+if [[ "$(isAppInstalled Chromium)" = "false" ]]; then
+    installcask eloston-chromium
+fi
 
 #
 # Cryptomator & macFUSE
