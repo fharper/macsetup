@@ -2848,7 +2848,12 @@ installcask gray
 #
 # https://github.com/codechimp-org/ha-menu/
 #
-installcask ha-menu
+# Notes:
+#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
+#
+if [[ "$(isAppInstalled "HA Menu")" = "false" ]]; then
+    installcask ha-menu
+fi
 
 #
 # Hemingway
