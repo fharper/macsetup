@@ -2865,7 +2865,7 @@ fi
 # http://www.hemingwayapp.com
 #
 if [[ "$(isAppInstalled "Hemingway Editor")" = "false" ]]; then
-    open '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
+    installDMG '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
 fi
 
 #
