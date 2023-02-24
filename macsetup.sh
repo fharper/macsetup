@@ -3071,7 +3071,7 @@ fi
 #
 # https://sindresorhus.com/pure-paste
 #
-installFromAppStore 1611378436
+installFromAppStore "Pure Paste" 1611378436
 
 #
 # Raspberry Pi Imager
