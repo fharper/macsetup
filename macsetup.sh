@@ -3354,7 +3354,12 @@ installFromAppStore "Among Us" 1351168404
 #
 # https://www.epicgames.com
 #
-installcask epic-games
+# Notes:
+#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
+#
+if [[ "$(isAppInstalled "Epic Games Launcher")" = "false" ]]; then
+    installcask epic-games
+fi
 
 #
 # OpenEmu
