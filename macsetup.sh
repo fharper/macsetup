@@ -2974,7 +2974,12 @@ installcask messenger
 #
 # https://www.microsoft.com/en-us/edge
 #
-installcask microsoft-edge
+# Notes:
+#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
+#
+if [[ "$(isAppInstalled "Microsoft Edge")" = "false" ]]; then
+    installcask microsoft-edge
+fi
 
 #
 # MindNode
