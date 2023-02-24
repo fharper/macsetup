@@ -2719,8 +2719,10 @@ installcask eloston-chromium
 #
 if [[ "$(isAppInstalled Cryptomator)" = "false" ]]; then
     installcask cryptomator
-    getLicense Cryptomator
     installcask macfuse
+    open Cryptomator
+    getLicense Cryptomator
+    pausethescript "Add your vault to Cryptomator"
 fi
 
 #
