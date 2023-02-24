@@ -2827,7 +2827,7 @@ installcask elgato-wave-link
 #
 # https://www.figma.com
 #
-install cask figma
+installcask figma
 
 #
 # Firefox
