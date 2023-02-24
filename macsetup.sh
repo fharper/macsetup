@@ -3152,7 +3152,12 @@ installcask textsniper
 #
 # https://theunarchiver.com
 #
-installcask the-unarchiver
+# Notes:
+#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
+#
+if [[ "$(isAppInstalled "The Unarchiver")" = "false" ]]; then
+    installcask the-unarchiver
+fi
 
 #
 # TV
