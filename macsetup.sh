@@ -439,6 +439,7 @@ fi
 # https://github.com/Homebrew/homebrew-cask-fonts
 #
 if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
+    echo $fg[blue]"Starting the installation of Homebrew"$reset_color
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     # Needed once here since we didn't restore & source ~/.zshrc yet, but we need Homebrew
@@ -539,7 +540,8 @@ git config --replace-all --global add.interactive.useBuiltin false
 # https://github.com/ohmyzsh/ohmyzsh
 #
 
-if [[ "$(isCLAppInstalled omz)" = "false" ]]; then 
+if [[ "$(isCLAppInstalled omz)" = "false" ]]; then
+    echo $fg[blue]"Starting the installation of Oh My Zsh"$reset_color
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
     # Restoring here since OMZ backup ~/.zshrc to ~/.zshrc.pre-oh-my-zsh
@@ -634,6 +636,7 @@ installkeg defbro
 #   - Homebrew version not updated
 #
 if [[ "$(isCLAppInstalled dockutil)" = "false" ]]; then
+    echo $fg[blue]"Starting the installation of Dockutil"$reset_color
     curl -L "$(lastversion kcrawford/dockutil --assets)" --output dockutil.pkg
     sudo installer -pkg dockutil.pkg -target /
     pausethescript "Wait for Dockutil installation to finish before continuing"
@@ -736,6 +739,7 @@ installkeg BZip2
 # https://github.com/sveinbjornt/osxiconutils
 #
 if [[ "$(isCLAppInstalled geticon)" = "false" ]]; then
+    echo $fg[blue]"Starting the installation of osXiconUtils"$reset_color
     curl -L https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
     unzip osxiconutils.zip
     rm osxiconutils.zip
@@ -932,6 +936,7 @@ fi
 #   - File name for the app is logioptionsplus, not "Logi Options+" in the "Applications" folder
 #
 if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
+    echo $fg[blue]"Starting the installation of Logi Options+"$reset_color
     curl -L https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip --output logitech.zip
     unzip logitech.zip
     rm logitech.zip
@@ -1431,6 +1436,7 @@ fi
 # Note: don't install the Homebrew version, it's Mumu, not Mumu X
 #
 if [[ "$(isAppInstalled "Mumu X")" = "false" ]]; then
+    echo $fg[blue]"Starting the installation of Mumu X"$reset_color
     curl -L $(op item get "Mumu X" --fields label="download link") --output mumux.dmg
     installDMG mumux.dmg
     loginitems -a "Mumu X"
@@ -1498,6 +1504,7 @@ fi
 # https://github.com/fharper/rain
 #
 if [[ "$(isAppInstalled rain)" = "false" ]]; then
+    echo $fg[blue]"Starting the installation of Rain"$reset_color
     curl -L https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
     unzip rain.zip
     rm rain.zip
