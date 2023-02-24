@@ -3080,7 +3080,12 @@ installFromAppStore 1611378436
 #
 # https://github.com/raspberrypi/rpi-imager
 #
-installcask raspberry-pi-imager
+# Notes:
+#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
+#
+if [[ "$(isAppInstalled "Raspberry Pi Imager")" = "false" ]]; then
+    installcask raspberry-pi-imager
+fi
 
 #
 # Signal
