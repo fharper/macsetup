@@ -2780,7 +2780,12 @@ installcask discord
 #
 # https://www.cleverfiles.com/
 #
-installcask disk-drill
+# Notes:
+#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
+#
+if [[ "$(isAppInstalled "Disk Drill")" = "false" ]]; then
+    installcask disk-drill
+fi
 
 #
 # Elgato Lights Control Center
