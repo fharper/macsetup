@@ -2823,8 +2823,12 @@ fi
 #
 # https://www.elgato.com/en/wave-3
 #
-installcask elgato-wave-link
-
+# Notes:
+#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
+#
+if [[ "$(isAppInstalled WaveLink)" = "false" ]]; then
+    installcask elgato-wave-link
+fi
 #
 # Figma
 #
