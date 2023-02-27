@@ -3144,6 +3144,20 @@ installFromAppStore Speedtest 1153157709
 installcask stats
 
 #
+# SwiftDefaultApps
+#
+# Change default application with URI Scheme and/or filetype in macOS
+#
+# https://github.com/Lord-Kamina/SwiftDefaultApps
+#
+# Notes:
+# - Using it for default things like default application for emails. File type are handled with duti for automation
+#
+if [[ -d "/Users/fharper/Library/PreferencePanes/SwiftDefaultApps.prefpane/" ]]; then
+    installcask swiftdefaultappsprefpane
+fi
+
+#
 # TeamViewer
 #
 # Remote viewer & control
