@@ -3226,7 +3226,7 @@ installcask typora
 #
 # Video Player
 #
-# https://www.videolan.org
+# https://github.com/videolan/vlc
 #
 installcask vlc
 
