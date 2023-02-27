@@ -3042,7 +3042,10 @@ installcask nordvpn
 #
 # https://github.com/obsproject/obs-studio
 #
-installcask obs
+if [[ "$(isAppInstalled "OBS")" = "false" ]]; then
+    installcask obs
+    giveScreenRecordingPermission OBS
+fi
 
 #
 # Paprika Recipe Manager
