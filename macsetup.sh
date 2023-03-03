@@ -535,28 +535,27 @@ fi
 # Notes: needed before Oh My Zsh as .zhrc have some git usage in it
 #
 installkeg git
-git config --replace-all --global user.name "Frédéric Harper"
-git config --replace-all --global credential.username $email
-git config --replace-all --global user.email $email
-git config --replace-all --global init.defaultBranch main
-git config --replace-all --global push.default current
-git config --replace-all --global pull.rebase true
-git config --replace-all --global difftool.prompt false
-git config --replace-all --global diff.tool vscode
-git config --replace-all --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
-git config --replace-all --global core.hooksPath ~/.git/hooks
-git config --replace-all --global advice.addIgnoredFile false
-git config --replace-all --global rebase.autoStash true
-git config --replace-all --global core.ignorecase false
-git config --replace-all --global clean.requireForce false
-git config --replace-all --global fetch.prune true
-git config --replace-all --global advice.addEmptyPathspec false
-git config --replace-all --global push.followTags true
-git config --replace-all --global push.autoSetupRemote true
-git config --replace-all --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
-git config --replace-all --global interactive.diffFilter "diff-so-fancy --patch"
 git config --replace-all --global add.interactive.useBuiltin false
-
+git config --replace-all --global advice.addIgnoredFile false
+git config --replace-all --global advice.addEmptyPathspec false
+git config --replace-all --global clean.requireForce false
+git config --replace-all --global core.hooksPath ~/.git/hooks
+git config --replace-all --global core.ignorecase false
+git config --replace-all --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+git config --replace-all --global credential.username $email
+git config --replace-all --global diff.tool vscode
+git config --replace-all --global difftool.prompt false
+git config --replace-all --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
+git config --replace-all --global fetch.prune true
+git config --replace-all --global init.defaultBranch main
+git config --replace-all --global interactive.diffFilter "diff-so-fancy --patch"
+git config --replace-all --global pull.rebase true
+git config --replace-all --global push.autoSetupRemote true
+git config --replace-all --global push.default current
+git config --replace-all --global push.followTags true
+git config --replace-all --global rebase.autoStash true
+git config --replace-all --global user.email $email
+git config --replace-all --global user.name "Frédéric Harper"
 
 #
 # Oh My Zsh
