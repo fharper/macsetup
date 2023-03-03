@@ -3046,7 +3046,7 @@ fi
 #
 if [[ "$(isAppInstalled Muzzle)" = "false" ]]; then
     installcask muzzle
-    giveAccessibilityPermissionMuzzle
+    giveAccessibilityPermission Muzzle
 fi
 
 #
