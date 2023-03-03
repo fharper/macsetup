@@ -1647,6 +1647,16 @@ fi
 installkeg bfg
 
 #
+# Black
+#
+# Python code formatter
+#
+# https://github.com/psf/black
+#
+installkeg black
+
+
+#
 # Caddy
 #
 # HTTP server
