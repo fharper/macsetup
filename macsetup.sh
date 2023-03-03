@@ -2670,11 +2670,13 @@ installFromAppStore "Affinity Designer" 824171161
 # https://www.akaipro.com/mpc-beats
 #
 if [[ "$(isAppInstalled "MPC Beats")" = "false" ]]; then
+    echo $fg[blue]"Starting the installation of Akai Pro MPC Beats"$reset_color
     curl -L https://cdn.inmusicbrands.com/akai/M2P11C6VI/Install-MPC-Beats-v2.11-2.11.6.8-release-Mac.zip --output mpc-beats.zip
     unzip -j mpc-beats.zip -d .
     rm mpc-beats.zip
     rm __MACOSX #created by the unzip call
-    openfilewithregex Install-MPC-Beats*.pkg
+    local filename=$(findfilewithregex "Install-MPC-Beats")
+    installPKGfromDMG filename
 fi
 
 #
