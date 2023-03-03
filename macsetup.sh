@@ -809,6 +809,8 @@ if [[ "$(isAppInstalled "Alfred 5")" = "false" ]]; then
     getLicense Alfred
     giveAccessibilityPermission "Alfred 5"
     giveFullDiskAccessPermission "Alfred 5"
+    #TODO: add Contacts Permission
+    #TODO: add Automation Permission
     installNodePackages alfred-google-translate
     installNodePackages alfred-language-configuration
     pausethescript "Configure alfred-google-translate with 'trc en&fr' before continuing"
@@ -876,6 +878,7 @@ fi
 # https://cron.com
 #
 installcask cron
+#TODO: add Notifications Permission
 
 
 #
@@ -921,6 +924,8 @@ installkeg hh
 if [[ "$(isAppInstalled "Karabiner-Elements")" = "false" ]]; then
     installcask karabiner-elements
     restoreAppSettings karabiner-elements
+    #TODO: add karabiner_observer Receive Keystrokes Permission
+    #TODO: add karabiner_observer & karabiner_graber Input Monitor Permission
 fi
 
 #
@@ -1047,6 +1052,7 @@ installcask TripMode
 if [[ "$(isAppInstalled "zoom.us")" = "false" ]]; then
     installcask zoom
     giveScreenRecordingPermission "zoom.us"
+    #TODO: add Notifications Permission
 fi
 
 
