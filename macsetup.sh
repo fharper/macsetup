@@ -1084,6 +1084,7 @@ removeAppFromDock "Safari"
 removeAppFromDock "System Settings"
 removeAppFromDock "TV"
 
+
 ###############################
 #                             #
 # Dock & Menu Bar Preferences #
@@ -1165,7 +1166,7 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 
 #
-# Settings - Sidebad - Show these items in the sidebar
+# Settings - Sidebar - Show these items in the sidebar
 #
 defaults write com.apple.Finder ShowRecentTags -bool false
 
@@ -1200,7 +1201,7 @@ mysides add Applications file:///Applications/
 #
 defaults write -g ApplePressAndHoldEnabled -bool true
 
-# Press Fn to
+# Press Fn to (do nothing)
 defaults write com.apple.HIToolbox AppleFnUsageType -bool false
 
 
@@ -1267,7 +1268,7 @@ sudo nvram StartupMute=%01
 #
 # Sound Effects - Play user interface sound effects
 #
-defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
+defaults write com.apple.sound.uiaudio.enabled -bool false
 
 
 ###########################
@@ -1339,11 +1340,6 @@ pausethescript "Add your Email accounts to the macOS Internet Accounts"
 # Locate database generation
 #
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
-
-#
-# Log-in Screen Background
-#
-cp ~/Documents/misc/Mojave.heic /Library/Desktop\ Pictures
 
 #
 # Printer
