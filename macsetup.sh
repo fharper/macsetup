@@ -1999,6 +1999,15 @@ installkeg kubefirst
 installcask local
 
 #
+# localtunnel
+#
+# Expose localhost to the web
+#
+# https://github.com/localtunnel/localtunnel
+#
+installkeg localtunnel
+
+#
 # Mocha
 #
 # Node.js testing framework
