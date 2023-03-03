@@ -385,6 +385,19 @@ function getLicense {
 }
 
 #
+# Get the license file from 1Password & open it
+#
+# @param the application we want the license key
+# @param the filename of the license (will automate that when 1Password let you get the document file name)
+#
+function getLicenseFile {
+    op document get "$1" --output="$2"
+    open "$2"
+    pausethescript "Wait for $1 license to be added properly"
+    rm "$2"
+}
+
+#
 # Remove an application from the Dock, if it's there
 #
 # @param the application we want to remove
@@ -852,10 +865,7 @@ fi
 if [[ "$(isAppInstalled Contexts)" = "false" ]]; then
     installcask contexts
     giveAccessibilityPermission Contexts
-    op document get Contexts --output=contexts.contexts-license
-    open contexts.contexts-license
-    pausethescript "Wait for Contexts installation to finish before continuing"
-    rm contexts.contexts-license
+    getLicenseFile "Contexts" "contexts.contexts-license"
 fi
 
 #
@@ -2756,7 +2766,11 @@ fi
 #
 # https://github.com/iterate-ch/cyberduck
 #
-installcask cyberduck
+if [[ "$(isAppInstalled Cyberduck)" = "false" ]]; then
+    installcask cyberduck
+    restoreAppSettings cyberduck
+    getLicenseFile "Cyberduck" "license.cyberducklicense"
+fi
 
 #
 # DaisyDisk
