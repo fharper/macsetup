@@ -2683,7 +2683,10 @@ fi
 #
 # https://freemacsoft.net/appcleaner
 #
-installcask appcleaner
+if [[ "$(isAppInstalled AppCleaner)" = "false" ]]; then
+    installcask appcleaner
+    restoreAppSettings appcleaner
+fi
 
 #
 # AutoMute
