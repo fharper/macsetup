@@ -2572,6 +2572,15 @@ installkeg ABridoux/formulae/scout
 installkeg stress
 
 #
+# SVGO
+#
+# SVG Optimizer
+#
+# https://github.com/svg/svgo
+#
+installkeg svgo
+
+#
 # The Fuck
 #
 # Corrects your previous console command
