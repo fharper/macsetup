@@ -538,6 +538,7 @@ installkeg git
 git config --replace-all --global add.interactive.useBuiltin false
 git config --replace-all --global advice.addIgnoredFile false
 git config --replace-all --global advice.addEmptyPathspec false
+git config --replace-all --global advice.skippedCherryPicks false
 git config --replace-all --global clean.requireForce false
 git config --replace-all --global core.hooksPath ~/.git/hooks
 git config --replace-all --global core.ignorecase false
