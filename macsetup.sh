@@ -2314,14 +2314,19 @@ installNodePackages yo
 ######################
 
 #
-# Asciinema
+# Asciinema + svg-term-cli
+#
+# Terminal session recorder
+# Convert tool for asciicast to animated SVG
 #
 # https://github.com/asciinema/asciinema
+# https://github.com/marionebl/svg-term-cli
 #
 if [[ "$(isCLAppInstalled asciinema)" = "false" ]]; then
     installkeg asciinema
     asciinema auth
     pausethescript
+    installNodePackages svg-term-cli
 fi
 
 #
