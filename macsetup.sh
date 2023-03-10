@@ -2917,19 +2917,6 @@ if [[ "$(isAppInstalled "Elgato Stream Deck")" = "false" ]]; then
 fi
 
 #
-# Elgato Wave Link
-#
-# Elgato Wave:3 microphone configurations software
-#
-# https://www.elgato.com/en/wave-3
-#
-# Notes:
-#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
-#
-if [[ "$(isAppInstalled WaveLink)" = "false" ]]; then
-    installcask elgato-wave-link
-fi
-#
 # Figma
 #
 # Vector Design Tool
