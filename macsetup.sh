@@ -2694,6 +2694,15 @@ fi
 ################
 
 #
+# Actions
+#
+# Additional actions for the Shortcuts app
+#
+# https://github.com/sindresorhus/Actions
+#
+installFromAppStore 1586435171
+
+#
 # Affinity Designer
 #
 # https://affinity.serif.com/en-us/designer
