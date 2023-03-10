@@ -2978,6 +2978,15 @@ if [[ "$(isAppInstalled "Hemingway Editor")" = "false" ]]; then
 fi
 
 #
+# Hyperduck
+#
+# Receive links from iOS even when offline
+#
+# https://sindresorhus.com/hyperduck
+#
+installFromAppStore 6444667067
+
+#
 # IGdm Messenger
 #
 # Instagram Messenger
