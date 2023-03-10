@@ -2165,6 +2165,15 @@ installNodePackages stylelint-config-recommended
 installkeg go-task
 
 #
+# UTM
+#
+# Virtual machine host
+#
+# https://github.com/utmapp/UTM
+#
+installcask utm
+
+#
 # Xcodes
 #
 # Xcode versions management
