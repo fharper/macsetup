@@ -1685,6 +1685,15 @@ installcask charles
 installkeg cocoapods
 
 #
+# commitlint
+#
+# Lint commit messages
+#
+# https://github.com/conventional-changelog/commitlint
+#
+installkeg commitlint
+
+#
 # Cordova CLI
 #
 # CLI for Cordova
