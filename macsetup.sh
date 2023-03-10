@@ -1703,6 +1703,23 @@ installkeg commitlint
 installNodePackages cordova
 
 #
+# delete-gh-workflow-runs + fzf
+#
+# Easily mass-delete GitHub Workflow runs
+# A command-line fuzzy finder
+#
+# https://github.com/jv-k/delete-gh-workflow-runs
+# https://github.com/junegunn/fzf
+#
+# Notes:
+# - fzf is a dependency for delete-gh-workflow-runs
+#
+if [[ "$(isCLAppInstalled delete-workflow-runs)" = "false" ]]; then
+    installNodePackages delete-workflow-runs
+    installkeg fzf
+fi
+
+#
 # Delve
 #
 # Go Debugger
