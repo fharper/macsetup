@@ -2047,7 +2047,7 @@ fi
 #
 # Delivery & infrastructure Kubernetes management gitops platforms
 #
-# https://github.com/kubefirst/kubefirst#installing-the-cli
+# https://github.com/kubefirst/kubefirst
 #
 installkeg kubefirst
 
