@@ -2078,6 +2078,15 @@ installkeg localtunnel
 installNodePackages mocha
 
 #
+# mkcert
+#
+# Tool to make local trusted development certificates
+#
+# https://github.com/FiloSottile/mkcert
+#
+installkeg mkcert
+
+#
 # npm Check Updates (ncu)
 #
 # Find newer versions of Node package dependencies
