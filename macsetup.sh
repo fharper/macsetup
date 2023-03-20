@@ -1905,6 +1905,18 @@ if [[ "$(isCLAppInstalled gh)" = "false" ]]; then
 fi
 
 #
+# GitLab CLI
+#
+# GitLab CLI
+#
+# https://gitlab.com/gitlab-org/cli
+#
+if [[ "$(isCLAppInstalled glab)" = "false" ]]; then
+    brew install glab
+    glab auth login
+fi
+
+#
 # Go
 #
 # Go programming language
