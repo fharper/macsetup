@@ -2031,6 +2031,18 @@ installcask jupyterlab
 installkeg k3d
 
 #
+# Krew
+#
+# kubectl plugins manager
+#
+# https://github.com/kubernetes-sigs/krew
+#
+if [[ "$(isCLAppInstalled gh)" = "false" ]]; then
+    installkeg krew
+    kubectl krew update
+fi
+
+#
 # Kubefirst
 #
 # Delivery & infrastructure Kubernetes management gitops platforms
