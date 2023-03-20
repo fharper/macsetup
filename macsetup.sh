@@ -3476,6 +3476,9 @@ duti -s com.interversehq.qView public.png all # PNG by using my own build
 duti -s com.interversehq.qView public.svg-image all #svg
 duti -s com.qview.qView public.png all # PNG
 
+# The Unarchiver
+duti -s com.macpaw.site.theunarchiver com.rarlab.rar-archive all #RAR
+
 # WebPViewer
 duti -s net.langui.WebPViewer org.webmproject.webp all #WebP
 
