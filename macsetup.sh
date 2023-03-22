@@ -2055,6 +2055,15 @@ if [[ "$(isCLAppInstalled kubectl)" = "false" ]]; then
 fi
 
 #
+# kubectx
+#
+# Kubernetes clusters & namespaces switcher
+#
+# https://github.com/ahmetb/kubectx
+#
+installkeg kubectx
+
+#
 # Kubefirst
 #
 # Delivery & infrastructure Kubernetes management gitops platforms
