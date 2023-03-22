@@ -3509,6 +3509,7 @@ installFromAppStore "Among Us" 1351168404
 #
 if [[ "$(isAppInstalled "Epic Games Launcher")" = "false" ]]; then
     installcask epic-games
+    # TODO: add keystroke permission
 fi
 
 #
