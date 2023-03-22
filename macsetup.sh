@@ -2031,6 +2031,15 @@ installcask jupyterlab
 installkeg k3d
 
 #
+# KDash
+#
+# Kubernetes dashboard
+#
+# https://github.com/kdash-rs/kdash
+#
+installkeg kdash-rs/kdash/kdash
+
+#
 # kubectl + Krew
 #
 # Kubernetes CLI
