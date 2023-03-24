@@ -2394,6 +2394,15 @@ installkeg wp-cli
 #
 installNodePackages yo
 
+#
+# yq
+#
+# YAML processor
+#
+# https://github.com/mikefarah/yq
+#
+installkeg yq
+
 
 ######################
 #                    #
