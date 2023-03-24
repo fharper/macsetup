@@ -2050,7 +2050,10 @@ installkeg k3d
 #
 # https://github.com/kdash-rs/kdash
 #
-installkeg kdash-rs/kdash/kdash
+if [[ "$(isCLAppInstalled kdash)" = "false" ]]; then
+    brew tap kdash-rs/kdash
+    installkeg kdash
+fi
 
 #
 # kubectl + Krew
@@ -2664,7 +2667,10 @@ installkeg rename
 #
 # https://github.com/ABridoux/scout
 #
-installkeg ABridoux/formulae/scout
+if [[ "$(isCLAppInstalled scout)" = "false" ]]; then
+    brew tap ABridoux/formulae
+    installkeg scout
+fi
 
 #
 # Stress
