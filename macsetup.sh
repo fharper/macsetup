@@ -2866,6 +2866,18 @@ installFromAppStore "AutoMute" 1118136179
 installcask beardedspice
 
 #
+# BlockBlock
+#
+# Monitor persistence locations
+#
+# https://github.com/objective-see/BlockBlock
+#
+if [[ "$(isAppInstalled "BlockBlock Helper")" = "false" ]]; then
+    installcask blockblock
+    loginitems -a blockblock
+fi
+
+#
 # Calibre + DeDRM Tools
 #
 # https://github.com/kovidgoyal/calibre
