@@ -3266,6 +3266,15 @@ if [[ "$(isAppInstalled "OBS")" = "false" ]]; then
 fi
 
 #
+# OverSight
+#
+# Monitor the microphone & webcam
+#
+# https://github.com/objective-see/OverSight
+#
+installcask oversight
+
+#
 # Paprika Recipe Manager
 #
 # Recipes manager
