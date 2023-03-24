@@ -601,7 +601,7 @@ if [[ ! $(asdf current python) ]]; then
     asdf plugin-add python
     asdf install python 3.11.2
     asdf global python 3.11.2
-    brew install pipx
+    installkeg pipx
     pipx ensurepath
     installPythonPackage wheel
     installPythonApp pylint
@@ -1912,7 +1912,7 @@ fi
 # https://gitlab.com/gitlab-org/cli
 #
 if [[ "$(isCLAppInstalled glab)" = "false" ]]; then
-    brew install glab
+    installkeg glab
     glab auth login
 fi
 
@@ -2252,11 +2252,20 @@ fi
 # PHP
 #
 # PHP programming language
+# TODO: ADD INFO ON DEPENDENCIES
 #
 # https://github.com/php/php-src
 #
 if [[ ! $(asdf current php) ]]; then
-    brew install gmp libsodium imagemagick bison re2c libgd libiconv icu4c libzip
+    installkeg gmp
+    installkeg libsodium
+    installkeg imagemagick
+    installkeg bison
+    installkeg re2c
+    installkeg libgd
+    installkeg libiconv
+    installkeg icu4c
+    installkeg libzip
     asdf plugin-add php
     asdf install php 8.2.3
     asdf global php 8.2.3
