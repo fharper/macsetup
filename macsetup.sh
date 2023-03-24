@@ -1676,6 +1676,19 @@ installkeg caddy
 installcask charles
 
 #
+# Civo
+#
+# Civo CLI
+#
+# https://github.com/civo/cli
+#
+if [[ "$(isCLAppInstalled civo)" = "false" ]]; then
+    brew tap civo/tools
+    installkeg civo
+    civo apikey add kubefirst $CIVO_TOKEN
+fi
+
+#
 # CocoaPods
 #
 # XCode dependency manager
