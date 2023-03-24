@@ -3290,6 +3290,14 @@ fi
 installFromAppStore "Pure Paste" 1611378436
 
 #
+# RansomWhere?
+#
+# Monitoring the creation of encrypted files
+#
+# https://objective-see.org/products/ransomwhere.html
+installcask ransomwhere
+
+#
 # Raspberry Pi Imager
 #
 # Raspberry Pi imaging utility
