@@ -681,7 +681,7 @@ installkeg duti
 #
 # https://github.com/stedolan/jq
 #
-# Needed for my "git clone" function
+# JSON processor
 #
 installkeg jq
 
