@@ -3138,6 +3138,15 @@ installcask keycastr
 installcask kindle
 
 #
+# KnockKnock
+#
+# Enumerate persistently installed softwares
+#
+# https://github.com/objective-see/knockknock
+#
+installcask knockknock
+
+#
 # Logitech Presentation
 #
 # Application to be able to use the Logitech Spotlight Remote Clicker
