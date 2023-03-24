@@ -2988,6 +2988,15 @@ if [[ "$(isAppInstalled "Disk Drill")" = "false" ]]; then
 fi
 
 #
+# DHS
+#
+# dylib hijack scanner
+#
+# https://objective-see.org/products/dhs.html
+#
+installcask dhs
+
+#
 # Elgato Lights Control Center
 #
 # Elgato Lights Control App
