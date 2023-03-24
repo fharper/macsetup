@@ -1835,6 +1835,18 @@ installNodePackages eslint-plugin-jsdoc
 installNodePackages eslint-plugin-json
 
 #
+# doctl
+#
+# DigitalOcean CLI
+#
+# https://github.com/digitalocean/doctl
+#
+if [[ "$(isCLAppInstalled kubectl)" = "false" ]]; then
+    installkeg doctl
+    doctl auth init
+fi
+
+#
 # Expo CLI
 #
 # Tools for creating, running, and deploying Universal Expo & React Native apps
