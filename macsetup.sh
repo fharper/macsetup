@@ -2814,6 +2814,15 @@ fi
 installFromAppStore 1586435171
 
 #
+# Audacity
+#
+# Audio editor
+#
+# https://github.com/audacity/audacity
+#
+installcask audacity
+
+#
 # Affinity Designer
 #
 # https://affinity.serif.com/en-us/designer
