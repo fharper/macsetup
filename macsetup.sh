@@ -2007,7 +2007,10 @@ installkeg hadolint
 #
 # https://github.com/helm/helm
 #
-installkeg helm
+if [[ "$(isCLAppInstalled helm)" = "false" ]]; then
+    installkeg helm
+    helm repo add bitnami https://charts.bitnami.com/bitnami
+fi
 
 #
 # iOS Deploy
