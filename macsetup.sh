@@ -505,6 +505,39 @@ if [[ "$(isAppInstalled Dropbox)" = "false" ]]; then
 fi
 
 #
+# Python + PipX + Wheel + Pylint + pytest + Twine
+#
+# Python SDK
+# Isolated Environments Pip alternative for app (not packages)
+# Python wheel packaging tool
+# Python linter
+# Python tests framework
+# Utilities for interacting with PyPI
+#
+# https://www.python.org
+# https://github.com/pypa/pipx
+# https://github.com/pypa/wheel
+# https://github.com/PyCQA/pylint/
+# https://github.com/pytest-dev/pytest
+# https://github.com/pypa/twine/
+#
+# Notes
+#   - Needed before lastversion
+#
+if [[ ! $(asdf current python) ]]; then
+    asdf plugin-add python
+    asdf install python 3.11.2
+    asdf global python 3.11.2
+    reload
+    installkeg pipx
+    pipx ensurepath
+    installPythonPackage wheel
+    installPythonApp pylint
+    installPythonApp pytest
+    installPythonApp twine
+fi
+
+#
 # lastversion
 #
 # CLI to get latest GitHub Repo Release assets URL
@@ -607,35 +640,6 @@ fi
 #
 if [[ ! -L "/Users/fharper/.zshrc" ]]; then
     restoreAppSettings files
-fi
-
-#
-# Python + PipX + Wheel + Pylint + pytest + Twine
-#
-# Python SDK
-# Isolated Environments Pip alternative for app (not packages)
-# Python wheel packaging tool
-# Python linter
-# Python tests framework
-# Utilities for interacting with PyPI
-#
-# https://www.python.org
-# https://github.com/pypa/pipx
-# https://github.com/pypa/wheel
-# https://github.com/PyCQA/pylint/
-# https://github.com/pytest-dev/pytest
-# https://github.com/pypa/twine/
-#
-if [[ ! $(asdf current python) ]]; then
-    asdf plugin-add python
-    asdf install python 3.11.2
-    asdf global python 3.11.2
-    installkeg pipx
-    pipx ensurepath
-    installPythonPackage wheel
-    installPythonApp pylint
-    installPythonApp pytest
-    installPythonApp twine
 fi
 
 #
