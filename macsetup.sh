@@ -490,18 +490,18 @@ fi
 installkeg mackup
 
 #
-# Maestral
+# Dropbox
 #
 # Dropbox client
 #
-# https://github.com/samschott/maestral
+# https://dropbox.com
 #
 # Notes: needed right after mackup so configurations files can be restored
 #
 if [[ "$(isAppInstalled Dropbox)" = "false" ]]; then
-    installcask maestral
-    open -a Maestral
-    pausethescript "Wait for Dropbox (Maestral) to finish Mackup folder synchronization (it's needed for restoring applications configurations) before continuing"
+    installcask dropbox
+    open -a Dropbox
+    pausethescript "Wait for Dropbox to finish Mackup folder synchronization (it's needed for restoring applications configurations) before continuing"
 fi
 
 #
