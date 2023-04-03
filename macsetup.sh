@@ -433,6 +433,9 @@ fi
 #
 # https://developer.apple.com/documentation/apple_silicon/about_the_rosetta_translation_environment
 #
+# Notes
+#  - You may get a "Package Authoring Error" even if the installation worked (https://discussions.apple.com/thread/253780410)
+#
 if [[ -z $(pgrep oahd) ]]; then
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 fi
