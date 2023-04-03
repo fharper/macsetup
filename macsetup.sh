@@ -813,6 +813,29 @@ sudo rm -rf /Applications/Keynote.app
 sudo rm -rf /Applications/Numbers.app
 sudo rm -rf /Applications/Pages.app
 
+################
+#              #
+# Dock Cleanup #
+#              #
+################
+
+removeAppFromDock "App Store"
+removeAppFromDock "Calendar"
+removeAppFromDock "Contacts"
+removeAppFromDock "FaceTime"
+removeAppFromDock "Freeform"
+removeAppFromDock "Launchpad"
+removeAppFromDock "Mail"
+removeAppFromDock "Maps"
+removeAppFromDock "Music"
+removeAppFromDock "News"
+removeAppFromDock "Notes"
+removeAppFromDock "Podcasts"
+removeAppFromDock "Reminders"
+removeAppFromDock "Safari"
+removeAppFromDock "System Settings"
+removeAppFromDock "TV"
+
 ###########################
 #                         #
 # Top Helper Applications #
@@ -1078,29 +1101,6 @@ if [[ "$(isAppInstalled "zoom.us")" = "false" ]]; then
     giveScreenRecordingPermission "zoom.us"
     #TODO: add Notifications Permission
 fi
-
-
-################
-#              #
-# Dock Cleanup #
-#              #
-################
-
-removeAppFromDock "App Store"
-removeAppFromDock "Calendar"
-removeAppFromDock "Contacts"
-removeAppFromDock "FaceTime"
-removeAppFromDock "Launchpad"
-removeAppFromDock "Mail"
-removeAppFromDock "Maps"
-removeAppFromDock "Music"
-removeAppFromDock "News"
-removeAppFromDock "Notes"
-removeAppFromDock "Podcasts"
-removeAppFromDock "Reminders"
-removeAppFromDock "Safari"
-removeAppFromDock "System Settings"
-removeAppFromDock "TV"
 
 
 ###############################
