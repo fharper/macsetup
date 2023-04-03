@@ -1386,6 +1386,7 @@ if [[ "$(isAppInstalled 1Password)" = "false" ]]; then
     installkeg git-credential-1password
     git config --replace-all --global credential.helper '!git-credential-1password'
     installFromAppStore "1Password Safari Extension" 1569813296
+    open -a Safari
     pausethescript "Open Safari Settings, and in the Extensions tab, check the box for '1Password for Safari' before continuing"
 fi
 
