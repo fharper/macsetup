@@ -505,6 +505,21 @@ if [[ "$(isAppInstalled Dropbox)" = "false" ]]; then
 fi
 
 #
+# asdf
+#
+# Version manager with support for everything
+#
+# https://github.com/asdf-vm/asdf
+#
+# Notes
+#   - Needed before Python
+#
+if [[ "$(isCLAppInstalled asdf)" = "false" ]]; then
+    installkeg asdf
+    reload
+fi
+
+#
 # Python + PipX + Wheel + Pylint + pytest + Twine
 #
 # Python SDK
@@ -717,16 +732,6 @@ installkeg loginitems
 # https://github.com/mosen/mysides
 #
 installkeg mysides
-
-#
-# asdf
-#
-# Version manager with support for everything
-#
-# https://github.com/asdf-vm/asdf
-#
-installkeg asdf
-reload
 
 #
 # Node.js + npm CLI
