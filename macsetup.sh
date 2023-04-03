@@ -505,6 +505,18 @@ if [[ "$(isAppInstalled Dropbox)" = "false" ]]; then
 fi
 
 #
+# lastversion
+#
+# CLI to get latest GitHub Repo Release assets URL
+#
+# https://github.com/dvershinin/lastversion
+#
+# Notes
+#   - Needed before Dockutil
+#
+installPythonApp lastversion
+
+#
 # Dockutil
 #
 # Utility to manage macOS Dock items
@@ -683,15 +695,6 @@ installkeg duti
 # JSON processor
 #
 installkeg jq
-
-#
-# lastversion
-#
-# CLI to get latest GitHub Repo Release assets URL
-#
-# https://github.com/dvershinin/lastversion
-#
-installPythonApp lastversion
 
 #
 # loginitems
