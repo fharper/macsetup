@@ -801,6 +801,18 @@ giveAccessibilityPermission "Script Editor"
 installkeg terminal-notifier
 
 
+########################
+#                      #
+# Applications Cleanup #
+#                      #
+########################
+
+sudo rm -rf /Applications/GarageBand.app
+sudo rm -rf /Applications/iMovie.app
+sudo rm -rf /Applications/Keynote.app
+sudo rm -rf /Applications/Numbers.app
+sudo rm -rf /Applications/Pages.app
+
 ###########################
 #                         #
 # Top Helper Applications #
@@ -1067,18 +1079,6 @@ if [[ "$(isAppInstalled "zoom.us")" = "false" ]]; then
     #TODO: add Notifications Permission
 fi
 
-
-########################
-#                      #
-# Applications Cleanup #
-#                      #
-########################
-
-sudo rm -rf /Applications/GarageBand.app
-sudo rm -rf /Applications/iMovie.app
-sudo rm -rf /Applications/Keynote.app
-sudo rm -rf /Applications/Numbers.app
-sudo rm -rf /Applications/Pages.app
 
 ################
 #              #
