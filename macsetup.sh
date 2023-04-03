@@ -997,28 +997,6 @@ if [[ "$(isAppInstalled "Little Snitch")" = "false" ]]; then
 fi
 
 #
-# Logi Options+
-#
-# Logitech Mouse Configurations App
-#
-# https://www.logitech.com/en-ca/software/logi-options-plus.html
-#
-# Notes
-#   - Not using Homebrew as you need to run the installer, and do not know the full path because of the version number
-#   - File name for the app is logioptionsplus, not "Logi Options+" in the "Applications" folder
-#
-if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
-    echo $fg[blue]"Starting the installation of Logi Options+"$reset_color
-    curl -L https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip --output logitech.zip
-    unzip logitech.zip
-    rm logitech.zip
-    rm __MACOSX #created by the unzip call
-    open logioptionsplus_installer.app
-    pausethescript "Wait for Logi Options+ installation to finish before continuing"
-    rm -rf logioptionsplus_installer.app
-fi
-
-#
 # Moom
 #
 # Applications' windows management
@@ -3192,6 +3170,28 @@ installcask kindle
 # https://github.com/objective-see/knockknock
 #
 installcask knockknock
+
+#
+# Logi Options+
+#
+# Logitech Mouse Configurations App
+#
+# https://www.logitech.com/en-ca/software/logi-options-plus.html
+#
+# Notes
+#   - Not using Homebrew as you need to run the installer, and do not know the full path because of the version number
+#   - File name for the app is logioptionsplus, not "Logi Options+" in the "Applications" folder
+#
+if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
+    echo $fg[blue]"Starting the installation of Logi Options+"$reset_color
+    curl -L https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip --output logitech.zip
+    unzip logitech.zip
+    rm logitech.zip
+    rm __MACOSX #created by the unzip call
+    open logioptionsplus_installer.app
+    pausethescript "Wait for Logi Options+ installation to finish before continuing"
+    rm -rf logioptionsplus_installer.app
+fi
 
 #
 # Logitech Presentation
