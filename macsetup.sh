@@ -860,7 +860,8 @@ if [[ "$(isAppInstalled "Alfred 5")" = "false" ]]; then
     #TODO: add Automation Permission
     installNodePackages alfred-google-translate
     installNodePackages alfred-language-configuration
-    pausethescript "Configure alfred-google-translate with 'trc en&fr' before continuing"
+    pbcopy "trc en&fr"
+    pausethescript "Configure alfred-google-translate with 'trc en&fr' (in your clipboard) before continuing"
 fi
 
 #
