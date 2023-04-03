@@ -404,7 +404,7 @@ function getLicenseFile {
 #
 function removeAppFromDock {
     if [[ $(dockutil --list | grep "$1") ]]; then
-        echo $fg[blue]"Removing $1 from the Dock"$reset_color
+        echo $fg[blue]"Removing $1 from the Dock. The Dock will flash, it's normal."$reset_color
         dockutil --remove "$1" --allhomes
     fi
 }
