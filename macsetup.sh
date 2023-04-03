@@ -2850,6 +2850,15 @@ if [[ "$(isAppInstalled AppCleaner)" = "false" ]]; then
 fi
 
 #
+# Around
+#
+# Video call app
+#
+# https://www.around.co
+#
+installcask around
+
+#
 # AutoMute
 #
 # Mute your laptop when your headphones disconnect
