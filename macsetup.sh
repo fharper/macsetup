@@ -952,15 +952,6 @@ if [[ "$(isAppInstalled Espanso)" = "false" ]]; then
 fi
 
 #
-# Hammerspoon
-#
-# macOS desktop automation tool
-#
-# https://github.com/Hammerspoon/hammerspoon
-#
-installcask hammerspoon
-
-#
 # HSTR
 #
 # Shell command history management
