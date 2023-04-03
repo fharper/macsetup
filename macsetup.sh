@@ -851,7 +851,8 @@ removeAppFromDock "TV"
 #
 if [[ "$(isAppInstalled "Alfred 5")" = "false" ]]; then
     installcask alfred
-    defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 "<dict><key>enabled</key><false/><key>value</key><dict><key>parameters</key><array><integer>65535</integer><integer>49</integer><integer>1048576</integer></array><key>type</key><string>standard</string></dict></dict>" # Deactivate Spotlight Global Shortcut to use it with Alfred instead (will work after logging off)
+    open /System/Library/PreferencePanes/Keyboard.prefPane
+    pausethescript "In System Preferences, Keyboard, click on the 'Keyboard Shortcuts...' button. Select the 'Spotlight' pane & uncheck the 'Show Spotlight Search' checkbox."
     open -a Alfred
     getLicense Alfred
     giveAccessibilityPermission "Alfred 5"
