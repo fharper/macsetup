@@ -920,6 +920,7 @@ if [[ "$(isAppInstalled Contexts)" = "false" ]]; then
     installcask contexts
     giveAccessibilityPermission Contexts
     getLicenseFile "Contexts" "contexts.contexts-license"
+    open -a Contexts
 fi
 
 #
