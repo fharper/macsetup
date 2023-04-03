@@ -648,6 +648,7 @@ if [[ "$(isCLAppInstalled omz)" = "false" ]]; then
     # Restoring here since OMZ backup ~/.zshrc to ~/.zshrc.pre-oh-my-zsh
     restoreAppSettings zsh
     rm ~/.zshrc.pre-oh-my-zsh
+    reload
 fi
 
 #
