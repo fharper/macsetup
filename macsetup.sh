@@ -993,11 +993,17 @@ installcask keepingyouawake
 #
 # https://www.obdev.at/products/littlesnitch/index.html
 #
+# Notes
+#   - To backup the rules, run 'sudo littlesnitch export-model > little-snitch.json' on previous laptop
+#
 if [[ "$(isAppInstalled "Little Snitch")" = "false" ]]; then
     installcask little-snitch
     restoreAppSettings littlesnitch
-    pausethescript "The rules aren't backup with Mackup, so on the previous computer, open Little Snitch Rules, go to File > Create Backup. On this laptop, open Little Snitch Rules, go to File > Restore from Backup before continuing"
+    pausethescript "Activate the CLI by opening Little Snitch Preferences, go to Security, and click the lock icon. Check the 'Allow access via Terminal' option, and run 'sudo littlesnitch restore-model little-snitch.json' (copied in your clipboard) in your Terminal where the backup file is."
+    reload
+    pbcopy "sudo littlesnitch restore-model little-snitch.json"
 fi
+exit
 
 #
 # Moom
