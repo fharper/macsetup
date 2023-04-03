@@ -505,6 +505,24 @@ if [[ "$(isAppInstalled Dropbox)" = "false" ]]; then
 fi
 
 #
+# Dockutil
+#
+# Utility to manage macOS Dock items
+#
+# https://github.com/kcrawford/dockutil
+#
+# Notes
+#   - Homebrew version not updated
+#   - Needed before iTerm2
+#
+if [[ "$(isCLAppInstalled dockutil)" = "false" ]]; then
+    echo $fg[blue]"Starting the installation of Dockutil"$reset_color
+    curl -L "$(lastversion kcrawford/dockutil --assets)" --output dockutil.pkg
+    sudo installer -pkg dockutil.pkg -target /
+    rm dockutil.pkg
+fi
+
+#
 # iTerm2
 # iTerm2 Shell Integration
 #
@@ -647,24 +665,6 @@ fi
 # https://github.com/jwbargsten/defbro
 #
 installkeg defbro
-
-#
-# Dockutil
-#
-# Utility to manage macOS Dock items
-#
-# https://github.com/kcrawford/dockutil
-#
-# Notes
-#   - Homebrew version not updated
-#
-if [[ "$(isCLAppInstalled dockutil)" = "false" ]]; then
-    echo $fg[blue]"Starting the installation of Dockutil"$reset_color
-    curl -L "$(lastversion kcrawford/dockutil --assets)" --output dockutil.pkg
-    sudo installer -pkg dockutil.pkg -target /
-    pausethescript "Wait for Dockutil installation to finish before continuing"
-    rm dockutil.pkg
-fi
 
 #
 # Duti
