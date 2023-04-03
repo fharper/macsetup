@@ -872,6 +872,9 @@ fi
 #
 # https://www.macbartender.com
 #
+# Notes
+#   - Cannot use mackup with Bartender (https://github.com/lra/mackup/issues/1126)
+#
 if [[ "$(isAppInstalled "Bartender 4")" = "false" ]]; then
     installcask bartender
     giveAccessibilityPermission "Bartender 4"
