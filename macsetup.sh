@@ -745,7 +745,6 @@ if [[ ! $(asdf current nodejs) ]]; then
     asdf plugin-add nodejs
     asdf install nodejs 19.6.0
     asdf global nodejs 19.6.0
-    ln -s $(nvm which node) /usr/local/bin #Needed by some Alfred workflows (no need to be latest version when I'll update Node & I cannot ln to node directly, too many symbolic links)
     npm i -g npm@latest
     npm adduser
 fi
