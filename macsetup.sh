@@ -656,6 +656,7 @@ fi
 #
 if [[ ! -L "/Users/fharper/.zshrc" ]]; then
     restoreAppSettings files
+    reload
 fi
 
 #
