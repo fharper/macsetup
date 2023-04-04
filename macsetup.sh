@@ -1348,8 +1348,11 @@ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 #
 # Printer
 #
-open /System/Library/PreferencePanes/PrintAndScan.prefPane
-pausethescript "Add your HP OfficeJet 7740"
+local alreadyInstalled=$(system_profiler SPPrintersDataType | grep "The printers list is empty")
+if [[ -n "$alreadyInstalled" ]]; then
+    open /System/Library/PreferencePanes/PrintAndScan.prefPane
+    pausethescript "Add your HP OfficeJet 7740"
+fi
 
 ########################
 #                      #
