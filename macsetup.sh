@@ -2102,7 +2102,7 @@ installkeg kubectx
 #
 # https://github.com/kubefirst/kubefirst
 #
-installkeg kubefirst
+installkeg kubefirst/tools/kubefirst
 
 #
 # local
