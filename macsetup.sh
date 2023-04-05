@@ -3121,7 +3121,10 @@ installcask firefox
 #
 # https://www.gimp.org/
 #
-installcask gimp
+if [[ "$(isAppInstalled "Hemingway Editor")" = "false" ]]; then
+    installcask gimp
+    restoreAppSettings gimp
+fi
 
 #
 # Gray
