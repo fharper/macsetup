@@ -1997,6 +1997,15 @@ fi
 installkeg grip
 
 #
+# Gum
+#
+# Utils for Shell Scripts
+#
+# https://github.com/charmbracelet/gum
+#
+installkeg gum
+
+#
 # Hadolint
 #
 # Docker file linter
