@@ -748,6 +748,7 @@ if [[ ! $(asdf current nodejs) ]]; then
     asdf plugin-add nodejs
     asdf install nodejs 19.6.0
     asdf global nodejs 19.6.0
+    reload
     npm i -g npm@latest
     npm adduser
 fi
@@ -1753,6 +1754,7 @@ if [[ ! $(asdf current deno) ]]; then
     asdf plugin-add deno
     asdf install deno 1.30.3
     asdf global deno 1.30.3
+    reload
 fi
 
 #
@@ -1953,6 +1955,7 @@ if [[ ! $(asdf current golang) ]]; then
     asdf plugin-add golang
     asdf install golang 1.20.1
     asdf global golang 1.20.1
+    reload
 fi
 
 #
@@ -2195,6 +2198,7 @@ if [[ ! $(asdf current ruby) ]]; then
     asdf plugin-add ruby
     asdf install ruby 3.2.1
     asdf global ruby 3.2.1
+    reload
 fi
 
 #
@@ -2301,6 +2305,7 @@ if [[ ! $(asdf current php) ]]; then
     asdf plugin-add php
     asdf install php 8.2.3
     asdf global php 8.2.3
+    reload
 fi
 
 #
@@ -2314,6 +2319,7 @@ if [[ ! $(asdf current java) ]]; then
     asdf plugin-add java
     asdf install java openjdk-19.0.2
     asdf global java openjdk-19.0.2
+    reload
 fi
 
 #
@@ -2336,6 +2342,7 @@ if [[ ! $(asdf current rust) ]]; then
     asdf plugin-add rust
     asdf install rust 1.67.1
     asdf global rust 1.67.1
+    reload
 fi
 
 #
