@@ -2769,6 +2769,15 @@ if [[ ! -d "/Users/fharper/.vim/bundle/Vundle.vim" ]]; then
 fi
 
 #
+# wget
+#
+# CLI download tool
+#
+# https://github.com/mirror/wget
+#
+installkeg wget
+
+#
 # Wifi Password
 #
 # https://github.com/rauchg/wifi-password
