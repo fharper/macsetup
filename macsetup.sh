@@ -1470,16 +1470,15 @@ if [[ "$(isAppInstalled "Mumu X")" = "false" ]]; then
 fi
 
 #
-# Notion Enhanced
+# Notion
 #
-# Notion is a notes app & the Notion Enhanced give a lot of customizations possibilities
+# Notes application
 #
 # https://www.notion.so
-# https://github.com/notion-enhancer/desktop
 #
-if [[ "$(isAppInstalled "Notion Enhanced")" = "false" ]]; then
-    installcask notion-enhanced
-    dockutil --add "/Applications/Notion Enhanced.app" --allhomes
+if [[ "$(isAppInstalled "Notion")" = "false" ]]; then
+    installcask notion
+    dockutil --add "/Applications/Notion.app" --allhomes
 fi
 
 #
