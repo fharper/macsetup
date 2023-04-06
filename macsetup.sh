@@ -3547,7 +3547,10 @@ installcask typora
 #
 # https://github.com/videolan/vlc
 #
-installcask vlc
+if [[ "$(isAppInstalled VLC)" = "false" ]]; then
+    installcask vlc
+    restoreAppSettings vlc
+fi
 
 
 #
