@@ -2994,7 +2994,7 @@ fi
 if [[ "$(isAppInstalled Cryptomator)" = "false" ]]; then
     installcask cryptomator
     installcask macfuse
-    open Cryptomator
+    open -a Cryptomator
     getLicense Cryptomator
     pausethescript "Add your vault to Cryptomator"
 fi
