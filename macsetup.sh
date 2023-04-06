@@ -2148,7 +2148,10 @@ installNodePackages mocha
 #
 # https://github.com/FiloSottile/mkcert
 #
-installkeg mkcert
+if [[ "$(isCLAppInstalled mkcert)" = "false" ]]; then
+    installkeg mkcert
+    mkcert -install
+fi
 
 #
 # npm Check Updates (ncu)
