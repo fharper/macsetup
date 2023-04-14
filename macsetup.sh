@@ -2581,6 +2581,8 @@ brew tap homebrew/command-not-found
 #
 # htop
 #
+# Terminal interactive process viewer
+#
 # https://github.com/htop-dev/htop
 #
 installkeg htop
