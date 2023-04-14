@@ -2581,6 +2581,8 @@ installkeg htop
 #
 # HTTPie
 #
+# Terminal HTTP client
+#
 # https://github.com/httpie/httpie
 #
 installkeg httpie
