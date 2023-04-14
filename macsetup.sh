@@ -2615,6 +2615,8 @@ installkeg lsusb
 #
 # LZip
 #
+# Lossless data compressor
+#
 # https://www.nongnu.org/lzip
 #
 installkeg lzip
