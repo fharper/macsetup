@@ -2657,11 +2657,14 @@ installkeg nmap
 installkeg noti
 
 #
-# Pandoc (for my resume)
+# Pandoc
 #
 # Markup converter
 #
 # https://github.com/jgm/pandoc
+#
+# Notes:
+#  - Using it for my resume https://github.com/fharper/resume
 #
 installkeg pandoc
 
