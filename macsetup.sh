@@ -2668,6 +2668,8 @@ installkeg noti
 #
 # Pandoc (for my resume)
 #
+# Markup converter
+#
 # https://github.com/jgm/pandoc
 #
 installkeg pandoc
