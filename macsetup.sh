@@ -641,6 +641,8 @@ git config --replace-all --global user.name "Frédéric Harper"
 #
 # Oh My Zsh
 #
+# Zsh configurations framework & management
+#
 # https://github.com/ohmyzsh/ohmyzsh
 #
 
