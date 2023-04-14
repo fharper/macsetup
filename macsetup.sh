@@ -2683,6 +2683,8 @@ installkeg poppler
 #
 # Public-ip-cli
 #
+# Get public IP
+#
 # https://github.com/sindresorhus/public-ip-cli
 #
 installNodePackages public-ip-cli
