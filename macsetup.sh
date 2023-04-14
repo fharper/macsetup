@@ -761,15 +761,6 @@ if [[ ! $(asdf current nodejs) ]]; then
 fi
 
 #
-# OpenSSL
-#
-# TLS/SSL and crypto library
-#
-# https://github.com/openssl/openssl
-#
-installkeg openssl
-
-#
 # BZip2
 #
 # Data compressor
