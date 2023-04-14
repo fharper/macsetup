@@ -2479,6 +2479,8 @@ installkeg bandwhich
 #
 # Bat
 #
+# A better cat
+#
 # https://github.com/sharkdp/bat
 #
 installkeg bat
