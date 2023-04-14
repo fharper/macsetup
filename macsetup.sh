@@ -745,6 +745,9 @@ installkeg mysides
 #
 # Node.js + npm CLI
 #
+# Node.js programming language SDK
+# Node Package Manager CLI
+#
 # https://github.com/nodejs/node
 # https://github.com/npm/cli
 #
