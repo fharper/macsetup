@@ -1001,7 +1001,6 @@ if [[ "$(isAppInstalled "Little Snitch")" = "false" ]]; then
     reload
     pbcopy "sudo littlesnitch restore-model little-snitch.json"
 fi
-exit
 
 #
 # Moom
