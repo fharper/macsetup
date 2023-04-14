@@ -2751,7 +2751,7 @@ installkeg svgo
 installkeg thefuck
 
 #
-# tl;dr Pages
+# tldr-pages
 #
 # https://github.com/tldr-pages/tldr
 #
