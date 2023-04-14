@@ -3489,7 +3489,10 @@ installFromAppStore Speedtest 1153157709
 #
 # https://github.com/exelban/stats
 #
-installcask stats
+if [[ "$(isAppInstalled stats)" = "false" ]]; then
+    installcask stats
+    restoreAppSettings stats
+fi
 
 #
 # SwiftDefaultApps
