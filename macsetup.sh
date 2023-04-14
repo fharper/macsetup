@@ -1055,15 +1055,6 @@ if [[ "$(isAppInstalled "The Clock")" = "false" ]]; then
 fi
 
 #
-# tmux
-#
-# Running multiple terminal sessions in the same window
-#
-# https://github.com/tmux/tmux
-#
-installkeg tmux
-
-#
 # TripMode
 #
 # Manage applications internet access
