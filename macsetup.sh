@@ -2752,6 +2752,8 @@ installkeg thefuck
 #
 # tldr-pages
 #
+# Consice commmunity-driven man pages
+#
 # https://github.com/tldr-pages/tldr
 #
 installkeg tldr
