@@ -2589,6 +2589,8 @@ installkeg httpie
 #
 # ImageMagick
 #
+# Images tooling suite
+#
 # https://github.com/ImageMagick/ImageMagick
 #
 installkeg imagemagick
