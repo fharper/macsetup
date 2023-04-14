@@ -2989,15 +2989,12 @@ fi
 #
 # Cryptomator & macFUSE
 #
-# https://github.com/cryptomator/cryptomator
-# https://osxfuse.github.io
-#
 # Data encryption tool
-# Third-party file systems.
+#
+# https://github.com/cryptomator/cryptomator
 #
 if [[ "$(isAppInstalled Cryptomator)" = "false" ]]; then
     installcask cryptomator
-    installcask macfuse
     open -a Cryptomator
     getLicense Cryptomator
     pausethescript "Add your vault to Cryptomator"
