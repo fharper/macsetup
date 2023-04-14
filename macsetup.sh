@@ -781,7 +781,6 @@ if [[ "$(isCLAppInstalled geticon)" = "false" ]]; then
     curl -L https://sveinbjorn.org/files/software/osxiconutils.zip --output osxiconutils.zip
     unzip osxiconutils.zip
     rm osxiconutils.zip
-    rm __MACOSX #created by the unzip call
     sudo chown fharper:admin /usr/local/bin
     mv bin/geticon /usr/local/bin/
     mv bin/seticon /usr/local/bin/
