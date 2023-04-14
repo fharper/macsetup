@@ -2470,6 +2470,8 @@ fi
 #
 # Bandwhich
 #
+# Network utilization visualization terminal tool
+#
 # https://github.com/imsnif/bandwhich
 #
 installkeg bandwhich
