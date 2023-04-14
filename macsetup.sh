@@ -3564,6 +3564,15 @@ fi
 installcask typora
 
 #
+# UPS Power Monitor
+#
+# Menubar UPS monitoring
+#
+# https://apps.dniklewicz.com/ups-mac/
+#
+installFromAppStore "UPS Power Monitor" 1500180529
+
+#
 # VLC
 #
 # Video Player
