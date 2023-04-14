@@ -964,7 +964,7 @@ fi
 #
 # https://github.com/dvorka/hstr
 #
-installkeg hh
+installkeg hstr
 
 #
 # Karabiner-Elements
