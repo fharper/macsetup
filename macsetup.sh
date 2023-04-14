@@ -716,6 +716,8 @@ installkeg duti
 #
 # jq
 #
+# Command-line JSON processor
+#
 # https://github.com/stedolan/jq
 #
 # JSON processor
