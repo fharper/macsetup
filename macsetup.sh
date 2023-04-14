@@ -2606,6 +2606,8 @@ installPythonApp linkchecker
 #
 # lsusb
 #
+# Tool to list USB devices
+#
 # https://github.com/jlhonora/lsusb
 #
 installkeg lsusb
