@@ -3778,6 +3778,8 @@ installFromAppStore "Among Us" 1351168404
 #
 # Epic Games
 #
+# Epic Games library management
+#
 # https://www.epicgames.com
 #
 # Notes:
