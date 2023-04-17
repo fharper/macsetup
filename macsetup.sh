@@ -2270,7 +2270,7 @@ installkeg staticcheck
 #
 # https://github.com/stylelint/stylelint
 #
-installNodePackages stylelint
+installkeg stylelint
 installNodePackages stylelint-config-recommended
 
 #
