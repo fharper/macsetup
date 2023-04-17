@@ -1633,7 +1633,8 @@ installkeg actionlint
 #
 if [[ "$(isCLAppInstalled aws)" = "false" ]]; then
     installkeg awscli
-    aws configure
+
+    confirm "Do you want to configure the AWS CLI now?" "aws configure"
 fi
 
 #
