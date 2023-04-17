@@ -72,24 +72,24 @@ function isAppInstalled {
 # @param the application name
 #
 function installkeg {
-    echo $fg[blue]"Starting the installation of $1"$reset_color
-
     local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
+
     if [[ -n "$alreadyInstalled" ]]; then
+        echo $fg[blue]"Starting the installation of $1"$reset_color
         brew install "$1"
     else
-	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+	    echo $fg[green]"Skipped $1: already installed"$reset_color
     fi
 }
 
 function installfont {
-    echo $fg[blue]"Starting the installation of $1"$reset_color
-
     local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
+
     if [[ -n "$alreadyInstalled" ]]; then
+        echo $fg[blue]"Starting the installation of $1"$reset_color
         brew install --cask "$1"
     else
-	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+	    echo $fg[green]"Skipped $1: already installed"$reset_color
     fi
 }
 
@@ -114,12 +114,11 @@ function isNodePackageInstalled {
 # @param Node.js package name
 #
 function installNodePackages {
-    echo $fg[blue]"Starting the installation of $1"$reset_color
-
     if [[ "$(isNodePackageInstalled $1)" = "false" ]]; then
+        echo $fg[blue]"Starting the installation of $1"$reset_color
         npm install -g "$1"
     else
-        echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+        echo $fg[green]"Skipped $1: already installed"$reset_color
     fi
 }
 
@@ -129,12 +128,11 @@ function installNodePackages {
 # @param the application name
 #
 function installcask {
-    echo $fg[blue]"Starting the installation of $1"$reset_color
-
     if [[ "$(isAppInstalled $1)" = "false" ]]; then
+        echo $fg[blue]"Starting the installation of $1"$reset_color
         brew install --cask $1
     else
-	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+	    echo $fg[green]"Skipped $1: already installed"$reset_color
     fi
 }
 
@@ -144,12 +142,11 @@ function installcask {
 # @param the application ID
 #
 function installFromAppStore {
-    echo $fg[blue]"Starting the installation of $1"$reset_color
-
     if [[ "$(isAppInstalled $1)" = "false" ]]; then
+        echo $fg[blue]"Starting the installation of $1"$reset_color
         mas install "$2"
     else
-	    echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+	    echo $fg[green]"Skipped $1: already installed"$reset_color
     fi
 }
 
@@ -185,12 +182,12 @@ function isCLAppInstalled {
 # @param the package name
 #
 function installPythonPackage {
-    echo $fg[blue]"Installing the Python package $1"$reset_color
-
     local package=$(pip list | grep "$1")
+
     if [[ -n "$package" ]]; then
-	echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+        echo $fg[green]"Skipped $1: already installed"$reset_color
     else
+        echo $fg[blue]"Installing the Python package $1"$reset_color
         pip install "$1"
     fi
 }
@@ -201,12 +198,12 @@ function installPythonPackage {
 # @param the application name
 #
 function installPythonApp {
-    echo $fg[blue]"Installing the Python application $1"$reset_color
-
     local package=$(pipx list | grep "$1")
+
     if [[ -n "$package" ]]; then
-	echo $fg[red]"Nothing to do, $1 is already installed"$reset_color
+        echo $fg[green]"Skipped $1: already installed"$reset_color
     else
+        echo $fg[blue]"Installing the Python application $1"$reset_color
         pipx install "$1"
     fi
 }
