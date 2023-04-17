@@ -2046,6 +2046,18 @@ if [[ "$(isCLAppInstalled helm)" = "false" ]]; then
 fi
 
 #
+# ImageMagick
+#
+# Images tooling suite
+#
+# https://github.com/ImageMagick/ImageMagick
+#
+# Notes:
+#  - Needed before PHP install with asdf
+#
+installkeg imagemagick
+
+#
 # iOS Deploy
 #
 # Install and debug iPhone apps from the command line, without using Xcode
@@ -2595,15 +2607,6 @@ installkeg htop
 # https://github.com/httpie/httpie
 #
 installkeg httpie
-
-#
-# ImageMagick
-#
-# Images tooling suite
-#
-# https://github.com/ImageMagick/ImageMagick
-#
-installkeg imagemagick
 
 #
 # LinkChecker
