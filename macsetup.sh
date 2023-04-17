@@ -409,6 +409,19 @@ function removeAppFromDock {
     fi
 }
 
+#
+# Confirm running or not the command
+#
+# @param the text for the confirmation
+# @param the command to run if accepted
+#
+function confirm {
+    vared -p "$1 [y/N]: " -c ANSWER
+    if [[ "$ANSWER" = "Y" ]] || [[ "$ANSWER" = "y" ]] || [[ "$ANSWER" = "yes" ]] || [[ "$ANSWER" = "YES" ]]; then
+        eval $2
+    fi
+}
+
 
 ############################
 #                          #
@@ -2218,10 +2231,7 @@ installkeg -cask react-native-cli
 if [[ "$(isCLAppInstalled s3cmd)" = "false" ]]; then
     installkeg s3cmd
 
-    vared -p "Are you sure you want to do that? [y/N]: " -c ANSWER
-    if [[ "$ANSWER" = "Y" ]] || [[ "$ANSWER" = "y" ]] ; then
-      s3cmd --configure
-    fi
+    confirm "Do you want to configure s3cmd right now?" "s3cmd --configure"
 fi
 
 #
