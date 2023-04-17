@@ -1985,7 +1985,8 @@ fi
 #
 if [[ "$(isCLAppInstalled jira)" = "false" ]]; then
     installkeg go-jira
-    jira session
+
+    confirm "Do you want to connect the JIRA CLI right now?" "jira session"
 fi
 
 #
