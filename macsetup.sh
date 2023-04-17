@@ -1037,7 +1037,8 @@ fi
 #
 # https://manytricks.com/moom
 #
-# install the App Store version since you bought it there
+# Notes:
+#  - Need to install the App Store version, since you bought it there
 #
 if [[ "$(isAppInstalled Moom)" = "false" ]]; then
     installFromAppStore Moom 419330170
