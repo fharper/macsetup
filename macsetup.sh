@@ -2952,6 +2952,9 @@ fi
 #
 # Calibre + DeDRM Tools
 #
+# Ebook Manager
+# Ebook DRM Remover Calibre Plugin
+#
 # https://github.com/kovidgoyal/calibre
 # https://github.com/noDRM/DeDRM_tools
 #
