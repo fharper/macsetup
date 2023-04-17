@@ -1230,11 +1230,6 @@ defaults write com.apple.dock wvous-br-corner -int 0
 ##################################
 
 #
-# FileVault - Turn On Filevault...
-#
-sudo fdesetup enable
-
-#
 # General - Allow apps downloaded from Anywhere
 #
 sudo spctl --master-disable
