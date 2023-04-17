@@ -3234,6 +3234,8 @@ fi
 #
 # Jiffy
 #
+# Gif in your menubar
+#
 # https://sindresorhus.com/jiffy
 #
 installFromAppStore Jiffy 1502527999
