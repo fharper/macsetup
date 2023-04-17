@@ -1956,7 +1956,10 @@ fi
 #
 if [[ "$(isCLAppInstalled glab)" = "false" ]]; then
     installkeg glab
-    glab auth login
+
+    if [[ -z "${GITLAB_TOKEN}" ]]; then
+        glab auth login
+    fi
 fi
 
 #
