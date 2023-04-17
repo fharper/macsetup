@@ -1588,7 +1588,7 @@ fi
 # https://todoist.com
 #
 if [[ "$(isAppInstalled Todoist)" = "false" ]]; then
-    installFromAppStore Todoist 585829637
+    installcask todoist
     dockutil --add /Applications/Todoist.app --allhomes
     loginitems -a Todoist
 fi
