@@ -2874,6 +2874,8 @@ installcask audacity
 #
 # Affinity Designer
 #
+# Vector Graphics Design Tool
+#
 # https://affinity.serif.com/en-us/designer
 #
 installFromAppStore "Affinity Designer" 824171161
