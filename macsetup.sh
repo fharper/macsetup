@@ -1600,6 +1600,9 @@ fi
 #
 # https://github.com/sindresorhus/trash-cli
 #
+# Notes:
+#  - trash-cli in Homebrew is another application
+#
 installNodePackages trash-cli
 
 #
