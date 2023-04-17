@@ -2055,6 +2055,20 @@ fi
 installkeg ios-deploy
 
 #
+# Java (OpenJDK)
+#
+# Java programming language
+#
+# https://openjdk.org
+#
+if [[ ! $(asdf current java) ]]; then
+    asdf plugin-add java
+    asdf install java openjdk-19.0.2
+    asdf global java openjdk-19.0.2
+    reload
+fi
+
+#
 # Jest
 #
 # JavaScript Testing Framework
@@ -2154,6 +2168,15 @@ installcask local
 installkeg localtunnel
 
 #
+# Lynis
+#
+# Security auditing tool
+#
+# https://github.com/CISOfy/lynis
+#
+installkeg lynis
+
+#
 # Mocha
 #
 # Node.js testing framework
@@ -2181,6 +2204,39 @@ fi
 # https://github.com/raineorshine/npm-check-updates
 #
 installNodePackages npm-check-updates
+
+#
+# OpenAPI Validator
+#
+# OpenAPI linter & validator
+#
+# https://github.com/IBM/openapi-validator
+#
+installNodePackages ibm-openapi-validator
+
+#
+# PHP
+#
+# PHP programming language
+# TODO: ADD INFO ON DEPENDENCIES
+#
+# https://github.com/php/php-src
+#
+if [[ ! $(asdf current php) ]]; then
+    installkeg gmp
+    installkeg libsodium
+    installkeg imagemagick
+    installkeg bison
+    installkeg re2c
+    installkeg libgd
+    installkeg libiconv
+    installkeg icu4c
+    installkeg libzip
+    asdf plugin-add php
+    asdf install php 8.2.3
+    asdf global php 8.2.3
+    reload
+fi
 
 #
 # PHP_CodeSniffer
@@ -2242,6 +2298,20 @@ fi
 installkeg react-native-cli
 
 #
+# Rust
+#
+# Rust programming language
+#
+# https://github.com/rust-lang/rust
+#
+if [[ ! $(asdf current rust) ]]; then
+    asdf plugin-add rust
+    asdf install rust 1.67.1
+    asdf global rust 1.67.1
+    reload
+fi
+
+#
 # S3cmd
 #
 # CLI for AWS S3
@@ -2253,6 +2323,15 @@ if [[ "$(isCLAppInstalled s3cmd)" = "false" ]]; then
 
     confirm "Do you want to configure s3cmd right now?" "s3cmd --configure"
 fi
+
+#
+# ShellCheck
+#
+# Shell scripts tatic analysis tool
+#
+# https://github.com/koalaman/shellcheck
+#
+installkeg shellcheck
 
 #
 # Staticcheck
@@ -2292,106 +2371,6 @@ installkeg go-task
 installcask utm
 
 #
-# Xcodes
-#
-# Xcode versions management
-#
-# https://github.com/RobotsAndPencils/XcodesApp
-#
-installcask xcodes
-
-#
-# Yarn
-#
-# npm alternative
-#
-# https://github.com/yarnpkg/yarn
-#
-if [[ "$(isCLAppInstalled yarn)" = "false" ]]; then
-    installkeg yarn
-    yarn config set --home enableTelemetry 0
-fi
-
-#
-# PHP
-#
-# PHP programming language
-# TODO: ADD INFO ON DEPENDENCIES
-#
-# https://github.com/php/php-src
-#
-if [[ ! $(asdf current php) ]]; then
-    installkeg gmp
-    installkeg libsodium
-    installkeg imagemagick
-    installkeg bison
-    installkeg re2c
-    installkeg libgd
-    installkeg libiconv
-    installkeg icu4c
-    installkeg libzip
-    asdf plugin-add php
-    asdf install php 8.2.3
-    asdf global php 8.2.3
-    reload
-fi
-
-#
-# Java (OpenJDK)
-#
-# Java programming language
-#
-# https://openjdk.org
-#
-if [[ ! $(asdf current java) ]]; then
-    asdf plugin-add java
-    asdf install java openjdk-19.0.2
-    asdf global java openjdk-19.0.2
-    reload
-fi
-
-#
-# Lynis
-#
-# Security auditing tool
-#
-# https://github.com/CISOfy/lynis
-#
-installkeg lynis
-
-#
-# Rust
-#
-# Rust programming language
-#
-# https://github.com/rust-lang/rust
-#
-if [[ ! $(asdf current rust) ]]; then
-    asdf plugin-add rust
-    asdf install rust 1.67.1
-    asdf global rust 1.67.1
-    reload
-fi
-
-#
-# ShellCheck
-#
-# Shell scripts tatic analysis tool
-#
-# https://github.com/koalaman/shellcheck
-#
-installkeg shellcheck
-
-#
-# OpenAPI Validator
-#
-# OpenAPI linter & validator
-#
-# https://github.com/IBM/openapi-validator
-#
-installNodePackages ibm-openapi-validator
-
-#
 # Vercel CLI
 #
 # CLI for Vercel
@@ -2426,6 +2405,27 @@ installkeg webpack
 # https://github.com/wp-cli/wp-cli
 #
 installkeg wp-cli
+
+#
+# Xcodes
+#
+# Xcode versions management
+#
+# https://github.com/RobotsAndPencils/XcodesApp
+#
+installcask xcodes
+
+#
+# Yarn
+#
+# npm alternative
+#
+# https://github.com/yarnpkg/yarn
+#
+if [[ "$(isCLAppInstalled yarn)" = "false" ]]; then
+    installkeg yarn
+    yarn config set --home enableTelemetry 0
+fi
 
 #
 # Yeoman
