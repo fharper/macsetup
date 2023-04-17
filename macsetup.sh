@@ -2230,20 +2230,54 @@ installNodePackages ibm-openapi-validator
 # PHP
 #
 # PHP programming language
-# TODO: ADD INFO ON DEPENDENCIES
 #
 # https://github.com/php/php-src
 #
+#
+# PHP Dependencies:
+#
+# Bison
+# Parser generator
+# https://www.gnu.org/software/bison/
+#
+# GMP
+# GNU multiple precision arithmetic library
+# https://gmplib.org
+#
+# ICU
+# C/C++ and Java libraries for Unicode and globalization
+# https://icu.unicode.org
+#
+# LibGD
+# Graphics library to dynamically manipulate images
+# https://libgd.github.io
+#
+# libiconv
+# Conversion library
+# https://www.gnu.org/software/libiconv/
+#
+# libzip
+# C library for reading, creating, and modifying zip archives
+# https://libzip.org
+#
+# re2c
+# Generate C-based recognizers from regular expressions
+# https://re2c.org
+#
+# Sodium
+# NaCl networking and cryptography library
+# https://libsodium.org
+#
 if [[ ! $(asdf current php) ]]; then
-    installkeg gmp
-    installkeg libsodium
-    installkeg imagemagick
     installkeg bison
-    installkeg re2c
+    installkeg gmp
+    installkeg icu4c
     installkeg libgd
     installkeg libiconv
-    installkeg icu4c
     installkeg libzip
+    installkeg re2c
+    installkeg libsodium
+
     asdf plugin-add php
     asdf install php 8.2.3
     asdf global php 8.2.3
