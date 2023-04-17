@@ -422,6 +422,20 @@ function confirm {
     fi
 }
 
+#
+# Remove a pre-installed application
+#
+# @param application name
+#
+function removeApp {
+
+    local app=$(getAppFullPath "$1")
+
+    if [[ "$app" ]]; then
+        echo $fg[blue]"Removing $1 from your computer."$reset_color
+        sudo rm -rf "$app"
+    fi
+}
 
 ############################
 #                          #
@@ -822,11 +836,11 @@ installkeg terminal-notifier
 #                      #
 ########################
 
-sudo rm -rf /Applications/GarageBand.app
-sudo rm -rf /Applications/iMovie.app
-sudo rm -rf /Applications/Keynote.app
-sudo rm -rf /Applications/Numbers.app
-sudo rm -rf /Applications/Pages.app
+removeApp GarageBand
+removeApp iMovie
+removeApp Keynote
+removeApp Numbers
+removeApp Pages
 
 ################
 #              #
