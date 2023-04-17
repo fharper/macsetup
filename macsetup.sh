@@ -2510,7 +2510,7 @@ installkeg yq
 if [[ "$(isCLAppInstalled asciinema)" = "false" ]]; then
     installkeg asciinema
     asciinema auth
-    pausethescript
+    pausethescript "Authenticate with asciinema before continuing the installation script."
     installNodePackages svg-term-cli
 fi
 
