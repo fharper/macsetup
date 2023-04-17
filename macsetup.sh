@@ -3796,6 +3796,8 @@ fi
 #
 # OpenEmu
 #
+# Retro video games emulation
+#
 # https://github.com/OpenEmu/OpenEmu
 #
 installcask openemu
