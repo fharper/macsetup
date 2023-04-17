@@ -3078,6 +3078,8 @@ installcask descript
 #
 # Discord
 #
+# Chat application
+#
 # https://discord.com/
 #
 installcask discord
