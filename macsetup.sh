@@ -1908,6 +1908,9 @@ installkeg git-lfs
 #
 # https://github.com/paulirish/git-open
 #
+# Notes:
+#  - git-open in Homebrew isn't the same
+#
 installNodePackages git-open
 
 #
