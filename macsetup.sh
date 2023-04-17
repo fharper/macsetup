@@ -1470,7 +1470,8 @@ fi
 #
 # https://getmumu.com
 #
-# Note: don't install the Homebrew version, it's Mumu, not Mumu X
+# Notes
+#  - Need to install manually as Mumu X is not in Hombrew (just Mumu)
 #
 if [[ "$(isAppInstalled "Mumu X")" = "false" ]]; then
     echo $fg[blue]"Starting the installation of Mumu X"$reset_color
