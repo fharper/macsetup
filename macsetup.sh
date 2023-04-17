@@ -2383,15 +2383,6 @@ fi
 installkeg shellcheck
 
 #
-# Ripgrep
-#
-# Recursively searches directories for a regex pattern
-#
-# https://github.com/BurntSushi/ripgrep
-#
-installkeg ripgrep
-
-#
 # OpenAPI Validator
 #
 # OpenAPI linter & validator
@@ -2739,6 +2730,15 @@ installkeg qpdf
 # https://github.com/ap/rename
 #
 installkeg rename
+
+#
+# Ripgrep
+#
+# Recursively searches directories for a regex pattern
+#
+# https://github.com/BurntSushi/ripgrep
+#
+installkeg ripgrep
 
 #
 # Scout
