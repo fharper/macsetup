@@ -2903,6 +2903,8 @@ fi
 #
 # AppCleaner
 #
+# Applications uninstaller
+#
 # https://freemacsoft.net/appcleaner
 #
 if [[ "$(isAppInstalled AppCleaner)" = "false" ]]; then
