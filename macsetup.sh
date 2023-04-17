@@ -2801,6 +2801,8 @@ installkeg wget
 #
 # Wifi Password
 #
+# Obtain connected wifi password
+#
 # https://github.com/rauchg/wifi-password
 #
 installkeg wifi-password
