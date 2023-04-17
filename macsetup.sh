@@ -2239,7 +2239,7 @@ fi
 #
 # https://github.com/facebook/react-native
 #
-installkeg -cask react-native-cli
+installkeg react-native-cli
 
 #
 # S3cmd
