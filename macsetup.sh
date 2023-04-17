@@ -3101,7 +3101,10 @@ fi
 #
 # https://daisydiskapp.com
 #
-installcask daisydisk
+if [[ "$(isAppInstalled DaisyDisk)" = "false" ]]; then
+    installcask daisydisk
+    getLicense "DaisyDisk"
+fi
 
 #
 # Deckset
