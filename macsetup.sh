@@ -78,7 +78,7 @@ function installkeg {
         echo $fg[blue]"Starting the installation of $1"$reset_color
         brew install "$1"
     else
-	    echo $fg[green]"Skipped $1: already installed"$reset_color
+	    echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
     fi
 }
 
@@ -89,7 +89,7 @@ function installfont {
         echo $fg[blue]"Starting the installation of $1"$reset_color
         brew install --cask "$1"
     else
-	    echo $fg[green]"Skipped $1: already installed"$reset_color
+	    echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
     fi
 }
 
@@ -118,7 +118,7 @@ function installNodePackages {
         echo $fg[blue]"Starting the installation of $1"$reset_color
         npm install -g "$1"
     else
-        echo $fg[green]"Skipped $1: already installed"$reset_color
+        echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
     fi
 }
 
@@ -132,7 +132,7 @@ function installcask {
         echo $fg[blue]"Starting the installation of $1"$reset_color
         brew install --cask $1
     else
-	    echo $fg[green]"Skipped $1: already installed"$reset_color
+	    echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
     fi
 }
 
@@ -146,7 +146,7 @@ function installFromAppStore {
         echo $fg[blue]"Starting the installation of $1"$reset_color
         mas install "$2"
     else
-	    echo $fg[green]"Skipped $1: already installed"$reset_color
+	    echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
     fi
 }
 
@@ -185,7 +185,7 @@ function installPythonPackage {
     local package=$(pip list | grep "$1")
 
     if [[ -n "$package" ]]; then
-        echo $fg[green]"Skipped $1: already installed"$reset_color
+        echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
     else
         echo $fg[blue]"Installing the Python package $1"$reset_color
         pip install "$1"
@@ -201,7 +201,7 @@ function installPythonApp {
     local package=$(pipx list | grep "$1")
 
     if [[ -n "$package" ]]; then
-        echo $fg[green]"Skipped $1: already installed"$reset_color
+        echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
     else
         echo $fg[blue]"Installing the Python application $1"$reset_color
         pipx install "$1"
