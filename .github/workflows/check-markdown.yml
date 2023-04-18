@@ -1,17 +1,23 @@
 name: Markdown Syntax Validation
-on: push
+on: [push, workflow_dispatch]
 
 jobs:
   markdown-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout this repository
-        uses: actions/checkout@main
+        uses: actions/checkout@master
+
+      - name: Download .markdownlint.json
+        uses: wei/wget@v1
+        with:
+          args: https://raw.githubusercontent.com/fharper/gh-configs/main/.markdownlint.json
 
       - name: Validate Markdown
-        uses: DavidAnson/markdownlint-cli2-action@v9.0.0
+        uses: DavidAnson/markdownlint-cli2-action@v9
         with:
             command: config
             globs: |
               .markdownlint.json
-              **.md
+              **/*.md
+              #**/node_modules
