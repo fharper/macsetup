@@ -2944,7 +2944,11 @@ installcask audacity
 #
 # https://affinity.serif.com/en-us/designer
 #
-installcask affinity-designer
+# Notes:
+#  - Homebrew version is Affinity Designer 2, which needs a subscription
+#
+installFromAppStore "Affinity Designer" 824171161
+
 #
 # Akai Pro MPC Beats
 #
