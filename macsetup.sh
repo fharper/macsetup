@@ -2893,7 +2893,7 @@ installkeg wkhtmltopdf
 # Notes:
 #  - PhantomJS is outdated, but it's needed by yt-dlp when nsig extraction failed
 #
-if [[ "$(isAppInstalled "Disk Drill")" = "false" ]]; then
+if [[ "$(isCLAppInstalled "yt-dlp")" = "false" ]]; then
     installkeg yt-dlp
     installcask phantomjs
 fi
