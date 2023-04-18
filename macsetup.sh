@@ -2189,6 +2189,15 @@ installkeg localtunnel
 installkeg lynis
 
 #
+# markdownlint-cli2
+#
+# Markdown linting CLI
+#
+# https://github.com/DavidAnson/markdownlint-cli2
+#
+installkeg markdownlint-cli2
+
+#
 # Mocha
 #
 # Node.js testing framework
