@@ -3014,7 +3014,10 @@ installcask around
 #
 # Mute your laptop when your headphones disconnect
 #
-# https://yoni.ninja/automute/
+# https://github.com/yonilevy/automute
+#
+# Notes:
+#  - AutoMute in Homebrew isn't the same application
 #
 installFromAppStore "AutoMute" 1118136179
 
