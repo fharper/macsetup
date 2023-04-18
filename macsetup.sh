@@ -2260,6 +2260,10 @@ installNodePackages ibm-openapi-validator
 # C library for reading, creating, and modifying zip archives
 # https://libzip.org
 #
+# pkg-config
+# Manage compile and link flags for libraries
+# https://freedesktop.org/wiki/Software/pkg-config/
+#
 # re2c
 # Generate C-based recognizers from regular expressions
 # https://re2c.org
@@ -2275,6 +2279,7 @@ if [[ ! $(asdf current php) ]]; then
     installkeg libgd
     installkeg libiconv
     installkeg libzip
+    installkeg pkg-config
     installkeg re2c
     installkeg libsodium
 
