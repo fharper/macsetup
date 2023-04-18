@@ -1436,7 +1436,7 @@ if [[ "$(isAppInstalled "Antidote 11")" = "false" ]]; then
     pausethescript "Download Antidote in the macsetup folder before continuing"
     cd /Users/fharper/Downloads/
     local filename=$(findfilewithregex "Antidote")
-    installPKGfromDMG filename
+    installPKGfromDMG "$filename"
     cd -
     dockutil --add /Applications/Antidote/Antidote\ 11.app/
     loginitems -a Antidote
