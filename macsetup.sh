@@ -245,7 +245,7 @@ function restoreAppSettings {
 #
 function installPKGfromDMG {
     hdiutil attach "$1"
-    local volume="/Volumes/$(hdiutil info | grep /Volumes/ | sed 's@.*\/Volumes/@@')"
+    local volume="/Volumes/$(hdiutil info | grep /Volumes/ | sed 's@.*\/Volumes/@@' | tail -1)"
     local pkg=$(/bin/ls "$volume" | grep .pkg)
     sudo installer -pkg "$volume/$pkg" -target /
     pausethescript "Wait for the app installation to finish before continuing"
