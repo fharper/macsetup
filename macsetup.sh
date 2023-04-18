@@ -2921,7 +2921,7 @@ fi
 #
 # https://github.com/sindresorhus/Actions
 #
-installFromAppStore 1586435171
+installFromAppStore "Actions" 1586435171
 
 #
 # Audacity
