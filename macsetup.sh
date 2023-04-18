@@ -2944,8 +2944,7 @@ installcask audacity
 #
 # https://affinity.serif.com/en-us/designer
 #
-installFromAppStore "Affinity Designer" 824171161
-
+installcask affinity-designer
 #
 # Akai Pro MPC Beats
 #
