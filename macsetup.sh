@@ -3256,7 +3256,7 @@ fi
 #
 # https://sindresorhus.com/hyperduck
 #
-installFromAppStore 6444667067
+installFromAppStore "Hyperduck" 6444667067
 
 #
 # IGdm Messenger
