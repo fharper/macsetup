@@ -2985,7 +2985,7 @@ if [[ "$(isAppInstalled "MPC Beats")" = "false" ]]; then
     rm mpc-beats.zip
     rm -rf __MACOSX #created by the unzip call
     local filename=$(findfilewithregex "Install-MPC-Beats")
-    installPKGfromDMG filename
+    installPKG "$filename"
 fi
 
 #
