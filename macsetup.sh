@@ -3039,7 +3039,7 @@ installcask beardedspice
 #
 if [[ "$(isAppInstalled "BlockBlock Helper")" = "false" ]]; then
     installcask blockblock
-    loginitems -a blockblock
+    loginitems -a "BlockBlock Helper"
 fi
 
 #
