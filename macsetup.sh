@@ -501,14 +501,6 @@ function displaySection {
 displaySection "Utils to run this script"
 
 #
-# Disable System Integrity Protection (SIP)
-#
-if [[ ! $(csrutil status | grep "disabled") ]]; then
-    echo $fg[red]"Before being able to run this script, deactivate the System Integrity Protection (SIP) with the command 'csrutil disable' in Recovery Mode (press & hold the power button until the option appear)"$reset_color
-    exit
-fi
-
-#
 # Rosetta2
 #
 # Run x86_64 app on arm64 chip
