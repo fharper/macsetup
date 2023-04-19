@@ -1451,6 +1451,7 @@ fi
 #                      #
 ########################
 
+echo $fg[blue]"The Dock, Finder & SystemUIServer will restart, giving a flashing impression: it's normal\n"$reset_color
 killall Finder
 killall Dock
 killall SystemUIServer
