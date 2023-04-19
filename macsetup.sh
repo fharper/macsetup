@@ -3726,9 +3726,12 @@ installcask sloth
 #
 # Speedtest
 #
-# More accurate than the CLI
+# Speed test application
 #
 # https://www.speedtest.net
+#
+# Notes:
+#  - It's more accurate than the CLI
 #
 installFromAppStore Speedtest 1153157709
 
