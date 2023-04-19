@@ -447,6 +447,46 @@ function removeApp {
     fi
 }
 
+#
+# Display the section information for the script section being run
+#
+# @param section name
+#
+function displaySection {
+    local length=${#1}+4
+
+    print "\n"
+
+    for (( i=1; i<=$length; i++ )); do
+        print -n "$fg[magenta]#";
+    done
+
+    print -n "\n#"
+
+    for (( i=1; i<=$length-2; i++ )); do
+        print -n " ";
+    done
+
+    print "#"
+
+    print "# $1 #"
+
+    print -n "#"
+
+    for (( i=1; i<=$length-2; i++ )); do
+        print -n " ";
+    done
+
+    print "#"
+
+    for (( i=1; i<=$length; i++ )); do
+        print -n "#";
+    done
+
+    print "\n$reset_color"
+}
+
+
 ############################
 #                          #
 # Utils to run this script #
@@ -454,6 +494,8 @@ function removeApp {
 # (the order is important) #
 #                          #
 ############################
+
+displaySection "Utils to run this script"
 
 #
 # Disable System Integrity Protection (SIP)
@@ -846,6 +888,8 @@ installkeg terminal-notifier
 #                      #
 ########################
 
+displaySection "Applications Cleanup"
+
 removeApp GarageBand
 removeApp iMovie
 removeApp Keynote
@@ -857,6 +901,8 @@ removeApp Pages
 # Dock Cleanup #
 #              #
 ################
+
+displaySection "Dock Cleanup"
 
 removeAppFromDock "App Store"
 removeAppFromDock "Calendar"
@@ -880,6 +926,8 @@ removeAppFromDock "TV"
 # Top Helper Applications #
 #                         #
 ###########################
+
+displaySection "Top Helper Applications"
 
 #
 # Alfred & alfred-google-translate & alfred-language-configuration
@@ -1116,11 +1164,13 @@ if [[ "$(isAppInstalled "zoom.us")" = "false" ]]; then
 fi
 
 
-###############################
-#                             #
-# Dock & Menu Bar Preferences #
-#                             #
-###############################
+##################################
+#                                #
+# Dock & Menu Bar Configurations #
+#                                #
+##################################
+
+displaySection "Dock & Menu Bar Configurations"
 
 #
 # Minimize window into application icon
@@ -1143,11 +1193,13 @@ defaults write com.apple.dock show-recents -bool false
 defaults write com.apple.dock tilesize -int 35
 
 
-######################
-#                    #
-# Finder Preferences #
-#                    #
-######################
+#########################
+#                       #
+# Finder Configurations #
+#                       #
+#########################
+
+displaySection "Finder Configurations"
 
 #
 # .DS_Store files creation on Network Disk
@@ -1221,11 +1273,13 @@ mysides add Dropbox file:///Users/fharper/Dropbox
 mysides add Applications file:///Applications/
 
 
-############
-#          #
-# Keyboard #
-#          #
-############
+###########################
+#                         #
+# Keyboard Configurations #
+#                         #
+###########################
+
+displaySection "Keyboard Configurations"
 
 #
 # Accent characters menu on press & hold a letter with possible accents
@@ -1236,11 +1290,13 @@ defaults write -g ApplePressAndHoldEnabled -bool true
 defaults write com.apple.HIToolbox AppleFnUsageType -bool false
 
 
-###################
-#                 #
-# Mission Control #
-#                 #
-###################
+##################################
+#                                #
+# Mission Control Configurations #
+#                                #
+##################################
+
+displaySection "Mission Control Configurations"
 
 #
 # Hot Corners - Bottom Right (disable Note app)
@@ -1248,22 +1304,26 @@ defaults write com.apple.HIToolbox AppleFnUsageType -bool false
 defaults write com.apple.dock wvous-br-corner -int 0
 
 
-##################################
-#                                #
-# Security & Privacy Preferences #
-#                                #
-##################################
+#####################################
+#                                   #
+# Security & Privacy Configurations #
+#                                   #
+#####################################
+
+displaySection "Security & Privacy Configurations"
 
 #
 # General - Allow apps downloaded from Anywhere
 #
 sudo spctl --master-disable
 
-##########################
-#                        #
-# Sharing Configurations #
-#                        #
-##########################
+###########################
+#                         #
+# Sharing  Configurations #
+#                         #
+###########################
+
+displaySection "Sharing  Configurations"
 
 #
 # Computer name
@@ -1279,6 +1339,8 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 # Sound Configurations #
 #                      #
 ########################
+
+displaySection "Sound Configurations"
 
 #
 # Show volume in menu bar
@@ -1302,6 +1364,8 @@ defaults write com.apple.sound.uiaudio.enabled -bool false
 # Trackpad Configurations #
 #                         #
 ###########################
+
+displaySection "Trackpad Configurations"
 
 #
 # More Gestures - App Exposé
@@ -1343,6 +1407,8 @@ defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
 #                              #
 ################################
 
+displaySection "User & Groups Configurations"
+
 #
 # Guest User
 #
@@ -1355,6 +1421,8 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 # Misc Configurations #
 #                     #
 #######################
+
+displaySection "Misc Configurations"
 
 #
 # Internet Accounts
@@ -1392,6 +1460,8 @@ killall SystemUIServer
 # Main applications #
 #                   #
 #####################
+
+displaySection "Main applications"
 
 #
 # 1Password + 1Password CLI + git-credential-1password + Safari Extension
@@ -1634,6 +1704,8 @@ fi
 # Developer stuff #
 #                 #
 ###################
+
+displaySection "Developer stuff"
 
 #
 # Act
@@ -2525,6 +2597,8 @@ installkeg yq
 #                    #
 ######################
 
+displaySection "Command line tools"
+
 #
 # Asciinema + svg-term-cli
 #
@@ -2940,6 +3014,8 @@ fi
 # Applications #
 #              #
 ################
+
+displaySection "Applications"
 
 #
 # Actions
@@ -3747,6 +3823,8 @@ installFromAppStore "WiFi Explorer Lite" 1408727408
 #       #
 #########
 
+displaySection "Fonts"
+
 installfont font-alex-brush
 installfont font-archivo-narrow
 installfont font-arial
@@ -3852,6 +3930,8 @@ duti -s net.langui.WebPViewer org.webmproject.webp all #WebP
 #       #
 #########
 
+displaySection "Games"
+
 #
 # Among Us
 #
@@ -3884,11 +3964,13 @@ fi
 installcask openemu
 
 
-###################
-#                 #
-# Dock apps order #
-#                 #
-###################
+###########################
+#                         #
+# Dock Applications Order #
+#                         #
+###########################
+
+displaySection "Dock Applications Order"
 
 echo $fg[blue]"The Dock will restart a couple of time, giving a flashing impression: it's normal"$reset_color
 dockutil --move 'Brave Browser' --position end --allhomes
@@ -3908,9 +3990,11 @@ dockutil --move 'Antidote 11' --position end --allhomes
 
 ###############
 #             #
-# Final steps #
+# Final Steps #
 #             #
 ###############
+
+displaySection "Final Steps"
 
 #
 # Monolingual
