@@ -741,6 +741,7 @@ fi
 #
 if [[ ! -L "/Users/fharper/.zshrc" ]]; then
     restoreAppSettings files
+    restoreAppSettings vim
     reload
 fi
 
