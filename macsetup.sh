@@ -3489,9 +3489,11 @@ installcask knockknock
 if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
     echo $fg[blue]"Starting the installation of Logi Options+"$reset_color
     curl -L https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip --output logitech.zip
+
     unzip logitech.zip
     rm logitech.zip
     rm -rf __MACOSX #created by the unzip call
+
     open logioptionsplus_installer.app
     pausethescript "Wait for Logi Options+ installation to finish before continuing"
     rm -rf logioptionsplus_installer.app
@@ -3507,8 +3509,10 @@ fi
 if [ ! -d "/Library/Application Support/Logitech.localized/Logitech Presentation.localized/Logitech Presentation.app" ]; then
     installkeg logitech-presentation
     cd "/opt/homebrew/Caskroom/logitech-presentation/*/"
+
     open "LogiPresentation Installer.app"
     pausethescript "Wait for the Logitech Presentation application to finish before continuing."
+
     rm "LogiPresentation Installer.app"
     cd -
 fi
@@ -3791,7 +3795,6 @@ installcask textsniper
 #
 if [[ "$(isAppInstalled "The Unarchiver")" = "false" ]]; then
     installcask the-unarchiver
-
     duti -s com.macpaw.site.theunarchiver com.rarlab.rar-archive all # RAR
 fi
 
