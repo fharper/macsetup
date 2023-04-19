@@ -3652,6 +3652,20 @@ fi
 installFromAppStore "Pure Paste" 1611378436
 
 #
+# qView
+#
+# Minimal Image Viewer
+#
+# https://github.com/jurplel/qView/
+#
+if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
+    installcask qview
+
+    duti -s com.interversehq.qView public.png all # PNG
+    duti -s com.interversehq.qView public.svg-image all #svg
+fi
+
+#
 # RansomWhere?
 #
 # Monitoring the creation of encrypted files
