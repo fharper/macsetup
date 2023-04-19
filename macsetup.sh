@@ -3676,7 +3676,12 @@ fi
 # Monitoring the creation of encrypted files
 #
 # https://objective-see.org/products/ransomwhere.html
-installcask ransomwhere
+#
+# Notes:
+#  - Need to check the installation manually as it does not install in default folders
+if [ ! -d "/Library/Objective-See/RansomWhere/" ]; then
+    installcask ransomwhere
+fi
 
 #
 # Raspberry Pi Imager
