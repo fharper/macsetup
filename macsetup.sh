@@ -377,12 +377,14 @@ function updateTCC {
     # - indirect_object_code_identity: same as csreq policy_id, so NULL
     # - flags: not sure, always 0
     # - last_modifified: last time entry was modified
+
     local exist=$(sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "select count(service) from access where service = '$1' and client = '$app_identifier';")
     if [[ exist ]]; then
         sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "update access SET auth_value=2 where service = '$1' and client = '$app_identifier';"
     else
         sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "insert into access values('$1', '$app_identifier', 0, 2, 3, 1, '$app_csreq_blob', NULL, 0, 'UNUSED', NULL, 0, CAST(strftime('%s','now') AS INTEGER));"
     fi
+
 }
 
 #
