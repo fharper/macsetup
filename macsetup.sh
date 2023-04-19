@@ -3885,8 +3885,10 @@ installcask whatsapp
 #
 # https://github.com/objective-see/WhatsYourSign
 #
-installcask whatsyoursign
-open -a "/opt/homebrew/Caskroom/whatsyoursign/2.0.1/WhatsYourSign Installer.app"
+if [[ "$(isAppInstalled WhatsYourSign)" = "false" ]]; then
+    installcask whatsyoursign
+    open -a "/opt/homebrew/Caskroom/whatsyoursign/2.0.1/WhatsYourSign Installer.app"
+fi
 
 #
 # WiFi Explorer Lite
