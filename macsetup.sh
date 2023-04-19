@@ -3543,6 +3543,8 @@ installcask messenger
 #
 if [[ "$(isAppInstalled "Microsoft Edge")" = "false" ]]; then
     installcask microsoft-edge
+    open -a "Microsoft Edge"
+    /Applications/Microsoft\ Edge.app/Contents/MacOS/Microsoft\ Edge https://microsoftedge.microsoft.com/addons/detail/1password-%E2%80%93-password-mana/dppgmdbiimibapkepcbdbmkaabgiofem
 fi
 
 #
