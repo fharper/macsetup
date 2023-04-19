@@ -3243,7 +3243,7 @@ installcask firefox
 #
 # https://www.gimp.org/
 #
-if [[ "$(isAppInstalled "Hemingway Editor")" = "false" ]]; then
+if [[ "$(isAppInstalled Gimp)" = "false" ]]; then
     installcask gimp
     restoreAppSettings gimp
 fi
