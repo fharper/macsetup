@@ -3059,7 +3059,7 @@ if [[ "$(isAppInstalled calibre)" = "false" ]]; then
     rm -rf __MACOSX #created by the unzip call
     open -a Calibre
     open .
-    pausethescript "Install the DeDRM plugin into Calibre before continuing. In Calibre, go to 'Preferences', and under the 'Advanced' section, click on 'Plugins'. On the Plugins window, press the 'Load plugin from file' and drop the 'DeDRM_plugin.zip' file into the File window. Click 'Open', 'Yes', 'OK', 'ApplyM' & 'Close'."
+    pausethescript "Install the DeDRM plugin into Calibre before continuing. In Calibre, go to 'Preferences', and under the 'Advanced' section, click on 'Plugins'. On the Plugins window, press the 'Load plugin from file' and drop the 'DeDRM_plugin.zip' file into the File window. Click 'Open', 'Yes', 'OK', 'Apply' & 'Close'. You can now quit Calibre."
     rm DeDRM_plugin.zip
 fi
 
