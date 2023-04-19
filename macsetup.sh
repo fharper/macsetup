@@ -1524,13 +1524,18 @@ if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
     installcask brave-browser
     dockutil --add "/Applications/Brave Browser.app" --position 2 --allhomes
     loginitems -a "Brave Browser"
+
     defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
     defaults write com.brave.Browser DisablePrintPreview -bool true
     defbro com.brave.Browser
+
     /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
     pausethescript "Authorize Dropbox for Violentmonkey sync before continuing"
+
     /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/manage.html#stylus-options"
     pausethescript "Authorize Dropbox for Stylus sync before continuing"
+
+    duti -s com.brave.Browser com.compuserve.gif all #GIF (Image)
 fi
 
 #
@@ -1696,7 +1701,31 @@ installNodePackages trash-cli
 if [[ "$(isAppInstalled "Visual Studio Code")" = "false" ]]; then
     installcask visual-studio-code
     dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
+
     npm config set editor code
+
+    duti -s com.microsoft.VSCode public.css all #CSS
+    duti -s com.microsoft.VSCode public.comma-separated-values-text all #CSV
+    duti -s com.microsoft.VSCode com.netscape.javascript-source all #JavaScript
+    duti -s com.microsoft.VSCode public.json all #json
+    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge8027pb all #lua
+    duti -s com.microsoft.VSCode com.apple.log all #log
+    duti -s com.microsoft.VSCode net.daringfireball.markdown all #Markdown
+    duti -s com.microsoft.VSCode public.php-script all #php
+    duti -s com.microsoft.VSCode com.apple.property-list all # Plist
+    duti -s com.microsoft.VSCode public.python-script all # Python
+    duti -s com.microsoft.VSCode public.rtf all #RTF
+    duti -s com.microsoft.VSCode public.ruby-script all #Ruby
+    duti -s com.microsoft.VSCode com.apple.terminal.shell-script all #SH
+    duti -s com.microsoft.VSCode public.shell-script all #Shell script
+    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81g6pq all #SQL
+    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3u all #terraform tf
+    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #terraform tfstate
+    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #terraform tfvars
+    duti -s com.microsoft.VSCode public.plain-text all #txt
+    duti -s com.microsoft.VSCode public.xml all #xml
+    duti -s com.microsoft.VSCode public.yaml all #YAML
+    duti -s com.microsoft.VSCode public.zsh-script all #ZSH
 fi
 
 
@@ -3130,14 +3159,19 @@ fi
 #
 if [[ "$(isAppInstalled calibre)" = "false" ]]; then
     installcask calibre
+
     curl -L "$(lastversion noDRM/DeDRM_tools --assets)" --output Calibre-DeDRM.zip
     unzip Calibre-DeDRM.zip "DeDRM_plugin.zip"
     rm Calibre-DeDRM.zip
     rm -rf __MACOSX #created by the unzip call
+
     open -a Calibre
     open .
     pausethescript "Install the DeDRM plugin into Calibre before continuing. In Calibre, go to 'Preferences', and under the 'Advanced' section, click on 'Plugins'. On the Plugins window, press the 'Load plugin from file' and drop the 'DeDRM_plugin.zip' file into the File window. Click 'Open', 'Yes', 'OK', 'Apply' & 'Close'. You can now quit Calibre."
     rm DeDRM_plugin.zip
+
+    duti -s net.kovidgoyal.calibre org.idpf.epub-container all # ePub
+    duti -s net.kovidgoyal.calibre dyn.ah62d4rv4ge80c8x1gq all #Kindle ebooks
 fi
 
 #
@@ -3302,7 +3336,10 @@ fi
 #
 # https://www.figma.com
 #
-installcask figma
+if [[ "$(isAppInstalled Figma)" = "false" ]]; then
+    installcask figma
+    duti -s com.figma.Desktop com.figma.document all #Figma
+fi
 
 #
 # Firefox
@@ -3735,6 +3772,8 @@ installcask textsniper
 #
 if [[ "$(isAppInstalled "The Unarchiver")" = "false" ]]; then
     installcask the-unarchiver
+
+    duti -s com.macpaw.site.theunarchiver com.rarlab.rar-archive all # RAR
 fi
 
 #
@@ -3777,6 +3816,15 @@ installFromAppStore "UPS Power Monitor" 1500180529
 if [[ "$(isAppInstalled VLC)" = "false" ]]; then
     installcask vlc
     restoreAppSettings vlc
+
+    duti -s org.videolan.vlc public.3gpp all #3gp
+    duti -s org.videolan.vlc public.avi all #avi
+    duti -s org.videolan.vlc com.apple.m4a-audio all #M4A
+    duti -s org.videolan.vlc com.apple.m4v-video all #m4v
+    duti -s org.videolan.vlc com.apple.quicktime-movie all #mov
+    duti -s org.videolan.vlc public.mp3 all #mp3
+    duti -s org.videolan.vlc public.mpeg-4 all #mp4
+    duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
 fi
 
 
@@ -3787,7 +3835,10 @@ fi
 #
 # https://langui.net/webp-viewer
 #
-installFromAppStore "WebPViewer" 1323414118
+if [[ "$(isAppInstalled WebPViewer)" = "false" ]]; then
+    installFromAppStore "WebPViewer" 1323414118
+    duti -s net.langui.WebPViewer org.webmproject.webp all #WebP
+fi
 
 #
 # WhatsApp
@@ -3849,7 +3900,7 @@ installfont font-roboto
 
 ####################################################################
 #                                                                  #
-# File Type Default App                                            #
+# macOS Applications File Types Default                            #
 #                                                                  #
 # Find the app bundle identifier                                   #
 # mdls -name kMDItemCFBundleIdentifier -r /Applications/Photos.app #
@@ -3857,21 +3908,13 @@ installfont font-roboto
 # Find the file UTI (Uniform Type Identifiers)                     #
 # mdls -name kMDItemContentTypeTree ~/init.lua                     #
 #                                                                  #
+# Notes:                                                           #
+#  - Non MacOS application have their file type associated with    #
+#    them where they are installed                                 #
+#                                                                  #
 ####################################################################
 
-# Brave Browser
-duti -s com.brave.Browser com.compuserve.gif all #gif
-
-# Calibre
-duti -s net.kovidgoyal.calibre org.idpf.epub-container all # ePub
-duti -s net.kovidgoyal.calibre dyn.ah62d4rv4ge80c8x1gq all #Kindle ebooks
-
-# Figma
-duti -s com.figma.Desktop com.figma.document all #Figma
-
-# iTerm2
-duti -s com.googlecode.iTerm2 com.apple.terminal.shell-script all #SH
-duti -s com.googlecode.iTerm2 public.zsh-script all #ZSH
+displaySection "macOS Applications File Types Default"
 
 # Preview
 duti -s com.apple.Preview public.standard-tesselated-geometry-format all #3D CAD
@@ -3880,48 +3923,6 @@ duti -s com.apple.Preview com.nikon.raw-image all #NEF
 duti -s com.apple.Preview com.adobe.pdf all #PDF
 duti -s com.apple.Preview org.openxmlformats.presentationml.presentation all #PPTX
 duti -s com.apple.Preview com.adobe.photoshop-image all # PSD (Photoshop)
-
-# Visual Studio Code
-duti -s com.microsoft.VSCode public.css all #CSS
-duti -s com.microsoft.VSCode public.comma-separated-values-text all #CSV
-duti -s com.microsoft.VSCode com.netscape.javascript-source all #JavaScript
-duti -s com.microsoft.VSCode public.json all #json
-duti -s com.microsoft.VSCode dyn.ah62d4rv4ge8027pb all #lua
-duti -s com.microsoft.VSCode com.apple.log all #log
-duti -s com.microsoft.VSCode net.daringfireball.markdown all #Markdown
-duti -s com.microsoft.VSCode public.php-script all #php
-duti -s com.microsoft.VSCode com.apple.property-list all # Plist
-duti -s com.microsoft.VSCode public.python-script all # Python
-duti -s com.microsoft.VSCode public.rtf all #RTF
-duti -s com.microsoft.VSCode public.ruby-script all #Ruby
-duti -s com.microsoft.VSCode public.shell-script all #Shell script
-duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81g6pq all #SQL
-duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3u all #terraform tf
-duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #terraform tfstate
-duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #terraform tfvars
-duti -s com.microsoft.VSCode public.plain-text all #txt
-duti -s com.microsoft.VSCode public.xml all #xml
-duti -s com.microsoft.VSCode public.yaml all #YAML
-
-# VLC
-duti -s org.videolan.vlc public.3gpp all #3gp
-duti -s org.videolan.vlc public.avi all #avi
-duti -s org.videolan.vlc com.apple.m4a-audio all #M4A
-duti -s org.videolan.vlc com.apple.m4v-video all #m4v
-duti -s org.videolan.vlc com.apple.quicktime-movie all #mov
-duti -s org.videolan.vlc public.mp3 all #mp3
-duti -s org.videolan.vlc public.mpeg-4 all #mp4
-duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
-
-# qView
-duti -s com.qview.qView public.png all # PNG
-duti -s com.interversehq.qView public.svg-image all #svg
-
-# The Unarchiver
-duti -s com.macpaw.site.theunarchiver com.rarlab.rar-archive all #RAR
-
-# WebPViewer
-duti -s net.langui.WebPViewer org.webmproject.webp all #WebP
 
 
 #########
