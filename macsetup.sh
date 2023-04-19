@@ -4000,7 +4000,7 @@ displaySection "Dock Applications Order"
 
 echo $fg[blue]"The Dock will restart a couple of time, giving a flashing impression: it's normal\n"$reset_color
 dockutil --move 'Brave Browser' --position end --allhomes
-dockutil --move 'Notion Enhanced' --position end --allhomes
+dockutil --move 'Notion' --position end --allhomes
 dockutil --move 'Todoist' --position end --allhomes
 dockutil --move 'Slack' --position end --allhomes
 dockutil --move 'Visual Studio Code' --position end --allhomes
