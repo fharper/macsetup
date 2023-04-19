@@ -3234,7 +3234,11 @@ installcask figma
 #
 # https://www.mozilla.org/en-CA/firefox
 #
-installcask firefox
+if [[ "$(isAppInstalled Firefox)" = "false" ]]; then
+    installcask firefox
+    open -a Firefox
+    /Applications/Firefox.app/Contents/MacOS/Firefox https://addons.mozilla.org/en-CA/firefox/addon/1password-x-password-manager/
+fi
 
 #
 # Gimp
