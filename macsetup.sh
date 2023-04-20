@@ -802,6 +802,15 @@ installkeg duti
 installkeg jq
 
 #
+# icalBuddy
+#
+# Command-line utility for printing events and tasks from the OS X calendar database
+#
+# https://github.com/ali-rantakari/icalBuddy
+#
+installkeg ical-buddy
+
+#
 # loginitems
 #
 # Utility to manage startup applications
