@@ -3788,15 +3788,6 @@ fi
 installcask teamviewer
 
 #
-# TextSniper
-#
-# Extract text from your screen
-#
-# https://textsniper.app
-#
-installcask textsniper
-
-#
 # The Unarchiver
 #
 # Compress & extract GUI app supporting RAR, ZIP & more
