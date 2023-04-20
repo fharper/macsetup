@@ -2101,6 +2101,18 @@ if [[ "$(isCLAppInstalled jira)" = "false" ]]; then
 fi
 
 #
+# gopls
+#
+# Go language server
+#
+# https://github.com/golang/tools/tree/master/gopls
+#
+# Notes:
+#  - Needed by the Go extension for Visual Studio Code
+#
+installkeg gopls
+
+#
 # GPG Suite
 #
 # GPG keychain management & tools
