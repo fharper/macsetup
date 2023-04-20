@@ -273,6 +273,7 @@ function installPKG {
 # application into the macOS Applications folder
 #
 # @param DMG filename
+# @param delete the DMG or not
 #
 function installDMG {
     hdiutil attach "$1"
@@ -280,7 +281,10 @@ function installDMG {
     local app=$(/bin/ls "$volume" | grep .app)
     mv "$volume/$app" /Applications
     hdiutil detach "$volume"
-    rm "$1"
+
+    if [[ "$2" = "true" ]]; then
+        rm "$1"
+    fi
 }
 
 #
@@ -1558,7 +1562,7 @@ fi
 if [[ "$(isAppInstalled "Mumu X")" = "false" ]]; then
     echo $fg[blue]"Starting the installation of Mumu X"$reset_color
     curl -L $(op item get "Mumu X" --fields label="download link") --output mumux.dmg
-    installDMG mumux.dmg
+    installDMG mumux.dmg true
     loginitems -a "Mumu X"
     giveAccessibilityPermission "Mumu X"
 fi
@@ -3414,7 +3418,7 @@ fi
 # http://www.hemingwayapp.com
 #
 if [[ "$(isAppInstalled "Hemingway Editor")" = "false" ]]; then
-    installDMG '/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg'
+    installDMG "/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg" false
 fi
 
 #
