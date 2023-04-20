@@ -61,8 +61,10 @@ function findfilewithregex {
 #
 function isAppInstalled {
     if [[ $(osascript -e "id of application \"$1\"" 2>/dev/null) ]]; then
+        print $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color  >&2
 	    echo true
     else
+        print $fg[blue]"Starting the installation of $1"$reset_color  >&2
         echo false
     fi
 }
@@ -130,10 +132,7 @@ function installNodePackages {
 #
 function installcask {
     if [[ "$(isAppInstalled $1)" = "false" ]]; then
-        echo $fg[blue]"Starting the installation of $1"$reset_color
         brew install --cask $1
-    else
-	    echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
     fi
 }
 
@@ -144,10 +143,7 @@ function installcask {
 #
 function installFromAppStore {
     if [[ "$(isAppInstalled $1)" = "false" ]]; then
-        echo $fg[blue]"Starting the installation of $1"$reset_color
         mas install "$2"
-    else
-	    echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
     fi
 }
 
@@ -171,8 +167,10 @@ function getAppFullPath {
 #
 function isCLAppInstalled {
     if which "$1" > /dev/null; then
+        print $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color  >&2
         echo true
     else
+        print $fg[blue]"Starting the installation of $1"$reset_color  >&2
         echo false
     fi
 }
