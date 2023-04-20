@@ -14,6 +14,7 @@ source ~/.zshrc
 #########################
 
 email="hi@fred.dev"
+workemail="fred@kubeshop.io"
 
 #
 # Load the colors function from ZSH
@@ -1432,8 +1433,13 @@ displaySection "Misc Configurations"
 #
 # Internet Accounts
 #
-open /System/Library/PreferencePanes/InternetAccounts.prefPane
-pausethescript "Add your Email accounts to the macOS Internet Accounts"
+# Notes:
+#  - I assume that if my work calendar is available, it means this step was done during a previous run of this script
+#
+if [[ ! "$(icalbuddy calendars | grep "$workemail")" ]]; then
+    open /System/Library/PreferencePanes/InternetAccounts.prefPane
+    pausethescript "Add your Email accounts to the macOS Internet Accounts"
+fi
 
 #
 # Locate database generation
