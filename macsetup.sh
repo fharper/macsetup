@@ -3515,8 +3515,8 @@ fi
 # https://www.logitech.com/en-ca/product/spotlight-presentation-remote
 #
 if [ ! -d "/Library/Application Support/Logitech.localized/Logitech Presentation.localized/Logitech Presentation.app" ]; then
-    installkeg logitech-presentation
-    cd "/opt/homebrew/Caskroom/logitech-presentation/*/"
+    installcask logitech-presentation
+    cd /opt/homebrew/Caskroom/logitech-presentation/*/
 
     open "LogiPresentation Installer.app"
     pausethescript "Wait for the Logitech Presentation application to finish before continuing."
