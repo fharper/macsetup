@@ -1215,7 +1215,6 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -boolean false
 #
 # Show Library Folder
 #
-xattr -d com.apple.FinderInfo ~/Library
 sudo chflags nohidden ~/Library
 
 #
