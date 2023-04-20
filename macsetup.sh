@@ -2314,7 +2314,7 @@ installkeg localtunnel
 #
 # Lynis
 #
-# Security auditing tool
+# Security auditing tool for Linux, macOS, and UNIX-based systems
 #
 # https://github.com/CISOfy/lynis
 #
