@@ -3814,13 +3814,19 @@ fi
 #
 # TV
 #
-# Apple TV app
+# The Office for offline viewing
 #
 # https://www.apple.com/ca/apple-tv-app/
 #
 if [ ! -d ~/Movies/TV/Media.localized/TV\ Shows/The\ Office ]; then
-    open -a TV
-    pausethescript "Sign into the TV app & download all The Office US episodes before continuing"
+
+    # Download The Office only if HDD has at least 500GB available
+    locale hddleft=$(diskutil info /dev/disk3s1 | grep "Container Free Space" | grep -o '[0-9]*\.[0-9]*')
+
+    if (( $(echo "$hddleft > 500" | bc -l) )); then
+        open -a TV
+        pausethescript "Sign into the TV app & start the download the whole series The Office US before continuing."
+    fi
 fi
 
 #
