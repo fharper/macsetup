@@ -3821,7 +3821,7 @@ fi
 if [ ! -d ~/Movies/TV/Media.localized/TV\ Shows/The\ Office ]; then
 
     # Download The Office only if HDD has at least 500GB available
-    locale hddleft=$(diskutil info /dev/disk3s1 | grep "Container Free Space" | grep -o '[0-9]*\.[0-9]*')
+    local hddleft=$(diskutil info /dev/disk3s1 | grep "Container Free Space" | grep -o '[0-9]*\.[0-9]*')
 
     if (( $(echo "$hddleft > 500" | bc -l) )); then
         open -a TV
