@@ -2285,6 +2285,15 @@ installkeg kubectx
 installkeg kubefirst/tools/kubefirst
 
 #
+# Kubescape
+#
+# Kubernetes security audit tool
+#
+# https://github.com/kubescape/kubescape
+#
+installkeg kubescape
+
+#
 # local
 #
 # Local WordPress developement tool
