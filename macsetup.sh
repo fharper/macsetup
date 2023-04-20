@@ -3779,6 +3779,15 @@ if [[ "$(isAppInstalled stats)" = "false" ]]; then
 fi
 
 #
+# stts
+#
+# Monitor the status of different cloud services
+#
+# https://github.com/inket/stts
+#
+installFromAppStore "stts" 1187772509
+
+#
 # SwiftDefaultApps
 #
 # Change default application with URI Scheme and/or filetype in macOS
