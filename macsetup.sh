@@ -1021,17 +1021,6 @@ if [[ "$(isAppInstalled Contexts)" = "false" ]]; then
 fi
 
 #
-# Cron
-#
-# Calendar app
-#
-# https://cron.com
-#
-installcask cron
-#TODO: add Notifications Permission
-
-
-#
 # Espanso
 #
 # Text expander / snipet
@@ -1095,6 +1084,15 @@ if [[ "$(isAppInstalled "Little Snitch")" = "false" ]]; then
     reload
     pbcopy "sudo littlesnitch restore-model little-snitch.json"
 fi
+
+#
+# MeetingBar
+#
+# Calendar menubar app
+#
+# https://github.com/leits/MeetingBar
+#
+installcask meetingbar
 
 #
 # Moom
