@@ -983,6 +983,7 @@ if [[ "$(isAppInstalled "CleanShot X")" = "false" ]]; then
     getLicense "CleanShot X"
     open -a "CleanShot X"
     pausethescript "Install the audio component for video audio recording before continuing. Go in Settings >> Recording >> Video >> Computer Audio, and click on the 'Configure' button. In the new window, check the 'Record Computer Audio' checkbox, and click 'Install' in the popup."
+    pausethescript "You now need to configure the right keyboard shortcuts before continuing. Go in Settings >> Shortcuts. In the 'Screenshoots' section, add 'CMD + Shift + 4' for 'Capture Area'. In the 'Screen Recording' section, add 'CMD + Shift + 6' for 'Record Screen / Stop Recording'. In the 'Scrolling Capture' section, add 'CMD + Shift + 5' for 'Scrolling Capture'. Finally, in the 'OCR' section, add 'CMD + Shift + 2' for 'Capture Text'. You can now close the window."
 fi
 
 #
