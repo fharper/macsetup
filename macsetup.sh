@@ -3594,6 +3594,15 @@ if [[ "$(isAppInstalled "Microsoft Edge")" = "false" ]]; then
 fi
 
 #
+# Microsoft Teams
+#
+# Video call
+#
+# https://www.microsoft.com/en-us/microsoft-teams/group-chat-software
+#
+installcask microsoft-teams
+
+#
 # MindNode
 #
 # Mindmap app
