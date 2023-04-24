@@ -2384,6 +2384,20 @@ installNodePackages npm-check-updates
 installNodePackages ibm-openapi-validator
 
 #
+# Perl
+#
+# Perl programming language
+#
+# https://github.com/Perl/perl5
+#
+if [[ ! $(asdf current perl) ]]; then
+    asdf plugin-add perl
+    asdf install perl 5.36.1
+    asdf global perl 5.36.1
+    reload
+fi
+
+#
 # PHP
 #
 # PHP programming language
