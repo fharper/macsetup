@@ -121,6 +121,7 @@ function installNodePackages {
     if [[ "$(isNodePackageInstalled $1)" = "false" ]]; then
         echo $fg[blue]"Starting the installation of $1"$reset_color
         npm install -g "$1"
+        rehash
     else
         echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
     fi
