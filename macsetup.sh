@@ -3664,6 +3664,15 @@ if [[ "$(isAppInstalled "OBS")" = "false" ]]; then
 fi
 
 #
+# One Thing
+#
+# Add text to menubar
+#
+# https://sindresorhus.com/one-thing
+#
+mas install "One Thing" 1604176982
+
+#
 # OverSight
 #
 # Monitor the microphone & webcam
