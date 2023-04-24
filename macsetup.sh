@@ -2663,6 +2663,15 @@ installkeg yq
 displaySection "Command line tools"
 
 #
+# alex
+#
+# Text analyzer to catch insensitive, and inconsiderate writing
+#
+# https://github.com/get-alex/alex
+#
+installkeg alexjs
+
+#
 # Asciinema + svg-term-cli
 #
 # Terminal session recorder
