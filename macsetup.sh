@@ -1033,7 +1033,7 @@ if [[ "$(isAppInstalled Espanso)" = "false" ]]; then
     installcask espanso
     giveAccessibilityPermission Espanso
     restoreAppSettings espanso
-    espanso service register
+    loginitems -a Espanso
 fi
 
 #
