@@ -693,7 +693,6 @@ fi
 # Notes: needed before Oh My Zsh as .zhrc have some git usage in it
 #
 installkeg git
-git config --replace-all --global add.interactive.useBuiltin false
 git config --replace-all --global advice.addIgnoredFile false
 git config --replace-all --global advice.addEmptyPathspec false
 git config --replace-all --global advice.skippedCherryPicks false
