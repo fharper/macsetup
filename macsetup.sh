@@ -3934,6 +3934,7 @@ if [[ "$(isAppInstalled VLC)" = "false" ]]; then
     duti -s org.videolan.vlc public.mp3 all #mp3
     duti -s org.videolan.vlc public.mpeg-4 all #mp4
     duti -s org.videolan.vlc com.microsoft.waveform-audio all #wav
+    duti -s org.videolan.vlc org.webmproject.webm all #webm
 fi
 
 
