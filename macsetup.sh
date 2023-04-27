@@ -1920,7 +1920,10 @@ installkeg direnv
 #
 # https://www.docker.com
 #
-installcask docker
+if [[ "$(isAppInstalled Docker)" = "false" ]]; then
+    installcask docker
+    docker extension install docker/resource-usage-extension
+fi
 
 #
 # ESLint
