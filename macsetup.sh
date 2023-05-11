@@ -1097,6 +1097,18 @@ fi
 installcask meetingbar
 
 #
+# Mic Drop
+#
+# Easily mute or unmute your microphone
+#
+# https://getmicdrop.com
+#
+if [[ "$(isAppInstalled Moom)" = "false" ]]; then
+    installcask mic-drop
+    getLicense "Mic Drop"
+fi
+
+#
 # Moom
 #
 # Applications' windows management
@@ -1110,15 +1122,6 @@ if [[ "$(isAppInstalled Moom)" = "false" ]]; then
     installFromAppStore Moom 419330170
     giveAccessibilityPermission Moom
 fi
-
-#
-# Shush
-#
-# Easily mute or unmute your microphone
-#
-# https://mizage.com/shush/
-#
-installFromAppStore Shush 496437906
 
 #
 # Sound Control
