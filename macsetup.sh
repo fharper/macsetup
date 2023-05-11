@@ -1057,6 +1057,7 @@ if [[ "$(isAppInstalled "Karabiner-Elements")" = "false" ]]; then
     restoreAppSettings karabiner-elements
     #TODO: add karabiner_observer Receive Keystrokes Permission
     #TODO: add karabiner_observer & karabiner_graber Input Monitor Permission
+    #TODO: add karabiner_graber Full Disk Access Permission (needed because of Mackup)
 fi
 
 #
