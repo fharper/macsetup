@@ -961,6 +961,15 @@ if [[ "$(isAppInstalled "Alfred 5")" = "false" ]]; then
 fi
 
 #
+# Apple Juice
+#
+# Advanced battery gauge
+#
+# https://github.com/raphaelhanneken/apple-juice
+#
+installcask apple-juice
+
+#
 # Bartender
 #
 # macOS menubar manager
