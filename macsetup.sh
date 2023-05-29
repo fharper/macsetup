@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-source ~/.zshrc
+source $HOME/.zshrc
 
 #
 # - run this script with "zsh macsetup.sh"
@@ -291,7 +291,7 @@ function installDMG {
 # Reload .zshrc in the current shell
 #
 function reload {
-    source ~/.zshrc
+    source $HOME/.zshrc
 }
 
 #
@@ -547,7 +547,7 @@ if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
     echo $fg[blue]"Starting the installation of Homebrew"$reset_color
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    # Needed once here since we didn't restore & source ~/.zshrc yet, but we need Homebrew
+    # Needed once here since we didn't restore & source $HOME/.zshrc yet, but we need Homebrew
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
     brew analytics off
@@ -697,7 +697,7 @@ git config --replace-all --global advice.addIgnoredFile false
 git config --replace-all --global advice.addEmptyPathspec false
 git config --replace-all --global advice.skippedCherryPicks false
 git config --replace-all --global clean.requireForce false
-git config --replace-all --global core.hooksPath ~/.git/hooks
+git config --replace-all --global core.hooksPath $HOME/.git/hooks
 git config --replace-all --global core.ignorecase false
 git config --replace-all --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
 git config --replace-all --global credential.username $email
@@ -1234,7 +1234,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -boolean false
 #
 # Show Library Folder
 #
-sudo chflags nohidden ~/Library
+sudo chflags nohidden $HOME/Library
 
 #
 # Settings - General - New Finder windows show
@@ -3043,8 +3043,8 @@ installkeg topgrade
 #
 # https://github.com/VundleVim/Vundle.vim
 #
-if [[ ! -d "/Users/fharper/.vim/bundle/Vundle.vim" ]]; then
-    git clone git@github.com:VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [[ ! -d "$HOME/.vim/bundle/Vundle.vim" ]]; then
+    git clone git@github.com:VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
     vim +PluginInstall
 fi
 
@@ -3103,10 +3103,10 @@ fi
 # https://github.com/romkatv/zsh-bench
 #
 # Note:
-# - run a benchmark, use: ~/zsh-bench/zsh-bench
+# - run a benchmark, use: $HOME/zsh-bench/zsh-bench
 #
-if [ ! -d ~/zsh-bench ]; then
-    git clone https://github.com/romkatv/zsh-bench ~/zsh-bench
+if [ ! -d $HOME/zsh-bench ]; then
+    git clone https://github.com/romkatv/zsh-bench $HOME/zsh-bench
 fi
 
 
@@ -3890,7 +3890,7 @@ fi
 #
 # https://www.apple.com/ca/apple-tv-app/
 #
-if [ ! -d ~/Movies/TV/Media.localized/TV\ Shows/The\ Office ]; then
+if [ ! -d $HOME/Movies/TV/Media.localized/TV\ Shows/The\ Office ]; then
 
     # Download The Office only if HDD has at least 500GB available
     local hddleft=$(diskutil info /dev/disk3s1 | grep "Container Free Space" | grep -o '[0-9]*\.[0-9]*')
@@ -4022,7 +4022,7 @@ installfont font-roboto
 # mdls -name kMDItemCFBundleIdentifier -r /Applications/Photos.app #
 #                                                                  #
 # Find the file UTI (Uniform Type Identifiers)                     #
-# mdls -name kMDItemContentTypeTree ~/init.lua                     #
+# mdls -name kMDItemContentTypeTree $HOME/init.lua                 #
 #                                                                  #
 # Notes:                                                           #
 #  - Non MacOS application have their file type associated with    #
