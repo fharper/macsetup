@@ -234,9 +234,9 @@ function sudo {
 # @param the application name from Mackup
 #
 function restoreAppSettings {
-    echo "[applications_to_sync]\n$1" > /Users/fharper/.mackup.cfg
+    echo "[applications_to_sync]\n$1" > $HOME/.mackup.cfg
     mackup restore
-    echo "" > /Users/fharper/.mackup.cfg
+    echo "" > $HOME/.mackup.cfg
 }
 
 #
@@ -727,16 +727,16 @@ if [[ "$(isCLAppInstalled omz)" = "false" ]]; then
     echo $fg[blue]"Starting the installation of Oh My Zsh"$reset_color
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-    # Restoring here since OMZ backup ~/.zshrc to ~/.zshrc.pre-oh-my-zsh
+    # Restoring here since OMZ backup $HOME/.zshrc to $HOME/.zshrc.pre-oh-my-zsh
     restoreAppSettings zsh
-    rm ~/.zshrc.pre-oh-my-zsh
+    rm $HOME/.zshrc.pre-oh-my-zsh
     reload
 fi
 
 #
 # Restore different files with Mackup (not app specifics)
 #
-if [[ ! -L "/Users/fharper/.zshrc" ]]; then
+if [[ ! -L "$HOME/.zshrc" ]]; then
     restoreAppSettings files
     restoreAppSettings vim
     reload
@@ -1286,9 +1286,9 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 # Sidebar Favorites Reordering
 #
 mysides remove all
-mysides add Downloads file:///Users/fharper/Downloads
-mysides add Documents file:///Users/fharper/Documents
-mysides add Dropbox file:///Users/fharper/Dropbox
+mysides add Downloads file://$HOME/Downloads
+mysides add Documents file://$HOME/Documents
+mysides add Dropbox file://$HOME/Dropbox
 mysides add Applications file:///Applications/
 
 
@@ -1529,7 +1529,7 @@ fi
 if [[ "$(isAppInstalled "Antidote 11")" = "false" ]]; then
     open https://services.druide.com/
     pausethescript "Download Antidote in the macsetup folder before continuing"
-    cd /Users/fharper/Downloads/
+    cd $HOME/Downloads/
     local filename=$(findfilewithregex "Antidote")
     installPKGfromDMG "$filename"
     cd -
@@ -3470,7 +3470,7 @@ fi
 # http://www.hemingwayapp.com
 #
 if [[ "$(isAppInstalled "Hemingway Editor")" = "false" ]]; then
-    installDMG "/Users/fharper/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg" false
+    installDMG "$HOME/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg" false
 fi
 
 #
@@ -3646,7 +3646,7 @@ installcask microsoft-teams
 # https://mindnode.com
 #
 if [[ "$(isAppInstalled MindNode)" = "false" ]]; then
-    unzip /Users/fharper/Documents/mac/MindNode/MindNode.zip
+    unzip $HOME/Documents/mac/MindNode/MindNode.zip
     mv MindNode.app /Applications/
 fi
 
@@ -3862,7 +3862,7 @@ fi
 # Notes:
 # - Using it for default things like default application for emails. File type are handled with duti for automation
 #
-if [[ -d "/Users/fharper/Library/PreferencePanes/SwiftDefaultApps.prefpane/" ]]; then
+if [[ -d "$HOME/Library/PreferencePanes/SwiftDefaultApps.prefpane/" ]]; then
     installcask swiftdefaultappsprefpane
 fi
 
