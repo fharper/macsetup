@@ -1939,6 +1939,7 @@ installkeg direnv
 if [[ "$(isAppInstalled Docker)" = "false" ]]; then
     installcask docker
     docker extension install docker/resource-usage-extension
+    docker login -u $username
 fi
 
 #
