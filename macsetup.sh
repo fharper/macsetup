@@ -3682,6 +3682,7 @@ installcask nordvpn
 if [[ "$(isAppInstalled "OBS")" = "false" ]]; then
     installcask obs
     giveScreenRecordingPermission OBS
+    giveAccessibilityPermission OBS
     #TODO: give Camera Permission
     #TODO: give Microphone Permission
 fi
