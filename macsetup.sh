@@ -1783,6 +1783,15 @@ installkeg act
 installkeg actionlint
 
 #
+# argocd
+#
+# Argo CD CLI
+#
+# https://github.com/argoproj/argo-cd
+#
+installkeg argocd
+
+#
 # aws-cli
 #
 # Amazon Web Services CLI
