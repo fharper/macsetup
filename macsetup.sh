@@ -1560,6 +1560,8 @@ if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
     pausethescript "Authorize Dropbox for Stylus sync before continuing"
 
     duti -s com.brave.Browser com.compuserve.gif all #GIF (Image)
+
+    #TODO: add Location Services permission
 fi
 
 #
@@ -3586,6 +3588,9 @@ if [ ! -d "/Library/Application Support/Logitech.localized/Logitech Presentation
 
     rm "LogiPresentation Installer.app"
     cd -
+
+    #TODO: add Input Monitoring Permissions
+    #TODO: add Accessibility Permissions
 fi
 
 #
@@ -3676,6 +3681,8 @@ installcask nordvpn
 if [[ "$(isAppInstalled "OBS")" = "false" ]]; then
     installcask obs
     giveScreenRecordingPermission OBS
+    #TODO: give Camera Permission
+    #TODO: give Microphone Permission
 fi
 
 #
