@@ -15,6 +15,7 @@ source $HOME/.zshrc
 
 email="hi@fred.dev"
 workemail="fred@kubeshop.io"
+username="fharper"
 
 #
 # Load the colors function from ZSH
@@ -869,7 +870,7 @@ if [[ "$(isCLAppInstalled geticon)" = "false" ]]; then
     unzip osxiconutils.zip
     rm osxiconutils.zip
     rm -rf __MACOSX #created by the unzip call
-    sudo chown fharper:admin /usr/local/bin
+    sudo chown $username:admin /usr/local/bin
     mv bin/geticon /usr/local/bin/
     mv bin/seticon /usr/local/bin/
     rm -rf bin/
