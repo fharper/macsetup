@@ -3760,7 +3760,7 @@ installFromAppStore "Pure Paste" 1611378436
 #
 # https://github.com/jurplel/qView/
 #
-if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
+if [[ "$(isAppInstalled qView)" = "false" ]]; then
     installcask qview
 
     duti -s com.interversehq.qView public.png all # PNG
