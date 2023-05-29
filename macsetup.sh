@@ -2108,6 +2108,15 @@ if [[ "$(isCLAppInstalled glab)" = "false" ]]; then
 fi
 
 #
+# Gitleaks
+#
+# Detect hardcoded secrets
+#
+# https://github.com/gitleaks/gitleaks
+#
+installkeg gitleaks
+
+#
 # Go
 #
 # Go programming language
