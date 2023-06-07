@@ -2391,6 +2391,15 @@ installkeg markdownlint-cli2
 installNodePackages mocha
 
 #
+# minikube
+#
+# Run Kubernetes locally
+#
+# https://github.com/kubernetes/minikube
+#
+installkeg minikube
+
+#
 # mkcert
 #
 # Tool to make local trusted development certificates
