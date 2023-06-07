@@ -2645,7 +2645,10 @@ installcask utm
 #
 # https://github.com/vercel/vercel
 #
-installkeg vercel-cli
+if [[ "$(isCLAppInstalled vercel)" = "false" ]]; then
+    installkeg vercel-cli
+    vercel login $email
+fi
 
 #
 # Webhint
