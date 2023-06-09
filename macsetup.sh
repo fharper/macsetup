@@ -2630,6 +2630,15 @@ installNodePackages stylelint-config-recommended
 installkeg go-task
 
 #
+# Terraform
+#
+# Infrastructure as Code (IaC)
+#
+# https://github.com/hashicorp/terraform
+#
+installkeg terraform
+
+#
 # UTM
 #
 # Virtual machine host
