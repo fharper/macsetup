@@ -494,6 +494,23 @@ function displaySection {
     print "\n$reset_color"
 }
 
+#
+# Install a Rust application, if not already installed
+#
+# @param the application name
+#
+function installRustApp {
+    local package=$(cargo install --list | grep "$1")
+
+    if [[ -n "$package" ]]; then
+        echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
+    else
+        echo $fg[blue]"Installing the Python application $1"$reset_color
+        cargo install "$1"
+        reload
+    fi
+}
+
 
 ############################
 #                          #
