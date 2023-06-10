@@ -2813,6 +2813,15 @@ installkeg coreutils
 installPythonApp coursera-dl
 
 #
+# diff-pdf
+#
+# Tool for visually comparing two PDF files
+#
+# https://github.com/vslavik/diff-pdf
+#
+installkeg diff-pdf
+
+#
 # empty-trash-cli
 #
 # CLI to empty the trash
