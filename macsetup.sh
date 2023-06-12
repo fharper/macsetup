@@ -2429,6 +2429,19 @@ if [[ "$(isCLAppInstalled mkcert)" = "false" ]]; then
 fi
 
 #
+# MongoDB Atlas CLI
+#
+# MongoDB Atlas CLI
+#
+# https://github.com/mongodb/mongodb-atlas-cli
+#
+if [[ "$(isCLAppInstalled atlas)" = "false" ]]; then
+    installkeg mongodb-atlas-cli
+    confirm "Do you want to configure the MongoDB CLI now?" "atlas auth login"
+fi
+
+
+#
 # npm Check Updates (ncu)
 #
 # Find newer versions of Node package dependencies
