@@ -2337,7 +2337,7 @@ if [[ "$(isCLAppInstalled kubectl)" = "false" ]]; then
 fi
 
 #
-# kubectx
+# kubectx & kubens
 #
 # Kubernetes clusters & namespaces switcher
 #
