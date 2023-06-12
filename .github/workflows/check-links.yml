@@ -10,7 +10,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: Download .markdownlint.json
-      uses: wei/wget@v1
+      uses: fharper/wget@v1
       with:
         args: https://raw.githubusercontent.com/fharper/gh-configs/main/.markdownlinkcheck.json
 
