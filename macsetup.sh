@@ -2171,6 +2171,15 @@ if [[ "$(isCLAppInstalled jira)" = "false" ]]; then
 fi
 
 #
+# Google Cloud SDK
+#
+# Google Cloud CLI
+#
+# https://cloud.google.com/sdk
+#
+installcask google-cloud-sdk
+
+#
 # gopls
 #
 # Go language server
