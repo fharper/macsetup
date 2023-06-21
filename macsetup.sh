@@ -2699,6 +2699,15 @@ if [[ "$(isCLAppInstalled vercel)" = "false" ]]; then
 fi
 
 #
+# vultr-cli
+#
+# Vultr CLI
+#
+# https://github.com/vultr/vultr-cli
+#
+installkeg vultr/vultr-cli/vultr-cli
+
+#
 # Webhint
 #
 # Accessibility, speed, cross-browser compatibility analysis tool
