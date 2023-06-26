@@ -2678,6 +2678,18 @@ installkeg go-task
 installkeg terraform
 
 #
+# TFLint
+#
+# Terraform Linter
+#
+# https://github.com/terraform-linters/tflint
+#
+if [[ "$(isCLAppInstalled tflint)" = "false" ]]; then
+    installkeg tflint
+    tflint --init
+fi
+
+#
 # UTM
 #
 # Virtual machine host
