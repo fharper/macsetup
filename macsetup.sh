@@ -737,6 +737,17 @@ fi
 
 
 #
+# GitPython
+#
+# Python library for Git
+#
+# https://github.com/gitpython-developers/GitPython
+#
+# Notes: needed for the file size pre-commit hook
+#
+installPythonPackage gitpython
+
+#
 # Oh My Zsh
 #
 # Zsh configurations framework & management
