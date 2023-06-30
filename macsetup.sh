@@ -1912,6 +1912,15 @@ installkeg commitlint
 installNodePackages cordova
 
 #
+# Curl
+#
+# Transfer data from URL CLI
+#
+# https://github.com/curl/curl
+#
+installkeg curl
+
+#
 # delete-gh-workflow-runs + fzf
 #
 # Easily mass-delete GitHub Workflow runs
