@@ -3213,6 +3213,15 @@ installkeg tldr
 installkeg topgrade
 
 #
+# video-compare
+#
+# Visual split screen video comparaison tool
+#
+# https://github.com/pixop/video-compare
+#
+installkeg video-compare
+
+#
 # Vundle
 #
 # Vim plugin manager
