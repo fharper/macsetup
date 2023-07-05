@@ -2446,6 +2446,15 @@ installkeg lynis
 installkeg markdownlint-cli2
 
 #
+# Microsoft Azure
+#
+# Azure CLI
+#
+# https://github.com/Azure/azure-cli
+#
+installkeg azure-cli
+
+#
 # Mocha
 #
 # Node.js testing framework
