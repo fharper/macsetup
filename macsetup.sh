@@ -1796,6 +1796,20 @@ fi
 displaySection "Developer stuff"
 
 #
+# .Net Core
+#
+# .Net Core Programming Language
+#
+# https://github.com/dotnet/core
+#
+if [[ ! $(asdf current dotnet-core) ]]; then
+    asdf plugin-add dotnet-core
+    asdf install dotnet-core 7.0.305
+    asdf global dotnet-core 7.0.305
+    reload
+fi
+
+#
 # Act
 #
 # Run your GitHub Actions locally
