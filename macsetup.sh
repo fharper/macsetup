@@ -3096,6 +3096,15 @@ installkeg noti
 installkeg pandoc
 
 #
+# pdfcrack
+#
+# PDF Protection Brute Force Cracker
+#
+# https://sourceforge.net/projects/pdfcrack/
+#
+installkeg pdfcrack
+
+#
 # Poppler
 #
 # PDF rendering library
