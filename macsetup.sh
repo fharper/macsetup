@@ -3648,18 +3648,6 @@ installFromAppStore "Hyperduck" 6444667067
 installcask igdm
 
 #
-# Insta360 Link Controller
-#
-# Insta360 Link webcam settings & controller
-#
-# https://www.insta360.com/download/insta360-link
-#
-if [[ "$(isAppInstalled "Insta360 Link Controller")" = "false" ]]; then
-    curl -L https://file.insta360.com/static/ff3fc5347835495dd970735b96db1097/Insta360LinkController_20230303_144839_signed_1677827088327.pkg --output Insta360LinkController.pkg
-    installPKG Insta360LinkController.pkg
-fi
-
-#
 # Jiffy
 #
 # Gif in your menubar
