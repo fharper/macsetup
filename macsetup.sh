@@ -1713,6 +1713,15 @@ if [[ "$(isAppInstalled Slack)" = "false" ]]; then
 fi
 
 #
+# speedtest-cli
+#
+# Internet bandwidth speed test
+#
+# https://github.com/sivel/speedtest-cli
+#
+installkeg speedtest-cli
+
+#
 # Spotify
 #
 # Music service player
