@@ -3351,6 +3351,15 @@ if [[ "$(isAppInstalled "MPC Beats")" = "false" ]]; then
 fi
 
 #
+# App Tamer
+#
+# CPU Throttling Tool
+#
+# https://www.stclairsoft.com/AppTamer/
+#
+installcask app-tamer
+
+#
 # AppCleaner
 #
 # Applications uninstaller
