@@ -921,6 +921,15 @@ giveAccessibilityPermission "Script Editor"
 #
 installkeg terminal-notifier
 
+#
+# wallpaper
+#
+# Manage the wallpaper(s) from command line
+#
+# https://github.com/sindresorhus/macos-wallpaper
+#
+installkeg wallpaper
+
 
 ########################
 #                      #
