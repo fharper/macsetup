@@ -2967,6 +2967,15 @@ installkeg ffmpeg
 installPythonApp ffmpeg-quality-metrics
 
 #
+# file-icon-cli
+#
+# Get the file or app icon as a PNG
+#
+# https://github.com/sindresorhus/file-icon-cli
+#
+installNodePackages file-icon-cli
+
+#
 # Ghostscript
 #
 # PostScript & PDF intepreter
