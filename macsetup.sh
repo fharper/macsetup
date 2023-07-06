@@ -3398,7 +3398,11 @@ fi
 #
 # https://www.stclairsoft.com/AppTamer/
 #
-installcask app-tamer
+if [[ "$(isAppInstalled "App Tamer")" = "false" ]]; then
+    installcask app-tamer
+    open -a "App Tamer"
+    getLicense "App Tamer"
+fi
 
 #
 # AppCleaner
