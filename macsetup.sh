@@ -1722,15 +1722,6 @@ if [[ "$(isAppInstalled Slack)" = "false" ]]; then
 fi
 
 #
-# speedtest-cli
-#
-# Internet bandwidth speed test
-#
-# https://github.com/sivel/speedtest-cli
-#
-installkeg speedtest-cli
-
-#
 # Spotify
 #
 # Music service player
@@ -3163,6 +3154,17 @@ if [[ "$(isCLAppInstalled scout)" = "false" ]]; then
     brew tap ABridoux/formulae
     installkeg scout
 fi
+
+#
+# speedtest-cli
+#
+# Internet bandwidth speed test
+#
+# https://github.com/sivel/speedtest-cli
+#
+# Notes: used by utils.zsh
+#
+installkeg speedtest-cli
 
 #
 # Stress
