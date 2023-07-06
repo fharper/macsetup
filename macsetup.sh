@@ -3350,15 +3350,6 @@ displaySection "Applications"
 installFromAppStore "Actions" 1586435171
 
 #
-# Audacity
-#
-# Audio editor
-#
-# https://github.com/audacity/audacity
-#
-installcask audacity
-
-#
 # Affinity Designer
 #
 # Vector Graphics Design Tool
@@ -3416,6 +3407,15 @@ fi
 # https://www.around.co
 #
 installcask around
+
+#
+# Audacity
+#
+# Audio editor
+#
+# https://github.com/audacity/audacity
+#
+installcask audacity
 
 #
 # AutoMute
