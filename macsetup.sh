@@ -3720,6 +3720,19 @@ if [[ "$(isAppInstalled "Hemingway Editor")" = "false" ]]; then
 fi
 
 #
+# HistoryHound
+#
+# Search browsers history with content (not just URLs or pages titles)
+#
+# https://www.stclairsoft.com/HistoryHound/
+#
+if [[ "$(isAppInstalled "HistoryHound")" = "false" ]]; then
+    installcask historyhound
+    open -a HistoryHound
+    getLicense HistoryHound
+fi
+
+#
 # Hyperduck
 #
 # Receive links from iOS even when offline
