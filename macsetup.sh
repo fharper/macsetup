@@ -1509,6 +1509,12 @@ if [[ -n "$alreadyInstalled" ]]; then
     pausethescript "Add your HP OfficeJet 7740"
 fi
 
+#
+# Wallpaper
+#
+wallpaper set /Users/fharper/Documents/misc/background.png
+
+
 ########################
 #                      #
 # Apply Configurations #
