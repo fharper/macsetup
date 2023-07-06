@@ -3051,6 +3051,20 @@ installkeg lsusb
 installkeg lzip
 
 #
+# macos-focus-mode
+#
+# Control macOS Do Not Disturb from the command line
+#
+# https://github.com/arodik/macos-focus-mode
+#
+# Notes: used by MeetingBar AppleScript automation
+#
+if [[ "$(isCLAppInstalled macos-focus-mode)" = "false" ]]; then
+    installNodePackages macos-focus-mode
+    macos-focus-mode install
+fi
+
+#
 # markmap
 #
 # Markdown as mindmaps visualization tool
