@@ -1608,6 +1608,15 @@ if [[ "$(isAppInstalled "Home Assistant")" = "false" ]]; then
 fi
 
 #
+# macos-trash
+#
+# rm replacement that moves files to the Trash folder
+#
+# https://github.com/sindresorhus/macos-trash
+#
+brew install macos-trash
+
+#
 # Mumu X
 #
 # Emoji picker
@@ -1745,18 +1754,6 @@ if [[ "$(isAppInstalled Todoist)" = "false" ]]; then
     dockutil --add /Applications/Todoist.app --allhomes
     loginitems -a Todoist
 fi
-
-#
-# Trash CLI
-#
-# rm replacement that moves files to the Trash folder
-#
-# https://github.com/sindresorhus/trash-cli
-#
-# Notes:
-#  - trash-cli in Homebrew is another application
-#
-installNodePackages trash-cli
 
 #
 # Visual Studio Code
