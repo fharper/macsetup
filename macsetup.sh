@@ -2422,6 +2422,15 @@ installkeg kubefirst/tools/kubefirst
 installkeg kubescape
 
 #
+# kustomize
+#
+# Customize Kubernetes YAML configurations files
+#
+# https://github.com/kubernetes-sigs/kustomize
+#
+installkeg kustomize
+
+#
 # local
 #
 # Local WordPress developement tool
