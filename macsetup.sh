@@ -2516,7 +2516,6 @@ if [[ "$(isCLAppInstalled atlas)" = "false" ]]; then
     confirm "Do you want to configure the MongoDB CLI now?" "atlas auth login"
 fi
 
-
 #
 # npm Check Updates (ncu)
 #
