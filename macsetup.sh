@@ -2842,6 +2842,15 @@ installkeg wp-cli
 installcask xcodes
 
 #
+# yamllint
+#
+# YAML files linter
+#
+# https://github.com/adrienverge/yamllint
+#
+installkeg yamllint
+
+#
 # Yarn
 #
 # npm alternative
