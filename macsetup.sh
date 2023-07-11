@@ -1840,6 +1840,15 @@ installkeg act
 installkeg actionlint
 
 #
+# argo
+#
+# Argo Workflows CLI
+#
+# https://github.com/argoproj/argo-workflows/
+#
+installkeg argo
+
+#
 # argocd
 #
 # Argo CD CLI
