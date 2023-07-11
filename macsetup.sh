@@ -2458,6 +2458,17 @@ installcask local
 installkeg localtunnel
 
 #
+# lsof
+#
+# List open files
+#
+# https://github.com/lsof-org/lsof
+#
+# Notes: newer version than the macOS default one
+#
+installkeg lsof
+
+#
 # Lynis
 #
 # Security auditing tool for Linux, macOS, and UNIX-based systems
