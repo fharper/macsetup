@@ -10,9 +10,9 @@ jobs:
       uses: actions/checkout@master
 
     - name: Download .markdownlint.json
-      uses: fharper/wget@v1
+      uses: suisei-cn/actions-download-file@v1.4.0
       with:
-        args: -O .markdownlinkcheck.json https://raw.githubusercontent.com/fharper/gh-configs/main/.markdownlinkcheck.json
+        url: "https://raw.githubusercontent.com/fharper/gh-configs/main/.markdownlinkcheck.json"
 
     - name: Validate Links
       uses: gaurav-nelson/github-action-markdown-link-check@v1
