@@ -2723,7 +2723,7 @@ fi
 #
 # ShellCheck
 #
-# Shell scripts tatic analysis tool
+# Shell scripts linter
 #
 # https://github.com/koalaman/shellcheck
 #
