@@ -2303,6 +2303,9 @@ installkeg hadolint
 if [[ "$(isCLAppInstalled helm)" = "false" ]]; then
     installkeg helm
     helm repo add bitnami https://charts.bitnami.com/bitnami
+    helm repo add portainer https://portainer.github.io/k8s
+    helm repo add kubefirst https://charts.kubefirst.com
+    helm repo update
 fi
 
 #
