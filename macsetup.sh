@@ -580,7 +580,7 @@ fi
 #
 # Mackup
 #
-# Sync applications settings with Dropbox
+# Sync applications settings with any file sync services
 #
 # https://github.com/lra/mackup
 #
