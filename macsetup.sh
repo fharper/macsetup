@@ -589,21 +589,6 @@ fi
 installkeg mackup
 
 #
-# Dropbox
-#
-# Dropbox client
-#
-# https://dropbox.com
-#
-# Notes: needed right after mackup so configurations files can be restored
-#
-if [[ "$(isAppInstalled Dropbox)" = "false" ]]; then
-    installcask dropbox
-    open -a Dropbox
-    pausethescript "Wait for Dropbox to finish Mackup folder synchronization (it's needed for restoring applications configurations) before continuing"
-fi
-
-#
 # asdf
 #
 # Version manager with support for everything
@@ -1329,7 +1314,6 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 mysides remove all
 mysides add Downloads file://$HOME/Downloads
 mysides add Documents file://$HOME/Documents
-mysides add Dropbox file://$HOME/Dropbox
 mysides add Applications file:///Applications/
 
 
