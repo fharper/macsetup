@@ -751,6 +751,20 @@ if [[ "$(isCLAppInstalled omz)" = "false" ]]; then
 fi
 
 #
+# Spaceship Prompt
+#
+# Minimalistic, powerful and extremely customizable Zsh prompt
+#
+# https://github.com/spaceship-prompt/spaceship-prompt
+#
+# Notes: need to be after Oh My Zsh
+#
+if [[ ! -d "/opt/homebrew/opt/spaceship/" ]]; then
+    instalkeg spaceship
+    reload
+fi
+
+#
 # Restore different files with Mackup (not app specifics)
 #
 if [[ ! -L "$HOME/.zshrc" ]]; then
