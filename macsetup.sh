@@ -3494,6 +3494,15 @@ installFromAppStore "AutoMute" 1118136179
 installcask beardedspice
 
 #
+# Beeper
+#
+# https://www.beeper.com
+#
+# All messaging app in one place
+#
+installkeg beeper
+
+#
 # BlockBlock
 #
 # Monitor persistence locations
@@ -3780,15 +3789,6 @@ fi
 installFromAppStore "Hyperduck" 6444667067
 
 #
-# IGdm Messenger
-#
-# Instagram Messenger
-#
-# https://github.com/igdmapps/igdm
-#
-installcask igdm
-
-#
 # Jiffy
 #
 # Gif in your menubar
@@ -3907,15 +3907,6 @@ fi
 # https://github.com/apparition47/MailTrackerBlocker
 #
 installkeg mailtrackerblocker
-
-#
-# Messenger
-#
-# Facebook Messenger Client
-#
-# https://www.messenger.com/desktop
-#
-installcask messenger
 
 #
 # Microsoft Edge
@@ -4269,15 +4260,6 @@ if [[ "$(isAppInstalled WebPViewer)" = "false" ]]; then
 fi
 
 #
-# WhatsApp
-#
-# Messaging app
-#
-# https://www.whatsapp.com
-#
-installcask whatsapp
-
-#
 # WhatsYourSign
 #
 # Finder menu to show files cryptographic signing information
@@ -4414,7 +4396,6 @@ dockutil --move 'Spotify' --position end --allhomes
 dockutil --move '1Password' --position end --allhomes
 dockutil --move 'Photos' --position end --allhomes
 dockutil --move 'Pocket' --position end --allhomes
-dockutil --move 'Messages' --position end --allhomes
 dockutil --move 'Antidote 11' --position end --allhomes
 
 
