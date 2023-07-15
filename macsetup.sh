@@ -2777,6 +2777,15 @@ if [[ "$(isCLAppInstalled tflint)" = "false" ]]; then
 fi
 
 #
+# tfsec
+#
+# Terraform security scanner
+#
+# https://github.com/aquasecurity/tfsec
+#
+installkeg tfsec
+
+#
 # UTM
 #
 # Virtual machine host
