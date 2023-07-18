@@ -2810,6 +2810,15 @@ installkeg tfsec
 installcask utm
 
 #
+# vale
+#
+# Text validator
+#
+# https://github.com/errata-ai/vale
+#
+installkeg vale
+
+#
 # Vercel CLI
 #
 # CLI for Vercel
