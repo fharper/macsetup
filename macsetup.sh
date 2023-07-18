@@ -2307,6 +2307,7 @@ if [[ "$(isCLAppInstalled helm)" = "false" ]]; then
     helm repo add bitnami https://charts.bitnami.com/bitnami
     helm repo add portainer https://portainer.github.io/k8s
     helm repo add kubefirst https://charts.kubefirst.com
+    helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
     helm repo update
 fi
 
