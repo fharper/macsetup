@@ -2038,6 +2038,7 @@ fi
 # - eslint-plugin-i18n
 # - eslint-plugin-jsdoc
 # - eslint-plugin-json
+# - eslint-mdx
 #
 # JavaScript linter
 # Pretty ESLint formatter
@@ -2051,6 +2052,7 @@ fi
 # ESLint rules to find out the texts and messages not internationalized in the project
 # JSDoc specific linting rules for ESLint
 # JSON files rules
+# ESLint Parser/Plugin for MDX
 #
 # https://github.com/eslint/eslint
 # https://github.com/sindresorhus/eslint-formatter-pretty
@@ -2064,6 +2066,7 @@ fi
 # https://github.com/chejen/eslint-plugin-i18n
 # https://github.com/gajus/eslint-plugin-jsdoc
 # https://github.com/azeemba/eslint-plugin-json
+# https://github.com/mdx-js/eslint-mdx
 #
 installkeg eslint
 installNodePackages eslint-formatter-pretty
@@ -2077,6 +2080,7 @@ installNodePackages eslint-plugin-jsx-a11y
 installNodePackages eslint-plugin-i18n
 installNodePackages eslint-plugin-jsdoc
 installNodePackages eslint-plugin-json
+installNodePackages eslint-plugin-mdx
 
 #
 # doctl
