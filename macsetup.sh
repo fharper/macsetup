@@ -2419,7 +2419,7 @@ fi
 installkeg kubectx
 
 #
-# Kubefirst
+# kubefirst
 #
 # Delivery & infrastructure Kubernetes management gitops platforms
 #
