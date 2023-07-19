@@ -2237,7 +2237,11 @@ fi
 #
 # https://cloud.google.com/sdk
 #
-installcask google-cloud-sdk
+if [[ "$(isCLAppInstalled gcloud)" = "false" ]]; then
+    installcask google-cloud-sdk
+    gcloud config set disable_usage_reporting true
+    confirm "Do you want to log into Google Cloud right now?" "gcloud auth application-default login"
+fi
 
 #
 # gopls
