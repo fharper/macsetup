@@ -2507,6 +2507,15 @@ installkeg lsof
 installkeg lynis
 
 #
+# markdown-link-check
+#
+# Check links inside Markdown files
+#
+# https://github.com/tcort/markdown-link-check
+#
+installNodePackages markdown-link-check
+
+#
 # markdownlint-cli2
 #
 # Markdown linting CLI
