@@ -2460,6 +2460,15 @@ installkeg kubetail
 installkeg kustomize
 
 #
+# Lighthouse
+#
+# Analyzes web pages for performance & best practices
+#
+# https://github.com/GoogleChrome/lighthouse
+#
+installNodePackages lighthouse
+
+#
 # local
 #
 # Local WordPress developement tool
