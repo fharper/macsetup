@@ -2013,6 +2013,15 @@ installkeg diff-so-fancy
 installkeg direnv
 
 #
+# dive
+#
+# A tool for exploring each layer of Docker images
+#
+# https://github.com/wagoodman/dive
+#
+installkeg dive
+
+#
 # Docker
 #
 # Virtualization tool
