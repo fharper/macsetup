@@ -1181,6 +1181,7 @@ fi
 #
 if [[ "$(isAppInstalled "Sound Control")" = "false" ]]; then
     installcask sound-control
+    getLicense "Sound Control 3"
 fi
 
 #
