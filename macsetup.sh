@@ -2899,6 +2899,17 @@ installNodePackages hint
 installkeg webpack
 
 #
+# woff2
+#
+# woff2 fonts tools
+#
+# https://github.com/google/woff2
+#
+# Notes: the binary for decompressing woff2 to otf is called woff2_decompress
+#
+installkeg woff2
+
+#
 # WordPress CLI
 #
 # CLI for WordPress
