@@ -3346,6 +3346,15 @@ installkeg stress
 installkeg svgo
 
 #
+# termdown
+#
+# Countdown timer & stopwatch
+#
+# https://github.com/trehn/termdown
+#
+installPythonApp termdown
+
+#
 # The Fuck
 #
 # Corrects your previous console command
