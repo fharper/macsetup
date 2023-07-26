@@ -2407,6 +2407,15 @@ installcask jupyterlab
 installkeg k3d
 
 #
+# K9s
+#
+# Kubernetes cluster management from the CLI
+#
+# https://github.com/derailed/k9s
+#
+installkeg k9s
+
+#
 # KDash
 #
 # Kubernetes dashboard
