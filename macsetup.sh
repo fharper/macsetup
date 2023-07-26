@@ -1888,6 +1888,15 @@ installkeg bfg
 installkeg black
 
 #
+# cabal-install
+#
+# Build & installation tool for Haskell application
+#
+# https://github.com/haskell/cabal
+#
+installkeg cabal-install
+
+#
 # Caddy
 #
 # HTTP server
