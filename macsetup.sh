@@ -569,7 +569,6 @@ if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
     brew analytics off
-    brew tap homebrew/cask
     brew tap homebrew/cask-versions
     brew tap buo/cask-upgrade
     brew tap homebrew/cask-fonts
