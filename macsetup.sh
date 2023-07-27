@@ -2603,6 +2603,15 @@ if [[ "$(isCLAppInstalled atlas)" = "false" ]]; then
 fi
 
 #
+# MQTT Explorer
+#
+# MQTT client
+#
+# https://github.com/thomasnordquist/MQTT-Explorer
+#
+installcask mqtt-explorer
+
+#
 # npm Check Updates (ncu)
 #
 # Find newer versions of Node package dependencies
