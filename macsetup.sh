@@ -2621,6 +2621,15 @@ installNodePackages npm-check-updates
 installNodePackages ibm-openapi-validator
 
 #
+# Opera
+#
+# Browser
+#
+# https://www.opera.com
+#
+installcask opera
+
+#
 # Perl
 #
 # Perl programming language
