@@ -2249,6 +2249,15 @@ if [[ "$(isCLAppInstalled jira)" = "false" ]]; then
 fi
 
 #
+# golangci-lint
+#
+# Go linter
+#
+# https://github.com/golangci/golangci-lint
+#
+installkeg golangci-lint
+
+#
 # Google Cloud SDK
 #
 # Google Cloud CLI
@@ -2808,15 +2817,6 @@ fi
 # https://github.com/koalaman/shellcheck
 #
 installkeg shellcheck
-
-#
-# Staticcheck
-#
-# Go Linter
-#
-# https://github.com/dominikh/go-tools
-#
-installkeg staticcheck
 
 #
 # Stylelint
