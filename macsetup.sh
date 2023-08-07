@@ -4429,6 +4429,7 @@ installfont font-dejavu
 installfont font-fira-code
 installfont font-fira-mono
 installfont font-fira-sans
+installfont font-fontawesome
 installfont font-gidole
 installfont font-hack
 installfont font-leckerli-one
