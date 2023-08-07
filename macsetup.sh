@@ -2230,8 +2230,8 @@ installkeg gitleaks
 #
 if [[ ! $(asdf current golang) ]]; then
     asdf plugin-add golang
-    asdf install golang 1.20.1
-    asdf global golang 1.20.1
+    asdf install golang 1.20.5
+    asdf global golang 1.20.5
     reload
 fi
 
