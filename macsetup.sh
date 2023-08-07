@@ -3099,6 +3099,15 @@ installkeg diff-pdf
 installNodePackages empty-trash-cli
 
 #
+# fd
+#
+# A simple, fast and user-friendly alternative to 'find'
+#
+# https://github.com/sharkdp/fd
+#
+installkeg fd
+
+#
 # FFmpeg
 #
 # Libraries and tools to process multimedia content like video, audio & more
