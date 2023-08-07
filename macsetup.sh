@@ -750,16 +750,16 @@ if [[ "$(isCLAppInstalled omz)" = "false" ]]; then
 fi
 
 #
-# Spaceship Prompt
+# starship
 #
-# Minimalistic, powerful and extremely customizable Zsh prompt
+# The minimal, blazing-fast, and infinitely customizable prompt for any shell
 #
-# https://github.com/spaceship-prompt/spaceship-prompt
+# https://github.com/starship/starship
 #
 # Notes: need to be after Oh My Zsh
 #
 if [[ ! -d "/opt/homebrew/opt/spaceship/" ]]; then
-    instalkeg spaceship
+    instalkeg starship
     reload
 fi
 
