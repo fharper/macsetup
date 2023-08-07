@@ -237,7 +237,7 @@ function sudo {
 function restoreAppSettings {
     echo "[storage]\nengine = icloud\n\n[applications_to_sync]\n$1" > $HOME/.mackup.cfg
     mackup restore
-    echo "" > $HOME/.mackup.cfg
+    echo "[storage]\nengine = icloud\n" > $HOME/.mackup.cfg
 }
 
 #
