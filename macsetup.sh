@@ -1583,28 +1583,30 @@ if [[ "$(isAppInstalled "Antidote 11")" = "false" ]]; then
 fi
 
 #
-# Brave Browser + Antidote Extension
+# Google Chrome
 #
-# Chromium based browser
+# Browser
 #
-# https://github.com/brave
+# https://www.google.com/chrome
 #
-if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
-    installcask brave-browser
-    dockutil --add "/Applications/Brave Browser.app" --position 2 --allhomes
-    loginitems -a "Brave Browser"
+if [[ "$(isAppInstalled "Google Chrome")" = "false" ]]; then
+    installcask google-chrome
+    dockutil --add "/Applications/Google Chrome.app" --position 2 --allhomes
 
-    defaults write com.brave.Browser ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
-    defaults write com.brave.Browser DisablePrintPreview -bool true
-    defbro com.brave.Browser
+    defaults write com.google.Chrome ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
+    defaults write com.google.Chrome DisablePrintPreview -bool true
+    defbro com.google.Chrome
 
-    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
+    /Applications/Google\ Chrome/Contents/MacOS/Google\ Chrome "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
     pausethescript "Authorize Dropbox for Violentmonkey sync before continuing"
 
-    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/manage.html#stylus-options"
+    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/manage.html#stylus-options"
     pausethescript "Authorize Dropbox for Stylus sync before continuing"
 
-    duti -s com.brave.Browser com.compuserve.gif all #GIF (Image)
+    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "chrome-extension://pncfbmialoiaghdehhbnbhkkgmjanfhe/pages/options.html"
+    pausethescript "Authorize Dropbox for uBlacklist sync before continuing"
+
+    duti -s com.google.Chrome com.compuserve.gif all #GIF (Image)
 
     #TODO: add Location Services permission
 fi
@@ -3655,6 +3657,20 @@ if [[ "$(isAppInstalled "BlockBlock Helper")" = "false" ]]; then
 fi
 
 #
+# Brave Browser
+#
+# Chromium based browser
+#
+# https://github.com/brave
+#
+if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
+    installcask brave-browser
+
+    open -a "Brave Browser"
+    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
+fi
+
+#
 # Calibre + DeDRM Tools
 #
 # Ebook Manager
@@ -3688,20 +3704,6 @@ fi
 # https://captin.mystrikingly.com/
 #
 installcask captin
-
-#
-# Chrome
-#
-# Browser
-#
-# https://www.google.com/chrome
-#
-if [[ "$(isAppInstalled "Google Chrome")" = "false" ]]; then
-    installcask google-chrome
-    open -a "Google Chrome"
-    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
-    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome https://chrome.google.com/webstore/detail/antidote/lmbopdiikkamfphhgcckcjhojnokgfeo
-fi
 
 #
 # Chromium Ungoogled
@@ -4527,7 +4529,7 @@ installcask openemu
 displaySection "Dock Applications Order"
 
 echo $fg[blue]"The Dock will restart a couple of time, giving a flashing impression: it's normal\n"$reset_color
-dockutil --move 'Brave Browser' --position end --allhomes
+dockutil --move 'Google Chrome' --position end --allhomes
 dockutil --move 'Notion' --position end --allhomes
 dockutil --move 'Todoist' --position end --allhomes
 dockutil --move 'Slack' --position end --allhomes
