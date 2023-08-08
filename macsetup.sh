@@ -2870,6 +2870,15 @@ fi
 installkeg tfsec
 
 #
+# TypeScript
+#
+# JavaScript superset
+#
+# https://github.com/microsoft/TypeScript/
+#
+installkeg typescript
+
+#
 # UTM
 #
 # Virtual machine host
