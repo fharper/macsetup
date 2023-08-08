@@ -1791,6 +1791,7 @@ if [[ "$(isAppInstalled "Visual Studio Code")" = "false" ]]; then
     duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #terraform tfstate
     duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #terraform tfvars
     duti -s com.microsoft.VSCode public.plain-text all #txt
+    duti -s public.mpeg-2-transport-stream all #TypeScript (there's no official UTI, so using the recognized one as I never have MPEG .ts files)
     duti -s com.microsoft.VSCode public.xml all #xml
     duti -s com.microsoft.VSCode public.yaml all #YAML
     duti -s com.microsoft.VSCode public.zsh-script all #ZSH
