@@ -4369,6 +4369,21 @@ if [ ! -d $HOME/Movies/TV/Media.localized/TV\ Shows/The\ Office ]; then
 fi
 
 #
+# Typesense Dashboard
+#
+# A Typesense Dashboard to manage and browse collections
+#
+# https://github.com/bfritscher/typesense-dashboard
+#
+if [[ "$(isAppInstalled "Typesense-Dashboard")" = "false" ]]; then
+    curl -L "$(lastversion bfritscher/typesense-dashboard --assets)" --output typesense-dashboard.zip
+    unzip typesense-dashboard.zip
+    mv dist/electron/Typesense-Dashboard-darwin-x64/Typesense-Dashboard.app /Applications
+    rm dist
+    rm typesense-dashboard.zip
+fi
+
+#
 # Typora
 #
 # Markdown distraction-free writing tool
