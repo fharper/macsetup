@@ -2246,6 +2246,15 @@ fi
 installkeg gitleaks
 
 #
+# GNU sed
+#
+# GNU implementation of the famous sed
+#
+# https://www.gnu.org/software/sed/
+#
+installkeg gnu-sed
+
+#
 # Go
 #
 # Go programming language
