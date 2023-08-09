@@ -3722,6 +3722,15 @@ if [[ "$(isAppInstalled Chromium)" = "false" ]]; then
 fi
 
 #
+# Command X
+#
+# Finder's cut & paste
+#
+# https://sindresorhus.com/command-x
+#
+mas install 6448461551
+
+#
 # Cryptomator & macFUSE
 #
 # Data encryption tool
