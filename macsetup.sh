@@ -827,7 +827,10 @@ fi
 #
 # https://github.com/jwbargsten/defbro
 #
-installkeg defbro
+if [[ "$(isCLAppInstalled defbro)" = "false" ]]; then
+    brew tap jwbargsten/misc
+    installkeg defbro
+fi
 
 #
 # Duti
