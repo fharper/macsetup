@@ -4253,6 +4253,15 @@ fi
 installcask reikey
 
 #
+# Shareful
+#
+# Add additional options to the macOS share menu
+#
+# https://sindresorhus.com/shareful
+#
+mas install 1522267256
+
+#
 # Signal
 #
 # Encrypted messaging app
