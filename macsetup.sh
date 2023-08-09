@@ -2134,6 +2134,18 @@ fi
 installNodePackages expo-cli
 
 #
+# flow-bin
+#
+# Binary wrapper for Flow - A static type checker for JavaScript
+#
+# https://github.com/flow/flow-bin
+#
+# Notes:
+#  - Needed by the vscode-flow-ide Visual Studio Code extension
+#
+installNodePackages flow-bin
+
+#
 # Gist
 #
 # CLI to manage gist
