@@ -511,6 +511,25 @@ function installRustApp {
     fi
 }
 
+#
+# Install asdf plugin, and a specific version of the plugin while setting it as the global version
+#
+# @param plugin name
+# @param version of the plugin to instal
+#
+function installAsdfPlugin {
+    if [[ $(asdf current $1) ]]; then
+        echo $fg[green]"Skipped asdf plugin $fg[blue]$1$fg[green]: already installed"$reset_color
+    else
+        echo $fg[blue]"Installing the asdf plugin $1 & its version $2"$reset_color
+        asdf plugin-add $1
+        asdf install $1 $2
+        asdf global $1 $2
+        reload
+    fi
+}
+
+
 
 ############################
 #                          #
@@ -623,10 +642,8 @@ fi
 #   - Needed before lastversion
 #
 if [[ ! $(asdf current python) ]]; then
-    asdf plugin-add python
-    asdf install python 3.11.2
-    asdf global python 3.11.2
-    reload
+    installAsdfPlugin python 3.11.2
+
     installkeg pipx
     pipx ensurepath
     installPythonPackage wheel
@@ -869,10 +886,9 @@ installkeg mysides
 # https://github.com/npm/cli
 #
 if [[ ! $(asdf current nodejs) ]]; then
-    asdf plugin-add nodejs
-    asdf install nodejs 19.6.0
-    asdf global nodejs 19.6.0
-    reload
+    installAsdfPlugin nodejs 19.6.0
+    20.5.0
+
     npm i -g npm@latest
     npm adduser
 fi
@@ -1815,12 +1831,7 @@ displaySection "Developer stuff"
 #
 # https://github.com/dotnet/core
 #
-if [[ ! $(asdf current dotnet-core) ]]; then
-    asdf plugin-add dotnet-core
-    asdf install dotnet-core 7.0.305
-    asdf global dotnet-core 7.0.305
-    reload
-fi
+installAsdfPlugin dotnet-core 7.0.305
 
 #
 # Act
@@ -1998,12 +2009,7 @@ installkeg delve
 #
 # https://github.com/denoland/deno
 #
-if [[ ! $(asdf current deno) ]]; then
-    asdf plugin-add deno
-    asdf install deno 1.30.3
-    asdf global deno 1.30.3
-    reload
-fi
+installAsdfPlugin deno 1.30.3
 
 #
 # diff-so-fancy
@@ -2231,12 +2237,7 @@ installkeg gitleaks
 #
 # https://golang.org
 #
-if [[ ! $(asdf current golang) ]]; then
-    asdf plugin-add golang
-    asdf install golang 1.20.5
-    asdf global golang 1.20.5
-    reload
-fi
+installAsdfPlugin golang 1.20.5
 
 #
 # go-jira
@@ -2375,12 +2376,7 @@ installkeg ios-deploy
 #
 # https://openjdk.org
 #
-if [[ ! $(asdf current java) ]]; then
-    asdf plugin-add java
-    asdf install java openjdk-19.0.2
-    asdf global java openjdk-19.0.2
-    reload
-fi
+installAsdfPlugin java openjdk-19.0.2
 
 #
 # Jest
@@ -2657,12 +2653,7 @@ installcask opera
 #
 # https://github.com/Perl/perl5
 #
-if [[ ! $(asdf current perl) ]]; then
-    asdf plugin-add perl
-    asdf install perl 5.36.1
-    asdf global perl 5.36.1
-    reload
-fi
+installAsdfPlugin perl 5.36.1
 
 #
 # PHP
@@ -2721,10 +2712,7 @@ if [[ ! $(asdf current php) ]]; then
     installkeg re2c
     installkeg libsodium
 
-    asdf plugin-add php
-    asdf install php 8.2.3
-    asdf global php 8.2.3
-    reload
+    installAsdfPlugin php 8.2.3
 fi
 
 #
@@ -2770,12 +2758,7 @@ installNodePackages puppeteer
 #
 # https://github.com/ruby/ruby
 #
-if [[ ! $(asdf current ruby) ]]; then
-    asdf plugin-add ruby
-    asdf install ruby 3.2.1
-    asdf global ruby 3.2.1
-    reload
-fi
+installAsdfPlugin ruby 3.2.1
 
 #
 # React Native CLI
@@ -2793,12 +2776,7 @@ installkeg react-native-cli
 #
 # https://github.com/rust-lang/rust
 #
-if [[ ! $(asdf current rust) ]]; then
-    asdf plugin-add rust
-    asdf install rust 1.67.1
-    asdf global rust 1.67.1
-    reload
-fi
+installAsdfPlugin rust 1.67.1
 
 #
 # S3cmd
