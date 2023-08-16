@@ -84,6 +84,7 @@ function installkeg {
         brew install "$1"
     else
 	    echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
+        return 1
     fi
 }
 
@@ -95,6 +96,7 @@ function installfont {
         brew install --cask "$1"
     else
 	    echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
+        return 1
     fi
 }
 
@@ -125,6 +127,7 @@ function installNodePackages {
         rehash
     else
         echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
+        return 1
     fi
 }
 
@@ -136,6 +139,8 @@ function installNodePackages {
 function installcask {
     if [[ "$(isAppInstalled $1)" = "false" ]]; then
         brew install --cask $1
+    else
+       return 1
     fi
 }
 
@@ -147,6 +152,8 @@ function installcask {
 function installFromAppStore {
     if [[ "$(isAppInstalled $1)" = "false" ]]; then
         mas install "$2"
+    else
+        return 1
     fi
 }
 
@@ -204,6 +211,7 @@ function installPythonApp {
 
     if [[ -n "$package" ]]; then
         echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
+        return 1
     else
         echo $fg[blue]"Installing the Python application $1"$reset_color
         pipx install "$1"
@@ -504,6 +512,7 @@ function installRustApp {
 
     if [[ -n "$package" ]]; then
         echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
+        return 1
     else
         echo $fg[blue]"Installing the Python application $1"$reset_color
         cargo install "$1"
@@ -520,6 +529,7 @@ function installRustApp {
 function installAsdfPlugin {
     if [[ $(asdf current $1) ]]; then
         echo $fg[green]"Skipped asdf plugin $fg[blue]$1$fg[green]: already installed"$reset_color
+        return 1
     else
         echo $fg[blue]"Installing the asdf plugin $1 & its version $2"$reset_color
         asdf plugin-add $1
