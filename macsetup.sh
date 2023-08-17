@@ -2783,6 +2783,15 @@ installkeg php-code-sniffer
 installcask postman
 
 #
+# PowerShell
+#
+# Cross-platform command-line shell task automation solution, a scripting language, and a configuration management framework
+#
+# https://github.com/PowerShell/PowerShell
+#
+installcask powershell
+
+#
 # Prettier
 #
 # Code formatter
