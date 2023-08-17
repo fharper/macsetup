@@ -2878,6 +2878,15 @@ installNodePackages stylelint-config-recommended
 installkeg go-task
 
 #
+# Telnet
+#
+# Terminal emulation for logging into a remote hosts
+#
+# https://github.com/apple-oss-distributions/remote_cmds/tree/main/telnet
+#
+installkeg telnet
+
+#
 # Terraform
 #
 # Infrastructure as Code (IaC)
