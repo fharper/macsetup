@@ -4466,6 +4466,17 @@ if [[ "$(isAppInstalled VLC)" = "false" ]]; then
     duti -s org.videolan.vlc org.webmproject.webm all #webm
 fi
 
+#
+# Vivid
+#
+# Boost Apple screens & monitors brithness
+#
+# https://www.getvivid.app
+#
+if [[ "$(isAppInstalled Vivid)" = "false" ]]; then
+    installcask vivid
+    getLicense Vivid
+fi
 
 #
 # WebP Viewer: QuickLook & View
