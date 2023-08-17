@@ -2696,6 +2696,15 @@ installcask opera
 installAsdfPlugin perl 5.36.1
 
 #
+# pgAdmin 4
+#
+# PostgreSQL client
+#
+# https://github.com/pgadmin-org/pgadmin4
+#
+installcask pgadmin4
+
+#
 # PHP
 #
 # PHP programming language
