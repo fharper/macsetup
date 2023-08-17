@@ -2470,17 +2470,23 @@ if [[ "$(isCLAppInstalled kdash)" = "false" ]]; then
 fi
 
 #
-# kubectl + Krew
+# Krew
 #
-# Kubernetes CLI
 # kubectl plugins manager
 #
-# https://github.com/kubernetes/kubectl
 # https://github.com/kubernetes-sigs/krew
+#
+installkeg krew
+
+#
+# kubectl
+#
+# Kubernetes CLI
+#
+# https://github.com/kubernetes/kubectl
 #
 if [[ "$(isCLAppInstalled kubectl)" = "false" ]]; then
     installkeg kubectl
-    installkeg krew
     kubectl krew update
 fi
 
