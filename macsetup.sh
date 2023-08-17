@@ -2052,7 +2052,7 @@ installkeg direnv
 installkeg dive
 
 #
-# Docker
+# Docker Desktop
 #
 # Virtualization tool
 #
