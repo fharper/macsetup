@@ -2668,6 +2668,15 @@ if [[ "$(isCLAppInstalled atlas)" = "false" ]]; then
 fi
 
 #
+# MongoDB Compass
+#
+# MongoDB GUI client
+#
+# https://www.mongodb.com/products/compass
+#
+installcask mongodb-compass
+
+#
 # MQTT Explorer
 #
 # MQTT client
