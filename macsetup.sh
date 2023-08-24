@@ -675,6 +675,23 @@ fi
 installPythonApp lastversion
 
 #
+# macports-base
+#
+# MacPorts CLI
+#
+# https://github.com/macports/macports-base/
+#
+# Notes:
+#  - Needed after lastversion install
+#  - Cannot be added to apps.yml for now as it doesn't manage custom installation check
+#
+if [[ "$(isCLAppInstalled port)" = "false" ]]; then
+    curl -L "$(lastversion macports/macports-base --assets --filter $(sed -nE '/SOFTWARE LICENSE AGREEMENT FOR/s/.*([A-Za-z]+ ){5}|\\$//gp' /System/Library/CoreServices/Setup\ Assistant.app/Contents/Resources/en.lproj/OSXSoftwareLicense.rtf)\.pkg$)" --output macports.pkg
+
+    installPKG macports.pkg
+fi
+
+#
 # Dockutil
 #
 # Utility to manage macOS Dock items
