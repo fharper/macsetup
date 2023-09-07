@@ -1905,6 +1905,15 @@ installkeg act
 installkeg actionlint
 
 #
+# Air
+#
+# Live reload for Go applications
+#
+# https://github.com/cosmtrek/air
+#
+installGoApp air latest
+
+#
 # argo
 #
 # Argo Workflows CLI
