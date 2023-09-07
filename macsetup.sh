@@ -539,6 +539,29 @@ function installAsdfPlugin {
     fi
 }
 
+#
+# Install Go applications
+#
+# @param application name
+# @param version of the application (default to latest)
+#
+function installGoApp {
+    if [[ "$(isCLAppInstalled $1)" = "true" ]]; then
+        echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
+        return 1
+    else
+        version=$2
+        if [[ "$version" = "" ]]; then
+            version="latest"
+        fi
+
+        echo $fg[blue]"Installing the version $version of the Go application $1"$reset_color
+        go install "$1"@"$version"
+        asdf reshim golang
+    fi
+}
+
+
 
 
 ############################
