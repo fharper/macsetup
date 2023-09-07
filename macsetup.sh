@@ -3071,6 +3071,15 @@ installkeg wp-cli
 installcask xcodes
 
 #
+# yamale
+#
+# YAML Schema validator
+#
+# https://github.com/23andMe/Yamale
+#
+installkeg yamale
+
+#
 # yamllint
 #
 # YAML files linter
