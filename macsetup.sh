@@ -2688,6 +2688,14 @@ if [[ "$(isCLAppInstalled mkcert)" = "false" ]]; then
     mkcert -install
 fi
 
+# mongosh
+#
+# MongoDB Shell
+#
+# https://github.com/mongodb-js/mongosh
+#
+installkeg mongosh
+
 #
 # MongoDB Atlas CLI
 #
