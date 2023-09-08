@@ -4598,6 +4598,7 @@ installfont font-nunito
 installfont font-nunito-sans
 installfont font-open-sans
 installfont font-pacifico
+installfont font-rancho
 installfont font-roboto
 
 
