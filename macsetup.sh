@@ -1993,6 +1993,15 @@ installkeg caddy
 installcask charles
 
 #
+# Chrome Webstore CLI
+#
+# CLI for interacting with Google Chrome Webstore
+#
+# https://github.com/vladimyr/chrome-webstore-cli
+#
+installNodePackages chrome-webstore-cli
+
+#
 # Civo
 #
 # Civo CLI
