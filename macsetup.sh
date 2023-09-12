@@ -4535,6 +4535,7 @@ if [[ "$(isAppInstalled VLC)" = "false" ]]; then
     restoreAppSettings vlc
 
     duti -s org.videolan.vlc public.3gpp all #3gp
+    duti -s org.videolan.vlc audio/x-hx-aac-adts all #aac
     duti -s org.videolan.vlc public.avi all #avi
     duti -s org.videolan.vlc com.apple.m4a-audio all #M4A
     duti -s org.videolan.vlc com.apple.m4v-video all #m4v
