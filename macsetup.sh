@@ -625,7 +625,6 @@ if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
     brew tap buo/cask-upgrade
     brew tap homebrew/cask-fonts
     brew tap OJFord/formulae
-    brew tap homebrew/cask-drivers
 fi
 
 #
