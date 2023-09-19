@@ -3803,6 +3803,7 @@ fi
 if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
     installcask brave-browser
 
+    # Install the 1Password extension
     open -a "Brave Browser"
     /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
 fi
@@ -4004,6 +4005,8 @@ fi
 #
 if [[ "$(isAppInstalled Firefox)" = "false" ]]; then
     installcask firefox
+
+    # Install the 1Password extension
     open -a Firefox
     /Applications/Firefox.app/Contents/MacOS/Firefox https://addons.mozilla.org/en-CA/firefox/addon/1password-x-password-manager/
 fi
@@ -4208,6 +4211,8 @@ installkeg mailtrackerblocker
 #
 if [[ "$(isAppInstalled "Microsoft Edge")" = "false" ]]; then
     installcask microsoft-edge
+
+    # Install the 1Password extension
     open -a "Microsoft Edge"
     /Applications/Microsoft\ Edge.app/Contents/MacOS/Microsoft\ Edge https://microsoftedge.microsoft.com/addons/detail/1password-%E2%80%93-password-mana/dppgmdbiimibapkepcbdbmkaabgiofem
 fi
