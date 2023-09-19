@@ -4301,6 +4301,21 @@ if [[ "$(isAppInstalled "Opera")" = "false" ]]; then
 fi
 
 #
+# Opera GX
+#
+# Browser
+#
+# https://www.opera.com/gx
+#
+if [[ "$(isAppInstalled "Opera GX")" = "false" ]]; then
+    installcask opera-gx
+
+    # Install the 1Password extension
+    open -a "Opera GX"
+    /Applications/Opera\ GX.app/Contents/MacOS/Opera https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
+fi
+
+#
 # OverSight
 #
 # Monitor the microphone & webcam
