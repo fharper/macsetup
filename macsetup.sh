@@ -4531,7 +4531,10 @@ fi
 #
 # https://typora.io
 #
-installcask typora
+if [[ "$(isAppInstalled "Typora")" = "false" ]]; then
+    installcask typora
+    getLicense Typora
+fi
 
 #
 # UPS Power Monitor
