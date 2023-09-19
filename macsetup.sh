@@ -2575,6 +2575,15 @@ installkeg kubectx
 installkeg kubefirst/tools/kubefirst
 
 #
+# Kube No Trouble
+#
+# Check for deprecated APIs on your Kubernetes clusters
+#
+# https://github.com/doitintl/kube-no-trouble
+#
+installkeg kubent
+
+#
 # Kubescape
 #
 # Kubernetes security audit tool
