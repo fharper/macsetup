@@ -2770,15 +2770,6 @@ installNodePackages npm-check-updates
 installNodePackages ibm-openapi-validator
 
 #
-# Opera
-#
-# Browser
-#
-# https://www.opera.com
-#
-installcask opera
-
-#
 # Perl
 #
 # Perl programming language
@@ -4288,6 +4279,21 @@ fi
 # https://sindresorhus.com/one-thing
 #
 mas install "One Thing" 1604176982
+
+#
+# Opera
+#
+# Browser
+#
+# https://www.opera.com
+#
+if [[ "$(isAppInstalled "Opera")" = "false" ]]; then
+    installcask opera
+
+    # Install the 1Password extension
+    open -a Opera
+    /Applications/Opera.app/Contents/MacOS/Opera https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
+fi
 
 #
 # OverSight
