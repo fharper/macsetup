@@ -4708,6 +4708,13 @@ displaySection "Games"
 installFromAppStore "Among Us" 1351168404
 
 #
+# Chess
+#
+# https://chess.com
+#
+installFromAppStore "Chess" 329218549
+
+#
 # Epic Games
 #
 # Epic Games library management
