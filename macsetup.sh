@@ -2366,7 +2366,8 @@ installkeg golangci-lint
 if [[ "$(isCLAppInstalled gcloud)" = "false" ]]; then
     installcask google-cloud-sdk
     gcloud config set disable_usage_reporting true
-    confirm "Do you want to log into Google Cloud right now?" "gcloud auth application-default login"
+    gcloud components install gke-gcloud-auth-plugin
+    confirm "Do you want to log into Google Cloud right now?" "gcloud auth login"
 fi
 
 #
