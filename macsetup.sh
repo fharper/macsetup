@@ -4450,6 +4450,18 @@ installcask silicon
 installcask sloth
 
 #
+# Sound Siphon
+#
+# Audio virtual inputs
+#
+# https://staticz.com/soundsiphon/
+#
+if [[ "$(isAppInstalled "Sound Siphon")" = "false" ]]; then
+    installcask sound-siphon
+    getLicense "Sound Siphon"
+fi
+
+#
 # Speedtest
 #
 # Speed test application
