@@ -2190,7 +2190,7 @@ installNodePackages eslint-plugin-mdx
 #
 # https://github.com/digitalocean/doctl
 #
-if [[ "$(isCLAppInstalled kubectl)" = "false" ]]; then
+if [[ "$(isCLAppInstalled doctl)" = "false" ]]; then
     installkeg doctl
     doctl auth init
 fi
