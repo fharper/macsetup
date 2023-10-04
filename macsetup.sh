@@ -2470,6 +2470,18 @@ installkeg imagemagick
 installkeg ios-deploy
 
 #
+# iTermocil
+#
+# Pre-defined iTerm2 window/pane layouts
+#
+# https://github.com/TomAnthony/itermocil
+#
+if [[ "$(isCLAppInstalled itermocil)" = "false" ]]; then
+    brew install TomAnthony/brews/itermocil
+    restoreAppSettings itermocil
+fi
+
+#
 # Java (OpenJDK)
 #
 # Java programming language
