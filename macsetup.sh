@@ -1145,7 +1145,7 @@ fi
 # https://github.com/federico-terzi/espanso
 #
 if [[ "$(isAppInstalled Espanso)" = "false" ]]; then
-    brew tap federico-terzi/espanso
+    brew tap espanso/espanso
     installcask espanso
     giveAccessibilityPermission Espanso
     restoreAppSettings espanso
