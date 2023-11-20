@@ -3046,6 +3046,19 @@ installcask utm
 installkeg vale
 
 #
+# Vault
+#
+# HashiCorp Vault CLI
+#
+# https://github.com/hashicorp/vault
+#
+if [[ "$(isCLAppInstalled defbro)" = "false" ]]; then
+    brew tap hashicorp/tap
+    brew install hashicorp/tap/vault
+    confirm "Do you want to connect the Vault CLI now?" "vault login"
+fi
+
+#
 # Vercel CLI
 #
 # CLI for Vercel
