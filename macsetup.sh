@@ -2961,6 +2961,15 @@ fi
 installkeg shellcheck
 
 #
+# Steampipe
+#
+# Use SQL to query cloud infrastructure & more
+#
+# https://github.com/turbot/steampipe
+#
+installkeg steampipe
+
+#
 # Stylelint
 #
 # CSS, SCSS, Sass, Less & SugarSS linter
