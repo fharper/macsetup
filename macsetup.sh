@@ -3462,6 +3462,15 @@ installkeg noti
 installkeg pandoc
 
 #
+# pdf2svg
+#
+# PDF to SVG converter
+#
+# https://github.com/dawbarton/pdf2svg/
+#
+installkeg pdf2svg
+
+#
 # pdfcrack
 #
 # PDF Protection Brute Force Cracker
