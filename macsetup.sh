@@ -1612,12 +1612,10 @@ displaySection "Main applications"
 #
 # Password manager
 # CLI for 1Password
-# A git credential helper for 1Password
 # Safari integration
 #
 # https://1password.com
 # https://1password.com/downloads/command-line/
-# https://github.com/develerik/git-credential-1password
 # https://apps.apple.com/us/app/1password-for-safari/id1569813296
 #
 if [[ "$(isAppInstalled 1Password)" = "false" ]]; then
@@ -1631,8 +1629,6 @@ if [[ "$(isAppInstalled 1Password)" = "false" ]]; then
     eval $(op signin)
     pausethescript "Sign in to 1Password before continuing"
     brew tap develerik/tools
-    installkeg git-credential-1password
-    git config --replace-all --global credential.helper '!git-credential-1password'
     installFromAppStore "1Password Safari Extension" 1569813296
     open -a Safari
     pausethescript "Open Safari Settings, and in the Extensions tab, check the box for '1Password for Safari' before continuing"
