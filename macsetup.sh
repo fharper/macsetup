@@ -624,7 +624,6 @@ if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
     brew tap homebrew/cask-versions
     brew tap buo/cask-upgrade
     brew tap homebrew/cask-fonts
-    brew tap OJFord/formulae
 fi
 
 #
@@ -917,7 +916,10 @@ installkeg ical-buddy
 #
 # https://github.com/ojford/loginitems
 #
-installkeg loginitems
+if [[ "$(isCLAppInstalled loginitems)" = "false" ]]; then
+    brew tap OJFord/formulae
+    installkeg loginitems
+fi
 
 #
 # mysides
