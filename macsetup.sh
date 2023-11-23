@@ -593,6 +593,7 @@ displaySection "Utils to run this script"
 #
 # Notes
 #  - You may get a "Package Authoring Error" even if the installation worked (https://discussions.apple.com/thread/253780410)
+#  - Cannot be added to apps.yml for now as it doesn't manage custom installation check
 #
 if [[ -z $(pgrep oahd) ]]; then
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
@@ -604,6 +605,9 @@ fi
 # Command line XCode tools & the macOS SDK frameworks and headers
 #
 # https://developer.apple.com/xcode
+#
+# Notes
+#  - Cannot be added to apps.yml for now as it doesn't manage custom installation check
 #
 if [[ $(xcode-select -p 1> /dev/null; echo $?) -eq 2 ]]; then
     xcode-select --install
@@ -622,6 +626,9 @@ fi
 # https://github.com/Homebrew/homebrew-cask-versions
 # https://github.com/buo/homebrew-cask-upgrade
 # https://github.com/Homebrew/homebrew-cask-fonts
+#
+# Notes
+#  - Cannot be added to apps.yml for now as it doesn't manage custom installation
 #
 if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
     echo $fg[blue]"Starting the installation of Homebrew"$reset_color
