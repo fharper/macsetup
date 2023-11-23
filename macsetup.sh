@@ -720,8 +720,9 @@ fi
 # https://github.com/kcrawford/dockutil
 #
 # Notes
-#   - Homebrew version not updated
-#   - Needed before iTerm2
+#  - Homebrew version not updated
+#  - Needed before iTerm2
+#  - Cannot be added to apps.yml for now as it doesn't manage custom installation check
 #
 if [[ "$(isCLAppInstalled dockutil)" = "false" ]]; then
     echo $fg[blue]"Starting the installation of Dockutil"$reset_color
