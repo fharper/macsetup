@@ -1982,6 +1982,15 @@ installkeg cabal-install
 installkeg caddy
 
 #
+# caniuse-cmd
+#
+# Search caniuse.com from the command line
+#
+# https://github.com/sgentle/caniuse-cmd
+#
+npm install -g caniuse-cmd
+
+#
 # Charles Proxy
 #
 # HTTP proxy, monitor & reverse proxy
