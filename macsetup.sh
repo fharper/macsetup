@@ -2366,7 +2366,7 @@ installkeg gnu-sed
 #
 # https://golang.org
 #
-installAsdfPlugin golang 1.20.5
+installAsdfPlugin golang 1.21.4
 
 #
 # go-jira
