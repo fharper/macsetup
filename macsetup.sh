@@ -1270,22 +1270,6 @@ if [[ "$(isAppInstalled Moom)" = "false" ]]; then
 fi
 
 #
-# Sound Control
-#
-# Advanced audio controls
-#
-# https://staticz.com/soundcontrol/
-#
-# Notes:
-#  - Need to install manually since Homebrew version isn't updated
-#
-if [[ "$(isAppInstalled "Sound Control")" = "false" ]]; then
-    curl -L https://f000.backblazeb2.com/file/staticznet/downloads/soundcontrol/SoundControl_3.0.0.dmg --output SoundControl.dmg
-    installPKGfromDMG SoundControl.dmg
-    getLicense "Sound Control 3"
-fi
-
-#
 # The Clock
 #
 # macOS Clock replacement with more advance features like work clocks & time zones
