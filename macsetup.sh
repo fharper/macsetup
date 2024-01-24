@@ -4134,7 +4134,7 @@ fi
 # http://www.hemingwayapp.com
 #
 if [[ "$(isAppInstalled "Hemingway Editor")" = "false" ]]; then
-    installDMG "$HOME/Documents/mac/Hemingway Editor 3.0.0/Hemingway Editor-3.0.0.dmg" false
+    installDMG "$HOME/Documents/mac/Hemingway Editor 3.0.3/Hemingway Editor-3.0.3.dmg" false
 fi
 
 #
