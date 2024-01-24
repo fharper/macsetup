@@ -3862,15 +3862,6 @@ installFromAppStore "AutoMute" 1118136179
 installcask beardedspice
 
 #
-# Beeper
-#
-# https://www.beeper.com
-#
-# All messaging app in one place
-#
-installkeg beeper
-
-#
 # BlockBlock
 #
 # Monitor persistence locations
