@@ -2396,7 +2396,14 @@ if [[ "$(isCLAppInstalled gcloud)" = "false" ]]; then
     installcask google-cloud-sdk
     gcloud config set disable_usage_reporting true
     gcloud components install gke-gcloud-auth-plugin
-    confirm "Do you want to log into Google Cloud right now?" "gcloud auth login"
+
+    # Configure gcloud
+    local confirmation=$(gum confirm "Do you want to log into Google Cloud right now?" && echo "true" || echo "false")
+    if [[ $confirmation == "true" ]] ; then
+        gcloud auth login
+        gcloud config set compute/region us-east1
+        gcloud config set compute/zone us-east1-b
+    fi
 fi
 
 #
