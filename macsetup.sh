@@ -2902,7 +2902,7 @@ if [[ ! $(asdf current php) ]]; then
     installkeg re2c
     installkeg libsodium
 
-    installAsdfPlugin php 8.2.3
+    installAsdfPlugin php 8.3.0
 fi
 
 #
