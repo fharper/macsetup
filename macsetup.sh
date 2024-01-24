@@ -4292,6 +4292,15 @@ fi
 installkeg mailtrackerblocker
 
 #
+# Messenger
+#
+# Facebook Messenger Client
+#
+# https://www.messenger.com/desktop
+#
+installcask messenger
+
+#
 # Microsoft Edge
 #
 # Browser
