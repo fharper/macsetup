@@ -1225,6 +1225,15 @@ if [[ "$(isAppInstalled "Little Snitch")" = "false" ]]; then
 fi
 
 #
+# lolcat
+#
+# Display any terminal output in rainbows colors
+#
+# https://github.com/busyloop/lolcat
+#
+installkeg lolcat
+
+#
 # MeetingBar
 #
 # Calendar menubar app
