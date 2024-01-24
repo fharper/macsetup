@@ -791,6 +791,7 @@ if [[brew list git 2>&1 | grep "No such keg"]]; then
     git config --replace-all --global difftool.prompt false
     git config --replace-all --global difftool.vscode.cmd "code --diff --wait $LOCAL $REMOTE"
     git config --replace-all --global fetch.prune true
+    git config --replace-all --global http.postBuffer 2097152000
     git config --replace-all --global init.defaultBranch main
     git config --replace-all --global interactive.diffFilter "diff-so-fancy --patch"
     git config --replace-all --global pull.rebase true
