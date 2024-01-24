@@ -2481,6 +2481,7 @@ if [[ "$(isCLAppInstalled helm)" = "false" ]]; then
     helm repo add chaoskube https://linki.github.io/chaoskube/
     helm repo add christianknell https://christianknell.github.io/helm-charts
     helm repo add robusta https://robusta-charts.storage.googleapis.com
+    helm repo add kubescape https://kubescape.github.io/helm-charts/
     helm repo update
 fi
 
