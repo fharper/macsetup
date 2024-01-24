@@ -4542,6 +4542,15 @@ installcask microsoft-remote-desktop
 mas install 1522267256
 
 #
+# Signal
+#
+# Encrypted messaging app
+#
+# https://github.com/signalapp/Signal-Desktop
+#
+installcask signal
+
+#
 # Silicon
 #
 # Identify Applications Architecture
