@@ -4744,6 +4744,15 @@ if [[ "$(isAppInstalled WebPViewer)" = "false" ]]; then
 fi
 
 #
+# WhatsApp
+#
+# Messaging app
+#
+# https://www.whatsapp.com
+#
+installcask whatsapp
+
+#
 # WhatsYourSign
 #
 # Finder menu to show files cryptographic signing information
