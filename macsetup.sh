@@ -2594,6 +2594,15 @@ fi
 installkeg krew
 
 #
+# KubeColor
+#
+# Colorize your kubectl output
+#
+# https://github.com/kubecolor/kubecolor
+#
+installkeg kubecolor
+
+#
 # kubectl
 #
 # Kubernetes CLI
