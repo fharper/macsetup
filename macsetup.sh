@@ -4474,6 +4474,15 @@ fi
 installFromAppStore "Pure Paste" 1611378436
 
 #
+# QR Capture
+#
+# Screen & webcam QR code reader
+#
+# https://iqr.hrubasko.com
+#
+installFromAppStore "QR Capture" 1369524274
+
+#
 # qView
 #
 # Minimal Image Viewer
