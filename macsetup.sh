@@ -2664,15 +2664,6 @@ installkeg kubent
 installkeg kubescape
 
 #
-# Kubetail
-#
-# Tail Kubernetes logs from multiple pods at the same time
-#
-# https://github.com/johanhaleby/kubetail
-#
-installkeg kubetail
-
-#
 # kustomize
 #
 # Customize Kubernetes YAML configurations files
@@ -3038,6 +3029,15 @@ installkeg shellcheck
 # https://github.com/turbot/steampipe
 #
 installkeg steampipe
+
+#
+# Stern
+#
+# Multi pod and container log tailing for Kubernetes
+#
+# https://github.com/stern/stern
+#
+installkeg stern
 
 #
 # Stylelint
