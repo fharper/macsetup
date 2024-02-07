@@ -4228,7 +4228,12 @@ installFromAppStore Jiffy 1502527999
 #
 # https://github.com/keybase/client
 #
-installcask keybase
+if [[ "$(isAppInstalled "Keybase")" = "false" ]]; then
+    installcask keybase
+
+    # Disable Keybase adding itself as a favorite in Finder
+    touch "/Users/fharper/Library/Application Support/Keybase/finder_disabled.config2"
+fi
 
 #
 # Keycastr
