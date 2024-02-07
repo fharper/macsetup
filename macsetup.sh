@@ -3860,6 +3860,7 @@ fi
 if [[ "$(isAppInstalled AppCleaner)" = "false" ]]; then
     installcask appcleaner
     restoreAppSettings appcleaner
+    giveFullDiskAccessPermission "AppCleaner"
 fi
 
 #
