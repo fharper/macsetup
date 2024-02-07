@@ -2549,6 +2549,15 @@ installNodePackages jest
 installNodePackages json2csv
 
 #
+# Jsonnet
+#
+# JSON extension for data templating
+#
+# https://github.com/google/jsonnet
+#
+installkeg jsonnet
+
+#
 # JupyterLab
 #
 # Jupyter notebooks IDE
