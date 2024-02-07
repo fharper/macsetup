@@ -2996,7 +2996,7 @@ installkeg react-native-cli
 #
 # https://github.com/rust-lang/rust
 #
-installAsdfPlugin rust 1.67.1
+installAsdfPlugin rust 1.75.0
 
 #
 # S3cmd
