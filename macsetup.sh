@@ -2822,6 +2822,15 @@ installcask mongodb-compass
 installcask mqtt-explorer
 
 #
+# MySQL Workbench
+#
+# MySQL Client GUI
+#
+# https://github.com/mysql/mysql-workbench
+#
+installcask mysqlworkbench
+
+#
 # npm Check Updates (ncu)
 #
 # Find newer versions of Node package dependencies
