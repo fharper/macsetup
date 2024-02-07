@@ -3297,6 +3297,15 @@ installkeg bandwhich
 installkeg bat
 
 #
+# ccase
+#
+# Command line interface to convert strings into any case
+#
+# https://github.com/rutrum/ccase
+#
+cargo install ccase
+
+#
 # Color LS + Nerd Fonts
 #
 # Beautifies the terminal's ls command
