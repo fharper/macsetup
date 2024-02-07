@@ -2832,6 +2832,15 @@ installcask mqtt-explorer
 installcask mysqlworkbench
 
 #
+# Newman
+#
+# Postman command-line collection runner
+#
+# https://github.com/postmanlabs/newman
+#
+installkeg newman
+
+#
 # npm Check Updates (ncu)
 #
 # Find newer versions of Node package dependencies
