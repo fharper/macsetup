@@ -2480,7 +2480,8 @@ if [[ "$(isCLAppInstalled helm)" = "false" ]]; then
     helm repo add bitnami https://charts.bitnami.com/bitnami
     helm repo add chaoskube https://linki.github.io/chaoskube/
     helm repo add christianknell https://christianknell.github.io/helm-charts #kutt
-    helm repo add kubefirst https://charts.kubefirst.comi
+    helm repo add kubefirst https://charts.kubefirst.com
+    helm repo add kubeinvaders https://lucky-sideburn.github.io/helm-charts/
     helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
     helm repo add kubescape https://kubescape.github.io/helm-charts/
     helm repo add portainer https://portainer.github.io/k8s
