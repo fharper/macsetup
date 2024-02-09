@@ -4700,6 +4700,15 @@ if [[ "$(isAppInstalled "The Unarchiver")" = "false" ]]; then
 fi
 
 #
+# TigerVNC
+#
+# VNC client
+#
+# https://github.com/TigerVNC/tigervnc
+#
+installcask tigervnc-viewer
+
+#
 # TV
 #
 # The Office for offline viewing
