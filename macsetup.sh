@@ -1880,6 +1880,7 @@ if [[ "$(isAppInstalled "Visual Studio Code")" = "false" ]]; then
     duti -s com.microsoft.VSCode public.xml all #xml
     duti -s com.microsoft.VSCode public.yaml all #YAML
     duti -s com.microsoft.VSCode public.zsh-script all #ZSH
+    duti -s com.microsoft.VSCode text/x-shellscript all #ZSH
 fi
 
 
