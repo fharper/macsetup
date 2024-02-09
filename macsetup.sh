@@ -3504,6 +3504,15 @@ fi
 installNodePackages markmap-cli
 
 #
+# mermaid-cli
+#
+# Mermaid CLI
+#
+# https://github.com/mermaid-js/mermaid-cli
+#
+installNodePackages mermaid-cli
+
+#
 # Miller
 #
 # CSV processor
