@@ -3579,6 +3579,15 @@ installkeg pdf2svg
 installkeg pdfcrack
 
 #
+# peco
+#
+# Simplistic interactive filtering tool
+#
+# https://github.com/peco/peco
+#
+installkeg peco
+
+#
 # Poppler
 #
 # PDF rendering library
