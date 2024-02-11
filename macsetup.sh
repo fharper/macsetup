@@ -4635,6 +4635,15 @@ installcask signal
 installcask silicon
 
 #
+# Sim Daltonism
+#
+# Color blindness simulation
+#
+# https://github.com/michelf/sim-daltonism/
+#
+installcask sim-daltonism
+
+#
 # Sloth
 #
 # Displays all open files and sockets in use by all running processes on your system
