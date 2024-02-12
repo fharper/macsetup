@@ -2492,6 +2492,15 @@ if [[ "$(isCLAppInstalled helm)" = "false" ]]; then
 fi
 
 #
+# Hukum
+#
+# Displays Github Action live progress in the terminal
+#
+# https://github.com/abskmj/hukum
+#
+installNodePackages hukum
+
+#
 # ImageMagick
 #
 # Images tooling suite
