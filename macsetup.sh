@@ -2597,18 +2597,6 @@ installkeg k3d
 installkeg k9s
 
 #
-# KDash
-#
-# Kubernetes dashboard
-#
-# https://github.com/kdash-rs/kdash
-#
-if [[ "$(isCLAppInstalled kdash)" = "false" ]]; then
-    brew tap kdash-rs/kdash
-    installkeg kdash
-fi
-
-#
 # Krew
 #
 # kubectl plugins manager
