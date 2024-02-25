@@ -2484,6 +2484,7 @@ if [[ "$(isCLAppInstalled helm)" = "false" ]]; then
     helm repo add kubeinvaders https://lucky-sideburn.github.io/helm-charts/
     helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
     helm repo add kubescape https://kubescape.github.io/helm-charts/
+    helm repo add opencost https://opencost.github.io/opencost-helm-chart/
     helm repo add portainer https://portainer.github.io/k8s
     helm repo add robusta https://robusta-charts.storage.googleapis.com
     helm repo add yourls https://charts.yourls.org
