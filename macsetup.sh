@@ -3443,6 +3443,17 @@ installkeg htop
 installkeg httpie
 
 #
+# libsixel
+#
+# SIXEL image format encoder/decoder
+#
+# https://github.com/saitoha/libsixel
+#
+# Notes: img2sixel is the binary
+#
+installkeg libsixel
+
+#
 # LinkChecker
 #
 # cli tool to check all links from a website or specific page
