@@ -4115,6 +4115,19 @@ if [[ "$(isAppInstalled "Elgato Stream Deck")" = "false" ]]; then
 fi
 
 #
+# ExcalidrawZ
+#
+# Excalidraw app
+#
+# https://github.com/chocoford/ExcalidrawZ
+#
+if [[ "$(isCLAppInstalled ExcalidrawZ)" = "false" ]]; then
+    curl -L "$(lastversion chocoford/ExcalidrawZ --assets)" --output excalidrawz.dmg
+
+    installDMG excalidrawz.dmg true
+fi
+
+#
 # Figma
 #
 # Vector Design Tool
