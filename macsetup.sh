@@ -3416,6 +3416,15 @@ if [[ "$(isCLAppInstalled ghunt)" = "false" ]]; then
 fi
 
 #
+# gsed
+#
+# GNU sed which support extended regular expressions
+#
+# https://www.gnu.org/software/sed/
+#
+installkeg gsed
+
+#
 # Homebrew Command Not Found
 #
 # Suggest a package to install when the command is not found
