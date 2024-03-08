@@ -2452,10 +2452,7 @@ installkeg grip
 #
 # https://github.com/charmbracelet/gum
 #
-# Untill they release a version after July 25 2023 including this fix
-# https://github.com/charmbracelet/gum/commit/6763de12e8e3ad28aa4c8baf4ce2816d564e1000,
-# installkeg gum
-go install github.com/charmbracelet/gum@latest
+installkeg gum
 
 #
 # Hadolint
