@@ -1570,6 +1570,13 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 displaySection "Misc Configurations"
 
 #
+# Input source switch popup
+#
+# Notes: This is the keyboard layout blue icons that is sometimes shown by macOS on application text input.
+#
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
+
+#
 # Internet Accounts
 #
 # Notes:
