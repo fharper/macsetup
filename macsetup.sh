@@ -1936,6 +1936,15 @@ installkeg actionlint
 installGoApp air latest
 
 #
+# Akamai
+#
+# Akamai CLI
+#
+# https://github.com/akamai/cli
+#
+installkeg akamai
+
+#
 # argo
 #
 # Argo Workflows CLI
