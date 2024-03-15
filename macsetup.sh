@@ -1108,12 +1108,12 @@ installcask apple-juice
 # Notes
 #   - Cannot use mackup with Bartender (https://github.com/lra/mackup/issues/1126)
 #
-if [[ "$(isAppInstalled "Bartender 4")" = "false" ]]; then
+if [[ "$(isAppInstalled "Bartender 5")" = "false" ]]; then
     installcask bartender
-    giveAccessibilityPermission "Bartender 4"
-    giveScreenRecordingPermission "Bartender 4"
-    open -a Bartender
-    getLicense "Bartender 4"
+    giveAccessibilityPermission "Bartender 5"
+    giveScreenRecordingPermission "Bartender 5"
+    open -a "Bartender 5"
+    getLicense "Bartender"
 fi
 
 #
