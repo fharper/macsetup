@@ -1878,6 +1878,7 @@ if [[ "$(isAppInstalled "Visual Studio Code")" = "false" ]]; then
     duti -s com.microsoft.VSCode public.ruby-script all #Ruby
     duti -s com.microsoft.VSCode com.apple.terminal.shell-script all #SH
     duti -s com.microsoft.VSCode public.shell-script all #Shell script
+    duti -s com.microsoft.VSCode public.svg-image all #svg
     duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81g6pq all #SQL
     duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3u all #terraform tf
     duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #terraform tfstate
@@ -4599,7 +4600,6 @@ if [[ "$(isAppInstalled qView)" = "false" ]]; then
     installcask qview
 
     duti -s com.interversehq.qView public.png all # PNG
-    duti -s com.interversehq.qView public.svg-image all #svg
 fi
 
 #
