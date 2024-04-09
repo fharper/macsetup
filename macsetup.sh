@@ -3200,13 +3200,13 @@ installkeg woff2
 installkeg wp-cli
 
 #
-# Xcodes
+# xcodes
 #
 # Xcode versions management
 #
-# https://github.com/RobotsAndPencils/XcodesApp
+# https://github.com/XcodesOrg/xcodes
 #
-installcask xcodes
+installkeg xcodesorg/made/xcodes
 
 #
 # yamale
