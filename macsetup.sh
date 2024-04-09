@@ -1936,13 +1936,16 @@ installkeg actionlint
 installGoApp air latest
 
 #
-# Akamai
+# Akamai Linode
 #
-# Akamai CLI
+# Linode CLI
 #
-# https://github.com/akamai/cli
+# https://github.com/linode/linode-cli
 #
-installkeg akamai
+if [[ "$(isCLAppInstalled linode)" = "false" ]]; then
+    installkeg linode-cli
+    confirm "Do you want to configure the Akamai Linode CLI now?" "linode configure"
+fi
 
 #
 # argo
