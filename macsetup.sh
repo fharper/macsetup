@@ -3210,7 +3210,12 @@ installkeg wp-cli
 #
 # https://github.com/XcodesOrg/xcodes
 #
-installkeg xcodesorg/made/xcodes
+# Notes: to list runtimes `xcodes runtimes`
+#
+if [[ "$(isCLAppInstalled xcodes)" = "false" ]]; then
+    installkeg xcodesorg/made/xcodes
+    xcodes runtimes install "iOS 17.4"
+fi
 
 #
 # yamale
