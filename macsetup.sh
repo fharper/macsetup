@@ -1867,25 +1867,25 @@ if [[ "$(isAppInstalled "Visual Studio Code")" = "false" ]]; then
     duti -s com.microsoft.VSCode public.css all #CSS
     duti -s com.microsoft.VSCode public.comma-separated-values-text all #CSV
     duti -s com.microsoft.VSCode com.netscape.javascript-source all #JavaScript
-    duti -s com.microsoft.VSCode public.json all #json
+    duti -s com.microsoft.VSCode public.json all #JSON
     duti -s com.microsoft.VSCode dyn.ah62d4rv4ge8027pb all #lua
-    duti -s com.microsoft.VSCode com.apple.log all #log
+    duti -s com.microsoft.VSCode com.apple.log all #logs
     duti -s com.microsoft.VSCode net.daringfireball.markdown all #Markdown
-    duti -s com.microsoft.VSCode public.php-script all #php
+    duti -s com.microsoft.VSCode public.php-script all #PHP
     duti -s com.microsoft.VSCode com.apple.property-list all # Plist
     duti -s com.microsoft.VSCode public.python-script all # Python
     duti -s com.microsoft.VSCode public.rtf all #RTF
     duti -s com.microsoft.VSCode public.ruby-script all #Ruby
     duti -s com.microsoft.VSCode com.apple.terminal.shell-script all #SH
     duti -s com.microsoft.VSCode public.shell-script all #Shell script
-    duti -s com.microsoft.VSCode public.svg-image all #svg
+    duti -s com.microsoft.VSCode public.svg-image all #SVG
     duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81g6pq all #SQL
-    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3u all #terraform tf
-    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #terraform tfstate
-    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #terraform tfvars
-    duti -s com.microsoft.VSCode public.plain-text all #txt
+    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3u all #Terraform tf
+    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3xxsvu1k3k all #Terraform tfstate
+    duti -s com.microsoft.VSCode dyn.ah62d4rv4ge81k3x0qf3hg all #Terraform tfvars
+    duti -s com.microsoft.VSCode public.plain-text all #TXT
     duti -s public.mpeg-2-transport-stream all #TypeScript (there's no official UTI, so using the recognized one as I never have MPEG .ts files)
-    duti -s com.microsoft.VSCode public.xml all #xml
+    duti -s com.microsoft.VSCode public.xml all #XML
     duti -s com.microsoft.VSCode public.yaml all #YAML
     duti -s com.microsoft.VSCode public.zsh-script all #ZSH
     duti -s com.microsoft.VSCode text/x-shellscript all #ZSH
