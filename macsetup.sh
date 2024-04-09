@@ -3080,7 +3080,7 @@ installkeg telnet
 #
 # https://github.com/hashicorp/terraform
 #
-installkeg terraform
+installkeg hashicorp/tap/terraform
 
 #
 # TFLint
