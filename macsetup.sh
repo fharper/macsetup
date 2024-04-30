@@ -1937,6 +1937,15 @@ installkeg actionlint
 installGoApp air latest
 
 #
+# ajv-cli
+#
+# Ajv JSON Schema Validator CLI
+#
+# https://github.com/ajv-validator/ajv-cli
+#
+installNodePackages ajv-cli
+
+#
 # Akamai Linode
 #
 # Linode CLI
