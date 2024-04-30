@@ -2475,6 +2475,15 @@ fi
 installkeg grip
 
 #
+# gulp-cli
+#
+# Gulp CLI
+#
+# https://github.com/gulpjs/gulp-cli
+#
+installkeg gulp-cli
+
+#
 # Gum
 #
 # Utils for Shell Scripts
