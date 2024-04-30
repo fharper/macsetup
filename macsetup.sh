@@ -3319,6 +3319,19 @@ if [[ "$(isCLAppInstalled asciinema)" = "false" ]]; then
 fi
 
 #
+# asimov
+#
+# Excludes developers dependencies automatically from Time Machine backups
+#
+# https://github.com/stevegrunwell/asimov
+#
+if [[ "$(isCLAppInstalled asimov)" = "false" ]]; then
+    installkeg asimov
+    asimov
+    sudo brew services start asimov
+fi
+
+#
 # Bandwhich
 #
 # Network utilization visualization terminal tool
