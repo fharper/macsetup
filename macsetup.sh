@@ -4627,19 +4627,6 @@ installFromAppStore "Pure Paste" 1611378436
 installFromAppStore "QR Capture" 1369524274
 
 #
-# qView
-#
-# Minimal Image Viewer
-#
-# https://github.com/jurplel/qView/
-#
-if [[ "$(isAppInstalled qView)" = "false" ]]; then
-    installcask qview
-
-    duti -s com.interversehq.qView public.png all # PNG
-fi
-
-#
 # RansomWhere?
 #
 # Monitoring the creation of encrypted files
@@ -4998,6 +4985,7 @@ duti -s com.apple.Preview public.standard-tesselated-geometry-format all #3D CAD
 duti -s com.apple.Preview public.heic all #HEIC
 duti -s com.apple.Preview com.nikon.raw-image all #NEF
 duti -s com.apple.Preview com.adobe.pdf all #PDF
+duti -s com.apple.Preview  public.png all # PNG
 duti -s com.apple.Preview org.openxmlformats.presentationml.presentation all #PPTX
 duti -s com.apple.Preview com.adobe.photoshop-image all # PSD (Photoshop)
 
