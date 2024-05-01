@@ -2633,6 +2633,15 @@ installkeg k3d
 installkeg k9s
 
 #
+# Korb
+#
+# Move Kubernetes PVCs between Storage Classes and Namespaces (or export their content)
+#
+# https://github.com/BeryJu/korb
+#
+installkeg krob
+
+#
 # Krew
 #
 # kubectl plugins manager
