@@ -3838,21 +3838,14 @@ installkeg wifi-password
 installkeg wkhtmltopdf
 
 #
-# yt-dlp + PhantomJS 
+# yt-dlp 
 #
 # Video downloader (YouTube & all)
-# Scriptable Headless Browser
 #
 # https://github.com/yt-dlp/yt-dlp
 # https://github.com/ariya/phantomjs
 #
-# Notes:
-#  - PhantomJS is outdated, but it's needed by yt-dlp when nsig extraction failed
-#
-if [[ "$(isCLAppInstalled "yt-dlp")" = "false" ]]; then
-    installkeg yt-dlp
-    installcask phantomjs
-fi
+installkeg yt-dlp
 
 #
 # zsh-bench
