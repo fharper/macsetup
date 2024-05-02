@@ -4351,7 +4351,7 @@ installcask keycastr
 #
 # https://www.amazon.ca/b?ie=UTF8&node=2972705011
 #
-installcask kindle
+installFromAppStore "Kindle" 302584613
 
 #
 # KnockKnock
