@@ -662,7 +662,11 @@ installkeg mackup
 # https://github.com/asdf-vm/asdf
 #
 # Notes
-#   - Needed before Python
+#  - Needed before Python
+#
+# Help
+#  - To list all available versions for a language, use: asdf list all nodejs
+#  - To install a language version, use: asdf install nodejs 22.4.1
 #
 if [[ "$(isCLAppInstalled asdf)" = "false" ]]; then
     installkeg asdf
