@@ -2074,6 +2074,15 @@ if [[ "$(isCLAppInstalled civo)" = "false" ]]; then
 fi
 
 #
+# cockroach-sql
+#
+# CockroachDB CLI
+#
+# https://www.cockroachlabs.com
+#
+installkeg cockroachdb/tap/cockroach-sql
+
+#
 # CocoaPods
 #
 # XCode dependency manager
