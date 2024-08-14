@@ -2773,6 +2773,15 @@ installkeg lsof
 installkeg lynis
 
 #
+# MAC Address Vendor Lookup
+#
+# Command line tool for macaddress.io API
+#
+# https://github.com/CodeLineFi/maclookup-cli
+#
+installPythonApp maclookup-cli
+
+#
 # markdown-link-check
 #
 # Check links inside Markdown files
