@@ -3464,12 +3464,16 @@ installkeg fd
 
 #
 # FFmpeg
+# ffmpeg-progressbar-cli
 #
 # Libraries and tools to process multimedia content like video, audio & more
+# A colored progress bar for FFmpeg
 #
 # https://github.com/FFmpeg/FFmpeg
+# https://github.com/sidneys/ffmpeg-progressbar-cli
 #
 installkeg ffmpeg
+installNodePackages ffmpeg-progressbar-cli
 
 #
 # FFmpeg Quality Metrics
