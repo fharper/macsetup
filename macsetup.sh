@@ -3342,19 +3342,22 @@ displaySection "Command line tools"
 installkeg alexjs
 
 #
-# Asciinema + svg-term-cli
+# Asciinema + svg-term-cli + agg
 #
 # Terminal session recorder
 # Convert tool for asciicast to animated SVG
+# asciinema gif generator
 #
 # https://github.com/asciinema/asciinema
 # https://github.com/marionebl/svg-term-cli
+# https://github.com/asciinema/agg
 #
 if [[ "$(isCLAppInstalled asciinema)" = "false" ]]; then
     installkeg asciinema
     asciinema auth
     pausethescript "Authenticate with asciinema before continuing the installation script."
     installNodePackages svg-term-cli
+    installkeg agg
 fi
 
 #
