@@ -3297,8 +3297,11 @@ installkeg yamllint
 #
 # https://github.com/yarnpkg/yarn
 #
+# Notes:
+#  - Installing with npm instead of Homebrew so it's easier when updating Node.js version with asdf
+#
 if [[ "$(isCLAppInstalled yarn)" = "false" ]]; then
-    installkeg yarn
+    installNodePackages yarn
     yarn config set --home enableTelemetry 0
 fi
 
