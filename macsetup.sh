@@ -1606,6 +1606,11 @@ if [[ -n "$alreadyInstalled" ]]; then
 fi
 
 #
+# Time Machine
+#
+sudo tmutil setdestination -p "smb://fharper@synology.local/Time Machine Backup/"
+
+#
 # Wallpaper
 #
 wallpaper set /Users/fharper/Documents/misc/background.png
