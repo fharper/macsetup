@@ -3374,6 +3374,15 @@ if [[ "$(isCLAppInstalled asimov)" = "false" ]]; then
 fi
 
 #
+# backgroundremover
+#
+# Image & video background remover
+#
+# https://github.com/nadermx/backgroundremover
+#
+installPythonApp backgroundremover
+
+#
 # Bandwhich
 #
 # Network utilization visualization terminal tool
