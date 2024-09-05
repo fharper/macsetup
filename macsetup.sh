@@ -3525,6 +3525,15 @@ if [[ "$(isCLAppInstalled ghunt)" = "false" ]]; then
 fi
 
 #
+# gifsicle
+#
+# Create, manipulate, and optimize GIF images and animations
+#
+# https://github.com/kohler/gifsicle
+#
+installkeg gifsicle
+
+#
 # gsed
 #
 # GNU sed which support extended regular expressions
