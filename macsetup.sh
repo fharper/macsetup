@@ -4428,6 +4428,17 @@ installFromAppStore "Kindle" 302584613
 installcask knockknock
 
 #
+# Linear
+#
+# Project and issue tracking system
+#
+# https://linear.app
+#
+# Notes: Needed at kubefirst
+#
+installcask linear-linear
+
+#
 # Logi Options+
 #
 # Logitech Mouse Configurations App
