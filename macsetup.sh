@@ -4217,6 +4217,15 @@ fi
 installcask dhs
 
 #
+# DuckDuckGo
+#
+# Browser
+#
+# https://duckduckgo.com
+#
+installcask duckduckgo
+
+#
 # Elgato Lights Control Center
 #
 # Elgato Lights Control App
