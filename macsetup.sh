@@ -2208,7 +2208,6 @@ fi
 # ESLint plugins:
 # - eslint-plugin-markdown
 # - eslint-plugin-react
-# - WordPress Gutenberg ESLint Plugin
 # - eslint-plugin-ui-testing (using for Puppeteer)
 # - eslint-plugin-jest
 # - eslint-plugin-security-node
@@ -2222,7 +2221,6 @@ fi
 # Pretty ESLint formatter
 # Lint JavaScript code blocks in Markdown documents
 # React-specific linting rules for ESLint
-# WordPress development configurations and custom rules for ESLint
 # ESLint plugin that helps following best practices when writing UI tests like with Puppeteer
 # ESLint plugin for Jest
 # ESLint security plugin for Node.js
@@ -2236,7 +2234,6 @@ fi
 # https://github.com/sindresorhus/eslint-formatter-pretty
 # https://github.com/eslint/eslint-plugin-markdown
 # https://github.com/yannickcr/eslint-plugin-react
-# https://github.com/WordPress/gutenberg/blob/7b0736c5a97f770cc931616bd0d5c0e446584590/packages/eslint-plugin/README.md
 # https://github.com/kwoding/eslint-plugin-ui-testing
 # https://github.com/jest-community/eslint-plugin-jest
 # https://github.com/gkouziik/eslint-plugin-security-node
@@ -2250,7 +2247,6 @@ installkeg eslint
 installNodePackages eslint-formatter-pretty
 installNodePackages eslint-plugin-markdown
 installNodePackages eslint-plugin-react
-installNodePackages @wordpress/eslint-plugin
 installNodePackages eslint-plugin-ui-testing
 installNodePackages eslint-plugin-jest
 installNodePackages eslint-plugin-security-node
@@ -2734,15 +2730,6 @@ installkeg kustomize
 # https://github.com/GoogleChrome/lighthouse
 #
 installNodePackages lighthouse
-
-#
-# local
-#
-# Local WordPress developement tool
-#
-# https://localwp.com
-#
-installcask local
 
 #
 # localtunnel
@@ -3249,15 +3236,6 @@ installkeg webpack
 # Notes: the binary for decompressing woff2 to otf is called woff2_decompress
 #
 installkeg woff2
-
-#
-# WordPress CLI
-#
-# CLI for WordPress
-#
-# https://github.com/wp-cli/wp-cli
-#
-installkeg wp-cli
 
 #
 # xcodes
