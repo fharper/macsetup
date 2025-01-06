@@ -4684,6 +4684,15 @@ installFromAppStore "Pure Paste" 1611378436
 installFromAppStore "QR Capture" 1369524274
 
 #
+# Quitter
+#
+# Automatically hides or quits apps after periods of inactivity
+#
+# https://marco.org/apps#quitter
+#
+installcask quitter
+
+#
 # RansomWhere?
 #
 # Monitoring the creation of encrypted files
