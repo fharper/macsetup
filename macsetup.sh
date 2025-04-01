@@ -2069,7 +2069,6 @@ installNodePackages chrome-webstore-cli
 if [[ "$(isCLAppInstalled civo)" = "false" ]]; then
     brew tap civo/tools
     installkeg civo
-    civo apikey add kubefirst $CIVO_TOKEN
 fi
 
 #
