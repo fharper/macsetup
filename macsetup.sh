@@ -4963,6 +4963,15 @@ fi
 #
 installFromAppStore "WiFi Explorer Lite" 1408727408
 
+#
+# Zen Browser
+#
+# Browser
+#
+# https://github.com/zen-browser/desktop
+#
+installcask zen-browser
+
 
 #########
 #       #
