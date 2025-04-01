@@ -3088,15 +3088,6 @@ installkeg stylelint
 installNodePackages stylelint-config-recommended
 
 #
-# Task
-#
-# Task runner (Kubefirst use this for E2E testing)
-#
-# https://github.com/go-task/task
-#
-installkeg go-task
-
-#
 # Telnet
 #
 # Terminal emulation for logging into a remote hosts
@@ -4392,17 +4383,6 @@ installFromAppStore "Kindle" 302584613
 # https://github.com/objective-see/knockknock
 #
 installcask knockknock
-
-#
-# Linear
-#
-# Project and issue tracking system
-#
-# https://linear.app
-#
-# Notes: Needed at kubefirst
-#
-installcask linear-linear
 
 #
 # Logi Options+
