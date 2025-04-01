@@ -964,8 +964,7 @@ installkeg mysides
 # https://github.com/npm/cli
 #
 if [[ ! $(asdf current nodejs) ]]; then
-    installAsdfPlugin nodejs 19.6.0
-    20.5.0
+    installAsdfPlugin nodejs 23.9.0
 
     npm i -g npm@latest
     npm adduser
