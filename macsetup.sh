@@ -2693,15 +2693,6 @@ fi
 installkeg kubectx
 
 #
-# kubefirst
-#
-# Delivery & infrastructure Kubernetes management gitops platforms
-#
-# https://github.com/kubefirst/kubefirst
-#
-installkeg kubefirst/tools/kubefirst
-
-#
 # Kubescape
 #
 # Kubernetes security audit tool
