@@ -3051,6 +3051,18 @@ if [[ "$(isCLAppInstalled s3cmd)" = "false" ]]; then
 fi
 
 #
+# secretlint
+#
+# Pluggable linting tool to prevent committing credential.
+#
+# https://github.com/secretlint/secretlint
+#
+if [[ "$(isCLAppInstalled secretlint)" = "false" ]]; then
+    installNodePackages secretlint
+    installNodePackages @secretlint/secretlint-rule-preset-recommend
+fi
+
+#
 # ShellCheck
 #
 # Shell scripts linter
