@@ -694,7 +694,7 @@ fi
 #   - Needed before lastversion
 #
 if [[ ! $(asdf current python) ]]; then
-    installAsdfPlugin python 3.11.2
+    installAsdfPlugin python 3.13.3
 
     installkeg pipx
     pipx ensurepath
