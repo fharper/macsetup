@@ -1,0 +1,113 @@
+#
+# List of applications to install
+#
+# name: name of the application (only for user information display)
+# desc: description of the application (only for user information display)
+# url: link to GitHub repository or website (only for user information display)
+# notes: any additional notes about the application (i.e. order of installation necessary, reasons why not using the Homebrew version...)
+# type: type of applications to know which way to install it. Possible values are:
+#       - asdf: installed using asdf
+#       - keg: installed using Homebrew
+#       - mas: installed from the App Store using mas
+#       - python-app: installed using pipx
+#       - python-package: installed using pip
+# app: name of the application in the package manager
+# restore: use mackup to restore the configurations
+# reload: reload the ZSH configurations (true or false)
+# commands: list of commands to run after a successful installation (i.e get license information, log in...)
+#
+
+apps:
+
+  - name: Mackup
+    desc: Sync applications settings with Dropbox
+    url: https://github.com/lra/mackup
+    notes: Need to installer after Homebrew so configurations files can be restored
+    type: keg
+    app: mackup
+    version: latest
+
+  - name: mas-cli
+    desc: Unofficial macOS App Store CLI
+    url: https://github.com/mas-cli/mas
+    notes: Need to install before Xcode
+    type: keg
+    app: mas
+    version: latest
+    commands:
+      - open -a "App Store"
+      - pausethescript "Sign in into the App Store before continuing"
+
+  - name: Xcode
+    desc: macOS/iOS Swift/Ojective-C IDE
+    url: https://developer.apple.com/xcode
+    notes: Need to install before defbro
+    type: mas
+    app: 497799835
+    version: latest
+    restore: true
+    commands:
+      - sudo xcodebuild -license accept
+      - xcodebuild -runFirstLaunch
+
+  - name: asdf
+    desc: Version manager with support for everything
+    url: https://github.com/asdf-vm/asdf
+    notes: Needed before Python
+    type: keg
+    app: asdf
+    version: latest
+    reload: true
+
+  - name: Python
+    desc: Python SDK
+    url: https://www.python.org
+    notes: Needed before lastversion, and anything Python
+    type: asdf
+    app: python
+    version: 3.11.2
+
+  - name: PipX
+    desc: Isolated Environments Pip alternative for app (not packages)
+    url: https://github.com/pypa/pipx
+    type: keg
+    app: pipx
+    commands:
+      - pipx ensurepath
+
+  - name: Wheel
+    desc: Python wheel packaging tool
+    url: https://github.com/pypa/wheel
+    type: python-package
+    app: wheel
+
+  - name: Pylint
+    desc: Python linter
+    url: https://github.com/PyCQA/pylint/
+    type: python-app
+    app: pylint
+    restore: false
+    reload: false
+
+  - name: pytest
+    desc: Python tests framework
+    url: https://github.com/pytest-dev/pytest
+    type: python-app
+    app: pytest
+    restore: false
+    reload: false
+
+  - name: Twine
+    desc: Utilities for interacting with PyPI
+    url: https://github.com/pypa/twine/
+    type: python-app
+    app: twine
+    restore: false
+    reload: false
+
+  - name: lastversion
+    desc: CLI to get latest GitHub Repo Release assets URL
+    url: https://github.com/dvershinin/lastversion
+    notes: Needed before Dockutil
+    type: python-app
+    app: lastversion

@@ -4522,6 +4522,17 @@ if [[ "$(isAppInstalled MindNode)" = "false" ]]; then
 fi
 
 #
+# monday.com
+#
+# Project management
+#
+# https://monday.com
+#
+# Note: for Tiugo
+#
+installFromAppStore 1298450641
+
+#
 # Muzzle
 #
 # Set Do Not Disturb mode when screen sharing in video calls
