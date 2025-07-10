@@ -625,7 +625,6 @@ fi
 # https://github.com/Homebrew/brew
 # https://github.com/Homebrew/homebrew-cask-versions
 # https://github.com/buo/homebrew-cask-upgrade
-# https://github.com/Homebrew/homebrew-cask-fonts
 #
 # Notes
 #  - Cannot be added to apps.yml for now as it doesn't manage custom installation
@@ -640,7 +639,6 @@ if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
     brew analytics off
     brew tap homebrew/cask-versions
     brew tap buo/cask-upgrade
-    brew tap homebrew/cask-fonts
 fi
 
 #
