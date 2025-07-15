@@ -1100,24 +1100,6 @@ fi
 installcask apple-juice
 
 #
-# Bartender
-#
-# macOS menubar manager
-#
-# https://www.macbartender.com
-#
-# Notes
-#   - Cannot use mackup with Bartender (https://github.com/lra/mackup/issues/1126)
-#
-if [[ "$(isAppInstalled "Bartender 5")" = "false" ]]; then
-    installcask bartender
-    giveAccessibilityPermission "Bartender 5"
-    giveScreenRecordingPermission "Bartender 5"
-    open -a "Bartender 5"
-    getLicense "Bartender"
-fi
-
-#
 # CleanShot X
 #
 # Screenshot utility
@@ -1183,6 +1165,15 @@ fi
 # https://github.com/dvorka/hstr
 #
 installkeg hstr
+
+#
+# Ice
+#
+# Menubar manager
+#
+# https://github.com/jordanbaird/Ice
+#
+brew install --cask jordanbaird-ice
 
 #
 # Karabiner-Elements
