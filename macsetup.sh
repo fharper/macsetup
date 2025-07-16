@@ -1254,13 +1254,20 @@ fi
 #
 # https://manytricks.com/moom
 #
-# Notes:
-#  - Need to install the App Store version, since you bought it there
-#
 if [[ "$(isAppInstalled Moom)" = "false" ]]; then
-    installFromAppStore Moom 419330170
-    giveAccessibilityPermission Moom
+INSTALL FROM DMG DOWNLOAD LINK FROM THEIR WEBSITE
 fi
+
+#
+# Spaced
+#
+# Menubar spacer
+#
+# https://sindresorhus.com/spaced
+#
+# Notes: Useful to replace a Bartender feature as Ice as it doesn't have that option yet
+#
+installFromAppStore 1666327168
 
 #
 # The Clock
