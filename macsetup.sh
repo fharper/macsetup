@@ -1962,6 +1962,15 @@ if [[ "$(isCLAppInstalled linode)" = "false" ]]; then
 fi
 
 #
+# Angular
+#
+# JavaScript framework
+#
+# https://github.com/angular/angular
+#
+installNodePackages @angular/cli
+
+#
 # argo
 #
 # Argo Workflows CLI
