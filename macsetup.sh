@@ -2716,6 +2716,16 @@ installkeg kubescape
 installkeg kustomize
 
 #
+# Less
+#
+# Dynamic stylesheet language
+#
+# https://github.com/less/less.js
+#
+installNodePackages less
+
+
+#
 # Lighthouse
 #
 # Analyzes web pages for performance & best practices
