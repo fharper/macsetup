@@ -5059,13 +5059,6 @@ duti -s com.apple.Preview com.adobe.photoshop-image all # PSD (Photoshop)
 displaySection "Games"
 
 #
-# Among Us
-#
-# http://www.innersloth.com/gameAmongUs.php
-#
-installFromAppStore "Among Us" 1351168404
-
-#
 # Chess
 #
 # https://chess.com
