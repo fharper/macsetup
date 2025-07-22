@@ -3881,10 +3881,13 @@ installkeg wifi-password
 #
 # https://github.com/wkhtmltopdf/wkhtmltopdf
 #
-# Notes:
-#  - listed as a Cask, but it's a Keg
+# Notes: Homebrew keg is disable, and this is the last release available.
 #
-installkeg wkhtmltopdf
+if [[ "$(isCLAppInstalled wkhtmltopdf)" = "false" ]]; then
+    echo $fg[blue]"Starting the installation wkhtmltopdf"$reset_color
+    curl -L https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-2/wkhtmltox-0.12.6-2.macos-cocoa.pkg --output wkhtmltopdf.pkg
+    installPKG "$filename"
+fi
 
 #
 # yt-dlp 
