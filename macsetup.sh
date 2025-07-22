@@ -4478,18 +4478,6 @@ fi
 installcask LyricsX
 
 #
-# MailReceipt
-#
-# Delivery notification & read receipt requests for Apple Mail
-#
-# https://github.com/scr34m/MailReceipt
-#
-if [ ! -d "/Library/Mail/Bundles/MailReceipt.mailbundle/" ]; then
-    curl -L "$(lastversion scr34m/MailReceipt --assets)" --output MailReceipt.pkg
-    installPKG MailReceipt.pkg
-fi
-
-#
 # Messenger
 #
 # Facebook Messenger Client
