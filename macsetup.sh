@@ -4490,15 +4490,6 @@ if [ ! -d "/Library/Mail/Bundles/MailReceipt.mailbundle/" ]; then
 fi
 
 #
-# MailTrackerBlocker
-#
-# Email tracker, read receipt and spy pixel blocker plugin for Apple Mail
-#
-# https://github.com/apparition47/MailTrackerBlocker
-#
-installkeg mailtrackerblocker
-
-#
 # Messenger
 #
 # Facebook Messenger Client
