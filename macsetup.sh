@@ -3601,6 +3601,15 @@ installkeg lsusb
 installkeg lzip
 
 #
+# macchanger
+#
+# MAC address updater
+#
+# https://github.com/acrogenesis/macchanger
+#
+installkeg acrogenesis/macchanger/macchanger
+
+#
 # macos-focus-mode
 #
 # Control macOS Do Not Disturb from the command line
