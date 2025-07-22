@@ -514,7 +514,7 @@ function installRustApp {
         echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
         return 1
     else
-        echo $fg[blue]"Installing the Python application $1"$reset_color
+        echo $fg[blue]"Installing the Rust application $1"$reset_color
         cargo install "$1"
         reload
     fi
