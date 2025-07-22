@@ -2104,6 +2104,15 @@ installkeg cocoapods
 installkeg commitlint
 
 #
+# composer
+#
+# PHP Dependency Manager
+#
+# https://github.com/composer/composer
+#
+instalkeg composer
+
+#
 # Cordova CLI
 #
 # CLI for Cordova
