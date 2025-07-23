@@ -1305,7 +1305,7 @@ installcask TripMode
 #
 if [[ "$(isAppInstalled "zoom.us")" = "false" ]]; then
     installcask zoom
-    giveScreenRecordingPermission "zoom.us"
+    giveScreenRecordingPermission zoom
     #TODO: add Notifications Permission
 fi
 
