@@ -846,7 +846,7 @@ fi
 # Notes: need to be after Oh My Zsh
 #
 if [[ ! -d "/opt/homebrew/opt/spaceship/" ]]; then
-    instalkeg starship
+    installkeg starship
     reload
 fi
 
@@ -2110,7 +2110,7 @@ installkeg commitlint
 #
 # https://github.com/composer/composer
 #
-instalkeg composer
+installkeg composer
 
 #
 # Cordova CLI
