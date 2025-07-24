@@ -191,7 +191,7 @@ function isCLAppInstalled {
 # @param the package name
 #
 function installPythonPackage {
-    local package=$(pip list | grep "$1")
+    local package=$(pip list | grep -i "$1")
 
     if [[ -n "$package" ]]; then
         echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
@@ -207,7 +207,7 @@ function installPythonPackage {
 # @param the application name
 #
 function installPythonApp {
-    local package=$(pipx list | grep "$1")
+    local package=$(pipx list | grep -i "$1")
 
     if [[ -n "$package" ]]; then
         echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
