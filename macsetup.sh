@@ -14,7 +14,7 @@ source $HOME/.zshrc
 #########################
 
 email="hi@fred.dev"
-workemail="fred@kubeshop.io"
+workemail="frederic.harper@tiugotech.io"
 username="fharper"
 
 #
