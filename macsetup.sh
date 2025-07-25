@@ -719,6 +719,15 @@ fi
 installPythonApp lastversion
 
 #
+# gsed
+#
+# GNU sed which support extended regular expressions
+#
+# https://www.gnu.org/software/sed/
+#
+installkeg gsed
+
+#
 # macports-base
 #
 # MacPorts CLI
@@ -3529,15 +3538,6 @@ fi
 # https://github.com/kohler/gifsicle
 #
 installkeg gifsicle
-
-#
-# gsed
-#
-# GNU sed which support extended regular expressions
-#
-# https://www.gnu.org/software/sed/
-#
-installkeg gsed
 
 #
 # Homebrew Command Not Found
