@@ -1218,7 +1218,6 @@ fi
 # Notes: if there is any error when loading it with the settings, check https://github.com/espanso/espanso/issues/1059
 #
 if [[ "$(isAppInstalled Espanso)" = "false" ]]; then
-    brew tap espanso/espanso
     installcask espanso
     giveAccessibilityPermission Espanso
     restoreAppSettings espanso
