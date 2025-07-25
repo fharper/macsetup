@@ -530,7 +530,7 @@ function installAsdfPlugin {
         return 1
     else
         echo $fg[blue]"Installing the asdf plugin $1 & its version $2"$reset_color
-        asdf plugin-add $1
+        asdf plugin add $1
         asdf install $1 $2
         reload
     fi
