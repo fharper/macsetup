@@ -1990,7 +1990,9 @@ installkeg actionlint
 #
 # https://github.com/cosmtrek/air
 #
-installGoApp air latest
+if [[ "$(isCLAppInstalled air)" = "false" ]]; then
+    installGoApp github.com/air-verse/air latest
+fi
 
 #
 # ajv-cli
