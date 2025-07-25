@@ -1190,8 +1190,8 @@ fi
 #
 if [[ "$(isAppInstalled CommandQ)" = "false" ]]; then
     installcask commandq
-    getLicense CommandQ
     open -a CommandQ
+    getLicense CommandQ
 fi
 
 #
