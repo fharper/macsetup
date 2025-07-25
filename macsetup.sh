@@ -861,6 +861,19 @@ if [[ "$(isCLAppInstalled omz)" = "false" ]]; then
 fi
 
 #
+# Coreutils
+#
+# Basic file, shell and text manipulation utilities
+#
+# https://www.gnu.org/software/coreutils/
+#
+# Notes
+# - Needed for shuf, which is used in the espanso trigger "":randomtime"
+# - Needed for shuf, which is used in ranom quotes. So needed before it.
+#
+installkeg coreutils
+
+#
 # starship
 #
 # The minimal, blazing-fast, and infinitely customizable prompt for any shell
@@ -3401,21 +3414,11 @@ cargo install ccase
 # https://github.com/ryanoasis/nerd-fonts
 #
 if [[ "$(isCLAppInstalled colorls)" = "false" ]]; then
+    brew install openssl@1.1
+    #Make an install Ruby app.
     gem install colorls
     installcask font-hack-nerd-font
 fi
-
-#
-# Coreutils
-#
-# Basic file, shell and text manipulation utilities
-#
-# https://www.gnu.org/software/coreutils/
-#
-# Notes
-# - Needed for shuf, which is used in the espanso trigger "":randomtime"
-#
-installkeg coreutils
 
 #
 # Coursera Downloader
