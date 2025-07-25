@@ -728,6 +728,15 @@ installPythonApp lastversion
 installkeg gsed
 
 #
+# Go
+#
+# Go programming language
+#
+# https://golang.org
+#
+installAsdfPlugin golang 1.24.5
+
+#
 # macports-base
 #
 # MacPorts CLI
@@ -2422,15 +2431,6 @@ installkeg gitleaks
 # https://www.gnu.org/software/sed/
 #
 installkeg gnu-sed
-
-#
-# Go
-#
-# Go programming language
-#
-# https://golang.org
-#
-installAsdfPlugin golang 1.23.2
 
 #
 # go-jira
