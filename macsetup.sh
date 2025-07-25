@@ -737,6 +737,15 @@ installkeg gsed
 installAsdfPlugin golang 1.24.5
 
 #
+# Gum
+#
+# Utils for Shell Scripts
+#
+# https://github.com/charmbracelet/gum
+#
+installkeg gum
+
+#
 # macports-base
 #
 # MacPorts CLI
@@ -2521,15 +2530,6 @@ installkeg grip
 # https://github.com/gulpjs/gulp-cli
 #
 installkeg gulp-cli
-
-#
-# Gum
-#
-# Utils for Shell Scripts
-#
-# https://github.com/charmbracelet/gum
-#
-installkeg gum
 
 #
 # Hadolint
