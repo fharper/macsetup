@@ -1184,7 +1184,7 @@ fi
 #
 # CommandQ
 #
-# Utility to prevent accidentally quiting an application
+# Utility to prevent accidentally quitting an application
 #
 # https://commandqapp.com
 #
