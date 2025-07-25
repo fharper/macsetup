@@ -219,21 +219,12 @@ function installPythonApp {
 }
 
 #
-# Overwrite of the sudo command to give more context on why it's needed within the script
+# Display why sudo is needed so it's clear to the user
 #
 # @param the command to be executed with sudo
 #
 function sudo {
-    local needpass=$(/usr/bin/sudo -nv 2>&1 | grep "Input required")
-    #For whatever reason, chalk doesn't play well with $@,
-    # but is fine if the value is stored in another variable
-    local command=$@
-
-    if [[ "$needpass" ]]; then
-        echo $fg[blue]"The script need to use root (sudo) to run the $fg[green]$command$fg[blue] command"$reset_color
-    else
-        echo $fg[blue]"Using previously root (sudo) access to run the $fg[green]$command$fg[blue] command"$reset_color
-    fi
+    echo $fg[blue]"The script need to use root (sudo) to run the $fg[green]$@$fg[blue] command"$reset_color
     /usr/bin/sudo $@
 }
 
