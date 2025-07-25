@@ -1786,13 +1786,8 @@ installkeg macos-trash
 #
 # https://getmumu.com
 #
-# Notes
-#  - Need to install manually as Mumu X is not in Hombrew (just Mumu)
-#
 if [[ "$(isAppInstalled "Mumu X")" = "false" ]]; then
-    echo $fg[blue]"Starting the installation of Mumu X"$reset_color
-    curl -L $(op item get "Mumu X" --fields label="download link") --output mumux.dmg
-    installDMG mumux.dmg true
+    installcask mumu-x
     loginitems -a "Mumu X"
     giveAccessibilityPermission "Mumu X"
 fi
