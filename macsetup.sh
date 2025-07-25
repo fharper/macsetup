@@ -1732,14 +1732,14 @@ if [[ "$(isAppInstalled "Google Chrome")" = "false" ]]; then
     defaults write com.google.Chrome DisablePrintPreview -bool true
     defbro com.google.Chrome
 
-    /Applications/Google\ Chrome/Contents/MacOS/Google\ Chrome "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
-    pausethescript "Authorize Dropbox for Violentmonkey sync before continuing"
+    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
+    pausethescript "Under the Settings menu and Sync section, authorize Dropbox for Violentmonkey sync before continuing"
 
     /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/manage.html#stylus-options"
-    pausethescript "Authorize Dropbox for Stylus sync before continuing"
+    pausethescript "Under the 'Sync to Cloud Section', authorize Dropbox for Stylus sync before continuing"
 
     /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "chrome-extension://pncfbmialoiaghdehhbnbhkkgmjanfhe/pages/options.html"
-    pausethescript "Authorize Dropbox for uBlacklist sync before continuing"
+    pausethescript "Under the Sync section, authorize Dropbox for uBlacklist sync before continuing"
 
     duti -s com.google.Chrome com.compuserve.gif all #GIF (Image)
 
