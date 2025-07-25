@@ -2022,7 +2022,7 @@ fi
 #
 # https://github.com/angular/angular
 #
-installNodePackages @angular/cli
+installkeg angular-cli
 
 #
 # argo
