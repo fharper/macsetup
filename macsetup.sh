@@ -522,6 +522,8 @@ function installRustApp {
 # @param plugin name
 # @param version of the plugin to instal
 #
+# Notes: the global is not set in stone.tool-versions in the home directory
+#
 function installAsdfPlugin {
     if [[ $(asdf current $1) ]]; then
         echo $fg[green]"Skipped asdf plugin $fg[blue]$1$fg[green] already installed"$reset_color
@@ -530,7 +532,6 @@ function installAsdfPlugin {
         echo $fg[blue]"Installing the asdf plugin $1 & its version $2"$reset_color
         asdf plugin-add $1
         asdf install $1 $2
-        asdf global $1 $2
         reload
     fi
 }
