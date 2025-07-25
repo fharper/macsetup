@@ -770,16 +770,10 @@ fi
 # https://github.com/kcrawford/dockutil
 #
 # Notes
-#  - Homebrew version not updated
 #  - Needed before iTerm2
 #  - Cannot be added to apps.yml for now as it doesn't manage custom installation check
 #
-if [[ "$(isCLAppInstalled dockutil)" = "false" ]]; then
-    echo $fg[blue]"Starting the installation of Dockutil"$reset_color
-    curl -L "$(lastversion kcrawford/dockutil --assets)" --output dockutil.pkg
-    sudo installer -pkg dockutil.pkg -target /
-    rm dockutil.pkg
-fi
+installkeg dockutil
 
 #
 # iTerm2
