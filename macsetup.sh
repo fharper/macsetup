@@ -1915,6 +1915,8 @@ fi
 if [[ "$(isAppInstalled "Visual Studio Code")" = "false" ]]; then
     installcask visual-studio-code
     dockutil --add /Applications/Visual\ Studio\ Code.app/ --allhomes
+    code
+    pausethescript "Click on the user icon, choose 'Backup and Sync Settings...' and Sign In using GitHub."
 
     npm config set editor code
 
