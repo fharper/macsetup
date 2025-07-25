@@ -1324,9 +1324,7 @@ fi
 #
 # https://manytricks.com/moom
 #
-if [[ "$(isAppInstalled Moom)" = "false" ]]; then
-INSTALL FROM DMG DOWNLOAD LINK FROM THEIR WEBSITE
-fi
+installkeg moom
 
 #
 # Spaced
