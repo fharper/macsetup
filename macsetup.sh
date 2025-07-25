@@ -1764,7 +1764,7 @@ fi
 #
 # https://github.com/sindresorhus/macos-trash
 #
-brew install macos-trash
+installkeg macos-trash
 
 #
 # Mumu X
