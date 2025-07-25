@@ -568,9 +568,6 @@ function getmacOSCodename {
 }
 
 
-
-
-
 ############################
 #                          #
 # Utils to run this script #
