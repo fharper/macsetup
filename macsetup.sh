@@ -1856,7 +1856,7 @@ if [[ "$(isAppInstalled rain)" = "false" ]]; then
     curl -L https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
     unzip rain.zip
     rm rain.zip
-    rm -rf __MACOSX #created by the unzip call
+    rm __MACOSX #created by the unzip call
     mv rain.app /Applications
     loginitems -a Rain
 fi
