@@ -1335,7 +1335,7 @@ installkeg moom
 #
 # Notes: Useful to replace a Bartender feature as Ice as it doesn't have that option yet
 #
-installFromAppStore 1666327168
+installFromAppStore "Spaced" 1666327168
 
 #
 # The Clock
