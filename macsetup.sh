@@ -804,7 +804,7 @@ fi
 #
 # Notes: needed before Oh My Zsh as .zhrc have some git usage in it
 #
-if [[brew list git 2>&1 | grep "No such keg"]]; then
+if [[ $(brew list git 2>&1 | grep "No such keg") ]]; then
     installkeg git
     git config --replace-all --global advice.addIgnoredFile false
     git config --replace-all --global advice.addEmptyPathspec false
