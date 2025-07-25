@@ -454,6 +454,8 @@ function removeApp {
     if [[ "$app" ]]; then
         echo $fg[blue]"Removing $1 from your computer."$reset_color
         sudo rm -rf "$app"
+    else
+        echo $fg[green]"Skipped removing $fg[blue]$1$fg[green] has it's already deleted"$reset_color  >&2
     fi
 }
 
