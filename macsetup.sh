@@ -1311,8 +1311,9 @@ installcask meetingbar
 #
 # https://getmicdrop.com
 #
-if [[ "$(isAppInstalled Moom)" = "false" ]]; then
+if [[ "$(isAppInstalled "Mic Drop")" = "false" ]]; then
     installcask mic-drop
+    open -a "Mic Drop"
     getLicense "Mic Drop"
 fi
 
