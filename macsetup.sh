@@ -1963,7 +1963,7 @@ displaySection "Developer stuff"
 #
 # https://github.com/dotnet/core
 #
-installAsdfPlugin dotnet-core 7.0.305
+installAsdfPlugin dotnet-core 9.0.303
 
 #
 # Act
