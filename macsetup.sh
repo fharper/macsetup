@@ -552,7 +552,7 @@ function installGoApp {
             version="latest"
         fi
 
-        echo $fg[blue]"Installing the version $version of the Go application $1"$reset_color
+        echo $fg[blue]"Installing the version $fg[green]$version$fg[blue] of the Go application $fg[green]$1"$reset_color
         go install "$1"@"$version"
         asdf reshim golang
     fi
