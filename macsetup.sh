@@ -905,8 +905,8 @@ installkeg mas
 #
 if [[ "$(isAppInstalled Xcode)" = "false" ]]; then
     installFromAppStore XCode 497799835
-    sudo xcodebuild -license accept
-    xcodebuild -runFirstLaunch
+    sudo /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -license accept
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -runFirstLaunch
     restoreAppSettings Xcode
 fi
 
