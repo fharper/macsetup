@@ -1877,6 +1877,7 @@ if [[ "$(isAppInstalled Slack)" = "false" ]]; then
       open "$slack"
       pausethescript "Sign in this Slack community: $slack"
     done
+    pausethescript "Do CMD + Shift + S in Slack to show all workspaces permanently on the sidebar"
 fi
 
 #
