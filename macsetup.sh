@@ -1161,7 +1161,9 @@ fi
 #
 # https://github.com/raphaelhanneken/apple-juice
 #
-installcask apple-juice
+if [[ "$(isAppInstalled "Apple Juice")" = "false" ]]; then
+    installcask apple-juice
+fi
 
 #
 # CleanShot X
