@@ -665,34 +665,45 @@ if [[ "$(isCLAppInstalled asdf)" = "false" ]]; then
 fi
 
 #
-# Python + PipX + Wheel + Pylint + pytest + Twine
+# Python + Wheel + Pylint + pytest + Twine
 #
 # Python SDK
-# Isolated Environments Pip alternative for app (not packages)
 # Python wheel packaging tool
 # Python linter
 # Python tests framework
 # Utilities for interacting with PyPI
 #
 # https://www.python.org
-# https://github.com/pypa/pipx
 # https://github.com/pypa/wheel
 # https://github.com/PyCQA/pylint/
 # https://github.com/pytest-dev/pytest
 # https://github.com/pypa/twine/
 #
 # Notes
-#   - Needed before lastversion
+#   - Needed before PipX
 #
 if [[ ! $(asdf current python) ]]; then
     installAsdfPlugin python 3.13.5
 
-    installkeg pipx
-    pipx ensurepath
     installPythonPackage wheel
     installPythonApp pylint
     installPythonApp pytest
     installPythonApp twine
+#fi
+
+#
+# PipX
+#
+# Isolated Environments Pip alternative for app (not packages)
+#
+# https://github.com/pypa/pipx
+#
+# Notes
+#   - Needed before lastversion
+#
+if [[ "$(isCLAppInstalled pipx)" = "false" ]]; then
+    installkeg pipx
+    pipx ensurepath
 fi
 
 #
