@@ -964,18 +964,27 @@ fi
 installkeg mysides
 
 #
-# Node.js + npm CLI
+# Node.js
 #
 # Node.js programming language SDK
-# Node Package Manager CLI
 #
 # https://github.com/nodejs/node
+#
+# Notes: install before npm
+#
+installAsdfPlugin nodejs 24.4.1
+
+#
+# npm
+#
+# Node Package Manager CLI
+#
 # https://github.com/npm/cli
 #
-if [[ ! $(asdf current nodejs) ]]; then
-    installAsdfPlugin nodejs 23.9.0
-
-    npm i -g npm@latest
+# Notes: install before npm
+#
+# Check if npm whoami is fharper
+if [[ "$(isCLAppInstalled npm)" = "false" ]]; then
     npm adduser
 fi
 
