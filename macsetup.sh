@@ -892,11 +892,7 @@ fi
 #
 # Notes: Need to install before Xcode
 #
-if [[ "$(isCLAppInstalled mas)" = "false" ]]; then
-    installkeg mas
-    open -a "App Store"
-    pausethescript "Sign in into the App Store before continuing"
-fi
+installkeg mas
 
 #
 # Xcode
