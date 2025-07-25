@@ -2962,50 +2962,15 @@ installcask pgadmin4
 # Parser generator
 # https://www.gnu.org/software/bison/
 #
-# GMP
-# GNU multiple precision arithmetic library
-# https://gmplib.org
-#
-# ICU
-# C/C++ and Java libraries for Unicode and globalization
-# https://icu.unicode.org
-#
-# LibGD
-# Graphics library to dynamically manipulate images
-# https://libgd.github.io
-#
-# libiconv
-# Conversion library
-# https://www.gnu.org/software/libiconv/
-#
-# libzip
-# C library for reading, creating, and modifying zip archives
-# https://libzip.org
-#
-# pkg-config
-# Manage compile and link flags for libraries
-# https://freedesktop.org/wiki/Software/pkg-config/
-#
 # re2c
 # Generate C-based recognizers from regular expressions
 # https://re2c.org
 #
-# Sodium
-# NaCl networking and cryptography library
-# https://libsodium.org
-#
 if [[ ! $(asdf current php) ]]; then
     installkeg bison
-    installkeg gmp
-    installkeg icu4c
-    installkeg libgd
-    installkeg libiconv
-    installkeg libzip
-    installkeg pkg-config
     installkeg re2c
-    installkeg libsodium
 
-    installAsdfPlugin php 8.3.0
+    installAsdfPlugin php 8.4.10
 fi
 
 #
