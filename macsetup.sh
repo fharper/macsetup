@@ -423,6 +423,9 @@ function removeAppFromDock {
     if [[ $(dockutil --list | grep "$1") ]]; then
         echo $fg[blue]"Removing $1 from the Dock. The Dock will flash, it's normal."$reset_color
         dockutil --remove "$1" --allhomes
+	sleep 2
+    else
+        echo $fg[green]"Skipped removing $fg[blue]$1$fg[green] has it's already deleted from the Dock"$reset_color  >&2
     fi
 }
 
