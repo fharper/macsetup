@@ -831,7 +831,6 @@ if [[ $(brew list git 2>&1 | grep "No such keg") ]]; then
     git config --replace-all --global user.name "Frédéric Harper"
 fi
 
-
 #
 # GitPython
 #
