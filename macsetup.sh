@@ -1240,7 +1240,9 @@ installkeg hstr
 #
 # https://github.com/jordanbaird/Ice
 #
-brew install --cask jordanbaird-ice
+if [[ "$(isAppInstalled Ice)" = "false" ]]; then
+    installcask jordanbaird-ice
+fi
 
 #
 # Karabiner-Elements
