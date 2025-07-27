@@ -1880,6 +1880,15 @@ if [[ "$(isAppInstalled Spotify)" = "false" ]]; then
 fi
 
 #
+# Thunderbird
+#
+# Mail client
+#
+# https://thunderbird.net
+#
+installcask thunderbird
+
+#
 # Todoist
 #
 # Todo app
