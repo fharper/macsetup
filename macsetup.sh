@@ -4928,4 +4928,4 @@ if [[ "$(isAppInstalled Monolingual)" = "false" ]]; then
     pausethescript "Use Monolingual to remove unused languages files before continuing"
 fi
 
-echo $fg[blue]"Everything has been installed & configured on you new laptop, congratulations!"$reset_color
+echo $fg[blue]"\nEverything has been installed & configured on you new laptop, congratulations!"$reset_color
