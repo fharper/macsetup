@@ -3958,7 +3958,6 @@ installFromAppStore "Actions" 1586435171
 #
 installFromAppStore "Affinity Designer" 824171161
 
-
 #
 # App Tamer
 #
