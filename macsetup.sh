@@ -4402,7 +4402,10 @@ fi
 #
 # https://www.messenger.com/desktop
 #
-installcask messenger
+if [[ "$(isAppInstalled "Messenger")" = "false" ]]; then
+    installcask messenger
+    dockutil --add /Applications/Messenger.app/ --allhomes
+fi
 
 #
 # Microsoft Edge
