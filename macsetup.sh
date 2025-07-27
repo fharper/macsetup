@@ -4595,18 +4595,6 @@ installFromAppStore "Parcel" 639968404
 installcask pika
 
 #
-# Pocket
-#
-# Save & read articles later
-#
-# https://getpocket.com
-#
-if [[ "$(isAppInstalled Pocket)" = "false" ]]; then
-    installFromAppStore Pocket 568494494
-    dockutil --add /Applications/Pocket.app/ --allhomes
-fi
-
-#
 # Pure Paste
 #
 # Paste as plain text by default
