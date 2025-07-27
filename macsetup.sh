@@ -4470,20 +4470,6 @@ fi
 #
 installcask nordvpn
 
-#
-# OBS Studio
-#
-# Live streaming & vide/screen recording
-#
-# https://github.com/obsproject/obs-studio
-#
-if [[ "$(isAppInstalled "OBS")" = "false" ]]; then
-    installcask obs
-    giveScreenRecordingPermission OBS
-    giveAccessibilityPermission OBS
-    #TODO: give Camera Permission
-    #TODO: give Microphone Permission
-fi
 
 #
 # One Thing
