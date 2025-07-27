@@ -1399,7 +1399,7 @@ defaults write com.apple.dock minimize-to-application -bool true
 defaults write com.apple.dock "orientation" -string "right"
 
 #
-# Show recent applications in Dock
+# Show suggested and recent apps in Dock
 #
 defaults write com.apple.dock show-recents -bool false
 
