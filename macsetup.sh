@@ -3959,19 +3959,6 @@ installFromAppStore "Actions" 1586435171
 installFromAppStore "Affinity Designer" 824171161
 
 #
-# AirBuddy
-#
-# Bluetooth devices battery monitoring & alerts
-#
-# https://airbuddy.app
-#
-if [[ "$(isAppInstalled "AirBuddy")" = "false" ]]; then
-    curl -L https://su.airbuddy.app/kCRSAmcjBc/AirBuddy_v2.7-624.dmg --output AirBuddy.dmg
-    installDMG AirBuddy.dmg true
-    getLicense AirBuddy
-fi
-
-#
 # Akai Pro MPC Beats
 #
 # Software for my AKAI Professional MPD218
