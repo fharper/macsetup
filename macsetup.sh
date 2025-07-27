@@ -2973,7 +2973,9 @@ installAsdfPlugin perl 5.42.0
 #
 # https://github.com/pgadmin-org/pgadmin4
 #
-installcask pgadmin4
+if [[ "$(isAppInstalled "pgAdmin 4")" = "false" ]]; then
+    installcask pgadmin4
+fi
 
 #
 # PHP
