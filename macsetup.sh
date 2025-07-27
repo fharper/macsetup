@@ -4039,13 +4039,14 @@ fi
 # https://github.com/kovidgoyal/calibre
 # https://github.com/noDRM/DeDRM_tools
 #
+# Split them
 if [[ "$(isAppInstalled calibre)" = "false" ]]; then
     installcask calibre
 
     curl -L "$(lastversion noDRM/DeDRM_tools --assets)" --output Calibre-DeDRM.zip
     unzip Calibre-DeDRM.zip "DeDRM_plugin.zip"
     rm Calibre-DeDRM.zip
-    rm -rf __MACOSX #created by the unzip call
+    /bin/rm -rf __MACOSX #created by the unzip call
 
     open -a Calibre
     open .
