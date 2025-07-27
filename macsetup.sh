@@ -3781,9 +3781,10 @@ installkeg ripgrep
 #
 # https://github.com/ABridoux/scout
 #
+# Notes: need to be installed with the tap since there is another one with the same name
+#
 if [[ "$(isCLAppInstalled scout)" = "false" ]]; then
-    brew tap ABridoux/formulae
-    installkeg scout
+    installkeg abridoux/formulae/scout
 fi
 
 #
