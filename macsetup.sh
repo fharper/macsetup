@@ -3072,7 +3072,7 @@ installkeg react-native-cli
 #
 # https://github.com/rust-lang/rust
 #
-installAsdfPlugin rust 1.75.0
+installAsdfPlugin rust 1.88.0
 
 #
 # S3cmd
