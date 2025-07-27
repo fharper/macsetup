@@ -1148,6 +1148,7 @@ if [[ "$(isAppInstalled "Alfred 5")" = "false" ]]; then
     giveFullDiskAccessPermission "Alfred 5"
     #TODO: add Contacts Permission
     #TODO: add Automation Permission
+    pausethescript "In Alfred preferences, go to the Advanced, and set the syncing preferences folder in the iCloud Alfred folder."
     installNodePackages alfred-google-translate
     installNodePackages alfred-language-configuration
     pbcopy "trc en&fr"
