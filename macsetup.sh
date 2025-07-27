@@ -665,31 +665,18 @@ if [[ "$(isCLAppInstalled asdf)" = "false" ]]; then
 fi
 
 #
-# Python + Wheel + Pylint + pytest + Twine
+# Python
 #
 # Python SDK
-# Python wheel packaging tool
-# Python linter
-# Python tests framework
-# Utilities for interacting with PyPI
 #
 # https://www.python.org
-# https://github.com/pypa/wheel
-# https://github.com/PyCQA/pylint/
-# https://github.com/pytest-dev/pytest
-# https://github.com/pypa/twine/
 #
 # Notes
 #   - Needed before PipX
 #
 if [[ ! $(asdf current python) ]]; then
     installAsdfPlugin python 3.13.5
-
-    installPythonPackage wheel
-    installPythonApp pylint
-    installPythonApp pytest
-    installPythonApp twine
-#fi
+fi
 
 #
 # PipX
