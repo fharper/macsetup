@@ -5044,6 +5044,7 @@ displaySection "Dock Applications Order"
 
 echo $fg[blue]"The Dock will restart a couple of time, giving a flashing impression: it's normal\n"$reset_color
 dockutil --move 'Google Chrome' --position end --allhomes
+dockutil --move 'Thunderbird' --position end --allhomes
 dockutil --move 'Notion' --position end --allhomes
 dockutil --move 'Todoist' --position end --allhomes
 dockutil --move 'Slack' --position end --allhomes
