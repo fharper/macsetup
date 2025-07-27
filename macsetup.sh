@@ -2633,7 +2633,7 @@ installkeg ios-deploy
 #
 # https://openjdk.org
 #
-installAsdfPlugin java openjdk-19.0.2
+installAsdfPlugin java openjdk-24.0.2
 
 #
 # Jest
