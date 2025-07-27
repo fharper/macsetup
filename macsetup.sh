@@ -3046,6 +3046,15 @@ installkeg prettier
 installNodePackages puppeteer
 
 #
+# Pylint
+#
+# Python linter
+#
+# https://github.com/PyCQA/pylint/
+#
+installPythonApp pylint
+
+#
 # Ruby
 #
 # Ruby programming language
