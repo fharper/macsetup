@@ -4587,7 +4587,7 @@ fi
 #
 # https://sindresorhus.com/shareful
 #
-mas install 1522267256
+installFromAppStore Shareful 1522267256
 
 #
 # Signal
