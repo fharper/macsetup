@@ -3267,6 +3267,15 @@ installNodePackages hint
 installkeg webpack
 
 #
+# Wheel
+#
+# Python wheel packaging tool
+#
+# https://github.com/pypa/wheel
+#
+installPythonPackage wheel
+
+#
 # woff2
 #
 # woff2 fonts tools
