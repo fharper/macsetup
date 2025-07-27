@@ -2586,6 +2586,17 @@ if [[ "$(isCLAppInstalled helm)" = "false" ]]; then
 fi
 
 #
+# http-server
+#
+# HTTP server
+#
+# https://github.com/http-party/http-server
+#
+# Notes: I prefer to use caddy, but needed for TinyMCE blog articles
+#
+installkeg http-server
+
+#
 # Hukum
 #
 # Displays Github Action live progress in the terminal
