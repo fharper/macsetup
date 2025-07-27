@@ -3054,7 +3054,7 @@ installNodePackages puppeteer
 #
 # https://github.com/ruby/ruby
 #
-installAsdfPlugin ruby 3.2.2
+installAsdfPlugin ruby 3.4.5
 
 #
 # React Native CLI
