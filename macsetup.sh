@@ -4315,14 +4315,6 @@ if [[ "$(isAppInstalled "Insta360 Link Controller")" = "false" ]]; then
     installPKG Insta360LinkController.pkg
 fi
 
-#
-# Jiffy
-#
-# Gif in your menubar
-#
-# https://sindresorhus.com/jiffy
-#
-installFromAppStore Jiffy 1502527999
 
 #
 # Keybase
