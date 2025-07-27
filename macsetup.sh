@@ -2210,6 +2210,17 @@ fi
 installkeg delve
 
 #
+# DB Browser for SQLite
+#
+# SQLite database browser GUI
+#
+# https://github.com/sqlitebrowser/sqlitebrowser
+#
+if [[ "$(isAppInstalled "DB Browser for SQLite")" = "false" ]]; then
+    installcask db-browser-for-sqlite
+fi
+
+#
 # Deno
 #
 # deno programming language (runtime)
