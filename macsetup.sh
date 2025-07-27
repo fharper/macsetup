@@ -4550,16 +4550,6 @@ installFromAppStore "Pure Paste" 1611378436
 # https://iqr.hrubasko.com
 #
 installFromAppStore "QR Capture" 1369524274
-
-#
-# Quitter
-#
-# Automatically hides or quits apps after periods of inactivity
-#
-# https://marco.org/apps#quitter
-#
-installcask quitter
-
 #
 # RansomWhere?
 #
