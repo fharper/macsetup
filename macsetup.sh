@@ -4518,6 +4518,17 @@ fi
 mas install "One Thing" 1604176982
 
 #
+# OpenVPN Connect
+#
+# OpenVPN Client
+#
+# https://openvpn.net/client/
+#
+# Notes: Needed at Tiugo
+#
+installcask openvpn-connect
+
+#
 # Opera
 #
 # Browser
