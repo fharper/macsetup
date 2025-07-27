@@ -2961,7 +2961,7 @@ installNodePackages ibm-openapi-validator
 #
 # https://github.com/Perl/perl5
 #
-installAsdfPlugin perl 5.36.1
+installAsdfPlugin perl 5.42.0
 
 #
 # pgAdmin 4
