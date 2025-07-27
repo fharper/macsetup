@@ -4080,7 +4080,7 @@ fi
 #
 # https://sindresorhus.com/command-x
 #
-mas install 6448461551
+installkeg command-x
 
 #
 # Cryptomator & macFUSE
