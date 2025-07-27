@@ -4605,7 +4605,9 @@ installcask signal
 #
 # https://github.com/michelf/sim-daltonism/
 #
-installcask sim-daltonism
+if [[ "$(isAppInstalled "Sim Daltonism")" = "false" ]]; then
+    installcask sim-daltonism
+fi
 
 #
 # Sloth
