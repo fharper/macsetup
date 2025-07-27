@@ -4748,6 +4748,7 @@ fi
 #
 if [[ "$(isAppInstalled Vivid)" = "false" ]]; then
     installcask vivid
+    open -a Vivid
     getLicense Vivid
 fi
 
