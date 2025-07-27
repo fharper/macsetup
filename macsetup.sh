@@ -3340,7 +3340,7 @@ fi
 #
 # https://github.com/yeoman/yeoman
 #
-installNodePackages yo
+installkeg yo
 
 #
 # yq
