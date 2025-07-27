@@ -3408,7 +3408,7 @@ fi
 #
 # https://github.com/nadermx/backgroundremover
 #
-installPythonApp backgroundremover
+installkeg backgroundremover
 
 #
 # Bandwhich
