@@ -1389,7 +1389,7 @@ fi
 displaySection "Dock & Menu Bar Configurations"
 
 #
-# Minimize window into application icon
+# Minimize windows into application icon
 #
 defaults write com.apple.dock minimize-to-application -bool true
 
