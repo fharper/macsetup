@@ -2581,7 +2581,6 @@ if [[ "$(isCLAppInstalled helm)" = "false" ]]; then
     helm repo add portainer https://portainer.github.io/k8s
     helm repo add robusta https://robusta-charts.storage.googleapis.com
     helm repo add yourls https://charts.yourls.org
-    helm repo add yugabytedb https://charts.yugabyte.com
 
     helm repo update
 fi
