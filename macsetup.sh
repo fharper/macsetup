@@ -4648,19 +4648,6 @@ if [[ "$(isAppInstalled stats)" = "false" ]]; then
     restoreAppSettings stats
 fi
 
-#
-# SwiftDefaultApps
-#
-# Change default application with URI Scheme and/or filetype in macOS
-#
-# https://github.com/Lord-Kamina/SwiftDefaultApps
-#
-# Notes:
-# - Using it for default things like default application for emails. File type are handled with duti for automation
-#
-if [[ -d "$HOME/Library/PreferencePanes/SwiftDefaultApps.prefpane/" ]]; then
-    installcask swiftdefaultappsprefpane
-fi
 
 #
 # TeamViewer
