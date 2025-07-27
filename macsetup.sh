@@ -4066,6 +4066,15 @@ fi
 installcask captin
 
 #
+# ChatGPT
+#
+# Generative AI chatbot
+#
+# https://chatgpt.com
+#
+installcask chatgpt
+
+#
 # Chromium Ungoogled
 #
 # Chromium without Google stuff
