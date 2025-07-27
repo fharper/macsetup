@@ -2275,6 +2275,19 @@ installkeg dive
 installcask docker
 
 #
+# doctl
+#
+# DigitalOcean CLI
+#
+# https://github.com/digitalocean/doctl
+#
+if [[ "$(isCLAppInstalled doctl)" = "false" ]]; then
+    installkeg doctl
+    doctl auth init
+    #copy CLI token from 1p before auth
+fi
+
+#
 # ESLint
 # ESLint Formatter Pretty
 # ESLint plugins:
@@ -2327,18 +2340,6 @@ installNodePackages eslint-plugin-i18n
 installNodePackages eslint-plugin-jsdoc
 installNodePackages eslint-plugin-json
 installNodePackages eslint-plugin-mdx
-
-#
-# doctl
-#
-# DigitalOcean CLI
-#
-# https://github.com/digitalocean/doctl
-#
-if [[ "$(isCLAppInstalled doctl)" = "false" ]]; then
-    installkeg doctl
-    doctl auth init
-fi
 
 #
 # Expo CLI
