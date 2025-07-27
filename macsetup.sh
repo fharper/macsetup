@@ -2914,7 +2914,9 @@ fi
 #
 # https://github.com/thomasnordquist/MQTT-Explorer
 #
-installcask mqtt-explorer
+if [[ "$(isAppInstalled "MQTT Explorer")" = "false" ]]; then
+    installcask mqtt-explorer
+fi
 
 #
 # MySQL Workbench
