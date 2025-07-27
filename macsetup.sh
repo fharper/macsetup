@@ -4473,7 +4473,9 @@ installcask nordvpn
 #
 # Notes: Needed at Tiugo
 #
-installcask openvpn-connect
+if [[ "$(isAppInstalled "OpenVPN Connect")" = "false" ]]; then
+    installcask openvpn-connect
+fi
 
 #
 # Opera
