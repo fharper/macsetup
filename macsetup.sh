@@ -4350,7 +4350,9 @@ installcask keycastr
 #
 # https://www.amazon.ca/b?ie=UTF8&node=2972705011
 #
-installFromAppStore "Kindle" 302584613
+if [[ "$(isAppInstalled "Amazon Kindle")" = "false" ]]; then
+    installFromAppStore "Kindle" 302584613
+fi
 
 #
 # Logi Options+
