@@ -3402,7 +3402,7 @@ if [[ "$(isCLAppInstalled asimov)" = "false" ]]; then
 fi
 
 #
-# backgroundremover
+# BackgroundRemover
 #
 # Image & video background remover
 #
