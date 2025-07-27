@@ -4395,6 +4395,7 @@ if [ ! -d "/Library/Application Support/Logitech.localized/Logitech Presentation
     #TODO: add Input Monitoring Permissions
     #TODO: add Accessibility Permissions
 fi
+
 #
 # Messenger
 #
