@@ -4580,15 +4580,6 @@ if [[ "$(isAppInstalled "Raspberry Pi Imager")" = "false" ]]; then
 fi
 
 #
-# Remote Desktop
-#
-# Access Windows computers remotely
-#
-# https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac
-#
-installcask microsoft-remote-desktop
-
-#
 # Shareful
 #
 # Add additional options to the macOS share menu
