@@ -4776,15 +4776,6 @@ fi
 installcask whatsapp
 
 #
-# WiFi Explorer Lite
-#
-# Wifi discovery and analysis tool
-#
-# https://www.intuitibits.com/products/wifiexplorer/
-#
-installFromAppStore "WiFi Explorer Lite" 1408727408
-
-#
 # Zen Browser
 #
 # Browser
