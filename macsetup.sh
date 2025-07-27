@@ -4362,15 +4362,6 @@ installcask keycastr
 installFromAppStore "Kindle" 302584613
 
 #
-# KnockKnock
-#
-# Enumerate persistently installed softwares
-#
-# https://github.com/objective-see/knockknock
-#
-installcask knockknock
-
-#
 # Logi Options+
 #
 # Logitech Mouse Configurations App
