@@ -3947,18 +3947,6 @@ displaySection "Applications"
 installFromAppStore "Actions" 1586435171
 
 #
-# Affinity Designer
-#
-# Vector Graphics Design Tool
-#
-# https://affinity.serif.com/en-us/designer
-#
-# Notes:
-#  - Homebrew version is Affinity Designer 2, which needs a subscription
-#
-installFromAppStore "Affinity Designer" 824171161
-
-#
 # App Tamer
 #
 # CPU Throttling Tool
