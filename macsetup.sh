@@ -3530,18 +3530,6 @@ installNodePackages file-icon-cli
 installkeg ghostscript
 
 #
-# GHunt
-#
-# Google OSINT tool
-#
-# https://github.com/mxrch/GHunt
-#
-if [[ "$(isCLAppInstalled ghunt)" = "false" ]]; then
-    installPythonApp ghunt
-    ghunt login
-fi
-
-#
 # gifsicle
 #
 # Create, manipulate, and optimize GIF images and animations
