@@ -4368,11 +4368,11 @@ if [[ "$(isAppInstalled logioptionsplus)" = "false" ]]; then
 
     unzip logitech.zip
     rm logitech.zip
-    rm -rf __MACOSX #created by the unzip call
+    /bin/rm -rf __MACOSX #created by the unzip call
 
     open logioptionsplus_installer.app
     pausethescript "Wait for Logi Options+ installation to finish before continuing"
-    rm -rf logioptionsplus_installer.app
+    /bin/rm -rf logioptionsplus_installer.app
 fi
 
 #
