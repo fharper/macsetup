@@ -1755,6 +1755,7 @@ fi
 #
 if [[ "$(isAppInstalled "Home Assistant")" = "false" ]]; then
     installcask home-assistant
+    dockutil --add /Applications/Home Assistant.app/ --allhomes
 fi
 
 #
