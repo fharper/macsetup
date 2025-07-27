@@ -4506,16 +4506,6 @@ if [[ "$(isAppInstalled "Opera GX")" = "false" ]]; then
     open -a "Opera GX"
     /Applications/Opera\ GX.app/Contents/MacOS/Opera https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
 fi
-
-#
-# OverSight
-#
-# Monitor the microphone & webcam
-#
-# https://github.com/objective-see/OverSight
-#
-installcask oversight
-
 #
 # Paprika Recipe Manager
 #
