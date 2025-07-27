@@ -4703,6 +4703,7 @@ fi
 #
 if [[ "$(isAppInstalled "Typora")" = "false" ]]; then
     installcask typora
+    open -a Typora
     getLicense Typora
 fi
 
