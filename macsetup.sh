@@ -2098,7 +2098,7 @@ installkeg caddy
 #
 # https://github.com/sgentle/caniuse-cmd
 #
-npm install -g caniuse-cmd
+installNodePackages caniuse-cmd
 
 #
 # Charles Proxy
