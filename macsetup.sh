@@ -4674,7 +4674,9 @@ fi
 #
 # https://github.com/TigerVNC/tigervnc
 #
-installcask tigervnc-viewer
+if [[ "$(isAppInstalled "TigerVNC Viewer 1.15.0")" = "false" ]]; then
+    installcask tigervnc-viewer
+fi
 
 #
 # TV
