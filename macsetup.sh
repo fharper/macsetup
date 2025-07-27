@@ -3192,6 +3192,15 @@ fi
 installkeg tfsec
 
 #
+# Twine
+#
+# Utilities for interacting with PyPI
+#
+# https://github.com/pypa/twine/
+#
+installPythonApp twine
+
+#
 # TypeScript
 #
 # JavaScript superset
