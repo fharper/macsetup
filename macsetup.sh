@@ -4315,6 +4315,7 @@ if [[ "$(isAppInstalled "Insta360 Link Controller")" = "false" ]]; then
     installPKGfromDMG Insta360LinkController.pkg
     installPKG Insta360LinkController.pkg
 fi
+
 #
 # Jiffy
 #
