@@ -1557,12 +1557,6 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 displaySection "Sound Configurations"
 
 #
-# Show volume in menu bar
-#
-open /System/Library/PreferencePanes/Sound.prefPane
-pausethescript "Uncheck 'Show Sound in menu bar' before continuing"
-
-#
 # Sound Effects - Play sound on startup
 #
 sudo nvram StartupMute=%01
