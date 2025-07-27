@@ -3645,7 +3645,7 @@ installNodePackages markmap-cli
 #
 # https://github.com/mermaid-js/mermaid-cli
 #
-installNodePackages mermaid-cli
+installkeg mermaid-cli
 
 #
 # Miller
