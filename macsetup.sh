@@ -526,10 +526,10 @@ function installRustApp {
 #
 function installAsdfPlugin {
     if [[ $(asdf current $1) ]]; then
-        echo $fg[green]"Skipped asdf plugin $fg[blue]$1$fg[green] already installed"$reset_color
+        echo $fg[green]"Skipped $fg[blue]asdf$fg[green] plugin $fg[blue]$1$fg[green] already installed"$reset_color
         return 1
     else
-        echo $fg[blue]"Installing the asdf plugin $1 & its version $2"$reset_color
+        echo $fg[blue]"Installing the $fg[blue]asdf$fg[green] plugin $1 & its version $2"$reset_color
         asdf plugin add $1
         asdf install $1 $2
         reload
