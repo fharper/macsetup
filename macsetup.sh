@@ -1886,7 +1886,10 @@ fi
 #
 # https://thunderbird.net
 #
-installcask thunderbird
+if [[ "$(isAppInstalled Thunderbird)" = "false" ]]; then
+    installcask thunderbird
+    dockutil --add /Applications/Thunderbird.app/ --allhomes
+fi
 
 #
 # Todoist
