@@ -4506,6 +4506,7 @@ if [[ "$(isAppInstalled "Opera GX")" = "false" ]]; then
     open -a "Opera GX"
     /Applications/Opera\ GX.app/Contents/MacOS/Opera https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
 fi
+
 #
 # Paprika Recipe Manager
 #
@@ -4550,6 +4551,7 @@ installFromAppStore "Pure Paste" 1611378436
 # https://iqr.hrubasko.com
 #
 installFromAppStore "QR Capture" 1369524274
+
 #
 # RansomWhere?
 #
