@@ -3610,7 +3610,10 @@ installkeg lzip
 #
 # https://github.com/acrogenesis/macchanger
 #
-installkeg acrogenesis/macchanger/macchanger
+if [[ "$(isCLAppInstalled macchanger)" = "false" ]]; then
+    brew tap acrogenesis/macchanger
+    installkeg macchanger
+fi
 
 #
 # macos-focus-mode
