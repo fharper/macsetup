@@ -4083,7 +4083,7 @@ fi
 installkeg command-x
 
 #
-# Cryptomator & macFUSE
+# Cryptomator
 #
 # Data encryption tool
 #
