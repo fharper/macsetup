@@ -2227,7 +2227,7 @@ fi
 #
 # https://github.com/denoland/deno
 #
-installAsdfPlugin deno 1.30.3
+installAsdfPlugin deno 2.4.2
 
 #
 # diff-so-fancy
