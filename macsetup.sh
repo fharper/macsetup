@@ -4773,18 +4773,6 @@ fi
 installcask whatsapp
 
 #
-# WhatsYourSign
-#
-# Finder menu to show files cryptographic signing information
-#
-# https://github.com/objective-see/WhatsYourSign
-#
-if [[ "$(isAppInstalled WhatsYourSign)" = "false" ]]; then
-    installcask whatsyoursign
-    open -a "/opt/homebrew/Caskroom/whatsyoursign/2.0.1/WhatsYourSign Installer.app"
-fi
-
-#
 # WiFi Explorer Lite
 #
 # Wifi discovery and analysis tool
