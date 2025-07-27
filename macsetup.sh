@@ -4630,15 +4630,6 @@ mas install 1522267256
 installcask signal
 
 #
-# Silicon
-#
-# Identify Applications Architecture
-#
-# https://github.com/DigiDNA/Silicon
-#
-installcask silicon
-
-#
 # Sim Daltonism
 #
 # Color blindness simulation
