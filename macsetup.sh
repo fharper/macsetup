@@ -4786,7 +4786,7 @@ if [[ "$(isAppInstalled "Zen")" = "false" ]]; then
     installcask zen-browser
 
     /Applications/Zen.app/Contents/MacOS/zen https://addons.mozilla.org/en-CA/firefox/addon/1password-x-password-manager/
-if
+fi
 
 
 #########
