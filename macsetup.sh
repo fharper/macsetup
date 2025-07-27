@@ -4016,18 +4016,6 @@ installFromAppStore "AutoMute" 1118136179
 installcask beardedspice
 
 #
-# BlockBlock
-#
-# Monitor persistence locations
-#
-# https://github.com/objective-see/BlockBlock
-#
-if [[ "$(isAppInstalled "BlockBlock Helper")" = "false" ]]; then
-    installcask blockblock
-    loginitems -a "BlockBlock Helper"
-fi
-
-#
 # Brave Browser
 #
 # Chromium based browser
