@@ -4216,7 +4216,7 @@ fi
 #
 # https://github.com/chocoford/ExcalidrawZ
 #
-if [[ "$(isCLAppInstalled ExcalidrawZ)" = "false" ]]; then
+if [[ "$(isAppInstalled ExcalidrawZ)" = "false" ]]; then
     curl -L "$(lastversion chocoford/ExcalidrawZ --assets)" --output excalidrawz.dmg
 
     installDMG excalidrawz.dmg true
