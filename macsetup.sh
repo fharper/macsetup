@@ -3110,10 +3110,8 @@ fi
 #
 # https://github.com/secretlint/secretlint
 #
-if [[ "$(isCLAppInstalled secretlint)" = "false" ]]; then
-    installNodePackages secretlint
-    installNodePackages @secretlint/secretlint-rule-preset-recommend
-fi
+installNodePackages secretlint
+installNodePackages @secretlint/secretlint-rule-preset-recommend
 
 #
 # ShellCheck
