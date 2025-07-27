@@ -3209,7 +3209,7 @@ installkeg vale
 #
 if [[ "$(isCLAppInstalled vercel)" = "false" ]]; then
     installkeg vercel-cli
-    vercel login $email
+    confirm "Do you want to log into Vercel now?" "vercel login $email"
 fi
 
 #
