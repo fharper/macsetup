@@ -3295,9 +3295,10 @@ installkeg woff2
 #
 # Notes: to list runtimes `xcodes runtimes`
 #
-if [[ "$(isCLAppInstalled xcodes)" = "false" ]]; then
-    installkeg xcodesorg/made/xcodes
-    xcodes runtimes install "iOS 17.4"
+if [[ "$(isCLIAppInstalled xcodes)" = "false" ]]; then
+    brew tap xcodesorg/made
+    installkeg xcodes
+    xcodes runtimes install "iOS 18.5"
 fi
 
 #
