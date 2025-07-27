@@ -2124,7 +2124,10 @@ fi
 #
 # https://www.cockroachlabs.com
 #
-installkeg cockroachdb/tap/cockroach-sql
+if [[ "$(isCLAppInstalled cockroach-sql)" = "false" ]]; then
+    brew tap cockroachdb/tap
+    installkeg cockroach-sql
+fi
 
 #
 # CocoaPods
