@@ -4580,15 +4580,6 @@ if [[ "$(isAppInstalled "Raspberry Pi Imager")" = "false" ]]; then
 fi
 
 #
-# ReiKey
-#
-# Persistent keyboard keystrokes listeners/intercepters scanner
-#
-# https://github.com/objective-see/ReiKey
-#
-installcask reikey
-
-#
 # Remote Desktop
 #
 # Access Windows computers remotely
