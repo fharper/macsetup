@@ -4470,16 +4470,6 @@ fi
 #
 installcask nordvpn
 
-
-#
-# One Thing
-#
-# Add text to menubar
-#
-# https://sindresorhus.com/one-thing
-#
-mas install "One Thing" 1604176982
-
 #
 # OpenVPN Connect
 #
