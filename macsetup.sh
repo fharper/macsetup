@@ -2904,7 +2904,9 @@ fi
 #
 # https://www.mongodb.com/products/compass
 #
-installcask mongodb-compass
+if [[ "$(isAppInstalled "MongoDB Compass")" = "false" ]]; then
+    installcask mongodb-compass
+fi
 
 #
 # MQTT Explorer
