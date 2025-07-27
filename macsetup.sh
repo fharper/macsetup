@@ -2541,8 +2541,6 @@ if [[ "$(isAppInstalled "GPG Keychain")" = "false" ]]; then
     gpg --import private.key
     pausethescript "Enter your passphrase to finish the import of your private PGP key before continuing"
     rm private.key
-    git config --replace-all --global user.signingkey 523390FAB896836F8769F6E1A3E03EE956F9208C
-    git config --replace-all --global commit.gpgsign true
 fi
 
 #
