@@ -3055,6 +3055,15 @@ installNodePackages puppeteer
 installPythonApp pylint
 
 #
+# pytest
+#
+# Python tests framework
+#
+# https://github.com/pytest-dev/pytest
+#
+installPythonApp pytest
+
+#
 # Ruby
 #
 # Ruby programming language
