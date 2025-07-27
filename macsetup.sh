@@ -1098,6 +1098,7 @@ displaySection "Top Helper Applications"
 #
 if [[ "$(isAppInstalled 1Password)" = "false" ]]; then
     installcask 1password
+    giveScreenRecordingPermission 1Password
     dockutil --add /Applications/1Password.app --allhomes
 fi
 
