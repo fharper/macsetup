@@ -610,15 +610,12 @@ if [[ $(xcode-select -p 1> /dev/null; echo $?) -eq 2 ]]; then
 fi
 
 #
-# Homebrew + homebrew-cask-versions + brew-cask-upgrade + Casks for Fonts
+# Homebrew + brew-cask-upgrade
 #
 # macOS package manager
-# Alternate versions of Homebrew Casks
 # CLI for upgrading outdated Homebrew Casks
-# Casks for Fonts
 #
 # https://github.com/Homebrew/brew
-# https://github.com/Homebrew/homebrew-cask-versions
 # https://github.com/buo/homebrew-cask-upgrade
 #
 # Notes
