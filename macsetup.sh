@@ -527,11 +527,10 @@ function installRustApp {
 # Notes: the global is not set in stone.tool-versions in the home directory
 #
 function installAsdfPlugin {
-    if [[ $(asdf current $1) ]]; then
+    if asdf plugin list | grep "$1" &>/dev/null; then
         echo $fg[green]"Skipped $fg[blue]asdf$fg[green] plugin $fg[blue]$1$fg[green] already installed"$reset_color
-        return 1
     else
-        echo $fg[blue]"Installing the $fg[blue]asdf$fg[green] plugin $1 & its version $2"$reset_color
+        echo $fg[blue]"Installing the $fg[green]asdf$fg[blue] plugin $fg[green]$1$fg[blue] version $fg[green]$2"$reset_color
         asdf plugin add $1
         asdf install $1 $2
         reload
