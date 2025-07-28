@@ -859,6 +859,20 @@ fi
 installkeg coreutils
 
 #
+# ZSH Random Quotes plugin
+#
+# Homemade random quotes plugin
+#
+# Not published yet
+#
+if [[ ! -d "/Users/fharper/.oh-my-zsh/plugins/random-quotes" ]]; then
+    echo $fg[blue]"Starting the installation of ZSH Random Quotes plugin"$reset_color
+    ln -s /Users/fharper/Documents/code/random-quotes /Users/fharper/.oh-my-zsh/plugins/
+else
+    echo $fg[green]"Skipped $fg[blue]ZSH Random Quotes plugin $fg[green]already installed"$reset_color
+fi
+
+#
 # starship
 #
 # The minimal, blazing-fast, and infinitely customizable prompt for any shell
