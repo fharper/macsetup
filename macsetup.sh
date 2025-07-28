@@ -4215,9 +4215,6 @@ installcask discord
 #
 # https://www.cleverfiles.com/
 #
-# Notes:
-#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
-#
 if [[ "$(isAppInstalled "Disk Drill")" = "false" ]]; then
     installcask disk-drill
 fi
@@ -4247,9 +4244,6 @@ installcask duckduckgo
 #
 # https://www.elgato.com/en/gaming/key-light
 #
-# Notes:
-#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
-#
 if [[ "$(isAppInstalled "Elgato Control Center")" = "false" ]]; then
     installcask elgato-control-center
 fi
@@ -4260,9 +4254,6 @@ fi
 # Elagto Stream Deck Configuration App
 #
 # https://www.elgato.com/en/gaming/stream-deck
-#
-# Notes:
-#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
 #
 if [[ "$(isAppInstalled "Elgato Stream Deck")" = "false" ]]; then
     installcask elgato-stream-deck
@@ -4478,9 +4469,6 @@ fi
 #
 # https://www.microsoft.com/en-us/edge
 #
-# Notes:
-#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
-#
 if [[ "$(isAppInstalled "Microsoft Edge")" = "false" ]]; then
     installcask microsoft-edge
 
@@ -4632,9 +4620,6 @@ fi
 #
 # https://github.com/raspberrypi/rpi-imager
 #
-# Notes:
-#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
-#
 if [[ "$(isAppInstalled "Raspberry Pi Imager")" = "false" ]]; then
     installcask raspberry-pi-imager
 fi
@@ -4717,9 +4702,6 @@ installcask teamviewer
 # Compress & extract GUI app supporting RAR, ZIP & more
 #
 # https://theunarchiver.com
-#
-# Notes:
-#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
 #
 if [[ "$(isAppInstalled "The Unarchiver")" = "false" ]]; then
     installcask the-unarchiver
@@ -4928,9 +4910,6 @@ installFromAppStore "Chess" 329218549
 # Epic Games library management
 #
 # https://www.epicgames.com
-#
-# Notes:
-#  - need to detect if installed already manually since the application name is different from the Homebrew Cask one
 #
 if [[ "$(isAppInstalled "Epic Games Launcher")" = "false" ]]; then
     installcask epic-games
