@@ -881,9 +881,28 @@ fi
 #
 # Notes: need to be after Oh My Zsh
 #
+#This check doesn't work.
 if [[ ! -d "/opt/homebrew/opt/spaceship/" ]]; then
     installkeg starship
     reload
+fi
+
+#
+# Vundle
+#
+# Vim plugin manager
+#
+# https://github.com/VundleVim/Vundle.vim
+#
+# Notes: Needed before the Mackup files restoring step
+#
+if [[ ! -d "$HOME/.vim/bundle/Vundle.vim" ]]; then
+    echo $fg[blue]"Starting the installation of Vundle"$reset_color
+
+    git clone git@github.com:VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
+    vim +PluginInstall
+else
+    echo $fg[green]"Skipped $fg[blue]Vundle $fg[green]already installed"$reset_color
 fi
 
 #
@@ -3943,18 +3962,6 @@ installkeg topgrade
 # https://github.com/pixop/video-compare
 #
 installkeg video-compare
-
-#
-# Vundle
-#
-# Vim plugin manager
-#
-# https://github.com/VundleVim/Vundle.vim
-#
-if [[ ! -d "$HOME/.vim/bundle/Vundle.vim" ]]; then
-    git clone git@github.com:VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
-    vim +PluginInstall
-fi
 
 #
 # wget
