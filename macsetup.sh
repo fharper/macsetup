@@ -2289,56 +2289,114 @@ fi
 
 #
 # ESLint
-# ESLint Formatter Pretty
-# ESLint plugins:
-# - eslint-plugin-markdown
-# - eslint-plugin-react
-# - eslint-plugin-ui-testing (using for Puppeteer)
-# - eslint-plugin-jest
-# - eslint-plugin-security-node
-# - eslint-plugin-jsx-a11y
-# - eslint-plugin-i18n
-# - eslint-plugin-jsdoc
-# - eslint-plugin-json
-# - eslint-mdx
 #
 # JavaScript linter
-# Pretty ESLint formatter
-# Lint JavaScript code blocks in Markdown documents
-# React-specific linting rules for ESLint
-# ESLint plugin that helps following best practices when writing UI tests like with Puppeteer
-# ESLint plugin for Jest
-# ESLint security plugin for Node.js
-# a11y rules on JSX elements
-# ESLint rules to find out the texts and messages not internationalized in the project
-# JSDoc specific linting rules for ESLint
-# JSON files rules
-# ESLint Parser/Plugin for MDX
 #
 # https://github.com/eslint/eslint
-# https://github.com/sindresorhus/eslint-formatter-pretty
-# https://github.com/eslint/eslint-plugin-markdown
-# https://github.com/yannickcr/eslint-plugin-react
-# https://github.com/kwoding/eslint-plugin-ui-testing
-# https://github.com/jest-community/eslint-plugin-jest
-# https://github.com/gkouziik/eslint-plugin-security-node
-# https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
-# https://github.com/chejen/eslint-plugin-i18n
-# https://github.com/gajus/eslint-plugin-jsdoc
-# https://github.com/azeemba/eslint-plugin-json
-# https://github.com/mdx-js/eslint-mdx
+#
+# Notes: before the other ESLint plugins and formatters
 #
 installkeg eslint
+
+#
+# ESLint Formatter Pretty
+#
+# Pretty ESLint formatter
+#
+# https://github.com/sindresorhus/eslint-formatter-pretty
+#
 installNodePackages eslint-formatter-pretty
+
+#
+# eslint-plugin-markdown
+#
+# Lint JavaScript code blocks in Markdown documents
+#
+# https://github.com/eslint/eslint-plugin-markdown
+#
 installNodePackages eslint-plugin-markdown
+
+#
+# eslint-plugin-react
+#
+# React-specific linting rules for ESLint
+#
+# https://github.com/yannickcr/eslint-plugin-react
+#
 installNodePackages eslint-plugin-react
+
+#
+# eslint-plugin-ui-testing
+#
+# ESLint plugin that helps following best practices when writing UI tests like with Puppeteer
+#
+# https://github.com/kwoding/eslint-plugin-ui-testing
+#
+# Notes: needed for Puppeteer
+#
 installNodePackages eslint-plugin-ui-testing
+
+#
+# eslint-plugin-jest
+#
+# ESLint plugin for Jest
+#
+# https://github.com/jest-community/eslint-plugin-jest
+#
 installNodePackages eslint-plugin-jest
+
+#
+# eslint-plugin-security-node
+#
+# ESLint security plugin for Node.js
+#
+# https://github.com/gkouziik/eslint-plugin-security-node
+#
 installNodePackages eslint-plugin-security-node
+
+#
+# eslint-plugin-jsx-a11y
+#
+# a11y rules on JSX elements
+#
+# https://github.com/jsx-eslint/eslint-plugin-jsx-a11y
+#
 installNodePackages eslint-plugin-jsx-a11y
+
+#
+# eslint-plugin-i18n
+#
+# ESLint rules to find out the texts and messages not internationalized in the project
+#
+# https://github.com/chejen/eslint-plugin-i18n
+#
 installNodePackages eslint-plugin-i18n
+
+#
+# eslint-plugin-jsdoc
+#
+# JSDoc specific linting rules for ESLint
+#
+# https://github.com/gajus/eslint-plugin-jsdoc
+#
 installNodePackages eslint-plugin-jsdoc
+
+#
+# eslint-plugin-json
+#
+# JSON files rules
+#
+# https://github.com/azeemba/eslint-plugin-json
+#
 installNodePackages eslint-plugin-json
+
+#
+# eslint-mdx
+#
+# ESLint Parser/Plugin for MDX
+#
+# https://github.com/mdx-js/eslint-mdx
+#
 installNodePackages eslint-plugin-mdx
 
 #
