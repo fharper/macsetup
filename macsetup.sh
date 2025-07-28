@@ -1662,7 +1662,9 @@ fi
 #
 # Locate database generation
 #
-sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+if [[ ! -f /var/db/locate.database ]]; then
+ sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+fi
 
 #
 # Printer
