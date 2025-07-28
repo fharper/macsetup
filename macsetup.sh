@@ -88,15 +88,17 @@ function installkeg {
     fi
 }
 
+#
+# Install a Homebrew font, if not already installed
+#
+# @param the font name
+#
 function installfont {
-    local alreadyInstalled=$(brew list "$1" 2>&1 | grep "No such keg")
-
-    if [[ -n "$alreadyInstalled" ]]; then
+    if brew list --cask --versions "$1" &>/dev/null; then
+        echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
+    else
         echo $fg[blue]"Starting the installation of $1"$reset_color
         brew install --cask "$1"
-    else
-	    echo $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color
-        return 1
     fi
 }
 
