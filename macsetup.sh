@@ -1678,7 +1678,9 @@ fi
 #
 # Time Machine
 #
-sudo tmutil setdestination -p "smb://fharper@synology.local/Time Machine Backup/"
+if [[ $(tmutil destinationinfo &>/dev/null) ]]; then
+    sudo tmutil setdestination -p "smb://fharper@synology.local/Time Machine Backup/"
+fi
 
 #
 # Wallpaper
