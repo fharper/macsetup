@@ -236,9 +236,10 @@ function sudo {
 # @param the application name from Mackup
 #
 function restoreAppSettings {
-    echo "[storage]\nengine = icloud\n\n[applications_to_sync]\n$1" > $HOME/.mackup.cfg
-    mackup restore
-    echo "[storage]\nengine = icloud\n" > $HOME/.mackup.cfg
+    #mackup isn't working anymore with macOS Sonoma and up. See https://github.com/lra/mackup#warning
+    #echo "[storage]\nengine = icloud\n\n[applications_to_sync]\n$1" > $HOME/.mackup.cfg
+    #mackup restore
+    #echo "[storage]\nengine = icloud\n" > $HOME/.mackup.cfg
 }
 
 #
