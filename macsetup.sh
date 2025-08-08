@@ -386,6 +386,7 @@ function updateTCC {
     # - last_modifified: last time entry was modified
 
     local exist=$(sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "select count(service) from access where service = '$1' and client = '$app_identifier';")
+
     if [[ exist ]]; then
         sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "update access SET auth_value=2 where service = '$1' and client = '$app_identifier';"
     else
