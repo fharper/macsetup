@@ -569,6 +569,24 @@ function getmacOSCodename {
     sed -nE '/SOFTWARE LICENSE AGREEMENT FOR/s/.*([A-Za-z]+ ){5}|\\$//gp' /System/Library/CoreServices/Setup\ Assistant.app/Contents/Resources/en.lproj/OSXSoftwareLicense.rtf
 }
 
+########################
+#                      #
+# Prepare the computer #
+#                      #
+########################
+
+#
+# Disable SIP
+#
+if csrutil status | grep "enabled" &>/dev/null; then
+    echo "Before doing anyting else, boot into macOS Recovery Mode."
+    echo "To do that, press and hold the power button until you see the startup options screen, then click 'Options', then 'Continue'."
+    echo "Open the Terminal from the Utilities menu and run the following command:"
+    echo "csrutil disable"
+    echo "Once done, reboot."
+    exit
+fi
+
 
 ############################
 #                          #
