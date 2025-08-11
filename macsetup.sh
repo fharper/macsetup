@@ -4207,15 +4207,6 @@ fi
 installcask captin
 
 #
-# ChatGPT
-#
-# Generative AI chatbot
-#
-# https://chatgpt.com
-#
-installcask chatgpt
-
-#
 # Chromium Ungoogled
 #
 # Chromium without Google stuff
@@ -4683,6 +4674,15 @@ installcask pika
 # https://sindresorhus.com/pure-paste
 #
 installFromAppStore "Pure Paste" 1611378436
+
+#
+# QuickGPT
+#
+# ChatGPT from menubar
+#
+# https://sindresorhus.com/quickgpt
+#
+#install from downloaded zip
 
 #
 # QR Capture
