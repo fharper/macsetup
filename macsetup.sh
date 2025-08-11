@@ -4482,9 +4482,6 @@ fi
 if [[ "$(isAppInstalled "Keybase")" = "false" ]]; then
     curl -L  https://prerelease.keybase.io/Keybase-arm64.dmg --output keybase.dmg
     installDMG keybase.dmg true
-
-    # Disable Keybase adding itself as a favorite in Finder
-    touch "/Users/fharper/Library/Application Support/Keybase/finder_disabled.config2"
 fi
 
 #
