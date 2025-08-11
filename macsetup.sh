@@ -3107,27 +3107,31 @@ if [[ "$(isAppInstalled "pgAdmin 4")" = "false" ]]; then
 fi
 
 #
+# Bison
+# Parser generator
+# https://www.gnu.org/software/bison/
+#
+# Notes: needed for, and before the PHP install
+#
+installkeg bison
+
+#
+# re2c
+# Generate C-based recognizers from regular expressions
+# https://re2c.org
+#
+# Notes: needed for, and before the PHP install
+#
+installkeg re2c
+
+#
 # PHP
 #
 # PHP programming language
 #
 # https://github.com/php/php-src
 #
-#
-# PHP Dependencies:
-#
-# Bison
-# Parser generator
-# https://www.gnu.org/software/bison/
-#
-# re2c
-# Generate C-based recognizers from regular expressions
-# https://re2c.org
-#
 if [[ ! $(asdf current php) ]]; then
-    installkeg bison
-    installkeg re2c
-
     installAsdfPlugin php 8.4.10
 fi
 
