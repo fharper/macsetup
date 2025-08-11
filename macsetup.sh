@@ -1463,6 +1463,11 @@ fi
 displaySection "Dock & Menu Bar Configurations"
 
 #
+# Click wallpaper to reveal desktop
+#
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
+
+#
 # Minimize windows into application icon
 #
 defaults write com.apple.dock minimize-to-application -bool true
