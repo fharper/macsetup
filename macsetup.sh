@@ -4089,6 +4089,17 @@ if [[ "$(isAppInstalled "Adobe Acrobat")" = "false" ]]; then
 fi
 
 #
+# Adobe Creative Cloud
+#
+# Stupid Adobe app that is needed to install properly other products
+#
+# https://www.adobe.com/ca/creativecloud.html
+#
+if [[ "$(isAppInstalled "Creative Cloud")" = "false" ]]; then
+    installcask adobe-creative-cloud
+fi
+
+#
 # App Tamer
 #
 # CPU Throttling Tool
