@@ -2556,19 +2556,16 @@ installkeg git-recent
 installkeg git-sizer
 
 #
-# GitHub CLI & gh-pr-draft
+# GitHub CLI
 #
 # GitHub CLI
-# GitHub CLI Extension for converting PR to Draft
 #
 # https://github.com/cli/cli
-# https://github.com/kyanny/gh-pr-draft
 #
 if [[ "$(isCLAppInstalled gh)" = "false" ]]; then
     installkeg gh
     gh auth login
     gh config set editor "code --wait"
-    gh extension install kyanny/gh-pr-draft
 fi
 
 #
