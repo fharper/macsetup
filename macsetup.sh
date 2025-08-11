@@ -4078,6 +4078,17 @@ displaySection "Applications"
 installFromAppStore "Actions" 1586435171
 
 #
+# Adobe Acrobat Reader
+#
+# PDF Reader
+#
+# https://www.adobe.com/ca/acrobat/pdf-reader.html
+#
+if [[ "$(isAppInstalled "Adobe Acrobat")" = "false" ]]; then
+    installcask adobe-acrobat-reader
+fi
+
+#
 # App Tamer
 #
 # CPU Throttling Tool
