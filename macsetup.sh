@@ -1579,6 +1579,11 @@ displaySection "Keyboard Configurations"
 #
 defaults write -g ApplePressAndHoldEnabled -bool true
 
+#
+# Add period with double-space
+#
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
 # Press Fn to (do nothing)
 defaults write com.apple.HIToolbox AppleFnUsageType -bool false
 
