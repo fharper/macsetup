@@ -4597,6 +4597,15 @@ fi
 installcask nordvpn
 
 #
+# Online Check
+#
+# Only status in menubar
+#
+# https://sindresorhus.com/online-check
+#
+installFromAppStore "Online Check" 6504709660
+
+#
 # OpenVPN Connect
 #
 # OpenVPN Client
