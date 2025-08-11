@@ -3495,6 +3495,15 @@ installkeg yq
 displaySection "Command line tools"
 
 #
+# agg
+#
+# asciinema gif generator
+#
+# https://github.com/asciinema/agg
+#
+installkeg agg
+
+#
 # alex
 #
 # Text analyzer to catch insensitive, and inconsiderate writing
@@ -3504,22 +3513,16 @@ displaySection "Command line tools"
 installkeg alexjs
 
 #
-# Asciinema + svg-term-cli + agg
+# Asciinema
 #
 # Terminal session recorder
-# Convert tool for asciicast to animated SVG
-# asciinema gif generator
 #
 # https://github.com/asciinema/asciinema
-# https://github.com/marionebl/svg-term-cli
-# https://github.com/asciinema/agg
 #
 if [[ "$(isCLAppInstalled asciinema)" = "false" ]]; then
     installkeg asciinema
     asciinema auth
     pausethescript "Authenticate with asciinema before continuing the installation script."
-    installNodePackages svg-term-cli
-    installkeg agg
 fi
 
 #
@@ -3951,6 +3954,15 @@ installkeg speedtest-cli
 # https://github.com/resurrecting-open-source-projects/stress
 #
 installkeg stress
+
+#
+# svg-term-cli
+#
+# Convert tool for asciicast to animated SVG
+#
+# https://github.com/marionebl/svg-term-cli
+#
+installNodePackages svg-term-cli
 
 #
 # SVGO
