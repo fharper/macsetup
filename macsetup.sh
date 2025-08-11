@@ -529,12 +529,25 @@ function installRustApp {
 # Notes: the global is not set in stone.tool-versions in the home directory
 #
 function installAsdfPlugin {
-    if asdf plugin list | grep "$1" &>/dev/null; then
-        echo $fg[green]"Skipped $fg[blue]asdf$fg[green] plugin $fg[blue]$1$fg[green] already installed"$reset_color
+    local lang="$1"
+    local version="$2"
+
+    if asdf plugin list | grep "$lang" &>/dev/null; then
+        echo $fg[green]"Skipped $fg[blue]asdf$fg[green] plugin $fg[blue]$lang$fg[green] already installed"$reset_color
     else
-        echo $fg[blue]"Installing the $fg[green]asdf$fg[blue] plugin $fg[green]$1$fg[blue] version $fg[green]$2"$reset_color
-        asdf plugin add $1
-        asdf install $1 $2
+        echo $fg[blue]"Installing the $fg[green]asdf$fg[blue] plugin $fg[green]$lang$fg[blue] version $fg[green]$version"$reset_color
+
+        #Install the plugin and the required version
+        asdf plugin add "$lang"
+        asdf install $lang $version
+
+        #Update .tool-versions
+        local tools_file="$HOME/.tool-versions"
+        grep -v "^$lang " "$tools_file" > "$tools_file.tmp"
+        echo "$lang $version" >> "$tools_file.tmp"
+        sort "$tools_file.tmp" > "$tools_file"
+        rm "$tools_file.tmp"
+
         reload
     fi
 }
