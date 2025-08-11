@@ -915,7 +915,7 @@ fi
 # Notes: need to be after Oh My Zsh
 #
 #This check doesn't work.
-if [[ ! -d "/opt/homebrew/opt/spaceship/" ]]; then
+if [[ "$(isCLAppInstalled starship)" = "false" ]]; then
     installkeg starship
     reload
 fi
