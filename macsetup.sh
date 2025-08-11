@@ -1225,6 +1225,7 @@ if [[ "$(isAppInstalled "Alfred 5")" = "false" ]]; then
     pausethescript "In Alfred preferences, go to the Advanced, and set the syncing preferences folder in the iCloud Alfred folder."
     installNodePackages alfred-google-translate
     installNodePackages alfred-language-configuration
+    pausethescript "Go into Alfred Preferences, the Workflows tab, and for both of 'Translate Language Configuration' and 'Google Translate', go into the 'Script Filter' step, and  update the './node_modules/.bin/run-node' command for 'node'"
     pbcopy "trc en&fr"
     pausethescript "Configure alfred-google-translate with 'trc en&fr' (in your clipboard) before continuing"
 fi
