@@ -1802,6 +1802,19 @@ if [[ "$(isAppInstalled "Antidote 11")" = "false" ]]; then
 fi
 
 #
+# AppCleaner
+#
+# Applications uninstaller
+#
+# https://freemacsoft.net/appcleaner
+#
+if [[ "$(isAppInstalled AppCleaner)" = "false" ]]; then
+    installcask appcleaner
+    restoreAppSettings appcleaner
+    giveFullDiskAccessPermission "AppCleaner"
+fi
+
+#
 # Google Chrome
 #
 # Browser
@@ -4128,19 +4141,6 @@ if [[ "$(isAppInstalled "App Tamer")" = "false" ]]; then
     installcask app-tamer
     open -a "App Tamer"
     getLicense "App Tamer"
-fi
-
-#
-# AppCleaner
-#
-# Applications uninstaller
-#
-# https://freemacsoft.net/appcleaner
-#
-if [[ "$(isAppInstalled AppCleaner)" = "false" ]]; then
-    installcask appcleaner
-    restoreAppSettings appcleaner
-    giveFullDiskAccessPermission "AppCleaner"
 fi
 
 #
