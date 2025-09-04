@@ -3196,6 +3196,15 @@ installkeg prettier
 installNodePackages puppeteer
 
 #
+# PureScript
+#
+# A strongly-typed language that compiles to JavaScript
+#
+# https://github.com/purescript/purescript
+#
+installkeg purescript
+
+#
 # Pylint
 #
 # Python linter
