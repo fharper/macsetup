@@ -1987,6 +1987,9 @@ fi
 if [[ "$(isAppInstalled Thunderbird)" = "false" ]]; then
     installcask thunderbird
     dockutil --add /Applications/Thunderbird.app/ --allhomes
+
+    # Will work once the computer is rebooted
+    defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=mailto;LSHandlerRoleAll=org.mozilla.thunderbird;}'
 fi
 
 #
