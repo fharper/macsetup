@@ -2057,9 +2057,9 @@ fi
 displaySection "Developer stuff"
 
 #
-# .Net Core
+# .NET Core
 #
-# .Net Core Programming Language
+# .NET Core Programming Language
 #
 # https://github.com/dotnet/core
 #
