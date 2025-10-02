@@ -2063,7 +2063,10 @@ displaySection "Developer stuff"
 #
 # https://github.com/dotnet/core
 #
-installAsdfPlugin dotnet-core 9.0.303
+if [[ ! $(asdf current dotnet-core) ]]; then
+    installAsdfPlugin dotnet-core 9.0.303
+    dotnet dev-certs https --trust
+fi
 
 #
 # Act
