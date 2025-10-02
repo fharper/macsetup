@@ -583,6 +583,24 @@ function getmacOSCodename {
     sed -nE '/SOFTWARE LICENSE AGREEMENT FOR/s/.*([A-Za-z]+ ){5}|\\$//gp' /System/Library/CoreServices/Setup\ Assistant.app/Contents/Resources/en.lproj/OSXSoftwareLicense.rtf
 }
 
+#
+# Check if a specific account exist in the Internet Accounts settings of macOS
+#
+# @param the Internet Account name
+#
+# @return true if it exist, false if not
+#
+function isInternetAccountExists {
+  local result=$(sqlite3 -readonly "$HOME/Library/Accounts/Accounts4.sqlite" "SELECT ZUSERNAME FROM ZACCOUNT WHERE ZUSERNAME LIKE '%$1%' COLLATE NOCASE LIMIT 1;")
+
+  if [[ -n "$result" ]]; then
+    echo "true"
+  else
+    echo "false"
+  fi
+}
+
+
 ########################
 #                      #
 # Prepare the computer #
@@ -1724,14 +1742,23 @@ displaySection "Misc Configurations"
 defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
 
 #
-# Internet Accounts
+# Internet Accounts: fred.dev
 #
-# Notes:
-#  - I assume that if my work calendar is available, it means this step was done during a previous run of this script
-#
-if [[ ! "$(icalbuddy calendars | grep "$workemail")" ]]; then
+if [[ ! "$(isInternetAccountExists "fred.dev")" = "false" ]]; then
     open /System/Library/PreferencePanes/InternetAccounts.prefPane
-    pausethescript "Add your Email accounts to the macOS Internet Accounts"
+    pausethescript "Add your fred.dev account to the macOS Internet Accounts"
+else
+    echo $fg[green]"Skipped $fg[blue]fred.dev$fg[green] internet account configuration as it already exists"$reset_color
+fi
+
+#
+# Internet Accounts: Tiugo
+#
+if [[ ! "$(isInternetAccountExists "Tiugo")" = "false" ]]; then
+    open /System/Library/PreferencePanes/InternetAccounts.prefPane
+    pausethescript "Add your Tiugo account to the macOS Internet Accounts"
+else
+    echo $fg[green]"Skipped $fg[blue]Tiugo$fg[green] internet account configuration as it already exists"$reset_color
 fi
 
 #
