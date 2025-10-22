@@ -2146,6 +2146,15 @@ if [[ "$(isCLAppInstalled linode)" = "false" ]]; then
 fi
 
 #
+# Android Studio
+#
+# Android development environment
+#
+# https://developer.android.com/studio
+#
+installcask android-studio
+
+#
 # Angular
 #
 # JavaScript framework
