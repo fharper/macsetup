@@ -1130,6 +1130,17 @@ installkeg terminal-notifier
 #
 installkeg wallpaper
 
+#
+# fnt
+#
+# Font manager
+#
+# https://github.com/alexmyczko/fnt
+#
+if [[ "$(isCLAppInstalled fnt)" = "false" ]]; then
+    installkeg fnt
+    fnt update
+fi
 
 ########################
 #                      #
