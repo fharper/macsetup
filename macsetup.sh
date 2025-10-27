@@ -3649,7 +3649,10 @@ installkeg bat
 #
 # https://github.com/rutrum/ccase
 #
-cargo install ccase
+#Create a cargo install function (if for now)
+if [[ "$(isCLAppInstalled ccase)" = "false" ]]; then
+    cargo install ccase
+fi
 
 #
 # Color LS + Nerd Fonts
