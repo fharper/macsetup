@@ -5041,6 +5041,7 @@ installfont font-open-sans
 installfont font-pacifico
 installfont font-rancho
 installfont font-roboto
+fnt inter #Backstage with Fred low tier font
 
 
 ####################################################################
