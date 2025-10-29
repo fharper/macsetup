@@ -1429,7 +1429,10 @@ fi
 #
 # https://manytricks.com/moom
 #
-installkeg moom
+if [[ "$(isAppInstalled "Moom")" = "false" ]]; then
+    installkeg moom
+    getLicenseFile "Moom" "Frederic_Harper.moomlicense"
+fi
 
 #
 # Spaced
