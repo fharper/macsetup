@@ -3658,19 +3658,27 @@ if [[ "$(isCLAppInstalled ccase)" = "false" ]]; then
 fi
 
 #
-# Color LS + Nerd Fonts
+# Nerd Fonts
 #
-# Beautifies the terminal's ls command
 # Fonts collections aggregator
 #
-# https://github.com/athityakumar/colorls
 # https://github.com/ryanoasis/nerd-fonts
+#
+# Notes: Needed before Color LS
+#
+installcask font-hack-nerd-font
+
+#
+# Color LS
+#
+# Beautifies the terminal's ls command
+#
+# https://github.com/athityakumar/colorls
 #
 if [[ "$(isCLAppInstalled colorls)" = "false" ]]; then
     brew install openssl@1.1
     #Make an install Ruby app.
     gem install colorls
-    installcask font-hack-nerd-font
 fi
 
 #
