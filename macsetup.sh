@@ -1102,6 +1102,11 @@ if [[ "$(isCLAppInstalled geticon)" = "false" ]]; then
     rm osxiconutils.zip
     /bin/rm -rf  __MACOSX #created by the unzip call
     sudo chown "$username":admin /usr/local/bin
+
+    if [[ ! -d "/usr/local/bin/" ]]; then
+        mkdir /usr/local/bin/
+    fi
+
     mv bin/geticon /usr/local/bin/
     mv bin/seticon /usr/local/bin/
     /bin/rm -rf bin/
