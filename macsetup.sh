@@ -4124,9 +4124,13 @@ installkeg video-compare
 installkeg wget
 
 #
+# whisper
 #
+# Speech-to-text model
 #
+# https://github.com/openai/whisper
 #
+installcask openai-whisper
 
 #
 # wkhtmltopdf
