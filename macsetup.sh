@@ -4884,6 +4884,15 @@ if [[ "$(isAppInstalled stats)" = "false" ]]; then
     restoreAppSettings stats
 fi
 
+#
+# Synergy
+#
+# Keyboard & mouse devices sharing
+#
+# https://symless.com/synergy
+#
+open https://symless.com/synergy/download
+pausethescript 'Manually download and install Synergy'
 
 #
 # TeamViewer
