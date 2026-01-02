@@ -1946,13 +1946,15 @@ if [[ "$(isAppInstalled OpenInEditor-Lite)" = "false" ]]; then
     installcask openineditor-lite
     defaults write wang.jianing.app.OpenInEditor-Lite LiteDefaultEditor "Visual Studio Code"
     open /Applications
-    pausethescript "drag openineditor-lite in Finder toolbar while pressing Command before continuing"
-    curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
+    pausethescript "drag openinterminal-lite in Finder toolbar while pressing Command before continuing"
+
+    # Set proper icon
+    curl -L "$(lastversion Ji4n1ng/OpenInTerminal --having-asset Icons.zip --assets --filter Icons.zip)" --output icons.zip
     unzip icons.zip
     rm icons.zip
-    rm -rf __MACOSX #created by the unzip call
+    /bin/rm -rf __MACOSX #created by the unzip call
     seticon icons/icon_vscode_dark.icns /Applications/OpenInEditor-Lite.app
-    rm -rf icons
+    /bin/rm -rf icons
 fi
 
 #
@@ -1965,15 +1967,18 @@ fi
 if [[ "$(isAppInstalled OpenInTerminal-Lite)" = "false" ]]; then
     installcask openinterminal-lite
     defaults write wang.jianing.app.OpenInTerminal-Lite LiteDefaultTerminal iTerm
+    defaults write com.googlecode.iterm2 OpenFileInNewWindows -bool false
     open /Applications
     pausethescript "drag openinterminal-lite in Finder toolbar while pressing Command before continuing"
-    curl -L https://github.com/Ji4n1ng/OpenInTerminal/releases/download/v1.2.0/Icons.zip  --output icons.zip
+
+    # Set proper icon
+    curl -L "$(lastversion Ji4n1ng/OpenInTerminal --having-asset Icons.zip --assets --filter Icons.zip)" --output icons.zip
     unzip icons.zip
     rm icons.zip
-    rm -rf __MACOSX #created by the unzip call
+    /bin/rm -rf __MACOSX #created by the unzip call
     seticon icons/icon_terminal_dark.icns /Applications/OpenInTerminal-Lite.app
-    rm -rf icons
-fi
+    /bin/rm -rf icons
+#fi
 
 #
 # Rain
