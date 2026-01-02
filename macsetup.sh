@@ -4702,6 +4702,15 @@ installcask nordvpn
 installFromAppStore "Online Check" 6504709660
 
 #
+# OpenSCAD
+#
+# 3D (CAD) model editor
+#
+# https://github.com/openscad/openscad
+#
+installcask openscad
+
+#
 # OpenVPN Connect
 #
 # OpenVPN Client
