@@ -1063,7 +1063,7 @@ installkeg mysides
 #
 # Notes: install before npm
 #
-installAsdfPlugin nodejs 24.4.1
+installAsdfPlugin nodejs 25.2.0
 
 #
 # npm
