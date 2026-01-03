@@ -5159,6 +5159,15 @@ fi
 #
 installcask openemu
 
+#
+# Steam
+#
+# Game platform
+#
+# https://store.steampowered.com
+#
+installcask steam
+
 
 ###########################
 #                         #
