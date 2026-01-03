@@ -825,6 +825,9 @@ if [[ "$(isAppInstalled iTerm)" = "false" ]]; then
     giveFullDiskAccessPermission iTerm
     dockutil --add /Applications/iTerm.app/ --allhomes
 
+    # No more last login message
+    touch ~/.hushlogin
+
     curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
     open -a iTerm
     echo $fg[yellow]"You can now close the Terminal app, and continue on iTerm"$reset_color
