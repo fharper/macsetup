@@ -4138,6 +4138,15 @@ installkeg wget
 installcask openai-whisper
 
 #
+# wine
+#
+# Run Windows applications on macOS
+#
+# https://gitlab.winehq.org/wine/wine
+#
+installcask wine-stable
+
+#
 # wkhtmltopdf
 #
 # Convert HTML to PDF
