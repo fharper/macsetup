@@ -1992,10 +1992,10 @@ if [[ "$(isAppInstalled OpenInTerminal-Lite)" = "false" ]]; then
 #
 if [[ "$(isAppInstalled rain)" = "false" ]]; then
     echo $fg[blue]"Starting the installation of Rain"$reset_color
-    curl -L https://github.com/fharper/rain/releases/download/v1.0b2/rain.app.zip --output rain.zip
+
+    curl -L "$(lastversion fharper/rain --assets)" --output rain.zip
     unzip rain.zip
     rm rain.zip
-    rm __MACOSX #created by the unzip call
     mv rain.app /Applications
     loginitems -a Rain
 fi
