@@ -1843,6 +1843,7 @@ if [[ "$(isAppInstalled "Antidote 11")" = "false" ]]; then
     cd -
     dockutil --add /Applications/Antidote/Antidote\ 11.app/
     loginitems -a Antidote
+    open -a "Connectix 11.app"
 fi
 
 #
