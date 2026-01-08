@@ -4328,6 +4328,18 @@ if [[ "$(isAppInstalled calibre)" = "false" ]]; then
 fi
 
 #
+# Caprine
+#
+# Facebook Messenger Client
+#
+# https://github.com/sindresorhus/caprine
+#
+if [[ "$(isAppInstalled "Caprine")" = "false" ]]; then
+    installcask caprine
+    dockutil --add /Applications/Caprine.app/ --allhomes
+fi
+
+#
 # Captin
 #
 # App that show the caps lock status
@@ -4659,18 +4671,6 @@ if [ ! -d "/Library/Application Support/Logitech.localized/Logitech Presentation
 
     #TODO: add Input Monitoring Permissions
     #TODO: add Accessibility Permissions
-fi
-
-#
-# Messenger
-#
-# Facebook Messenger Client
-#
-# https://www.messenger.com/desktop
-#
-if [[ "$(isAppInstalled "Messenger")" = "false" ]]; then
-    installcask messenger
-    dockutil --add /Applications/Messenger.app/ --allhomes
 fi
 
 #
