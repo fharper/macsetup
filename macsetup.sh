@@ -4145,7 +4145,7 @@ installkeg wget
 #
 # whisper
 #
-# Speech-to-text model
+# Speech-to-text model (audio transcription)
 #
 # https://github.com/openai/whisper
 #
