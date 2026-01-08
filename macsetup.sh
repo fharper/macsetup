@@ -4196,7 +4196,10 @@ installkeg yt-dlp
 # - run a benchmark, use: $HOME/zsh-bench/zsh-bench
 #
 if [ ! -d $HOME/zsh-bench ]; then
+    print $fg[blue]"Starting the installation of zsh-bench"$reset_color
     git clone https://github.com/romkatv/zsh-bench $HOME/zsh-bench
+else
+    print $fg[green]"Skipped $fg[blue]zsh-bench$fg[green] already installed"$reset_color
 fi
 
 
