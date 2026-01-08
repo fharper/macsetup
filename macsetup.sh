@@ -3678,6 +3678,17 @@ fi
 installcask font-hack-nerd-font
 
 #
+# OpenSSL
+#
+# SSL/TLS cryptography library
+#
+# https://github.com/openssl/openssl
+#
+# Notes: Version 1.1 is needed for Color LS. It needs to be installed before
+#
+installkeg openssl@1.1
+
+#
 # Color LS
 #
 # Beautifies the terminal's ls command
@@ -3685,7 +3696,6 @@ installcask font-hack-nerd-font
 # https://github.com/athityakumar/colorls
 #
 if [[ "$(isCLAppInstalled colorls)" = "false" ]]; then
-    brew install openssl@1.1
     #Make an install Ruby app.
     gem install colorls
 fi
