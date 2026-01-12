@@ -4165,7 +4165,7 @@ installcask wine-stable
 if [[ "$(isCLAppInstalled wkhtmltopdf)" = "false" ]]; then
     echo $fg[blue]"Starting the installation wkhtmltopdf"$reset_color
     curl -L https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-2/wkhtmltox-0.12.6-2.macos-cocoa.pkg --output wkhtmltopdf.pkg
-    installPKG "$filename"
+    installPKG "wkhtmltopdf.pkg"
 fi
 
 #
