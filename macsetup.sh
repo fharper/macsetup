@@ -1860,32 +1860,25 @@ if [[ "$(isAppInstalled AppCleaner)" = "false" ]]; then
 fi
 
 #
-# Google Chrome
+# Brave Browser
 #
-# Browser
+# Chromium based browser
 #
-# https://www.google.com/chrome
+# https://github.com/brave
 #
-if [[ "$(isAppInstalled "Google Chrome")" = "false" ]]; then
-    installcask google-chrome
-    dockutil --add "/Applications/Google Chrome.app" --position 2 --allhomes
+if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
+    installcask brave-browser
+    dockutil --add "/Applications/Brave\ Browser.app" --position 2 --allhomes
+    defbro com.brave.Browser
 
-    defaults write com.google.Chrome ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
-    defaults write com.google.Chrome DisablePrintPreview -bool true
-    defbro com.google.Chrome
+    # Install the 1Password extension
+    open -a "Brave Browser"
+    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
 
-    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "chrome-extension://jinjaccalgkegednnccohejagnlnfdag/options/index.html#settings"
-    pausethescript "Under the Settings menu and Sync section, authorize Dropbox for Violentmonkey sync before continuing"
-
-    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/manage.html#stylus-options"
-    pausethescript "Under the 'Sync to Cloud Section', authorize Dropbox for Stylus sync before continuing"
-
-    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "chrome-extension://pncfbmialoiaghdehhbnbhkkgmjanfhe/pages/options.html"
+    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://pncfbmialoiaghdehhbnbhkkgmjanfhe/pages/options.html"
     pausethescript "Under the Sync section, authorize Dropbox for uBlacklist sync before continuing"
 
-    duti -s com.google.Chrome com.compuserve.gif all #GIF (Image)
-
-    #TODO: add Location Services permission
+    duti -s com.brave.Browser com.compuserve.gif all #GIF (Image)
 fi
 
 #
@@ -4286,21 +4279,6 @@ installFromAppStore "AutoMute" 1118136179
 installcask beardedspice
 
 #
-# Brave Browser
-#
-# Chromium based browser
-#
-# https://github.com/brave
-#
-if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
-    installcask brave-browser
-
-    # Install the 1Password extension
-    open -a "Brave Browser"
-    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
-fi
-
-#
 # Calibre + DeDRM Tools
 #
 # Ebook Manager
@@ -4536,6 +4514,20 @@ fi
 if [[ "$(isAppInstalled Gimp)" = "false" ]]; then
     installcask gimp
     restoreAppSettings gimp
+fi
+
+#
+# Google Chrome
+#
+# Browser
+#
+# https://www.google.com/chrome
+#
+if [[ "$(isAppInstalled "Google Chrome")" = "false" ]]; then
+    installcask google-chrome
+
+    defaults write com.google.Chrome ExternalProtocolDialogShowAlwaysOpenCheckbox -bool true
+    defaults write com.google.Chrome DisablePrintPreview -bool true
 fi
 
 #
@@ -5192,7 +5184,7 @@ installcask steam
 displaySection "Dock Applications Order"
 
 echo $fg[blue]"The Dock will restart a couple of time, giving a flashing impression: it's normal\n"$reset_color
-dockutil --move 'Google Chrome' --position end --allhomes
+dockutil --move 'Brave Browser' --position end --allhomes
 dockutil --move 'Thunderbird' --position end --allhomes
 dockutil --move 'Notion' --position end --allhomes
 dockutil --move 'Todoist' --position end --allhomes
