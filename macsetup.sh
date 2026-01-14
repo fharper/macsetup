@@ -62,7 +62,7 @@ function findfilewithregex {
 # @return true if installed, false if not
 #
 function isAppInstalled {
-    if [[ $(osascript -e "id of application \"$1\"" 2>/dev/null) ]]; then
+    if [[ $(mdfind "kMDItemContentType == 'com.apple.application-bundle' && kMDItemFSName == '$1*.app'" | head -n 1) ]]; then
         print $fg[green]"Skipped $fg[blue]$1$fg[green] already installed"$reset_color  >&2
 	    echo true
     else
@@ -1249,7 +1249,7 @@ fi
 #
 # https://www.alfredapp.com
 #
-if [[ "$(isAppInstalled "Alfred 5")" = "false" ]]; then
+if [[ "$(isAppInstalled Alfred)" = "false" ]]; then
     installcask alfred
     open /System/Library/PreferencePanes/Keyboard.prefPane
     pausethescript "In System Preferences, Keyboard, click on the 'Keyboard Shortcuts...' button. Select the 'Spotlight' pane & uncheck the 'Show Spotlight Search' checkbox."
@@ -1834,7 +1834,7 @@ displaySection "Main applications"
 #
 # https://www.antidote.info
 #
-if [[ "$(isAppInstalled "Antidote 11")" = "false" ]]; then
+if [[ "$(isAppInstalled Antidote)" = "false" ]]; then
     open https://services.druide.com/
     pausethescript "Download Antidote in the macsetup folder before continuing"
     cd $HOME/Downloads/
@@ -3175,7 +3175,7 @@ installAsdfPlugin perl 5.42.0
 #
 # https://github.com/pgadmin-org/pgadmin4
 #
-if [[ "$(isAppInstalled "pgAdmin 4")" = "false" ]]; then
+if [[ "$(isAppInstalled pgAdmin)" = "false" ]]; then
     installcask pgadmin4
 fi
 
@@ -4949,7 +4949,7 @@ fi
 #
 # https://github.com/TigerVNC/tigervnc
 #
-if [[ "$(isAppInstalled "TigerVNC Viewer 1.15.0")" = "false" ]]; then
+if [[ "$(isAppInstalled "TigerVNC Viewer")" = "false" ]]; then
     installcask tigervnc-viewer
 fi
 
