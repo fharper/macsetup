@@ -1359,7 +1359,7 @@ fi
 #
 # https://github.com/pqrs-org/Karabiner-Elements
 #
-if [[ "$(isAppInstalled "Karabiner-Elements")" = "false" ]]; then
+if [[ "$(isAppInstalled Karabiner-Elements)" = "false" ]]; then
     installcask karabiner-elements
     restoreAppSettings karabiner-elements
     #TODO: add karabiner_observer Receive Keystrokes Permission
@@ -1432,7 +1432,7 @@ fi
 #
 # https://manytricks.com/moom
 #
-if [[ "$(isAppInstalled "Moom")" = "false" ]]; then
+if [[ "$(isAppInstalled Moom)" = "false" ]]; then
     installkeg moom
     getLicenseFile "Moom" "Frederic_Harper.moomlicense"
 fi
@@ -1922,7 +1922,7 @@ fi
 #
 # https://www.notion.so
 #
-if [[ "$(isAppInstalled "Notion")" = "false" ]]; then
+if [[ "$(isAppInstalled Notion)" = "false" ]]; then
     installcask notion
     dockutil --add "/Applications/Notion.app" --allhomes
 fi
@@ -4312,7 +4312,7 @@ fi
 #
 # https://github.com/sindresorhus/caprine
 #
-if [[ "$(isAppInstalled "Caprine")" = "false" ]]; then
+if [[ "$(isAppInstalled Caprine)" = "false" ]]; then
     installcask caprine
     dockutil --add /Applications/Caprine.app/ --allhomes
 fi
@@ -4557,7 +4557,7 @@ fi
 #
 # https://www.stclairsoft.com/HistoryHound/
 #
-if [[ "$(isAppInstalled "HistoryHound")" = "false" ]]; then
+if [[ "$(isAppInstalled HistoryHound)" = "false" ]]; then
     installcask historyhound
     open -a HistoryHound
     getLicense HistoryHound
@@ -4590,7 +4590,7 @@ installcask insta360-link-controller
 #
 # Notes: Homebrew version wasn't updated in a while
 #
-if [[ "$(isAppInstalled "Keybase")" = "false" ]]; then
+if [[ "$(isAppInstalled Keybase)" = "false" ]]; then
     curl -L  https://prerelease.keybase.io/Keybase-arm64.dmg --output keybase.dmg
     installDMG keybase.dmg true
 fi
@@ -4748,7 +4748,7 @@ fi
 #
 # https://www.opera.com
 #
-if [[ "$(isAppInstalled "Opera")" = "false" ]]; then
+if [[ "$(isAppInstalled Opera)" = "false" ]]; then
     installcask opera
 
     # Install the 1Password extension
@@ -4978,7 +4978,7 @@ fi
 #
 # https://typora.io
 #
-if [[ "$(isAppInstalled "Typora")" = "false" ]]; then
+if [[ "$(isAppInstalled Typora)" = "false" ]]; then
     installcask typora
     open -a Typora
     getLicense Typora
@@ -5057,7 +5057,7 @@ installcask whatsapp
 #
 # https://github.com/zen-browser/desktop
 #
-if [[ "$(isAppInstalled "Zen")" = "false" ]]; then
+if [[ "$(isAppInstalled Zen)" = "false" ]]; then
     installcask zen-browser
 
     /Applications/Zen.app/Contents/MacOS/zen https://addons.mozilla.org/en-CA/firefox/addon/1password-x-password-manager/
