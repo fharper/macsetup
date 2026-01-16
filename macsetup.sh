@@ -526,7 +526,7 @@ function installRustApp {
 # @param plugin name
 # @param version of the plugin to instal
 #
-# Notes: the global is not set in stone.tool-versions in the home directory
+# Notes: the global is set in .tool-versions in the home directory
 #
 function installAsdfPlugin {
     local lang="$1"
