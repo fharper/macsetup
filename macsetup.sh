@@ -1227,19 +1227,6 @@ if [[ "$(isCLAppInstalled op)" = "false" ]]; then
 fi
 
 #
-# 1Password Safari Extension
-#
-# 1Password  Safari integration
-#
-# https://apps.apple.com/us/app/1password-for-safari/id1569813296
-#
-if [[ "$(isAppInstalled "1Password for Safari")" = "false" ]]; then
-    installFromAppStore "1Password Safari Extension" 1569813296
-    open -a Safari
-    pausethescript "Do the require steps inside of Safari to activate 1Password"
-fi
-
-#
 # Alfred & alfred-google-translate & alfred-language-configuration
 #
 # Spotlight replacement
@@ -4189,6 +4176,19 @@ fi
 ################
 
 displaySection "Applications"
+
+#
+# 1Password Safari Extension
+#
+# 1Password  Safari integration
+#
+# https://apps.apple.com/us/app/1password-for-safari/id1569813296
+#
+if [[ "$(isAppInstalled "1Password for Safari")" = "false" ]]; then
+    installFromAppStore "1Password Safari Extension" 1569813296
+    open -a Safari
+    pausethescript "Do the require steps inside of Safari to activate 1Password"
+fi
 
 #
 # Actions
