@@ -1434,6 +1434,25 @@ if [[ "$(isAppInstalled Moom)" = "false" ]]; then
 fi
 
 #
+# Slack
+#
+# Text-based communication app
+#
+# https://slack.com
+#
+if [[ "$(isAppInstalled Slack)" = "false" ]]; then
+    installcask slack
+    dockutil --add /Applications/Slack.app/ --allhomes
+    open -a Slack
+    local slack_workspaces=($(op item list --categories Login --format json | jq '.[] | select(.title|test("Slack")) | .urls[0].href' | tr -d '"'))
+    for slack in "${slack_workspaces[@]}"; do
+      open "$slack"
+      pausethescript "Sign in this Slack community: $slack"
+    done
+    pausethescript "Do CMD + Shift + S in Slack to show all workspaces permanently on the sidebar"
+fi
+
+#
 # Spaced
 #
 # Menubar spacer
@@ -1974,25 +1993,6 @@ if [[ "$(isAppInstalled rain)" = "false" ]]; then
     rm rain.zip
     mv rain.app /Applications
     loginitems -a Rain
-fi
-
-#
-# Slack
-#
-# Text-based communication app
-#
-# https://slack.com
-#
-if [[ "$(isAppInstalled Slack)" = "false" ]]; then
-    installcask slack
-    dockutil --add /Applications/Slack.app/ --allhomes
-    open -a Slack
-    local slack_workspaces=($(op item list --categories Login --format json | jq '.[] | select(.title|test("Slack")) | .urls[0].href' | tr -d '"'))
-    for slack in "${slack_workspaces[@]}"; do
-      open "$slack"
-      pausethescript "Sign in this Slack community: $slack"
-    done
-    pausethescript "Do CMD + Shift + S in Slack to show all workspaces permanently on the sidebar"
 fi
 
 #
