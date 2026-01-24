@@ -1463,15 +1463,6 @@ if [[ "$(isAppInstalled "The Clock")" = "false" ]]; then
 fi
 
 #
-# TripMode
-#
-# Manage applications internet access
-#
-# https://tripmode.ch
-#
-installcask TripMode
-
-#
 # Zoom
 #
 # Video conference
@@ -4947,6 +4938,15 @@ fi
 if [[ "$(isAppInstalled "TigerVNC Viewer")" = "false" ]]; then
     installcask tigervnc-viewer
 fi
+
+#
+# TripMode
+#
+# Manage applications internet access
+#
+# https://tripmode.ch
+#
+installcask TripMode
 
 #
 # TV
