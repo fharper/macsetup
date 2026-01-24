@@ -2026,6 +2026,7 @@ fi
 if [[ "$(isAppInstalled Thunderbird)" = "false" ]]; then
     installcask thunderbird
     dockutil --add /Applications/Thunderbird.app/ --allhomes
+    pausethescript "Move the Thunderbird folder from the user library folder from the previous computer to this one"
 
     # Will work once the computer is rebooted
     defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerURLScheme=mailto;LSHandlerRoleAll=org.mozilla.thunderbird;}'
