@@ -1387,7 +1387,6 @@ if [[ "$(isAppInstalled "Little Snitch")" = "false" ]]; then
     installcask little-snitch
     restoreAppSettings littlesnitch
     pausethescript "Activate the CLI by opening Little Snitch Preferences, go to Security, and click the lock icon. Check the 'Allow access via Terminal' option, and run 'sudo littlesnitch restore-model little-snitch.json' (copied in your clipboard) in your Terminal where the backup file is."
-    reload
     pbcopy "sudo littlesnitch restore-model little-snitch.json"
 fi
 
