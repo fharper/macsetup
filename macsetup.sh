@@ -723,9 +723,7 @@ fi
 # Notes
 #   - Needed before PipX
 #
-if [[ ! $(asdf current python) ]]; then
-    installAsdfPlugin python 3.13.5
-fi
+installAsdfPlugin python 3.13.5
 
 #
 # PipX
@@ -3204,9 +3202,7 @@ installkeg re2c
 #
 # https://github.com/php/php-src
 #
-if [[ ! $(asdf current php) ]]; then
-    installAsdfPlugin php 8.4.10
-fi
+installAsdfPlugin php 8.4.10
 
 #
 # PHP_CodeSniffer
