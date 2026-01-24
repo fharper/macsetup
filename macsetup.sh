@@ -1285,6 +1285,28 @@ if [[ "$(isAppInstalled "Apple Juice")" = "false" ]]; then
 fi
 
 #
+# Brave Browser
+#
+# Chromium based browser
+#
+# https://github.com/brave
+#
+if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
+    installcask brave-browser
+    dockutil --add "/Applications/Brave\ Browser.app" --position 2 --allhomes
+    defbro com.brave.Browser
+
+    # Install the 1Password extension
+    open -a "Brave Browser"
+    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
+
+    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://pncfbmialoiaghdehhbnbhkkgmjanfhe/pages/options.html"
+    pausethescript "Under the Sync section, authorize Dropbox for uBlacklist sync before continuing"
+
+    duti -s com.brave.Browser com.compuserve.gif all #GIF (Image)
+fi
+
+#
 # CleanShot X
 #
 # Screenshot utility
@@ -1863,28 +1885,6 @@ if [[ "$(isAppInstalled AppCleaner)" = "false" ]]; then
     installcask appcleaner
     restoreAppSettings appcleaner
     giveFullDiskAccessPermission "AppCleaner"
-fi
-
-#
-# Brave Browser
-#
-# Chromium based browser
-#
-# https://github.com/brave
-#
-if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
-    installcask brave-browser
-    dockutil --add "/Applications/Brave\ Browser.app" --position 2 --allhomes
-    defbro com.brave.Browser
-
-    # Install the 1Password extension
-    open -a "Brave Browser"
-    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
-
-    /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://pncfbmialoiaghdehhbnbhkkgmjanfhe/pages/options.html"
-    pausethescript "Under the Sync section, authorize Dropbox for uBlacklist sync before continuing"
-
-    duti -s com.brave.Browser com.compuserve.gif all #GIF (Image)
 fi
 
 #
