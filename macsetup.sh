@@ -886,7 +886,6 @@ installPythonPackage gitpython
 #
 # https://github.com/ohmyzsh/ohmyzsh
 #
-
 if [[ "$(isCLAppInstalled omz)" = "false" ]]; then
     echo $fg[blue]"Starting the installation of Oh My Zsh"$reset_color
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
