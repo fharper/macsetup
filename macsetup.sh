@@ -136,10 +136,17 @@ function installNodePackages {
 #
 # Install a Homebrew Cask, if not already installed
 #
-# @param the application name
+# @param the cask name
+# @param the application name (if different from cask name)
 #
 function installcask {
-    if [[ "$(isAppInstalled $1)" = "false" ]]; then
+    local appName="$2"
+
+    if [[ "$appName" = "" ]] ; then
+        appName="$1"
+    fi
+
+    if [[ "$(isAppInstalled $appName)" = "false" ]]; then
         brew install --cask $1
     else
        return 1
@@ -1267,9 +1274,7 @@ installcask alt-tab
 #
 # https://github.com/raphaelhanneken/apple-juice
 #
-if [[ "$(isAppInstalled "Apple Juice")" = "false" ]]; then
-    installcask apple-juice
-fi
+installcask apple-juice "Apple Juice"
 
 #
 # Brave Browser
@@ -1354,9 +1359,7 @@ installkeg hstr
 #
 # https://github.com/jordanbaird/Ice
 #
-if [[ "$(isAppInstalled Ice)" = "false" ]]; then
-    installcask jordanbaird-ice
-fi
+installcask jordanbaird-ice Ice
 
 #
 # Karabiner-Elements
@@ -2351,9 +2354,7 @@ installkeg delve
 #
 # https://github.com/sqlitebrowser/sqlitebrowser
 #
-if [[ "$(isAppInstalled "DB Browser for SQLite")" = "false" ]]; then
-    installcask db-browser-for-sqlite
-fi
+installcask db-browser-for-sqlite "DB Browser for SQLite"
 
 #
 # Deno
@@ -3083,9 +3084,7 @@ fi
 #
 # https://www.mongodb.com/products/compass
 #
-if [[ "$(isAppInstalled "MongoDB Compass")" = "false" ]]; then
-    installcask mongodb-compass
-fi
+installcask mongodb-compass "MongoDB Compass"
 
 #
 # MQTT Explorer
@@ -3094,9 +3093,7 @@ fi
 #
 # https://github.com/thomasnordquist/MQTT-Explorer
 #
-if [[ "$(isAppInstalled "MQTT Explorer")" = "false" ]]; then
-    installcask mqtt-explorer
-fi
+installcask mqtt-explorer "MQTT Explorer"
 
 #
 # MySQL Workbench
@@ -3150,9 +3147,7 @@ installAsdfPlugin perl 5.42.0
 #
 # https://github.com/pgadmin-org/pgadmin4
 #
-if [[ "$(isAppInstalled pgAdmin)" = "false" ]]; then
-    installcask pgadmin4
-fi
+installcask pgadmin4 pgAdmin
 
 #
 # Bison
@@ -4206,9 +4201,7 @@ installFromAppStore "Actions" 1586435171
 #
 # https://www.adobe.com/ca/acrobat/pdf-reader.html
 #
-if [[ "$(isAppInstalled "Adobe Acrobat")" = "false" ]]; then
-    installcask adobe-acrobat-reader
-fi
+installcask adobe-acrobat-reader "Adobe Acrobat"
 
 #
 # Adobe Creative Cloud
@@ -4217,9 +4210,7 @@ fi
 #
 # https://www.adobe.com/ca/creativecloud.html
 #
-if [[ "$(isAppInstalled "Creative Cloud")" = "false" ]]; then
-    installcask adobe-creative-cloud
-fi
+installcask adobe-creative-cloud "Creative Cloud"
 
 #
 # App Tamer
@@ -4319,9 +4310,7 @@ installcask captin
 #
 # https://github.com/Eloston/ungoogled-chromium#downloads
 #
-if [[ "$(isAppInstalled Chromium)" = "false" ]]; then
-    installcask eloston-chromium
-fi
+installcask eloston-chromium Chromium
 
 #
 # Command X
@@ -4405,9 +4394,7 @@ installcask discord
 #
 # https://www.cleverfiles.com/
 #
-if [[ "$(isAppInstalled "Disk Drill")" = "false" ]]; then
-    installcask disk-drill
-fi
+installcask disk-drill "Disk Drill"
 
 #
 # DHS
@@ -4434,9 +4421,7 @@ installcask duckduckgo
 #
 # https://www.elgato.com/en/gaming/key-light
 #
-if [[ "$(isAppInstalled "Elgato Control Center")" = "false" ]]; then
-    installcask elgato-control-center
-fi
+installcask elgato-control-center "Elgato Control Center"
 
 #
 # Elgato Stream Deck
@@ -4459,7 +4444,6 @@ fi
 #
 if [[ "$(isAppInstalled ExcalidrawZ)" = "false" ]]; then
     curl -L "$(lastversion chocoford/ExcalidrawZ --assets)" --output excalidrawz.dmg
-
     installDMG excalidrawz.dmg true
 fi
 
@@ -4723,9 +4707,7 @@ installcask openscad
 #
 # Notes: Needed at Tiugo
 #
-if [[ "$(isAppInstalled "OpenVPN Connect")" = "false" ]]; then
-    installcask openvpn-connect
-fi
+installcask openvpn-connect "OpenVPN Connect"
 
 #
 # Opera
@@ -4831,9 +4813,7 @@ fi
 #
 # https://github.com/raspberrypi/rpi-imager
 #
-if [[ "$(isAppInstalled "Raspberry Pi Imager")" = "false" ]]; then
-    installcask raspberry-pi-imager
-fi
+installcask raspberry-pi-imager "Raspberry Pi Imager"
 
 #
 # Shareful
@@ -4860,9 +4840,7 @@ installcask signal
 #
 # https://github.com/michelf/sim-daltonism/
 #
-if [[ "$(isAppInstalled "Sim Daltonism")" = "false" ]]; then
-    installcask sim-daltonism
-fi
+installcask sim-daltonism "Sim Daltonism"
 
 #
 # Sloth
@@ -4935,9 +4913,7 @@ fi
 #
 # https://github.com/TigerVNC/tigervnc
 #
-if [[ "$(isAppInstalled "TigerVNC Viewer")" = "false" ]]; then
-    installcask tigervnc-viewer
-fi
+installcask tigervnc-viewer "TigerVNC Viewer"
 
 #
 # TripMode
