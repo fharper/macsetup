@@ -662,8 +662,8 @@ fi
 # Notes
 #  - Cannot be added to apps.yml for now as it doesn't manage custom installation check
 #
-if [[ $(xcode-select -p 1> /dev/null; echo $?) -eq 2 ]]; then
-    xcode-select --install
+if [[ $(xcode-select -p 2>&1 | grep "Unable to get active developer directory") ]]; then
+    xcode-select --install >/dev/null 2>&1
     pausethescript "Wait for the XCode Tools installation to finish before continuing."
 fi
 
