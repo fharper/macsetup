@@ -680,7 +680,6 @@ fi
 #  - Cannot be added to apps.yml for now as it doesn't manage custom installation
 #
 if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
-    echo $fg[blue]"Starting the installation of Homebrew"$reset_color
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     # Needed once here since we didn't restore & source $HOME/.zshrc yet, but we need Homebrew
