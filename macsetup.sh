@@ -4260,7 +4260,6 @@ installcask beardedspice
 # https://github.com/kovidgoyal/calibre
 # https://github.com/noDRM/DeDRM_tools
 #
-# Split them
 if [[ "$(isAppInstalled calibre)" = "false" ]]; then
     installcask calibre
 
