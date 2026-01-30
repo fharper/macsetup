@@ -684,6 +684,7 @@ if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
 
     brew analytics off
     brew tap buo/cask-upgrade
+    reload
 fi
 
 #
@@ -807,32 +808,25 @@ fi
 # https://github.com/kcrawford/dockutil
 #
 # Notes
-#  - Needed before iTerm2
+#  - Needed before Ghostty
 #  - Cannot be added to apps.yml for now as it doesn't manage custom installation check
 #
 installkeg dockutil
 
 #
-# iTerm2
-# iTerm2 Shell Integration
+# Ghostty
 #
-# Terminal replacement
+# Terminal
 #
-# https://github.com/gnachman/iTerm2
-# https://iterm2.com/documentation-shell-integration.html
+# https://github.com/ghostty-org/ghostty
 #
-if [[ "$(isAppInstalled iTerm)" = "false" ]]; then
-    installcask iterm2
-    giveFullDiskAccessPermission iTerm
-    dockutil --add /Applications/iTerm.app/ --allhomes
+if [[ "$(isAppInstalled Ghostty)" = "false" ]]; then
+    installcask ghostty
+    giveFullDiskAccessPermission Ghostty
+    dockutil --add /Applications/Ghostty.app/ --allhomes
 
     # No more last login message
     touch ~/.hushlogin
-
-    curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
-    open -a iTerm
-    echo $fg[yellow]"You can now close the Terminal app, and continue on iTerm"$reset_color
-    exit
 fi
 
 #
@@ -1950,8 +1944,7 @@ fi
 #
 if [[ "$(isAppInstalled OpenInTerminal-Lite)" = "false" ]]; then
     installcask openinterminal-lite
-    defaults write wang.jianing.app.OpenInTerminal-Lite LiteDefaultTerminal iTerm
-    defaults write com.googlecode.iterm2 OpenFileInNewWindows -bool false
+    defaults write wang.jianing.app.OpenInTerminal-Lite LiteDefaultTerminal Ghostty
     open /Applications
     pausethescript "drag openinterminal-lite in Finder toolbar while pressing Command before continuing"
 
@@ -5152,7 +5145,7 @@ dockutil --move 'Notion' --position end --allhomes
 dockutil --move 'Todoist' --position end --allhomes
 dockutil --move 'Slack' --position end --allhomes
 dockutil --move 'Visual Studio Code' --position end --allhomes
-dockutil --move 'iTerm' --position end --allhomes
+dockutil --move 'Ghostty' --position end --allhomes
 dockutil --move 'Spotify' --position end --allhomes
 dockutil --move '1Password' --position end --allhomes
 dockutil --move 'Photos' --position end --allhomes
