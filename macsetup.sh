@@ -549,11 +549,8 @@ function installAsdfPlugin {
         asdf install $lang $version
 
         #Update .tool-versions
-        local tools_file="$HOME/.tool-versions"
-        grep -v "^$lang " "$tools_file" > "$tools_file.tmp"
-        echo "$lang $version" >> "$tools_file.tmp"
-        sort "$tools_file.tmp" > "$tools_file"
-        rm "$tools_file.tmp"
+        asdf set --home $lang $version
+        sort -o /Users/fharper/.tool-versions /Users/fharper/.tool-versions
 
         reload
     fi
