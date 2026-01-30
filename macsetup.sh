@@ -1423,16 +1423,13 @@ if [[ "$(isAppInstalled "Mic Drop")" = "false" ]]; then
 fi
 
 #
-# Moom
+# Rectangle
 #
-# Applications' windows management
+# Window manager
 #
-# https://manytricks.com/moom
+# https://github.com/rxhanson/Rectangle
 #
-if [[ "$(isAppInstalled Moom)" = "false" ]]; then
-    installkeg moom
-    getLicenseFile "Moom" "Frederic_Harper.moomlicense"
-fi
+installcask rectangle
 
 #
 # Slack
