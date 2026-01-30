@@ -684,7 +684,6 @@ if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
 
     brew analytics off
     brew tap buo/cask-upgrade
-    reload
 fi
 
 #
