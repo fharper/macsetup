@@ -539,7 +539,7 @@ function installAsdfPlugin {
     local lang="$1"
     local version="$2"
 
-    if asdf plugin list | grep "$lang" &>/dev/null; then
+    if asdf plugin list 2>/dev/null | grep -q "$lang"; then
         echo $fg[green]"Skipped $fg[blue]asdf$fg[green] plugin $fg[blue]$lang$fg[green] already installed"$reset_color
     else
         echo $fg[blue]"Installing the $fg[green]asdf$fg[blue] plugin $fg[green]$lang$fg[blue] version $fg[green]$version"$reset_color
