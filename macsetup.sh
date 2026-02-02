@@ -2249,6 +2249,15 @@ if [[ "$(isCLAppInstalled civo)" = "false" ]]; then
 fi
 
 #
+# Claude
+#
+# LLM
+#
+# https://claude.ai
+#
+installcask claude
+
+#
 # cockroach-sql
 #
 # CockroachDB CLI
