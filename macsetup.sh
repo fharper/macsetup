@@ -3529,6 +3529,15 @@ installkeg yo
 #
 installkeg yq
 
+#
+# Zig
+#
+# Programming language
+#
+# https://ziglang.org/
+#
+asdf install zig 0.15.2
+
 
 ######################
 #                    #
