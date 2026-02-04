@@ -4915,7 +4915,7 @@ fi
 #
 # https://github.com/TigerVNC/tigervnc
 #
-installcask tigervnc-viewer "TigerVNC Viewer"
+installcask tigervnc
 
 #
 # TripMode
