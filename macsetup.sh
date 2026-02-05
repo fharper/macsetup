@@ -1284,6 +1284,9 @@ if [[ "$(isAppInstalled "Brave Browser")" = "false" ]]; then
     /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser "chrome-extension://pncfbmialoiaghdehhbnbhkkgmjanfhe/pages/options.html"
     pausethescript "Under the Sync section, authorize Dropbox for uBlacklist sync before continuing"
 
+    # Disable the browser print dialog
+    defaults write com.brave.Browser DisablePrintPreview -bool true
+
     duti -s com.brave.Browser com.compuserve.gif all #GIF (Image)
 fi
 
