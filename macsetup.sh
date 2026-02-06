@@ -819,8 +819,13 @@ installkeg dockutil
 #
 # https://github.com/ghostty-org/ghostty
 #
+# Notes
+#  - Building from source as heir release cycles are super slow, and I needed https://github.com/ghostty-org/ghostty/pull/10570
+#  - To build run: zig build -Doptimize=ReleaseSmall
+#
 if [[ "$(isAppInstalled Ghostty)" = "false" ]]; then
-    installcask ghostty
+    pausethescript "Build Ghostty from source."
+    #installcask ghostty
     giveFullDiskAccessPermission Ghostty
     dockutil --add /Applications/Ghostty.app/ --allhomes
 
