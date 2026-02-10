@@ -4197,6 +4197,23 @@ if [[ "$(isAppInstalled "1Password for Safari")" = "false" ]]; then
 fi
 
 #
+# 2FHey
+#
+# AutoFill 2FA Codes
+#
+# https://github.com/SoFriendly/2fhey
+#
+if [[ "$(isAppInstalled "2FHey")" = "false" ]]; then
+    curl -L "$(op item get "2FHey" --fields label="Download link")" --output 2FHey.zip
+    unzip 2FHey.zip
+
+    rm 2FHey.zip
+    /bin/rm -rf __MACOSX #created by the unzip call
+
+    mv 2FHey.app /Applications/2FHey.app
+fi
+
+#
 # Actions
 #
 # Additional actions for the Shortcuts app
