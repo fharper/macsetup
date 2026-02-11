@@ -286,8 +286,8 @@ function installPKG {
 # @param delete the DMG or not
 #
 function installDMG {
-    hdiutil attach "$1"
-    local volume="/Volumes/$(hdiutil info | grep /Volumes/ | sed 's@.*\/Volumes/@@')"
+    local attach=$(hdiutil attach "$1")
+    local volume=$(echo "$attach" | grep -E '/Volumes/' | sed 's/^.*\t//')
     local app=$(/bin/ls "$volume" | grep .app)
     mv "$volume/$app" /Applications
     hdiutil detach "$volume"
