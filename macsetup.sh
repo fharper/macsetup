@@ -5028,18 +5028,6 @@ if [[ "$(isAppInstalled Vivid)" = "false" ]]; then
 fi
 
 #
-# WebP Viewer: QuickLook & View
-#
-# WebP image viewer
-#
-# https://langui.net/webp-viewer
-#
-if [[ "$(isAppInstalled WebPViewer)" = "false" ]]; then
-    installFromAppStore "WebPViewer" 1323414118
-    duti -s net.langui.WebPViewer org.webmproject.webp all #WebP
-fi
-
-#
 # WhatsApp
 #
 # Messaging app
@@ -5121,6 +5109,7 @@ duti -s com.apple.Preview com.adobe.pdf all #PDF
 duti -s com.apple.Preview  public.png all # PNG
 duti -s com.apple.Preview org.openxmlformats.presentationml.presentation all #PPTX
 duti -s com.apple.Preview com.adobe.photoshop-image all # PSD (Photoshop)
+duti -s com.apple.Preview org.webmproject.webp all #WebP
 
 
 #########
