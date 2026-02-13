@@ -4922,6 +4922,15 @@ pausethescript 'Manually download and install Synergy'
 installcask teamviewer
 
 #
+# TestFlight
+#
+# Apple beta testing
+#
+# https://developer.apple.com/testflight/
+#
+installFromAppStore "TestFlight" 899247664
+
+#
 # The Unarchiver
 #
 # Compress & extract GUI app supporting RAR, ZIP & more
