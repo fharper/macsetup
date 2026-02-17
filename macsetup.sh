@@ -4241,6 +4241,15 @@ installcask adobe-acrobat-reader "Adobe Acrobat"
 installcask adobe-creative-cloud "Creative Cloud"
 
 #
+# AirBattery
+#
+# Devices batteries monitor
+#
+# https://github.com/lihaoyun6/AirBattery
+#
+installcask lihaoyun6/tap/airbattery AirBattery
+
+#
 # App Tamer
 #
 # CPU Throttling Tool
