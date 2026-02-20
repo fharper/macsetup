@@ -4676,6 +4676,18 @@ fi
 installcask lihaoyun6/tap/logoer Logoer
 
 #
+# Mac Task Scheduler
+#
+# Launchd GUI
+#
+# https://github.com/ArdaxHz/mac-task-scheduler
+#
+if [[ "$(isAppInstalled "Microsoft Edge")" = "false" ]]; then
+    curl -L "$(lastversion ArdaxHz/mac-task-scheduler --assets )" --output MacTaskScheduler.dmg
+    installDMG MacTaskScheduler.dmg true
+fi
+
+#
 # Microsoft Edge
 #
 # Browser
