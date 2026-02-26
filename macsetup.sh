@@ -1605,6 +1605,11 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
 #
+# Show all hidden files
+#
+defaults write com.apple.finder AppleShowAllFiles -boolean true
+
+#
 # Sidebar Favorites Reordering
 #
 mysides remove all
