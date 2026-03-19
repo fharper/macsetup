@@ -1271,6 +1271,15 @@ installcask alt-tab
 installcask apple-juice "Apple Juice"
 
 #
+# Barbee
+#
+# Menubar manager
+#
+# https://apps.apple.com/us/app/barbee-hide-menu-bar-items/id1548711022?mt=12
+#
+installFromAppStore "Barbee" 1548711022
+
+#
 # Brave Browser
 #
 # Chromium based browser
@@ -1459,16 +1468,6 @@ fi
 # Notes: Useful to replace a Bartender feature as Ice as it doesn't have that option yet
 #
 installFromAppStore "Spaced" 1666327168
-
-#
-# Thaw
-#
-# Menubar manager
-#
-# https://github.com/stonerl/Thaw
-#
-installcask thaw
-
 #
 # The Clock
 #
