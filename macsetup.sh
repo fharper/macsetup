@@ -1350,15 +1350,6 @@ fi
 installkeg hstr
 
 #
-# Ice
-#
-# Menubar manager
-#
-# https://github.com/jordanbaird/Ice
-#
-installcask jordanbaird-ice Ice
-
-#
 # Karabiner-Elements
 #
 # Keyboard customization utility
@@ -1468,6 +1459,15 @@ fi
 # Notes: Useful to replace a Bartender feature as Ice as it doesn't have that option yet
 #
 installFromAppStore "Spaced" 1666327168
+
+#
+# Thaw
+#
+# Menubar manager
+#
+# https://github.com/stonerl/Thaw
+#
+installcask thaw
 
 #
 # The Clock
