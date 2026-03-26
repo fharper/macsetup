@@ -4671,15 +4671,6 @@ if [ ! -d "/Library/Application Support/Logitech.localized/Logitech Presentation
 fi
 
 #
-# Logoer
-#
-# Change the style of the Apple logo in macOS menubar
-#
-# https://github.com/lihaoyun6/Logoer
-#
-installcask lihaoyun6/tap/logoer Logoer
-
-#
 # Mac Task Scheduler
 #
 # Launchd GUI
