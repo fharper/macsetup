@@ -5146,6 +5146,7 @@ displaySection "macOS Applications File Types Default"
 
 # Preview
 duti -s com.apple.Preview public.standard-tesselated-geometry-format all #3D CAD
+duti -s com.apple.Preview public.avif all #AVIF
 duti -s com.apple.Preview public.heic all #HEIC
 duti -s com.apple.Preview com.nikon.raw-image all #NEF
 duti -s com.apple.Preview com.adobe.pdf all #PDF
