@@ -1459,16 +1459,6 @@ if [[ "$(isAppInstalled Slack)" = "false" ]]; then
 fi
 
 #
-# Spaced
-#
-# Menubar spacer
-#
-# https://sindresorhus.com/spaced
-#
-# Notes: Useful to replace a Bartender feature as Ice as it doesn't have that option yet
-#
-installFromAppStore "Spaced" 1666327168
-#
 # The Clock
 #
 # macOS Clock replacement with more advance features like work clocks & time zones
