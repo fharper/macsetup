@@ -905,8 +905,9 @@ fi
 # https://www.gnu.org/software/coreutils/
 #
 # Notes
-# - Needed for shuf, which is used in the espanso trigger "":randomtime"
+# - Needed for shuf, which is used in the espanso trigger "":randomtime".
 # - Needed for shuf, which is used in ranom quotes. So needed before it.
+# - Needed for gshred, which I use to shred files.
 #
 installkeg coreutils
 
