@@ -2615,6 +2615,7 @@ if [[ "$(isCLAppInstalled gh)" = "false" ]]; then
     installkeg gh
     gh auth login
     gh config set editor "code --wait"
+    gh config set telemetry disabled
 fi
 
 #
