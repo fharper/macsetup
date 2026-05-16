@@ -4820,15 +4820,6 @@ installcask pika
 installFromAppStore "Pure Paste" 1611378436
 
 #
-# QuickGPT
-#
-# ChatGPT from menubar
-#
-# https://sindresorhus.com/quickgpt
-#
-#install from downloaded zip
-
-#
 # QR Capture
 #
 # Screen & webcam QR code reader
