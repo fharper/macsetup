@@ -2222,6 +2222,15 @@ installkeg caddy
 installNodePackages caniuse-cmd
 
 #
+# ccusage
+#
+# Analyze coding (agent) CLI token usage and costs from local data
+#
+# https://github.com/ryoppippi/ccusage
+#
+installkeg ccusage
+
+#
 # Charles Proxy
 #
 # HTTP proxy, monitor & reverse proxy
