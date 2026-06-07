@@ -4289,15 +4289,6 @@ installcask audacity
 installFromAppStore "AutoMute" 1118136179
 
 #
-# Bearded Spice
-#
-# Control web based media players & some apps with media keys on Keyboard
-#
-# https://github.com/beardedspice/beardedspice
-#
-installcask beardedspice
-
-#
 # Calibre + DeDRM Tools
 #
 # Ebook Manager
