@@ -1254,15 +1254,6 @@ if [[ "$(isAppInstalled Alfred)" = "false" ]]; then
 fi
 
 #
-# AltTab
-#
-# Application windows switcher
-#
-# https://github.com/lwouis/alt-tab-macos
-#
-installcask alt-tab
-
-#
 # Apple Juice
 #
 # Advanced battery gauge
@@ -1332,6 +1323,20 @@ if [[ "$(isAppInstalled CommandQ)" = "false" ]]; then
     installcask commandq
     open -a CommandQ
     getLicense CommandQ
+fi
+
+#
+# Contexts
+#
+# Application windows switcher
+#
+# https://contexts.co
+#
+if [[ "$(isAppInstalled Contexts)" = "false" ]]; then
+    installcask contexts
+    giveAccessibilityPermission Contexts
+    open -a Contexts
+    getLicenseFile "Contexts" "contexts.contexts-license"
 fi
 
 #
