@@ -2200,6 +2200,15 @@ installkeg bfg
 installkeg black
 
 #
+# Bun
+#
+# JavaScript all-in-one toolkit
+#
+# https://bun.com
+#
+installkeg bun
+
+#
 # cabal-install
 #
 # Build & installation tool for Haskell application
