@@ -2284,6 +2284,15 @@ fi
 installcask claude
 
 #
+# Claude Code
+#
+# AI-powered coding assistant
+#
+# https://claude.ai
+#
+installcask claude-code
+
+#
 # cockroach-sql
 #
 # CockroachDB CLI
