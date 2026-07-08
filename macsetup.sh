@@ -3569,6 +3569,14 @@ installkeg yq
 #
 asdf install zig 0.15.2
 
+#
+# ZShellCheck
+#
+# Zsh linter
+#
+# https://github.com/afadesigns/zshellcheck
+#
+installgem github.com/afadesigns/zshellcheck/cmd/zshellcheck@latest
 
 ######################
 #                    #
