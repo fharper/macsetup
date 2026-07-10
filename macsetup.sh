@@ -684,6 +684,7 @@ if [[ "$(isCLAppInstalled brew)" = "false" ]]; then
 
     brew analytics off
     brew tap buo/cask-upgrade
+    brew trust buo/cask-upgrade
 fi
 
 #
@@ -998,6 +999,7 @@ fi
 #
 if [[ "$(isCLAppInstalled defbro)" = "false" ]]; then
     brew tap jwbargsten/misc
+    brew trust jwbargsten/misc
     installkeg defbro
 fi
 
@@ -1038,7 +1040,8 @@ installkeg jq
 # https://github.com/ojford/loginitems
 #
 if [[ "$(isCLAppInstalled loginitems)" = "false" ]]; then
-    brew tap OJFord/formulae
+    brew tap ojford/formulae
+    brew trust ojford/formulae
     installkeg loginitems
 fi
 
@@ -2266,6 +2269,7 @@ installNodePackages chrome-webstore-cli
 #
 if [[ "$(isCLAppInstalled civo)" = "false" ]]; then
     brew tap civo/tools
+    brew trust civo/tools
     installkeg civo
 fi
 
@@ -2296,6 +2300,7 @@ installcask claude-code
 #
 if [[ "$(isCLAppInstalled cockroach-sql)" = "false" ]]; then
     brew tap cockroachdb/tap
+    brew trust cockroachdb/tap
     installkeg cockroach-sql
 fi
 
@@ -3505,6 +3510,7 @@ installkeg woff2
 #
 if [[ "$(isCLAppInstalled xcodes)" = "false" ]]; then
     brew tap xcodesorg/made
+    brew trust xcodesorg/made
     installkeg xcodes
     xcodes runtimes install "iOS 18.5"
 fi
@@ -3878,6 +3884,7 @@ installkeg lzip
 # https://github.com/acrogenesis/macchanger
 #
 if [[ "$(isCLAppInstalled macchanger)" = "false" ]]; then
+    brew trust acrogenesis/macchanger
     brew tap acrogenesis/macchanger
     installkeg macchanger
 fi
@@ -4050,6 +4057,7 @@ installkeg ripgrep
 # Notes: need to be installed with the tap since there is another one with the same name
 #
 if [[ "$(isCLAppInstalled scout)" = "false" ]]; then
+    brew trust abridoux/formulae
     installkeg abridoux/formulae/scout
 fi
 
@@ -4278,7 +4286,10 @@ installcask adobe-creative-cloud "Creative Cloud"
 #
 # https://github.com/lihaoyun6/AirBattery
 #
-installcask lihaoyun6/tap/airbattery AirBattery
+if [[ "$(isAppInstalled "AirBattery")" = "false" ]]; then
+    brew trust lihaoyun6/tap
+    installcask lihaoyun6/tap/airbattery AirBattery
+fi
 
 #
 # App Tamer
