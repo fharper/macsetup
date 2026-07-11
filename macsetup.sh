@@ -3997,6 +3997,15 @@ installkeg pdfcrack
 installkeg peco
 
 #
+# pnpm
+#
+# npm alternative
+#
+# https://github.com/pnpm/pnpm
+#
+installkeg pnpm
+
+#
 # Poppler
 #
 # PDF rendering library
