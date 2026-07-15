@@ -3546,6 +3546,7 @@ installkeg yamllint
 if [[ "$(isCLAppInstalled yarn)" = "false" ]]; then
     installNodePackages yarn
     yarn config set --home enableTelemetry 0
+    yarn set version stable
 fi
 
 #
