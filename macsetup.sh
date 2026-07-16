@@ -4772,6 +4772,15 @@ fi
 installcask nordvpn
 
 #
+# OBS
+#
+# Video Studio
+#
+# https://github.com/obsproject/obs-studio
+#
+installcask obs
+
+#
 # Online Check
 #
 # Only status in menubar
