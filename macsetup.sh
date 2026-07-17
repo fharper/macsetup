@@ -5266,6 +5266,7 @@ dockutil --move '1Password' --position end --allhomes
 dockutil --move 'Photos' --position end --allhomes
 dockutil --move 'Caprine' --position end --allhomes
 dockutil --move 'WhatsApp' --position end --allhomes
+dockutil --move 'Messages' --position end --allhomes
 dockutil --move 'Antidote 11' --position end --allhomes
 
 
