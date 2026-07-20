@@ -4302,19 +4302,6 @@ if [[ "$(isAppInstalled "AirBattery")" = "false" ]]; then
 fi
 
 #
-# App Tamer
-#
-# CPU Throttling Tool
-#
-# https://www.stclairsoft.com/AppTamer/
-#
-if [[ "$(isAppInstalled "App Tamer")" = "false" ]]; then
-    installcask app-tamer
-    open -a "App Tamer"
-    getLicense "App Tamer"
-fi
-
-#
 # Audacity
 #
 # Audio editor
