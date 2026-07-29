@@ -3153,6 +3153,15 @@ installkeg newman
 installNodePackages npm-check-updates
 
 #
+# ollama
+#
+# open LLM local runner
+#
+# https://github.com/ollama/ollama
+#
+installkeg ollama
+
+#
 # OpenAPI Validator
 #
 # OpenAPI linter & validator
