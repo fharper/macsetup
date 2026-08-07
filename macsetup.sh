@@ -4894,6 +4894,15 @@ if [ ! -d "/Library/Objective-See/RansomWhere/" ]; then
 fi
 
 #
+# Riverside Studio
+#
+# Streaming app for Riverside
+#
+# https://riverside.com
+#
+installcask riverside-studio
+
+#
 # Raspberry Pi Imager
 #
 # Raspberry Pi imaging utility
