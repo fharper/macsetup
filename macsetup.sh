@@ -4362,10 +4362,13 @@ fi
 #
 # Facebook Messenger Client
 #
-# https://github.com/sindresorhus/caprine
+# https://github.com/bankjaneo/caprine
+#
+# Notes: it's a fork ofindresorhus/caprine which is dead
 #
 if [[ "$(isAppInstalled Caprine)" = "false" ]]; then
-    installcask caprine
+    curl -L "$(lastversion bankjaneo/caprine --assets --filter ".*arm64.dmg")" --output caprine.dmg
+    installDMG caprine.dmg true
     dockutil --add /Applications/Caprine.app/ --allhomes
 fi
 
