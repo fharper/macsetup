@@ -1270,6 +1270,18 @@ installcask apple-juice "Apple Juice"
 installFromAppStore "Barbee" 1548711022
 
 #
+# BetterCmdTab
+#
+# Tab manager
+#
+# https://github.com/rokartur/BetterCmdTab
+#
+# Notes: installing beta until a new release that include this commit https://github.com/rokartur/BetterCmdTab/commit/6cf3a2afe2e88c5de29a44e380ebca213893c6c4
+#
+instalcask bettercmdtab@beta
+
+
+#
 # Brave Browser
 #
 # Chromium based browser
@@ -1321,20 +1333,6 @@ if [[ "$(isAppInstalled CommandQ)" = "false" ]]; then
     installcask commandq
     open -a CommandQ
     getLicense CommandQ
-fi
-
-#
-# Contexts
-#
-# Application windows switcher
-#
-# https://contexts.co
-#
-if [[ "$(isAppInstalled Contexts)" = "false" ]]; then
-    installcask contexts
-    giveAccessibilityPermission Contexts
-    open -a Contexts
-    getLicenseFile "Contexts" "contexts.contexts-license"
 fi
 
 #
