@@ -4850,7 +4850,7 @@ installFromAppStore "Paprika Recipe Manager 3" 1303222628
 #
 # https://parcelapp.net
 #
-installFromAppStore "Parcel" 639968404
+installFromAppStore "Parcel" 375589283
 
 #
 # Pika
