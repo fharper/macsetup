@@ -1276,9 +1276,7 @@ installFromAppStore "Barbee" 1548711022
 #
 # https://github.com/rokartur/BetterCmdTab
 #
-# Notes: installing beta until a new release that include this commit https://github.com/rokartur/BetterCmdTab/commit/6cf3a2afe2e88c5de29a44e380ebca213893c6c4
-#
-instalcask bettercmdtab@beta
+instalcask bettercmdtab
 
 
 #
