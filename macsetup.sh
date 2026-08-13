@@ -4080,6 +4080,18 @@ if [[ "$(isCLAppInstalled scout)" = "false" ]]; then
 fi
 
 #
+# SleepWatcher
+#
+# Monitor system sleep/wake events
+#
+# https://www.bernhard-baehr.de
+#
+if [[ "$(isCLAppInstalled sleepwatcher)" = "false" ]]; then
+    brew install sleepwatcher
+    brew services start sleepwatcher
+fi
+
+#
 # speedtest-cli
 #
 # Internet bandwidth speed test
