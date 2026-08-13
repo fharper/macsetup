@@ -1536,6 +1536,11 @@ displaySection "Finder Configurations"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 #
+# Disable actions images
+#
+defaults write -g NSMenuEnableActionImages -bool false
+
+#
 # Extension Change Warning
 #
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
