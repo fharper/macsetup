@@ -1426,11 +1426,9 @@ installcask meetingbar
 #
 # https://getmicdrop.com
 #
-if [[ "$(isAppInstalled "Mic Drop")" = "false" ]]; then
-    installcask mic-drop
-    open -a "Mic Drop"
-    getLicense "Mic Drop"
-fi
+# Notes: Homebrew version is not updated
+#
+installFromAppStore "Mic Drop" 1489816366
 
 #
 # Rectangle
