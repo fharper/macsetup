@@ -1538,7 +1538,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 #
 # Extension Change Warning
 #
-defaults write com.apple.finder FXEnableExtensionChangeWarning -boolean false
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 #
 # Show Library Folder
@@ -1594,7 +1594,7 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 #
 # Show all hidden files
 #
-defaults write com.apple.finder AppleShowAllFiles -boolean true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 #
 # Sidebar Favorites Reordering
