@@ -5050,7 +5050,15 @@ installcask tigervnc
 #
 # https://tripmode.ch
 #
-installcask TripMode
+# Notes: Homebrew version isn't updated anymore
+#
+if [[ "$(isAppInstalled "TripMode")" = "false" ]]; then
+    curl -L https://tripmode-updates.ch/app/TripMode.zip --output tripmode.zip
+    unzip tripmode.zip
+    /bin/rm -rf  __MACOSX
+    rm tripmode.zip
+    mv TripMode.app /Applications
+fi
 
 #
 # TV
