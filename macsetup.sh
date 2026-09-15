@@ -998,9 +998,8 @@ fi
 # https://github.com/jwbargsten/defbro
 #
 if [[ "$(isCLAppInstalled defbro)" = "false" ]]; then
-    brew tap jwbargsten/misc
-    brew trust jwbargsten/misc
-    installkeg defbro
+    brew trust --formula jwbargsten/misc/defbro
+    installkeg jwbargsten/misc/defbro
 fi
 
 #
@@ -1040,9 +1039,8 @@ installkeg jq
 # https://github.com/ojford/loginitems
 #
 if [[ "$(isCLAppInstalled loginitems)" = "false" ]]; then
-    brew tap ojford/formulae
-    brew trust ojford/formulae
-    installkeg loginitems
+    brew trust --formula ojford/formulae/loginitems
+    installkeg ojford/formulae/loginitems
 fi
 
 #
@@ -2267,9 +2265,8 @@ installNodePackages chrome-webstore-cli
 # https://github.com/civo/cli
 #
 if [[ "$(isCLAppInstalled civo)" = "false" ]]; then
-    brew tap civo/tools
-    brew trust civo/tools
-    installkeg civo
+    brew trust --formula civo/tools/civo
+    installkeg civo/tools/civo
 fi
 
 #
@@ -2298,9 +2295,8 @@ installcask claude-code
 # https://www.cockroachlabs.com
 #
 if [[ "$(isCLAppInstalled cockroach-sql)" = "false" ]]; then
-    brew tap cockroachdb/tap
-    brew trust cockroachdb/tap
-    installkeg cockroach-sql
+    brew trust --formula cockroachdb/tap/cockroach-sql
+    installkeg cockroachdb/tap/cockroach-sql
 fi
 
 #
@@ -3517,9 +3513,8 @@ installkeg woff2
 # Notes: to list runtimes `xcodes runtimes`
 #
 if [[ "$(isCLAppInstalled xcodes)" = "false" ]]; then
-    brew tap xcodesorg/made
-    brew trust xcodesorg/made
-    installkeg xcodes
+    brew trust --formula xcodesorg/made/xcodes
+    installkeg xcodesorg/made/xcodes
     xcodes runtimes install "iOS 18.5"
 fi
 
@@ -3893,9 +3888,8 @@ installkeg lzip
 # https://github.com/acrogenesis/macchanger
 #
 if [[ "$(isCLAppInstalled macchanger)" = "false" ]]; then
-    brew trust acrogenesis/macchanger
-    brew tap acrogenesis/macchanger
-    installkeg macchanger
+    brew trust --formula acrogenesis/macchanger/macchanger
+    installkeg acrogenesis/macchanger/macchanger
 fi
 
 #
@@ -4075,7 +4069,7 @@ installkeg ripgrep
 # Notes: need to be installed with the tap since there is another one with the same name
 #
 if [[ "$(isCLAppInstalled scout)" = "false" ]]; then
-    brew trust abridoux/formulae
+    brew trust --formula abridoux/formulae/scout
     installkeg abridoux/formulae/scout
 fi
 
@@ -4317,7 +4311,7 @@ installcask adobe-creative-cloud "Creative Cloud"
 # https://github.com/lihaoyun6/AirBattery
 #
 if [[ "$(isAppInstalled "AirBattery")" = "false" ]]; then
-    brew trust lihaoyun6/tap
+    brew trust --formula lihaoyun6/tap/airbattery
     installcask lihaoyun6/tap/airbattery AirBattery
 fi
 
