@@ -1643,6 +1643,16 @@ displaySection "Mission Control Configurations"
 #
 defaults write com.apple.dock wvous-br-corner -int 0
 
+################################
+#                              #
+# Notifications Configurations #
+#                              #
+################################
+
+#
+# Allow notifications from iPhone - Allow Live Activities from iPhone
+#
+defaults write com.apple.controlcenter RemoteLiveActivitiesEnabled -bool false
 
 #####################################
 #                                   #
