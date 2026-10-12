@@ -1250,15 +1250,6 @@ if [[ "$(isAppInstalled Alfred)" = "false" ]]; then
 fi
 
 #
-# Apple Juice
-#
-# Advanced battery gauge
-#
-# https://github.com/raphaelhanneken/apple-juice
-#
-installcask apple-juice "Apple Juice"
-
-#
 # Barbee
 #
 # Menubar manager
