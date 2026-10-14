@@ -3052,7 +3052,7 @@ installkeg markdownlint-cli2
 #
 # https://github.com/Azure/azure-cli
 #
-installkeg azure-cli
+installcask azure-cli
 
 #
 # Mocha
