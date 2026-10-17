@@ -3119,7 +3119,7 @@ installcask mongodb-compass "MongoDB Compass"
 #
 # https://github.com/thomasnordquist/MQTT-Explorer
 #
-installcask mqtt-explorer "MQTT Explorer"
+installcask open-tap/casks/mqtt-explorer "MQTT Explorer"
 
 #
 # MySQL Workbench
@@ -4194,7 +4194,7 @@ installcask openai-whisper
 #
 # https://gitlab.winehq.org/wine/wine
 #
-installcask wine-stable
+installcask open-tap/casks/wine-stable
 
 #
 # wkhtmltopdf
@@ -4801,7 +4801,7 @@ installFromAppStore "Online Check" 6504709660
 #
 # https://github.com/openscad/openscad
 #
-installcask openscad
+installcask open-tap/casks/openscad
 
 #
 # OpenVPN Connect
@@ -5255,7 +5255,7 @@ fi
 #
 # https://github.com/OpenEmu/OpenEmu
 #
-installcask openemu
+installcask open-tap/casks/openemu
 
 #
 # Steam
