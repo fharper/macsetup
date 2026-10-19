@@ -4373,8 +4373,8 @@ fi
 # Notes: it's a fork ofindresorhus/caprine which is dead
 #
 if [[ "$(isAppInstalled Caprine)" = "false" ]]; then
-    curl -L "$(lastversion bankjaneo/caprine --assets --filter ".*arm64.dmg")" --output caprine.dmg
-    installDMG caprine.dmg true
+    brew trust --cask bankjaneo/tap/caprine
+    installcask bankjaneo/tap/caprine
     dockutil --add /Applications/Caprine.app/ --allhomes
 fi
 
