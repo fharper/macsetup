@@ -3760,6 +3760,18 @@ installkeg fd
 installkeg ffmpeg
 
 #
+# FFmpeg Full
+#
+# FFmpeg build with all the optional codecs, filters & libraries enabledw
+#
+# https://github.com/FFmpeg/FFmpeg
+#
+# Notes: used by Claude for my shorts skills to generate captions on videos
+#
+installkeg ffmpeg-full
+
+
+#
 # FFmpeg Quality Metrics
 #
 # CLI video quality metrics tool using FFmpeg
