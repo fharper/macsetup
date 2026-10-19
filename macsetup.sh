@@ -1955,7 +1955,7 @@ if [[ "$(isAppInstalled OpenInTerminal-Lite)" = "false" ]]; then
     /bin/rm -rf __MACOSX #created by the unzip call
     seticon icons/icon_terminal_dark.icns /Applications/OpenInTerminal-Lite.app
     /bin/rm -rf icons
-#fi
+fi
 
 #
 # Rain
