@@ -4317,18 +4317,6 @@ installcask adobe-acrobat-reader "Adobe Acrobat"
 installcask adobe-creative-cloud "Creative Cloud"
 
 #
-# AirBattery
-#
-# Devices batteries monitor
-#
-# https://github.com/lihaoyun6/AirBattery
-#
-if [[ "$(isAppInstalled "AirBattery")" = "false" ]]; then
-    brew trust --formula lihaoyun6/tap/airbattery
-    installcask lihaoyun6/tap/airbattery AirBattery
-fi
-
-#
 # Audacity
 #
 # Audio editor
