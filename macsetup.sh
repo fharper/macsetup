@@ -2280,6 +2280,19 @@ fi
 installcask claude
 
 #
+# claude-afterlife
+#
+# Reopen Claude Code sessions lost to a reboot or a terminal quitting
+#
+# https://github.com/balintb/claude-afterlife
+#
+if [[ "$(isCLAppInstalled claude-afterlife)" = "false" ]]; then
+    brew trust --formula balintb/tap/claude-afterlife
+    installkeg balintb/tap/claude-afterlife
+    claude-afterlife install
+fi
+
+#
 # Claude Code
 #
 # AI-powered coding assistant
