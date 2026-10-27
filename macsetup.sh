@@ -3459,18 +3459,6 @@ installcask utm
 installkeg vale
 
 #
-# Vercel CLI
-#
-# CLI for Vercel
-#
-# https://github.com/vercel/vercel
-#
-if [[ "$(isCLAppInstalled vercel)" = "false" ]]; then
-    installkeg vercel-cli
-    confirm "Do you want to log into Vercel now?" "vercel login $email"
-fi
-
-#
 # vultr-cli
 #
 # Vultr CLI
