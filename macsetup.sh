@@ -3975,6 +3975,15 @@ installkeg nmap
 installkeg noti
 
 #
+# OpenClaw CLI
+#
+# Personal AI assistant
+#
+# https://github.com/openclaw/openclaw
+#
+installkeg openclaw-cli
+
+#
 # Pandoc
 #
 # Markup converter
