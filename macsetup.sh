@@ -3984,6 +3984,18 @@ installkeg noti
 installkeg openclaw-cli
 
 #
+# osxphotos
+#
+# Export, query and manage the Apple Photos library from the command line
+#
+# https://github.com/RhetTbull/osxphotos
+#
+if [[ "$(isCLAppInstalled osxphotos)" = "false" ]]; then
+    brew trust --formula rhettbull/osxphotos/osxphotos
+    installkeg rhettbull/osxphotos/osxphotos
+fi
+
+#
 # Pandoc
 #
 # Markup converter
