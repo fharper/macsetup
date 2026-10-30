@@ -4256,6 +4256,15 @@ fi
 installkeg yt-dlp
 
 #
+# zbar
+#
+# Barcodes & QR codes reader
+#
+# https://github.com/mchehab/zbar
+#
+installkeg zbar
+
+#
 # zsh-bench
 #
 # Benchmark for interactive Zsh
