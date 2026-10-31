@@ -4395,21 +4395,6 @@ if [[ "$(isAppInstalled calibre)" = "false" ]]; then
 fi
 
 #
-# Caprine
-#
-# Facebook Messenger Client
-#
-# https://github.com/bankjaneo/caprine
-#
-# Notes: it's a fork ofindresorhus/caprine which is dead
-#
-if [[ "$(isAppInstalled Caprine)" = "false" ]]; then
-    brew trust --cask bankjaneo/tap/caprine
-    installcask bankjaneo/tap/caprine
-    dockutil --add /Applications/Caprine.app/ --allhomes
-fi
-
-#
 # Captin
 #
 # App that show the caps lock status
@@ -4756,6 +4741,15 @@ if [[ "$(isAppInstalled "Microsoft Edge")" = "false" ]]; then
     curl -L "$(lastversion ArdaxHz/mac-task-scheduler --assets )" --output MacTaskScheduler.dmg
     installDMG MacTaskScheduler.dmg true
 fi
+
+#
+# messenger
+#
+# Facebook Messenger Client
+#
+# https://github.com/rozsazoltan/messenger
+#
+installcask rozsazoltan/tap/messenger-next
 
 #
 # Microsoft Edge
