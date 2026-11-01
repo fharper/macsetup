@@ -4410,7 +4410,13 @@ installcask captin
 #
 # https://github.com/Eloston/ungoogled-chromium#downloads
 #
-installcask eloston-chromium Chromium
+if [[ "$(isAppInstalled Chromium)" = "false" ]]; then
+    installcask eloston-chromium Chromium
+
+    # Install the 1Password extension
+    open -a "Chromium"
+    /Applications/Chromium.app/Contents/MacOS/Chromium https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa
+fi
 
 #
 # Command X
