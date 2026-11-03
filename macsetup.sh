@@ -4903,15 +4903,6 @@ installFromAppStore "Parcel" 375589283
 installcask pika
 
 #
-# Pure Paste
-#
-# Paste as plain text by default
-#
-# https://sindresorhus.com/pure-paste
-#
-installFromAppStore "Pure Paste" 1611378436
-
-#
 # QR Capture
 #
 # Screen & webcam QR code reader
