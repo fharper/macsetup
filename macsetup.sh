@@ -4692,6 +4692,17 @@ if [[ "$(isAppInstalled "Amazon Kindle")" = "false" ]]; then
 fi
 
 #
+# LibreOffice
+#
+# Office Suite
+#
+# https://www.libreoffice.org
+#
+# Notes: needed for the slide skill
+#
+installcask libreoffice
+
+#
 # Logi Options+
 #
 # Logitech Mouse Configurations App
