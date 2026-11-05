@@ -5014,15 +5014,6 @@ if [[ "$(isAppInstalled stats)" = "false" ]]; then
 fi
 
 #
-# Swift Quit
-#
-# Automatic quitting of macOS apps when closing their windows
-#
-# https://github.com/onebadidea/swiftquit
-#
-installcask swift-quit
-
-#
 # Synergy
 #
 # Keyboard & mouse devices sharing
