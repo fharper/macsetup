@@ -5156,6 +5156,18 @@ if [[ "$(isAppInstalled Vivid)" = "false" ]]; then
 fi
 
 #
+# volumeHUD
+#
+# Bring back the pre-Tahoe macOS volume and brightness HUDs
+#
+# https://github.com/dannystewart/volumeHUD
+#
+if [[ "$(isAppInstalled volumeHUD)" = "false" ]]; then
+    brew trust --cask dannystewart/apps/volumehud
+    installcask dannystewart/apps/volumehud
+fi
+
+#
 # WhatsApp
 #
 # Messaging app
