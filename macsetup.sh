@@ -1389,13 +1389,13 @@ if [[ "$(isAppInstalled "Little Snitch")" = "false" ]]; then
 fi
 
 #
-# lolcat
+# lolcrab
 #
 # Display any terminal output in rainbows colors
 #
-# https://github.com/busyloop/lolcat
+# https://github.com/mazznoer/lolcrab
 #
-installkeg lolcat
+installkeg lolcrab
 
 #
 # MeetingBar
