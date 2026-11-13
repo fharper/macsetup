@@ -1658,6 +1658,11 @@ displaySection "Security & Privacy Configurations"
 #
 sudo spctl --master-disable
 
+#
+# Network - Firewall
+#
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+
 ###########################
 #                         #
 # Sharing  Configurations #
