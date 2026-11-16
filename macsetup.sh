@@ -2364,15 +2364,6 @@ installNodePackages cordova
 installkeg curl
 
 #
-# Cypress
-#
-# E2E testing
-#
-# https://github.com/cypress-io/cypress
-#
-installNodePackages cypress
-
-#
 # delete-gh-workflow-runs
 #
 # Easily mass-delete GitHub Workflow runs
