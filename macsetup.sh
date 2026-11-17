@@ -4091,6 +4091,17 @@ installkeg rename
 installkeg ripgrep
 
 #
+# rsync
+#
+# Fast incremental file transfer, newer than the macOS openrsync
+#
+# https://rsync.samba.org
+#
+# Notes: used by the backup function in .zsh_aliases
+#
+installkeg rsync
+
+#
 # Scout
 #
 # Reading, writing & converting JSON, Plist, YAML and XML files
