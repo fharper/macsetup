@@ -3809,15 +3809,6 @@ installkeg ghostscript
 installkeg gifsicle
 
 #
-# Homebrew Command Not Found
-#
-# Suggest a package to install when the command is not found
-#
-# https://github.com/Homebrew/homebrew-command-not-found
-#
-brew tap homebrew/command-not-found
-
-#
 # htop
 #
 # Terminal interactive process viewer
