@@ -4791,6 +4791,18 @@ if [[ "$(isAppInstalled Muzzle)" = "false" ]]; then
 fi
 
 #
+# NeewerLite
+#
+# Control Neewer lights over Bluetooth
+#
+# https://github.com/keefo/NeewerLite
+#
+if [[ "$(isAppInstalled NeewerLite)" = "false" ]]; then
+    curl -L "$(lastversion keefo/NeewerLite --assets --filter '\.dmg$')" --output neewerlite.dmg
+    installDMG neewerlite.dmg true
+fi
+
+#
 # NordVPN
 #
 # VPN
