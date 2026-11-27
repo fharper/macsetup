@@ -4916,19 +4916,6 @@ installcask pika
 installFromAppStore "QR Capture" 1369524274
 
 #
-# RansomWhere?
-#
-# Monitoring the creation of encrypted files
-#
-# https://objective-see.org/products/ransomwhere.html
-#
-# Notes:
-#  - Need to check the installation manually as it does not install in default folders
-if [ ! -d "/Library/Objective-See/RansomWhere/" ]; then
-    installcask ransomwhere
-fi
-
-#
 # Riverside Studio
 #
 # Streaming app for Riverside
